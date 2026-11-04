@@ -9,6 +9,8 @@ Research archive for two related, independently testable ideas:
 
 ## Start here
 
+- [Next steps: AICC reuse across agents and software changes](experiments/lifecycle-pilot/README.md)
+- [Future-value research brief](docs/research/NEXT_STUDY_AICC_FUTURE_VALUE.md)
 - [Review of the supplied archive, corrections, and unresolved evidence](docs/research/REVIEW_2026-11-04.md)
 - [Detailed conversation handoff](docs/handoff/AICC_Codex_Conversation_Handoff.md) — a supplied reconstruction, not a complete verbatim chat export
 - [Architecture recommendation](docs/architecture/AI_Computational_Commons_Architecture_Recommendation.md)
