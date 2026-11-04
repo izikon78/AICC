@@ -1,0 +1,42 @@
+
+[C1 public-only bind of the private capability]
+  PermissionDenied: scope
+
+[C2 authorised project-scope bind and call]
+  score = 0
+
+[C3 revoke, then reuse the OLD callable and try to re-bind]
+  before revoke: 0
+  old callable after revoke -> InvalidBinding policy changed
+  re-bind on same host -> PermissionDenied revoked
+
+[C4 expiry: ttl_seconds=1, call after 1.2 s]
+  within ttl: 0
+  after ttl -> InvalidBinding expired
+
+[P1 scope spoofing: anonymous principal simply asserts scope project-a]
+  bound and called by anonymous: 0
+
+[P2 revocation is per host instance: revoke on rt1, bind on a new Runtime()]
+  new host instance still binds the revoked capability: 0
+
+[P3 direct bypass: private implementation reachable as registry.private_core]
+  callable names (no source read): ['risk_score_private']
+  called with no authorisation at all: 0
+
+[P4 false declared effects: replace the catalogue entry for a capability declared pure with one that writes a file]
+  catalogue key: pub.normalize_tag@1 | declared effects: set()
+  returned: 'hello world' | undeclared file write happened: True
+
+[P5 near-miss candidates actually bindable and observably wrong]
+  parse_money(1.005): 101 | bankers near-miss: 100
+  safe_path(a/../../etc/passwd) -> ValueError
+  loose near-miss returns: 'a///etc/passwd'
+  group_by_window groups: 1 | group_by_eventid groups: 2
+
+[P6 identity check: file on disk modified AFTER bind (temporary copy of the packet)]
+  before edit: 44136fa355b3678a
+  after on-disk edit -> InvalidBinding artifact changed
+
+[P7 identity check fooled: tampered module substituted BEFORE import, file on disk untouched]
+  bind and call accepted; digest_json({}) -> ffffffffffffffff (real value starts 44136fa355b3678a)

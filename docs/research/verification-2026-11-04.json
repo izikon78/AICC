@@ -1,0 +1,805 @@
+{
+  "review_date": "2026-11-04",
+  "python": "3.12.14",
+  "platform": "Windows",
+  "hash_verification": {
+    "source_associations": 178,
+    "all_source_hashes_match": true,
+    "source_failures": [],
+    "round8_manifest_files": 21,
+    "round8_manifest_pass": true,
+    "round8_manifest_failures": []
+  },
+  "test_commands": 11,
+  "all_pass": true,
+  "tests": [
+    {
+      "label": "Round 7 Claude submission.py",
+      "command": [
+        "python",
+        "fixtures/test_tasks.py",
+        "--submission",
+        "submission.py"
+      ],
+      "expected_total": 14,
+      "exit_code": 0,
+      "ok": true,
+      "result": {
+        "passed": 14,
+        "total": 14,
+        "cases": [
+          {
+            "case": "controller n=-2",
+            "pass": true
+          },
+          {
+            "case": "controller n=0",
+            "pass": true
+          },
+          {
+            "case": "controller n=1",
+            "pass": true
+          },
+          {
+            "case": "controller n=2",
+            "pass": true
+          },
+          {
+            "case": "controller n=3",
+            "pass": true
+          },
+          {
+            "case": "controller n=17",
+            "pass": true
+          },
+          {
+            "case": "rollup case 1",
+            "pass": true
+          },
+          {
+            "case": "rollup case 2",
+            "pass": true
+          },
+          {
+            "case": "rollup case 3",
+            "pass": true
+          },
+          {
+            "case": "rollup case 4",
+            "pass": true
+          },
+          {
+            "case": "rollup case 5",
+            "pass": true
+          },
+          {
+            "case": "error (0, 0)",
+            "pass": true,
+            "actual_error": "ValueError"
+          },
+          {
+            "case": "error (600, 3)",
+            "pass": true,
+            "actual_error": "ValueError"
+          },
+          {
+            "case": "error (600, 0)",
+            "pass": true,
+            "actual_error": "TypeError"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Round 7 Claude submission_registry.py",
+      "command": [
+        "python",
+        "fixtures/test_tasks.py",
+        "--submission",
+        "submission_registry.py"
+      ],
+      "expected_total": 14,
+      "exit_code": 0,
+      "ok": true,
+      "result": {
+        "passed": 14,
+        "total": 14,
+        "cases": [
+          {
+            "case": "controller n=-2",
+            "pass": true
+          },
+          {
+            "case": "controller n=0",
+            "pass": true
+          },
+          {
+            "case": "controller n=1",
+            "pass": true
+          },
+          {
+            "case": "controller n=2",
+            "pass": true
+          },
+          {
+            "case": "controller n=3",
+            "pass": true
+          },
+          {
+            "case": "controller n=17",
+            "pass": true
+          },
+          {
+            "case": "rollup case 1",
+            "pass": true
+          },
+          {
+            "case": "rollup case 2",
+            "pass": true
+          },
+          {
+            "case": "rollup case 3",
+            "pass": true
+          },
+          {
+            "case": "rollup case 4",
+            "pass": true
+          },
+          {
+            "case": "rollup case 5",
+            "pass": true
+          },
+          {
+            "case": "error (0, 0)",
+            "pass": true,
+            "actual_error": "ValueError"
+          },
+          {
+            "case": "error (600, 3)",
+            "pass": true,
+            "actual_error": "ValueError"
+          },
+          {
+            "case": "error (600, 0)",
+            "pass": true,
+            "actual_error": "TypeError"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Round 7 Claude Python controller",
+      "command": [
+        "python",
+        "fixtures/test_tasks.py",
+        "--python-controller",
+        "controller_submission.py"
+      ],
+      "expected_total": 6,
+      "exit_code": 0,
+      "ok": true,
+      "result": {
+        "passed": 6,
+        "total": 6,
+        "cases": [
+          {
+            "case": "python controller n=-2",
+            "pass": true
+          },
+          {
+            "case": "python controller n=0",
+            "pass": true
+          },
+          {
+            "case": "python controller n=1",
+            "pass": true
+          },
+          {
+            "case": "python controller n=2",
+            "pass": true
+          },
+          {
+            "case": "python controller n=3",
+            "pass": true
+          },
+          {
+            "case": "python controller n=17",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "Round 7 Claude symbolic controller",
+      "command": [
+        "python",
+        "fixtures/test_tasks.py",
+        "--symbolic",
+        "controller_submission.sym"
+      ],
+      "expected_total": 6,
+      "exit_code": 0,
+      "ok": true,
+      "result": {
+        "passed": 6,
+        "total": 6,
+        "cases": [
+          {
+            "case": "symbolic n=-2",
+            "pass": true
+          },
+          {
+            "case": "symbolic n=0",
+            "pass": true
+          },
+          {
+            "case": "symbolic n=1",
+            "pass": true
+          },
+          {
+            "case": "symbolic n=2",
+            "pass": true
+          },
+          {
+            "case": "symbolic n=3",
+            "pass": true
+          },
+          {
+            "case": "symbolic n=17",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "Round 7 simple binding checks",
+      "command": [
+        "python",
+        "fixtures/binding_checks.py"
+      ],
+      "expected_total": 3,
+      "exit_code": 0,
+      "ok": true,
+      "result": {
+        "passed": 3,
+        "total": 3,
+        "output": [
+          "PASS: unauthorized effect denied",
+          "PASS: mismatching artifact digest denied",
+          "PASS: reuse binding available"
+        ]
+      }
+    },
+    {
+      "label": "Round 8 fixture self-test (reference only)",
+      "command": [
+        "python",
+        "-m",
+        "benchmark.verify_submission",
+        "--self-test"
+      ],
+      "expected_total": 20,
+      "exit_code": 0,
+      "ok": true,
+      "result": {
+        "passed": 20,
+        "total": 20,
+        "cases": [
+          {
+            "case": "invoice_digest #1",
+            "pass": true
+          },
+          {
+            "case": "invoice_digest #2",
+            "pass": true
+          },
+          {
+            "case": "invoice_digest #3",
+            "pass": true
+          },
+          {
+            "case": "summarize_alerts #1",
+            "pass": true
+          },
+          {
+            "case": "summarize_alerts #2",
+            "pass": true
+          },
+          {
+            "case": "build_manifest #1",
+            "pass": true
+          },
+          {
+            "case": "build_manifest #2",
+            "pass": true
+          },
+          {
+            "case": "build_manifest #3",
+            "pass": true
+          },
+          {
+            "case": "package_blob #1",
+            "pass": true
+          },
+          {
+            "case": "package_blob #2",
+            "pass": true
+          },
+          {
+            "case": "package_blob #3",
+            "pass": true
+          },
+          {
+            "case": "plan_jobs #1",
+            "pass": true
+          },
+          {
+            "case": "plan_jobs #2",
+            "pass": true
+          },
+          {
+            "case": "plan_jobs #3",
+            "pass": true
+          },
+          {
+            "case": "safe_change_report #1",
+            "pass": true
+          },
+          {
+            "case": "safe_change_report #2",
+            "pass": true
+          },
+          {
+            "case": "http_request_summary #1",
+            "pass": true
+          },
+          {
+            "case": "http_request_summary #2",
+            "pass": true
+          },
+          {
+            "case": "png_inspect #1",
+            "pass": true
+          },
+          {
+            "case": "png_inspect #2",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "Round 8 Claude submission_A.py",
+      "command": [
+        "python",
+        "-m",
+        "benchmark.verify_submission",
+        "--submission",
+        "submission_A.py"
+      ],
+      "expected_total": 20,
+      "exit_code": 0,
+      "ok": true,
+      "result": {
+        "passed": 20,
+        "total": 20,
+        "cases": [
+          {
+            "case": "invoice_digest #1",
+            "pass": true
+          },
+          {
+            "case": "invoice_digest #2",
+            "pass": true
+          },
+          {
+            "case": "invoice_digest #3",
+            "pass": true
+          },
+          {
+            "case": "summarize_alerts #1",
+            "pass": true
+          },
+          {
+            "case": "summarize_alerts #2",
+            "pass": true
+          },
+          {
+            "case": "build_manifest #1",
+            "pass": true
+          },
+          {
+            "case": "build_manifest #2",
+            "pass": true
+          },
+          {
+            "case": "build_manifest #3",
+            "pass": true
+          },
+          {
+            "case": "package_blob #1",
+            "pass": true
+          },
+          {
+            "case": "package_blob #2",
+            "pass": true
+          },
+          {
+            "case": "package_blob #3",
+            "pass": true
+          },
+          {
+            "case": "plan_jobs #1",
+            "pass": true
+          },
+          {
+            "case": "plan_jobs #2",
+            "pass": true
+          },
+          {
+            "case": "plan_jobs #3",
+            "pass": true
+          },
+          {
+            "case": "safe_change_report #1",
+            "pass": true
+          },
+          {
+            "case": "safe_change_report #2",
+            "pass": true
+          },
+          {
+            "case": "http_request_summary #1",
+            "pass": true
+          },
+          {
+            "case": "http_request_summary #2",
+            "pass": true
+          },
+          {
+            "case": "png_inspect #1",
+            "pass": true
+          },
+          {
+            "case": "png_inspect #2",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "Round 8 Claude submission_B.py",
+      "command": [
+        "python",
+        "-m",
+        "benchmark.verify_submission",
+        "--submission",
+        "submission_B.py"
+      ],
+      "expected_total": 20,
+      "exit_code": 0,
+      "ok": true,
+      "result": {
+        "passed": 20,
+        "total": 20,
+        "cases": [
+          {
+            "case": "invoice_digest #1",
+            "pass": true
+          },
+          {
+            "case": "invoice_digest #2",
+            "pass": true
+          },
+          {
+            "case": "invoice_digest #3",
+            "pass": true
+          },
+          {
+            "case": "summarize_alerts #1",
+            "pass": true
+          },
+          {
+            "case": "summarize_alerts #2",
+            "pass": true
+          },
+          {
+            "case": "build_manifest #1",
+            "pass": true
+          },
+          {
+            "case": "build_manifest #2",
+            "pass": true
+          },
+          {
+            "case": "build_manifest #3",
+            "pass": true
+          },
+          {
+            "case": "package_blob #1",
+            "pass": true
+          },
+          {
+            "case": "package_blob #2",
+            "pass": true
+          },
+          {
+            "case": "package_blob #3",
+            "pass": true
+          },
+          {
+            "case": "plan_jobs #1",
+            "pass": true
+          },
+          {
+            "case": "plan_jobs #2",
+            "pass": true
+          },
+          {
+            "case": "plan_jobs #3",
+            "pass": true
+          },
+          {
+            "case": "safe_change_report #1",
+            "pass": true
+          },
+          {
+            "case": "safe_change_report #2",
+            "pass": true
+          },
+          {
+            "case": "http_request_summary #1",
+            "pass": true
+          },
+          {
+            "case": "http_request_summary #2",
+            "pass": true
+          },
+          {
+            "case": "png_inspect #1",
+            "pass": true
+          },
+          {
+            "case": "png_inspect #2",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "Round 8 Grok submission_armA.py",
+      "command": [
+        "python",
+        "-m",
+        "benchmark.verify_submission",
+        "--submission",
+        "submission_armA.py"
+      ],
+      "expected_total": 20,
+      "exit_code": 0,
+      "ok": true,
+      "result": {
+        "passed": 20,
+        "total": 20,
+        "cases": [
+          {
+            "case": "invoice_digest #1",
+            "pass": true
+          },
+          {
+            "case": "invoice_digest #2",
+            "pass": true
+          },
+          {
+            "case": "invoice_digest #3",
+            "pass": true
+          },
+          {
+            "case": "summarize_alerts #1",
+            "pass": true
+          },
+          {
+            "case": "summarize_alerts #2",
+            "pass": true
+          },
+          {
+            "case": "build_manifest #1",
+            "pass": true
+          },
+          {
+            "case": "build_manifest #2",
+            "pass": true
+          },
+          {
+            "case": "build_manifest #3",
+            "pass": true
+          },
+          {
+            "case": "package_blob #1",
+            "pass": true
+          },
+          {
+            "case": "package_blob #2",
+            "pass": true
+          },
+          {
+            "case": "package_blob #3",
+            "pass": true
+          },
+          {
+            "case": "plan_jobs #1",
+            "pass": true
+          },
+          {
+            "case": "plan_jobs #2",
+            "pass": true
+          },
+          {
+            "case": "plan_jobs #3",
+            "pass": true
+          },
+          {
+            "case": "safe_change_report #1",
+            "pass": true
+          },
+          {
+            "case": "safe_change_report #2",
+            "pass": true
+          },
+          {
+            "case": "http_request_summary #1",
+            "pass": true
+          },
+          {
+            "case": "http_request_summary #2",
+            "pass": true
+          },
+          {
+            "case": "png_inspect #1",
+            "pass": true
+          },
+          {
+            "case": "png_inspect #2",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "Round 8 Grok submission_armB.py",
+      "command": [
+        "python",
+        "-m",
+        "benchmark.verify_submission",
+        "--submission",
+        "submission_armB.py"
+      ],
+      "expected_total": 20,
+      "exit_code": 0,
+      "ok": true,
+      "result": {
+        "passed": 20,
+        "total": 20,
+        "cases": [
+          {
+            "case": "invoice_digest #1",
+            "pass": true
+          },
+          {
+            "case": "invoice_digest #2",
+            "pass": true
+          },
+          {
+            "case": "invoice_digest #3",
+            "pass": true
+          },
+          {
+            "case": "summarize_alerts #1",
+            "pass": true
+          },
+          {
+            "case": "summarize_alerts #2",
+            "pass": true
+          },
+          {
+            "case": "build_manifest #1",
+            "pass": true
+          },
+          {
+            "case": "build_manifest #2",
+            "pass": true
+          },
+          {
+            "case": "build_manifest #3",
+            "pass": true
+          },
+          {
+            "case": "package_blob #1",
+            "pass": true
+          },
+          {
+            "case": "package_blob #2",
+            "pass": true
+          },
+          {
+            "case": "package_blob #3",
+            "pass": true
+          },
+          {
+            "case": "plan_jobs #1",
+            "pass": true
+          },
+          {
+            "case": "plan_jobs #2",
+            "pass": true
+          },
+          {
+            "case": "plan_jobs #3",
+            "pass": true
+          },
+          {
+            "case": "safe_change_report #1",
+            "pass": true
+          },
+          {
+            "case": "safe_change_report #2",
+            "pass": true
+          },
+          {
+            "case": "http_request_summary #1",
+            "pass": true
+          },
+          {
+            "case": "http_request_summary #2",
+            "pass": true
+          },
+          {
+            "case": "png_inspect #1",
+            "pass": true
+          },
+          {
+            "case": "png_inspect #2",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "label": "Round 8 simple mock security checks",
+      "command": [
+        "python",
+        "-m",
+        "benchmark.verify_submission",
+        "--security"
+      ],
+      "expected_total": 3,
+      "exit_code": 0,
+      "ok": true,
+      "result": {
+        "checks": [
+          [
+            "no_private_access",
+            true
+          ],
+          [
+            "authorized_private",
+            true
+          ],
+          [
+            "revocation",
+            true
+          ]
+        ],
+        "passed": 3,
+        "total": 3
+      }
+    }
+  ],
+  "limitations": [
+    "Runs existing finished code; not independent model authoring or cost trials.",
+    "Official scope/binding checks are mock tests, not a security assurance.",
+    "The self-test compares reference code against itself and is not an agent result.",
+    "No tokenizer, model API, billed cost, or inference latency measurement was performed.",
+    "The historical extended fuzz/audit variants and Language A/B runtimes remain incomplete."
+  ]
+}

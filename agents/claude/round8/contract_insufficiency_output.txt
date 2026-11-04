@@ -1,0 +1,64 @@
+[UNKNOWN] gzip_deterministic: byte-identical to 'gzip.compress level 6, mtime 0'?
+    reference: 43 bytes, XFL=2 OS=3, sha dd08ec7e5719
+    alternative: 43 bytes, XFL=0 OS=3, decompresses equal: True
+    note: contract fixes mtime only; level, XFL/OS header bytes and deflate encoder are unspecified
+[ENTAILED] gzip_deterministic: byte-identical to 'zlib wbits=31 (gzip container)'?
+    reference: 43 bytes, XFL=2 OS=3, sha dd08ec7e5719
+    alternative: 43 bytes, XFL=2 OS=3, decompresses equal: True
+    note: contract fixes mtime only; level, XFL/OS header bytes and deflate encoder are unspecified
+[UNKNOWN] gzip_deterministic: byte-identical to 'Node zlib.gzipSync'?
+    reference: 43 bytes, XFL=2 OS=3, sha dd08ec7e5719
+    alternative: 43 bytes, XFL=0 OS=3, decompresses equal: True
+    note: contract fixes mtime only; level, XFL/OS header bytes and deflate encoder are unspecified
+[UNKNOWN] canonical_json: number 1e16 formatted identically in JS?
+    reference: {"x":1e+16}
+    alternative: {"x":10000000000000000}
+    note: digest_json differs whenever this differs
+[ENTAILED] canonical_json: number 1e21 formatted identically in JS?
+    reference: {"x":1e+21}
+    alternative: {"x":1e+21}
+[UNKNOWN] canonical_json: number -0.0 formatted identically in JS?
+    reference: {"x":-0.0}
+    alternative: {"x":0}
+    note: digest_json differs whenever this differs
+[ENTAILED] canonical_json: number 0.1+0.2 formatted identically in JS?
+    reference: {"x":0.30000000000000004}
+    alternative: {"x":0.30000000000000004}
+[UNKNOWN] canonical_json: number 2**53+1 formatted identically in JS?
+    reference: {"x":9007199254740993}
+    alternative: {"x":9007199254740992}
+    note: digest_json differs whenever this differs
+[UNKNOWN] canonical_json: number 1.0 formatted identically in JS?
+    reference: {"x":1.0}
+    alternative: {"x":1}
+    note: digest_json differs whenever this differs
+[UNKNOWN] canonical_json: lone surrogate '\ud800'
+    reference: '"\ud800"'
+    alternative: "\ud800"
+    note: contract silent; JS escapes, Python behaviour shown
+[UNKNOWN] digest_json: lone surrogate '\ud800'
+    reference: raises UnicodeEncodeError
+    alternative: "\ud800"
+    note: contract silent; JS escapes, Python behaviour shown
+[UNKNOWN] make_query: same encoding as URLSearchParams (another 'standard urlencode')?
+    reference: flag=true&q=a+b~%2A%27&tags=x&tags=y+z
+    alternative: flag=true&q=a+b%7E*%27&tags=x&tags=y+z
+    note: 'standard urlencode' means Python urllib here; ~ * ' are encoded differently by WHATWG serialisers
+[UNKNOWN] toposort: 'lexicographically smallest' identical in JS default ordering?
+    reference: ["\uffff", "\ud83d\ude00"]
+    alternative: ["😀","￿"]
+    note: Python compares code points; JS compares UTF-16 code units
+[REFUTED] png_dimensions: width 2^31 (PNG spec max is 2^31-1), CRC zeroed
+    reference: {'width': 2147483648, 'height': 1}
+    alternative: a spec-validating decoder (e.g. libpng) rejects both
+    note: contract only promises a positive width/height and explicitly skips CRC; callers treating it as validation are wrong
+[REFUTED] png_dimensions: width 1, CRC zeroed
+    reference: {'width': 1, 'height': 1}
+    alternative: a spec-validating decoder (e.g. libpng) rejects both
+    note: contract only promises a positive width/height and explicitly skips CRC; callers treating it as validation are wrong
+[UNKNOWN] normalize_tag: results identical on another runtime?
+    reference: Python 3.12.3 Unicode 15.0.0
+    alternative: Node v22.22.2 ICU Unicode 17.0
+    note: NFKC and casefold tables differ by Unicode version; the shared contract names no version
+
+summary: {'ENTAILED': 3, 'REFUTED': 2, 'UNKNOWN': 11}

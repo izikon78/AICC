@@ -1,0 +1,9 @@
+C1 public-only bind                                        -> PermissionDenied: scope
+C2 authorised bind and call                                -> 2
+C4 call after ttl (1 s)                                    -> InvalidBinding: expired
+C3 old binding after revoke                                -> InvalidBinding: revoked
+P2 revocation seen by a separate PROCESS                   -> 'PermissionDenied revoked'
+P1 scope spoofing (caller asserts project-a)               -> 'same as mock: scopes are caller-asserted, no authentication'
+P3 direct bypass                                           -> 'same as mock: toy_score.__wrapped__ or the undecorated module is reachable in-process'
+
+lines of code in this baseline: 50

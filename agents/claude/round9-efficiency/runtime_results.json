@@ -1,0 +1,146 @@
+{
+ "E1": {
+  "normalize_tag: direct import": {
+   "median_ns": 255.54875,
+   "p95_ns": 330.94805,
+   "n_per_rep": 20000,
+   "reps": 15
+  },
+  "normalize_tag: ordinary policy wrapper": {
+   "median_ns": 429.85055,
+   "p95_ns": 450.1268,
+   "n_per_rep": 20000,
+   "reps": 15
+  },
+  "normalize_tag: AICC mock binding (per-call revalidation)": {
+   "median_ns": 14973.2382,
+   "p95_ns": 15219.2934,
+   "n_per_rep": 20000,
+   "reps": 15
+  },
+  "digest_json: direct import": {
+   "median_ns": 3332.53375,
+   "p95_ns": 3679.20445,
+   "n_per_rep": 20000,
+   "reps": 15
+  },
+  "digest_json: ordinary policy wrapper": {
+   "median_ns": 3589.67585,
+   "p95_ns": 3800.6037,
+   "n_per_rep": 20000,
+   "reps": 15
+  },
+  "digest_json: AICC mock binding (per-call revalidation)": {
+   "median_ns": 18914.9852,
+   "p95_ns": 19208.3605,
+   "n_per_rep": 20000,
+   "reps": 15
+  },
+  "group_by_window: direct import": {
+   "median_ns": 72203.02,
+   "p95_ns": 73529.694,
+   "n_per_rep": 2000,
+   "reps": 15
+  },
+  "group_by_window: ordinary policy wrapper": {
+   "median_ns": 71888.9445,
+   "p95_ns": 72658.43,
+   "n_per_rep": 2000,
+   "reps": 15
+  },
+  "group_by_window: AICC mock binding (per-call revalidation)": {
+   "median_ns": 89124.526,
+   "p95_ns": 90238.5045,
+   "n_per_rep": 2000,
+   "reps": 15
+  },
+  "bind() itself (one-time, per capability)": {
+   "median_ns": 15703.8125,
+   "p95_ns": 16240.976,
+   "n_per_rep": 2000,
+   "reps": 15
+  }
+ },
+ "E2": {
+  "in-process direct call": {
+   "median_ns": 258.11705,
+   "p95_ns": 456.16865,
+   "n_per_rep": 20000,
+   "reps": 15
+  },
+  "persistent isolated worker process (JSON over pipes)": {
+   "median_ns": 13015.0535,
+   "p95_ns": 15918.7605,
+   "n_per_rep": 2000,
+   "reps": 15
+  },
+  "spawn a fresh Python process per call": {
+   "median_ns": 33989938.0,
+   "p95_ns": 38569921.333333336,
+   "n_per_rep": 3,
+   "reps": 10
+  }
+ },
+ "E3": {
+  "n=3: native Python": {
+   "median_ns": 641.41855,
+   "p95_ns": 674.92475,
+   "n_per_rep": 20000,
+   "reps": 15
+  },
+  "n=3: Language A projected to Python (compiled once)": {
+   "median_ns": 666.87145,
+   "p95_ns": 687.8852,
+   "n_per_rep": 20000,
+   "reps": 15
+  },
+  "n=3: Round 7 symbolic runtime (parse + interpret each call)": {
+   "median_ns": 27547.6762,
+   "p95_ns": 32616.8978,
+   "n_per_rep": 5000,
+   "reps": 15
+  },
+  "n=3: Language A AST interpreter (parsed once)": {
+   "median_ns": 14908.2704,
+   "p95_ns": 18825.414,
+   "n_per_rep": 5000,
+   "reps": 15
+  },
+  "n=3: Language B decode + interpret each call": {
+   "median_ns": 41554.9722,
+   "p95_ns": 64357.1236,
+   "n_per_rep": 5000,
+   "reps": 15
+  },
+  "n=1000: native Python": {
+   "median_ns": 184661.635,
+   "p95_ns": 350104.41,
+   "n_per_rep": 200,
+   "reps": 15
+  },
+  "n=1000: Language A projected to Python (compiled once)": {
+   "median_ns": 205241.42,
+   "p95_ns": 234579.195,
+   "n_per_rep": 200,
+   "reps": 15
+  },
+  "n=1000: Round 7 symbolic runtime (parse + interpret each call)": {
+   "median_ns": 949942.96,
+   "p95_ns": 1132181.82,
+   "n_per_rep": 50,
+   "reps": 15
+  },
+  "n=1000: Language A AST interpreter (parsed once)": {
+   "median_ns": 4135823.9,
+   "p95_ns": 4264782.66,
+   "n_per_rep": 50,
+   "reps": 15
+  },
+  "n=1000: Language B decode + interpret each call": {
+   "median_ns": 4283615.84,
+   "p95_ns": 5852119.28,
+   "n_per_rep": 50,
+   "reps": 15
+  }
+ }
+}

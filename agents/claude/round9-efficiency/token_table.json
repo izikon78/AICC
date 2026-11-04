@@ -1,0 +1,62 @@
+[
+ {
+  "arm": "A conventional",
+  "artefact": "R8 tasks 1-8 solution (submission_A.py)",
+  "bytes": 2122,
+  "o200k_tokens": 528
+ },
+ {
+  "arm": "A conventional",
+  "artefact": "R8 shared docs read (API_CONTRACTS.md + TASKS.md)",
+  "bytes": 7615,
+  "o200k_tokens": 1682
+ },
+ {
+  "arm": "B AICC",
+  "artefact": "R8 tasks 1-8 solution (submission_B.py)",
+  "bytes": 2681,
+  "o200k_tokens": 713
+ },
+ {
+  "arm": "B AICC",
+  "artefact": "R8 docs read (same shared docs; no smaller cards exist in the packet)",
+  "bytes": 7615,
+  "o200k_tokens": 1682
+ },
+ {
+  "arm": "A conventional",
+  "artefact": "R7 controller in Python (controller_submission.py)",
+  "bytes": 549,
+  "o200k_tokens": 139
+ },
+ {
+  "arm": "A conventional",
+  "artefact": "R7 controller, Python with the same host-held templates",
+  "bytes": 61,
+  "o200k_tokens": 27
+ },
+ {
+  "arm": "C symbolic",
+  "artefact": "R7 controller in toy symbolic grammar (.sym)",
+  "bytes": 45,
+  "o200k_tokens": 29
+ },
+ {
+  "arm": "C symbolic",
+  "artefact": "R7 grammar documentation the author read (symbolic_runtime.py)",
+  "bytes": 4573,
+  "o200k_tokens": 1143
+ },
+ {
+  "arm": "C symbolic",
+  "artefact": "v2 Language A controller (if/else)",
+  "bytes": 140,
+  "o200k_tokens": 47
+ },
+ {
+  "arm": "C symbolic",
+  "artefact": "v2 Language A reference sheet (per session)",
+  "bytes": 968,
+  "o200k_tokens": 317
+ }
+]

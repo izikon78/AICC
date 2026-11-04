@@ -1,0 +1,79 @@
+{
+ "benchmark/public/API_CONTRACTS.md": {
+  "bytes": 4829,
+  "o200k": 1043,
+  "sha256": "6ee91c58b6ebaa3d99fc76962925bcaf15d439c8181c0702d4133fd37ac4a109"
+ },
+ "benchmark/public/TASKS.md": {
+  "bytes": 2786,
+  "o200k": 639,
+  "sha256": "f11305413abb09b14f46ab733b654798018e4356e31ec9ceba9edf634d870b6e"
+ },
+ "submission_A.py": {
+  "bytes": 2122,
+  "o200k": 528,
+  "sha256": "d1243abbe8ca666f75dc92e28ad9a7e6dea390e4261f5335ad871f872504619d"
+ },
+ "submission_B.py": {
+  "bytes": 2681,
+  "o200k": 713,
+  "sha256": "4b57458276d8c8cb7f6630971fe339932b2c0da85ad78d9f08fe31fe24a2a1d7"
+ },
+ "private_arm.py": {
+  "bytes": 370,
+  "o200k": 83,
+  "sha256": "5eb6f209c9f2fff1cf759aeb37638f2ef85375cc56b0ab6fc13baaa8b58803d2"
+ },
+ "conventional_envelope.py": {
+  "bytes": 3172,
+  "o200k": 790,
+  "sha256": "60efe580c1764a94c50167f076531c1353247fd0f40a4e6f574de88f593b99c5"
+ },
+ "agreement/group_by_window.contract.yaml": {
+  "bytes": 2487,
+  "o200k": 625,
+  "sha256": "e90e4f201f4bcfdea27a59c89f9559236fd03c2579f29e9ec74e919f96138631"
+ },
+ "agreement/alt_python.py": {
+  "bytes": 1323,
+  "o200k": 347,
+  "sha256": "d84a545365d94cec678f5dc352d02d1ccb8f4619ec3883d641019c41fcc5b6e8"
+ },
+ "agreement/alt_js_naive.js": {
+  "bytes": 1221,
+  "o200k": 346,
+  "sha256": "ed2b691ec68b6893e6690d3f5d764fc08975dcc54516a4da9734dcbc503db945"
+ },
+ "agreement/alt_js_faithful.js": {
+  "bytes": 1672,
+  "o200k": 492,
+  "sha256": "3d16d71dd47a26009f1f9a5e5dcdcbdb6ca5a7e8b5fdda45fd9a17db9479ae60"
+ },
+ "agreement/tables/python_whitespace.json": {
+  "bytes": 152,
+  "o200k": 104,
+  "sha256": "9513c05bd75386a005e0fd6c727f5c584c23dc7e39659ddf56cd21a7e8df801a"
+ },
+ "agreement/tables/casefold_full.json": {
+  "bytes": 23174,
+  "o200k": 12500,
+  "sha256": "3f7a96ad5421b852d339aa5d822e6eefdd6bacd5ae9d229ac660fb798bc351b4"
+ },
+ "agreement/conformance_vectors.json": {
+  "bytes": 1555359,
+  "o200k": 525341,
+  "sha256": "503a472cba82406c0aa867382d282c065154a4c65286c85db1dd3416ffbbf1f1"
+ },
+ "shared contract row for group_by_window": {
+  "bytes": 302,
+  "o200k": 61
+ },
+ "Arm A import of one capability": {
+  "bytes": 57,
+  "o200k": 10
+ },
+ "Arm B bind of one capability": {
+  "bytes": 51,
+  "o200k": 15
+ }
+}

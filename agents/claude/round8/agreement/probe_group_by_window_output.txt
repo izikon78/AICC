@@ -1,0 +1,38 @@
+Q: device normalisation includes NFKC? ('ﬁx' vs 'fix')
+   -> 1
+Q: device normalisation casefolds? ('STRASSE' vs 'straße')
+   -> 1
+Q: device internal whitespace collapsed? ('pump  1' vs 'pump 1')
+   -> 1
+Q: message keeps case? ('High' vs 'high')
+   -> 2
+Q: message edges trimmed? (' high pressure ' vs 'high pressure')
+   -> 1
+Q: window boundary: t=0 and t=60 with window 60
+   -> 2
+Q: window measured from FIRST, not last (0, 40, 80; window 60)
+   -> [2, 1]
+Q: output values for a group (normalised fields?)
+   -> [{"device": "pump-1", "kind": "pressure", "message": "high pressure", "first": 5, "last": 5, "count": 1}]
+Q: output order: two keys, later key first in input
+   -> ["a", "b"]
+Q: output order on equal first timestamps (b before a in input)
+   -> ["b", "a"]
+Q: stable sort: equal timestamps keep input order in a group?
+   -> [{"device": "pump-1", "kind": "pressure", "message": "x", "first": 1, "last": 1, "count": 2}]
+Q: float timestamps accepted?
+   -> raises TypeError: timestamp must be int
+Q: bool timestamp?
+   -> raises TypeError: timestamp must be int
+Q: missing device field
+   -> raises TypeError: device must be str
+Q: window = 0
+   -> raises ValueError: window must be positive integer
+Q: window = 1.5 (non-integer)
+   -> raises ValueError: window must be positive integer
+Q: extra fields (severity, event_id) kept in output?
+   -> [{"device": "pump-1", "kind": "pressure", "message": "high pressure", "first": 0, "last": 0, "count": 1}]
+Q: empty event list
+   -> []
+
+probes needed: 18
