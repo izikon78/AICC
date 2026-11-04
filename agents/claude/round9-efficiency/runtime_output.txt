@@ -1,0 +1,26 @@
+E1 per-call overhead of validated bindings (Round 8 mock host)
+  normalize_tag: direct import                               median       0.26 us   p95       0.33 us
+  normalize_tag: ordinary policy wrapper                     median       0.43 us   p95       0.45 us
+  normalize_tag: AICC mock binding (per-call revalidation)   median      14.97 us   p95      15.22 us
+  digest_json: direct import                                 median       3.33 us   p95       3.68 us
+  digest_json: ordinary policy wrapper                       median       3.59 us   p95       3.80 us
+  digest_json: AICC mock binding (per-call revalidation)     median      18.91 us   p95      19.21 us
+  group_by_window: direct import                             median      72.20 us   p95      73.53 us
+  group_by_window: ordinary policy wrapper                   median      71.89 us   p95      72.66 us
+  group_by_window: AICC mock binding (per-call revalidation) median      89.12 us   p95      90.24 us
+  bind() itself (one-time, per capability)                   median      15.70 us   p95      16.24 us
+E2 process isolation cost for one normalize_tag call
+  in-process direct call                                     median       0.26 us   p95       0.46 us
+  persistent isolated worker process (JSON over pipes)       median      13.02 us   p95      15.92 us
+  spawn a fresh Python process per call                      median   33989.94 us   p95   38569.92 us
+E3 executing the Round 7 controller task (n runs) in each representation
+  n=3: native Python                                         median       0.64 us   p95       0.67 us
+  n=3: Language A projected to Python (compiled once)        median       0.67 us   p95       0.69 us
+  n=3: Round 7 symbolic runtime (parse + interpret each call) median      27.55 us   p95      32.62 us
+  n=3: Language A AST interpreter (parsed once)              median      14.91 us   p95      18.83 us
+  n=3: Language B decode + interpret each call               median      41.55 us   p95      64.36 us
+  n=1000: native Python                                      median     184.66 us   p95     350.10 us
+  n=1000: Language A projected to Python (compiled once)     median     205.24 us   p95     234.58 us
+  n=1000: Round 7 symbolic runtime (parse + interpret each call) median     949.94 us   p95    1132.18 us
+  n=1000: Language A AST interpreter (parsed once)           median    4135.82 us   p95    4264.78 us
+  n=1000: Language B decode + interpret each call            median    4283.62 us   p95    5852.12 us

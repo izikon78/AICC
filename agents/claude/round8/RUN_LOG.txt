@@ -1,0 +1,424 @@
+
+=================================================================== INTEGRITY: sha256sum -c SHA256SUMS.txt
+00_SEND_TO_ALL_AGENTS.md: OK
+01_EXPERIMENT_PROTOCOL.md: OK
+02_RESULTS_TEMPLATE.md: OK
+ARCHITECTURE_RECOMMENDATION.md: OK
+ARTICLE_ADDENDUM.md: OK
+README.md: OK
+ROUND7_LESSONS.md: OK
+benchmark/__init__.py: OK
+benchmark/host/__init__.py: OK
+benchmark/host/registry.py: OK
+benchmark/public/API_CONTRACTS.md: OK
+benchmark/public/TASKS.md: OK
+benchmark/public/__init__.py: OK
+benchmark/public/baseline_api.py: OK
+benchmark/sealed/__init__.py: OK
+benchmark/sealed/near_miss.py: OK
+benchmark/sealed/private_core.py: OK
+benchmark/sealed/public_core.py: OK
+benchmark/sealed/reference_solution.py: OK
+benchmark/token_measure.py: OK
+benchmark/verify_submission.py: OK
+
+=================================================================== SELF-TEST (organiser fixtures, not an agent result)
+self-test 20 / 20
+
+=================================================================== SECURITY: python -m benchmark.verify_submission --security
+{
+  "checks": [
+    [
+      "no_private_access",
+      true
+    ],
+    [
+      "authorized_private",
+      true
+    ],
+    [
+      "revocation",
+      true
+    ]
+  ],
+  "passed": 3,
+  "total": 3
+}
+
+=================================================================== ARM A: python -m benchmark.verify_submission --submission submission_A.py
+{
+  "passed": 20,
+  "total": 20,
+  "cases": [
+    {
+      "case": "invoice_digest #1",
+      "pass": true
+    },
+    {
+      "case": "invoice_digest #2",
+      "pass": true
+    },
+    {
+      "case": "invoice_digest #3",
+      "pass": true
+    },
+    {
+      "case": "summarize_alerts #1",
+      "pass": true
+    },
+    {
+      "case": "summarize_alerts #2",
+      "pass": true
+    },
+    {
+      "case": "build_manifest #1",
+      "pass": true
+    },
+    {
+      "case": "build_manifest #2",
+      "pass": true
+    },
+    {
+      "case": "build_manifest #3",
+      "pass": true
+    },
+    {
+      "case": "package_blob #1",
+      "pass": true
+    },
+    {
+      "case": "package_blob #2",
+      "pass": true
+    },
+    {
+      "case": "package_blob #3",
+      "pass": true
+    },
+    {
+      "case": "plan_jobs #1",
+      "pass": true
+    },
+    {
+      "case": "plan_jobs #2",
+      "pass": true
+    },
+    {
+      "case": "plan_jobs #3",
+      "pass": true
+    },
+    {
+      "case": "safe_change_report #1",
+      "pass": true
+    },
+    {
+      "case": "safe_change_report #2",
+      "pass": true
+    },
+    {
+      "case": "http_request_summary #1",
+      "pass": true
+    },
+    {
+      "case": "http_request_summary #2",
+      "pass": true
+    },
+    {
+      "case": "png_inspect #1",
+      "pass": true
+    },
+    {
+      "case": "png_inspect #2",
+      "pass": true
+    }
+  ]
+}
+
+=================================================================== ARM B: python -m benchmark.verify_submission --submission submission_B.py
+{
+  "passed": 20,
+  "total": 20,
+  "cases": [
+    {
+      "case": "invoice_digest #1",
+      "pass": true
+    },
+    {
+      "case": "invoice_digest #2",
+      "pass": true
+    },
+    {
+      "case": "invoice_digest #3",
+      "pass": true
+    },
+    {
+      "case": "summarize_alerts #1",
+      "pass": true
+    },
+    {
+      "case": "summarize_alerts #2",
+      "pass": true
+    },
+    {
+      "case": "build_manifest #1",
+      "pass": true
+    },
+    {
+      "case": "build_manifest #2",
+      "pass": true
+    },
+    {
+      "case": "build_manifest #3",
+      "pass": true
+    },
+    {
+      "case": "package_blob #1",
+      "pass": true
+    },
+    {
+      "case": "package_blob #2",
+      "pass": true
+    },
+    {
+      "case": "package_blob #3",
+      "pass": true
+    },
+    {
+      "case": "plan_jobs #1",
+      "pass": true
+    },
+    {
+      "case": "plan_jobs #2",
+      "pass": true
+    },
+    {
+      "case": "plan_jobs #3",
+      "pass": true
+    },
+    {
+      "case": "safe_change_report #1",
+      "pass": true
+    },
+    {
+      "case": "safe_change_report #2",
+      "pass": true
+    },
+    {
+      "case": "http_request_summary #1",
+      "pass": true
+    },
+    {
+      "case": "http_request_summary #2",
+      "pass": true
+    },
+    {
+      "case": "png_inspect #1",
+      "pass": true
+    },
+    {
+      "case": "png_inspect #2",
+      "pass": true
+    }
+  ]
+}
+
+=================================================================== ARM C task 9: project_risk through the host
+project_risk(event) -> 0
+
+=================================================================== ARM C checks + adversarial host probes
+
+[C1 public-only bind of the private capability]
+  PermissionDenied: scope
+
+[C2 authorised project-scope bind and call]
+  score = 0
+
+[C3 revoke, then reuse the OLD callable and try to re-bind]
+  before revoke: 0
+  old callable after revoke -> InvalidBinding policy changed
+  re-bind on same host -> PermissionDenied revoked
+
+[C4 expiry: ttl_seconds=1, call after 1.2 s]
+  within ttl: 0
+  after ttl -> InvalidBinding expired
+
+[P1 scope spoofing: anonymous principal simply asserts scope project-a]
+  bound and called by anonymous: 0
+
+[P2 revocation is per host instance: revoke on rt1, bind on a new Runtime()]
+  new host instance still binds the revoked capability: 0
+
+[P3 direct bypass: private implementation reachable as registry.private_core]
+  callable names (no source read): ['risk_score_private']
+  called with no authorisation at all: 0
+
+[P4 false declared effects: replace the catalogue entry for a capability declared pure with one that writes a file]
+  catalogue key: pub.normalize_tag@1 | declared effects: set()
+  returned: 'hello world' | undeclared file write happened: True
+
+[P5 near-miss candidates actually bindable and observably wrong]
+  parse_money(1.005): 101 | bankers near-miss: 100
+  safe_path(a/../../etc/passwd) -> ValueError
+  loose near-miss returns: 'a///etc/passwd'
+  group_by_window groups: 1 | group_by_eventid groups: 2
+
+[P6 identity check: file on disk modified AFTER bind (temporary copy of the packet)]
+  before edit: 44136fa355b3678a
+  after on-disk edit -> InvalidBinding artifact changed
+
+[P7 identity check fooled: tampered module substituted BEFORE import, file on disk untouched]
+  bind and call accepted; digest_json({}) -> ffffffffffffffff (real value starts 44136fa355b3678a)
+
+=================================================================== ARM C fair baseline: conventional policy envelope
+C1 public-only bind                                        -> PermissionDenied: scope
+C2 authorised bind and call                                -> 2
+C4 call after ttl (1 s)                                    -> InvalidBinding: expired
+C3 old binding after revoke                                -> InvalidBinding: revoked
+P2 revocation seen by a separate PROCESS                   -> 'PermissionDenied revoked'
+P1 scope spoofing (caller asserts project-a)               -> 'same as mock: scopes are caller-asserted, no authentication'
+P3 direct bypass                                           -> 'same as mock: toy_score.__wrapped__ or the undecorated module is reachable in-process'
+
+lines of code in this baseline: 50
+
+=================================================================== AGREEMENT: black-box probes of group_by_window
+Q: device normalisation includes NFKC? ('ﬁx' vs 'fix')
+   -> 1
+Q: device normalisation casefolds? ('STRASSE' vs 'straße')
+   -> 1
+Q: device internal whitespace collapsed? ('pump  1' vs 'pump 1')
+   -> 1
+Q: message keeps case? ('High' vs 'high')
+   -> 2
+Q: message edges trimmed? (' high pressure ' vs 'high pressure')
+   -> 1
+Q: window boundary: t=0 and t=60 with window 60
+   -> 2
+Q: window measured from FIRST, not last (0, 40, 80; window 60)
+   -> [2, 1]
+Q: output values for a group (normalised fields?)
+   -> [{"device": "pump-1", "kind": "pressure", "message": "high pressure", "first": 5, "last": 5, "count": 1}]
+Q: output order: two keys, later key first in input
+   -> ["a", "b"]
+Q: output order on equal first timestamps (b before a in input)
+   -> ["b", "a"]
+Q: stable sort: equal timestamps keep input order in a group?
+   -> [{"device": "pump-1", "kind": "pressure", "message": "x", "first": 1, "last": 1, "count": 2}]
+Q: float timestamps accepted?
+   -> raises TypeError: timestamp must be int
+Q: bool timestamp?
+   -> raises TypeError: timestamp must be int
+Q: missing device field
+   -> raises TypeError: device must be str
+Q: window = 0
+   -> raises ValueError: window must be positive integer
+Q: window = 1.5 (non-integer)
+   -> raises ValueError: window must be positive integer
+Q: extra fields (severity, event_id) kept in output?
+   -> [{"device": "pump-1", "kind": "pressure", "message": "high pressure", "first": 0, "last": 0, "count": 1}]
+Q: empty event list
+   -> []
+
+probes needed: 18
+
+=================================================================== AGREEMENT: differential test of three independent variants
+variant                                             clean        sharp s    final sigma       ligature U+001C separat     U+FEFF BOM  invalid  total
+alt_python (contract)                            200/200        200/200        200/200        200/200        200/200        200/200     6/6   1206/1206
+alt_js_naive (shared text, JS defaults)          200/200         67/200         61/200        200/200         10/200         15/200     6/6   559/1206
+alt_js_faithful (contract tables)                200/200        200/200        200/200        200/200        200/200        200/200     6/6   1206/1206
+
+first divergence for alt_js_naive (shared text, JS defaults) (sharp s):
+  input devices/messages: [('İstanbul', 'high pressure'), ('Straße', ' high  pressure '), ('Pump-1', ' high  pressure ')]
+  reference: {"ok": true, "groups": [{"device": "pump-1", "kind": "pressure", "message": "High pressure", "first": 3, "last": 3, "count": 1}, {"device": "strasse", "kind": "
+  variant:   {"ok": true, "groups": [{"device": "pump-1", "kind": "pressure", "message": "High pressure", "first": 3, "last": 3, "count": 1}, {"device": "straße", "kind": "t
+
+conformance_vectors.json: 1206 cases, 1555359 bytes
+
+=================================================================== CONTRACT INSUFFICIENCY probes
+[UNKNOWN] gzip_deterministic: byte-identical to 'gzip.compress level 6, mtime 0'?
+    reference: 43 bytes, XFL=2 OS=3, sha dd08ec7e5719
+    alternative: 43 bytes, XFL=0 OS=3, decompresses equal: True
+    note: contract fixes mtime only; level, XFL/OS header bytes and deflate encoder are unspecified
+[ENTAILED] gzip_deterministic: byte-identical to 'zlib wbits=31 (gzip container)'?
+    reference: 43 bytes, XFL=2 OS=3, sha dd08ec7e5719
+    alternative: 43 bytes, XFL=2 OS=3, decompresses equal: True
+    note: contract fixes mtime only; level, XFL/OS header bytes and deflate encoder are unspecified
+[UNKNOWN] gzip_deterministic: byte-identical to 'Node zlib.gzipSync'?
+    reference: 43 bytes, XFL=2 OS=3, sha dd08ec7e5719
+    alternative: 43 bytes, XFL=0 OS=3, decompresses equal: True
+    note: contract fixes mtime only; level, XFL/OS header bytes and deflate encoder are unspecified
+[UNKNOWN] canonical_json: number 1e16 formatted identically in JS?
+    reference: {"x":1e+16}
+    alternative: {"x":10000000000000000}
+    note: digest_json differs whenever this differs
+[ENTAILED] canonical_json: number 1e21 formatted identically in JS?
+    reference: {"x":1e+21}
+    alternative: {"x":1e+21}
+[UNKNOWN] canonical_json: number -0.0 formatted identically in JS?
+    reference: {"x":-0.0}
+    alternative: {"x":0}
+    note: digest_json differs whenever this differs
+[ENTAILED] canonical_json: number 0.1+0.2 formatted identically in JS?
+    reference: {"x":0.30000000000000004}
+    alternative: {"x":0.30000000000000004}
+[UNKNOWN] canonical_json: number 2**53+1 formatted identically in JS?
+    reference: {"x":9007199254740993}
+    alternative: {"x":9007199254740992}
+    note: digest_json differs whenever this differs
+[UNKNOWN] canonical_json: number 1.0 formatted identically in JS?
+    reference: {"x":1.0}
+    alternative: {"x":1}
+    note: digest_json differs whenever this differs
+[UNKNOWN] canonical_json: lone surrogate '\ud800'
+    reference: '"\ud800"'
+    alternative: "\ud800"
+    note: contract silent; JS escapes, Python behaviour shown
+[UNKNOWN] digest_json: lone surrogate '\ud800'
+    reference: raises UnicodeEncodeError
+    alternative: "\ud800"
+    note: contract silent; JS escapes, Python behaviour shown
+[UNKNOWN] make_query: same encoding as URLSearchParams (another 'standard urlencode')?
+    reference: flag=true&q=a+b~%2A%27&tags=x&tags=y+z
+    alternative: flag=true&q=a+b%7E*%27&tags=x&tags=y+z
+    note: 'standard urlencode' means Python urllib here; ~ * ' are encoded differently by WHATWG serialisers
+[UNKNOWN] toposort: 'lexicographically smallest' identical in JS default ordering?
+    reference: ["\uffff", "\ud83d\ude00"]
+    alternative: ["😀","￿"]
+    note: Python compares code points; JS compares UTF-16 code units
+[REFUTED] png_dimensions: width 2^31 (PNG spec max is 2^31-1), CRC zeroed
+    reference: {'width': 2147483648, 'height': 1}
+    alternative: a spec-validating decoder (e.g. libpng) rejects both
+    note: contract only promises a positive width/height and explicitly skips CRC; callers treating it as validation are wrong
+[REFUTED] png_dimensions: width 1, CRC zeroed
+    reference: {'width': 1, 'height': 1}
+    alternative: a spec-validating decoder (e.g. libpng) rejects both
+    note: contract only promises a positive width/height and explicitly skips CRC; callers treating it as validation are wrong
+[UNKNOWN] normalize_tag: results identical on another runtime?
+    reference: Python 3.12.3 Unicode 15.0.0
+    alternative: Node v22.22.2 ICU Unicode 17.0
+    note: NFKC and casefold tables differ by Unicode version; the shared contract names no version
+
+summary: {'ENTAILED': 3, 'REFUTED': 2, 'UNKNOWN': 11}
+
+=================================================================== TOKENS: python -m benchmark.token_measure submission_A.py submission_B.py
+{"file": "submission_A.py", "bytes": 2122, "characters": 2122, "tokens": 528, "encoding": "o200k_base"}
+{"file": "submission_B.py", "bytes": 2681, "characters": 2681, "tokens": 713, "encoding": "o200k_base"}
+
+=================================================================== TOKENS + SHA-256 of generated artefacts
+benchmark/public/API_CONTRACTS.md            bytes     4829  o200k    1043  sha256 6ee91c58b6ebaa3d
+benchmark/public/TASKS.md                    bytes     2786  o200k     639  sha256 f11305413abb09b1
+submission_A.py                              bytes     2122  o200k     528  sha256 d1243abbe8ca666f
+submission_B.py                              bytes     2681  o200k     713  sha256 4b57458276d8c8cb
+private_arm.py                               bytes      370  o200k      83  sha256 5eb6f209c9f2fff1
+conventional_envelope.py                     bytes     3172  o200k     790  sha256 60efe580c1764a94
+agreement/group_by_window.contract.yaml      bytes     2487  o200k     625  sha256 e90e4f201f4bcfde
+agreement/alt_python.py                      bytes     1323  o200k     347  sha256 d84a545365d94cec
+agreement/alt_js_naive.js                    bytes     1221  o200k     346  sha256 ed2b691ec68b6893
+agreement/alt_js_faithful.js                 bytes     1672  o200k     492  sha256 3d16d71dd47a2600
+agreement/tables/python_whitespace.json      bytes      152  o200k     104  sha256 9513c05bd75386a0
+agreement/tables/casefold_full.json          bytes    23174  o200k   12500  sha256 3f7a96ad5421b852
+agreement/conformance_vectors.json           bytes  1555359  o200k  525341  sha256 503a472cba82406c
+shared contract row for group_by_window      bytes      302  o200k      61
+Arm A import of one capability               bytes       57  o200k      10
+Arm B bind of one capability                 bytes       51  o200k      15
+
+=================================================================== INTEGRITY after all runs
+21

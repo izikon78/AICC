@@ -1,0 +1,11 @@
+variant                                             clean        sharp s    final sigma       ligature U+001C separat     U+FEFF BOM  invalid  total
+alt_python (contract)                            200/200        200/200        200/200        200/200        200/200        200/200     6/6   1206/1206
+alt_js_naive (shared text, JS defaults)          200/200         67/200         61/200        200/200         10/200         15/200     6/6   559/1206
+alt_js_faithful (contract tables)                200/200        200/200        200/200        200/200        200/200        200/200     6/6   1206/1206
+
+first divergence for alt_js_naive (shared text, JS defaults) (sharp s):
+  input devices/messages: [('İstanbul', 'high pressure'), ('Straße', ' high  pressure '), ('Pump-1', ' high  pressure ')]
+  reference: {"ok": true, "groups": [{"device": "pump-1", "kind": "pressure", "message": "High pressure", "first": 3, "last": 3, "count": 1}, {"device": "strasse", "kind": "
+  variant:   {"ok": true, "groups": [{"device": "pump-1", "kind": "pressure", "message": "High pressure", "first": 3, "last": 3, "count": 1}, {"device": "straße", "kind": "t
+
+conformance_vectors.json: 1206 cases, 1555359 bytes

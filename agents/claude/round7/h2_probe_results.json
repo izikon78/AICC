@@ -1,0 +1,10 @@
+{
+ "mutations": {
+  "rejected by grammar": 202,
+  "harmless": 9,
+  "crashed while running": 10,
+  "parser crash (non-grammar exception)": 3,
+  "silently wrong": 22
+ },
+ "total": 246
+}

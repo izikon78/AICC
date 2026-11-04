@@ -1,0 +1,104 @@
+{
+ "alt_python (contract)": {
+  "clean": [
+   200,
+   200
+  ],
+  "sharp s": [
+   200,
+   200
+  ],
+  "final sigma": [
+   200,
+   200
+  ],
+  "ligature": [
+   200,
+   200
+  ],
+  "U+001C separator": [
+   200,
+   200
+  ],
+  "U+FEFF BOM": [
+   200,
+   200
+  ],
+  "invalid": [
+   6,
+   6
+  ],
+  "total": [
+   1206,
+   1206
+  ]
+ },
+ "alt_js_naive (shared text, JS defaults)": {
+  "clean": [
+   200,
+   200
+  ],
+  "sharp s": [
+   67,
+   200
+  ],
+  "final sigma": [
+   61,
+   200
+  ],
+  "ligature": [
+   200,
+   200
+  ],
+  "U+001C separator": [
+   10,
+   200
+  ],
+  "U+FEFF BOM": [
+   15,
+   200
+  ],
+  "invalid": [
+   6,
+   6
+  ],
+  "total": [
+   559,
+   1206
+  ]
+ },
+ "alt_js_faithful (contract tables)": {
+  "clean": [
+   200,
+   200
+  ],
+  "sharp s": [
+   200,
+   200
+  ],
+  "final sigma": [
+   200,
+   200
+  ],
+  "ligature": [
+   200,
+   200
+  ],
+  "U+001C separator": [
+   200,
+   200
+  ],
+  "U+FEFF BOM": [
+   200,
+   200
+  ],
+  "invalid": [
+   6,
+   6
+  ],
+  "total": [
+   1206,
+   1206
+  ]
+ }
+}

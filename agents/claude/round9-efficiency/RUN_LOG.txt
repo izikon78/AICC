@@ -1,0 +1,78 @@
+E1 per-call overhead of validated bindings (Round 8 mock host)
+  normalize_tag: direct import                               median       0.26 us   p95       0.33 us
+  normalize_tag: ordinary policy wrapper                     median       0.43 us   p95       0.45 us
+  normalize_tag: AICC mock binding (per-call revalidation)   median      14.97 us   p95      15.22 us
+  digest_json: direct import                                 median       3.33 us   p95       3.68 us
+  digest_json: ordinary policy wrapper                       median       3.59 us   p95       3.80 us
+  digest_json: AICC mock binding (per-call revalidation)     median      18.91 us   p95      19.21 us
+  group_by_window: direct import                             median      72.20 us   p95      73.53 us
+  group_by_window: ordinary policy wrapper                   median      71.89 us   p95      72.66 us
+  group_by_window: AICC mock binding (per-call revalidation) median      89.12 us   p95      90.24 us
+  bind() itself (one-time, per capability)                   median      15.70 us   p95      16.24 us
+E2 process isolation cost for one normalize_tag call
+  in-process direct call                                     median       0.26 us   p95       0.46 us
+  persistent isolated worker process (JSON over pipes)       median      13.02 us   p95      15.92 us
+  spawn a fresh Python process per call                      median   33989.94 us   p95   38569.92 us
+E3 executing the Round 7 controller task (n runs) in each representation
+  n=3: native Python                                         median       0.64 us   p95       0.67 us
+  n=3: Language A projected to Python (compiled once)        median       0.67 us   p95       0.69 us
+  n=3: Round 7 symbolic runtime (parse + interpret each call) median      27.55 us   p95      32.62 us
+  n=3: Language A AST interpreter (parsed once)              median      14.91 us   p95      18.83 us
+  n=3: Language B decode + interpret each call               median      41.55 us   p95      64.36 us
+  n=1000: native Python                                      median     184.66 us   p95     350.10 us
+  n=1000: Language A projected to Python (compiled once)     median     205.24 us   p95     234.58 us
+  n=1000: Round 7 symbolic runtime (parse + interpret each call) median     949.94 us   p95    1132.18 us
+  n=1000: Language A AST interpreter (parsed once)           median    4135.82 us   p95    4264.78 us
+  n=1000: Language B decode + interpret each call            median    4283.62 us   p95    5852.12 us
+  instantiate_us: 164.8
+  wasm_binary_bytes: 113.0
+  n=3 plain JS                       median 0.091 us  p95 0.143 us
+  n=3 Wasm + host imports            median 0.118 us  p95 0.171 us
+  n=1000 plain JS                    median 23.094 us  p95 33.622 us
+  n=1000 Wasm + host imports         median 30.792 us  p95 44.517 us
+  A           R8-composition-T1..T8      pass 20/20 x10  wall p50    19.2 ms p95    21.0  cpu p50    19.0 ms  peak RSS p50  17.2 MB
+  B           R8-composition-T1..T8      pass 20/20 x10  wall p50    20.3 ms p95    47.8  cpu p50    20.3 ms  peak RSS p50  17.2 MB
+  B-security  R8-private-scope-checks    pass 3/3 x10  wall p50    17.4 ms p95    29.2  cpu p50    17.3 ms  peak RSS p50  17.2 MB
+  A           R7-T1-controller           pass 6/6 x10  wall p50    17.6 ms p95    18.5  cpu p50    17.3 ms  peak RSS p50  13.5 MB
+  C           R7-T1-controller           pass 6/6 x10  wall p50    17.7 ms p95    29.8  cpu p50    17.5 ms  peak RSS p50  13.5 MB
+  A conventional  R8 tasks 1-8 solution (submission_A.py)                                  bytes   2122  tokens   528
+  A conventional  R8 shared docs read (API_CONTRACTS.md + TASKS.md)                        bytes   7615  tokens  1682
+  B AICC          R8 tasks 1-8 solution (submission_B.py)                                  bytes   2681  tokens   713
+  B AICC          R8 docs read (same shared docs; no smaller cards exist in the packet)    bytes   7615  tokens  1682
+  A conventional  R7 controller in Python (controller_submission.py)                       bytes    549  tokens   139
+  A conventional  R7 controller, Python with the same host-held templates                  bytes     61  tokens    27
+  C symbolic      R7 controller in toy symbolic grammar (.sym)                             bytes     45  tokens    29
+  C symbolic      R7 grammar documentation the author read (symbolic_runtime.py)           bytes   4573  tokens  1143
+  C symbolic      v2 Language A controller (if/else)                                       bytes    140  tokens    47
+  C symbolic      v2 Language A reference sheet (per session)                              bytes    968  tokens   317
+  D symbolic+AICC  NOT EXECUTED: neither toy grammar can express the R8 tasks (no dicts, lists, sorting or library calls)
+ turns   no caching  cached r=0.10  cached r=0.05   (savings if those 1682 tokens vanished from every turn)
+     5        8,410          2,775          2,439
+    20       33,640          5,298          3,700
+    50       84,100         10,344          6,223
+   100      168,200         18,754         10,428
+design     sigma analysis       false-positive rate (no true effect)    power to detect a true 15% saving
+ 12x3        0.5 tasks-only                                     0.08                                 0.19
+ 12x3        0.5 two-level                                      0.02                                 0.10
+ 12x3        1.0 tasks-only                                     0.09                                 0.14
+ 12x3        1.0 two-level                                      0.04                                 0.05
+ 30x10       0.5 tasks-only                                     0.09                                 0.76
+ 30x10       0.5 two-level                                      0.01                                 0.42
+ 30x10       1.0 tasks-only                                     0.10                                 0.32
+ 30x10       1.0 two-level                                      0.01                                 0.13
+ 60 tasks x 10 trials, sigma 1.0, two-level: power to detect a true 15% saving = 0.21
+ 60 tasks x 10 trials, sigma 1.0, two-level: power to detect a true 30% saving = 0.87
+100 tasks x 10 trials, sigma 1.0, two-level: power to detect a true 15% saving = 0.39
+100 tasks x 10 trials, sigma 1.0, two-level: power to detect a true 30% saving = 0.97
+200 tasks x  5 trials, sigma 1.0, two-level: power to detect a true 15% saving = 0.47
+200 tasks x  5 trials, sigma 1.0, two-level: power to detect a true 30% saving = 0.99
+DRY RUN (synthetic numbers, not results): {
+ "cpct_A": 0.3685846153846154,
+ "cpct_B": 0.2809529411764706,
+ "relative_change_b_vs_a": -0.23775185005131516,
+ "ci95": [
+  -0.4713624820103265,
+  -0.017425113738266162
+ ],
+ "success_rate_diff": 0.2222222222222222
+}

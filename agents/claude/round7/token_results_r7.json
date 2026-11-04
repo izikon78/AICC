@@ -1,0 +1,65 @@
+{
+ "1_repeat_contract_every_call": {
+  "file": "h3_payloads/1_repeat_contract_every_call.txt",
+  "bytes": 25731,
+  "o200k": 6030,
+  "cl100k": 5980,
+  "cumulative_o200k_if_history_resent": 61850
+ },
+ "2_contract_once_then_alias": {
+  "file": "h3_payloads/2_contract_once_then_alias.txt",
+  "bytes": 2771,
+  "o200k": 735,
+  "cl100k": 730,
+  "cumulative_o200k_if_history_resent": 13240
+ },
+ "2b_contract_once_full_handles": {
+  "file": "h3_payloads/2b_contract_once_full_handles.txt",
+  "bytes": 4023,
+  "o200k": 1062,
+  "cl100k": 1039,
+  "cumulative_o200k_if_history_resent": 16330
+ },
+ "3_verdict_lines_then_alias (illustrative)": {
+  "file": "h3_payloads/3_verdict_lines_then_alias_illustrative.txt",
+  "bytes": 517,
+  "o200k": 230,
+  "cl100k": 228,
+  "cumulative_o200k_if_history_resent": 3140
+ },
+ "submission.py (Arm A)": {
+  "bytes": 558,
+  "o200k": 124,
+  "cl100k": 123
+ },
+ "submission_registry.py (Arm B)": {
+  "bytes": 699,
+  "o200k": 162,
+  "cl100k": 160
+ },
+ "controller_submission.py (Arm C)": {
+  "bytes": 549,
+  "o200k": 139,
+  "cl100k": 138
+ },
+ "controller_submission.sym (Arm D)": {
+  "bytes": 45,
+  "o200k": 29,
+  "cl100k": 29
+ },
+ "contract ctrl (card + API bullet)": {
+  "bytes": 542,
+  "o200k": 136,
+  "cl100k": 136
+ },
+ "contract rollup (card + activity_contract.md)": {
+  "bytes": 1870,
+  "o200k": 416,
+  "cl100k": 413
+ },
+ "Arm C function only (no docstring)": {
+  "bytes": 342,
+  "o200k": 97,
+  "cl100k": 95
+ }
+}

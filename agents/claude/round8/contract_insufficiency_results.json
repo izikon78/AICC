@@ -1,0 +1,82 @@
+[
+ [
+  "gzip_deterministic",
+  "byte-identical to 'gzip.compress level 6, mtime 0'?",
+  "UNKNOWN"
+ ],
+ [
+  "gzip_deterministic",
+  "byte-identical to 'zlib wbits=31 (gzip container)'?",
+  "ENTAILED"
+ ],
+ [
+  "gzip_deterministic",
+  "byte-identical to 'Node zlib.gzipSync'?",
+  "UNKNOWN"
+ ],
+ [
+  "canonical_json",
+  "number 1e16 formatted identically in JS?",
+  "UNKNOWN"
+ ],
+ [
+  "canonical_json",
+  "number 1e21 formatted identically in JS?",
+  "ENTAILED"
+ ],
+ [
+  "canonical_json",
+  "number -0.0 formatted identically in JS?",
+  "UNKNOWN"
+ ],
+ [
+  "canonical_json",
+  "number 0.1+0.2 formatted identically in JS?",
+  "ENTAILED"
+ ],
+ [
+  "canonical_json",
+  "number 2**53+1 formatted identically in JS?",
+  "UNKNOWN"
+ ],
+ [
+  "canonical_json",
+  "number 1.0 formatted identically in JS?",
+  "UNKNOWN"
+ ],
+ [
+  "canonical_json",
+  "lone surrogate '\\ud800'",
+  "UNKNOWN"
+ ],
+ [
+  "digest_json",
+  "lone surrogate '\\ud800'",
+  "UNKNOWN"
+ ],
+ [
+  "make_query",
+  "same encoding as URLSearchParams (another 'standard urlencode')?",
+  "UNKNOWN"
+ ],
+ [
+  "toposort",
+  "'lexicographically smallest' identical in JS default ordering?",
+  "UNKNOWN"
+ ],
+ [
+  "png_dimensions",
+  "width 2^31 (PNG spec max is 2^31-1), CRC zeroed",
+  "REFUTED"
+ ],
+ [
+  "png_dimensions",
+  "width 1, CRC zeroed",
+  "REFUTED"
+ ],
+ [
+  "normalize_tag",
+  "results identical on another runtime?",
+  "UNKNOWN"
+ ]
+]

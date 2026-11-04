@@ -1,0 +1,20 @@
+{
+ "instantiate_us": 164.825,
+ "wasm_binary_bytes": 113,
+ "n=3 plain JS": {
+  "median_ns": 91.22827,
+  "p95_ns": 143.48828
+ },
+ "n=3 Wasm + host imports": {
+  "median_ns": 117.643255,
+  "p95_ns": 170.525225
+ },
+ "n=1000 plain JS": {
+  "median_ns": 23094.323,
+  "p95_ns": 33621.907
+ },
+ "n=1000 Wasm + host imports": {
+  "median_ns": 30792.225,
+  "p95_ns": 44516.672
+ }
+}

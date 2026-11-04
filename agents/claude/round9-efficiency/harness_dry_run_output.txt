@@ -1,0 +1,10 @@
+DRY RUN (synthetic numbers, not results): {
+ "cpct_A": 0.3685846153846154,
+ "cpct_B": 0.2809529411764706,
+ "relative_change_b_vs_a": -0.23775185005131516,
+ "ci95": [
+  -0.4713624820103265,
+  -0.017425113738266162
+ ],
+ "success_rate_diff": 0.2222222222222222
+}
