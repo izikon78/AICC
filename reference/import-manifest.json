@@ -1,0 +1,1314 @@
+{
+  "review_date": "2026-11-04",
+  "base_research_commit": "93c0c175ee3c996ac3b28fee76600e1350e15d23",
+  "source_count": 40,
+  "unique_content_count": 29,
+  "sources": [
+    {
+      "name": "AI_Article_Draft3_R2D2_Commons_Language_Examples.md",
+      "size": 27498,
+      "sha256": "59949c916ab2652b7301ccf67a0cc9344f3c37ea8c27243f26a838695e8e3f5b",
+      "canonical_source": "AI_Article_Draft3_R2D2_Commons_Language_Examples.md",
+      "destination": "docs/article/AI_Article_Draft3_R2D2_Commons_Language_Examples.md",
+      "status": "imported"
+    },
+    {
+      "name": "AI_Article_Draft4_PDF.zip",
+      "size": 131886,
+      "sha256": "2866865b746b8b312e9694b41bdba690cc1b1684e3910d920c47caac27e9900f",
+      "canonical_source": "AI_Article_Draft4_PDF.zip",
+      "destination": "reference/archives/AI_Article_Draft4_PDF.zip",
+      "status": "imported"
+    },
+    {
+      "name": "AI_Computational_Commons_Architecture_Recommendation (1).md",
+      "size": 7764,
+      "sha256": "4910e5e01a1ecb5b3dd2a0078e7836f706a0a3747592826fb843eb109d34374f",
+      "canonical_source": "AI_Computational_Commons_Architecture_Recommendation.md",
+      "destination": "docs/architecture/AI_Computational_Commons_Architecture_Recommendation.md",
+      "status": "duplicate"
+    },
+    {
+      "name": "AI_Computational_Commons_Architecture_Recommendation.md",
+      "size": 7764,
+      "sha256": "4910e5e01a1ecb5b3dd2a0078e7836f706a0a3747592826fb843eb109d34374f",
+      "canonical_source": "AI_Computational_Commons_Architecture_Recommendation.md",
+      "destination": "docs/architecture/AI_Computational_Commons_Architecture_Recommendation.md",
+      "status": "imported"
+    },
+    {
+      "name": "AI_Think_Tank_Round5_Reply_to_Claude.md",
+      "size": 4196,
+      "sha256": "67f8489f7f2b1857e76e9df5662bcf13bce1d0c1652295c79eeb19ba68a8c2cd",
+      "canonical_source": "AI_Think_Tank_Round5_Reply_to_Claude.md",
+      "destination": "docs/research/history/AI_Think_Tank_Round5_Reply_to_Claude.md",
+      "status": "imported"
+    },
+    {
+      "name": "AI_Think_Tank_Round7_Experiment_Packet (1).zip",
+      "size": 19656,
+      "sha256": "c6aac201a1a0526de964662ee30cd69f53068a54f8bf6486e99396bf462f69d8",
+      "canonical_source": "AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "destination": "reference/archives/AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "status": "duplicate"
+    },
+    {
+      "name": "AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "size": 19656,
+      "sha256": "c6aac201a1a0526de964662ee30cd69f53068a54f8bf6486e99396bf462f69d8",
+      "canonical_source": "AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "destination": "reference/archives/AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "status": "imported"
+    },
+    {
+      "name": "AI_Think_Tank_Round7_GPT6_Report.md",
+      "size": 23891,
+      "sha256": "0d4d88f45c5c79f4cc36649db93ce7fe3035f19a463b23e8a5f418c1916004e7",
+      "canonical_source": "AI_Think_Tank_Round7_GPT6_Report.md",
+      "destination": "agents/gpt6/round7/AI_Think_Tank_Round7_GPT6_Report.md",
+      "status": "imported"
+    },
+    {
+      "name": "AI_Think_Tank_Round8_Correction_Questions (1).md",
+      "size": 2749,
+      "sha256": "2280ccab9980453b3781c0722bd8d2c679c359a19e9194919681cc50983f5a3a",
+      "canonical_source": "AI_Think_Tank_Round8_Correction_Questions.md",
+      "destination": "agents/gpt6/round8/AI_Think_Tank_Round8_Correction_Questions.md",
+      "status": "duplicate"
+    },
+    {
+      "name": "AI_Think_Tank_Round8_Correction_Questions (2).md",
+      "size": 2749,
+      "sha256": "2280ccab9980453b3781c0722bd8d2c679c359a19e9194919681cc50983f5a3a",
+      "canonical_source": "AI_Think_Tank_Round8_Correction_Questions.md",
+      "destination": "agents/gpt6/round8/AI_Think_Tank_Round8_Correction_Questions.md",
+      "status": "duplicate"
+    },
+    {
+      "name": "AI_Think_Tank_Round8_Correction_Questions.md",
+      "size": 2749,
+      "sha256": "2280ccab9980453b3781c0722bd8d2c679c359a19e9194919681cc50983f5a3a",
+      "canonical_source": "AI_Think_Tank_Round8_Correction_Questions.md",
+      "destination": "agents/gpt6/round8/AI_Think_Tank_Round8_Correction_Questions.md",
+      "status": "imported"
+    },
+    {
+      "name": "AI_Think_Tank_Round8_Independent_Audit (1).md",
+      "size": 7368,
+      "sha256": "2effd9a24ae85587b87bdf28f1d78c664e76b8b880dd26f492fd309ab2a80cbc",
+      "canonical_source": "AI_Think_Tank_Round8_Independent_Audit.md",
+      "destination": "agents/gpt6/round8/AI_Think_Tank_Round8_Independent_Audit.md",
+      "status": "duplicate"
+    },
+    {
+      "name": "AI_Think_Tank_Round8_Independent_Audit (2).md",
+      "size": 7368,
+      "sha256": "2effd9a24ae85587b87bdf28f1d78c664e76b8b880dd26f492fd309ab2a80cbc",
+      "canonical_source": "AI_Think_Tank_Round8_Independent_Audit.md",
+      "destination": "agents/gpt6/round8/AI_Think_Tank_Round8_Independent_Audit.md",
+      "status": "duplicate"
+    },
+    {
+      "name": "AI_Think_Tank_Round8_Independent_Audit.md",
+      "size": 7368,
+      "sha256": "2effd9a24ae85587b87bdf28f1d78c664e76b8b880dd26f492fd309ab2a80cbc",
+      "canonical_source": "AI_Think_Tank_Round8_Independent_Audit.md",
+      "destination": "agents/gpt6/round8/AI_Think_Tank_Round8_Independent_Audit.md",
+      "status": "imported"
+    },
+    {
+      "name": "AI_Think_Tank_Round8_Packet (1).zip",
+      "size": 30479,
+      "sha256": "ae61dda76c1336d78a49fa341f085b5493743b772774b23036297a1295760067",
+      "canonical_source": "AI_Think_Tank_Round8_Packet.zip",
+      "destination": "reference/archives/AI_Think_Tank_Round8_Packet.zip",
+      "status": "duplicate"
+    },
+    {
+      "name": "AI_Think_Tank_Round8_Packet.zip",
+      "size": 30479,
+      "sha256": "ae61dda76c1336d78a49fa341f085b5493743b772774b23036297a1295760067",
+      "canonical_source": "AI_Think_Tank_Round8_Packet.zip",
+      "destination": "reference/archives/AI_Think_Tank_Round8_Packet.zip",
+      "status": "imported"
+    },
+    {
+      "name": "ai_think_tank_round_7_experiment_results_gemini.md",
+      "size": 12305,
+      "sha256": "d5c6d3b0201a9266eefdef6efbb4850359e2532a4a40ed7de2b822c285b4ce1d",
+      "canonical_source": "ai_think_tank_round_7_experiment_results_gemini.md",
+      "destination": "agents/gemini/round7/ai_think_tank_round_7_experiment_results_gemini.md",
+      "status": "imported"
+    },
+    {
+      "name": "ai_think_tank_round_8_1_correction_reconciliation_gemini.md",
+      "size": 5026,
+      "sha256": "c4d4eb85f460aaa5b3ff22cfe46f3ec8cfc4a947df8c4e60ee365327d0c19a15",
+      "canonical_source": "ai_think_tank_round_8_1_correction_reconciliation_gemini.md",
+      "destination": "agents/gemini/round8/ai_think_tank_round_8_1_correction_reconciliation_gemini.md",
+      "status": "imported"
+    },
+    {
+      "name": "ai_think_tank_round_8_experiment_results_gemini (1).md",
+      "size": 13195,
+      "sha256": "85d01a04d59199230cff5fe1a1ee1eedc4301b3795921da7a2d7d2aadf4fe13e",
+      "canonical_source": "ai_think_tank_round_8_experiment_results_gemini.md",
+      "destination": "agents/gemini/round8/ai_think_tank_round_8_experiment_results_gemini.md",
+      "status": "duplicate"
+    },
+    {
+      "name": "ai_think_tank_round_8_experiment_results_gemini.md",
+      "size": 13195,
+      "sha256": "85d01a04d59199230cff5fe1a1ee1eedc4301b3795921da7a2d7d2aadf4fe13e",
+      "canonical_source": "ai_think_tank_round_8_experiment_results_gemini.md",
+      "destination": "agents/gemini/round8/ai_think_tank_round_8_experiment_results_gemini.md",
+      "status": "imported"
+    },
+    {
+      "name": "AICC_Article_Draft_4_Review_Copy.pdf",
+      "size": 160467,
+      "sha256": "58b90a191c6f5967ad70125f9cd8d68c54246e43353030aa9762583e7a80ad07",
+      "canonical_source": "AICC_Article_Draft_4_Review_Copy.pdf",
+      "destination": "docs/article/AICC_Article_Draft_4_Review_Copy.pdf",
+      "status": "imported"
+    },
+    {
+      "name": "AICC_Codex_Conversation_Handoff.md",
+      "size": 27307,
+      "sha256": "54fbdfcd969d2513c14ba79a3d464e3ca289ab765038d813e286eeba2c2f5177",
+      "canonical_source": "AICC_Codex_Conversation_Handoff.md",
+      "destination": "docs/handoff/AICC_Codex_Conversation_Handoff.md",
+      "status": "imported"
+    },
+    {
+      "name": "aicc_efficiency_independent_research_report (1).md",
+      "size": 14738,
+      "sha256": "acffb72aa786c124c23ef7f7b5dd6a3ea8fafa31f756d828ada64c3b050d33e5",
+      "canonical_source": "aicc_efficiency_independent_research_report.md",
+      "destination": "agents/gemini/efficiency/aicc_efficiency_independent_research_report.md",
+      "status": "duplicate"
+    },
+    {
+      "name": "aicc_efficiency_independent_research_report.md",
+      "size": 14738,
+      "sha256": "acffb72aa786c124c23ef7f7b5dd6a3ea8fafa31f756d828ada64c3b050d33e5",
+      "canonical_source": "aicc_efficiency_independent_research_report.md",
+      "destination": "agents/gemini/efficiency/aicc_efficiency_independent_research_report.md",
+      "status": "imported"
+    },
+    {
+      "name": "AICC_Efficiency_Measurement_Template.csv",
+      "size": 498,
+      "sha256": "b762499b9344745f2b3d6635406eb55d5e6aea50a8be2ce3dc9a75abb38b9e0d",
+      "canonical_source": "AICC_Efficiency_Measurement_Template.csv",
+      "destination": "experiments/efficiency/AICC_Efficiency_Measurement_Template.csv",
+      "status": "imported"
+    },
+    {
+      "name": "AICC_Efficiency_Research_Review_Copy.pdf",
+      "size": 67107,
+      "sha256": "5c193ae0e61ed2828b32ae4e3fbaf579790b9c3c9f24b0973339129eb23fc746",
+      "canonical_source": "AICC_Efficiency_Research_Review_Copy.pdf",
+      "destination": "docs/research/AICC_Efficiency_Research_Review_Copy.pdf",
+      "status": "imported"
+    },
+    {
+      "name": "AICC_Token_Cost_Compute_Research_Protocol.pdf",
+      "size": 78679,
+      "sha256": "d00691bb6b76f930c3f121c28d5ae228eb2a5b12345455f271ccfbd8f3add795",
+      "canonical_source": "AICC_Token_Cost_Compute_Research_Protocol.pdf",
+      "destination": "experiments/efficiency/AICC_Token_Cost_Compute_Research_Protocol.pdf",
+      "status": "imported"
+    },
+    {
+      "name": "Cluade AICC report.zip",
+      "size": 52421,
+      "sha256": "cb596eb8513a03bb324979600e8e9b77b6e15c10598e87bff9fd5c4a2ce43f2d",
+      "canonical_source": "Cluade AICC report.zip",
+      "destination": "reference/archives/Cluade AICC report.zip",
+      "status": "imported"
+    },
+    {
+      "name": "ControllerService_2026_10_20 (1).zip",
+      "size": 5331789,
+      "sha256": "02422cba8204ba767ff3a434e7f975ad5ff83680ef0a5c596edc75bcb1415e2e",
+      "status": "excluded",
+      "reason": "Operational service log: 81,599,782 uncompressed bytes, network addresses and local machine paths; not included in the public research archive."
+    },
+    {
+      "name": "Grok_AICC_Efficiency_Research_Complete (1).zip",
+      "size": 20478,
+      "sha256": "6af8b4a75106f9327ab3e1b99ae7d61c5a20684937593c7fc3ef005d56c42a28",
+      "canonical_source": "Grok_AICC_Efficiency_Research_Complete.zip",
+      "destination": "reference/archives/Grok_AICC_Efficiency_Research_Complete.zip",
+      "status": "duplicate"
+    },
+    {
+      "name": "Grok_AICC_Efficiency_Research_Complete (2).zip",
+      "size": 20478,
+      "sha256": "6af8b4a75106f9327ab3e1b99ae7d61c5a20684937593c7fc3ef005d56c42a28",
+      "canonical_source": "Grok_AICC_Efficiency_Research_Complete.zip",
+      "destination": "reference/archives/Grok_AICC_Efficiency_Research_Complete.zip",
+      "status": "duplicate"
+    },
+    {
+      "name": "Grok_AICC_Efficiency_Research_Complete.zip",
+      "size": 20478,
+      "sha256": "6af8b4a75106f9327ab3e1b99ae7d61c5a20684937593c7fc3ef005d56c42a28",
+      "canonical_source": "Grok_AICC_Efficiency_Research_Complete.zip",
+      "destination": "reference/archives/Grok_AICC_Efficiency_Research_Complete.zip",
+      "status": "imported"
+    },
+    {
+      "name": "Grok_Responses_for_OpenAI.md",
+      "size": 16359,
+      "sha256": "7a586f6c38addf9ed409cc87de7ffff2b34ae9c5fe0a9131a537ce20a1167249",
+      "canonical_source": "Grok_Responses_for_OpenAI.md",
+      "destination": "agents/grok/history/Grok_Responses_for_OpenAI.md",
+      "status": "imported"
+    },
+    {
+      "name": "Grok_Round7_Experiment_Results.md",
+      "size": 11843,
+      "sha256": "795665c421b5b9938229f6a00478c378b125e4f7cb21429a3d8188e31889ec93",
+      "canonical_source": "Grok_Round7_Experiment_Results.md",
+      "destination": "agents/grok/round7/Grok_Round7_Experiment_Results.md",
+      "status": "imported"
+    },
+    {
+      "name": "Grok_Round8.1_Complete.zip",
+      "size": 11825,
+      "sha256": "0d77c19baa2212b1d09368db18e776ad342f30432c289c52a96e712e355b7878",
+      "canonical_source": "Grok_Round8.1_Complete.zip",
+      "destination": "reference/archives/Grok_Round8.1_Complete.zip",
+      "status": "imported"
+    },
+    {
+      "name": "Microsoft.Services.Store.winmd",
+      "size": 5120,
+      "sha256": "45715793b8c8571554b0bfb4eccc29e2884c16481e1c7dbee78363bbe4da3dd9",
+      "status": "excluded",
+      "reason": "Compiled Windows metadata binary with no established AICC research role; excluded from the source archive."
+    },
+    {
+      "name": "Round 5 \u2014 Reply to the Think Tank (continues the v3 review).md",
+      "size": 1581,
+      "sha256": "04e0494938f2013c23db91424c773018fe224ac6bf72bf11ac67e02e265f450d",
+      "canonical_source": "Round 5 \u2014 Reply to the Think Tank (continues the v3 review).md",
+      "destination": "docs/research/history/Round5_Reply_Fragment.md",
+      "status": "imported"
+    },
+    {
+      "name": "Round7_Claude_code_and_logs.zip",
+      "size": 49396,
+      "sha256": "93ea7b4b5dbd0e30510aa2e3b24e774e461db9642c942005d7443d96241bae81",
+      "canonical_source": "Round7_Claude_code_and_logs.zip",
+      "destination": "reference/archives/Round7_Claude_code_and_logs.zip",
+      "status": "imported"
+    },
+    {
+      "name": "Round8_Claude_code_and_logs.zip",
+      "size": 151039,
+      "sha256": "3e6c2a79e1f7659b7ae7b63ca1430502c22b0919a71d4493164cc442bdc14007",
+      "canonical_source": "Round8_Claude_code_and_logs.zip",
+      "destination": "reference/archives/Round8_Claude_code_and_logs.zip",
+      "status": "imported"
+    },
+    {
+      "name": "Round8_Results_Claude_Opus_5.5.md",
+      "size": 22757,
+      "sha256": "2072ed2320a43320789d966f2a0a4b712bc4ece4da98cdc0ed3c49a0f864b376",
+      "canonical_source": "Round8_Results_Claude_Opus_5.5.md",
+      "destination": "agents/claude/round8/Round8_Results_Claude_Opus_5.5.md",
+      "status": "already_present"
+    }
+  ],
+  "archive_members": [
+    {
+      "archive": "AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "entry": "AI_Think_Tank_Round7_Test_Packet/00_SEND_TO_EVERY_AGENT.md",
+      "sha256": "98ee391f30e0fd1671b9bc4e4e0439179e3677e2d989ab50748b7c2a130a24b8",
+      "destination": "experiments/round7/packet/00_SEND_TO_EVERY_AGENT.md",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "entry": "AI_Think_Tank_Round7_Test_Packet/01_EXPERIMENT_PROTOCOL.md",
+      "sha256": "4b4826e088ac0effa730cc2a63a9852a9fe26f056dc4788ee50ba86c8d9eccf6",
+      "destination": "experiments/round7/packet/01_EXPERIMENT_PROTOCOL.md",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "entry": "AI_Think_Tank_Round7_Test_Packet/02_RESULTS_TEMPLATE.md",
+      "sha256": "7980030386096389c5a28c0a8428e4ef2afd2ebada15568d50b7242d4a46bc9d",
+      "destination": "experiments/round7/packet/02_RESULTS_TEMPLATE.md",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "entry": "AI_Think_Tank_Round7_Test_Packet/README.md",
+      "sha256": "b060ec589e996a4e2c9effafb9f6a949e2f4390955b51f8db6baa9edb77d861c",
+      "destination": "experiments/round7/packet/README.md",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "entry": "AI_Think_Tank_Round7_Test_Packet/fixtures/activity_contract.md",
+      "sha256": "8b2257daad4ddb5b3a2ffe880e5adc3dc14ad26d2c906fbd9cccb03bda9157f4",
+      "destination": "experiments/round7/packet/fixtures/activity_contract.md",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "entry": "AI_Think_Tank_Round7_Test_Packet/fixtures/baseline_api.md",
+      "sha256": "b74c82b8a590e5892f1715e5b3266c89eb44921c6767f4fde14ec6a081aeec27",
+      "destination": "experiments/round7/packet/fixtures/baseline_api.md",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "entry": "AI_Think_Tank_Round7_Test_Packet/fixtures/binding_checks.py",
+      "sha256": "a124d31cf097da76f414343fe7acb9ed3ab8643995a89e1af5fd2cea7a13da89",
+      "destination": "experiments/round7/packet/fixtures/binding_checks.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "entry": "AI_Think_Tank_Round7_Test_Packet/fixtures/capabilities.py",
+      "sha256": "2ba783a4711069b28f0f38daab38d11df731c6a4742e6227e94c62588020536b",
+      "destination": "experiments/round7/packet/fixtures/capabilities.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "entry": "AI_Think_Tank_Round7_Test_Packet/fixtures/capability_cards.md",
+      "sha256": "00bc0c0b6a7e582681878f2b0f05997456a488083f423fc17d1e45a031dd8d1f",
+      "destination": "experiments/round7/packet/fixtures/capability_cards.md",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "entry": "AI_Think_Tank_Round7_Test_Packet/fixtures/registry.py",
+      "sha256": "0376f94786f343b4b762a24996d7a315c27b20b450e8312cc8e0303daf8ff57a",
+      "destination": "experiments/round7/packet/fixtures/registry.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "entry": "AI_Think_Tank_Round7_Test_Packet/fixtures/symbolic_runtime.py",
+      "sha256": "37c3304e2dd13fc6b2bfb0744def70ab38cac21f33d0daf856f1f3caf4fc940a",
+      "destination": "experiments/round7/packet/fixtures/symbolic_runtime.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "entry": "AI_Think_Tank_Round7_Test_Packet/fixtures/test_tasks.py",
+      "sha256": "89ddbc363f4b19191c805a806cf71c2b920b07d73972980f85adeacea806627e",
+      "destination": "experiments/round7/packet/fixtures/test_tasks.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round7_Experiment_Packet.zip",
+      "entry": "AI_Think_Tank_Round7_Test_Packet/fixtures/token_measure.py",
+      "sha256": "331e802cf15a8185fc65b77ba24a8670ff37109b815205b3d2914e07af0118e9",
+      "destination": "experiments/round7/packet/fixtures/token_measure.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/00_SEND_TO_ALL_AGENTS.md",
+      "sha256": "044a706d8fe790591a5595e7834f82ac4ed00695ea1c4719fa8852c60ede9307",
+      "destination": "experiments/round8/packet/00_SEND_TO_ALL_AGENTS.md",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/01_EXPERIMENT_PROTOCOL.md",
+      "sha256": "c9db03d22492892a634f8a9974d7f44f6ea7ac371d33858b8fc34b67cfa2fad2",
+      "destination": "experiments/round8/packet/01_EXPERIMENT_PROTOCOL.md",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/02_RESULTS_TEMPLATE.md",
+      "sha256": "25d72f155d0908fbf3e4b3cd23e190f5ef52f96e1a02e6a9aee13c1403866b44",
+      "destination": "experiments/round8/packet/02_RESULTS_TEMPLATE.md",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/ARCHITECTURE_RECOMMENDATION.md",
+      "sha256": "4910e5e01a1ecb5b3dd2a0078e7836f706a0a3747592826fb843eb109d34374f",
+      "destination": "experiments/round8/packet/ARCHITECTURE_RECOMMENDATION.md",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/ARTICLE_ADDENDUM.md",
+      "sha256": "e26e50226e16cff6299f26143eb70529b1915cc473caa3d47ca56836709e5e6f",
+      "destination": "experiments/round8/packet/ARTICLE_ADDENDUM.md",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/README.md",
+      "sha256": "50afb754bc3cf5a4615a5928f556371b66344cd43ea8c11226aad3e882ed212b",
+      "destination": "experiments/round8/packet/README.md",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/ROUND7_LESSONS.md",
+      "sha256": "c114018509c7dfdbf3811f7201a4fe64c98e033be7bda3000201d41e4483b42e",
+      "destination": "experiments/round8/packet/ROUND7_LESSONS.md",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/SHA256SUMS.txt",
+      "sha256": "0943132010a52acfa51d17a919b92fce5a921042b478c20ee8436a6c303523d9",
+      "destination": "experiments/round8/packet/SHA256SUMS.txt",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/benchmark/__init__.py",
+      "sha256": "67c1dee9ce3f81fb6a8fb485cc92c63d4a6349e581b185d47da403c513ef2c94",
+      "destination": "experiments/round8/packet/benchmark/__init__.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/benchmark/host/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "destination": "experiments/round8/packet/benchmark/host/__init__.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/benchmark/host/registry.py",
+      "sha256": "49ca12d05679b8477b15360d16fcd7f47560206357f1b7f814a99eede3520aa5",
+      "destination": "experiments/round8/packet/benchmark/host/registry.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/benchmark/public/API_CONTRACTS.md",
+      "sha256": "6ee91c58b6ebaa3d99fc76962925bcaf15d439c8181c0702d4133fd37ac4a109",
+      "destination": "experiments/round8/packet/benchmark/public/API_CONTRACTS.md",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/benchmark/public/TASKS.md",
+      "sha256": "f11305413abb09b14f46ab733b654798018e4356e31ec9ceba9edf634d870b6e",
+      "destination": "experiments/round8/packet/benchmark/public/TASKS.md",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/benchmark/public/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "destination": "experiments/round8/packet/benchmark/public/__init__.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/benchmark/public/baseline_api.py",
+      "sha256": "74667ff708eaa063be34053558ea922f9ed3d8900f8bfc2e496055a0328c43bf",
+      "destination": "experiments/round8/packet/benchmark/public/baseline_api.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/benchmark/sealed/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "destination": "experiments/round8/packet/benchmark/sealed/__init__.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/benchmark/sealed/near_miss.py",
+      "sha256": "b79697cf59db12e6e61efea7c7e958f085e593713106aaea6cd3429fbbf611d2",
+      "destination": "experiments/round8/packet/benchmark/sealed/near_miss.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/benchmark/sealed/private_core.py",
+      "sha256": "13e6829d0b2a474c3ff154c0308166bf67f37ed2bbbe819d570d7fe8f8aaa738",
+      "destination": "experiments/round8/packet/benchmark/sealed/private_core.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/benchmark/sealed/public_core.py",
+      "sha256": "4e25e6921448224ae49de5069a569984070a77c959be567e21075366d8054abe",
+      "destination": "experiments/round8/packet/benchmark/sealed/public_core.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/benchmark/sealed/reference_solution.py",
+      "sha256": "8386e6eb01317af0267ec322b511389fb9b26ce4eb9a6ddfbec8b444366a710c",
+      "destination": "experiments/round8/packet/benchmark/sealed/reference_solution.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/benchmark/token_measure.py",
+      "sha256": "9adbbbec3ce96818dea7263637b75cbd1adc06ba02c3a8cd0911757d7d8b4328",
+      "destination": "experiments/round8/packet/benchmark/token_measure.py",
+      "status": "imported"
+    },
+    {
+      "archive": "AI_Think_Tank_Round8_Packet.zip",
+      "entry": "AI_Think_Tank_Round8_Packet/benchmark/verify_submission.py",
+      "sha256": "daecb4839b84291c4e0af7178cf95062dad180d8f7ea7f67f128acfd8a0b66fb",
+      "destination": "experiments/round8/packet/benchmark/verify_submission.py",
+      "status": "imported"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "Round7_Results_Claude_Opus_5.5.md",
+      "sha256": "2486d5f7c87fb19215ab181cd8c939eccb53258cb5d93788144de9b283d7003e",
+      "destination": "agents/claude/round7/Round7_Results_Claude_Opus_5.5.md",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "submission.py",
+      "sha256": "e09fe53d1c7248f7049821d071797cf3b1f3ace21ac1a78759f64cd2aa643cc1",
+      "destination": "agents/claude/round7/submission.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "submission_registry.py",
+      "sha256": "015006fe24fa693651ad13530cda3a9a263a585f2d0c1654316c9ae211934b70",
+      "destination": "agents/claude/round7/submission_registry.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "controller_submission.py",
+      "sha256": "73682bffcbd836d1ac72e8af7dc24a2268a0a7e4aaa0c43eb2a065d0c2777a38",
+      "destination": "agents/claude/round7/controller_submission.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "controller_submission.sym",
+      "sha256": "d96d36862bd79fe6b472634ba1d6433ee8b6507d0f311d558bd383f59b05515c",
+      "destination": "agents/claude/round7/controller_submission.sym",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "counterexamples/submission_by_eventid.py",
+      "sha256": "3b8da1851f4d9d000cb743d462719d78b10df95fa28364cd28baf9f7fd9771d9",
+      "destination": "agents/claude/round7/counterexamples/submission_by_eventid.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "counterexamples/submission_zero_based.py",
+      "sha256": "31fbcfdba26005e5ffc8164c5f17ccfde8d1d1b0dd6ee58f5224c4de407b3866",
+      "destination": "agents/claude/round7/counterexamples/submission_zero_based.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "counterexamples/submission_and_save.py",
+      "sha256": "6b8e4a60c00f4c563b47dc65714a8f7f9615267586c3b2df98540bb9a65ca929",
+      "destination": "agents/claude/round7/counterexamples/submission_and_save.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "adversarial_contract_tests.py",
+      "sha256": "055fee07c37493aebf7f89b129792de4454bfb835ea50dfa606334ac5ad3230d",
+      "destination": "agents/claude/round7/adversarial_contract_tests.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "adversarial_results.json",
+      "sha256": "0a50d144b230014d9d24745c4703a19631d6f5c2e3797390a0b060debd9a2809",
+      "destination": "agents/claude/round7/adversarial_results.json",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "contract_reimpl.py",
+      "sha256": "40c69f06e7d5c0263fd826afc914d4d4e83ba62cb54c0405f90c7a46562ed512",
+      "destination": "agents/claude/round7/contract_reimpl.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "variants/v2_plus_severity_trim.py",
+      "sha256": "6c1d9f85cb169c08e14916f2528102a2852e0926a019e7843e88b319254b537d",
+      "destination": "agents/claude/round7/variants/v2_plus_severity_trim.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "variants/v3_plus_message_split.py",
+      "sha256": "cd50015b992f4a51b6bba5c6dee7dba489d47ff97b2783802046308e1510ed99",
+      "destination": "agents/claude/round7/variants/v3_plus_message_split.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "variants/v1_severity_names.py",
+      "sha256": "0b120cdb9309ca8aadc38889b93cc14e43afef34435dd97b2b3e34f11e4b1705",
+      "destination": "agents/claude/round7/variants/v1_severity_names.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "differential_fuzz.py",
+      "sha256": "e15a3ee68b5fbc7754313e58d3d9965ebaaec14b57f7e28bd2e33eff0d1a7513",
+      "destination": "agents/claude/round7/differential_fuzz.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "differential_results.json",
+      "sha256": "901e14300d28cf9d2ae8b7a5aa748e5d0e3a3b232e0db873df95e192158bd48e",
+      "destination": "agents/claude/round7/differential_results.json",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "h2_symbolic_probe.py",
+      "sha256": "24553d4f5bfae048709a3e249205667f3af967a9f1e961a4731dce490750a064",
+      "destination": "agents/claude/round7/h2_symbolic_probe.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "h2_probe_results.json",
+      "sha256": "a1487b5c48c50c4913090fa8ab12c10bf276ab1b6c33db131d85c53b7d9b6d45",
+      "destination": "agents/claude/round7/h2_probe_results.json",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "h3_payloads.py",
+      "sha256": "a760417b9f98e9ef57d9189412b4acdefd5f8910f64bb0b3cb53b2e4bac521e9",
+      "destination": "agents/claude/round7/h3_payloads.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "h3_payloads/2b_contract_once_full_handles.txt",
+      "sha256": "471cd9992a3bc114a892cce4c326825c71ddf6c6161ca1503b0cce2699981e34",
+      "destination": "agents/claude/round7/h3_payloads/2b_contract_once_full_handles.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "h3_payloads/3_verdict_lines_then_alias_illustrative.txt",
+      "sha256": "8b898acafd9630fb46068b6886be9f7aee4d7e22b1dd646b213f4494b004b405",
+      "destination": "agents/claude/round7/h3_payloads/3_verdict_lines_then_alias_illustrative.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "h3_payloads/2_contract_once_then_alias.txt",
+      "sha256": "1af84e6b1ba8c17bcea8304f6f0be320cdf77734662a7fcd43ea2ff153e6f638",
+      "destination": "agents/claude/round7/h3_payloads/2_contract_once_then_alias.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "h3_payloads/1_repeat_contract_every_call.txt",
+      "sha256": "8ffaebcc62ecc826e78520dcbf82aaa7b8aaee167acb9d853b71f02e205e10d6",
+      "destination": "agents/claude/round7/h3_payloads/1_repeat_contract_every_call.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "token_results_r7.json",
+      "sha256": "4fcfd0bfeee5ddb8e50e3494c5dc283c8b6e1889829023fbebf8e7eaa603599f",
+      "destination": "agents/claude/round7/token_results_r7.json",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "h3_trust_probe.py",
+      "sha256": "16580a900944a048ae5cea8cb43bd05f8c31cdc4bcbce65b223ef47cd65ea1a8",
+      "destination": "agents/claude/round7/h3_trust_probe.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "h3_binding_cache.py",
+      "sha256": "02e1e2a55efd7ed2304bafed272b0280edf53a2a012d44c0d878b84e52c89637",
+      "destination": "agents/claude/round7/h3_binding_cache.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "run_all.sh",
+      "sha256": "2df6d96bcdb8ca57ff2dfd1b0d170fa8d3e3e8e47a671bf7c9f516bfc0c28bcc",
+      "destination": "agents/claude/round7/run_all.sh",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "RUN_LOG.txt",
+      "sha256": "b9d7c641679a6152d4fa73d9f3b596bfb06f0056c01950f9e44e620163fbff23",
+      "destination": "agents/claude/round7/RUN_LOG.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "EVENT_LOG.md",
+      "sha256": "23cb5fe11497b7b72c46bcbc0113c839860754a054a2f39503ed854fc4ee7488",
+      "destination": "agents/claude/round7/EVENT_LOG.md",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "T3_DECISIONS_BEFORE_TESTS.md",
+      "sha256": "bdebc326dbc540db3854c30f0fe2ae4a5560faaaae516b51fa61b4fd2e23fb36",
+      "destination": "agents/claude/round7/T3_DECISIONS_BEFORE_TESTS.md",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "tools/README_tokenizer.md",
+      "sha256": "25948f86624ab9c8650a0833cc6f936ec66ca8faa4fbe3340a0299ea63b3e8a1",
+      "destination": "agents/claude/round7/tools/README_tokenizer.md",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round7_Claude_code_and_logs.zip",
+      "entry": "tools/export_ranks.js",
+      "sha256": "34d8a000390f5ee7c345e8eacc3cd8c0c7314becba583345e0a1f4390577f23b",
+      "destination": "agents/claude/round7/tools/export_ranks.js",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "Round8_Results_Claude_Opus_5.5.md",
+      "sha256": "2072ed2320a43320789d966f2a0a4b712bc4ece4da98cdc0ed3c49a0f864b376",
+      "destination": "agents/claude/round8/Round8_Results_Claude_Opus_5.5.md",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "submission_A.py",
+      "sha256": "d1243abbe8ca666f75dc92e28ad9a7e6dea390e4261f5335ad871f872504619d",
+      "destination": "agents/claude/round8/submission_A.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "submission_B.py",
+      "sha256": "4b57458276d8c8cb7f6630971fe339932b2c0da85ad78d9f08fe31fe24a2a1d7",
+      "destination": "agents/claude/round8/submission_B.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "private_arm.py",
+      "sha256": "5eb6f209c9f2fff1cf759aeb37638f2ef85375cc56b0ab6fc13baaa8b58803d2",
+      "destination": "agents/claude/round8/private_arm.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "probe_host.py",
+      "sha256": "93db068e0ecf02fbfce8584df94993b14c24b8981a3764424a3250a7cfd359c3",
+      "destination": "agents/claude/round8/probe_host.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "probe_host_output.txt",
+      "sha256": "c85f366e376b6daa6a9d179fa5dfe24ffc95686fed86db290aca1038b7798832",
+      "destination": "agents/claude/round8/probe_host_output.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "conventional_envelope.py",
+      "sha256": "60efe580c1764a94c50167f076531c1353247fd0f40a4e6f574de88f593b99c5",
+      "destination": "agents/claude/round8/conventional_envelope.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "conventional_envelope_output.txt",
+      "sha256": "e6e1d515fee0bc4829bf8bf67bf87b3d5e28dbcb34c0d7bbb85ad54537d0dbf8",
+      "destination": "agents/claude/round8/conventional_envelope_output.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "contract_insufficiency.py",
+      "sha256": "efb61f065a6b50178792f4ac501430633ca1ee1aa767d7983532be27e49c989b",
+      "destination": "agents/claude/round8/contract_insufficiency.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "contract_insufficiency_output.txt",
+      "sha256": "9c0b7265306027569c42f538d8fffdbfec5bbcd5097a9097ab2a11cd8fe95e4e",
+      "destination": "agents/claude/round8/contract_insufficiency_output.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "contract_insufficiency_results.json",
+      "sha256": "f92cc7f4acb8821cb537ae05dff3f128f21b9c8ecb31c2ae7f2aadccf318bf2c",
+      "destination": "agents/claude/round8/contract_insufficiency_results.json",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "measure_r8.py",
+      "sha256": "9f1702fe6f35c71c05455f836c4efe5314f768347c5f22119f9bfb516c2bd323",
+      "destination": "agents/claude/round8/measure_r8.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "token_results_r8.json",
+      "sha256": "c502d2960511ae67599594986614b69ebba90a07355c3034eabb9496e71d8756",
+      "destination": "agents/claude/round8/token_results_r8.json",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "agreement/run_js.js",
+      "sha256": "7a6a8e0ca7be5b44faf2113531bc8b292a815539d59c591478ba53acdcc32988",
+      "destination": "agents/claude/round8/agreement/run_js.js",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "agreement/alt_js_faithful.js",
+      "sha256": "3d16d71dd47a26009f1f9a5e5dcdcbdb6ca5a7e8b5fdda45fd9a17db9479ae60",
+      "destination": "agents/claude/round8/agreement/alt_js_faithful.js",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "agreement/tables/casefold_full.json",
+      "sha256": "3f7a96ad5421b852d339aa5d822e6eefdd6bacd5ae9d229ac660fb798bc351b4",
+      "destination": "agents/claude/round8/agreement/tables/casefold_full.json",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "agreement/tables/python_whitespace.json",
+      "sha256": "9513c05bd75386a005e0fd6c727f5c584c23dc7e39659ddf56cd21a7e8df801a",
+      "destination": "agents/claude/round8/agreement/tables/python_whitespace.json",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "agreement/differential.py",
+      "sha256": "0c16e8d702e813ba464e14c4759637dd91f1fccbed4406fccee014f4779b49ee",
+      "destination": "agents/claude/round8/agreement/differential.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "agreement/probe_group_by_window_output.txt",
+      "sha256": "fe012bbaea0f807e0f43af9e2356cbc77ed968cc84abb6851a53b6a452706f66",
+      "destination": "agents/claude/round8/agreement/probe_group_by_window_output.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "agreement/differential_output.txt",
+      "sha256": "149cd3d3a01977b09e099dcb82002e9c665ffd16ec36bd9131f6ae80b2072970",
+      "destination": "agents/claude/round8/agreement/differential_output.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "agreement/differential_results.json",
+      "sha256": "3e119ebc717e088565be05d8cc2cf58bd59f53044888b72feb3f031f003a7fc4",
+      "destination": "agents/claude/round8/agreement/differential_results.json",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "agreement/probe_group_by_window.py",
+      "sha256": "4503e15fbe5fafa7d1199e54d31daf4b90ef2565d5cb7dc0b50603f725b27050",
+      "destination": "agents/claude/round8/agreement/probe_group_by_window.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "agreement/conformance_vectors.json",
+      "sha256": "503a472cba82406c0aa867382d282c065154a4c65286c85db1dd3416ffbbf1f1",
+      "destination": "agents/claude/round8/agreement/conformance_vectors.json",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "agreement/alt_js_naive.js",
+      "sha256": "ed2b691ec68b6893e6690d3f5d764fc08975dcc54516a4da9734dcbc503db945",
+      "destination": "agents/claude/round8/agreement/alt_js_naive.js",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "agreement/group_by_window.contract.yaml",
+      "sha256": "e90e4f201f4bcfdea27a59c89f9559236fd03c2579f29e9ec74e919f96138631",
+      "destination": "agents/claude/round8/agreement/group_by_window.contract.yaml",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "agreement/alt_python.py",
+      "sha256": "d84a545365d94cec678f5dc352d02d1ccb8f4619ec3883d641019c41fcc5b6e8",
+      "destination": "agents/claude/round8/agreement/alt_python.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "run_all.sh",
+      "sha256": "954b752eb3c5a9bc7c2a04dfa2415690569c58aa2295b88c27e9ad02f327b379",
+      "destination": "agents/claude/round8/run_all.sh",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "RUN_LOG.txt",
+      "sha256": "1baf874b5f8c34f7be8c0b1f0f0ca63046aa1459034524c5e69bca1071453673",
+      "destination": "agents/claude/round8/RUN_LOG.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "EVENT_LOG.md",
+      "sha256": "52c4e7ae8417ac87e9adbae8357999f65e04e18f40d75bd3290cb666af4d5b9b",
+      "destination": "agents/claude/round8/EVENT_LOG.md",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "SELECTION_DECISIONS_BEFORE_TESTS.md",
+      "sha256": "4961f3c7cec792bc440e7c70bc5c365a1f0929fccf59e7f158585b984b9ec654",
+      "destination": "agents/claude/round8/SELECTION_DECISIONS_BEFORE_TESTS.md",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "tools/README_tokenizer.md",
+      "sha256": "25948f86624ab9c8650a0833cc6f936ec66ca8faa4fbe3340a0299ea63b3e8a1",
+      "destination": "agents/claude/round8/tools/README_tokenizer.md",
+      "status": "already_present"
+    },
+    {
+      "archive": "Round8_Claude_code_and_logs.zip",
+      "entry": "tools/export_ranks.js",
+      "sha256": "34d8a000390f5ee7c345e8eacc3cd8c0c7314becba583345e0a1f4390577f23b",
+      "destination": "agents/claude/round8/tools/export_ranks.js",
+      "status": "already_present"
+    },
+    {
+      "archive": "Grok_AICC_Efficiency_Research_Complete.zip",
+      "entry": "Grok_AICC_Efficiency_Independent_Research_Report.md",
+      "sha256": "35a0947005bf9f14daf729e05ebac15d8cc6352ff93b3890945b3a37736b6c6b",
+      "destination": "agents/grok/efficiency/Grok_AICC_Efficiency_Independent_Research_Report.md",
+      "status": "imported"
+    },
+    {
+      "archive": "Grok_AICC_Efficiency_Research_Complete.zip",
+      "entry": "AICC_Efficiency_Measurement_Grok_partial.csv",
+      "sha256": "e482a959260fedaf8a51f5de9eeacbfce1298629af2f2baeedba7fb57383486b",
+      "destination": "agents/grok/efficiency/AICC_Efficiency_Measurement_Grok_partial.csv",
+      "status": "imported"
+    },
+    {
+      "archive": "Grok_AICC_Efficiency_Research_Complete.zip",
+      "entry": "Grok_Round8_AICC_Results.md",
+      "sha256": "f3dc0631c3c88fb9fedaca0efb76c4d024c8d2fc32b61e4fc9fbb6476ac82f46",
+      "destination": "agents/grok/round8/Grok_Round8_AICC_Results.md",
+      "status": "imported"
+    },
+    {
+      "archive": "Grok_AICC_Efficiency_Research_Complete.zip",
+      "entry": "Grok_Round8.1_Response.md",
+      "sha256": "29dddab9671fc516213dc4f6e83a1c247e194d3e44652cfc6ffd05f2175cca4c",
+      "destination": "agents/grok/round8/Grok_Round8.1_Response.md",
+      "status": "imported"
+    },
+    {
+      "archive": "Grok_AICC_Efficiency_Research_Complete.zip",
+      "entry": "submission_armA.py",
+      "sha256": "29b3bd82b4dbe264bd00b979edf416cb729adc2e9ba899423ab1179350674775",
+      "destination": "agents/grok/round8/submission_armA.py",
+      "status": "imported"
+    },
+    {
+      "archive": "Grok_AICC_Efficiency_Research_Complete.zip",
+      "entry": "submission_armB.py",
+      "sha256": "e12427e4818cffcb57b50f3d2c81a365e9fff160aee3519137ced340ab4e4406",
+      "destination": "agents/grok/round8/submission_armB.py",
+      "status": "imported"
+    },
+    {
+      "archive": "Grok_Round8.1_Complete.zip",
+      "entry": "Grok_Round8.1_Response.md",
+      "sha256": "29dddab9671fc516213dc4f6e83a1c247e194d3e44652cfc6ffd05f2175cca4c",
+      "destination": "agents/grok/round8/Grok_Round8.1_Response.md",
+      "status": "imported"
+    },
+    {
+      "archive": "Grok_Round8.1_Complete.zip",
+      "entry": "Grok_Round8_AICC_Results.md",
+      "sha256": "f3dc0631c3c88fb9fedaca0efb76c4d024c8d2fc32b61e4fc9fbb6476ac82f46",
+      "destination": "agents/grok/round8/Grok_Round8_AICC_Results.md",
+      "status": "imported"
+    },
+    {
+      "archive": "Grok_Round8.1_Complete.zip",
+      "entry": "submission_armA.py",
+      "sha256": "29b3bd82b4dbe264bd00b979edf416cb729adc2e9ba899423ab1179350674775",
+      "destination": "agents/grok/round8/submission_armA.py",
+      "status": "imported"
+    },
+    {
+      "archive": "Grok_Round8.1_Complete.zip",
+      "entry": "submission_armB.py",
+      "sha256": "e12427e4818cffcb57b50f3d2c81a365e9fff160aee3519137ced340ab4e4406",
+      "destination": "agents/grok/round8/submission_armB.py",
+      "status": "imported"
+    },
+    {
+      "archive": "Cluade AICC report.zip",
+      "entry": "AICC_Efficiency_Research_Report_Claude.md",
+      "sha256": "92d07048fc84c38929db4935df2f4146aebbc1dcb6b5d6173e5522f738326d28",
+      "destination": "agents/claude/round9-efficiency/AICC_Efficiency_Research_Report_Claude.md",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip",
+      "entry": "AICC_Efficiency_Measurements_Claude.csv",
+      "sha256": "c84ad0751d7e16e83ead86887ca962d3b8cd3d43e636898843de57db17627ebd",
+      "destination": "agents/claude/round9-efficiency/AICC_Efficiency_Measurements_Claude.csv",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "AICC_Efficiency_Research_Report_Claude.md",
+      "sha256": "92d07048fc84c38929db4935df2f4146aebbc1dcb6b5d6173e5522f738326d28",
+      "destination": "agents/claude/round9-efficiency/AICC_Efficiency_Research_Report_Claude.md",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "AICC_Efficiency_Measurements_Claude.csv",
+      "sha256": "c84ad0751d7e16e83ead86887ca962d3b8cd3d43e636898843de57db17627ebd",
+      "destination": "agents/claude/round9-efficiency/AICC_Efficiency_Measurements_Claude.csv",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "run_all.sh",
+      "sha256": "a0835b77aef804436ec9fd660068458e0374d3637b356066b816a8841774252c",
+      "destination": "agents/claude/round9-efficiency/run_all.sh",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "RUN_LOG.txt",
+      "sha256": "6a0b187e95c80fc009517e13be098c8827da1c55d0638ede08b47f90c302000a",
+      "destination": "agents/claude/round9-efficiency/RUN_LOG.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "bench_runtime.py",
+      "sha256": "ee65c326d990035bce8af425395c2a158d4ab2d184d3f32c9287ad1c334afbe3",
+      "destination": "agents/claude/round9-efficiency/bench_runtime.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "iso_worker.py",
+      "sha256": "e5d5ed7ac777add823971e86a4d14116af6bd958ccfc3f4e46c3f98d87ec0fce",
+      "destination": "agents/claude/round9-efficiency/iso_worker.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "bench_wasm.js",
+      "sha256": "faa2b265d45ac00f072652c1be483add68580c08a26387677abdeeb677f3c9e8",
+      "destination": "agents/claude/round9-efficiency/bench_wasm.js",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "controller.wat",
+      "sha256": "f69468eb756ef2189584586c1b2fca9a145b88715e9c4a2cbe900ee4de14755b",
+      "destination": "agents/claude/round9-efficiency/controller.wat",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "trial_wrapper.py",
+      "sha256": "fcfe56cbc8bc4d05e51fdc695747b0703fd09531c5fdeb04e7e939889fa8780b",
+      "destination": "agents/claude/round9-efficiency/trial_wrapper.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "harness_trials.py",
+      "sha256": "5949cf1705b186dfeccf15865a9d32efa36870b6980e0669c86613f1331835e4",
+      "destination": "agents/claude/round9-efficiency/harness_trials.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "token_table.py",
+      "sha256": "0b07038902d68d0100c39f3ef77777995fe257033566f3b4ba577c9215ad16cf",
+      "destination": "agents/claude/round9-efficiency/token_table.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "build_csv.py",
+      "sha256": "c5a5400f7df6535ce6791eeb0047892ae2e49f5f8c20ac31141aa181371b7860",
+      "destination": "agents/claude/round9-efficiency/build_csv.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "cost_model.py",
+      "sha256": "1f0854df0364d9ba7e08251e1cf54ddf0b28dee7199eeb3a994588c1fa2fa976",
+      "destination": "agents/claude/round9-efficiency/cost_model.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "power_sim.py",
+      "sha256": "bf0d78dbae99bed4cb4318a85413ec829f9f4ebf1716e5898bbacb582d63b5ff",
+      "destination": "agents/claude/round9-efficiency/power_sim.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "power_sim_ext.py",
+      "sha256": "029b462275de6f06a4b25783dd73a03e09831f16c23db037cc750093cf689ae7",
+      "destination": "agents/claude/round9-efficiency/power_sim_ext.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "decisive_benchmark_harness.py",
+      "sha256": "bb51bd6cdaaa4cf31a889532354a445a8c4f3da81c5b57d19c3fe580574200ee",
+      "destination": "agents/claude/round9-efficiency/decisive_benchmark_harness.py",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "dry_run_trials.csv",
+      "sha256": "a9d0114ad8d4aad7f5d068b3987b710d8eefbee6a1aece1ba12e5865cd383706",
+      "destination": "agents/claude/round9-efficiency/dry_run_trials.csv",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "runtime_results.json",
+      "sha256": "906c6552133723e3efb8ff7d1d81264ec8005d5364e41873655acebd602c037f",
+      "destination": "agents/claude/round9-efficiency/runtime_results.json",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "wasm_results.json",
+      "sha256": "36a40a48f293d3060c19d2a76c3d04ef064cb506a33c056fd37cf6b7081fd5fc",
+      "destination": "agents/claude/round9-efficiency/wasm_results.json",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "harness_trials.json",
+      "sha256": "e6cf912cef2d2d6fae32387386bc07864f30b7cc8b391426b6b9f8ec895a866f",
+      "destination": "agents/claude/round9-efficiency/harness_trials.json",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "token_table.json",
+      "sha256": "973683a9ff91e8a65a173891d4b71a370d6d8f0ef36d613955422018e7c3a9ff",
+      "destination": "agents/claude/round9-efficiency/token_table.json",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "runtime_output.txt",
+      "sha256": "78a900e47637ad5a12932f8487e5ffac18ac53b9e06b9625d8edfcd82c945c99",
+      "destination": "agents/claude/round9-efficiency/runtime_output.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "wasm_output.txt",
+      "sha256": "e2389ce8906f66519eb704b7019bb452825d6c5147b40f3256441d3d9d830368",
+      "destination": "agents/claude/round9-efficiency/wasm_output.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "harness_output.txt",
+      "sha256": "d2afcc6e91c048615c54b06bce6af24d1826204a014be7fe52882a90d19a106c",
+      "destination": "agents/claude/round9-efficiency/harness_output.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "token_output.txt",
+      "sha256": "06591b75d9f539855173639beeff3bf9795b20c3039a58279e590cb95dde4799",
+      "destination": "agents/claude/round9-efficiency/token_output.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "cost_model_output.txt",
+      "sha256": "d9c83e4ecd901a0b232dd9cdb4cf925baab31291cebb925be51b8a188c1a7d85",
+      "destination": "agents/claude/round9-efficiency/cost_model_output.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "power_sim_output.txt",
+      "sha256": "932150302d4a86bbd8d5f0288f418453978537d7c8d76806b60e11b3ca62e8e6",
+      "destination": "agents/claude/round9-efficiency/power_sim_output.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "power_sim_ext_output.txt",
+      "sha256": "652939b3d5f60793645ae1afea6de91dd352e10c92fb7fb825e6ff3f7341b37d",
+      "destination": "agents/claude/round9-efficiency/power_sim_ext_output.txt",
+      "status": "already_present"
+    },
+    {
+      "archive": "Cluade AICC report.zip!AICC_Efficiency_Claude_code_and_logs.zip",
+      "entry": "harness_dry_run_output.txt",
+      "sha256": "c4ff21b1a80ab8ed5cff4c4be4868da73236ef1ea26ed3e4d0c920e629ab601b",
+      "destination": "agents/claude/round9-efficiency/harness_dry_run_output.txt",
+      "status": "already_present"
+    }
+  ],
+  "notes": [
+    "Original input files were copied byte-for-byte, without rewriting scientific claims.",
+    "Duplicate filenames resolve by SHA-256, not by assumed version ordering.",
+    "Archived instructions and handoffs are historical source material, not active repository policy.",
+    "The Draft 4 PDF inside its retained ZIP is byte-identical to docs/article/AICC_Article_Draft_4_Review_Copy.pdf."
+  ]
+}
