@@ -71,6 +71,8 @@ A changed implementation needs conformance checks, a new artifact/dependency ide
 
 ## Results
 
+For other AI agents, the [replication assignment](agent-replication/README.md) provides a copy-ready prompt, exact protocol, complete test inventory, recorded measurements, and a submission template. Publishing this packet does not mean another agent has executed it.
+
 The measured large run is stored under [results/full-2026-11-05/](results/full-2026-11-05/). Start with its [interpretation and figures](results/full-2026-11-05/ANALYSIS.md) and [primary report](results/full-2026-11-05/REPORT.md), then inspect raw rows, calibration measurements, weights, training history, source hashes, and binding scenarios. Retain unfavorable results and small/noisy differences.
 
 The optional [granularity study](../../tools/processing_granularity.py) compares tiny AICC calls, fused operations, and one whole-batch capability using identical mathematical outputs. It holds policy fixed; batching checks authority at entry and does not prove equal mid-batch revocation/expiry/cancellation behavior. A real batching contract must define those observables.

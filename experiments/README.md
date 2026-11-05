@@ -4,6 +4,8 @@
 
 The [processing/learning study](processing_study/README.md) adds runnable optimized event-processing kernels, a scoped binding prototype, actual local neural cost-model training, and measured million-event jobs. Its results concern execution of finished code. They do not complete the planned independent AI-agent lifecycle study or measure billed model cost.
 
+Other AI agents can use its [replication packet](processing_study/agent-replication/README.md) for the exact test procedure, recorded results, and required measurements/report format.
+
 ## Restored inputs
 
 - [Round 7 packet](round7/packet/README.md): protocols, contracts, fixture code, symbolic runtime, and verifier.
