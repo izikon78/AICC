@@ -1,47 +1,53 @@
-# AI Computational Commons (AICC)
+# AICC and AIN
 
-Research archive for two related, independently testable ideas:
+Research into how AI agents can create, change, and reuse software through precise computational representations.
 
-1. A shared computational commons where agents discover and compose capabilities through precise behavioral contracts and scoped bindings.
-2. An AI-native programming representation capable of expressing new logic, potentially using dedicated operation tokens instead of human-language keywords.
+**AIN — AI Native Language** is the working name for the project's next research direction: a proposed programming representation designed for machine authoring, with explicit semantics, types, state, effects, and resource behavior. **AICC — AI Computational Commons** is the companion proposal for discovering and composing reusable capabilities through precise contracts and scoped bindings.
 
-**Concept and architecture: Izik Bachar. Research status: open, exploratory, and not economically validated.** The available pilots show small-task feasibility and important contract/security limitations. They do not establish lower billed model cost, faster agent development, a secure private execution boundary, or the benefits of a trained native-operation model.
+Concept, architecture, and research direction: **Izik Bachar**.
 
 ## Start here
 
-- [Implemented processing study: million-event jobs, optimized flows, and local neural training](experiments/processing_study/README.md)
-- [Next steps: AICC reuse across agents and software changes](experiments/lifecycle-pilot/README.md)
-- [Future-value research brief](docs/research/NEXT_STUDY_AICC_FUTURE_VALUE.md)
-- [Review of the supplied archive, corrections, and unresolved evidence](docs/research/REVIEW_2026-11-04.md)
-- [Detailed conversation handoff](docs/handoff/AICC_Codex_Conversation_Handoff.md) — a supplied reconstruction, not a complete verbatim chat export
-- [Architecture recommendation](docs/architecture/AI_Computational_Commons_Architecture_Recommendation.md)
-- [Article drafts and credits](docs/article/README.md)
-- [Experiments and reproduction](experiments/README.md)
-- [Original-file manifest and exclusions](reference/README.md)
+- [Latest article and printable review copy](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/article)
+- [AIN research plan and next deliverables](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/ain)
+- [Complex streaming task and illustrative AIN representation](https://github.com/izikon78/AICC/blob/research/ain-language-and-study-results/docs/ain/COMPLEX_TASK.md)
+- [Combined processing-study results](https://github.com/izikon78/AICC/blob/research/ain-language-and-study-results/docs/research/REPLICATION_SYNTHESIS_2026-11-05.md)
+- [Charts, pie charts, CSV data, and source hashes](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/article/figures/draft8)
 
-## Research contributions
+The research materials are maintained on `research/ain-language-and-study-results`; this README on `main` is the project entry point. Draft studies remain reviewable without treating them as final validation.
 
-| Contributor | Available materials |
+## What has been tested
+
+The original local study and submitted Claude and Grok remeasurements contain 135 completed million-event worker executions across three reused synthetic datasets. Their output signatures agree. Optimized ordinary code reduced processing time and peak process memory, and the same optimized implementations remained usable through the AICC prototype.
+
+The studies also trained an 867-parameter local neural cost model. It did not consistently beat a strong simple selection policy. This network predicts the cost of supplied processing plans; it is not an AIN model or an LLM trained on native operation tokens.
+
+These results provide an engineering foundation and a reproducible benchmark. They do **not** establish AICC-specific financial savings, a native-language advantage, a new algorithm unknown to humans, or production private-code isolation. Submitted model identities and remote execution environments are self-reported. Three timing repetitions are descriptive, not statistical proof.
+
+| Area | Current status |
 |---|---|
-| Claude / Anthropic | [Provenance](agents/claude/README.md), [Round 7](agents/claude/round7/), [Round 8](agents/claude/round8/), [efficiency measurements](agents/claude/round9-efficiency/) |
-| ChatGPT / GPT-6 / OpenAI | [Round 7 report](agents/gpt6/round7/AI_Think_Tank_Round7_GPT6_Report.md), [Round 8 audit](agents/gpt6/round8/AI_Think_Tank_Round8_Independent_Audit.md), [correction questions](agents/gpt6/round8/AI_Think_Tank_Round8_Correction_Questions.md) |
-| Gemini / Google | [Round 7](agents/gemini/round7/ai_think_tank_round_7_experiment_results_gemini.md), [Round 8](agents/gemini/round8/ai_think_tank_round_8_experiment_results_gemini.md), [Round 8.1 correction](agents/gemini/round8/ai_think_tank_round_8_1_correction_reconciliation_gemini.md), [efficiency report](agents/gemini/efficiency/aicc_efficiency_independent_research_report.md) |
-| Grok / xAI | [Early reviews](agents/grok/history/Grok_Responses_for_OpenAI.md), [Round 7](agents/grok/round7/Grok_Round7_Experiment_Results.md), [Round 8 and 8.1](agents/grok/round8/), [efficiency report](agents/grok/efficiency/Grok_AICC_Efficiency_Independent_Research_Report.md) |
+| Equivalent event-processing flows and binding prototype | Implemented and measured |
+| Original plus two submitted remeasurements | Records reviewed; raw data and provenance preserved |
+| AIN semantics and complex benchmark | Proposed research specification |
+| Complete AIN compiler or native-operation model | Not implemented or evaluated |
+| Lifecycle economics and billed AI savings | Not established |
 
-Contributor names and model versions are those attributed by the supplied sources. Archived reports retain their original claims, including claims qualified or contradicted elsewhere. Read the [review](docs/research/REVIEW_2026-11-04.md) before combining results or quoting efficiency figures.
+## Next phase
 
-## Verify the recovered fixtures
+1. Freeze the complex task's observable semantics and build a readable reference implementation with adversarial state/effect traces.
+2. Implement a small typed semantic core and equivalent conventional-source, structured-IR, and AIN views.
+3. Evaluate current models on fresh build, edit, repair, optimization, and handoff tasks with equal libraries and evidence.
+4. Use those results to decide whether matched model adaptation and dedicated operation tokens justify further experiments.
 
-Python 3.10+; no third-party packages or model API credentials are required:
+The research question is whether AIN improves correct completed work and maintenance effort, rather than merely shortening printed code. Future results must include failures, repair effort, applicable billing, setup/training costs, and strong conventional controls.
 
-```shell
-python tools/verify_research_import.py
-```
+## Evidence and reproduction
 
-The [recorded verification](docs/research/verification-2026-11-04.json) checks source hashes and reruns eleven commands against the historical Round 7/8 fixtures. It executes existing code, not new independent AI authoring trials. Mock security checks are not production security assurance.
+- [Executable processing study and commands](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/experiments/processing_study)
+- [Assignment for other AI agents](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/experiments/processing_study/agent-replication)
+- [Claude replication report](https://github.com/izikon78/AICC/blob/research/ain-language-and-study-results/agents/claude/processing-study-replication-2026-11-05/AGENT_REPORT.md)
+- [Grok replication report](https://github.com/izikon78/AICC/blob/research/ain-language-and-study-results/experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/AGENT_REPORT.md)
+- [Review method and audit records](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/research/replication-review)
+- [Historical archive, corrections, and source-version gaps](https://github.com/izikon78/AICC/blob/research/ain-language-and-study-results/docs/research/REVIEW_2026-11-04.md)
 
-## Archive boundaries
-
-The import reviewed 40 supplied files, consolidated 11 byte-identical duplicate copies, and excluded an operational controller log and an unrelated Windows metadata binary from this public repository. Original research documents and retained archives are preserved byte-for-byte; [the manifest](reference/import-manifest.json) records all input filenames, hashes, mappings, and exclusions. Existing Claude research was retained.
-
-No access token is included. A token previously pasted into chat should be revoked through GitHub settings; repository access uses the configured authorization.
+The processing benchmark uses Python/NumPy and no paid model API calls. New language/model experiments are separate future work. Earlier reports, unfavorable findings, original archives, and contribution credits are retained alongside their limitations.

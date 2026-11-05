@@ -1,27 +1,26 @@
-# Article drafts
+# Article drafts and research figures
 
-The latest supplied article is [Draft 4, a 22-page review PDF](AICC_Article_Draft_4_Review_Copy.pdf), titled *What If AI Didn't Need to Read or Write Code?* It is an open research draft, not a concluded or published validation of AICC.
+The current review version is **Draft 8, AIN and AI Native Software**, dated 5 November 2026.
 
-[Draft 3 Markdown](AI_Article_Draft3_R2D2_Commons_Language_Examples.md) is the editable source available in this collection. It is an earlier draft and is not asserted to match the Draft 4 PDF. An editable Draft 4 source has not been recovered.
+- [Print PDF](AICC_Article_Draft_8_Review.pdf)
+- [Editable Word copy](AICC_Article_Draft_8_Review.docx)
+- [Article source](AICC_Article_Draft_8.md)
+- [Five figures, CSV data, and source hashes](figures/draft8/README.md)
+- [Combined processing-study synthesis](../research/REPLICATION_SYNTHESIS_2026-11-05.md)
+- [AIN research plan](../ain/RESEARCH_PLAN.md) and [complex task](../ain/COMPLEX_TASK.md)
 
-The original Draft 4 ZIP is retained in [the source archive](../../reference/archives/AI_Article_Draft4_PDF.zip). Its PDF is byte-identical to the review PDF above.
+This revision uses Izik's requested "It started with a beep" opening, adopts **AIN — AI Native Language** as a working research name, and prioritizes the next native-language experiment. It replaces the earlier simple examples with a proposed transactional streaming task. Current processing results and the cost-model network are not represented as evidence that AIN has been implemented or validated.
 
-## Supplied credits
+The charts compare the original study with the reviewed Claude and Grok submissions. All 135 complete worker records replay three public datasets; they are not independent hidden authoring trials. The pie charts partition actual worker time and do not estimate dollar savings or a share of research value.
 
-The Draft 4 credits state:
+## Earlier source drafts
 
-- **Concept and architecture:** Izik Bachar.
-- **Draft development:** ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google), Grok (xAI), and Izik Bachar.
-- **Final draft:** Izik Bachar and ChatGPT (OpenAI).
+The supplied [Draft 4 PDF](AICC_Article_Draft_4_Review_Copy.pdf) and [Draft 3 Markdown](AI_Article_Draft3_R2D2_Commons_Language_Examples.md) remain unchanged. The original Draft 4 archive is retained in [reference/archives](../../reference/archives/AI_Article_Draft4_PDF.zip). An editable original Draft 4 was not supplied. Local print-review drafts 5–7 preceded this publication revision.
 
-The last item preserves the credit wording in the draft; it does not establish that the research or publication is final. The supplied [conversation handoff](../handoff/AICC_Codex_Conversation_Handoff.md) also identifies Izik as the concept/architecture owner and final decision-maker.
+The [archive review](../research/REVIEW_2026-11-04.md) retains source-version gaps and corrected historical claims. Do not promote their older extended-test or efficiency assertions into established results.
 
-## Work before the next article revision
+## Credits and status
 
-- Integrate the supplied November 4 [efficiency synthesis](../research/AICC_Efficiency_Research_Review_Copy.pdf), with its negative findings and measurement limits.
-- Resolve the [Claude artifact-version mismatch](../research/REVIEW_2026-11-04.md) before presenting the Draft 4/audit extended fuzz results as reproduced by the currently supplied code.
-- Retain Gemini's Round 8.1 correction and qualify unsupported efficiency figures.
-- Keep the AI-native-language and commons hypotheses separate. Illustrative punctuation syntax is not a settled grammar or proof of trained-model performance.
-- Verify external research citations against primary sources before publication. This import reviewed the supplied materials and did not independently revalidate their bibliography.
+Concept, architecture, research direction, and article review: **Izik Bachar**. Earlier draft development involved ChatGPT/OpenAI, Claude/Anthropic, Gemini/Google, and Grok/xAI as attributed in the supplied records. Current synthesis, figures, engineering and editorial assistance: OpenAI Codex and same-session agents. The separate submitted processing replications retain their authors' self-reported identities and original data.
 
-No article text or PDF was revised during this import.
+The article remains a research draft for review. Further authoring, native-representation, training, and economic experiments remain unexecuted.
