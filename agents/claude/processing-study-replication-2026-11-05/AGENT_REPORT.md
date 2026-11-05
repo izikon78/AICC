@@ -8,7 +8,7 @@
 
 **Status:** CODE EXECUTED. Correctness tests, 45 stress workers, the granularity microbenchmark and 9 runtime-state checks all completed in this environment. Two additional post-replication probes (sections 7 and 8) are labelled as such.
 
-**Upload:** not pushed to GitHub. The assignment's guardrail forbids using the pasted chat token, so the result is returned as a patch and archive for the owner to commit.
+**Upload:** first returned as a patch, because the assignment's guardrail forbids using the pasted chat token. Then pushed to branch `claude/processing-study-replication` on 2026-11-05 **at the repository owner's explicit request**, overriding that guardrail. Not merged.
 
 ## Summary
 

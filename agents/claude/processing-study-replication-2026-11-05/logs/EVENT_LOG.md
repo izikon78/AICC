@@ -8,3 +8,4 @@
          written. Run-001 is INCOMPLETE and EXCLUDED from the primary comparison; its directory is preserved unchanged.
 - 15:23  Track A run-002 started detached (setsid nohup) into a new directory.
 - 15:36  Report, submission.json and SHA-256 manifest assembled on local branch claude/processing-study-replication; not pushed (guardrail).
+- 16:13  Owner explicitly requested upload; report and submission upload notes updated; manifest regenerated; pushed to claude/processing-study-replication.

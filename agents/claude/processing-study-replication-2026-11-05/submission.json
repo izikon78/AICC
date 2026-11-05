@@ -1018,7 +1018,7 @@
   "Single-agent, same-session work; provider identity self-reported",
   "Public fixed seeds: remeasurement, not unseen-seed generalisation",
   "Three repetitions per cell support descriptive ranges only",
-  "Not pushed: owner's guardrail forbids using the pasted chat token"
+  "Pushed to branch claude/processing-study-replication at the owner's explicit request, overriding the packet's token guardrail; not merged"
  ],
  "next_experiment": {
   "hypothesis": "A guard that defers to the static policy for declared-ordered jobs or out-of-range sizes removes the learned selector's losses but does not beat static by more than its ~1 ms selection overhead",

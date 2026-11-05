@@ -1,5 +1,5 @@
-164f58e54e21a62bd7b685c980215b7b8b5cc13f99c008ee53f0bde24658df65  agents/claude/processing-study-replication-2026-11-05/AGENT_REPORT.md
-8654f5f6c8e1acb2f675e135a3477c1c480f2bb0f2e62bed2c46278722f03405  agents/claude/processing-study-replication-2026-11-05/logs/EVENT_LOG.md
+bd9efdb7fff6e951adcdd29c0d06daea6cdafc3eb2734fb28aeea6238041925a  agents/claude/processing-study-replication-2026-11-05/AGENT_REPORT.md
+040b06089d337f424d348577855cbf400e08fe8291f1a51da4ffe8ce2be3ace2  agents/claude/processing-study-replication-2026-11-05/logs/EVENT_LOG.md
 7d42e233873cbcef56483579e622542be048b2bedac2ad6e9a06dc574ea3b165  agents/claude/processing-study-replication-2026-11-05/logs/batch_checkpoint_probe_K250.json
 3c81d6bbd41097bf1643d21201c3380ebf8cf127b3e035404c7887566a25fe3f  agents/claude/processing-study-replication-2026-11-05/logs/batch_checkpoint_probe_K250.txt
 998fb42a050928af15d189b4462693f077d69b9bd1180e92513e85637b6c4194  agents/claude/processing-study-replication-2026-11-05/logs/batch_checkpoint_probe_K300.json
@@ -18,7 +18,7 @@ bf1b907b5b2f57c54573721ffc0b26116eb4d52d98a8a935586559e3860fd788  agents/claude/
 fca8beee1aabd19495e0f32c7937a9456da39522e173be830487c6d3c8271548  agents/claude/processing-study-replication-2026-11-05/logs/trackA_002_recomputed.md
 422103c341c05da0c321f9accb2012f005fc1078bcecd821d31641bc456c263a  agents/claude/processing-study-replication-2026-11-05/logs/trackA_console.log
 af30179910874a788877cda102a8aa02bd7af54ed88b5c4f593c4ca21d5d73b0  agents/claude/processing-study-replication-2026-11-05/logs/unit_tests.log
-97c74aa639bc7d0793277b9cd085e6a24b5395b91ec3e948c901b60cd20a640d  agents/claude/processing-study-replication-2026-11-05/submission.json
+fc800f05d8194ab9b5ad66acdc668b849b8852381742a4c0ef3b1bbea20dc972  agents/claude/processing-study-replication-2026-11-05/submission.json
 59d8b54fc4ad2014e82c44dcf3a4f57a79df80ad617ee881fd6bf155124783d9  agents/claude/processing-study-replication-2026-11-05/tools/analyze_run.py
 d5b51aa7b525a119ace307d6a8a026d6f83be755963d763e880b8afefe533615  agents/claude/processing-study-replication-2026-11-05/tools/batch_checkpoint_probe.py
 e8e4eaad1a17fc4432807666094abfb5e85f8c1033f5364d1464ac7a7b635d73  agents/claude/processing-study-replication-2026-11-05/tools/extrapolation_probe.py
