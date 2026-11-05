@@ -1,6 +1,8 @@
 # Next task: AICC reuse across agents and software changes
 
-Prepared 4 November 2026. **Status: planning package; new pilot implementation and agent trials have not started.**
+Prepared 4 November 2026. **Status: agent-study plan; independent project-chain trials have not started.** The separate processing engineering extension is available below.
+
+**Engineering progress, 5 November:** a separate [processing/learning implementation](../processing_study/README.md) now exercises event kernels, scoped bindings, local neural training, and million-event jobs. This supplies engineering evidence for parts of the apparatus. The independent agent project-chain trials described below have not started; finished-code stress runs are not those chains.
 
 The research question is whether AICC lets new agents reuse a capability together with evidence about when it remains valid, and whether that reduces mistakes or total work as projects evolve. First-use savings, later break-even, and production security are outcomes to test.
 

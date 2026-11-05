@@ -1,0 +1,27 @@
+{
+  "unordered_plan": "partitioned",
+  "use_ordered_when_declared": true,
+  "training_kernel_seconds": 1.1250629999994999,
+  "candidate_policies": [
+    {
+      "unordered_plan": "cached",
+      "use_ordered_when_declared": false,
+      "training_kernel_seconds": 1.1812753000413068
+    },
+    {
+      "unordered_plan": "cached",
+      "use_ordered_when_declared": true,
+      "training_kernel_seconds": 1.141146700043464
+    },
+    {
+      "unordered_plan": "partitioned",
+      "use_ordered_when_declared": false,
+      "training_kernel_seconds": 1.1647258000011789
+    },
+    {
+      "unordered_plan": "partitioned",
+      "use_ordered_when_declared": true,
+      "training_kernel_seconds": 1.1250629999994999
+    }
+  ]
+}
