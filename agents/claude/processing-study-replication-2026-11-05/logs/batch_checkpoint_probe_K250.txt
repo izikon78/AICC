@@ -1,0 +1,11 @@
+N = 1000 elements, event at element 250 (expiry: TTL 0.3 s with 1 ms per element); chunked path uses 100-element chunks
+event         path     processed after event  stopped by
+revocation    split          250           0  StaleBinding
+revocation    chunked        300          50  StaleBinding
+revocation    batch         1000         750  None
+expiry        split          300           0  StaleBinding
+expiry        chunked        300           0  StaleBinding
+expiry        batch         1000         700  None
+cancellation  split          250           0  caller checkpoint
+cancellation  chunked        300          50  caller checkpoint
+cancellation  batch         1000         750  None

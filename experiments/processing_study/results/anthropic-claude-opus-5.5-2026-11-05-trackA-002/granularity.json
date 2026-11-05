@@ -1,0 +1,182 @@
+{
+  "scope": "exploratory warm invocation microbenchmark; not agent/model cost or production security",
+  "python": "3.12.3",
+  "platform": "linux",
+  "events_per_run": 1000000,
+  "repeats": 3,
+  "differential_operation_cases": 8096,
+  "all_outputs_equal": true,
+  "source_sha256": "2337e49210041d3a2bc7c1d85e2247694c1090828c38dfa3f035e90b4600e082",
+  "summary": [
+    {
+      "mode": "ordinary_split",
+      "median_seconds": 0.1682603309999422,
+      "min_seconds": 0.15103509499999745,
+      "max_seconds": 0.18011918600006993
+    },
+    {
+      "mode": "ordinary_fused",
+      "median_seconds": 0.13818428600006882,
+      "min_seconds": 0.13168713400000343,
+      "max_seconds": 0.1405811930000027
+    },
+    {
+      "mode": "aicc_split",
+      "median_seconds": 3.5337825280000743,
+      "min_seconds": 3.477208850000011,
+      "max_seconds": 3.611336849000054
+    },
+    {
+      "mode": "aicc_fused",
+      "median_seconds": 1.823977967000019,
+      "min_seconds": 1.7461113530000603,
+      "max_seconds": 1.9304439589999447
+    },
+    {
+      "mode": "ordinary_batch",
+      "median_seconds": 0.12254203600002711,
+      "min_seconds": 0.1222682379999469,
+      "max_seconds": 0.13801156800002445
+    },
+    {
+      "mode": "aicc_batch",
+      "median_seconds": 0.12258736399996906,
+      "min_seconds": 0.12205047600002672,
+      "max_seconds": 0.1252720260000615
+    }
+  ],
+  "raw": [
+    {
+      "mode": "ordinary_batch",
+      "repeat": 1,
+      "seconds": 0.13801156800002445,
+      "cpu_seconds": 0.128551691,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "aicc_split",
+      "repeat": 0,
+      "seconds": 3.611336849000054,
+      "cpu_seconds": 3.478098294,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "ordinary_split",
+      "repeat": 2,
+      "seconds": 0.18011918600006993,
+      "cpu_seconds": 0.15989536199999987,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "ordinary_split",
+      "repeat": 0,
+      "seconds": 0.1682603309999422,
+      "cpu_seconds": 0.15875487200000027,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "ordinary_fused",
+      "repeat": 2,
+      "seconds": 0.13818428600006882,
+      "cpu_seconds": 0.1339720179999997,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "aicc_fused",
+      "repeat": 2,
+      "seconds": 1.9304439589999447,
+      "cpu_seconds": 1.8321347570000004,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "aicc_split",
+      "repeat": 1,
+      "seconds": 3.477208850000011,
+      "cpu_seconds": 3.4504570129999994,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "aicc_batch",
+      "repeat": 2,
+      "seconds": 0.12258736399996906,
+      "cpu_seconds": 0.12232234200000036,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "ordinary_fused",
+      "repeat": 1,
+      "seconds": 0.13168713400000343,
+      "cpu_seconds": 0.1313764079999995,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "ordinary_fused",
+      "repeat": 0,
+      "seconds": 0.1405811930000027,
+      "cpu_seconds": 0.13854983400000087,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "ordinary_split",
+      "repeat": 1,
+      "seconds": 0.15103509499999745,
+      "cpu_seconds": 0.15080950900000012,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "aicc_split",
+      "repeat": 2,
+      "seconds": 3.5337825280000743,
+      "cpu_seconds": 3.525429078,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "aicc_fused",
+      "repeat": 1,
+      "seconds": 1.823977967000019,
+      "cpu_seconds": 1.8172911289999991,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "aicc_batch",
+      "repeat": 0,
+      "seconds": 0.1252720260000615,
+      "cpu_seconds": 0.1252023280000003,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "aicc_fused",
+      "repeat": 0,
+      "seconds": 1.7461113530000603,
+      "cpu_seconds": 1.7437993570000003,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "ordinary_batch",
+      "repeat": 2,
+      "seconds": 0.1222682379999469,
+      "cpu_seconds": 0.12224991000000074,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "aicc_batch",
+      "repeat": 1,
+      "seconds": 0.12205047600002672,
+      "cpu_seconds": 0.12200137499999997,
+      "checksum": 32746476400
+    },
+    {
+      "mode": "ordinary_batch",
+      "repeat": 0,
+      "seconds": 0.12254203600002711,
+      "cpu_seconds": 0.12242154399999805,
+      "checksum": 32746476400
+    }
+  ],
+  "limits": [
+    "Known algebraic fusion, not algorithmic novelty.",
+    "Same process; randomized repeated order; host setup excluded.",
+    "AICC and ordinary batch paths use identical batch code.",
+    "No billed inference, cross-agent transfer, or security assurance."
+  ]
+}

@@ -1,0 +1,270 @@
+[
+ {
+  "n": 800,
+  "job": "repeated-shuffled",
+  "in_calibration_range": true,
+  "median_kernel_seconds": {
+   "cached": 0.0015568979999898147,
+   "partitioned": 0.0014686499999925218
+  },
+  "best_plan": "partitioned",
+  "choices": {
+   "original": "cached",
+   "trackA-001": "cached",
+   "trackA-002": "cached",
+   "static": "partitioned"
+  },
+  "regret_percent": {
+   "original": 6.0087835766004405,
+   "trackA-001": 6.0087835766004405,
+   "trackA-002": 6.0087835766004405,
+   "static": 0.0
+  }
+ },
+ {
+  "n": 800,
+  "job": "diverse-shuffled",
+  "in_calibration_range": true,
+  "median_kernel_seconds": {
+   "cached": 0.0016050289999611778,
+   "partitioned": 0.0015663290000702546
+  },
+  "best_plan": "partitioned",
+  "choices": {
+   "original": "cached",
+   "trackA-001": "cached",
+   "trackA-002": "partitioned",
+   "static": "partitioned"
+  },
+  "regret_percent": {
+   "original": 2.4707452833464316,
+   "trackA-001": 2.4707452833464316,
+   "trackA-002": 0.0,
+   "static": 0.0
+  }
+ },
+ {
+  "n": 800,
+  "job": "ordered-stream",
+  "in_calibration_range": true,
+  "median_kernel_seconds": {
+   "cached": 0.001364876000025106,
+   "partitioned": 0.0012744819999852552,
+   "ordered": 0.0011897330000465445
+  },
+  "best_plan": "ordered",
+  "choices": {
+   "original": "cached",
+   "trackA-001": "partitioned",
+   "trackA-002": "partitioned",
+   "static": "ordered"
+  },
+  "regret_percent": {
+   "original": 14.721202149701607,
+   "trackA-001": 7.123362967606628,
+   "trackA-002": 7.123362967606628,
+   "static": 0.0
+  }
+ },
+ {
+  "n": 14000,
+  "job": "repeated-shuffled",
+  "in_calibration_range": true,
+  "median_kernel_seconds": {
+   "cached": 0.026663582999958635,
+   "partitioned": 0.024093235999998797
+  },
+  "best_plan": "partitioned",
+  "choices": {
+   "original": "partitioned",
+   "trackA-001": "partitioned",
+   "trackA-002": "partitioned",
+   "static": "partitioned"
+  },
+  "regret_percent": {
+   "original": 0.0,
+   "trackA-001": 0.0,
+   "trackA-002": 0.0,
+   "static": 0.0
+  }
+ },
+ {
+  "n": 14000,
+  "job": "diverse-shuffled",
+  "in_calibration_range": true,
+  "median_kernel_seconds": {
+   "cached": 0.03637028100001771,
+   "partitioned": 0.03520634500000597
+  },
+  "best_plan": "partitioned",
+  "choices": {
+   "original": "partitioned",
+   "trackA-001": "partitioned",
+   "trackA-002": "partitioned",
+   "static": "partitioned"
+  },
+  "regret_percent": {
+   "original": 0.0,
+   "trackA-001": 0.0,
+   "trackA-002": 0.0,
+   "static": 0.0
+  }
+ },
+ {
+  "n": 14000,
+  "job": "ordered-stream",
+  "in_calibration_range": true,
+  "median_kernel_seconds": {
+   "cached": 0.021578286000021762,
+   "partitioned": 0.021136261999913586,
+   "ordered": 0.01988409699993099
+  },
+  "best_plan": "ordered",
+  "choices": {
+   "original": "partitioned",
+   "trackA-001": "partitioned",
+   "trackA-002": "partitioned",
+   "static": "ordered"
+  },
+  "regret_percent": {
+   "original": 6.297318907602101,
+   "trackA-001": 6.297318907602101,
+   "trackA-002": 6.297318907602101,
+   "static": 0.0
+  }
+ },
+ {
+  "n": 100000,
+  "job": "repeated-shuffled",
+  "in_calibration_range": false,
+  "median_kernel_seconds": {
+   "cached": 0.21948970400001144,
+   "partitioned": 0.17410235199997715
+  },
+  "best_plan": "partitioned",
+  "choices": {
+   "original": "partitioned",
+   "trackA-001": "partitioned",
+   "trackA-002": "partitioned",
+   "static": "partitioned"
+  },
+  "regret_percent": {
+   "original": 0.0,
+   "trackA-001": 0.0,
+   "trackA-002": 0.0,
+   "static": 0.0
+  }
+ },
+ {
+  "n": 100000,
+  "job": "diverse-shuffled",
+  "in_calibration_range": false,
+  "median_kernel_seconds": {
+   "cached": 0.38838728099995024,
+   "partitioned": 0.41987045500002296
+  },
+  "best_plan": "cached",
+  "choices": {
+   "original": "partitioned",
+   "trackA-001": "partitioned",
+   "trackA-002": "partitioned",
+   "static": "partitioned"
+  },
+  "regret_percent": {
+   "original": 8.106128995526184,
+   "trackA-001": 8.106128995526184,
+   "trackA-002": 8.106128995526184,
+   "static": 8.106128995526184
+  }
+ },
+ {
+  "n": 100000,
+  "job": "ordered-stream",
+  "in_calibration_range": false,
+  "median_kernel_seconds": {
+   "cached": 0.17430501399996956,
+   "partitioned": 0.16023053399999299,
+   "ordered": 0.14629085000001396
+  },
+  "best_plan": "ordered",
+  "choices": {
+   "original": "partitioned",
+   "trackA-001": "partitioned",
+   "trackA-002": "ordered",
+   "static": "ordered"
+  },
+  "regret_percent": {
+   "original": 9.528746329642424,
+   "trackA-001": 9.528746329642424,
+   "trackA-002": 0.0,
+   "static": 0.0
+  }
+ },
+ {
+  "n": 1000000,
+  "job": "repeated-shuffled",
+  "in_calibration_range": false,
+  "median_kernel_seconds": {
+   "cached": 3.1652836240000397,
+   "partitioned": 2.1013927029999877
+  },
+  "best_plan": "partitioned",
+  "choices": {
+   "original": "partitioned",
+   "trackA-001": "partitioned",
+   "trackA-002": "partitioned",
+   "static": "partitioned"
+  },
+  "regret_percent": {
+   "original": 0.0,
+   "trackA-001": 0.0,
+   "trackA-002": 0.0,
+   "static": 0.0
+  }
+ },
+ {
+  "n": 1000000,
+  "job": "diverse-shuffled",
+  "in_calibration_range": false,
+  "median_kernel_seconds": {
+   "cached": 5.9805067960001,
+   "partitioned": 5.962019446999989
+  },
+  "best_plan": "partitioned",
+  "choices": {
+   "original": "partitioned",
+   "trackA-001": "partitioned",
+   "trackA-002": "partitioned",
+   "static": "partitioned"
+  },
+  "regret_percent": {
+   "original": 0.0,
+   "trackA-001": 0.0,
+   "trackA-002": 0.0,
+   "static": 0.0
+  }
+ },
+ {
+  "n": 1000000,
+  "job": "ordered-stream",
+  "in_calibration_range": false,
+  "median_kernel_seconds": {
+   "cached": 2.5164673880000237,
+   "partitioned": 1.9864829220000502,
+   "ordered": 1.5269960699999956
+  },
+  "best_plan": "ordered",
+  "choices": {
+   "original": "partitioned",
+   "trackA-001": "partitioned",
+   "trackA-002": "ordered",
+   "static": "ordered"
+  },
+  "regret_percent": {
+   "original": 30.090899448094575,
+   "trackA-001": 30.090899448094575,
+   "trackA-002": 0.0,
+   "static": 0.0
+  }
+ }
+]

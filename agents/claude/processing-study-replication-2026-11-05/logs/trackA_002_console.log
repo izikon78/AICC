@@ -1,0 +1,66 @@
+command: ../../.venv/bin/python -u run_study.py --output results/anthropic-claude-opus-5.5-2026-11-05-trackA-002 --events 1000000 --repeats 3 --train-jobs 72 --validation-jobs 24 --test-jobs 24 --epochs 900
+start_utc: 2026-11-05T15:23:45.130Z
+CALIBRATION train: 8/72
+CALIBRATION train: 16/72
+CALIBRATION train: 24/72
+CALIBRATION train: 32/72
+CALIBRATION train: 40/72
+CALIBRATION train: 48/72
+CALIBRATION train: 56/72
+CALIBRATION train: 64/72
+CALIBRATION train: 72/72
+CALIBRATION validation: 8/24
+CALIBRATION validation: 16/24
+CALIBRATION validation: 24/24
+CALIBRATION test: 8/24
+CALIBRATION test: 16/24
+CALIBRATION test: 24/24
+TRAINED: 867 parameters; held-out kernel seconds learned=0.2551, static=0.2551
+STRESS 1/45 repeated-shuffled reference: 4.993s plan=reference, peak=815.6 MiB
+STRESS 2/45 repeated-shuffled learned: 2.543s plan=partitioned, peak=564.2 MiB
+STRESS 3/45 diverse-shuffled reference: 6.324s plan=reference, peak=1065.1 MiB
+STRESS 4/45 repeated-shuffled learned: 2.160s plan=partitioned, peak=564.2 MiB
+STRESS 5/45 ordered-stream static: 3.192s plan=ordered, peak=136.7 MiB
+STRESS 6/45 ordered-stream learned: 3.176s plan=ordered, peak=139.1 MiB
+STRESS 7/45 repeated-shuffled static: 2.079s plan=partitioned, peak=561.9 MiB
+STRESS 8/45 ordered-stream aicc_learned: 3.495s plan=ordered, peak=139.3 MiB
+STRESS 9/45 ordered-stream aicc_learned: 3.168s plan=ordered, peak=139.4 MiB
+STRESS 10/45 repeated-shuffled aicc_learned: 2.012s plan=partitioned, peak=564.0 MiB
+STRESS 11/45 ordered-stream learned: 3.139s plan=ordered, peak=139.2 MiB
+STRESS 12/45 ordered-stream learned: 3.045s plan=ordered, peak=139.1 MiB
+STRESS 13/45 ordered-stream aicc_static: 3.160s plan=ordered, peak=136.8 MiB
+STRESS 14/45 repeated-shuffled aicc_learned: 2.056s plan=partitioned, peak=564.2 MiB
+STRESS 15/45 diverse-shuffled learned: 5.052s plan=partitioned, peak=849.4 MiB
+STRESS 16/45 diverse-shuffled aicc_learned: 5.051s plan=partitioned, peak=849.4 MiB
+STRESS 17/45 ordered-stream static: 3.242s plan=ordered, peak=136.6 MiB
+STRESS 18/45 diverse-shuffled learned: 4.790s plan=partitioned, peak=849.6 MiB
+STRESS 19/45 diverse-shuffled aicc_static: 5.047s plan=partitioned, peak=847.1 MiB
+STRESS 20/45 diverse-shuffled reference: 6.269s plan=reference, peak=1065.1 MiB
+STRESS 21/45 ordered-stream reference: 5.194s plan=reference, peak=515.8 MiB
+STRESS 22/45 repeated-shuffled reference: 4.643s plan=reference, peak=815.7 MiB
+STRESS 23/45 ordered-stream static: 3.584s plan=ordered, peak=136.6 MiB
+STRESS 24/45 repeated-shuffled learned: 2.292s plan=partitioned, peak=564.1 MiB
+STRESS 25/45 diverse-shuffled static: 5.731s plan=partitioned, peak=847.2 MiB
+STRESS 26/45 repeated-shuffled aicc_static: 2.220s plan=partitioned, peak=561.7 MiB
+STRESS 27/45 diverse-shuffled learned: 4.999s plan=partitioned, peak=849.4 MiB
+STRESS 28/45 ordered-stream reference: 4.958s plan=reference, peak=515.7 MiB
+STRESS 29/45 diverse-shuffled reference: 5.943s plan=reference, peak=1065.1 MiB
+STRESS 30/45 diverse-shuffled aicc_learned: 4.849s plan=partitioned, peak=849.5 MiB
+STRESS 31/45 diverse-shuffled static: 4.891s plan=partitioned, peak=847.2 MiB
+STRESS 32/45 diverse-shuffled aicc_static: 4.788s plan=partitioned, peak=847.0 MiB
+STRESS 33/45 repeated-shuffled static: 2.250s plan=partitioned, peak=561.9 MiB
+STRESS 34/45 ordered-stream aicc_static: 3.258s plan=ordered, peak=136.6 MiB
+STRESS 35/45 diverse-shuffled aicc_learned: 4.839s plan=partitioned, peak=849.4 MiB
+STRESS 36/45 repeated-shuffled aicc_learned: 2.243s plan=partitioned, peak=564.2 MiB
+STRESS 37/45 ordered-stream aicc_learned: 3.347s plan=ordered, peak=139.2 MiB
+STRESS 38/45 repeated-shuffled aicc_static: 2.081s plan=partitioned, peak=561.6 MiB
+STRESS 39/45 repeated-shuffled static: 2.319s plan=partitioned, peak=561.8 MiB
+STRESS 40/45 ordered-stream aicc_static: 3.405s plan=ordered, peak=136.8 MiB
+STRESS 41/45 repeated-shuffled aicc_static: 2.042s plan=partitioned, peak=561.6 MiB
+STRESS 42/45 repeated-shuffled reference: 4.878s plan=reference, peak=815.7 MiB
+STRESS 43/45 diverse-shuffled static: 4.871s plan=partitioned, peak=847.3 MiB
+STRESS 44/45 diverse-shuffled aicc_static: 4.889s plan=partitioned, peak=847.1 MiB
+STRESS 45/45 ordered-stream reference: 5.148s plan=reference, peak=515.7 MiB
+COMPLETE: results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/REPORT.md
+end_utc: 2026-11-05T15:29:08.662Z
+exit_status: 0

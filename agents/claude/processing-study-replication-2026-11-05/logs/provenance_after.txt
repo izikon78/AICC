@@ -1,0 +1,15 @@
+run-config source entries: 11 | run-metadata source entries: 11
+  OK       aicc_processing/__init__.py                frozen 4c4f24062c94  current 4c4f24062c94  run-metadata 4c4f24062c94
+  OK       aicc_processing/benchmark.py               frozen 1878044cfad5  current 1878044cfad5  run-metadata 1878044cfad5
+  OK       aicc_processing/data.py                    frozen 9aaf7ebee10d  current 9aaf7ebee10d  run-metadata 9aaf7ebee10d
+  OK       aicc_processing/kernels.py                 frozen b75d5a1cb569  current b75d5a1cb569  run-metadata b75d5a1cb569
+  OK       aicc_processing/learning.py                frozen 3c687be5289f  current 3c687be5289f  run-metadata 3c687be5289f
+  OK       aicc_processing/runtime.py                 frozen 190a1d53e822  current 190a1d53e822  run-metadata 190a1d53e822
+  OK       aicc_processing/scenarios.py               frozen 5ac4cf74788d  current 5ac4cf74788d  run-metadata 5ac4cf74788d
+  OK       run_study.py                               frozen daffca09e029  current daffca09e029  run-metadata daffca09e029
+  OK       tests/test_kernels.py                      frozen ae28f453235b  current ae28f453235b  run-metadata ae28f453235b
+  OK       tests/test_learning.py                     frozen 873d7c208731  current 873d7c208731  run-metadata 873d7c208731
+  OK       tests/test_runtime.py                      frozen 2dc96d8795bb  current 2dc96d8795bb  run-metadata 2dc96d8795bb
+python files in study dir not in the frozen manifest: none
+original result assets matching checksums.json: 21/21
+SOURCE_HASHES_MATCH_FROZEN: True

@@ -1,0 +1,54 @@
+command: ../../.venv/bin/python -m unittest discover -s tests -v
+cwd: /home/claude/ps/AICC/experiments/processing_study
+start_utc: 2026-11-05T15:17:35.016Z
+test_anchored_window_uses_strict_boundary (test_kernels.KernelContractTests.test_anchored_window_uses_strict_boundary) ... ok
+test_creation_order_is_timestamp_then_original_ordinal (test_kernels.KernelContractTests.test_creation_order_is_timestamp_then_original_ordinal) ... ok
+test_dispatch_and_unknown_variant (test_kernels.KernelContractTests.test_dispatch_and_unknown_variant) ... ok
+test_empty_and_singleton (test_kernels.KernelContractTests.test_empty_and_singleton) ... ok
+test_event_id_whitespace_is_not_normalized (test_kernels.KernelContractTests.test_event_id_whitespace_is_not_normalized) ... ok
+test_first_input_duplicate_wins_before_filter_and_sort (test_kernels.KernelContractTests.test_first_input_duplicate_wins_before_filter_and_sort) ... ok
+test_invalid_container_and_parameters (test_kernels.KernelContractTests.test_invalid_container_and_parameters) ... ok
+test_invalid_rows_are_checked_even_if_duplicate_or_filtered (test_kernels.KernelContractTests.test_invalid_rows_are_checked_even_if_duplicate_or_filtered) ... ok
+test_large_integer_timestamps_do_not_lose_precision (test_kernels.KernelContractTests.test_large_integer_timestamps_do_not_lose_precision) ... ok
+test_message_is_not_nfkc_normalized (test_kernels.KernelContractTests.test_message_is_not_nfkc_normalized) ... ok
+test_minimum_severity_and_duplicate_id_case_sensitivity (test_kernels.KernelContractTests.test_minimum_severity_and_duplicate_id_case_sensitivity) ... ok
+test_one_pass_generators (test_kernels.KernelContractTests.test_one_pass_generators) ... ok
+test_ordered_checks_discarded_rows_too (test_kernels.KernelContractTests.test_ordered_checks_discarded_rows_too) ... ok
+test_rows_are_not_mutated_and_mapping_objects_are_accepted (test_kernels.KernelContractTests.test_rows_are_not_mutated_and_mapping_objects_are_accepted) ... ok
+test_seeded_differential_populations (test_kernels.KernelContractTests.test_seeded_differential_populations) ... ok
+test_unicode_normalization_and_message_case_are_distinct (test_kernels.KernelContractTests.test_unicode_normalization_and_message_case_are_distinct) ... ok
+test_invalid_measurements_are_not_imputed (test_learning.LearningTests.test_invalid_measurements_are_not_imputed) ... ok
+test_numeric_gradients_and_mask (test_learning.LearningTests.test_numeric_gradients_and_mask) ... ok
+test_static_is_best_of_four_policies (test_learning.LearningTests.test_static_is_best_of_four_policies) ... ok
+test_training_and_serialization (test_learning.LearningTests.test_training_and_serialization) ... ok
+test_alias_reuse_and_json_record (test_runtime.RuntimeBindingTests.test_alias_reuse_and_json_record) ... ok
+test_artifact_and_contract_pins_refuse_mismatch (test_runtime.RuntimeBindingTests.test_artifact_and_contract_pins_refuse_mismatch) ... ok
+test_cached_validation_cannot_weaken_different_requirements (test_runtime.RuntimeBindingTests.test_cached_validation_cannot_weaken_different_requirements) ... ok
+test_call_precondition_enforced_and_identity_pinned (test_runtime.RuntimeBindingTests.test_call_precondition_enforced_and_identity_pinned) ... ok
+test_contract_update_invalidates_existing_alias (test_runtime.RuntimeBindingTests.test_contract_update_invalidates_existing_alias) ... ok
+test_dependency_change_invalidates_existing_alias (test_runtime.RuntimeBindingTests.test_dependency_change_invalidates_existing_alias) ... ok
+test_effect_claim_does_not_create_host_authority (test_runtime.RuntimeBindingTests.test_effect_claim_does_not_create_host_authority) ... ok
+test_environment_change_invalidates_existing_alias (test_runtime.RuntimeBindingTests.test_environment_change_invalidates_existing_alias) ... ok
+test_expiry_boundary_is_rejected (test_runtime.RuntimeBindingTests.test_expiry_boundary_is_rejected) ... ok
+test_external_metadata_mutation_does_not_change_record (test_runtime.RuntimeBindingTests.test_external_metadata_mutation_does_not_change_record) ... ok
+test_handoff_rejects_tampered_identity_and_policy_metadata (test_runtime.RuntimeBindingTests.test_handoff_rejects_tampered_identity_and_policy_metadata) ... ok
+test_handoff_revalidates_against_receiving_runtime (test_runtime.RuntimeBindingTests.test_handoff_revalidates_against_receiving_runtime) ... ok
+test_identical_environment_or_grant_update_does_not_invalidate (test_runtime.RuntimeBindingTests.test_identical_environment_or_grant_update_does_not_invalidate) ... ok
+test_invalid_ttl_is_rejected (test_runtime.RuntimeBindingTests.test_invalid_ttl_is_rejected) ... ok
+test_loaded_function_code_replacement_is_rejected (test_runtime.RuntimeBindingTests.test_loaded_function_code_replacement_is_rejected) ... ok
+test_loaded_function_default_replacement_is_rejected (test_runtime.RuntimeBindingTests.test_loaded_function_default_replacement_is_rejected) ... ok
+test_policy_change_invalidates_only_that_principal (test_runtime.RuntimeBindingTests.test_policy_change_invalidates_only_that_principal) ... ok
+test_private_record_does_not_transfer_authority (test_runtime.RuntimeBindingTests.test_private_record_does_not_transfer_authority) ... ok
+test_receiving_task_pins_survive_weakened_handoff_record (test_runtime.RuntimeBindingTests.test_receiving_task_pins_survive_weakened_handoff_record) ... ok
+test_replacing_capability_invalidates_existing_alias (test_runtime.RuntimeBindingTests.test_replacing_capability_invalidates_existing_alias) ... ok
+test_revocation_and_fresh_rebinding (test_runtime.RuntimeBindingTests.test_revocation_and_fresh_rebinding) ... ok
+test_scope_claim_does_not_create_host_authority (test_runtime.RuntimeBindingTests.test_scope_claim_does_not_create_host_authority) ... ok
+test_unknown_and_incompatible_requirements_are_distinct (test_runtime.RuntimeBindingTests.test_unknown_and_incompatible_requirements_are_distinct) ... ok
+test_unrelated_registration_does_not_invalidate (test_runtime.RuntimeBindingTests.test_unrelated_registration_does_not_invalidate) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.330s
+
+OK
+end_utc: 2026-11-05T15:17:35.484Z
+exit_status: 0
