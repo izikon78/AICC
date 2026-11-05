@@ -1,0 +1,29 @@
+{
+ "global dedupe instead of horizon dedupe": [
+  "spec_trace_10_steps",
+  "spec_trace_checkpoint_after_watermark_1500"
+ ],
+ "sliding window instead of anchored": [
+  "anchored_window_boundary",
+  "overflow_count",
+  "overflow_severity_sum"
+ ],
+ "Python whitespace instead of contract set": [
+  "normalization_and_whitespace_set"
+ ],
+ "late rows reserve their IDs": [
+  "spec_trace_10_steps",
+  "spec_trace_checkpoint_after_watermark_1500"
+ ],
+ "severity filter before ID reservation": [
+  "spec_trace_10_steps",
+  "spec_trace_checkpoint_after_watermark_1500",
+  "capacity_dedupe_entries"
+ ],
+ "batched away per-call cancel/authority checks": [
+  "authority_revoked_before_third_call",
+  "cancel_at_third_policy_start",
+  "cancel_beats_policy_error",
+  "authority_beats_policy_error"
+ ]
+}

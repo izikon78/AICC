@@ -1,0 +1,20 @@
+config.validate(IntList9) -> Config
+manifest.pin(Manifest, Config) -> Pinned
+checkpoint.restore(Sink, Pinned, Config) -> State [effect sink.read]
+source.open(Source, State, Cancel) -> Records [effect source.read]
+record.validate(Records, Config) -> Valid
+record.admit(Valid, State, Config) -> Admitted
+event.dedupe(Admitted, State, Config) -> Unique
+event.normalize(Unique, State, Config) -> Normalized
+event.filter(Normalized, Severity, Config) -> Kept
+epoch.buffer(Kept, State, Config) -> Epochs
+epoch.group(Epochs, State, Config) -> Grouped
+epoch.finalize(Grouped, State, Config) -> Finalized
+policy.score(Finalized, Policy, Pinned, Cancel, Config) -> Scored [effect policy.invoke]
+report.order(Scored, Config) -> Ordered
+epoch.resolve(Ordered, Cancel, Config) -> Resolved
+txn.stage(Resolved, State, Pinned, Config) -> Staged
+txn.commit(Staged, Sink, Cancel, Config) -> Committed [effect sink.commit]
+cursor.advance(Committed, State, Config) -> Acked
+state.retire(Acked, Config) -> Retired
+stream.drain(Retired, Cancel, Config) -> Outcome

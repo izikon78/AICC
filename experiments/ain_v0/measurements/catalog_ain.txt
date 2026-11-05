@@ -1,0 +1,21 @@
+!010 = config.validate(IntList9) -> Config
+!011 = manifest.pin(Manifest, Config) -> Pinned
+!012 = checkpoint.restore(Sink, Pinned, Config) -> State [effect sink.read]
+!013 = source.open(Source, State, Cancel) -> Records [effect source.read]
+!101 = record.validate(Records, Config) -> Valid
+!102 = record.admit(Valid, State, Config) -> Admitted
+!103 = event.dedupe(Admitted, State, Config) -> Unique
+!104 = event.normalize(Unique, State, Config) -> Normalized
+!105 = event.filter(Normalized, Severity, Config) -> Kept
+!106 = epoch.buffer(Kept, State, Config) -> Epochs
+!107 = epoch.group(Epochs, State, Config) -> Grouped
+!108 = epoch.finalize(Grouped, State, Config) -> Finalized
+!109 = policy.score(Finalized, Policy, Pinned, Cancel, Config) -> Scored [effect policy.invoke]
+!110 = report.order(Scored, Config) -> Ordered
+!111 = epoch.resolve(Ordered, Cancel, Config) -> Resolved
+!112 = txn.stage(Resolved, State, Pinned, Config) -> Staged
+!113 = txn.commit(Staged, Sink, Cancel, Config) -> Committed [effect sink.commit]
+!114 = cursor.advance(Committed, State, Config) -> Acked
+!115 = state.retire(Acked, Config) -> Retired
+!116 = stream.drain(Retired, Cancel, Config) -> Outcome
+@00(%90 Source, %91 Manifest, %92 Policy, %93 Sink, %94 Cancel); !001 return

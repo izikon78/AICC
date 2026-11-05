@@ -1,0 +1,24 @@
+AIN v0 lowering of programs/workflow.ain (identical AST to programs/workflow.ir)
+effects (static): ['policy.invoke', 'sink.commit', 'sink.read', 'source.read']; hoisted filter literal: 1
+
+%00 !010 config.validate(IntList9) -> Config | constructor (runs once, eagerly)
+%01 !011 manifest.pin(Manifest, Config) -> Pinned | constructor (runs once, eagerly)
+%02 !012 checkpoint.restore(Sink, Pinned, Config) -> State | constructor (runs once, eagerly) | effect sink.read
+%03 !013 source.open(Source, State, Cancel) -> Records | lazy stream stage | effect source.read | cancel(admit) before each record
+%04 !101 record.validate(Records, Config) -> Valid | lazy stream stage
+%05 !102 record.admit(Valid, State, Config) -> Admitted | lazy stream stage | state: updates watermark, late counter
+%06 !103 event.dedupe(Admitted, State, Config) -> Unique | lazy stream stage | state: reserves IDs, duplicate counter, CAPACITY dedupe_entries
+%07 !104 event.normalize(Unique, State, Config) -> Normalized | lazy stream stage
+%08 !105 event.filter(Normalized, Severity, Config) -> Kept | lazy stream stage | state: filtered counter (via lowering context: no State argument)
+%09 !106 epoch.buffer(Kept, State, Config) -> Epochs | lazy stream stage | state: buffers events, accepted counter, CAPACITY buffered_events
+%10 !107 epoch.group(Epochs, State, Config) -> Grouped | lazy stream stage | state: groups, OVERFLOW checks, CAPACITY open_groups
+%11 !108 epoch.finalize(Grouped, State, Config) -> Finalized | lazy stream stage | state: CAPACITY epoch_reports
+%12 !109 policy.score(Finalized, Policy, Pinned, Cancel, Config) -> Scored | lazy stream stage | effect policy.invoke | cancel+authority(policy_start) before each call; <=concurrency running, <=queue waiting
+%13 !110 report.order(Scored, Config) -> Ordered | lazy stream stage
+%14 !111 epoch.resolve(Ordered, Cancel, Config) -> Resolved | lazy stream stage
+%15 !112 txn.stage(Resolved, State, Pinned, Config) -> Staged | lazy stream stage | crash(before_stage); dedupe eviction staged in payload
+%16 !113 txn.commit(Staged, Sink, Cancel, Config) -> Committed | lazy stream stage | effect sink.commit | crash(before_commit); cancel+authority(commit); fenced idempotent commit; crash(after_commit, ack_lost_retry)
+%17 !114 cursor.advance(Committed, State, Config) -> Acked | lazy stream stage
+%18 !115 state.retire(Acked, Config) -> Retired | lazy stream stage | state: replaces in-memory state with committed snapshot (via lowering context)
+%19 !116 stream.drain(Retired, Cancel, Config) -> Outcome | driver (pulls the stream)
+!001 return the Outcome produced by !116

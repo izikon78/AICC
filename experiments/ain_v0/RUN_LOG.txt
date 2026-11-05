@@ -1,0 +1,69 @@
+
+================================================================ Environment
+python 3.12.3 | unicode 15.0.0
+
+================================================================ Front ends: verbatim AIN sketch and IR parse to one AST
+identical AST: True | check: ['policy.invoke', 'sink.commit', 'sink.read', 'source.read'] | AIN round trip: True
+
+================================================================ Conformance suite (hand, crash, random differential, type errors, sink)
+hand cases: 47, failing 0
+crash cases: 12, invariant holds 12, forms identical 12
+random differential: 400 cases, mismatches 0, outcomes {'CANCELLED': 24, 'COMPLETED': 138, 'FAILED/AUTHORITY': 14, 'FAILED/INVALID_RECORD': 123, 'FAILED/POLICY_ERROR': 29, 'FAILED/WATERMARK_ORDER': 18, 'SUSPENDED': 54}
+type-error mutations: 14, identical across front ends 13
+  AST  arity: epoch.group missing config                IR E_ARITY          AIN E_ARITY
+  AST  type: dedupe before admission                    IR E_TYPE           AIN E_TYPE
+  AST  type: commit through policy handle (effect bypass) IR E_TYPE           AIN E_TYPE
+  AST  type: policy and pinned swapped                  IR E_TYPE           AIN E_TYPE
+  AST  literal: integer where Config expected           IR E_LITERAL        AIN E_LITERAL
+  AST  literal: severity 4                              IR E_LITERAL        AIN E_LITERAL
+  AST  literal: eight-value configuration               IR E_LITERAL        AIN E_LITERAL
+  AST  linear: stream consumed twice                    IR E_LINEAR_REUSE   AIN E_LINEAR_REUSE
+  AST  return: returns a stream, not Outcome            IR E_RETURN         AIN E_RETURN
+  text undefined value                                  IR E_UNDEFINED      AIN E_UNDEFINED
+  text redefined value                                  IR E_REDEFINED      AIN E_REDEFINED
+  text unknown operation                                IR E_UNKNOWN_OP     AIN E_UNKNOWN_OP
+  text missing semicolon                                IR E_SYNTAX         AIN E_SYNTAX
+  text wrong entry signature                            IR E_PARAMS         AIN E_UNDEFINED
+sink cases: 3/3 pass
+
+================================================================ Mutation adequacy
+global dedupe instead of horizon dedupe          detected by  2 case(s): spec_trace_10_steps, spec_trace_checkpoint_after_watermark_1500
+sliding window instead of anchored               detected by  3 case(s): anchored_window_boundary, overflow_count, overflow_severity_sum
+Python whitespace instead of contract set        detected by  1 case(s): normalization_and_whitespace_set
+late rows reserve their IDs                      detected by  2 case(s): spec_trace_10_steps, spec_trace_checkpoint_after_watermark_1500
+severity filter before ID reservation            detected by  3 case(s): spec_trace_10_steps, spec_trace_checkpoint_after_watermark_1500, capacity_dedupe_entries
+batched away per-call cancel/authority checks    detected by  4 case(s): authority_revoked_before_third_call, cancel_at_third_policy_start, cancel_beats_policy_error, authority_beats_policy_error
+mutants detected: 6 of 6
+
+================================================================ Lowering listing
+AIN v0 lowering of programs/workflow.ain (identical AST to programs/workflow.ir)
+effects (static): ['policy.invoke', 'sink.commit', 'sink.read', 'source.read']; hoisted filter literal: 1
+
+%00 !010 config.validate(IntList9) -> Config | constructor (runs once, eagerly)
+%01 !011 manifest.pin(Manifest, Config) -> Pinned | constructor (runs once, eagerly)
+%02 !012 checkpoint.restore(Sink, Pinned, Config) -> State | constructor (runs once, eagerly) | effect sink.read
+%03 !013 source.open(Source, State, Cancel) -> Records | lazy stream stage | effect source.read | cancel(admit) before each record
+%04 !101 record.validate(Records, Config) -> Valid | lazy stream stage
+%05 !102 record.admit(Valid, State, Config) -> Admitted | lazy stream stage | state: updates watermark, late counter
+%06 !103 event.dedupe(Admitted, State, Config) -> Unique | lazy stream stage | state: reserves IDs, duplicate counter, CAPACITY dedupe_entries
+%07 !104 event.normalize(Unique, State, Config) -> Normalized | lazy stream stage
+%08 !105 event.filter(Normalized, Severity, Config) -> Kept | lazy stream stage | state: filtered counter (via lowering context: no State argument)
+%09 !106 epoch.buffer(Kept, State, Config) -> Epochs | lazy stream stage | state: buffers events, accepted counter, CAPACITY buffered_events
+%10 !107 epoch.group(Epochs, State, Config) -> Grouped | lazy stream stage | state: groups, OVERFLOW checks, CAPACITY open_groups
+%11 !108 epoch.finalize(Grouped, State, Config) -> Finalized | lazy stream stage | state: CAPACITY epoch_reports
+%12 !109 policy.score(Finalized, Policy, Pinned, Cancel, Config) -> Scored | lazy stream stage | effect policy.invoke | cancel+authority(policy_start) before each call; <=concurrency running, <=queue waiting
+%13 !110 report.order(Scored, Config) -> Ordered | lazy stream stage
+%14 !111 epoch.resolve(Ordered, Cancel, Config) -> Resolved | lazy stream stage
+%15 !112 txn.stage(Resolved, State, Pinned, Config) -> Staged | lazy stream stage | crash(before_stage); dedupe eviction staged in payload
+%16 !113 txn.commit(Staged, Sink, Cancel, Config) -> Committed | lazy stream stage | effect sink.commit | crash(before_commit); cancel+authority(commit); fenced idempotent commit; crash(after_commit, ack_lost_retry)
+%17 !114 cursor.advance(Committed, State, Config) -> Acked | lazy stream stage
+%18 !115 state.retire(Acked, Config) -> Retired | lazy stream stage | state: replaces in-memory state with committed snapshot (via lowering context)
+%19 !116 stream.drain(Retired, Cancel, Config) -> Outcome | driver (pulls the stream)
+!001 return the Outcome produced by !116
+
+================================================================ Tokenizer counts (not billing)
+TOKENIZER COUNTS ONLY (tiktoken o200k_base). Not billed tokens, not model performance.
+form                                               program bytes program tok catalog tok program+catalog
+Python reference composition (reference.py)                 5118        1245         126            1371
+Typed IR program (workflow.ir)                              1152         298         282             580
+AIN program (workflow.ain, verbatim spec sketch)             616         298         368             666

@@ -1,0 +1,23 @@
+[
+ {
+  "form": "Python reference composition (reference.py)",
+  "program_bytes": 5118,
+  "program_tokens": 1245,
+  "catalog_tokens": 126,
+  "total_tokens": 1371
+ },
+ {
+  "form": "Typed IR program (workflow.ir)",
+  "program_bytes": 1152,
+  "program_tokens": 298,
+  "catalog_tokens": 282,
+  "total_tokens": 580
+ },
+ {
+  "form": "AIN program (workflow.ain, verbatim spec sketch)",
+  "program_bytes": 616,
+  "program_tokens": 298,
+  "catalog_tokens": 368,
+  "total_tokens": 666
+ }
+]

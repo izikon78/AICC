@@ -1,0 +1,23 @@
+fn workflow(source: Source, manifest: Manifest, policy: Policy, sink: Sink, cancel: Cancel) {
+  config = config.validate([600, 120, 1200, 8, 32, 100000, 200000, 100000, 100000]);
+  pinned = manifest.pin(manifest, config);
+  state = checkpoint.restore(sink, pinned, config);
+  records = source.open(source, state, cancel);
+  valid = record.validate(records, config);
+  admitted = record.admit(valid, state, config);
+  unique = event.dedupe(admitted, state, config);
+  normalized = event.normalize(unique, state, config);
+  kept = event.filter(normalized, 1, config);
+  epochs = epoch.buffer(kept, state, config);
+  grouped = epoch.group(epochs, state, config);
+  finalized = epoch.finalize(grouped, state, config);
+  scored = policy.score(finalized, policy, pinned, cancel, config);
+  ordered = report.order(scored, config);
+  resolved = epoch.resolve(ordered, cancel, config);
+  staged = txn.stage(resolved, state, pinned, config);
+  committed = txn.commit(staged, sink, cancel, config);
+  acked = cursor.advance(committed, state, config);
+  retired = state.retire(acked, config);
+  outcome = stream.drain(retired, cancel, config);
+  return outcome;
+}

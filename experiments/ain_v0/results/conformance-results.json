@@ -1,0 +1,853 @@
+{
+ "started_utc": "2026-11-05T20:10:15Z",
+ "hand": [
+  {
+   "name": "spec_trace_10_steps",
+   "status": "COMPLETED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "spec_trace_checkpoint_after_watermark_1500",
+   "status": "SUSPENDED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "normalization_and_whitespace_set",
+   "status": "COMPLETED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "anchored_window_boundary",
+   "status": "COMPLETED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "rows_at_frontier_wait",
+   "status": "SUSPENDED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "rows_at_frontier_then_end",
+   "status": "COMPLETED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "equal_timestamps_ordered_by_offset",
+   "status": "COMPLETED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "lateness_zero_boundary",
+   "status": "COMPLETED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "timestamp_max_valid",
+   "status": "COMPLETED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "timestamp_overflow_invalid",
+   "status": "FAILED",
+   "error": "INVALID_RECORD",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "timestamp_negative_invalid",
+   "status": "FAILED",
+   "error": "INVALID_RECORD",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "severity_bool_invalid",
+   "status": "FAILED",
+   "error": "INVALID_RECORD",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "severity_four_invalid",
+   "status": "FAILED",
+   "error": "INVALID_RECORD",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "extra_field_invalid",
+   "status": "FAILED",
+   "error": "INVALID_RECORD",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "unpaired_surrogate_invalid",
+   "status": "FAILED",
+   "error": "INVALID_RECORD",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "empty_tenant_invalid",
+   "status": "FAILED",
+   "error": "INVALID_RECORD",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "tag_257_invalid_but_128_tenant_valid",
+   "status": "FAILED",
+   "error": "INVALID_RECORD",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "malformed_duplicate_still_invalid",
+   "status": "FAILED",
+   "error": "INVALID_RECORD",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "decreasing_offset",
+   "status": "FAILED",
+   "error": "OFFSET_ORDER",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "equal_offset",
+   "status": "FAILED",
+   "error": "OFFSET_ORDER",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "decreasing_watermark_after_commit",
+   "status": "FAILED",
+   "error": "WATERMARK_ORDER",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "equal_watermark_two_epochs",
+   "status": "SUSPENDED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "after_end_on_restart",
+   "status": "FAILED",
+   "error": "AFTER_END",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "restart_complete_no_new_records",
+   "status": "COMPLETED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "overflow_count",
+   "status": "FAILED",
+   "error": "OVERFLOW",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "overflow_severity_sum",
+   "status": "FAILED",
+   "error": "OVERFLOW",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "capacity_buffered_events",
+   "status": "FAILED",
+   "error": "CAPACITY",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "capacity_dedupe_entries",
+   "status": "FAILED",
+   "error": "CAPACITY",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "capacity_open_groups",
+   "status": "FAILED",
+   "error": "CAPACITY",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "capacity_epoch_reports",
+   "status": "FAILED",
+   "error": "CAPACITY",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "config_horizon_below_window",
+   "status": "FAILED",
+   "error": "INVALID_CONFIG",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "config_window_zero",
+   "status": "FAILED",
+   "error": "INVALID_CONFIG",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "invalid_restored_checkpoint",
+   "status": "FAILED",
+   "error": "INVALID_CHECKPOINT",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "effect_denied",
+   "status": "FAILED",
+   "error": "EFFECT_DENIED",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "end_without_watermarks",
+   "status": "COMPLETED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "exhausted_without_end_suspends",
+   "status": "SUSPENDED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "queue_saturation_limits",
+   "status": "COMPLETED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "reverse_completion_same_publication",
+   "status": "COMPLETED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "multiple_policy_failures_lowest_index",
+   "status": "FAILED",
+   "error": "POLICY_ERROR",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "invalid_policy_output",
+   "status": "FAILED",
+   "error": "POLICY_ERROR",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "authority_revoked_before_third_call",
+   "status": "FAILED",
+   "error": "AUTHORITY",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "authority_revoked_before_second_commit",
+   "status": "FAILED",
+   "error": "AUTHORITY",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "cancel_at_admission_mid_epoch",
+   "status": "CANCELLED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "cancel_at_third_policy_start",
+   "status": "CANCELLED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "cancel_before_first_commit",
+   "status": "CANCELLED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "cancel_beats_policy_error",
+   "status": "CANCELLED",
+   "error": null,
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  },
+  {
+   "name": "authority_beats_policy_error",
+   "status": "FAILED",
+   "error": "AUTHORITY",
+   "expectation_failures": {
+    "reference": [],
+    "ir": [],
+    "ain": []
+   },
+   "forms_identical": true
+  }
+ ],
+ "crash": [
+  {
+   "name": "crash_before_stage_epoch_5",
+   "attempts": [
+    "CRASH",
+    "COMPLETED"
+   ],
+   "idempotent_receipts": 0,
+   "exactly_once_and_equal_to_uninterrupted": true,
+   "forms_identical": true
+  },
+  {
+   "name": "crash_before_stage_epoch_8",
+   "attempts": [
+    "CRASH",
+    "COMPLETED"
+   ],
+   "idempotent_receipts": 0,
+   "exactly_once_and_equal_to_uninterrupted": true,
+   "forms_identical": true
+  },
+  {
+   "name": "crash_before_stage_epoch_10",
+   "attempts": [
+    "CRASH",
+    "COMPLETED"
+   ],
+   "idempotent_receipts": 0,
+   "exactly_once_and_equal_to_uninterrupted": true,
+   "forms_identical": true
+  },
+  {
+   "name": "crash_before_commit_epoch_5",
+   "attempts": [
+    "CRASH",
+    "COMPLETED"
+   ],
+   "idempotent_receipts": 0,
+   "exactly_once_and_equal_to_uninterrupted": true,
+   "forms_identical": true
+  },
+  {
+   "name": "crash_before_commit_epoch_8",
+   "attempts": [
+    "CRASH",
+    "COMPLETED"
+   ],
+   "idempotent_receipts": 0,
+   "exactly_once_and_equal_to_uninterrupted": true,
+   "forms_identical": true
+  },
+  {
+   "name": "crash_before_commit_epoch_10",
+   "attempts": [
+    "CRASH",
+    "COMPLETED"
+   ],
+   "idempotent_receipts": 0,
+   "exactly_once_and_equal_to_uninterrupted": true,
+   "forms_identical": true
+  },
+  {
+   "name": "crash_after_commit_epoch_5",
+   "attempts": [
+    "CRASH",
+    "COMPLETED"
+   ],
+   "idempotent_receipts": 0,
+   "exactly_once_and_equal_to_uninterrupted": true,
+   "forms_identical": true
+  },
+  {
+   "name": "crash_after_commit_epoch_8",
+   "attempts": [
+    "CRASH",
+    "COMPLETED"
+   ],
+   "idempotent_receipts": 0,
+   "exactly_once_and_equal_to_uninterrupted": true,
+   "forms_identical": true
+  },
+  {
+   "name": "crash_after_commit_epoch_10",
+   "attempts": [
+    "CRASH",
+    "COMPLETED"
+   ],
+   "idempotent_receipts": 0,
+   "exactly_once_and_equal_to_uninterrupted": true,
+   "forms_identical": true
+  },
+  {
+   "name": "crash_ack_lost_retry_epoch_5",
+   "attempts": [
+    "COMPLETED"
+   ],
+   "idempotent_receipts": 1,
+   "exactly_once_and_equal_to_uninterrupted": true,
+   "forms_identical": true
+  },
+  {
+   "name": "crash_ack_lost_retry_epoch_8",
+   "attempts": [
+    "COMPLETED"
+   ],
+   "idempotent_receipts": 1,
+   "exactly_once_and_equal_to_uninterrupted": true,
+   "forms_identical": true
+  },
+  {
+   "name": "crash_ack_lost_retry_epoch_10",
+   "attempts": [
+    "COMPLETED"
+   ],
+   "idempotent_receipts": 1,
+   "exactly_once_and_equal_to_uninterrupted": true,
+   "forms_identical": true
+  }
+ ],
+ "random": {
+  "cases": 400,
+  "mismatches": [],
+  "outcome_distribution": {
+   "CANCELLED": 24,
+   "COMPLETED": 138,
+   "FAILED/AUTHORITY": 14,
+   "FAILED/INVALID_RECORD": 123,
+   "FAILED/POLICY_ERROR": 29,
+   "FAILED/WATERMARK_ORDER": 18,
+   "SUSPENDED": 54
+  }
+ },
+ "type_errors": [
+  {
+   "mutation": "arity: epoch.group missing config",
+   "level": "AST",
+   "ir": [
+    "E_ARITY",
+    "!107 epoch.group: expected 3 arguments, got 2"
+   ],
+   "ain": [
+    "E_ARITY",
+    "!107 epoch.group: expected 3 arguments, got 2"
+   ],
+   "identical": true
+  },
+  {
+   "mutation": "type: dedupe before admission",
+   "level": "AST",
+   "ir": [
+    "E_TYPE",
+    "!103 event.dedupe arg 1: expected Admitted, got Valid"
+   ],
+   "ain": [
+    "E_TYPE",
+    "!103 event.dedupe arg 1: expected Admitted, got Valid"
+   ],
+   "identical": true
+  },
+  {
+   "mutation": "type: commit through policy handle (effect bypass)",
+   "level": "AST",
+   "ir": [
+    "E_TYPE",
+    "!113 txn.commit arg 2: expected Sink, got Policy"
+   ],
+   "ain": [
+    "E_TYPE",
+    "!113 txn.commit arg 2: expected Sink, got Policy"
+   ],
+   "identical": true
+  },
+  {
+   "mutation": "type: policy and pinned swapped",
+   "level": "AST",
+   "ir": [
+    "E_TYPE",
+    "!109 policy.score arg 2: expected Policy, got Pinned"
+   ],
+   "ain": [
+    "E_TYPE",
+    "!109 policy.score arg 2: expected Policy, got Pinned"
+   ],
+   "identical": true
+  },
+  {
+   "mutation": "literal: integer where Config expected",
+   "level": "AST",
+   "ir": [
+    "E_LITERAL",
+    "!105 arg 3: value of type Config required, got literal"
+   ],
+   "ain": [
+    "E_LITERAL",
+    "!105 arg 3: value of type Config required, got literal"
+   ],
+   "identical": true
+  },
+  {
+   "mutation": "literal: severity 4",
+   "level": "AST",
+   "ir": [
+    "E_LITERAL",
+    "!105 arg 2: severity literal 0..3 required"
+   ],
+   "ain": [
+    "E_LITERAL",
+    "!105 arg 2: severity literal 0..3 required"
+   ],
+   "identical": true
+  },
+  {
+   "mutation": "literal: eight-value configuration",
+   "level": "AST",
+   "ir": [
+    "E_LITERAL",
+    "!010 arg 1: nine-integer list required"
+   ],
+   "ain": [
+    "E_LITERAL",
+    "!010 arg 1: nine-integer list required"
+   ],
+   "identical": true
+  },
+  {
+   "mutation": "linear: stream consumed twice",
+   "level": "AST",
+   "ir": [
+    "E_LINEAR_REUSE",
+    "!107 arg 1: stream of type Epochs consumed twice"
+   ],
+   "ain": [
+    "E_LINEAR_REUSE",
+    "!107 arg 1: stream of type Epochs consumed twice"
+   ],
+   "identical": true
+  },
+  {
+   "mutation": "return: returns a stream, not Outcome",
+   "level": "AST",
+   "ir": [
+    "E_RETURN",
+    "return type Retired, expected Outcome"
+   ],
+   "ain": [
+    "E_RETURN",
+    "return type Retired, expected Outcome"
+   ],
+   "identical": true
+  },
+  {
+   "mutation": "undefined value",
+   "level": "text",
+   "ir": [
+    "E_UNDEFINED",
+    "stat"
+   ],
+   "ain": [
+    "E_UNDEFINED",
+    "%29"
+   ],
+   "identical": true
+  },
+  {
+   "mutation": "redefined value",
+   "level": "text",
+   "ir": [
+    "E_REDEFINED",
+    "records"
+   ],
+   "ain": [
+    "E_REDEFINED",
+    "%03"
+   ],
+   "identical": true
+  },
+  {
+   "mutation": "unknown operation",
+   "level": "text",
+   "ir": [
+    "E_UNKNOWN_OP",
+    "event.dedup"
+   ],
+   "ain": [
+    "E_UNKNOWN_OP",
+    "!199"
+   ],
+   "identical": true
+  },
+  {
+   "mutation": "missing semicolon",
+   "level": "text",
+   "ir": [
+    "E_SYNTAX",
+    "expected ;, got 'pinned'"
+   ],
+   "ain": [
+    "E_SYNTAX",
+    "expected ;, got '%01'"
+   ],
+   "identical": true
+  },
+  {
+   "mutation": "wrong entry signature",
+   "level": "text",
+   "ir": [
+    "E_PARAMS",
+    "expected ('Source', 'Manifest', 'Policy', 'Sink', 'Cancel'), got ('Sink', 'Manifest', 'Policy', 'Sink', 'Cancel')"
+   ],
+   "ain": [
+    "E_UNDEFINED",
+    "%94"
+   ],
+   "identical": false
+  }
+ ],
+ "sink": [
+  {
+   "case": "idempotent repeat returns existing receipt, no new reports",
+   "pass": true
+  },
+  {
+   "case": "same epoch identity with different payload is CONFLICT",
+   "pass": true
+  },
+  {
+   "case": "stale writer cannot commit after a newer fence",
+   "pass": true
+  }
+ ],
+ "finished_utc": "2026-11-05T20:10:16Z"
+}

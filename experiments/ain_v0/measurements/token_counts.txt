@@ -1,0 +1,5 @@
+TOKENIZER COUNTS ONLY (tiktoken o200k_base). Not billed tokens, not model performance.
+form                                               program bytes program tok catalog tok program+catalog
+Python reference composition (reference.py)                 5118        1245         126            1371
+Typed IR program (workflow.ir)                              1152         298         282             580
+AIN program (workflow.ain, verbatim spec sketch)             616         298         368             666
