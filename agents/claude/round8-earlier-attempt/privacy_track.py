@@ -1,0 +1,30 @@
+"""Round 8 Arm C (privacy/binding lifecycle) against the honest mock Runtime. Mock metadata checks only."""
+from benchmark.host.registry import Runtime, PermissionDenied, InvalidBinding
+import time
+R = lambda: print("  ->", end=" ")
+rt = Runtime()
+print("1. public-only bind to private capability (no scope/effect):")
+try: rt.bind('private.project_risk_score@1', scopes=(), effects=()); print("   BOUND (unexpected)")
+except PermissionDenied as e: print(f"   PermissionDenied('{e}')  [expected]")
+print("2. public-only bind WITH scope but WITHOUT effect:")
+try: rt.bind('private.project_risk_score@1', scopes={'project-a'}, effects=()); print("   BOUND (unexpected)")
+except PermissionDenied as e: print(f"   PermissionDenied('{e}')  [expected: effect project.policy missing]")
+print("3. authorized scoped bind (scope project-a + effect project.policy):")
+fn = rt.bind('private.project_risk_score@1', scopes={'project-a'}, effects={'project.policy'})
+print(f"   bound; fn({{'errors':2,'retries':1}}) = {fn({'errors':2,'retries':1})}")
+print("4. revoke, then reuse the SAME handle:")
+rt.revoke('private.project_risk_score@1')
+try: fn({'errors':1}); print("   still callable (unexpected)")
+except InvalidBinding as e: print(f"   InvalidBinding('{e}')  [expected]")
+print("5. re-bind after revoke is permanently denied:")
+try: rt.bind('private.project_risk_score@1', scopes={'project-a'}, effects={'project.policy'}); print("   re-bound (unexpected)")
+except PermissionDenied as e: print(f"   PermissionDenied('{e}')  [expected: revoked set is permanent]")
+
+print("\n--- weaknesses of this mock (adversarial) ---")
+print("6. revocation is GLOBAL via shared self.revision: revoking ONE capability invalidates UNRELATED live bindings:")
+rt2 = Runtime()
+a = rt2.bind('pub.parse_money@1'); b = rt2.bind('pub.safe_path@1')
+print(f"   before: parse_money('1.00')={a('1.00')}, safe_path('x/y')={b('x/y')}")
+rt2.revoke('pub.normalize_tag@1')          # revoke a THIRD, unrelated capability
+try: a('1.00'); print("   parse_money still works")
+except InvalidBinding as e: print(f"   parse_money handle now InvalidBinding('{e}')  <-- collateral revocation")

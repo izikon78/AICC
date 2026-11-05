@@ -1,0 +1,122 @@
+{
+ "Python (character, same class)": {
+  "rejected before running": [
+   1437,
+   4000,
+   35.9,
+   34.5,
+   37.4
+  ],
+  "crashed while running": [
+   2485,
+   4000,
+   62.1,
+   60.6,
+   63.6
+  ],
+  "silently wrong": [
+   77,
+   4000,
+   1.9,
+   1.5,
+   2.4
+  ],
+  "harmless": [
+   1,
+   4000,
+   0.0,
+   0.0,
+   0.1
+  ]
+ },
+ "Language A (character, same class)": {
+  "rejected before running": [
+   3550,
+   4000,
+   88.8,
+   87.7,
+   89.7
+  ],
+  "crashed while running": [
+   275,
+   4000,
+   6.9,
+   6.1,
+   7.7
+  ],
+  "silently wrong": [
+   173,
+   4000,
+   4.3,
+   3.7,
+   5.0
+  ],
+  "harmless": [
+   2,
+   4000,
+   0.1,
+   0.0,
+   0.2
+  ]
+ },
+ "Language B (opcode, same class)": {
+  "rejected before running": [
+   3223,
+   4000,
+   80.6,
+   79.3,
+   81.8
+  ],
+  "crashed while running": [
+   0,
+   4000,
+   0.0,
+   0.0,
+   0.1
+  ],
+  "silently wrong": [
+   574,
+   4000,
+   14.3,
+   13.3,
+   15.5
+  ],
+  "harmless": [
+   203,
+   4000,
+   5.1,
+   4.4,
+   5.8
+  ]
+ },
+ "Language B (opcode, any opcode)": {
+  "rejected before running": [
+   3747,
+   4000,
+   93.7,
+   92.9,
+   94.4
+  ],
+  "crashed while running": [
+   0,
+   4000,
+   0.0,
+   0.0,
+   0.1
+  ],
+  "silently wrong": [
+   247,
+   4000,
+   6.2,
+   5.5,
+   7.0
+  ],
+  "harmless": [
+   6,
+   4000,
+   0.1,
+   0.1,
+   0.3
+  ]
+ }
+}

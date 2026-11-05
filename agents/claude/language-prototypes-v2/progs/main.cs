@@ -1,0 +1,14 @@
+public void Main(int NumOfRuns)
+{
+    for (int i = 0; i < NumOfRuns; i++)
+    {
+        if (i == 0)
+        {
+            m_log.Info($"Starting controller service for {NumOfRuns} runs");
+        }
+        else
+        {
+            m_log.Info($"Restarting controller service for run {i+1} of {NumOfRuns}");
+        }
+    }
+}

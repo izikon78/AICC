@@ -1,0 +1,12 @@
+Language A v0.1 quick reference. Whitespace is insignificant outside strings.
+Module: [use ALIAS=cap:HASH.member;]* [tpl NAME="text {0} {1}";]* fn NAME(PARAM:TYPE,...)[:TYPE]{STMTS}
+Types: i32 (32-bit; overflow is an error), bool, str, unit.
+Statements (optionally separated by ;):
+  for x<e{...}         x = 0,1,...,e-1; no iterations if e<=0; e evaluated once; x is immutable
+  for x in a..<b{...}  x = a,...,b-1 (half-open)
+  if c{...}else{...}   c is bool; else is optional; else if is allowed
+  ALIAS(args) or ALIAS"..."  call an effect capability; log is std.log.info(str)
+Expressions: integers, true, false, names, + - * / % (i32, division truncates), == != < <= > >=, && ||, !, c?a:b, (e)
+Strings: "text {expr} text" interpolates; integers print as ASCII decimal; escape with \" \{ \}.
+Templates: NAME(args) fills {0},{1},...; the argument count must match the placeholders.
+Example: fn main(n:i32){for i<n{if i==0{log"Start {n}"}else{log"Run {i+1} of {n}"}}}

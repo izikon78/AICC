@@ -1,0 +1,3 @@
+benchmark/public/API_CONTRACTS.md    bytes  4829 sha256 6ee91c58b6ebaa3d o200k 1043
+benchmark/public/baseline_api.py     bytes   433 sha256 74667ff708eaa063 o200k 97
+benchmark/sealed/public_core.py      bytes  8794 sha256 4e25e6921448224a o200k 2198

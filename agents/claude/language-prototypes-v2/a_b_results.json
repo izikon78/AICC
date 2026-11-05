@@ -1,0 +1,90 @@
+{
+ "A_ifelse": {
+  "src": "fn main(n:i32){for i<n{if i==0{log\"Starting controller service for {n} runs\"}else{log\"Restarting controller service for run {i+1} of {n}\"}}}",
+  "b_tokens": [
+   "FN1",
+   "TI32",
+   "TUNIT",
+   "FOR",
+   "P0",
+   "IF",
+   "EQ",
+   "L0",
+   "C0",
+   "EFF",
+   "K0",
+   "TP0",
+   "P0",
+   "EFF",
+   "K0",
+   "TP1",
+   "ADD",
+   "L0",
+   "C1",
+   "P0"
+  ],
+  "b_templates": [
+   "Starting controller service for {0} runs",
+   "Restarting controller service for run {0} of {1}"
+  ],
+  "b_bytes": 111
+ },
+ "A_ternary": {
+  "src": "fn main(n:i32){for i<n{log(i==0?\"Starting controller service for {n} runs\":\"Restarting controller service for run {i+1} of {n}\")}}",
+  "b_tokens": [
+   "FN1",
+   "TI32",
+   "TUNIT",
+   "FOR",
+   "P0",
+   "EFF",
+   "K0",
+   "SEL",
+   "EQ",
+   "L0",
+   "C0",
+   "TP0",
+   "P0",
+   "TP1",
+   "ADD",
+   "L0",
+   "C1",
+   "P0"
+  ],
+  "b_templates": [
+   "Starting controller service for {0} runs",
+   "Restarting controller service for run {0} of {1}"
+  ],
+  "b_bytes": 109
+ },
+ "A_templates": {
+  "src": "tpl t0=\"Starting controller service for {0} runs\";tpl t1=\"Restarting controller service for run {0} of {1}\";\nfn main(n:i32){for i<n{if i==0{log(t0(n))}else{log(t1(i+1,n))}}}",
+  "b_tokens": [
+   "FN1",
+   "TI32",
+   "TUNIT",
+   "FOR",
+   "P0",
+   "IF",
+   "EQ",
+   "L0",
+   "C0",
+   "EFF",
+   "K0",
+   "TP0",
+   "P0",
+   "EFF",
+   "K0",
+   "TP1",
+   "ADD",
+   "L0",
+   "C1",
+   "P0"
+  ],
+  "b_templates": [
+   "Starting controller service for {0} runs",
+   "Restarting controller service for run {0} of {1}"
+  ],
+  "b_bytes": 111
+ }
+}

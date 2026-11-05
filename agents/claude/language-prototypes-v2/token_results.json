@@ -1,0 +1,212 @@
+{
+ "C# original": {
+  "chars": 324,
+  "bytes": 324,
+  "o200k": 88,
+  "cl100k": 88,
+  "llama3": 88,
+  "qwen25": 88,
+  "deepseekv3": 95,
+  "gemma3": 105
+ },
+ "C# minified": {
+  "chars": 217,
+  "bytes": 217,
+  "o200k": 67,
+  "cl100k": 66,
+  "llama3": 66,
+  "qwen25": 66,
+  "deepseekv3": 73,
+  "gemma3": 74
+ },
+ "Python": {
+  "chars": 285,
+  "bytes": 285,
+  "o200k": 75,
+  "cl100k": 75,
+  "llama3": 75,
+  "qwen25": 75,
+  "deepseekv3": 81,
+  "gemma3": 98
+ },
+ "Python minified": {
+  "chars": 211,
+  "bytes": 211,
+  "o200k": 61,
+  "cl100k": 61,
+  "llama3": 61,
+  "qwen25": 61,
+  "deepseekv3": 66,
+  "gemma3": 84
+ },
+ "Brief rough sketch (buggy)": {
+  "chars": 148,
+  "bytes": 148,
+  "o200k": 54,
+  "cl100k": 54,
+  "llama3": 54,
+  "qwen25": 54,
+  "deepseekv3": 56,
+  "gemma3": 59
+ },
+ "Brief @1 syntax, code only": {
+  "chars": 47,
+  "bytes": 47,
+  "o200k": 31,
+  "cl100k": 31,
+  "llama3": 31,
+  "qwen25": 31,
+  "deepseekv3": 32,
+  "gemma3": 40
+ },
+ "Brief @1 syntax + template table": {
+  "chars": 144,
+  "bytes": 144,
+  "o200k": 54,
+  "cl100k": 54,
+  "llama3": 54,
+  "qwen25": 54,
+  "deepseekv3": 56,
+  "gemma3": 65
+ },
+ "A, if/else, inline strings": {
+  "chars": 140,
+  "bytes": 140,
+  "o200k": 47,
+  "cl100k": 46,
+  "llama3": 46,
+  "qwen25": 47,
+  "deepseekv3": 46,
+  "gemma3": 50
+ },
+ "A, ternary, inline strings": {
+  "chars": 130,
+  "bytes": 130,
+  "o200k": 40,
+  "cl100k": 40,
+  "llama3": 40,
+  "qwen25": 41,
+  "deepseekv3": 42,
+  "gemma3": 45
+ },
+ "A, interned templates": {
+  "chars": 173,
+  "bytes": 173,
+  "o200k": 63,
+  "cl100k": 62,
+  "llama3": 62,
+  "qwen25": 63,
+  "deepseekv3": 65,
+  "gemma3": 71
+ },
+ "B as mnemonic text (existing tokenizer)": {
+  "chars": 173,
+  "bytes": 173,
+  "o200k": 62,
+  "cl100k": 60,
+  "llama3": 60,
+  "qwen25": 61,
+  "deepseekv3": 63,
+  "gemma3": 65
+ },
+ "Forth (gforth-verified)": {
+  "chars": 234,
+  "bytes": 234,
+  "o200k": 85,
+  "cl100k": 85,
+  "llama3": 85,
+  "qwen25": 85,
+  "deepseekv3": 90,
+  "gemma3": 87
+ },
+ "APL (dfn, not executed)": {
+  "chars": 138,
+  "bytes": 162,
+  "o200k": 70,
+  "cl100k": 72,
+  "llama3": 72,
+  "qwen25": 62,
+  "deepseekv3": 72,
+  "gemma3": 63
+ },
+ "Racket": {
+  "chars": 209,
+  "bytes": 209,
+  "o200k": 65,
+  "cl100k": 64,
+  "llama3": 64,
+  "qwen25": 64,
+  "deepseekv3": 66,
+  "gemma3": 70
+ },
+ "WAT, code only (strings in host)": {
+  "chars": 525,
+  "bytes": 525,
+  "o200k": 196,
+  "cl100k": 196,
+  "llama3": 196,
+  "qwen25": 207,
+  "deepseekv3": 197,
+  "gemma3": 237
+ },
+ "CPython disassembly text": {
+  "chars": 1900,
+  "bytes": 1900,
+  "o200k": 454,
+  "cl100k": 453,
+  "llama3": 453,
+  "qwen25": 520,
+  "deepseekv3": 446,
+  "gemma3": 509
+ },
+ "JSON AST (compact)": {
+  "chars": 649,
+  "bytes": 649,
+  "o200k": 228,
+  "cl100k": 219,
+  "llama3": 219,
+  "qwen25": 220,
+  "deepseekv3": 238,
+  "gemma3": 222
+ },
+ "Strings alone (content floor)": {
+  "chars": 86,
+  "bytes": 86,
+  "o200k": 16,
+  "cl100k": 16,
+  "llama3": 16,
+  "qwen25": 16,
+  "deepseekv3": 17,
+  "gemma3": 16
+ },
+ "Language A spec (in-context, per session)": {
+  "chars": 968,
+  "bytes": 968,
+  "o200k": 317,
+  "cl100k": 316,
+  "llama3": 316,
+  "qwen25": 320,
+  "deepseekv3": 321,
+  "gemma3": 337
+ },
+ "B dedicated vocab, if/else": {
+  "chars": "-",
+  "bytes": 111,
+  "o200k": 46,
+  "cl100k": 46,
+  "llama3": 46,
+  "qwen25": 46,
+  "deepseekv3": 47,
+  "gemma3": 46
+ },
+ "B dedicated vocab, ternary": {
+  "chars": "-",
+  "bytes": 109,
+  "o200k": 44,
+  "cl100k": 44,
+  "llama3": 44,
+  "qwen25": 44,
+  "deepseekv3": 45,
+  "gemma3": 44
+ }
+}

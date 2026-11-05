@@ -1,0 +1,104 @@
+{
+ "rows": [
+  {
+   "file": "textwrap.py",
+   "orig": 4429,
+   "min": 1654,
+   "b_doc": 3205,
+   "b_nodoc": 1611
+  },
+  {
+   "file": "shlex.py",
+   "orig": 2752,
+   "min": 1952,
+   "b_doc": 2136,
+   "b_nodoc": 2011
+  },
+  {
+   "file": "csv.py",
+   "orig": 3760,
+   "min": 2259,
+   "b_doc": 2546,
+   "b_nodoc": 2126
+  },
+  {
+   "file": "json/decoder.py",
+   "orig": 3060,
+   "min": 1627,
+   "b_doc": 2322,
+   "b_nodoc": 1480
+  },
+  {
+   "file": "json/encoder.py",
+   "orig": 3466,
+   "min": 1868,
+   "b_doc": 2441,
+   "b_nodoc": 1586
+  },
+  {
+   "file": "heapq.py",
+   "orig": 6014,
+   "min": 2905,
+   "b_doc": 3421,
+   "b_nodoc": 2626
+  },
+  {
+   "file": "bisect.py",
+   "orig": 948,
+   "min": 410,
+   "b_doc": 739,
+   "b_nodoc": 336
+  },
+  {
+   "file": "fractions.py",
+   "orig": 9365,
+   "min": 6288,
+   "b_doc": 6213,
+   "b_nodoc": 4285
+  },
+  {
+   "file": "statistics.py",
+   "orig": 13887,
+   "min": 4601,
+   "b_doc": 10084,
+   "b_nodoc": 4524
+  },
+  {
+   "file": "dataclasses.py",
+   "orig": 14555,
+   "min": 7113,
+   "b_doc": 6282,
+   "b_nodoc": 5304
+  },
+  {
+   "file": "argparse.py",
+   "orig": 20159,
+   "min": 13038,
+   "b_doc": 13317,
+   "b_nodoc": 11469
+  },
+  {
+   "file": "string.py",
+   "orig": 2497,
+   "min": 1394,
+   "b_doc": 1520,
+   "b_nodoc": 1313
+  }
+ ],
+ "tot": {
+  "orig": 84892,
+  "min": 45109,
+  "b_doc": 54226,
+  "b_nodoc": 38671
+ },
+ "cats": {
+  "docstring": 13048,
+  "comment": 16846,
+  "whitespace": 11714,
+  "keyword": 4196,
+  "identifier": 16598,
+  "operator/punctuation": 13717,
+  "string": 7338,
+  "number": 1435
+ }
+}

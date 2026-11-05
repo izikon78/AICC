@@ -1,0 +1,9 @@
+multiagent_contract.py sha256: 563810ab7f40d641
+Q1 counterexample [242, 59], window 120:
+   impl_scan     -> [59, 242]   impl_bucketed -> [242, 59]
+Q2 fixed impl_bucketed vs impl_scan, same generator and seed as the audit (99): mismatches = 0/5000
+Q2 fixed impl_bucketed vs impl_scan, fresh seed, 20,000 inputs: mismatches = 0/20000
+Q2 fixed impl_bucketed vs impl_scan, fresh seed, 20,000 inputs incl. Unicode keys: mismatches = 0/20000
+   conformance suite: impl_scan True | fixed impl_bucketed True
+Q4 added conformance case (same key, input order [242, 59], gap >= window): original impl_bucketed passes: False | fixed passes: True
+collateral revocation: unrelated normalize_tag binding after revoking digest_json -> InvalidBinding policy changed

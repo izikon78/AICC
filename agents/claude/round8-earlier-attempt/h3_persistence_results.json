@@ -1,0 +1,18 @@
+{
+ "A1 ordinary: keep the one-line API doc row in context, call by name (fair baseline)": {
+  "serial_tokens": 261,
+  "cumulative_if_history_resent": 3381
+ },
+ "A2 ordinary: re-paste the whole contract table every call (straw man)": {
+  "serial_tokens": 14220,
+  "cumulative_if_history_resent": 149310
+ },
+ "B1 commons: validate once (bind + card), then short handle call": {
+  "serial_tokens": 243,
+  "cumulative_if_history_resent": 3423
+ },
+ "B2 commons: one-line verdict alias, contract not re-shown (illustrative)": {
+  "serial_tokens": 185,
+  "cumulative_if_history_resent": 2205
+ }
+}

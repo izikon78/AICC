@@ -1,0 +1,5 @@
+(define (main n)
+  (for ([i n])
+    (if (= i 0)
+        (log-info (format "Starting controller service for ~a runs" n))
+        (log-info (format "Restarting controller service for run ~a of ~a" (+ i 1) n)))))

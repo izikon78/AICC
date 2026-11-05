@@ -1,0 +1,37 @@
+{
+ "normalize_tag": {
+  "disagree": 0,
+  "of": 2000,
+  "example": null
+ },
+ "normalize_whitespace": {
+  "disagree": 0,
+  "of": 2000,
+  "example": null
+ },
+ "parse_money": {
+  "disagree": 0,
+  "of": 2000,
+  "example": null
+ },
+ "canonical_json": {
+  "disagree": 0,
+  "of": 2000,
+  "example": null
+ },
+ "make_query": {
+  "disagree": 0,
+  "of": 2000,
+  "example": null
+ },
+ "group_by_window": {
+  "disagree": 0,
+  "of": 2000,
+  "example": null
+ },
+ "retry_delays": {
+  "disagree": 0,
+  "of": 2000,
+  "example": null
+ }
+}

@@ -1,0 +1,44 @@
+  1           0 RESUME                   0
+
+  2           2 LOAD_GLOBAL              1 (NULL + range)
+             12 LOAD_FAST                1 (num_of_runs)
+             14 CALL                     1
+             22 GET_ITER
+        >>   24 FOR_ITER                75 (to 178)
+             28 STORE_FAST               2 (i)
+
+  3          30 LOAD_FAST                2 (i)
+             32 LOAD_CONST               1 (0)
+             34 COMPARE_OP              40 (==)
+             38 POP_JUMP_IF_FALSE       32 (to 104)
+
+  4          40 LOAD_FAST                0 (self)
+             42 LOAD_ATTR                2 (m_log)
+             62 LOAD_ATTR                5 (NULL|self + info)
+             82 LOAD_CONST               2 ('Starting controller service for ')
+             84 LOAD_FAST                1 (num_of_runs)
+             86 FORMAT_VALUE             0
+             88 LOAD_CONST               3 (' runs')
+             90 BUILD_STRING             3
+             92 CALL                     1
+            100 POP_TOP
+            102 JUMP_BACKWARD           40 (to 24)
+
+  6     >>  104 LOAD_FAST                0 (self)
+            106 LOAD_ATTR                2 (m_log)
+            126 LOAD_ATTR                5 (NULL|self + info)
+            146 LOAD_CONST               4 ('Restarting controller service for run ')
+            148 LOAD_FAST                2 (i)
+            150 LOAD_CONST               5 (1)
+            152 BINARY_OP                0 (+)
+            156 FORMAT_VALUE             0
+            158 LOAD_CONST               6 (' of ')
+            160 LOAD_FAST                1 (num_of_runs)
+            162 FORMAT_VALUE             0
+            164 BUILD_STRING             4
+            166 CALL                     1
+            174 POP_TOP
+            176 JUMP_BACKWARD           77 (to 24)
+
+  2     >>  178 END_FOR
+            180 RETURN_CONST             0 (None)

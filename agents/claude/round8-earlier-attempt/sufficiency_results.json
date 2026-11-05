@@ -1,0 +1,44 @@
+[
+ {
+  "fn": "parse_money",
+  "question": "tie 1.005 rounds up?",
+  "verdict": "ENTAILED",
+  "observed": "101",
+  "escalation": "contract states ROUND_HALF_UP; near-miss uses HALF_EVEN -> 100"
+ },
+ {
+  "fn": "gzip_deterministic",
+  "question": "are compressed bytes identical across gzip/runtime versions?",
+  "verdict": "UNKNOWN",
+  "observed": "31 bytes here, header[:4]=1f8b0800, python=3.12.3",
+  "escalation": "contract says 'gzip version and runtime may affect header metadata; only same-environment comparisons'. A reuser must pin the runtime or compare only a decompressed round-trip."
+ },
+ {
+  "fn": "png_dimensions",
+  "question": "does it detect a corrupt IDAT / bad CRC?",
+  "verdict": "UNKNOWN (out of contract scope)",
+  "observed": "dims on header-only={'width': 17, 'height': 3}; appended-garbage still returns={'width': 17, 'height': 3}",
+  "escalation": "contract explicitly does NOT validate CRC/decompression; a reuser needing integrity must add a full PNG validator."
+ },
+ {
+  "fn": "canonical_json",
+  "question": "do 1 and 1.0 canonicalise the same?",
+  "verdict": "UNKNOWN",
+  "observed": "canonical_json(1)='1', canonical_json(1.0)='1.0'",
+  "escalation": "contract does not state numeric normalisation; digests of 1 vs 1.0 differ, which a reuser might not expect."
+ },
+ {
+  "fn": "make_query",
+  "question": "bool + None + list interaction",
+  "verdict": "ENTAILED",
+  "observed": "a=true&b=1&b=2",
+  "escalation": "contract specifies sorted keys, repeated list values, None omitted, booleans lowercase; all observable."
+ },
+ {
+  "fn": "group_by_window",
+  "question": "ts exactly == window from first: same group?",
+  "verdict": "ENTAILED",
+  "observed": "[{\"device\": \"d\", \"kind\": \"k\", \"message\": \"m\", \"first\": 0, \"last\": 0, \"count\": 1}, {\"device\": \"d\", \"kind\": \"k\", \"message\": \"m\", \"first\": 60, \"last\": 60, \"count\": 1}]",
+  "escalation": "contract: open iff (ts - first) < window, strict; 60 with window 60 starts a new group. Observable and well-specified."
+ }
+]
