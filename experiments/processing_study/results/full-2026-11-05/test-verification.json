@@ -1,0 +1,12 @@
+{
+  "verification_kind": "recorded_from_Codex_command_result",
+  "observed_date": "2026-11-05",
+  "command": "python -m unittest discover -s tests -q",
+  "working_directory": "experiments/processing_study",
+  "exit_code": 0,
+  "test_methods_passed": 44,
+  "elapsed_seconds_reported_by_unittest": 1.007,
+  "reported_result": "Ran 44 tests in 1.007s; OK",
+  "source_identity_record": "run-metadata.json",
+  "scope": "Same-session engineering, adversarial, differential and numerical checks; not independently blinded agent trials or security certification"
+}

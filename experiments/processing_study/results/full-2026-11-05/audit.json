@@ -1,0 +1,12 @@
+{
+  "source_files_unchanged": 11,
+  "stress_executions": 45,
+  "events_per_execution": 1000000,
+  "matched_dataset_shapes": 3,
+  "all_workload_output_signatures_match": true,
+  "calibration_seeds_disjoint": true,
+  "binding_scenarios_passed": 9,
+  "granularity_operation_checks": 8096,
+  "granularity_outputs_match": true,
+  "aicc_setup_median_ms": 1.672300000791438
+}

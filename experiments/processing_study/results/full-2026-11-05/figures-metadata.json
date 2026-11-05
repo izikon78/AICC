@@ -1,0 +1,6 @@
+{
+  "matplotlib": "3.11.2",
+  "numpy": "2.3.5",
+  "whiskers": "observed min/max, not confidence intervals",
+  "source": "stress-raw.json and learning-report.json"
+}

@@ -5,3 +5,4 @@ __pycache__/
 .env
 .env.*
 !.env.example
+/experiments/processing_study/results/smoke-*/
