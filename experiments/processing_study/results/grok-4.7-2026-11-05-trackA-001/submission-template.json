@@ -1,0 +1,1344 @@
+{
+  "template_version": "1.0",
+  "status": "EXECUTED",
+  "run_id": "grok-4.7-2026-11-05-trackA-001",
+  "track": "A",
+  "agent": {
+    "provider": "xAI",
+    "model": "Grok 4.7",
+    "model_version": null,
+    "identity_evidence": "SELF_REPORTED_UNLESS_OTHERWISE_DOCUMENTED",
+    "authoring_session_id": null
+  },
+  "provenance": {
+    "repository": "https://github.com/izikon78/AICC",
+    "frozen_study_commit": "75de32b757b8bdc43886213ee6b9dd9470717918",
+    "checkout_commit": "63d012095a6db66a71918cb574fb2c6ceaecf147",
+    "source_hashes_match_frozen": true,
+    "source_hashes_unchanged_during_run": true,
+    "model_origin": "trained_this_run",
+    "model_sha256": "99b753a670ecb3d5700e4480ddb0307129426e9ac6f039a81f750c5673401751",
+    "policy_origin": "fit_this_run_on_training_rows_only",
+    "policy_sha256": "e2a6cda3a33b8ba825e2cd89bb7a2d340c9e795aad641dcf1bc0609ebda28478",
+    "historical_artifacts_copied": [],
+    "source_changes": []
+  },
+  "execution": {
+    "code_executed": true,
+    "started_utc": "2026-11-05T16:57:26.6635497Z",
+    "finished_utc": "2026-11-05T17:01:44.4400986Z",
+    "commands": [
+      {
+        "command": "python -m venv .venv",
+        "cwd": "H:\\dev\\github\\itzik\\AICC",
+        "started_utc": "2026-11-05T16:57:26.6635497Z",
+        "exit_code": 0
+      },
+      {
+        "command": "python -m pip install -r experiments/processing_study/requirements.lock.txt",
+        "cwd": "H:\\dev\\github\\itzik\\AICC",
+        "exit_code": 0
+      },
+      {
+        "command": "python -m unittest discover -s tests -v",
+        "cwd": "H:\\dev\\github\\itzik\\AICC\\experiments\\processing_study",
+        "started_utc": "2026-11-05T16:57:42.9128084Z",
+        "finished_utc": "2026-11-05T16:57:43.4829724Z",
+        "exit_code": 0,
+        "log": "unit-tests.log"
+      },
+      {
+        "command": "python -u run_study.py --output results/grok-4.7-2026-11-05-trackA-001 --events 1000000 --repeats 3 --train-jobs 72 --validation-jobs 24 --test-jobs 24 --epochs 900",
+        "cwd": "H:\\dev\\github\\itzik\\AICC\\experiments\\processing_study",
+        "started_utc": "2026-11-05T16:57:55.3912083Z",
+        "finished_utc": "2026-11-05T17:01:23.2151591Z",
+        "exit_code": 0,
+        "log": "study-console.log"
+      },
+      {
+        "command": "python tools/processing_granularity.py --output experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/granularity.json --events 1000000 --repeats 3",
+        "cwd": "H:\\dev\\github\\itzik\\AICC",
+        "started_utc": "2026-11-05T17:01:30.3852440Z",
+        "finished_utc": "2026-11-05T17:01:44.4400986Z",
+        "exit_code": 0,
+        "log": "granularity-console.log"
+      }
+    ],
+    "environment": {
+      "os": "Windows 10.0.19045",
+      "cpu_model": "AMD Ryzen 7 7800X3D 8-Core Processor",
+      "logical_cpus": 16,
+      "ram_gib": 31.6,
+      "python": "3.12.12",
+      "numpy": "2.3.5",
+      "unicode": "15.0.0",
+      "blas_backend": "scipy-openblas 0.3.30",
+      "numerical_thread_settings": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1"
+      },
+      "power_and_host_activity": "Not exclusive and not frequency-pinned. Other applications were not controlled."
+    },
+    "events_per_job": 1000000,
+    "repetitions_per_job_mode": 3,
+    "expected_matrix_rows": 45,
+    "completed_matrix_rows": 45,
+    "all_output_signatures_match": true,
+    "source_manifest": {
+      "aicc_processing/__init__.py": "4c4f24062c942ec0a5e1c4c1b2d8271ab5cc155b6590174db23acb3332c14528",
+      "aicc_processing/benchmark.py": "1878044cfad5e59ab93f667d6fcb15a6877feb998be55f08c2f9dde83df707f3",
+      "aicc_processing/data.py": "9aaf7ebee10d286238b1ab0a88ca0f98de5c083ed16921893284a294f65763bd",
+      "aicc_processing/kernels.py": "b75d5a1cb5693645ac0684e60f3629c4e57b94c41340c60f2fcef92f2941edbc",
+      "aicc_processing/learning.py": "3c687be5289f5aaad6128ee775cc46b94e06212a9ccd84c2b5e73fa8bfac76fc",
+      "aicc_processing/runtime.py": "190a1d53e822a1cd281f500b40cbeb195e66ef607bdd1b09c3324150ebecec86",
+      "aicc_processing/scenarios.py": "5ac4cf74788d4fe1296d8b253eb6582397a42967230f581809d9b919df54372d",
+      "run_study.py": "daffca09e0294a41f47049a7933f4a4ec105805b92d45cedfc7297c9a78cd0d2",
+      "tests/test_kernels.py": "ae28f453235bc36eedb23c55ed5370658a9572641ba040b615bdbce15bcb5b09",
+      "tests/test_learning.py": "873d7c2087318f6619fecc8c39bc563011c16b9f759fbe586f3cedae95863201",
+      "tests/test_runtime.py": "2dc96d8795bb0b68d4784c25a4d689e4c6c456a9b48611a33d981fb51c79b303"
+    },
+    "raw_result_paths": [
+      "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/stress-raw.json",
+      "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/stress-summary.json",
+      "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/calibration.json",
+      "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/learning-report.json",
+      "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/granularity.json",
+      "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/binding-scenarios.json"
+    ],
+    "log_paths": [
+      "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/unit-tests.log",
+      "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/study-console.log",
+      "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/granularity-console.log"
+    ],
+    "checksums_path": "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/checksums.json"
+  },
+  "correctness": {
+    "unit_tests_executed": true,
+    "test_methods_passed": 44,
+    "test_methods_failed": 0,
+    "test_methods_skipped": 0,
+    "unit_test_exit_code": 0,
+    "binding_scenarios_passed": 9,
+    "binding_scenarios_total": 9,
+    "granularity_differential_cases": 8096,
+    "granularity_all_outputs_equal": true
+  },
+  "mode_summaries": [
+    {
+      "job": "repeated-shuffled",
+      "mode": "reference",
+      "repetitions": 3,
+      "selected_plans": [
+        "reference"
+      ],
+      "median_pipeline_seconds": 2.8716149000101723,
+      "min_pipeline_seconds": 2.858500999980606,
+      "max_pipeline_seconds": 3.082612300000619,
+      "median_worker_wall_seconds": 4.605690700002015,
+      "min_worker_wall_seconds": 4.534949599998072,
+      "max_worker_wall_seconds": 4.760739899997134,
+      "median_peak_mib": 814.015625,
+      "min_peak_mib": 814.00390625,
+      "max_peak_mib": 814.0625,
+      "median_cpu_seconds": 2.875,
+      "output_signature": {
+        "groups": 49367,
+        "events_retained": 651662,
+        "severity_sum": 1301787,
+        "sha256": "b4976982669566fbb1f2493a27d35da50a2d7f71340b82d7e13400ff3e149ead"
+      }
+    },
+    {
+      "job": "repeated-shuffled",
+      "mode": "static",
+      "repetitions": 3,
+      "selected_plans": [
+        "partitioned"
+      ],
+      "median_pipeline_seconds": 1.3638404000084847,
+      "min_pipeline_seconds": 1.3239266999880783,
+      "max_pipeline_seconds": 1.5531030000420287,
+      "median_worker_wall_seconds": 3.04677359998459,
+      "min_worker_wall_seconds": 2.9920266999979503,
+      "max_worker_wall_seconds": 3.125519399996847,
+      "median_peak_mib": 559.88671875,
+      "min_peak_mib": 559.8515625,
+      "max_peak_mib": 559.88671875,
+      "median_cpu_seconds": 1.375,
+      "output_signature": {
+        "groups": 49367,
+        "events_retained": 651662,
+        "severity_sum": 1301787,
+        "sha256": "b4976982669566fbb1f2493a27d35da50a2d7f71340b82d7e13400ff3e149ead"
+      }
+    },
+    {
+      "job": "repeated-shuffled",
+      "mode": "aicc_static",
+      "repetitions": 3,
+      "selected_plans": [
+        "partitioned"
+      ],
+      "median_pipeline_seconds": 1.3284126000362448,
+      "min_pipeline_seconds": 1.3244833000353537,
+      "max_pipeline_seconds": 1.4037698999745771,
+      "median_worker_wall_seconds": 3.021317899983842,
+      "min_worker_wall_seconds": 2.9771705000312068,
+      "max_worker_wall_seconds": 3.1019358999910764,
+      "median_peak_mib": 560.109375,
+      "min_peak_mib": 560.10546875,
+      "max_peak_mib": 560.14453125,
+      "median_cpu_seconds": 1.328125,
+      "output_signature": {
+        "groups": 49367,
+        "events_retained": 651662,
+        "severity_sum": 1301787,
+        "sha256": "b4976982669566fbb1f2493a27d35da50a2d7f71340b82d7e13400ff3e149ead"
+      }
+    },
+    {
+      "job": "repeated-shuffled",
+      "mode": "learned",
+      "repetitions": 3,
+      "selected_plans": [
+        "partitioned"
+      ],
+      "median_pipeline_seconds": 1.4469727000105195,
+      "min_pipeline_seconds": 1.3420923000085168,
+      "max_pipeline_seconds": 1.4728529999847524,
+      "median_worker_wall_seconds": 3.0793971000239253,
+      "min_worker_wall_seconds": 3.0174531000084244,
+      "max_worker_wall_seconds": 3.2214352000155486,
+      "median_peak_mib": 562.02734375,
+      "min_peak_mib": 561.97265625,
+      "max_peak_mib": 562.08984375,
+      "median_cpu_seconds": 1.4375,
+      "output_signature": {
+        "groups": 49367,
+        "events_retained": 651662,
+        "severity_sum": 1301787,
+        "sha256": "b4976982669566fbb1f2493a27d35da50a2d7f71340b82d7e13400ff3e149ead"
+      }
+    },
+    {
+      "job": "repeated-shuffled",
+      "mode": "aicc_learned",
+      "repetitions": 3,
+      "selected_plans": [
+        "partitioned"
+      ],
+      "median_pipeline_seconds": 1.3938084000255913,
+      "min_pipeline_seconds": 1.3701786999590695,
+      "max_pipeline_seconds": 1.5443032999755815,
+      "median_worker_wall_seconds": 3.0753521000151522,
+      "min_worker_wall_seconds": 3.0646944000036456,
+      "max_worker_wall_seconds": 3.1959416999598034,
+      "median_peak_mib": 562.421875,
+      "min_peak_mib": 562.4140625,
+      "max_peak_mib": 562.43359375,
+      "median_cpu_seconds": 1.390625,
+      "output_signature": {
+        "groups": 49367,
+        "events_retained": 651662,
+        "severity_sum": 1301787,
+        "sha256": "b4976982669566fbb1f2493a27d35da50a2d7f71340b82d7e13400ff3e149ead"
+      }
+    },
+    {
+      "job": "diverse-shuffled",
+      "mode": "reference",
+      "repetitions": 3,
+      "selected_plans": [
+        "reference"
+      ],
+      "median_pipeline_seconds": 3.762675300007686,
+      "min_pipeline_seconds": 3.6001877000089735,
+      "max_pipeline_seconds": 3.9100840999744833,
+      "median_worker_wall_seconds": 7.860722600016743,
+      "min_worker_wall_seconds": 7.430815999978222,
+      "max_worker_wall_seconds": 7.941760700021405,
+      "median_peak_mib": 1057.4375,
+      "min_peak_mib": 1057.38671875,
+      "max_peak_mib": 1058.31640625,
+      "median_cpu_seconds": 3.75,
+      "output_signature": {
+        "groups": 712972,
+        "events_retained": 713608,
+        "severity_sum": 1427605,
+        "sha256": "2c52242c415917ec4ec967b9075f245d3591a6ea19979b867a147e985ef8ec11"
+      }
+    },
+    {
+      "job": "diverse-shuffled",
+      "mode": "static",
+      "repetitions": 3,
+      "selected_plans": [
+        "partitioned"
+      ],
+      "median_pipeline_seconds": 2.716620899969712,
+      "min_pipeline_seconds": 2.713503800041508,
+      "max_pipeline_seconds": 2.722334700054489,
+      "median_worker_wall_seconds": 6.655555100005586,
+      "min_worker_wall_seconds": 6.643809799978044,
+      "max_worker_wall_seconds": 6.7347481999895535,
+      "median_peak_mib": 844.91796875,
+      "min_peak_mib": 843.609375,
+      "max_peak_mib": 844.9453125,
+      "median_cpu_seconds": 2.71875,
+      "output_signature": {
+        "groups": 712972,
+        "events_retained": 713608,
+        "severity_sum": 1427605,
+        "sha256": "2c52242c415917ec4ec967b9075f245d3591a6ea19979b867a147e985ef8ec11"
+      }
+    },
+    {
+      "job": "diverse-shuffled",
+      "mode": "aicc_static",
+      "repetitions": 3,
+      "selected_plans": [
+        "partitioned"
+      ],
+      "median_pipeline_seconds": 2.7379741999902762,
+      "min_pipeline_seconds": 2.684341399988625,
+      "max_pipeline_seconds": 2.7518063000170514,
+      "median_worker_wall_seconds": 6.654697399993893,
+      "min_worker_wall_seconds": 6.6066198000335135,
+      "max_worker_wall_seconds": 6.77960410004016,
+      "median_peak_mib": 843.89453125,
+      "min_peak_mib": 843.88671875,
+      "max_peak_mib": 845.171875,
+      "median_cpu_seconds": 2.734375,
+      "output_signature": {
+        "groups": 712972,
+        "events_retained": 713608,
+        "severity_sum": 1427605,
+        "sha256": "2c52242c415917ec4ec967b9075f245d3591a6ea19979b867a147e985ef8ec11"
+      }
+    },
+    {
+      "job": "diverse-shuffled",
+      "mode": "learned",
+      "repetitions": 3,
+      "selected_plans": [
+        "partitioned"
+      ],
+      "median_pipeline_seconds": 2.7146265999763273,
+      "min_pipeline_seconds": 2.7145425000344403,
+      "max_pipeline_seconds": 2.97098789998563,
+      "median_worker_wall_seconds": 6.793458000000101,
+      "min_worker_wall_seconds": 6.635339199972805,
+      "max_worker_wall_seconds": 6.797380200005136,
+      "median_peak_mib": 846.95703125,
+      "min_peak_mib": 845.67578125,
+      "max_peak_mib": 846.9609375,
+      "median_cpu_seconds": 2.71875,
+      "output_signature": {
+        "groups": 712972,
+        "events_retained": 713608,
+        "severity_sum": 1427605,
+        "sha256": "2c52242c415917ec4ec967b9075f245d3591a6ea19979b867a147e985ef8ec11"
+      }
+    },
+    {
+      "job": "diverse-shuffled",
+      "mode": "aicc_learned",
+      "repetitions": 3,
+      "selected_plans": [
+        "partitioned"
+      ],
+      "median_pipeline_seconds": 2.7112718999851495,
+      "min_pipeline_seconds": 2.697417500021402,
+      "max_pipeline_seconds": 2.7361987000331283,
+      "median_worker_wall_seconds": 6.656151800008956,
+      "min_worker_wall_seconds": 6.614993700000923,
+      "max_worker_wall_seconds": 6.682545099989511,
+      "median_peak_mib": 847.1328125,
+      "min_peak_mib": 846.06640625,
+      "max_peak_mib": 847.19140625,
+      "median_cpu_seconds": 2.71875,
+      "output_signature": {
+        "groups": 712972,
+        "events_retained": 713608,
+        "severity_sum": 1427605,
+        "sha256": "2c52242c415917ec4ec967b9075f245d3591a6ea19979b867a147e985ef8ec11"
+      }
+    },
+    {
+      "job": "ordered-stream",
+      "mode": "reference",
+      "repetitions": 3,
+      "selected_plans": [
+        "reference"
+      ],
+      "median_pipeline_seconds": 3.268469200003892,
+      "min_pipeline_seconds": 3.2586605999968015,
+      "max_pipeline_seconds": 3.4618291999795474,
+      "median_worker_wall_seconds": 3.6201797000248916,
+      "min_worker_wall_seconds": 3.606389200023841,
+      "max_worker_wall_seconds": 3.8158491000067443,
+      "median_peak_mib": 513.71875,
+      "min_peak_mib": 513.71875,
+      "max_peak_mib": 513.7265625,
+      "median_cpu_seconds": 3.234375,
+      "output_signature": {
+        "groups": 49518,
+        "events_retained": 681930,
+        "severity_sum": 1364236,
+        "sha256": "b7122424f5f2709f1d76339a0998084f9e3195492f9e301b8acd242fe043128e"
+      }
+    },
+    {
+      "job": "ordered-stream",
+      "mode": "static",
+      "repetitions": 3,
+      "selected_plans": [
+        "ordered"
+      ],
+      "median_pipeline_seconds": 2.3684034000034444,
+      "min_pipeline_seconds": 2.3683173000463285,
+      "max_pipeline_seconds": 2.369613799965009,
+      "median_worker_wall_seconds": 2.6806329000391997,
+      "min_worker_wall_seconds": 2.679609100043308,
+      "max_worker_wall_seconds": 2.6864767000079155,
+      "median_peak_mib": 133.734375,
+      "min_peak_mib": 133.6875,
+      "max_peak_mib": 133.73828125,
+      "median_cpu_seconds": 2.359375,
+      "output_signature": {
+        "groups": 49518,
+        "events_retained": 681930,
+        "severity_sum": 1364236,
+        "sha256": "b7122424f5f2709f1d76339a0998084f9e3195492f9e301b8acd242fe043128e"
+      }
+    },
+    {
+      "job": "ordered-stream",
+      "mode": "aicc_static",
+      "repetitions": 3,
+      "selected_plans": [
+        "ordered"
+      ],
+      "median_pipeline_seconds": 2.3853529000189155,
+      "min_pipeline_seconds": 2.3624634000007063,
+      "max_pipeline_seconds": 2.4212216999731027,
+      "median_worker_wall_seconds": 2.7017062999657355,
+      "min_worker_wall_seconds": 2.672653099987656,
+      "max_worker_wall_seconds": 2.730524400016293,
+      "median_peak_mib": 133.48828125,
+      "min_peak_mib": 133.4765625,
+      "max_peak_mib": 133.5,
+      "median_cpu_seconds": 2.34375,
+      "output_signature": {
+        "groups": 49518,
+        "events_retained": 681930,
+        "severity_sum": 1364236,
+        "sha256": "b7122424f5f2709f1d76339a0998084f9e3195492f9e301b8acd242fe043128e"
+      }
+    },
+    {
+      "job": "ordered-stream",
+      "mode": "learned",
+      "repetitions": 3,
+      "selected_plans": [
+        "partitioned"
+      ],
+      "median_pipeline_seconds": 2.534469000005629,
+      "min_pipeline_seconds": 2.525906099996064,
+      "max_pipeline_seconds": 2.5477519999840297,
+      "median_worker_wall_seconds": 2.87202760000946,
+      "min_worker_wall_seconds": 2.85095650004223,
+      "max_worker_wall_seconds": 2.943462900002487,
+      "median_peak_mib": 209.109375,
+      "min_peak_mib": 209.1015625,
+      "max_peak_mib": 209.11328125,
+      "median_cpu_seconds": 2.5,
+      "output_signature": {
+        "groups": 49518,
+        "events_retained": 681930,
+        "severity_sum": 1364236,
+        "sha256": "b7122424f5f2709f1d76339a0998084f9e3195492f9e301b8acd242fe043128e"
+      }
+    },
+    {
+      "job": "ordered-stream",
+      "mode": "aicc_learned",
+      "repetitions": 3,
+      "selected_plans": [
+        "partitioned"
+      ],
+      "median_pipeline_seconds": 2.6325981999980286,
+      "min_pipeline_seconds": 2.537404600006994,
+      "max_pipeline_seconds": 2.6721594999544322,
+      "median_worker_wall_seconds": 2.9989814999862574,
+      "min_worker_wall_seconds": 2.8646032999968156,
+      "max_worker_wall_seconds": 3.020777400000952,
+      "median_peak_mib": 209.3828125,
+      "min_peak_mib": 209.37109375,
+      "max_peak_mib": 209.3828125,
+      "median_cpu_seconds": 2.625,
+      "output_signature": {
+        "groups": 49518,
+        "events_retained": 681930,
+        "severity_sum": 1364236,
+        "sha256": "b7122424f5f2709f1d76339a0998084f9e3195492f9e301b8acd242fe043128e"
+      }
+    }
+  ],
+  "mode_summary_entry_fields": [
+    "job",
+    "mode",
+    "repetitions",
+    "selected_plans",
+    "median_pipeline_seconds",
+    "min_pipeline_seconds",
+    "max_pipeline_seconds",
+    "median_worker_wall_seconds",
+    "min_worker_wall_seconds",
+    "max_worker_wall_seconds",
+    "median_peak_mib",
+    "min_peak_mib",
+    "max_peak_mib",
+    "median_cpu_seconds",
+    "output_signature"
+  ],
+  "comparisons": [
+    {
+      "job": "repeated-shuffled",
+      "baseline_mode": "reference",
+      "candidate_mode": "static",
+      "metric": "pipeline_seconds",
+      "statistic": "median",
+      "baseline_value": 2.8716149000101723,
+      "candidate_value": 1.3638404000084847,
+      "saved_percent": 52.506152548391725,
+      "speedup_ratio": 2.105535882345403,
+      "interpretation": "Ordinary flow optimization on this machine. The static arm uses the training-fitted policy."
+    },
+    {
+      "job": "repeated-shuffled",
+      "baseline_mode": "reference",
+      "candidate_mode": "static",
+      "metric": "worker_wall_seconds",
+      "statistic": "median",
+      "baseline_value": 4.605690700002015,
+      "candidate_value": 3.04677359998459,
+      "saved_percent": 33.84762897814095,
+      "speedup_ratio": 1.511661614773513,
+      "interpretation": "Ordinary flow optimization on this machine. The static arm uses the training-fitted policy."
+    },
+    {
+      "job": "repeated-shuffled",
+      "baseline_mode": "reference",
+      "candidate_mode": "static",
+      "metric": "peak_mib",
+      "statistic": "median",
+      "baseline_value": 814.015625,
+      "candidate_value": 559.88671875,
+      "saved_percent": 31.219168090293106,
+      "speedup_ratio": 1.453893435474531,
+      "interpretation": "Ordinary flow optimization on this machine. The static arm uses the training-fitted policy."
+    },
+    {
+      "job": "repeated-shuffled",
+      "baseline_mode": "static",
+      "candidate_mode": "aicc_static",
+      "metric": "pipeline_seconds",
+      "statistic": "median",
+      "baseline_value": 1.3638404000084847,
+      "candidate_value": 1.3284126000362448,
+      "saved_percent": 2.5976499869060543,
+      "speedup_ratio": 1.026669274268607,
+      "interpretation": "Same policy and kernel. The candidate includes host registration and binding. A small delta is run noise plus about 0.8 ms of host setup."
+    },
+    {
+      "job": "repeated-shuffled",
+      "baseline_mode": "static",
+      "candidate_mode": "aicc_static",
+      "metric": "worker_wall_seconds",
+      "statistic": "median",
+      "baseline_value": 3.04677359998459,
+      "candidate_value": 3.021317899983842,
+      "saved_percent": 0.8354969335718542,
+      "speedup_ratio": 1.0084253629851014,
+      "interpretation": "Same policy and kernel. The candidate includes host registration and binding. A small delta is run noise plus about 0.8 ms of host setup."
+    },
+    {
+      "job": "repeated-shuffled",
+      "baseline_mode": "static",
+      "candidate_mode": "aicc_static",
+      "metric": "peak_mib",
+      "statistic": "median",
+      "baseline_value": 559.88671875,
+      "candidate_value": 560.109375,
+      "saved_percent": -0.0397680892479645,
+      "speedup_ratio": 0.9996024771947444,
+      "interpretation": "Same policy and kernel. The candidate includes host registration and binding. A small delta is run noise plus about 0.8 ms of host setup."
+    },
+    {
+      "job": "repeated-shuffled",
+      "baseline_mode": "static",
+      "candidate_mode": "learned",
+      "metric": "pipeline_seconds",
+      "statistic": "median",
+      "baseline_value": 1.3638404000084847,
+      "candidate_value": 1.4469727000105195,
+      "saved_percent": -6.095456623921507,
+      "speedup_ratio": 0.9425474302304181,
+      "interpretation": "End-to-end learned selection, including feature inspection and inference, against the strongest simple policy."
+    },
+    {
+      "job": "repeated-shuffled",
+      "baseline_mode": "static",
+      "candidate_mode": "learned",
+      "metric": "worker_wall_seconds",
+      "statistic": "median",
+      "baseline_value": 3.04677359998459,
+      "candidate_value": 3.0793971000239253,
+      "saved_percent": -1.0707556360439892,
+      "speedup_ratio": 0.9894058807683225,
+      "interpretation": "End-to-end learned selection, including feature inspection and inference, against the strongest simple policy."
+    },
+    {
+      "job": "repeated-shuffled",
+      "baseline_mode": "static",
+      "candidate_mode": "learned",
+      "metric": "peak_mib",
+      "statistic": "median",
+      "baseline_value": 559.88671875,
+      "candidate_value": 562.02734375,
+      "saved_percent": -0.38233180540148326,
+      "speedup_ratio": 0.9961912440314431,
+      "interpretation": "End-to-end learned selection, including feature inspection and inference, against the strongest simple policy."
+    },
+    {
+      "job": "repeated-shuffled",
+      "baseline_mode": "learned",
+      "candidate_mode": "aicc_learned",
+      "metric": "pipeline_seconds",
+      "statistic": "median",
+      "baseline_value": 1.4469727000105195,
+      "candidate_value": 1.3938084000255913,
+      "saved_percent": 3.6741743631059327,
+      "speedup_ratio": 1.0381431909751384,
+      "interpretation": "Same learned plan and model. The candidate adds host registration and binding."
+    },
+    {
+      "job": "repeated-shuffled",
+      "baseline_mode": "learned",
+      "candidate_mode": "aicc_learned",
+      "metric": "worker_wall_seconds",
+      "statistic": "median",
+      "baseline_value": 3.0793971000239253,
+      "candidate_value": 3.0753521000151522,
+      "saved_percent": 0.1313568817981166,
+      "speedup_ratio": 1.0013152965505163,
+      "interpretation": "Same learned plan and model. The candidate adds host registration and binding."
+    },
+    {
+      "job": "repeated-shuffled",
+      "baseline_mode": "learned",
+      "candidate_mode": "aicc_learned",
+      "metric": "peak_mib",
+      "statistic": "median",
+      "baseline_value": 562.02734375,
+      "candidate_value": 562.421875,
+      "saved_percent": -0.07019787460296499,
+      "speedup_ratio": 0.9992985136824559,
+      "interpretation": "Same learned plan and model. The candidate adds host registration and binding."
+    },
+    {
+      "job": "repeated-shuffled",
+      "baseline_mode": "reference",
+      "candidate_mode": "aicc_static",
+      "metric": "pipeline_seconds",
+      "statistic": "median",
+      "baseline_value": 2.8716149000101723,
+      "candidate_value": 1.3284126000362448,
+      "saved_percent": 53.73987647049961,
+      "speedup_ratio": 2.1616889962740657,
+      "interpretation": "Combined delivered path. This ratio mixes the algorithm change with binding and does not isolate AICC."
+    },
+    {
+      "job": "repeated-shuffled",
+      "baseline_mode": "reference",
+      "candidate_mode": "aicc_static",
+      "metric": "worker_wall_seconds",
+      "statistic": "median",
+      "baseline_value": 4.605690700002015,
+      "candidate_value": 3.021317899983842,
+      "saved_percent": 34.40033000951366,
+      "speedup_ratio": 1.5243979125886242,
+      "interpretation": "Combined delivered path. This ratio mixes the algorithm change with binding and does not isolate AICC."
+    },
+    {
+      "job": "repeated-shuffled",
+      "baseline_mode": "reference",
+      "candidate_mode": "aicc_static",
+      "metric": "peak_mib",
+      "statistic": "median",
+      "baseline_value": 814.015625,
+      "candidate_value": 560.109375,
+      "saved_percent": 31.191815267673764,
+      "speedup_ratio": 1.4533154796775183,
+      "interpretation": "Combined delivered path. This ratio mixes the algorithm change with binding and does not isolate AICC."
+    },
+    {
+      "job": "diverse-shuffled",
+      "baseline_mode": "reference",
+      "candidate_mode": "static",
+      "metric": "pipeline_seconds",
+      "statistic": "median",
+      "baseline_value": 3.762675300007686,
+      "candidate_value": 2.716620899969712,
+      "saved_percent": 27.80081502211571,
+      "speedup_ratio": 1.385057186319091,
+      "interpretation": "Ordinary flow optimization on this machine. The static arm uses the training-fitted policy."
+    },
+    {
+      "job": "diverse-shuffled",
+      "baseline_mode": "reference",
+      "candidate_mode": "static",
+      "metric": "worker_wall_seconds",
+      "statistic": "median",
+      "baseline_value": 7.860722600016743,
+      "candidate_value": 6.655555100005586,
+      "saved_percent": 15.331510362782556,
+      "speedup_ratio": 1.1810769322622159,
+      "interpretation": "Ordinary flow optimization on this machine. The static arm uses the training-fitted policy."
+    },
+    {
+      "job": "diverse-shuffled",
+      "baseline_mode": "reference",
+      "candidate_mode": "static",
+      "metric": "peak_mib",
+      "statistic": "median",
+      "baseline_value": 1057.4375,
+      "candidate_value": 844.91796875,
+      "saved_percent": 20.097597375731425,
+      "speedup_ratio": 1.2515268216681539,
+      "interpretation": "Ordinary flow optimization on this machine. The static arm uses the training-fitted policy."
+    },
+    {
+      "job": "diverse-shuffled",
+      "baseline_mode": "static",
+      "candidate_mode": "aicc_static",
+      "metric": "pipeline_seconds",
+      "statistic": "median",
+      "baseline_value": 2.716620899969712,
+      "candidate_value": 2.7379741999902762,
+      "saved_percent": -0.7860242855675011,
+      "speedup_ratio": 0.9922010587168278,
+      "interpretation": "Same policy and kernel. The candidate includes host registration and binding. A small delta is run noise plus about 0.8 ms of host setup."
+    },
+    {
+      "job": "diverse-shuffled",
+      "baseline_mode": "static",
+      "candidate_mode": "aicc_static",
+      "metric": "worker_wall_seconds",
+      "statistic": "median",
+      "baseline_value": 6.655555100005586,
+      "candidate_value": 6.654697399993893,
+      "saved_percent": 0.01288697935491844,
+      "speedup_ratio": 1.0001288864031133,
+      "interpretation": "Same policy and kernel. The candidate includes host registration and binding. A small delta is run noise plus about 0.8 ms of host setup."
+    },
+    {
+      "job": "diverse-shuffled",
+      "baseline_mode": "static",
+      "candidate_mode": "aicc_static",
+      "metric": "peak_mib",
+      "statistic": "median",
+      "baseline_value": 844.91796875,
+      "candidate_value": 843.89453125,
+      "saved_percent": 0.12112862287851539,
+      "speedup_ratio": 1.001212755222485,
+      "interpretation": "Same policy and kernel. The candidate includes host registration and binding. A small delta is run noise plus about 0.8 ms of host setup."
+    },
+    {
+      "job": "diverse-shuffled",
+      "baseline_mode": "static",
+      "candidate_mode": "learned",
+      "metric": "pipeline_seconds",
+      "statistic": "median",
+      "baseline_value": 2.716620899969712,
+      "candidate_value": 2.7146265999763273,
+      "saved_percent": 0.07341105243675569,
+      "speedup_ratio": 1.0007346498385457,
+      "interpretation": "End-to-end learned selection, including feature inspection and inference, against the strongest simple policy."
+    },
+    {
+      "job": "diverse-shuffled",
+      "baseline_mode": "static",
+      "candidate_mode": "learned",
+      "metric": "worker_wall_seconds",
+      "statistic": "median",
+      "baseline_value": 6.655555100005586,
+      "candidate_value": 6.793458000000101,
+      "saved_percent": -2.0719969697854226,
+      "speedup_ratio": 0.9797006325799743,
+      "interpretation": "End-to-end learned selection, including feature inspection and inference, against the strongest simple policy."
+    },
+    {
+      "job": "diverse-shuffled",
+      "baseline_mode": "static",
+      "candidate_mode": "learned",
+      "metric": "peak_mib",
+      "statistic": "median",
+      "baseline_value": 844.91796875,
+      "candidate_value": 846.95703125,
+      "saved_percent": -0.24133259978085891,
+      "speedup_ratio": 0.9975924841228478,
+      "interpretation": "End-to-end learned selection, including feature inspection and inference, against the strongest simple policy."
+    },
+    {
+      "job": "diverse-shuffled",
+      "baseline_mode": "learned",
+      "candidate_mode": "aicc_learned",
+      "metric": "pipeline_seconds",
+      "statistic": "median",
+      "baseline_value": 2.7146265999763273,
+      "candidate_value": 2.7112718999851495,
+      "saved_percent": 0.12357869001972581,
+      "speedup_ratio": 1.0012373159590509,
+      "interpretation": "Same learned plan and model. The candidate adds host registration and binding."
+    },
+    {
+      "job": "diverse-shuffled",
+      "baseline_mode": "learned",
+      "candidate_mode": "aicc_learned",
+      "metric": "worker_wall_seconds",
+      "statistic": "median",
+      "baseline_value": 6.793458000000101,
+      "candidate_value": 6.656151800008956,
+      "saved_percent": 2.021153291757191,
+      "speedup_ratio": 1.020628465833811,
+      "interpretation": "Same learned plan and model. The candidate adds host registration and binding."
+    },
+    {
+      "job": "diverse-shuffled",
+      "baseline_mode": "learned",
+      "candidate_mode": "aicc_learned",
+      "metric": "peak_mib",
+      "statistic": "median",
+      "baseline_value": 846.95703125,
+      "candidate_value": 847.1328125,
+      "saved_percent": -0.020754447216828627,
+      "speedup_ratio": 0.9997924985936015,
+      "interpretation": "Same learned plan and model. The candidate adds host registration and binding."
+    },
+    {
+      "job": "diverse-shuffled",
+      "baseline_mode": "reference",
+      "candidate_mode": "aicc_static",
+      "metric": "pipeline_seconds",
+      "statistic": "median",
+      "baseline_value": 3.762675300007686,
+      "candidate_value": 2.7379741999902762,
+      "saved_percent": 27.233311894207738,
+      "speedup_ratio": 1.374255206649153,
+      "interpretation": "Combined delivered path. This ratio mixes the algorithm change with binding and does not isolate AICC."
+    },
+    {
+      "job": "diverse-shuffled",
+      "baseline_mode": "reference",
+      "candidate_mode": "aicc_static",
+      "metric": "worker_wall_seconds",
+      "statistic": "median",
+      "baseline_value": 7.860722600016743,
+      "candidate_value": 6.654697399993893,
+      "saved_percent": 15.342421573562225,
+      "speedup_ratio": 1.1812291570198155,
+      "interpretation": "Combined delivered path. This ratio mixes the algorithm change with binding and does not isolate AICC."
+    },
+    {
+      "job": "diverse-shuffled",
+      "baseline_mode": "reference",
+      "candidate_mode": "aicc_static",
+      "metric": "peak_mib",
+      "statistic": "median",
+      "baseline_value": 1057.4375,
+      "candidate_value": 843.89453125,
+      "saved_percent": 20.19438205567705,
+      "speedup_ratio": 1.253044617357212,
+      "interpretation": "Combined delivered path. This ratio mixes the algorithm change with binding and does not isolate AICC."
+    },
+    {
+      "job": "ordered-stream",
+      "baseline_mode": "reference",
+      "candidate_mode": "static",
+      "metric": "pipeline_seconds",
+      "statistic": "median",
+      "baseline_value": 3.268469200003892,
+      "candidate_value": 2.3684034000034444,
+      "saved_percent": 27.53783942646227,
+      "speedup_ratio": 1.380030614716707,
+      "interpretation": "Ordinary flow optimization on this machine. The static arm uses the training-fitted policy."
+    },
+    {
+      "job": "ordered-stream",
+      "baseline_mode": "reference",
+      "candidate_mode": "static",
+      "metric": "worker_wall_seconds",
+      "statistic": "median",
+      "baseline_value": 3.6201797000248916,
+      "candidate_value": 2.6806329000391997,
+      "saved_percent": 25.953043159134662,
+      "speedup_ratio": 1.3504943925637682,
+      "interpretation": "Ordinary flow optimization on this machine. The static arm uses the training-fitted policy."
+    },
+    {
+      "job": "ordered-stream",
+      "baseline_mode": "reference",
+      "candidate_mode": "static",
+      "metric": "peak_mib",
+      "statistic": "median",
+      "baseline_value": 513.71875,
+      "candidate_value": 133.734375,
+      "saved_percent": 73.96739461037777,
+      "speedup_ratio": 3.8413366047435447,
+      "interpretation": "Ordinary flow optimization on this machine. The static arm uses the training-fitted policy."
+    },
+    {
+      "job": "ordered-stream",
+      "baseline_mode": "static",
+      "candidate_mode": "aicc_static",
+      "metric": "pipeline_seconds",
+      "statistic": "median",
+      "baseline_value": 2.3684034000034444,
+      "candidate_value": 2.3853529000189155,
+      "saved_percent": -0.7156508901923752,
+      "speedup_ratio": 0.9928943427971028,
+      "interpretation": "Same policy and kernel. The candidate includes host registration and binding. A small delta is run noise plus about 0.8 ms of host setup."
+    },
+    {
+      "job": "ordered-stream",
+      "baseline_mode": "static",
+      "candidate_mode": "aicc_static",
+      "metric": "worker_wall_seconds",
+      "statistic": "median",
+      "baseline_value": 2.6806329000391997,
+      "candidate_value": 2.7017062999657355,
+      "saved_percent": -0.7861352416523584,
+      "speedup_ratio": 0.9921999663964943,
+      "interpretation": "Same policy and kernel. The candidate includes host registration and binding. A small delta is run noise plus about 0.8 ms of host setup."
+    },
+    {
+      "job": "ordered-stream",
+      "baseline_mode": "static",
+      "candidate_mode": "aicc_static",
+      "metric": "peak_mib",
+      "statistic": "median",
+      "baseline_value": 133.734375,
+      "candidate_value": 133.48828125,
+      "saved_percent": 0.18401682439537329,
+      "speedup_ratio": 1.0018435607058205,
+      "interpretation": "Same policy and kernel. The candidate includes host registration and binding. A small delta is run noise plus about 0.8 ms of host setup."
+    },
+    {
+      "job": "ordered-stream",
+      "baseline_mode": "static",
+      "candidate_mode": "learned",
+      "metric": "pipeline_seconds",
+      "statistic": "median",
+      "baseline_value": 2.3684034000034444,
+      "candidate_value": 2.534469000005629,
+      "saved_percent": -7.011710927367483,
+      "speedup_ratio": 0.9344771626712279,
+      "interpretation": "End-to-end learned selection, including feature inspection and inference, against the strongest simple policy."
+    },
+    {
+      "job": "ordered-stream",
+      "baseline_mode": "static",
+      "candidate_mode": "learned",
+      "metric": "worker_wall_seconds",
+      "statistic": "median",
+      "baseline_value": 2.6806329000391997,
+      "candidate_value": 2.87202760000946,
+      "saved_percent": -7.139907145340992,
+      "speedup_ratio": 0.9333590317970378,
+      "interpretation": "End-to-end learned selection, including feature inspection and inference, against the strongest simple policy."
+    },
+    {
+      "job": "ordered-stream",
+      "baseline_mode": "static",
+      "candidate_mode": "learned",
+      "metric": "peak_mib",
+      "statistic": "median",
+      "baseline_value": 133.734375,
+      "candidate_value": 209.109375,
+      "saved_percent": -56.36172450052576,
+      "speedup_ratio": 0.6395427034297243,
+      "interpretation": "End-to-end learned selection, including feature inspection and inference, against the strongest simple policy."
+    },
+    {
+      "job": "ordered-stream",
+      "baseline_mode": "learned",
+      "candidate_mode": "aicc_learned",
+      "metric": "pipeline_seconds",
+      "statistic": "median",
+      "baseline_value": 2.534469000005629,
+      "candidate_value": 2.6325981999980286,
+      "saved_percent": -3.8717853716964665,
+      "speedup_ratio": 0.9627253410746566,
+      "interpretation": "Same learned plan and model. The candidate adds host registration and binding."
+    },
+    {
+      "job": "ordered-stream",
+      "baseline_mode": "learned",
+      "candidate_mode": "aicc_learned",
+      "metric": "worker_wall_seconds",
+      "statistic": "median",
+      "baseline_value": 2.87202760000946,
+      "candidate_value": 2.9989814999862574,
+      "saved_percent": -4.420357937241941,
+      "speedup_ratio": 0.9576676615119569,
+      "interpretation": "Same learned plan and model. The candidate adds host registration and binding."
+    },
+    {
+      "job": "ordered-stream",
+      "baseline_mode": "learned",
+      "candidate_mode": "aicc_learned",
+      "metric": "peak_mib",
+      "statistic": "median",
+      "baseline_value": 209.109375,
+      "candidate_value": 209.3828125,
+      "saved_percent": -0.13076290816707764,
+      "speedup_ratio": 0.9986940785791575,
+      "interpretation": "Same learned plan and model. The candidate adds host registration and binding."
+    },
+    {
+      "job": "ordered-stream",
+      "baseline_mode": "reference",
+      "candidate_mode": "aicc_static",
+      "metric": "pipeline_seconds",
+      "statistic": "median",
+      "baseline_value": 3.268469200003892,
+      "candidate_value": 2.3853529000189155,
+      "saved_percent": 27.01926332926512,
+      "speedup_ratio": 1.3702245902390267,
+      "interpretation": "Combined delivered path. This ratio mixes the algorithm change with binding and does not isolate AICC."
+    },
+    {
+      "job": "ordered-stream",
+      "baseline_mode": "reference",
+      "candidate_mode": "aicc_static",
+      "metric": "worker_wall_seconds",
+      "statistic": "median",
+      "baseline_value": 3.6201797000248916,
+      "candidate_value": 2.7017062999657355,
+      "saved_percent": 25.37093393603751,
+      "speedup_ratio": 1.3399604909204248,
+      "interpretation": "Combined delivered path. This ratio mixes the algorithm change with binding and does not isolate AICC."
+    },
+    {
+      "job": "ordered-stream",
+      "baseline_mode": "reference",
+      "candidate_mode": "aicc_static",
+      "metric": "peak_mib",
+      "statistic": "median",
+      "baseline_value": 513.71875,
+      "candidate_value": 133.48828125,
+      "saved_percent": 74.01529898412312,
+      "speedup_ratio": 3.8484183419658793,
+      "interpretation": "Combined delivered path. This ratio mixes the algorithm change with binding and does not isolate AICC."
+    },
+    {
+      "job": "equal-job-mix",
+      "baseline_mode": "reference",
+      "candidate_mode": "static",
+      "metric": "pipeline_seconds",
+      "statistic": "sum_of_per_job_medians",
+      "baseline_value": 9.90275940002175,
+      "candidate_value": 6.448864699981641,
+      "saved_percent": 34.87810377411091,
+      "speedup_ratio": 1.5355818210994474,
+      "interpretation": "Equal-job mix: sum of the three per-job medians. Not a pooled estimator or a dollar figure."
+    },
+    {
+      "job": "equal-job-mix",
+      "baseline_mode": "reference",
+      "candidate_mode": "static",
+      "metric": "worker_wall_seconds",
+      "statistic": "sum_of_per_job_medians",
+      "baseline_value": 16.08659300004365,
+      "candidate_value": 12.382961600029375,
+      "saved_percent": 23.023093827289745,
+      "speedup_ratio": 1.299090921836137,
+      "interpretation": "Equal-job mix: sum of the three per-job medians. Not a pooled estimator or a dollar figure."
+    },
+    {
+      "job": "equal-job-mix",
+      "baseline_mode": "reference",
+      "candidate_mode": "aicc_static",
+      "metric": "pipeline_seconds",
+      "statistic": "sum_of_per_job_medians",
+      "baseline_value": 9.90275940002175,
+      "candidate_value": 6.451739700045437,
+      "saved_percent": 34.84907146152348,
+      "speedup_ratio": 1.5348975408837418,
+      "interpretation": "Equal-job mix of the combined path. Does not isolate binding."
+    },
+    {
+      "job": "equal-job-mix",
+      "baseline_mode": "reference",
+      "candidate_mode": "aicc_static",
+      "metric": "worker_wall_seconds",
+      "statistic": "sum_of_per_job_medians",
+      "baseline_value": 16.08659300004365,
+      "candidate_value": 12.37772159994347,
+      "saved_percent": 23.055667536874434,
+      "speedup_ratio": 1.2996408806057747,
+      "interpretation": "Equal-job mix of the combined path. Does not isolate binding."
+    },
+    {
+      "job": "equal-job-mix",
+      "baseline_mode": "reference",
+      "candidate_mode": "learned",
+      "metric": "pipeline_seconds",
+      "statistic": "sum_of_per_job_medians",
+      "baseline_value": 9.90275940002175,
+      "candidate_value": 6.696068299992476,
+      "saved_percent": 32.381793503154604,
+      "speedup_ratio": 1.4788916355636454,
+      "interpretation": "Equal-job mix for learned selection, including feature and inference cost."
+    },
+    {
+      "job": "equal-job-mix",
+      "baseline_mode": "reference",
+      "candidate_mode": "learned",
+      "metric": "worker_wall_seconds",
+      "statistic": "sum_of_per_job_medians",
+      "baseline_value": 16.08659300004365,
+      "candidate_value": 12.744882700033486,
+      "saved_percent": 20.7732631763674,
+      "speedup_ratio": 1.262200161324465,
+      "interpretation": "Equal-job mix for learned selection, including feature and inference cost."
+    },
+    {
+      "job": "equal-job-mix",
+      "baseline_mode": "reference",
+      "candidate_mode": "aicc_learned",
+      "metric": "pipeline_seconds",
+      "statistic": "sum_of_per_job_medians",
+      "baseline_value": 9.90275940002175,
+      "candidate_value": 6.737678500008769,
+      "saved_percent": 31.961605570322444,
+      "speedup_ratio": 1.469758374491876,
+      "interpretation": "Equal-job mix for learned selection plus binding."
+    },
+    {
+      "job": "equal-job-mix",
+      "baseline_mode": "reference",
+      "candidate_mode": "aicc_learned",
+      "metric": "worker_wall_seconds",
+      "statistic": "sum_of_per_job_medians",
+      "baseline_value": 16.08659300004365,
+      "candidate_value": 12.730485400010366,
+      "saved_percent": 20.86276192867052,
+      "speedup_ratio": 1.2636276225595098,
+      "interpretation": "Equal-job mix for learned selection plus binding."
+    },
+    {
+      "job": "equal-job-mix",
+      "baseline_mode": "static",
+      "candidate_mode": "aicc_static",
+      "metric": "pipeline_seconds",
+      "statistic": "sum_of_per_job_medians",
+      "baseline_value": 6.448864699981641,
+      "candidate_value": 6.451739700045437,
+      "saved_percent": -0.044581491433736874,
+      "speedup_ratio": 0.9995543837480338,
+      "interpretation": "Equal-job mix of binding around the same static policy."
+    },
+    {
+      "job": "equal-job-mix",
+      "baseline_mode": "static",
+      "candidate_mode": "aicc_static",
+      "metric": "worker_wall_seconds",
+      "statistic": "sum_of_per_job_medians",
+      "baseline_value": 12.382961600029375,
+      "candidate_value": 12.37772159994347,
+      "saved_percent": 0.042316210411996784,
+      "speedup_ratio": 1.0004233412460923,
+      "interpretation": "Equal-job mix of binding around the same static policy."
+    },
+    {
+      "job": "equal-job-mix",
+      "baseline_mode": "static",
+      "candidate_mode": "learned",
+      "metric": "pipeline_seconds",
+      "statistic": "sum_of_per_job_medians",
+      "baseline_value": 6.448864699981641,
+      "candidate_value": 6.696068299992476,
+      "saved_percent": -3.833288671904349,
+      "speedup_ratio": 0.9630822762051109,
+      "interpretation": "Equal-job mix of learned selection against the static policy."
+    },
+    {
+      "job": "equal-job-mix",
+      "baseline_mode": "static",
+      "candidate_mode": "learned",
+      "metric": "worker_wall_seconds",
+      "statistic": "sum_of_per_job_medians",
+      "baseline_value": 12.382961600029375,
+      "candidate_value": 12.744882700033486,
+      "saved_percent": -2.922734574281906,
+      "speedup_ratio": 0.9716026338945309,
+      "interpretation": "Equal-job mix of learned selection against the static policy."
+    },
+    {
+      "job": "granularity-microbenchmark",
+      "baseline_mode": "aicc_split",
+      "candidate_mode": "aicc_batch",
+      "metric": "elapsed_seconds",
+      "statistic": "median",
+      "baseline_value": 2.6865899999975227,
+      "candidate_value": 0.10867799998959526,
+      "saved_percent": 95.95479771793629,
+      "speedup_ratio": 24.720642634707435,
+      "interpretation": "Warm in-process microbenchmark. Batch checks authority at entry. Not part of the stress sample."
+    },
+    {
+      "job": "granularity-microbenchmark",
+      "baseline_mode": "ordinary_split",
+      "candidate_mode": "ordinary_batch",
+      "metric": "elapsed_seconds",
+      "statistic": "median",
+      "baseline_value": 0.14196749997790903,
+      "candidate_value": 0.10761860001366585,
+      "saved_percent": 24.194903741763476,
+      "speedup_ratio": 1.31917252184921,
+      "interpretation": "Ordinary control for the same integer checksum."
+    },
+    {
+      "job": "granularity-microbenchmark",
+      "baseline_mode": "ordinary_batch",
+      "candidate_mode": "aicc_batch",
+      "metric": "elapsed_seconds",
+      "statistic": "median",
+      "baseline_value": 0.10761860001366585,
+      "candidate_value": 0.10867799998959526,
+      "saved_percent": -0.9844023020136689,
+      "speedup_ratio": 0.9902519371351071,
+      "interpretation": "Same batch function. AICC batch is one bound call around that function."
+    },
+    {
+      "job": "held-out-calibration",
+      "baseline_mode": "static",
+      "candidate_mode": "learned",
+      "metric": "kernel_seconds_sum",
+      "statistic": "sum",
+      "baseline_value": 0.19453765006619506,
+      "candidate_value": 0.20032270005322061,
+      "saved_percent": -2.973743121219511,
+      "speedup_ratio": 0.9711213457811391,
+      "interpretation": "Kernel-only held-out sum after epoch selection. Feature inspection and inference are excluded. Not an end-to-end stress comparison."
+    }
+  ],
+  "comparison_entry_fields": [
+    "job",
+    "baseline_mode",
+    "candidate_mode",
+    "metric",
+    "statistic",
+    "baseline_value",
+    "candidate_value",
+    "saved_percent",
+    "speedup_ratio",
+    "interpretation"
+  ],
+  "learning": {
+    "training_executed_this_run": true,
+    "data_collection_seconds_this_run": 8.223795800004154,
+    "training_seconds_this_run": 0.156677299994044,
+    "historical_training_report_path": null,
+    "train_validation_test_counts": [
+      72,
+      24,
+      24
+    ],
+    "split_seed_populations_disjoint": true,
+    "training_event_range": "800-14000",
+    "epochs_attempted": 900,
+    "selected_epoch": 900,
+    "held_out_evaluation_origin": "evaluated_this_run_after_model_selection",
+    "held_out_learned_kernel_seconds": 0.20032270005322061,
+    "held_out_static_kernel_seconds": 0.19453765006619506,
+    "held_out_oracle_kernel_seconds": 0.1932318000763189,
+    "held_out_selection_overhead_included": false,
+    "retuned_after_evaluation": false
+  },
+  "cost": {
+    "measurement_status": "NOT_MEASURED",
+    "currency": null,
+    "model_input_tokens": null,
+    "model_output_tokens": null,
+    "model_cache_tokens": null,
+    "authoring_model_billed_cost": null,
+    "benchmark_model_api_billed_cost": null,
+    "compute_billed_cost": null,
+    "human_review_minutes": null,
+    "library_setup_cost": null,
+    "validation_and_maintenance_cost": null,
+    "failures_and_repair_cost": null,
+    "conventional_total_cost": null,
+    "aicc_total_cost": null,
+    "net_savings": null,
+    "billing_evidence_paths": [],
+    "assumptions": []
+  },
+  "claims": {
+    "supported": [
+      "On this machine, every completed eligible plan matched the reference output on the calibration jobs, and all 15 stress executions of each shape shared one output signature. Those three signatures match the published digests.",
+      "44 unit-test methods passed, 9 of 9 binding scenarios passed, and 8096 granularity differentials matched.",
+      "The ordinary static policy, partitioned with the ordered plan when the job declares order, reduced pipeline time and peak memory versus the reference on all three million-event shapes.",
+      "Coarse batching reduced invocation time in the warm microbenchmark. The AICC batch call and the ordinary batch call were in the same range because they execute the same batch function."
+    ],
+    "contradicted": [
+      "AICC binding did not add a consistent time or memory benefit beyond the same ordinary optimized policy. The median host register-and-bind cost was under 1 ms, and the per-job pipeline deltas sit inside the three-repeat spread.",
+      "The learned selector did not beat the strongest of the four simple policies. Held-out kernel time was higher with selection overhead excluded, and the million-event end-to-end runs were slower or tied. On the ordered million-event job the network chose partitioning while the static policy chose ordered streaming."
+    ],
+    "unresolved": [
+      "Three repetitions on a non-exclusive host cannot support a significance claim for sub-percent AICC differences.",
+      "No token, billing, human-time, or lifecycle cost was measured.",
+      "No mid-batch expiry, revocation, or cancellation was injected during the granularity runs, so that difference was not observed dynamically.",
+      "A guard that falls back to the static policy outside the 800-14000 calibration range was not implemented or tested."
+    ]
+  },
+  "failures_and_exclusions": [],
+  "deviations_from_protocol": [
+    "Checkout is packet tip 63d012095a6db66a71918cb574fb2c6ceaecf147, a depth-1 fetch. The frozen commit object was not present locally. All eleven measured Python source hashes match the frozen run-config manifest, before and after the run.",
+    "Python is 3.12.12. The published run used 3.12.14. NumPy 2.3.5 and Unicode 15.0.0 match.",
+    "An initial unittest launch was aborted by the PowerShell wrapper when unittest wrote progress to stderr. That attempt produced no retained result. The recorded log is the immediate rerun, exit 0, and it finished before calibration started.",
+    "Track A refit the network on this machine's timings. The selected epoch is 900 of 900. The published fit selected epoch 164 on different timings. The static policy choice matches the published policy: partitioned, with ordered when declared."
+  ],
+  "limitations": [
+    "Absolute seconds are not comparable to the published run. This report uses only within-machine pairs.",
+    "Minimum and maximum are the observed repeats, not confidence intervals.",
+    "Peak memory is the process high-water working set, including imports, inputs, outputs, and digest preparation.",
+    "The ordered-stream pipeline includes generator consumption. The other two pipelines do not include list generation.",
+    "The runtime is an in-process prototype. Passing its checks is not a security certification.",
+    "Calibration and stress seeds are the published seeds. This is a remeasurement, not a hidden-seed generalization test."
+  ],
+  "next_experiment": {
+    "hypothesis": "A guard that uses the static policy when event count is outside the 800-14000 calibration range avoids the partitioned choice on large ordered inputs and removes the extra time and memory seen on ordered-stream.",
+    "baseline_and_candidate": "Baseline: the unchanged strongest static policy, partitioned with ordered when declared. Candidate: the same trained network plus that guard. Both keep the same kernels.",
+    "fresh_evaluation_design": "Preregister descriptors and seeds that are not the published calibration seeds and not 71001, 72001, or 73001. Include ordered and unordered jobs above 14000 events. At least ten randomized repetitions per case. Freeze the guard before looking at those jobs.",
+    "acceptance_and_falsification_rules": "Accept only if, on the fresh large ordered jobs, the guarded candidate's median pipeline is no slower than the static policy by more than the static repeat range, and its median peak working set is no higher than the static policy. Falsify if the candidate still selects a slower plan on those jobs, or if the guard changes in-range choices and raises held-out kernel time above the unguarded static policy."
+  },
+  "notes": {
+    "aicc_host_register_bind_median_seconds": 0.0008215499692596495,
+    "aicc_host_register_bind_min_seconds": 0.0006689000292681158,
+    "aicc_host_register_bind_max_seconds": 0.0012324000126682222,
+    "static_policy": {
+      "unordered_plan": "partitioned",
+      "use_ordered_when_declared": true,
+      "training_kernel_seconds": 0.4942576498433482
+    },
+    "oracle_matches": 10,
+    "oracle_jobs": 24,
+    "validation_loss": 0.09875081741673775
+  }
+}

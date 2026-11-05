@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="457.92pt" height="240.961875pt" viewBox="0 0 457.92 240.961875" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-05T13:32:23.996717</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 240.961875
+L 457.92 240.961875
+L 457.92 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 115.92 76.608
+C 104.179064 76.608 92.899519 81.240043 84.547132 89.49154
+C 76.194744 97.743038 71.425973 108.96546 71.283296 120.705529
+C 71.140619 132.445599 75.635249 143.780599 83.784638 152.232643
+C 91.934027 160.684687 103.09767 165.589482 114.835139 165.874816
+L 115.323326 145.792749
+C 108.867719 145.635815 102.727715 142.938178 98.245551 138.289554
+C 93.763387 133.64093 91.29134 127.406679 91.369813 120.949641
+C 91.448285 114.492603 94.071109 108.320271 98.664923 103.781947
+C 103.258736 99.243623 109.462485 96.696 115.92 96.696
+z
+" style="fill: #2563eb; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 114.835139 165.874816
+C 120.741109 166.018388 126.617251 164.988136 132.122109 162.843928
+C 137.626968 160.69972 142.651809 157.483909 146.904643 153.383362
+C 151.157478 149.282814 154.554304 144.378526 156.897735 138.955481
+C 159.241165 133.532435 160.484913 127.697749 160.556704 121.790471
+C 160.628495 115.883192 159.526912 110.020003 157.315967 104.541608
+C 155.105022 99.063213 151.828385 94.077822 147.67646 89.875132
+C 143.524534 85.672441 138.57933 82.335464 133.128207 80.058108
+C 127.677084 77.780752 121.827715 76.608 115.92 76.608
+L 115.92 96.696
+C 119.169243 96.696 122.386396 97.341013 125.384514 98.593559
+C 128.382631 99.846105 131.102494 101.681443 133.386053 103.992923
+C 135.669612 106.304402 137.471762 109.046367 138.687782 112.059485
+C 139.903802 115.072602 140.509672 118.297356 140.470187 121.546359
+C 140.430702 124.795362 139.746641 128.004439 138.457754 130.987114
+C 137.168867 133.969789 135.300613 136.667148 132.961554 138.922449
+C 130.622495 141.17775 127.858832 142.946446 124.83116 144.125761
+C 121.803488 145.305075 118.57161 145.871713 115.323326 145.792749
+z
+" style="fill: #cbd5e1; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="text_1">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="81.996105" y="123.433379" transform="rotate(-0 81.996105 123.433379)">50%</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="149.843895" y="124.257934" transform="rotate(-0 149.843895 124.257934)">50%</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="115.92" y="61.448" transform="rotate(-0 115.92 61.448)">Original Windows</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_4">
+    <path d="M 255.42 76.608
+C 249.176793 76.608 243.002467 77.917732 237.296921 80.452368
+C 231.591376 82.987003 226.480507 86.690613 222.295338 91.323322
+C 218.110169 95.95603 214.943048 101.415613 212.999103 107.348463
+C 211.055159 113.281313 210.377286 119.556517 211.009388 125.767643
+C 211.641491 131.978768 213.569622 137.98876 216.668899 143.408365
+C 219.768176 148.827969 223.970212 153.537597 229.002848 157.232215
+C 234.035485 160.926832 239.787673 163.524915 245.886854 164.858191
+C 251.986035 166.191466 258.297625 166.230513 264.412836 164.972804
+L 260.36606 145.296642
+C 257.002694 145.988382 253.531319 145.966906 250.17677 145.233605
+C 246.82222 144.500303 243.658517 143.071358 240.890567 141.039318
+C 238.122617 139.007278 235.811497 136.416983 234.106894 133.436201
+C 232.402292 130.455418 231.34182 127.149922 230.994164 123.733803
+C 230.646507 120.317685 231.019337 116.866322 232.088507 113.603255
+C 233.157676 110.340187 234.899593 107.337417 237.201436 104.789427
+C 239.503279 102.241437 242.314257 100.204452 245.452307 98.810402
+C 248.590357 97.416353 251.986236 96.696 255.42 96.696
+z
+" style="fill: #2563eb; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 264.412836 164.972804
+C 275.239758 162.746042 284.862928 156.575387 291.404215 147.665152
+C 297.945501 138.754916 300.949744 127.725097 299.830612 116.728357
+C 298.71148 105.731618 293.546846 95.533141 285.344678 88.123338
+C 277.142511 80.713535 266.473539 76.608 255.42 76.608
+L 255.42 96.696
+C 261.499447 96.696 267.367381 98.954044 271.878573 103.029436
+C 276.389765 107.104828 279.230314 112.71399 279.845836 118.762197
+C 280.461359 124.810403 278.809026 130.876804 275.211318 135.777433
+C 271.613611 140.678063 266.320867 144.071923 260.36606 145.296642
+z
+" style="fill: #cbd5e1; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_3"/>
+   <g id="matplotlib.axis_4"/>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="221.667935" y="127.280585" transform="rotate(-0 221.667935 127.280585)">53%</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="289.172065" y="120.410728" transform="rotate(-0 289.172065 120.410728)">47%</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="255.42" y="61.448" transform="rotate(-0 255.42 61.448)">Claude Linux</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_6">
+    <path d="M 394.92 76.608
+C 388.811787 76.608 382.768075 77.861705 377.163862 80.291326
+C 371.559649 82.720946 366.513292 86.275171 362.337905 90.733467
+C 358.162519 95.191764 354.946284 100.459977 352.888761 106.211225
+C 350.831239 111.962474 349.975881 118.075296 350.375762 124.170406
+C 350.775643 130.265515 352.422316 136.214187 355.213611 141.64732
+C 358.004905 147.080453 361.88187 151.883304 366.603949 155.757866
+C 371.326028 159.632428 376.793494 162.496874 382.667103 164.173472
+C 388.540712 165.850069 394.696418 166.303409 400.752273 165.505363
+L 398.12775 145.58955
+C 394.79703 146.028475 391.411391 145.779138 388.180906 144.857009
+C 384.950421 143.934881 381.943315 142.359436 379.346172 140.228426
+C 376.749029 138.097417 374.616698 135.455849 373.081486 132.467626
+C 371.546274 129.479403 370.640603 126.207633 370.420669 122.855323
+C 370.200735 119.503013 370.671181 116.140961 371.802819 112.977774
+C 372.934456 109.814587 374.703385 106.91707 376.999848 104.465007
+C 379.296311 102.012944 382.071807 100.05812 385.154124 98.721829
+C 388.236441 97.385538 391.560483 96.696 394.92 96.696
+z
+" style="fill: #2563eb; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 400.752273 165.505363
+C 411.984878 164.025121 422.243197 158.322722 429.429866 149.564051
+C 436.616535 140.805379 440.20595 129.631009 439.464238 118.325594
+C 438.722526 107.02018 433.703932 96.410553 425.434533 88.665905
+C 417.165133 80.921257 406.249719 76.608 394.92 76.608
+L 394.92 96.696
+C 401.151346 96.696 407.154823 99.068292 411.702993 103.327848
+C 416.251163 107.587404 419.011389 113.422699 419.419331 119.640677
+C 419.827273 125.858655 417.853094 132.004559 413.900426 136.821828
+C 409.947758 141.639097 404.305683 144.775416 398.12775 145.58955
+z
+" style="fill: #cbd5e1; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_5"/>
+   <g id="matplotlib.axis_6"/>
+   <g id="text_7">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="361.066379" y="126.066685" transform="rotate(-0 361.066379 126.066685)">52%</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="428.773621" y="121.624628" transform="rotate(-0 428.773621 121.624628)">48%</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="394.92" y="61.448" transform="rotate(-0 394.92 61.448)">Grok Windows</text>
+   </g>
+  </g>
+  <g id="text_10">
+   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="7.2" y="16.318125" transform="rotate(-0 7.2 16.318125)">Where complete worker time went</text>
+  </g>
+  <g id="text_11">
+   <text style="font-size: 8px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="7.2" y="231.84" transform="rotate(-0 7.2 231.84)">9 AICC-static workers per run; sums of actual times. Other includes startup, preparation, loading and hashing.</text>
+  </g>
+  <g id="legend_1">
+   <g id="patch_8">
+    <path d="M 121.581562 205.449891
+L 139.581562 205.449891
+L 139.581562 199.149891
+L 121.581562 199.149891
+z
+" style="fill: #2563eb; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="146.781562" y="205.449891" transform="rotate(-0 146.781562 205.449891)">Timed pipeline</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 231.087656 205.449891
+L 249.087656 205.449891
+L 249.087656 199.149891
+L 231.087656 199.149891
+z
+" style="fill: #cbd5e1; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="256.287656" y="205.449891" transform="rotate(-0 256.287656 205.449891)">Other worker elapsed time</text>
+   </g>
+  </g>
+ </g>
+</svg>

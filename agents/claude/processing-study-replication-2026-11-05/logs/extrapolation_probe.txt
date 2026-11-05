@@ -1,0 +1,13 @@
+n=     800 repeated-shuffled  best=partitioned original:cached(+6.0%) trackA-001:cached(+6.0%) trackA-002:cached(+6.0%) static:partitioned(+0.0%)
+n=     800 diverse-shuffled   best=partitioned original:cached(+2.5%) trackA-001:cached(+2.5%) trackA-002:partitioned(+0.0%) static:partitioned(+0.0%)
+n=     800 ordered-stream     best=ordered     original:cached(+14.7%) trackA-001:partitioned(+7.1%) trackA-002:partitioned(+7.1%) static:ordered(+0.0%)
+n=   14000 repeated-shuffled  best=partitioned original:partitioned(+0.0%) trackA-001:partitioned(+0.0%) trackA-002:partitioned(+0.0%) static:partitioned(+0.0%)
+n=   14000 diverse-shuffled   best=partitioned original:partitioned(+0.0%) trackA-001:partitioned(+0.0%) trackA-002:partitioned(+0.0%) static:partitioned(+0.0%)
+n=   14000 ordered-stream     best=ordered     original:partitioned(+6.3%) trackA-001:partitioned(+6.3%) trackA-002:partitioned(+6.3%) static:ordered(+0.0%)
+n=  100000 repeated-shuffled  best=partitioned original:partitioned(+0.0%) trackA-001:partitioned(+0.0%) trackA-002:partitioned(+0.0%) static:partitioned(+0.0%)
+n=  100000 diverse-shuffled   best=cached      original:partitioned(+8.1%) trackA-001:partitioned(+8.1%) trackA-002:partitioned(+8.1%) static:partitioned(+8.1%)
+n=  100000 ordered-stream     best=ordered     original:partitioned(+9.5%) trackA-001:partitioned(+9.5%) trackA-002:ordered(+0.0%) static:ordered(+0.0%)
+n= 1000000 repeated-shuffled  best=partitioned original:partitioned(+0.0%) trackA-001:partitioned(+0.0%) trackA-002:partitioned(+0.0%) static:partitioned(+0.0%)
+n= 1000000 diverse-shuffled   best=partitioned original:partitioned(+0.0%) trackA-001:partitioned(+0.0%) trackA-002:partitioned(+0.0%) static:partitioned(+0.0%)
+n= 1000000 ordered-stream     best=ordered     original:partitioned(+30.1%) trackA-001:partitioned(+30.1%) trackA-002:ordered(+0.0%) static:ordered(+0.0%)
+DONE

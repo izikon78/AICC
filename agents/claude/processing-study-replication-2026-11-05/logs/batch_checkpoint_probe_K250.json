@@ -1,0 +1,65 @@
+[
+ {
+  "path": "split",
+  "event": "revocation",
+  "elements_processed": 250,
+  "elements_after_event": 0,
+  "stopped_by": "StaleBinding"
+ },
+ {
+  "path": "chunked",
+  "event": "revocation",
+  "elements_processed": 300,
+  "elements_after_event": 50,
+  "stopped_by": "StaleBinding"
+ },
+ {
+  "path": "batch",
+  "event": "revocation",
+  "elements_processed": 1000,
+  "elements_after_event": 750,
+  "stopped_by": null
+ },
+ {
+  "path": "split",
+  "event": "expiry",
+  "elements_processed": 300,
+  "elements_after_event": 0,
+  "stopped_by": "StaleBinding"
+ },
+ {
+  "path": "chunked",
+  "event": "expiry",
+  "elements_processed": 300,
+  "elements_after_event": 0,
+  "stopped_by": "StaleBinding"
+ },
+ {
+  "path": "batch",
+  "event": "expiry",
+  "elements_processed": 1000,
+  "elements_after_event": 700,
+  "stopped_by": null
+ },
+ {
+  "path": "split",
+  "event": "cancellation",
+  "elements_processed": 250,
+  "elements_after_event": 0,
+  "stopped_by": "caller checkpoint"
+ },
+ {
+  "path": "chunked",
+  "event": "cancellation",
+  "elements_processed": 300,
+  "elements_after_event": 50,
+  "stopped_by": "caller checkpoint"
+ },
+ {
+  "path": "batch",
+  "event": "cancellation",
+  "elements_processed": 1000,
+  "elements_after_event": 750,
+  "stopped_by": null
+ }
+]

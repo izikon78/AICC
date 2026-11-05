@@ -1,0 +1,18 @@
+original (Windows): cases 8096, all equal True, events 1000000, repeats 3
+   ordinary_split  median 0.270652 s  min-max 0.268140-0.284820
+   ordinary_fused  median 0.248713 s  min-max 0.226743-0.250913
+   aicc_split      median 4.615543 s  min-max 4.456708-5.800829
+   aicc_fused      median 2.286713 s  min-max 2.273048-2.495043
+   ordinary_batch  median 0.192520 s  min-max 0.188192-0.676033
+   aicc_batch      median 0.203634 s  min-max 0.186535-0.227837
+   aicc_split/aicc_batch 22.7x | ordinary_split/ordinary_batch 1.41x | aicc_batch/ordinary_batch 1.058
+   per bound-call overhead: split 2.17 us, fused 2.04 us
+mine (Linux, run-002): cases 8096, all equal True, events 1000000, repeats 3
+   ordinary_split  median 0.168260 s  min-max 0.151035-0.180119
+   ordinary_fused  median 0.138184 s  min-max 0.131687-0.140581
+   aicc_split      median 3.533783 s  min-max 3.477209-3.611337
+   aicc_fused      median 1.823978 s  min-max 1.746111-1.930444
+   ordinary_batch  median 0.122542 s  min-max 0.122268-0.138012
+   aicc_batch      median 0.122587 s  min-max 0.122050-0.125272
+   aicc_split/aicc_batch 28.8x | ordinary_split/ordinary_batch 1.37x | aicc_batch/ordinary_batch 1.000
+   per bound-call overhead: split 1.68 us, fused 1.69 us
