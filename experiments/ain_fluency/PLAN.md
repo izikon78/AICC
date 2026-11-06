@@ -1,6 +1,6 @@
 # AIN fluency simulation: published protocol and predictions
 
-Protocol version 1, 6 November 2026. Status at publication: **no participant trials run**. Publish this document before running participants; record its Git commit and the later harness-freeze commit with the results. Author: Izi Koren's AICC research, with Codex experiment design and implementation assistance. This is an additional engineering experiment, not confirmation of the native-training hypothesis.
+Protocol version 1, 6 November 2026. Status at publication: **no participant trials run**. Publish this document before running participants; record its Git commit and the later harness-freeze commit with the results. Concept, architecture and research direction: **Izik Bachar**, with Codex experiment design and implementation assistance. This is an additional engineering experiment, not confirmation of the native-training hypothesis.
 
 ## Question and scope
 
