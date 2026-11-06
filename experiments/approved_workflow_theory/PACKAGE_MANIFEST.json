@@ -1,0 +1,30 @@
+{
+  "package": "approved-core-workflow-theory-replication",
+  "version": 1,
+  "reference_run": "approved-core-2026-11-06",
+  "sha256": {
+    "accounting.py": "698cd11ea25b4950722eaaf92abe29353d3669354ba6697f61d44c840ca1488a",
+    "AGENT_START_HERE.md": "f8869eccc4a1a71346223f0d8d46324aa4035d66b176cb31318a7694d3d7d2c3",
+    "ARTICLE_REPRODUCTION_BRIEF.md": "069bb7c4edc46e969e751aa74a160b9f4452b8f8568f2230ee5528b66075aecf",
+    "README.md": "5a985223f657e300f447f7b9c90d6b4273422b0e311f0b4be2a9f8819f62a255",
+    "REPLICATION_SPEC.md": "6349f4bfe754b438f2d13888aad496e665bc01a4331b9abe415de452de909f42",
+    "report.py": "07bc25798612110f9c7d2758d22e315bb345301557f7bd5cd00e1dc1a2cdbf36",
+    "reproduce.py": "98473a60a2714f643b0b8e0c436fef43c02dc4744654d5a23044c770413e297b",
+    "requirements-reproduce.txt": "3d43a3aa93cf63bba1fe0a2f8cbebcb208bbe3f88263888584b346d6df6fa2c8",
+    "results/approved-core-2026-11-06/approved_core_sources.json": "f0614ff28bd48faf4226795cb13aa7436c527e2d788aa57d39d835367fcbf020",
+    "results/approved-core-2026-11-06/episodes.json": "7af73561557df7d7e83dbe2e52b389ebe1561fe71e8dee325f676f28d25a67f2",
+    "results/approved-core-2026-11-06/fixtures.json": "871654dad276266e394f7b314e9681c007e3325f68e66b12b89602f629a79a1a",
+    "results/approved-core-2026-11-06/manifest.json": "753886d8d85208e6f2fd360fa25ac7327cc1216d802e2336b53b22b941b9ab20",
+    "results/approved-core-2026-11-06/REPORT.md": "ad9591f4994c82ddee1a3cf1a2cb813865e8c888a98bd8857f7f351f2ed43ca3",
+    "results/approved-core-2026-11-06/summary.json": "c6698913b21f232fe5cd0b2bc3dd3f49b49c5cc70cfc75dd7fea7ed04d36bd57",
+    "results/approved-core-2026-11-06/totals.json": "6e886ff6e89b6b1c0bebbb8849fe2dbd3715ce4db62d6e1370177151f0332798",
+    "run.py": "ac684631bf4ef1515c79d71eba5aaef36fcdc005c799dc8115b3ef1d0c72ad80",
+    "test_accounting.py": "22984e5347b666feb188c500f5d753938cacfc6fe1a6f03c73363ac0aab10c76",
+    "test_reproduce.py": "99e5163b1c265f344d8c60edef53b096c48297ec2fb838e6a43a01eba73a0b28",
+    "test_run.py": "3a5d225f92407e5443ed7df946734fc3a4d91d6e3a4695c173c3c57e8576d1e8",
+    "test_workloads.py": "c152123f715274db47e596637b53c23a10168720de2f32646dcaa9ade9dd5bdf",
+    "tokenizer-files.sha256.json": "4c582268af2eeac1a2cd049c5e08bf245ee8ebe95e223c5c1c9b30ced6cc3932",
+    "trace-inputs.json": "6f54c67509944390c7730438fc2d3058b3cb1aa5a89915674918579e5550b31e",
+    "workloads.py": "6382ece9a227fa892bbd7e0a2cd4f7a979b7b2178e9aa1be4ae55e1e1f0ab52e"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "approved_core": {
+    "public_functions": 10,
+    "source_tokens": 603,
+    "for_loops": 4,
+    "while_loops": 1,
+    "comprehensions": 7
+  },
+  "schedules": {
+    "resident": {
+      "python": {
+        "total_positions": 42288,
+        "reduction_vs_alias_python": -0.04121731422662145
+      },
+      "python_aliases": {
+        "total_positions": 40614,
+        "reduction_vs_alias_python": 0.0
+      },
+      "ideal_ain": {
+        "total_positions": 30858,
+        "reduction_vs_alias_python": 0.24021273452504066
+      },
+      "ideal_ir": {
+        "total_positions": 30858,
+        "reduction_vs_alias_python": 0.24021273452504066
+      },
+      "ideal_python": {
+        "total_positions": 30858,
+        "reduction_vs_alias_python": 0.24021273452504066
+      }
+    },
+    "inspect": {
+      "python": {
+        "total_positions": 78072,
+        "reduction_vs_alias_python": -0.021911568365664102
+      },
+      "python_aliases": {
+        "total_positions": 76398,
+        "reduction_vs_alias_python": 0.0
+      },
+      "ideal_ain": {
+        "total_positions": 66642,
+        "reduction_vs_alias_python": 0.12769967800204196
+      },
+      "ideal_ir": {
+        "total_positions": 66642,
+        "reduction_vs_alias_python": 0.12769967800204196
+      },
+      "ideal_python": {
+        "total_positions": 66642,
+        "reduction_vs_alias_python": 0.12769967800204196
+      }
+    }
+  }
+}
