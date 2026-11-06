@@ -122,6 +122,26 @@ The frozen signature and argument order of each approved function/tool are in
 `config.catalog_schema`. In this accounting model signatures also supply operand
 types, including list element types and field-dependent equality operand types.
 
+The JSON schema lists argument names and order. Apply these type contracts for
+the supplied fixtures. JSON operand values also preserve their exact scalar type.
+
+| Argument | Supplied type contract |
+|---|---|
+| field, key_field, value_field, version_field | Public field reference represented as a string |
+| fields | List of public field references |
+| filter_gte/lt/gt value | Integer |
+| filter_eq value | String for kind, boolean for deleted/enabled |
+| limit, base_delay | Integer |
+| record/remember value | Generic structured record |
+| write program | Approved pipeline call sequence |
+| patch index | Integer |
+| patch kind | Public symbol op or arg |
+| patch key | Public argument name or null |
+| patch value | Type of the operation or argument being replaced, preserved in JSON |
+
+This grants already approved operand contracts for the frozen cases. Extensions
+with new fields or capabilities must publish their type contracts separately.
+
 A bounded call sequence costs one length unit, then one learned operation unit
 per call and all operands in signature order. Operand dictionary field names
 are supplied by the signature and incur zero repeated emission cost.

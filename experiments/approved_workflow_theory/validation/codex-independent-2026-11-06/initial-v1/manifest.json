@@ -1,0 +1,69 @@
+{
+  "created_utc": "2026-11-06T21:49:36.323590+00:00",
+  "git_revision": "395278bc369b1c33141381a73872725ca4dd4a7b",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\Izik\\Downloads\\AICC\\work\\.venv-reproduce\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "PyYAML": "6.0.3",
+    "certifi": "2026.10.23",
+    "charset-normalizer": "3.5.2",
+    "colorama": "0.4.6",
+    "filelock": "4.2.4",
+    "fsspec": "2026.9.0",
+    "huggingface_hub": "0.36.2",
+    "idna": "3.20",
+    "numpy": "2.5.4",
+    "packaging": "26.3",
+    "pip": "25.0.1",
+    "regex": "2026.9.29",
+    "requests": "2.34.2",
+    "safetensors": "0.8.0",
+    "tokenizers": "0.21.4",
+    "tqdm": "4.70.1",
+    "transformers": "4.51.3",
+    "typing_extensions": "4.16.0",
+    "urllib3": "2.8.0"
+  },
+  "input_hashes": {
+    "AGENT_START_HERE.md": "f8869eccc4a1a71346223f0d8d46324aa4035d66b176cb31318a7694d3d7d2c3",
+    "REPLICATION_SPEC.md": "6349f4bfe754b438f2d13888aad496e665bc01a4331b9abe415de452de909f42",
+    "trace-inputs.json": "6f54c67509944390c7730438fc2d3058b3cb1aa5a89915674918579e5550b31e",
+    "workloads.py": "6382ece9a227fa892bbd7e0a2cd4f7a979b7b2178e9aa1be4ae55e1e1f0ab52e",
+    "requirements-reproduce.txt": "3d43a3aa93cf63bba1fe0a2f8cbebcb208bbe3f88263888584b346d6df6fa2c8",
+    "tokenizer-files.sha256.json": "4c582268af2eeac1a2cd049c5e08bf245ee8ebe95e223c5c1c9b30ced6cc3932"
+  },
+  "tokenizer_revision": "8faed761d45a263340a0528343f099c05c9a4323",
+  "tokenizer_hashes": {
+    "config.json": "0e8c8aa86468aba09c9d32157ff4bc2301c7e6c50e4398960425b2ea71e66f77",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "c91efca15ceff6e9ee9424db58a6f59cd41294e550a86cbd07e3c1fb500b34f9",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "LICENSE": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+  },
+  "implementation_hash": "e56101a0937ef7285fddc9910b5f1d24e9e0394c135ad9d1f90ef7ec91170e01",
+  "vocabulary_allocation": 32839,
+  "reference_material_consulted_before_freeze": [
+    "AGENT_START_HERE.md",
+    "REPLICATION_SPEC.md",
+    "trace-inputs.json",
+    "requirements-reproduce.txt",
+    "tokenizer-files.sha256.json",
+    "workloads.py"
+  ],
+  "reference_actions_before_freeze": [
+    "reproduce.py --prepare-tokenizer only; source not read"
+  ],
+  "assumptions": [
+    "equal cost per common text token and modeled code unit",
+    "perfect composition",
+    "fluent learned representation",
+    "approved core",
+    "zero model inference calls"
+  ],
+  "episode_count": 144,
+  "ledger_rows": 2160,
+  "execution_passes": 144,
+  "rendering_execution_passes": 288
+}

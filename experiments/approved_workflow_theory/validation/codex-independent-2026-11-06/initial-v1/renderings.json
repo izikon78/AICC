@@ -1,0 +1,2450 @@
+[
+  {
+    "chain": "events-00",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',20),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',20),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 20}, 'stage': 'build'});write(lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',20),'group','value'))",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 20}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 20}, 'stage': 'build'});p(lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',20),'group','value'))",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 20}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-00",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',20),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',20),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'stage': 'change'});patch(2,'arg','value',3)",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'stage': 'change'});j(2,'arg','value',3)",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',20),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',20),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'stage': 'repair'});patch(3,'op',None,'filter_lt')",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'stage': 'repair'});j(3,'op',None,'filter_lt')",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',20),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',20),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-01",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',21),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',21),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 21}, 'stage': 'build'});write(lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',21),'group','value'))",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 21}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 21}, 'stage': 'build'});p(lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',21),'group','value'))",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 21}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-01",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',21),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',21),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'stage': 'change'});patch(2,'arg','value',3)",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'stage': 'change'});j(2,'arg','value',3)",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',21),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',21),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'stage': 'repair'});patch(3,'op',None,'filter_lt')",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'stage': 'repair'});j(3,'op',None,'filter_lt')",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',21),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',21),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-02",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',22),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',22),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 22}, 'stage': 'build'});write(lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',22),'group','value'))",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 22}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 22}, 'stage': 'build'});p(lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',22),'group','value'))",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 22}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-02",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',22),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',22),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'stage': 'change'});patch(2,'arg','value',3)",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'stage': 'change'});j(2,'arg','value',3)",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',22),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',22),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'stage': 'repair'});patch(3,'op',None,'filter_lt')",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'stage': 'repair'});j(3,'op',None,'filter_lt')",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',22),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',22),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-03",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',23),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',23),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 23}, 'stage': 'build'});write(lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',23),'group','value'))",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 23}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 23}, 'stage': 'build'});p(lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',23),'group','value'))",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 23}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-03",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',23),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',23),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'stage': 'change'});patch(2,'arg','value',3)",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'stage': 'change'});j(2,'arg','value',3)",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',23),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',23),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'stage': 'repair'});patch(3,'op',None,'filter_lt')",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'stage': 'repair'});j(3,'op',None,'filter_lt')",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',23),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',23),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-04",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',24),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',24),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 24}, 'stage': 'build'});write(lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',24),'group','value'))",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 24}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 24}, 'stage': 'build'});p(lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',24),'group','value'))",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 24}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-04",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',24),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',24),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'stage': 'change'});patch(2,'arg','value',3)",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'stage': 'change'});j(2,'arg','value',3)",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',24),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',24),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'stage': 'repair'});patch(3,'op',None,'filter_lt')",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'stage': 'repair'});j(3,'op',None,'filter_lt')",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',24),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',24),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-05",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',25),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',25),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 25}, 'stage': 'build'});write(lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',25),'group','value'))",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 25}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 25}, 'stage': 'build'});p(lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',25),'group','value'))",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 25}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-05",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',25),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',25),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'stage': 'change'});patch(2,'arg','value',3)",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'stage': 'change'});j(2,'arg','value',3)",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',25),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',25),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'stage': 'repair'});patch(3,'op',None,'filter_lt')",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'stage': 'repair'});j(3,'op',None,'filter_lt')",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',25),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',25),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-00",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',10),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',10),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 10}, 'stage': 'build'});write(lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',10),'key'),['key', 'value', 'version']))",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 10}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 10}, 'stage': 'build'});p(lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',10),'key'),['key', 'value', 'version']))",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 10}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-00",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 15}, 'stage': 'change'});patch(2,'arg','value',15)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 15}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 15}, 'stage': 'change'});j(2,'arg','value',15)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 15}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 15}, 'stage': 'repair'});patch(1,'arg','value',False)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 15}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 15}, 'stage': 'repair'});j(1,'arg','value',False)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 15}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 15}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 15}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 15}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 15}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-01",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',11),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',11),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 11}, 'stage': 'build'});write(lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',11),'key'),['key', 'value', 'version']))",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 11}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 11}, 'stage': 'build'});p(lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',11),'key'),['key', 'value', 'version']))",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 11}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-01",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',16),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',16),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 16}, 'stage': 'change'});patch(2,'arg','value',16)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 16}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 16}, 'stage': 'change'});j(2,'arg','value',16)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 16}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',16),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',16),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 16}, 'stage': 'repair'});patch(1,'arg','value',False)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 16}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 16}, 'stage': 'repair'});j(1,'arg','value',False)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 16}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',16),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',16),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 16}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 16}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 16}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 16}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-02",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',12),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',12),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 12}, 'stage': 'build'});write(lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',12),'key'),['key', 'value', 'version']))",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 12}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 12}, 'stage': 'build'});p(lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',12),'key'),['key', 'value', 'version']))",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 12}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-02",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',17),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',17),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 17}, 'stage': 'change'});patch(2,'arg','value',17)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 17}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 17}, 'stage': 'change'});j(2,'arg','value',17)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 17}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',17),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',17),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 17}, 'stage': 'repair'});patch(1,'arg','value',False)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 17}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 17}, 'stage': 'repair'});j(1,'arg','value',False)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 17}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',17),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',17),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 17}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 17}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 17}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 17}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-03",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',13),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',13),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 13}, 'stage': 'build'});write(lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',13),'key'),['key', 'value', 'version']))",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 13}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 13}, 'stage': 'build'});p(lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',13),'key'),['key', 'value', 'version']))",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 13}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-03",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',18),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',18),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 18}, 'stage': 'change'});patch(2,'arg','value',18)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 18}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 18}, 'stage': 'change'});j(2,'arg','value',18)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 18}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',18),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',18),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 18}, 'stage': 'repair'});patch(1,'arg','value',False)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 18}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 18}, 'stage': 'repair'});j(1,'arg','value',False)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 18}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',18),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',18),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 18}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 18}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 18}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 18}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-04",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',14),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',14),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 14}, 'stage': 'build'});write(lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',14),'key'),['key', 'value', 'version']))",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 14}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 14}, 'stage': 'build'});p(lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',14),'key'),['key', 'value', 'version']))",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 14}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-04",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',19),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',19),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 19}, 'stage': 'change'});patch(2,'arg','value',19)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 19}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 19}, 'stage': 'change'});j(2,'arg','value',19)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 19}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',19),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',19),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 19}, 'stage': 'repair'});patch(1,'arg','value',False)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 19}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 19}, 'stage': 'repair'});j(1,'arg','value',False)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 19}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',19),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',19),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 19}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 19}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 19}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 19}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-05",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 15}, 'stage': 'build'});write(lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version']))",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 15}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 15}, 'stage': 'build'});p(lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version']))",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 15}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-05",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',20),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',20),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 20}, 'stage': 'change'});patch(2,'arg','value',20)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 20}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 20}, 'stage': 'change'});j(2,'arg','value',20)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 20}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',20),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',20),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 20}, 'stage': 'repair'});patch(1,'arg','value',False)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 20}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 20}, 'stage': 'repair'});j(1,'arg','value',False)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 20}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',20),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',20),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 20}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 20}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 20}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 20}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-00",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,1),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,1),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 1}, 'stage': 'build'});write(lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,1),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 1}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 1}, 'stage': 'build'});p(lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,1),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 1}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-00",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,1),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,1),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'stage': 'change'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'stage': 'change'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,1),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,1),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'stage': 'repair'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'stage': 'repair'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,1),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,1),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-01",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,2),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,2),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 2}, 'stage': 'build'});write(lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,2),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 2}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 2}, 'stage': 'build'});p(lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,2),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 2}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-01",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,2),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,2),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'stage': 'change'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'stage': 'change'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,2),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,2),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'stage': 'repair'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'stage': 'repair'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,2),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,2),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-02",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,3),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,3),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 3}, 'stage': 'build'});write(lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,3),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 3}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 3}, 'stage': 'build'});p(lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,3),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 3}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-02",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,3),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,3),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'stage': 'change'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'stage': 'change'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,3),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,3),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'stage': 'repair'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'stage': 'repair'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,3),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,3),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-03",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,4),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,4),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 4}, 'stage': 'build'});write(lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,4),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 4}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 4}, 'stage': 'build'});p(lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,4),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 4}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-03",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,4),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,4),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'stage': 'change'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'stage': 'change'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,4),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,4),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'stage': 'repair'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'stage': 'repair'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,4),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,4),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-04",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,5),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,5),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 5}, 'stage': 'build'});write(lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,5),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 5}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 5}, 'stage': 'build'});p(lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,5),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 5}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-04",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,5),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,5),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'stage': 'change'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'stage': 'change'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,5),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,5),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'stage': 'repair'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'stage': 'repair'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,5),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,5),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-05",
+    "stage": "build",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,6),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,6),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 6}, 'stage': 'build'});write(lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,6),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 6}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 6}, 'stage': 'build'});p(lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,6),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 6}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-05",
+    "stage": "change",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,6),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,6),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'stage': 'change'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'stage': 'change'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,6),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,6),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'stage': 'repair'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'stage': 'repair'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,6),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,6),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',20),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',20),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 20}, 'stage': 'build'});write(lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',20),'group','value'))",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 20}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 20}, 'stage': 'build'});p(lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',20),'group','value'))",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 20}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',20),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',20),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'stage': 'change'});patch(2,'arg','value',3)",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'stage': 'change'});j(2,'arg','value',3)",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',20),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',20),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'stage': 'repair'});patch(3,'op',None,'filter_lt')",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'stage': 'repair'});j(3,'op',None,'filter_lt')",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',20),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',20),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 20}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',21),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',21),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 21}, 'stage': 'build'});write(lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',21),'group','value'))",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 21}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 21}, 'stage': 'build'});p(lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',21),'group','value'))",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 21}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',21),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',21),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'stage': 'change'});patch(2,'arg','value',3)",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'stage': 'change'});j(2,'arg','value',3)",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',21),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',21),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'stage': 'repair'});patch(3,'op',None,'filter_lt')",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'stage': 'repair'});j(3,'op',None,'filter_lt')",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',21),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',21),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 21}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',22),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',22),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 22}, 'stage': 'build'});write(lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',22),'group','value'))",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 22}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 22}, 'stage': 'build'});p(lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',22),'group','value'))",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 22}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',22),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',22),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'stage': 'change'});patch(2,'arg','value',3)",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'stage': 'change'});j(2,'arg','value',3)",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',22),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',22),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'stage': 'repair'});patch(3,'op',None,'filter_lt')",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'stage': 'repair'});j(3,'op',None,'filter_lt')",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',22),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',22),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 22}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',23),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',23),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 23}, 'stage': 'build'});write(lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',23),'group','value'))",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 23}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 23}, 'stage': 'build'});p(lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',23),'group','value'))",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 23}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',23),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',23),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'stage': 'change'});patch(2,'arg','value',3)",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'stage': 'change'});j(2,'arg','value',3)",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',23),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',23),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'stage': 'repair'});patch(3,'op',None,'filter_lt')",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'stage': 'repair'});j(3,'op',None,'filter_lt')",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',23),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',23),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 23}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',24),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',24),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 24}, 'stage': 'build'});write(lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',24),'group','value'))",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 24}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 24}, 'stage': 'build'});p(lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',24),'group','value'))",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 24}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',24),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',24),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'stage': 'change'});patch(2,'arg','value',3)",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'stage': 'change'});j(2,'arg','value',3)",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',24),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',24),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'stage': 'repair'});patch(3,'op',None,'filter_lt')",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'stage': 'repair'});j(3,'op',None,'filter_lt')",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',24),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',24),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 24}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',25),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',25),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 25}, 'stage': 'build'});write(lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',25),'group','value'))",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 25}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 25}, 'stage': 'build'});p(lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',2),'timestamp',25),'group','value'))",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 2, 'cutoff': 25}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',25),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',25),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'stage': 'change'});patch(2,'arg','value',3)",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'stage': 'change'});j(2,'arg','value',3)",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',25),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',25),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'stage': 'repair'});patch(3,'op',None,'filter_lt')",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'stage': 'repair'});j(3,'op',None,'filter_lt')",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "events-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',3),'timestamp',25),'group','value')",
+    "python_aliases": "lambda r:h(g(f(c(d(r,'kind','event'),'id'),'severity',3),'timestamp',25),'group','value')",
+    "python_actions": [
+      "record({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'events', 'parameters': {'minimum': 3, 'cutoff': 25}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',10),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',10),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 10}, 'stage': 'build'});write(lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',10),'key'),['key', 'value', 'version']))",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 10}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 10}, 'stage': 'build'});p(lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',10),'key'),['key', 'value', 'version']))",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 10}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 15}, 'stage': 'change'});patch(2,'arg','value',15)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 15}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 15}, 'stage': 'change'});j(2,'arg','value',15)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 15}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 15}, 'stage': 'repair'});patch(1,'arg','value',False)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 15}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 15}, 'stage': 'repair'});j(1,'arg','value',False)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 15}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 15}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 15}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 15}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 15}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',11),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',11),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 11}, 'stage': 'build'});write(lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',11),'key'),['key', 'value', 'version']))",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 11}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 11}, 'stage': 'build'});p(lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',11),'key'),['key', 'value', 'version']))",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 11}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',16),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',16),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 16}, 'stage': 'change'});patch(2,'arg','value',16)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 16}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 16}, 'stage': 'change'});j(2,'arg','value',16)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 16}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',16),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',16),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 16}, 'stage': 'repair'});patch(1,'arg','value',False)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 16}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 16}, 'stage': 'repair'});j(1,'arg','value',False)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 16}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',16),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',16),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 16}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 16}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 16}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 16}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',12),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',12),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 12}, 'stage': 'build'});write(lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',12),'key'),['key', 'value', 'version']))",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 12}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 12}, 'stage': 'build'});p(lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',12),'key'),['key', 'value', 'version']))",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 12}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',17),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',17),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 17}, 'stage': 'change'});patch(2,'arg','value',17)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 17}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 17}, 'stage': 'change'});j(2,'arg','value',17)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 17}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',17),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',17),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 17}, 'stage': 'repair'});patch(1,'arg','value',False)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 17}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 17}, 'stage': 'repair'});j(1,'arg','value',False)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 17}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',17),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',17),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 17}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 17}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 17}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 17}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',13),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',13),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 13}, 'stage': 'build'});write(lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',13),'key'),['key', 'value', 'version']))",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 13}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 13}, 'stage': 'build'});p(lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',13),'key'),['key', 'value', 'version']))",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 13}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',18),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',18),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 18}, 'stage': 'change'});patch(2,'arg','value',18)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 18}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 18}, 'stage': 'change'});j(2,'arg','value',18)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 18}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',18),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',18),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 18}, 'stage': 'repair'});patch(1,'arg','value',False)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 18}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 18}, 'stage': 'repair'});j(1,'arg','value',False)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 18}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',18),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',18),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 18}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 18}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 18}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 18}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',14),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',14),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 14}, 'stage': 'build'});write(lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',14),'key'),['key', 'value', 'version']))",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 14}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 14}, 'stage': 'build'});p(lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',14),'key'),['key', 'value', 'version']))",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 14}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',19),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',19),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 19}, 'stage': 'change'});patch(2,'arg','value',19)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 19}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 19}, 'stage': 'change'});j(2,'arg','value',19)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 19}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',19),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',19),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 19}, 'stage': 'repair'});patch(1,'arg','value',False)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 19}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 19}, 'stage': 'repair'});j(1,'arg','value',False)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 19}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',19),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',19),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 19}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 19}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 19}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 19}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 15}, 'stage': 'build'});write(lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version']))",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 15}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 15}, 'stage': 'build'});p(lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',15),'key'),['key', 'value', 'version']))",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 15}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',20),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',20),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 20}, 'stage': 'change'});patch(2,'arg','value',20)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 20}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 20}, 'stage': 'change'});j(2,'arg','value',20)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 20}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',20),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',20),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 20}, 'stage': 'repair'});patch(1,'arg','value',False)",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 20}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 20}, 'stage': 'repair'});j(1,'arg','value',False)",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 20}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "cache-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(filter_gt(filter_eq(latest_by(r,'key','version'),'deleted',False),'expires',20),'key'),['key', 'value', 'version'])",
+    "python_aliases": "lambda r:k(n(e(d(i(r,'key','version'),'deleted',False),'expires',20),'key'),['key', 'value', 'version'])",
+    "python_actions": [
+      "record({'domain': 'cache', 'parameters': {'now': 20}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'cache', 'parameters': {'now': 20}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'cache', 'parameters': {'now': 20}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'cache', 'parameters': {'now': 20}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,1),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,1),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 1}, 'stage': 'build'});write(lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,1),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 1}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 1}, 'stage': 'build'});p(lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,1),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 1}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,1),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,1),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'stage': 'change'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'stage': 'change'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,1),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,1),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'stage': 'repair'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'stage': 'repair'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,1),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,1),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 1}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,2),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,2),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 2}, 'stage': 'build'});write(lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,2),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 2}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 2}, 'stage': 'build'});p(lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,2),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 2}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,2),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,2),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'stage': 'change'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'stage': 'change'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,2),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,2),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'stage': 'repair'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'stage': 'repair'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,2),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,2),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 2}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,3),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,3),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 3}, 'stage': 'build'});write(lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,3),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 3}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 3}, 'stage': 'build'});p(lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,3),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 3}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,3),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,3),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'stage': 'change'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'stage': 'change'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,3),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,3),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'stage': 'repair'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'stage': 'repair'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,3),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,3),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 3}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,4),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,4),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 4}, 'stage': 'build'});write(lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,4),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 4}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 4}, 'stage': 'build'});p(lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,4),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 4}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,4),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,4),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'stage': 'change'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'stage': 'change'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,4),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,4),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'stage': 'repair'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'stage': 'repair'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,4),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,4),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 4}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,5),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,5),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 5}, 'stage': 'build'});write(lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,5),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 5}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 5}, 'stage': 'build'});p(lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,5),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 5}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,5),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,5),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'stage': 'change'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'stage': 'change'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,5),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,5),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'stage': 'repair'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'stage': 'repair'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,5),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,5),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 5}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,6),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,6),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 6}, 'stage': 'build'});write(lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),3,6),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 6}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 6}, 'stage': 'build'});p(lambda r:k(n(a(d(c(r,'id'),'enabled',True),3,6),'id'),['id', 'status', 'attempts', 'delays', 'committed']))",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 3, 'base_delay': 6}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,6),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,6),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'stage': 'change'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'stage': 'change'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,6),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,6),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'stage': 'repair'});patch(2,'arg','limit',4)",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'stage': 'repair'});j(2,'arg','limit',4)",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  },
+  {
+    "chain": "publication-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "python": "lambda r:project(sort_by(bounded_retry(filter_eq(dedupe_by(r,'id'),'enabled',True),4,6),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_aliases": "lambda r:k(n(a(d(c(r,'id'),'enabled',True),4,6),'id'),['id', 'status', 'attempts', 'delays', 'committed'])",
+    "python_actions": [
+      "record({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'stage': 'handoff'})",
+      "check()",
+      "remember({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'artifact': 'p', 'checks_passed': True});submit()"
+    ],
+    "python_alias_actions": [
+      "l({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'stage': 'handoff'})",
+      "b()",
+      "m({'domain': 'publication', 'parameters': {'limit': 4, 'base_delay': 6}, 'artifact': 'p', 'checks_passed': True});o()"
+    ]
+  }
+]

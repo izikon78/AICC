@@ -44,6 +44,17 @@ class ReproductionTests(unittest.TestCase):
             self.assertFalse(result["matches_reference"])
             self.assertEqual(result["checks"]["totals.json"]["error"], "missing output file")
 
+    def test_malformed_independent_output_is_recorded_as_a_mismatch(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            (directory / "totals.json").write_text("{", encoding="utf-8")
+            write_json(directory / "episodes.json", [{"chain": "incomplete"}])
+            result = compare(directory, independent=True)
+            self.assertFalse(result["matches_reference"])
+            self.assertIn("JSONDecodeError", result["checks"]["totals.json"]["error"])
+            self.assertIn("KeyError", result["checks"]["episodes.json"]["error"])
+            self.assertFalse(read_json(directory / "comparison.json")["matches_reference"])
+
 
 if __name__ == "__main__":
     unittest.main()

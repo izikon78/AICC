@@ -102,6 +102,10 @@ Reference numbers and code are public. This workflow provides an auditable order
 of work and avoids tuning an implementation to expected totals. Your report
 should disclose which reference materials you consulted before implementation.
 
+A separate-agent validation archive is provided under
+`validation/codex-independent-2026-11-06/`. Consult it after preserving your own
+initial implementation and ledger, together with the other reference evidence.
+
 After preserving the independent results, use
 [ARTICLE_REPRODUCTION_BRIEF.md](ARTICLE_REPRODUCTION_BRIEF.md) for the original
 aggregate observations and the article's intended claim. Review

@@ -159,7 +159,8 @@ def main():
         "control-flow implementations require further cases. Actual trained-agent correctness, "
         "inference speed and success-adjusted compute remain open measurements.", "",
         "The manifest freezes codebook, aliases, source hashes, fixture hash and assumptions "
-        "before measurement. Sixteen focused tests passed. This report verifies frozen hashes "
+        "before measurement. The accompanying tests check fixture behavior and accounting. "
+        "Reproduction-harness outcomes are recorded in the rerun test log. This report verifies frozen hashes "
         "and replays every saved artifact. The raw episodes preserve input contexts, all actions, "
         "host observations, working records, persisted memory, business-data bytes and per-"
         "request ledgers. Timing of shared host execution is retained as a separate diagnostic.", "",

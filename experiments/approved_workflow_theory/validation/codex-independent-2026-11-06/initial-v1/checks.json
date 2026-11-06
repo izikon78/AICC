@@ -1,0 +1,4427 @@
+{
+  "unit_checks": {
+    "static_string": true,
+    "new_utf8_string": true,
+    "empty_string": true,
+    "booleans": true,
+    "generic_integer": true,
+    "signed_typed_bounds": true,
+    "outside_typed_bounds": true,
+    "typed_list": true,
+    "generic_list": true,
+    "empty_sequence": true,
+    "reject_invalid_0": true,
+    "reject_invalid_1": true,
+    "reject_invalid_2": true,
+    "reject_invalid_3": true,
+    "reject_invalid_4": true,
+    "reject_invalid_5": true,
+    "reject_invalid_6": true
+  },
+  "execution": [
+    {
+      "chain": "events-00",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": 8
+        },
+        {
+          "group": "B",
+          "total": 20
+        }
+      ]
+    },
+    {
+      "chain": "events-00",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 20
+        }
+      ]
+    },
+    {
+      "chain": "events-00",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 20
+        }
+      ]
+    },
+    {
+      "chain": "events-00",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 20
+        }
+      ]
+    },
+    {
+      "chain": "events-01",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": 9
+        },
+        {
+          "group": "B",
+          "total": 21
+        }
+      ]
+    },
+    {
+      "chain": "events-01",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 21
+        }
+      ]
+    },
+    {
+      "chain": "events-01",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 21
+        }
+      ]
+    },
+    {
+      "chain": "events-01",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 21
+        }
+      ]
+    },
+    {
+      "chain": "events-02",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": 10
+        },
+        {
+          "group": "B",
+          "total": 22
+        }
+      ]
+    },
+    {
+      "chain": "events-02",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 22
+        }
+      ]
+    },
+    {
+      "chain": "events-02",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 22
+        }
+      ]
+    },
+    {
+      "chain": "events-02",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 22
+        }
+      ]
+    },
+    {
+      "chain": "events-03",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": 11
+        },
+        {
+          "group": "B",
+          "total": 23
+        }
+      ]
+    },
+    {
+      "chain": "events-03",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 23
+        }
+      ]
+    },
+    {
+      "chain": "events-03",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 23
+        }
+      ]
+    },
+    {
+      "chain": "events-03",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 23
+        }
+      ]
+    },
+    {
+      "chain": "events-04",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": 12
+        },
+        {
+          "group": "B",
+          "total": 24
+        }
+      ]
+    },
+    {
+      "chain": "events-04",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 24
+        }
+      ]
+    },
+    {
+      "chain": "events-04",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 24
+        }
+      ]
+    },
+    {
+      "chain": "events-04",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 24
+        }
+      ]
+    },
+    {
+      "chain": "events-05",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": 13
+        },
+        {
+          "group": "B",
+          "total": 25
+        }
+      ]
+    },
+    {
+      "chain": "events-05",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 25
+        }
+      ]
+    },
+    {
+      "chain": "events-05",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 25
+        }
+      ]
+    },
+    {
+      "chain": "events-05",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 25
+        }
+      ]
+    },
+    {
+      "chain": "cache-00",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "alpha",
+          "value": "new-0",
+          "version": 2
+        },
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-00",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-00",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-00",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-01",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "alpha",
+          "value": "new-1",
+          "version": 2
+        },
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-01",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-01",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-01",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-02",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "alpha",
+          "value": "new-2",
+          "version": 2
+        },
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-02",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-02",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-02",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-03",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "alpha",
+          "value": "new-3",
+          "version": 2
+        },
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-03",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-03",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-03",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-04",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "alpha",
+          "value": "new-4",
+          "version": 2
+        },
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-04",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-04",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-04",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-05",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "alpha",
+          "value": "new-5",
+          "version": 2
+        },
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-05",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-05",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-05",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "publication-00",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            1
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            1,
+            2
+          ],
+          "committed": false
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            1,
+            2
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-0",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            1,
+            2
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-00",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            1
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            1,
+            2,
+            4
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            1,
+            2,
+            4
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-0",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            1,
+            2
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-00",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            1
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            1,
+            2,
+            4
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            1,
+            2,
+            4
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-0",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            1,
+            2
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-00",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            1
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            1,
+            2,
+            4
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            1,
+            2,
+            4
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-0",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            1,
+            2
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-01",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            2
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            2,
+            4
+          ],
+          "committed": false
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            2,
+            4
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-1",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            2,
+            4
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-01",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            2
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            2,
+            4,
+            8
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            2,
+            4,
+            8
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-1",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            2,
+            4
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-01",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            2
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            2,
+            4,
+            8
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            2,
+            4,
+            8
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-1",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            2,
+            4
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-01",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            2
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            2,
+            4,
+            8
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            2,
+            4,
+            8
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-1",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            2,
+            4
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-02",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            3
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            3,
+            6
+          ],
+          "committed": false
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            3,
+            6
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-2",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            3,
+            6
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-02",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            3
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            3,
+            6,
+            12
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            3,
+            6,
+            12
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-2",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            3,
+            6
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-02",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            3
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            3,
+            6,
+            12
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            3,
+            6,
+            12
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-2",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            3,
+            6
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-02",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            3
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            3,
+            6,
+            12
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            3,
+            6,
+            12
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-2",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            3,
+            6
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-03",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            4
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            4,
+            8
+          ],
+          "committed": false
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            4,
+            8
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-3",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            4,
+            8
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-03",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            4
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            4,
+            8,
+            16
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            4,
+            8,
+            16
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-3",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            4,
+            8
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-03",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            4
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            4,
+            8,
+            16
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            4,
+            8,
+            16
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-3",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            4,
+            8
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-03",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            4
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            4,
+            8,
+            16
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            4,
+            8,
+            16
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-3",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            4,
+            8
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-04",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            5
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            5,
+            10
+          ],
+          "committed": false
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            5,
+            10
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-4",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            5,
+            10
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-04",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            5
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            5,
+            10,
+            20
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            5,
+            10,
+            20
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-4",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            5,
+            10
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-04",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            5
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            5,
+            10,
+            20
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            5,
+            10,
+            20
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-4",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            5,
+            10
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-04",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            5
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            5,
+            10,
+            20
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            5,
+            10,
+            20
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-4",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            5,
+            10
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-05",
+      "stage": "build",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            6
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            6,
+            12
+          ],
+          "committed": false
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            6,
+            12
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-5",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            6,
+            12
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-05",
+      "stage": "change",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            6
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            6,
+            12,
+            24
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            6,
+            12,
+            24
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-5",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            6,
+            12
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-05",
+      "stage": "repair",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            6
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            6,
+            12,
+            24
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            6,
+            12,
+            24
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-5",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            6,
+            12
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-05",
+      "stage": "handoff",
+      "schedule": "resident",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            6
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            6,
+            12,
+            24
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            6,
+            12,
+            24
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-5",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            6,
+            12
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "events-00",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": 8
+        },
+        {
+          "group": "B",
+          "total": 20
+        }
+      ]
+    },
+    {
+      "chain": "events-00",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 20
+        }
+      ]
+    },
+    {
+      "chain": "events-00",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 20
+        }
+      ]
+    },
+    {
+      "chain": "events-00",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 20
+        }
+      ]
+    },
+    {
+      "chain": "events-01",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": 9
+        },
+        {
+          "group": "B",
+          "total": 21
+        }
+      ]
+    },
+    {
+      "chain": "events-01",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 21
+        }
+      ]
+    },
+    {
+      "chain": "events-01",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 21
+        }
+      ]
+    },
+    {
+      "chain": "events-01",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 21
+        }
+      ]
+    },
+    {
+      "chain": "events-02",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": 10
+        },
+        {
+          "group": "B",
+          "total": 22
+        }
+      ]
+    },
+    {
+      "chain": "events-02",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 22
+        }
+      ]
+    },
+    {
+      "chain": "events-02",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 22
+        }
+      ]
+    },
+    {
+      "chain": "events-02",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 22
+        }
+      ]
+    },
+    {
+      "chain": "events-03",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": 11
+        },
+        {
+          "group": "B",
+          "total": 23
+        }
+      ]
+    },
+    {
+      "chain": "events-03",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 23
+        }
+      ]
+    },
+    {
+      "chain": "events-03",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 23
+        }
+      ]
+    },
+    {
+      "chain": "events-03",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 23
+        }
+      ]
+    },
+    {
+      "chain": "events-04",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": 12
+        },
+        {
+          "group": "B",
+          "total": 24
+        }
+      ]
+    },
+    {
+      "chain": "events-04",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 24
+        }
+      ]
+    },
+    {
+      "chain": "events-04",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 24
+        }
+      ]
+    },
+    {
+      "chain": "events-04",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 24
+        }
+      ]
+    },
+    {
+      "chain": "events-05",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": 13
+        },
+        {
+          "group": "B",
+          "total": 25
+        }
+      ]
+    },
+    {
+      "chain": "events-05",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 25
+        }
+      ]
+    },
+    {
+      "chain": "events-05",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 25
+        }
+      ]
+    },
+    {
+      "chain": "events-05",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "group": "A",
+          "total": -2
+        },
+        {
+          "group": "B",
+          "total": 25
+        }
+      ]
+    },
+    {
+      "chain": "cache-00",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "alpha",
+          "value": "new-0",
+          "version": 2
+        },
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-00",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-00",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-00",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-01",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "alpha",
+          "value": "new-1",
+          "version": 2
+        },
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-01",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-01",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-01",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-02",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "alpha",
+          "value": "new-2",
+          "version": 2
+        },
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-02",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-02",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-02",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-03",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "alpha",
+          "value": "new-3",
+          "version": 2
+        },
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-03",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-03",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-03",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-04",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "alpha",
+          "value": "new-4",
+          "version": 2
+        },
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-04",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-04",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-04",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-05",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "alpha",
+          "value": "new-5",
+          "version": 2
+        },
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-05",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-05",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "cache-05",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "key": "delta",
+          "value": "first",
+          "version": 7
+        }
+      ]
+    },
+    {
+      "chain": "publication-00",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            1
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            1,
+            2
+          ],
+          "committed": false
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            1,
+            2
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-0",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            1,
+            2
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-00",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            1
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            1,
+            2,
+            4
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            1,
+            2,
+            4
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-0",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            1,
+            2
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-00",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            1
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            1,
+            2,
+            4
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            1,
+            2,
+            4
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-0",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            1,
+            2
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-00",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            1
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            1,
+            2,
+            4
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            1,
+            2,
+            4
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-0",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            1,
+            2
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-01",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            2
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            2,
+            4
+          ],
+          "committed": false
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            2,
+            4
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-1",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            2,
+            4
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-01",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            2
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            2,
+            4,
+            8
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            2,
+            4,
+            8
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-1",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            2,
+            4
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-01",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            2
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            2,
+            4,
+            8
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            2,
+            4,
+            8
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-1",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            2,
+            4
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-01",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            2
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            2,
+            4,
+            8
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            2,
+            4,
+            8
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-1",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            2,
+            4
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-02",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            3
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            3,
+            6
+          ],
+          "committed": false
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            3,
+            6
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-2",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            3,
+            6
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-02",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            3
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            3,
+            6,
+            12
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            3,
+            6,
+            12
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-2",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            3,
+            6
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-02",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            3
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            3,
+            6,
+            12
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            3,
+            6,
+            12
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-2",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            3,
+            6
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-02",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            3
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            3,
+            6,
+            12
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            3,
+            6,
+            12
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-2",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            3,
+            6
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-03",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            4
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            4,
+            8
+          ],
+          "committed": false
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            4,
+            8
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-3",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            4,
+            8
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-03",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            4
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            4,
+            8,
+            16
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            4,
+            8,
+            16
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-3",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            4,
+            8
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-03",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            4
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            4,
+            8,
+            16
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            4,
+            8,
+            16
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-3",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            4,
+            8
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-03",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            4
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            4,
+            8,
+            16
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            4,
+            8,
+            16
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-3",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            4,
+            8
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-04",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            5
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            5,
+            10
+          ],
+          "committed": false
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            5,
+            10
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-4",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            5,
+            10
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-04",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            5
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            5,
+            10,
+            20
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            5,
+            10,
+            20
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-4",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            5,
+            10
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-04",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            5
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            5,
+            10,
+            20
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            5,
+            10,
+            20
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-4",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            5,
+            10
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-04",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            5
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            5,
+            10,
+            20
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            5,
+            10,
+            20
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-4",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            5,
+            10
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-05",
+      "stage": "build",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            6
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            6,
+            12
+          ],
+          "committed": false
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 3,
+          "delays": [
+            6,
+            12
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-5",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            6,
+            12
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-05",
+      "stage": "change",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            6
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            6,
+            12,
+            24
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            6,
+            12,
+            24
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-5",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            6,
+            12
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-05",
+      "stage": "repair",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": true,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            6
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            6,
+            12,
+            24
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            6,
+            12,
+            24
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-5",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            6,
+            12
+          ],
+          "committed": true
+        }
+      ]
+    },
+    {
+      "chain": "publication-05",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "check_passed": true,
+      "both_python_renderings_passed": true,
+      "injected_defect_changes_result": null,
+      "actual_output": [
+        {
+          "id": "a",
+          "status": "committed",
+          "attempts": 1,
+          "delays": [],
+          "committed": true
+        },
+        {
+          "id": "b",
+          "status": "committed",
+          "attempts": 2,
+          "delays": [
+            6
+          ],
+          "committed": true
+        },
+        {
+          "id": "c",
+          "status": "committed",
+          "attempts": 4,
+          "delays": [
+            6,
+            12,
+            24
+          ],
+          "committed": true
+        },
+        {
+          "id": "d",
+          "status": "exhausted",
+          "attempts": 4,
+          "delays": [
+            6,
+            12,
+            24
+          ],
+          "committed": false
+        },
+        {
+          "id": "extra-5",
+          "status": "committed",
+          "attempts": 3,
+          "delays": [
+            6,
+            12
+          ],
+          "committed": true
+        }
+      ]
+    }
+  ]
+}

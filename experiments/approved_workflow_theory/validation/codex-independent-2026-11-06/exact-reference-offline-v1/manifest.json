@@ -1,0 +1,174 @@
+{
+  "config": {
+    "assumed_approved_core": true,
+    "assumed_fluent_representation": true,
+    "assumed_perfect_composer": true,
+    "model_calls": 0,
+    "vocabulary_entries": 65536,
+    "literal_payload_bits": 15,
+    "turns_per_stage": 3,
+    "shared_request_framing": 4,
+    "history_pair_framing": 3,
+    "response_end": 1,
+    "data_schedules": [
+      "resident",
+      "inspect"
+    ],
+    "stages": [
+      "build",
+      "change",
+      "repair",
+      "handoff"
+    ],
+    "catalog_schema": {
+      "filter_eq": [
+        "field",
+        "value"
+      ],
+      "filter_gte": [
+        "field",
+        "value"
+      ],
+      "filter_lt": [
+        "field",
+        "value"
+      ],
+      "filter_gt": [
+        "field",
+        "value"
+      ],
+      "dedupe_by": [
+        "field"
+      ],
+      "group_sum": [
+        "key_field",
+        "value_field"
+      ],
+      "latest_by": [
+        "key_field",
+        "version_field"
+      ],
+      "sort_by": [
+        "field"
+      ],
+      "project": [
+        "fields"
+      ],
+      "bounded_retry": [
+        "limit",
+        "base_delay"
+      ],
+      "record": [
+        "value"
+      ],
+      "write": [
+        "program"
+      ],
+      "patch": [
+        "index",
+        "kind",
+        "key",
+        "value"
+      ],
+      "check": [],
+      "remember": [
+        "value"
+      ],
+      "submit": []
+    },
+    "static_symbols": [
+      "arg",
+      "artifact",
+      "attempts",
+      "base_delay",
+      "bounded_retry",
+      "build",
+      "cache",
+      "change",
+      "check",
+      "checks_passed",
+      "committed",
+      "cutoff",
+      "dedupe_by",
+      "delays",
+      "deleted",
+      "domain",
+      "enabled",
+      "event",
+      "events",
+      "expires",
+      "failures",
+      "field",
+      "fields",
+      "filter_eq",
+      "filter_gt",
+      "filter_gte",
+      "filter_lt",
+      "group",
+      "group_sum",
+      "handoff",
+      "id",
+      "index",
+      "key",
+      "key_field",
+      "kind",
+      "latest_by",
+      "limit",
+      "minimum",
+      "now",
+      "op",
+      "p",
+      "parameters",
+      "passed",
+      "patch",
+      "project",
+      "publication",
+      "record",
+      "remember",
+      "repair",
+      "severity",
+      "sort_by",
+      "stage",
+      "status",
+      "stored",
+      "submit",
+      "submitted",
+      "timestamp",
+      "total",
+      "value",
+      "value_field",
+      "version",
+      "version_field",
+      "write"
+    ],
+    "aliases": {
+      "bounded_retry": "a",
+      "check": "b",
+      "dedupe_by": "c",
+      "filter_eq": "d",
+      "filter_gt": "e",
+      "filter_gte": "f",
+      "filter_lt": "g",
+      "group_sum": "h",
+      "latest_by": "i",
+      "patch": "j",
+      "project": "k",
+      "record": "l",
+      "remember": "m",
+      "sort_by": "n",
+      "submit": "o",
+      "write": "p"
+    }
+  },
+  "source_sha256": {
+    "experiments\\approved_workflow_theory\\run.py": "ac684631bf4ef1515c79d71eba5aaef36fcdc005c799dc8115b3ef1d0c72ad80",
+    "experiments\\approved_workflow_theory\\workloads.py": "6382ece9a227fa892bbd7e0a2cd4f7a979b7b2178e9aa1be4ae55e1e1f0ab52e",
+    "experiments\\approved_workflow_theory\\accounting.py": "698cd11ea25b4950722eaaf92abe29353d3669354ba6697f61d44c840ca1488a"
+  },
+  "fixture_sha256": "b7f62e651da33e27c0442d1d76bc5d21cbc08e4c23cae65d54381725a0fd4ab9",
+  "packages": {
+    "transformers": "4.51.3",
+    "tokenizers": "0.21.4"
+  },
+  "conditions": "Conditional oracle traces under approved-core, fluent-language and perfect-composer assumptions"
+}

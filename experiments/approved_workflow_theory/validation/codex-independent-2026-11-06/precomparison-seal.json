@@ -1,0 +1,10 @@
+{
+  "sealed_utc": "2026-11-06T21:49:52.082065+00:00",
+  "git_revision": "395278bc369b1c33141381a73872725ca4dd4a7b",
+  "implementation_sha256": "e56101a0937ef7285fddc9910b5f1d24e9e0394c135ad9d1f90ef7ec91170e01",
+  "canonical_ledger_sha256": "467047c105ed2d11968e22a68d5156996bf41896cb4b218b658bcb330e23a1b8",
+  "episodes_file_sha256": "3088e9a339f31fd286562d00151de43a2113aecaf52647013004f7b790991e3f",
+  "totals_file_sha256": "6e886ff6e89b6b1c0bebbb8849fe2dbd3715ce4db62d6e1370177151f0332798",
+  "freeze_file_sha256": "891ae8ef1ef9b44f08c5f70364c3ef77c7261465ae35d2218e350f1bf632ad81",
+  "reference_counts_or_accounting_seen": false
+}

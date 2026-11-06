@@ -74,16 +74,19 @@ def compare(output, independent=False):
         if not (output / name).is_file():
             checks[name] = {"match": False, "error": "missing output file"}
             continue
-        expected = read_json(REFERENCE / name)
-        actual = read_json(output / name)
-        if name == "episodes.json":
-            expected, actual = canonical_episodes(expected), canonical_episodes(actual)
-            if independent:
-                expected, actual = independent_view(expected), independent_view(actual)
-        difference = first_difference(expected, actual)
-        checks[name] = {"match": difference is None, "first_difference": difference,
-                        "expected_canonical_sha256": canonical_hash(expected),
-                        "actual_canonical_sha256": canonical_hash(actual)}
+        try:
+            expected = read_json(REFERENCE / name)
+            actual = read_json(output / name)
+            if name == "episodes.json":
+                expected, actual = canonical_episodes(expected), canonical_episodes(actual)
+                if independent:
+                    expected, actual = independent_view(expected), independent_view(actual)
+            difference = first_difference(expected, actual)
+            checks[name] = {"match": difference is None, "first_difference": difference,
+                            "expected_canonical_sha256": canonical_hash(expected),
+                            "actual_canonical_sha256": canonical_hash(actual)}
+        except (ValueError, KeyError, TypeError, IndexError) as error:
+            checks[name] = {"match": False, "error": f"Invalid comparison data: {type(error).__name__}: {error}"}
     if not independent:
         expected = read_json(REFERENCE / "manifest.json")
         actual = read_json(output / "manifest.json")
