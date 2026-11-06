@@ -108,13 +108,14 @@ def page(canvas, doc):
 
 doc = SimpleDocTemplate(str(TARGET), pagesize=letter, rightMargin=54, leftMargin=54,
                         topMargin=59, bottomMargin=52,
-                        title='It started with a beep - AIN research draft 9', author='Izik Bachar',
+                        title='AIN: A Native Language for More Efficient AI - Research draft 9', author='Izik Bachar',
                         subject='Native learning, programming efficiency and computational reuse')
 doc.build(story, onFirstPage=page, onLaterPages=page)
 from pypdf import PdfReader
 reader = PdfReader(str(TARGET))
 text = '\n'.join(p.extract_text() or '' for p in reader.pages)
-for required in ('It started with a beep', 'plips', 'What native knowledge changes', 'Three claims', 'Credits and evidence scope', 'Izik Bachar'):
-    assert required in text, required
+normalized_text = ' '.join(text.split())
+for required in ('AIN: A Native Language for More Efficient AI', 'It started with a beep', 'plips', 'What native knowledge changes', 'Three claims', 'Credits and evidence scope', 'Izik Bachar'):
+    assert required in normalized_text, required
 assert not any(term in text for term in ('AINLINK', '\ufffd', '\u25a0'))
 print({'pages': len(reader.pages), 'bytes': TARGET.stat().st_size, 'path': str(TARGET)})

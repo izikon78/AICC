@@ -1,6 +1,6 @@
 # Article drafts and research figures
 
-The current article source is **[Draft 9, It started with a beep](AICC_Article_Draft_9.md)**,
+The current article source is **[Draft 9, AIN: A Native Language for More Efficient AI](AICC_Article_Draft_9.md)**,
 dated 6 November 2026. It restores trained-native AIN as the central question,
 separates authoring/compilation/inference/system claims, and incorporates the
 [primary-source reassessment](../research/NATIVE_AIN_FEASIBILITY_2026-11-05.md).

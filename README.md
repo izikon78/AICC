@@ -9,7 +9,7 @@ Concept, architecture, and research direction: **Izik Bachar**.
 ## Start here
 
 - [Native AIN feasibility decision and primary-source research](docs/research/NATIVE_AIN_FEASIBILITY_2026-11-05.md)
-- [Article Draft 9: It started with a beep](docs/article/AICC_Article_Draft_9.md)
+- [Article Draft 9: AIN - A Native Language for More Efficient AI](docs/article/AICC_Article_Draft_9.md)
 - [Current native-learning hypotheses and training protocol](docs/ain/NATIVE_HYPOTHESES.md)
 - [First executable AIN study: code, tests, agent edits, charts and results](https://github.com/izikon78/AICC/blob/research/ain-v0-foundation/experiments/ain_v0/FIRST_EXECUTION_REPORT.md)
 - [Preserved Draft 8 and its Word/PDF review copies](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/article)

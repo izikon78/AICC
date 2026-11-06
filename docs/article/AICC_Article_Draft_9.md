@@ -1,10 +1,10 @@
-# It started with a beep
+# AIN: A Native Language for More Efficient AI
 
 ## Testing whether a learned native language can reduce AI programming work
 
 Izik Bachar · Research draft 9 · 6 November 2026
 
-### The idea
+### It started with a beep
 
 I have spent more than 25 years developing software. The idea came from watching R2D2 beep and plips to other machines and made me realize that communication between machine doesn't need to be set of words a beep can be an entire sentence.
 
