@@ -5,6 +5,11 @@ from a fresh checkout. Prior AIN knowledge is unnecessary. It supports an exact
 rerun of the reference implementation and an independent reconstruction of the
 accounting from the published specification and semantic trace inputs.
 
+Begin with [AIN_LANGUAGE_AND_THEORY.md](AIN_LANGUAGE_AND_THEORY.md) for the
+language theory, abstract program structure, function/loop reuse and links to
+the implemented prototype's concrete syntax. Then follow this guide and
+`REPLICATION_SPEC.md` for the current test.
+
 AIN means **AI Native Language**, the working name for Izik Bachar's proposed
 machine-oriented programming representation. The central idea is that agents
 could learn a concise executable representation before using it on tasks. AICC
