@@ -1,0 +1,444 @@
+{
+  "artifact_sha256": "ed9b68cdf77691823c6ec5bf24f6942d25ea31d3d5d45136e57a565bacda83c1",
+  "cases": 55,
+  "delta": 75,
+  "details": [
+    {
+      "actual_sha256": "eba911121f9e5d7ad7a50fe96ca69ac65bd58a9fae164bddba049c930badf98a",
+      "case": "published_ten_record_trace",
+      "expected_sha256": "eba911121f9e5d7ad7a50fe96ca69ac65bd58a9fae164bddba049c930badf98a",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "3141c75332a4a2b5c496134fa38b333786b3fe28f268514689d6c21fd9458d3f",
+      "case": "near_frontier_manual_minimum_0",
+      "expected_sha256": "3141c75332a4a2b5c496134fa38b333786b3fe28f268514689d6c21fd9458d3f",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "974c3940c0615ca8e65cbc4e6513feb27d52165e0c44173e9c23a578aed99b67",
+      "case": "near_frontier_manual_minimum_1",
+      "expected_sha256": "974c3940c0615ca8e65cbc4e6513feb27d52165e0c44173e9c23a578aed99b67",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "e0591e19fe79d0c241fcd12558c6490ee885dbc49257f234807e366d3c150d89",
+      "case": "near_frontier_manual_minimum_2",
+      "expected_sha256": "e0591e19fe79d0c241fcd12558c6490ee885dbc49257f234807e366d3c150d89",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "3f22b920d1db02e982459085a183649f1109f69fc68e1770e9166cd0f8c34679",
+      "case": "near_frontier_manual_minimum_3",
+      "expected_sha256": "3f22b920d1db02e982459085a183649f1109f69fc68e1770e9166cd0f8c34679",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "c23435220c52156866fcc13675e5f485167d0a4ea633dd165fdb2ab1f8947351",
+      "case": "drain_many_tied_and_out_of_order",
+      "expected_sha256": "c23435220c52156866fcc13675e5f485167d0a4ea633dd165fdb2ab1f8947351",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "e59c5a5108e30099cf2912812999e66422f92bd5f6c546a6b5f1d12b56710335",
+      "case": "nfkc_and_message_case",
+      "expected_sha256": "e59c5a5108e30099cf2912812999e66422f92bd5f6c546a6b5f1d12b56710335",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "4bad2f57547f505500d62b113270a9031facaae29c51feaeb5b47b98dcdd3bef",
+      "case": "anchored_window_equality",
+      "expected_sha256": "4bad2f57547f505500d62b113270a9031facaae29c51feaeb5b47b98dcdd3bef",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "c042b408f8b39b67959d43159bd8671599c07a57f8731eb7c54a7044b5088123",
+      "case": "first_id_before_threshold",
+      "expected_sha256": "c042b408f8b39b67959d43159bd8671599c07a57f8731eb7c54a7044b5088123",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "117ff063f1fa926c5204bf4f4cb32a001ec8e0f3b3d08cdab6cb08220073e6f9",
+      "case": "late_id_not_reserved",
+      "expected_sha256": "117ff063f1fa926c5204bf4f4cb32a001ec8e0f3b3d08cdab6cb08220073e6f9",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "07d0f01f3ab8d50bfb46f9fbb6924d62c807ba5f50a1271acdf8ec564b82ecb4",
+      "case": "horizon_readmission",
+      "expected_sha256": "07d0f01f3ab8d50bfb46f9fbb6924d62c807ba5f50a1271acdf8ec564b82ecb4",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "d790a91b9798ddada98692d56732c9e0d7bb229a8cadaab1b37cc33f9589a55f",
+      "case": "frontier_equal_waits",
+      "expected_sha256": "d790a91b9798ddada98692d56732c9e0d7bb229a8cadaab1b37cc33f9589a55f",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "3f84e259cae364d0177f919be6033a2efc3806a0b39d3bf2212a29b0a2b5f1b2",
+      "case": "eof_not_end",
+      "expected_sha256": "3f84e259cae364d0177f919be6033a2efc3806a0b39d3bf2212a29b0a2b5f1b2",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "82f8b5fd5981773ac89f81b51111aaee921eaeb312a77c44d9e995b5c8666b50",
+      "case": "empty_input",
+      "expected_sha256": "82f8b5fd5981773ac89f81b51111aaee921eaeb312a77c44d9e995b5c8666b50",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "baafc9ea339be8b103084a6e7cff034229a47982629a8dc33e36564fd0d7781d",
+      "case": "empty_end",
+      "expected_sha256": "baafc9ea339be8b103084a6e7cff034229a47982629a8dc33e36564fd0d7781d",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "afa5f8f102578509de1e43558dc74e700352ffbb027a61406bfb25639c70dcd0",
+      "case": "after_end_same_invocation",
+      "expected_sha256": "afa5f8f102578509de1e43558dc74e700352ffbb027a61406bfb25639c70dcd0",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "6144ada31617dd90af1870dc1dcacc28284d5334b8d9c56ee5b25e1b5e3596af",
+      "case": "invalid_duplicate_payload",
+      "expected_sha256": "6144ada31617dd90af1870dc1dcacc28284d5334b8d9c56ee5b25e1b5e3596af",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "72b542632c155241075e1baf7fd89be3fb0bc8ee3f44e0031d31ef110be7172d",
+      "case": "invalid_late_payload",
+      "expected_sha256": "72b542632c155241075e1baf7fd89be3fb0bc8ee3f44e0031d31ef110be7172d",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "073c363230333184b5c7508be333496dec0caf5b48291b1172a88b0e85b070c1",
+      "case": "future_invalid_preserves_commit",
+      "expected_sha256": "073c363230333184b5c7508be333496dec0caf5b48291b1172a88b0e85b070c1",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "aa72af71e6d584129b04d5b8845d09b5d33b820932a24b2a8ca3c94a4d3ea5f0",
+      "case": "decreasing_watermark",
+      "expected_sha256": "aa72af71e6d584129b04d5b8845d09b5d33b820932a24b2a8ca3c94a4d3ea5f0",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "39e28ad079915f32c9857527baa2e95a454450362eea4409946e6f24b590c18d",
+      "case": "duplicate_offset",
+      "expected_sha256": "39e28ad079915f32c9857527baa2e95a454450362eea4409946e6f24b590c18d",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "c2996ea083bba2f18367f93195b8e2ab0b9a19e88cc8e1886f32b6c904997f3c",
+      "case": "signed_timestamp_maximum",
+      "expected_sha256": "c2996ea083bba2f18367f93195b8e2ab0b9a19e88cc8e1886f32b6c904997f3c",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "01b04726642ab1054fbf189109176d676ec442ea8bab3b49044eaefd5845e5e0",
+      "case": "capacity_dedupe_entries",
+      "expected_sha256": "01b04726642ab1054fbf189109176d676ec442ea8bab3b49044eaefd5845e5e0",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "a1e809e179c7c6fb18873f019141721b07fb34b9d6c9dba8bf09e7dfc7001c1b",
+      "case": "capacity_buffered_events",
+      "expected_sha256": "a1e809e179c7c6fb18873f019141721b07fb34b9d6c9dba8bf09e7dfc7001c1b",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "adc6340070f45b293bfd9682df5af34d1c5278dd61ff475e330f4eb98a510ebb",
+      "case": "capacity_open_groups",
+      "expected_sha256": "adc6340070f45b293bfd9682df5af34d1c5278dd61ff475e330f4eb98a510ebb",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "96ec667752a000c4761bcf3fbe5452c6422649f127b4eb6668bfcec4cf34b469",
+      "case": "capacity_epoch_reports",
+      "expected_sha256": "96ec667752a000c4761bcf3fbe5452c6422649f127b4eb6668bfcec4cf34b469",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "c083880b01b47288084e14543c546d50149234cbba57e83a5d2486c299cbf2ee",
+      "case": "authority_policy",
+      "expected_sha256": "c083880b01b47288084e14543c546d50149234cbba57e83a5d2486c299cbf2ee",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "8259a5cac280848950302d974593a7e310a26d1f50a55b56ea783e401a757a32",
+      "case": "authority_commit",
+      "expected_sha256": "8259a5cac280848950302d974593a7e310a26d1f50a55b56ea783e401a757a32",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "6e9e8c95c5ec667852e47ed4505c5ec83df696ef39b4482d48b8b3edf38b5171",
+      "case": "cancel_before",
+      "expected_sha256": "6e9e8c95c5ec667852e47ed4505c5ec83df696ef39b4482d48b8b3edf38b5171",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "6e9e8c95c5ec667852e47ed4505c5ec83df696ef39b4482d48b8b3edf38b5171",
+      "case": "cancel_policy",
+      "expected_sha256": "6e9e8c95c5ec667852e47ed4505c5ec83df696ef39b4482d48b8b3edf38b5171",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "4164d241a1ac76b7b73290fa4860bd3a92536d5ddd800be1fcca387a13b8e3d6",
+      "case": "policy_error",
+      "expected_sha256": "4164d241a1ac76b7b73290fa4860bd3a92536d5ddd800be1fcca387a13b8e3d6",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "ff664732a4d84abdc0d652b1673450e3e3bb93ddb147853931733110f68b872b",
+      "case": "invalid_policy",
+      "expected_sha256": "ff664732a4d84abdc0d652b1673450e3e3bb93ddb147853931733110f68b872b",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "e2066acb5fb008737019432f09e79f24987ed9ffc52e58f1beaa2348f856950c",
+      "case": "scope",
+      "expected_sha256": "e2066acb5fb008737019432f09e79f24987ed9ffc52e58f1beaa2348f856950c",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "8822b2e950e21947496a442eea388737ee93fbad929329e25de73adb2129d226",
+      "case": "generated_0",
+      "expected_sha256": "8822b2e950e21947496a442eea388737ee93fbad929329e25de73adb2129d226",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "6a0f7b1c8d59f2d2fe48c46fe5c2765ded07629256b827907f2ada890ab8121a",
+      "case": "generated_1",
+      "expected_sha256": "6a0f7b1c8d59f2d2fe48c46fe5c2765ded07629256b827907f2ada890ab8121a",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "b0a7ef49ea34f76463a37230382c24afaaa0ce4072df4166c292dbd66251faca",
+      "case": "generated_2",
+      "expected_sha256": "b0a7ef49ea34f76463a37230382c24afaaa0ce4072df4166c292dbd66251faca",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "643ea643034803498921171673600327053e2df4b05d5382fbd56d9fd12c3050",
+      "case": "generated_3",
+      "expected_sha256": "643ea643034803498921171673600327053e2df4b05d5382fbd56d9fd12c3050",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "7f7c50100e4d8944a3e2212e4e83b5005d56bd0df1fff66a601d9a0b4a505b32",
+      "case": "generated_4",
+      "expected_sha256": "7f7c50100e4d8944a3e2212e4e83b5005d56bd0df1fff66a601d9a0b4a505b32",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "73da41c5c7f4791d416bbf9f83c617af5dab76933d9c4667d45f1ac63efde7c9",
+      "case": "generated_5",
+      "expected_sha256": "73da41c5c7f4791d416bbf9f83c617af5dab76933d9c4667d45f1ac63efde7c9",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "e4b4507fda73cd69c3de557b6ac9881bce2a8513c2fe9f33552167adcbcca016",
+      "case": "generated_6",
+      "expected_sha256": "e4b4507fda73cd69c3de557b6ac9881bce2a8513c2fe9f33552167adcbcca016",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "e3cb8b5bff7756f54f5a71c6e0b425399924b06cb91d426b96fc96f6a8aad7af",
+      "case": "generated_7",
+      "expected_sha256": "e3cb8b5bff7756f54f5a71c6e0b425399924b06cb91d426b96fc96f6a8aad7af",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "de69bedb958b1e2a5381cd2b5fb222a93eb518eab484720b36328c8fe196d495",
+      "case": "generated_8",
+      "expected_sha256": "de69bedb958b1e2a5381cd2b5fb222a93eb518eab484720b36328c8fe196d495",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "5b1cffe1fe5c60fc28866296713169397b65754372b352c3a85f76d99e53cdf4",
+      "case": "generated_9",
+      "expected_sha256": "5b1cffe1fe5c60fc28866296713169397b65754372b352c3a85f76d99e53cdf4",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "b4b12822a7cfe33a86eb883c8e69e0ed4741230922478d64e5fe5cc6281966e5",
+      "case": "generated_10",
+      "expected_sha256": "b4b12822a7cfe33a86eb883c8e69e0ed4741230922478d64e5fe5cc6281966e5",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "ad8e7436046033447423cfecce0d02ae0195bb1c628adbdba30f6d31431840d0",
+      "case": "generated_11",
+      "expected_sha256": "ad8e7436046033447423cfecce0d02ae0195bb1c628adbdba30f6d31431840d0",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "16d2c1db001bd32b23fc3ef9dbe0d7c87ae4745a4706b6d3bd992e21774edc66",
+      "case": "generated_12",
+      "expected_sha256": "16d2c1db001bd32b23fc3ef9dbe0d7c87ae4745a4706b6d3bd992e21774edc66",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "b82d1139137d66ff3bb56368a20368461a846095afcf76e27e62654803e9d056",
+      "case": "generated_13",
+      "expected_sha256": "b82d1139137d66ff3bb56368a20368461a846095afcf76e27e62654803e9d056",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "e78f5c6a7f61b96674ca95041d19100eeae763497d209be67d12f97541751b0c",
+      "case": "generated_14",
+      "expected_sha256": "e78f5c6a7f61b96674ca95041d19100eeae763497d209be67d12f97541751b0c",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "7ec6ecb65ea6b20c9cd8305964f95a553546da18d6c69b73666e561b5f508aec",
+      "case": "generated_15",
+      "expected_sha256": "7ec6ecb65ea6b20c9cd8305964f95a553546da18d6c69b73666e561b5f508aec",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "8644197afe00bee226664c635ad9a2893043091758969564da7cac65c2b29050",
+      "case": "generated_16",
+      "expected_sha256": "8644197afe00bee226664c635ad9a2893043091758969564da7cac65c2b29050",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "32df22508cc7ee6808520056e8dcdcef471b2e9891f34f440d89e5809a3f18e8",
+      "case": "generated_17",
+      "expected_sha256": "32df22508cc7ee6808520056e8dcdcef471b2e9891f34f440d89e5809a3f18e8",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "3d81b3a13ea794ac4efd9197ce89646bfd37e62941f72af5b13b7baa8e60e472",
+      "case": "generated_18",
+      "expected_sha256": "3d81b3a13ea794ac4efd9197ce89646bfd37e62941f72af5b13b7baa8e60e472",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "af3a5ef6888081caa9e34f77102678ba6b2b927cf7d3f46010fe3124e290ac93",
+      "case": "generated_19",
+      "expected_sha256": "af3a5ef6888081caa9e34f77102678ba6b2b927cf7d3f46010fe3124e290ac93",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "case": "recovery_before_commit",
+      "passed": true
+    },
+    {
+      "case": "recovery_after_commit",
+      "passed": true
+    }
+  ],
+  "mode": "python",
+  "passed": true,
+  "passed_cases": 55,
+  "stage": "change",
+  "judge_exit_code": 0
+}

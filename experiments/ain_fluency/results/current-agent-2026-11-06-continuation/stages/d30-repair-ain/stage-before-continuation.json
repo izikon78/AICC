@@ -1,0 +1,117 @@
+{
+  "id": "d30-repair-ain",
+  "mode": "ain",
+  "stage": "repair",
+  "delta": 30,
+  "preparation_passed": true,
+  "fluency_passed": false,
+  "preparation_call": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 7.874635099957231,
+        "exit_code": 0,
+        "timed_out": false,
+        "usage": {
+          "input_tokens": 22100,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 149,
+          "reasoning_output_tokens": 92
+        },
+        "response_text": "{\"fluency\":{\"categories\":[\"filtered\",\"duplicate\",\"late\"],\"anchored_group_counts\":[1,1],\"sum_0_to_4\":10,\"finalized_order_offsets\":[5,7],\"syntax_value\":14}}",
+        "substantive_response": true,
+        "tool_violations": [],
+        "invalid_jsonl_lines": 0,
+        "turn_completed": true,
+        "error_types": [],
+        "stderr_bytes": 158,
+        "stderr_sha256": "472075dc417fa1d24cc6b61281cdadaacc9971689c29cbc1388afc81bb762bb7"
+      }
+    ]
+  },
+  "task_call": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 2.2007142000366002,
+        "exit_code": 1,
+        "timed_out": false,
+        "usage": null,
+        "response_text": null,
+        "substantive_response": false,
+        "tool_violations": [],
+        "invalid_jsonl_lines": 0,
+        "turn_completed": false,
+        "error_types": [
+          "error",
+          "turn.failed"
+        ],
+        "stderr_bytes": 442,
+        "stderr_sha256": "96b70d985c264d8a0297e736a598a5c6e12e9bae6a1df437e8fa172d8c9d4f38"
+      },
+      {
+        "attempt": 2,
+        "elapsed_seconds": 2.537874199973885,
+        "exit_code": 1,
+        "timed_out": false,
+        "usage": null,
+        "response_text": null,
+        "substantive_response": false,
+        "tool_violations": [],
+        "invalid_jsonl_lines": 0,
+        "turn_completed": false,
+        "error_types": [
+          "error",
+          "turn.failed"
+        ],
+        "stderr_bytes": 442,
+        "stderr_sha256": "081e0066f8f4092629a5f874875e49e0aef791d1af26fe041d968af182ca81df"
+      }
+    ]
+  },
+  "judge": {
+    "passed": false,
+    "error": "MISSING_PROGRAM"
+  },
+  "harness_failure": false,
+  "fallback": false,
+  "genuine_handoff": true,
+  "repair_provenance": {
+    "kind": "not_applicable",
+    "corruption": {
+      "fallback": false,
+      "reason": null,
+      "faults": [
+        "frontier_equality_rejected",
+        "filter_before_id_reservation",
+        "single_pending_drain"
+      ],
+      "mutation_count": 3,
+      "syntax_valid": true,
+      "type_valid": true,
+      "input_sha256": "b86bef7c70f24f1b11fc1b8c055b9fc31bda6e22cebf0a124c8a8f40c437bf04",
+      "method": "typed_ir_structure",
+      "output_sha256": "76e669f39e0d192934e47b26f4b020fb827983d794fda2f5c1f4cb7add0058f1"
+    },
+    "standalone_faults": {
+      "frontier_equality_rejected": {
+        "rejected": true,
+        "passed_cases": 31,
+        "cases": 55
+      },
+      "filter_before_id_reservation": {
+        "rejected": true,
+        "passed_cases": 33,
+        "cases": 55
+      },
+      "single_pending_drain": {
+        "rejected": true,
+        "passed_cases": 25,
+        "cases": 55
+      }
+    }
+  },
+  "artifact_path": "stages/d30-repair-ain/artifact.json",
+  "stage_passed": false
+}

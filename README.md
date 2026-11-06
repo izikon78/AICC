@@ -8,6 +8,8 @@ Concept, architecture, and research direction: **Izik Bachar**.
 
 ## Start here
 
+- [Current-agent AIN fluency experiment: plan, completed results and charts](experiments/ain_fluency/RESULTS_OVERVIEW.md)
+- [Fresh-context replication instructions for AI agents](experiments/ain_fluency/AGENT_REPLICATION_BRIEF.md)
 - [Native AIN feasibility decision and primary-source research](docs/research/NATIVE_AIN_FEASIBILITY_2026-11-05.md)
 - [Article Draft 9: AIN - A Native Language for More Efficient AI](docs/article/AICC_Article_Draft_9.md)
 - [Current native-learning hypotheses and training protocol](docs/ain/NATIVE_HYPOTHESES.md)
@@ -28,11 +30,19 @@ The studies also trained an 867-parameter local neural cost model. It did not co
 
 These results provide an engineering foundation and a reproducible benchmark. They do **not** establish AICC-specific financial savings, a native-language advantage, a new algorithm unknown to humans, or production private-code isolation. Submitted model identities and remote execution environments are self-reported. Three timing repetitions are descriptive, not statistical proof.
 
+The newer current-agent fluency simulation completed 18 build/change/repair
+submissions across Python, readable IR and numeric AIN. All passed their
+preparation gates and 55 execution checks. It does not establish a cost saving:
+two quota-rejected requests have unknown usage, and one valid register-reusing
+AIN predecessor exceeded the fault injector's capabilities. The overview
+separates those limitations from model correctness and native-training claims.
+
 | Area | Current status |
 |---|---|
 | Equivalent event-processing flows and binding prototype | Implemented and measured |
 | Original plus two submitted remeasurements | Records reviewed; raw data and provenance preserved |
 | AIN v0 semantics and complex benchmark | Implemented engineering prototype; 69 tests, 27 workers and six agent-edit submissions pass |
+| Current-agent fluency simulation | 18/18 submitted artifacts pass; no established cost saving; in-context preparation only |
 | Complete AIN compiler or native-operation model | Not implemented or evaluated |
 | Lifecycle economics and billed AI savings | Not established |
 
@@ -64,4 +74,8 @@ The research question is whether AIN improves correct completed work and mainten
 - [Review method and audit records](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/research/replication-review)
 - [Historical archive, corrections, and source-version gaps](https://github.com/izikon78/AICC/blob/research/ain-language-and-study-results/docs/research/REVIEW_2026-11-04.md)
 
-The processing benchmark uses Python/NumPy and no paid model API calls. New language/model experiments are separate future work. Earlier reports, unfavorable findings, original archives, and contribution credits are retained alongside their limitations.
+The processing benchmark uses Python/NumPy and no paid model API calls. The
+current-agent experiment uses an existing Codex sign-in and records reported
+inference usage; actual native-language training remains future work. Earlier
+reports, unfavorable findings, original archives, and contribution credits are
+retained alongside their limitations.

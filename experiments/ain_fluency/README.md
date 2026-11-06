@@ -5,6 +5,10 @@ whether a current agent can produce correct workflow controllers more cheaply
 after matched preparation in Python, readable IR or numeric AIN. It does not train
 a model or establish native-language efficiency.
 
+**Completed:** read the [results overview](RESULTS_OVERVIEW.md). All 18 submitted
+artifacts passed; the record does not establish a cost saving. The overview
+explains the quota interruption, unknown usage and one fault-injector fallback.
+
 - [Participant material](PARTICIPANT_GUIDE.md): exactly what agents receive.
 - [Judge](JUDGE.md): independent controller, manual checks, effects and recovery.
 - `tasks.py`: prompts, strict output schemas and explicit fallback provenance.

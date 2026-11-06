@@ -1,0 +1,25 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "elapsed_seconds": 77.26820789999329,
+      "exit_code": 0,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 24250,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3204,
+        "reasoning_output_tokens": 2588
+      },
+      "response_text": "{\"fluency\":{\"categories\":[\"filtered\",\"duplicate\",\"late\"],\"anchored_group_counts\":[1,1],\"sum_0_to_4\":10,\"finalized_order_offsets\":[5,7],\"syntax_value\":14},\"program\":\"[0,\\\"e3b73a2d382ced84693bb97b70c9c385459ab4cf0d45dc875a607018dce57260\\\",[3,4,5,1,0,0,0,0,6,7,8],[0],8,0,[[[[8,1,0,[0]],[0,7,0]],[100,1]],[[[8,3,1,[0]]],[101,3,2,15]],[[[8,-1,3,[0]],[8,2,2,[0]],[8,-1,4,[0,1,2]],[8,4,5,[2]],[6,3,4,7]],[101,3,3,11]],[[[8,4,7,[2]],[8,5,6,[1]],[4,3,4,5]],[101,3,7,4]],[[[8,3,8,[0,1,2]]],[101,3,8,5]],[[[8,-1,9,[0,1,2]],[8,4,10,[2]],[8,5,11,[0]],[4,3,4,5]],[101,3,9,6]],[[[8,2,12,[2]],[8,-1,13,[0,1,2]],[0,6,3]],[100,10]],[[[0,6,0]],[100,10]],[[[0,6,1]],[100,10]],[[[0,6,2]],[100,10]],[[[8,-1,14,[0,1,6]]],[100,1]],[[[8,-1,15,[0,1,2]]],[100,12]],[[[8,3,16,[0,1]]],[101,3,13,14]],[[[8,2,17,[0,1]],[8,-1,18,[0,1,2]]],[100,12]],[[[8,8,19,[0,1]],[8,9,20,[0,1,8]],[8,-1,21,[0,1,9]]],[100,1]],[[[8,10,22,[0,1]]],[102,10]]]]\",\"explanation\":\"The controller validates and classifies events using the configured minimum severity, reserving IDs before filtering. Each watermark or END drains eligible events, finalizes groups, scores them, and commits before further input; exhaustion returns the host result without an implicit flush.\"}",
+      "substantive_response": true,
+      "tool_violations": [],
+      "invalid_jsonl_lines": 0,
+      "turn_completed": true,
+      "error_types": [],
+      "stderr_bytes": 158,
+      "stderr_sha256": "efe39858e89e258386671c1c1cd807c182fb86bc2ff6b8527a7ab3ba61e24acf"
+    }
+  ]
+}

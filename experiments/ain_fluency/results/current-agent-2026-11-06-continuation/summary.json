@@ -1,0 +1,1185 @@
+{
+  "protocol": "AIN current-agent fluency pilot v1",
+  "manifest": {
+    "protocol": "1.1 operational continuation",
+    "plan_commit": "82405a53f1ea92b0992b657323617fecb3b3dfaf",
+    "harness_commit": "3e3a57b267e9bb6b0a936cc021d6e41e58482158",
+    "source_sha256": {
+      "docs/ain/COMPLEX_TASK.md": "29e3267a1f3fcd757c2412af822f57431b90c9823b2dc65febca06094be54b44",
+      "experiments/ain_fluency/judge.py": "4c96db33ab5798d6ad61803b46368cc1a8f6f2138dec0e25a67f35dd6c7d976d",
+      "experiments/ain_fluency/PARTICIPANT_GUIDE.md": "108cc074988f162214d3b6cb2f5769df8909edc85b01277bba325e4488375fa1",
+      "experiments/ain_fluency/PLAN.md": "dd2e19b8c8217baec16111ed9612c62cb7448f5cca5cc3a4ec31e5881369493e",
+      "experiments/ain_fluency/report.py": "13e4194a5541377b59deadbeb607b857ec8adbc244069a2dae8e5a021694d79a",
+      "experiments/ain_fluency/run.py": "d0c26c753b9c13be4449b114b49867649cd58f9fe8de8cf733ffef7faa5729d5",
+      "experiments/ain_fluency/tasks.py": "3a1af7254095fe8e097753c11641746a903564ccd3e213ee1cc97d222ee4ce30",
+      "experiments/ain_fluency/tests/test_judge.py": "cff38fc34b8fe9c2fe52a356557a3daba6e8bbd5728b9e36aa1187ec29c21b1d",
+      "experiments/ain_fluency/tests/test_report.py": "d79a1b32713f990d9d84c3940e4ab1289b81eab94e6ba7297d7ed474123f580c",
+      "experiments/ain_fluency/tests/test_run.py": "d0727dad1ec6d1fcc7e3db04d99a7a7b11a89c416bb240aee2f53a38a3f31c7e",
+      "experiments/ain_fluency/tests/test_tasks.py": "178491a388acf36f7e03e1cf01ff9bfb6f2fe6c99debe09dbf0aa1bd45abe8be",
+      "experiments/ain_v0/ain/__init__.py": "99d434b4651eb33cde4b929e3b077bf78fb1904342c5839a7bb4d0abecc134ad",
+      "experiments/ain_v0/ain/engine.py": "9a755cf4faeaddc2e098c33d4de60603e8503f8128759bba1d770987cde40dc8",
+      "experiments/ain_v0/ain/language.py": "97ec92ef89f3c4008f9122441261966a80d2d1e44c4bc4e9a47149c39e568d9e",
+      "experiments/ain_v0/ain/programs.py": "74165f37817552b37e87e0e193120f434bb0665dfd9d88a87d4be5f0d88ae19e",
+      "experiments/ain_v0/ain/reference.py": "589641180e9db8ea0f95252c63bcf599e626e1538a16c6ca779452ef81181fac",
+      "experiments/ain_v0/ain/runner.py": "d4240d0974ef94988a3689585a9d2e8d2e52c6950ebcae7963315f7c431bd187",
+      "experiments/ain_v0/ENGINE.md": "683c88b105657b1ce3ef4e0060f912178ab1142c229e3fa37de9a9b278ad763f",
+      "experiments/ain_v0/LANGUAGE.md": "79f3e13fc44d39e7dcb4b7ead7fa60bb5088e46e7d74622c3fc4d24c66f36383",
+      "experiments/ain_v0/programs/arithmetic-example.ain.json": "78d6a68764a8793d39f6908eecc52fb15948b61be5e667745d2ebde8c3e74c9e",
+      "experiments/ain_v0/programs/arithmetic-example.ir.json": "13f1cbd55a09c4521fcd5a1e7907f3e90405b8f93e23dc8799c89f841213499d"
+    },
+    "model": "gpt-6.1-sol",
+    "effort": "ultra",
+    "codex_version": "codex-cli 0.166.0-alpha.6",
+    "python": "3.12.14",
+    "seed": 20261106,
+    "timeout_seconds": 300,
+    "started_utc": "2026-11-06T07:25:10.214274+00:00",
+    "order": [
+      {
+        "id": "d30-build-ir",
+        "mode": "ir",
+        "stage": "build",
+        "delta": 30
+      },
+      {
+        "id": "d30-build-python",
+        "mode": "python",
+        "stage": "build",
+        "delta": 30
+      },
+      {
+        "id": "d30-build-ain",
+        "mode": "ain",
+        "stage": "build",
+        "delta": 30
+      },
+      {
+        "id": "d30-change-ir",
+        "mode": "ir",
+        "stage": "change",
+        "delta": 30
+      },
+      {
+        "id": "d30-change-ain",
+        "mode": "ain",
+        "stage": "change",
+        "delta": 30
+      },
+      {
+        "id": "d30-change-python",
+        "mode": "python",
+        "stage": "change",
+        "delta": 30
+      },
+      {
+        "id": "d30-repair-ir",
+        "mode": "ir",
+        "stage": "repair",
+        "delta": 30
+      },
+      {
+        "id": "d30-repair-ain",
+        "mode": "ain",
+        "stage": "repair",
+        "delta": 30
+      },
+      {
+        "id": "d30-repair-python",
+        "mode": "python",
+        "stage": "repair",
+        "delta": 30
+      },
+      {
+        "id": "d75-build-python",
+        "mode": "python",
+        "stage": "build",
+        "delta": 75
+      },
+      {
+        "id": "d75-build-ir",
+        "mode": "ir",
+        "stage": "build",
+        "delta": 75
+      },
+      {
+        "id": "d75-build-ain",
+        "mode": "ain",
+        "stage": "build",
+        "delta": 75
+      },
+      {
+        "id": "d75-change-python",
+        "mode": "python",
+        "stage": "change",
+        "delta": 75
+      },
+      {
+        "id": "d75-change-ain",
+        "mode": "ain",
+        "stage": "change",
+        "delta": 75
+      },
+      {
+        "id": "d75-change-ir",
+        "mode": "ir",
+        "stage": "change",
+        "delta": 75
+      },
+      {
+        "id": "d75-repair-ir",
+        "mode": "ir",
+        "stage": "repair",
+        "delta": 75
+      },
+      {
+        "id": "d75-repair-python",
+        "mode": "python",
+        "stage": "repair",
+        "delta": 75
+      },
+      {
+        "id": "d75-repair-ain",
+        "mode": "ain",
+        "stage": "repair",
+        "delta": 75
+      }
+    ],
+    "billing_dollars": null,
+    "preparation": "Separate graded call, full prompt/response replayed in task context.",
+    "scope": "In-context simulation; not trained-native weights or tokenizer changes.",
+    "status": "complete_amended_continuation",
+    "completed_stages": 18,
+    "stopped_at": "d30-repair-ain",
+    "original_status": "incomplete_service_failure",
+    "continuation_commit": "38612ae7cfeeddd6bac8800fabb67de1b654e46c",
+    "continuation_source_sha256": {
+      "experiments/ain_fluency/continuation/resume.py": "be67eb75d9fc407c826344ab35d1c2945a6226871ca96210a8001c9fdd162c2d",
+      "experiments/ain_fluency/continuation/AMENDMENT.md": "fc5e8e66009fd4adc65f3e409eb30878e5bf4c93f72105d45b75088099059a5d",
+      "experiments/ain_fluency/continuation/test_resume.py": "a92b76e5e09ded38407f8f1045001a151edc27dfdea6347a0b3cc651c1586f05"
+    },
+    "original_dataset_sha256": {
+      "EXECUTION_NOTE.md": "a53e9e2536a47ae896d9437a8010159d20f9b9b70afd871a281d203973cbbdcc",
+      "manifest.json": "6cdc13d23c77fde4f15fac2d6b28c6d76592a9359dfdcf71cdbab487eb5ad4e7",
+      "RESULTS.md": "423dba43979912ccfb14880a635e4f75a06f2b80771e703ae6e11ca1b3c6f741",
+      "stages/d30-build-ain/artifact.json": "115bfef666bb695ad5c2a39c2c81e0750f8878b3e5abe0d4ebdc01ab82fe3146",
+      "stages/d30-build-ain/judge.json": "2cc8f078d9d042850702203a2646090d8a478e9132f8cd7ec0bd51501889f8bc",
+      "stages/d30-build-ain/preparation/attempt-1.jsonl": "348686ecbbe819eff6ee77754a80591f29d81a5dbce2b8cf319a14b3e281f75f",
+      "stages/d30-build-ain/preparation/call.json": "13b172fbc8f1a7dccbdf2924dcda3681f96c3bb946f71434bfa3b7e3aec39882",
+      "stages/d30-build-ain/preparation/prompt.txt": "f327861402c5fee24d6b8685dbf41c1a18aea4396e0ac26f848a777728e4a170",
+      "stages/d30-build-ain/preparation/schema.json": "0b5e8404e8ad764511b388b4bb8f62b0090d311ad3dd57f69c1cefab8b0880fb",
+      "stages/d30-build-ain/stage.json": "413f844ac38a5df12036fb930856851d7956f091b32b6b519d0d021bee86260d",
+      "stages/d30-build-ain/task/attempt-1.jsonl": "831b8ac4f4610088380aa527d5cc1718bde829bf67825ba8031deec281ab1d81",
+      "stages/d30-build-ain/task/call.json": "57223f6c0e5ad63e3809f901d56a4697b0a780aeabfa94e700ee281761a1a993",
+      "stages/d30-build-ain/task/prompt.txt": "59fded2efdef59f58fccbcffd93b5b4ef8fdde95631889471721b054b23e9d2c",
+      "stages/d30-build-ain/task/schema.json": "262c4804f6eefb2867b4892e19f9d99bc77c157e3486277523cd5661a13538ce",
+      "stages/d30-build-ir/artifact.json": "b4572f060a44540d1018fdf10d9cefd0f60f69d9fa1491a01d60b31b6213abdb",
+      "stages/d30-build-ir/judge.json": "e254e6b4f9a86deb8c05eb67d8a8306f7a7dc0a634943f56507c5a39cdfa245d",
+      "stages/d30-build-ir/preparation/attempt-1.jsonl": "b6e1a823698ca7f81057ffd75ac14f1d59f0b26aa925c00272940521024bd726",
+      "stages/d30-build-ir/preparation/call.json": "20c28196a9ed6cbf3924491352afedf7efa56fbabdd21f59920995a24938f424",
+      "stages/d30-build-ir/preparation/prompt.txt": "60a8a425f5d1198aa73cecce5e4f225d651b9e7fd092b5e7ddb89659b2476966",
+      "stages/d30-build-ir/preparation/schema.json": "0b5e8404e8ad764511b388b4bb8f62b0090d311ad3dd57f69c1cefab8b0880fb",
+      "stages/d30-build-ir/stage.json": "b3a9d632c31139cead73374817eb87a0a36d96e204dbd98ef36fa795905601fb",
+      "stages/d30-build-ir/task/attempt-1.jsonl": "84fc974e568b5d06debce7b1f6504222f2bcfa4be55995f7f439dad784d2e14a",
+      "stages/d30-build-ir/task/call.json": "cd04787832bf511e050ce924ad2f326e3f9a7e923812f80410ae20945be2f5e1",
+      "stages/d30-build-ir/task/prompt.txt": "cab6f16b5b7cc0b196fe872484ed585ddfafece3c20b25708e3b0e515e4ebf06",
+      "stages/d30-build-ir/task/schema.json": "262c4804f6eefb2867b4892e19f9d99bc77c157e3486277523cd5661a13538ce",
+      "stages/d30-build-python/artifact.py": "19563f319195ae17216969730296c291edc874f9c75fe125846ed4cfd5692ba4",
+      "stages/d30-build-python/judge.json": "6d213d37e6ff476b1788530ab6b4c60f285a7b947df43f4c0850a34c6fba5db6",
+      "stages/d30-build-python/preparation/attempt-1.jsonl": "f6edab591c28fc8f8f1373810a256fd39f3626ceff2d7cd4f88b30991a9a885b",
+      "stages/d30-build-python/preparation/call.json": "f5b8549e268ff81a756b7c86e03d7812be30dd83ecaa923ee42fe508e6d10dde",
+      "stages/d30-build-python/preparation/prompt.txt": "1bd16392db50c72df01fb5451341468315f53c4ae257491e1b2a5abbe884ac0c",
+      "stages/d30-build-python/preparation/schema.json": "0b5e8404e8ad764511b388b4bb8f62b0090d311ad3dd57f69c1cefab8b0880fb",
+      "stages/d30-build-python/stage.json": "526f5426fac5720480caadb083e1e94d0f0f62ec39d700dedda11d4739ab8dac",
+      "stages/d30-build-python/task/attempt-1.jsonl": "c942ef1377eca457a9169cc0f0b35f3d88bc3f80d5a4883cd49e174e856328a4",
+      "stages/d30-build-python/task/call.json": "1dfc36a63f85575ce809130df4af4bcc842bac2eb6f159b87ece21ccc63b5ed9",
+      "stages/d30-build-python/task/prompt.txt": "97ff64de50dbbcaf4d73590970d0b301da3a01a49436c29ab38590d765e8150c",
+      "stages/d30-build-python/task/schema.json": "262c4804f6eefb2867b4892e19f9d99bc77c157e3486277523cd5661a13538ce",
+      "stages/d30-change-ain/artifact.json": "b86bef7c70f24f1b11fc1b8c055b9fc31bda6e22cebf0a124c8a8f40c437bf04",
+      "stages/d30-change-ain/judge.json": "97e9dec2492b33ca3e4239b76081037a08c6fa595f9defe51c1386cdbd98b46c",
+      "stages/d30-change-ain/predecessor.txt": "115bfef666bb695ad5c2a39c2c81e0750f8878b3e5abe0d4ebdc01ab82fe3146",
+      "stages/d30-change-ain/preparation/attempt-1.jsonl": "bf92ad977dda5404dd2ad517885d8386072bc3d153f66ad1d4581859456db637",
+      "stages/d30-change-ain/preparation/call.json": "a52172f5fac7466fd18c217666632a87cfed927362b23eecc4e1129950ded33d",
+      "stages/d30-change-ain/preparation/prompt.txt": "6dc6eec53e7e565b582d07ad55fe7c4ed8aed801053e70931664c40b5eb92d54",
+      "stages/d30-change-ain/preparation/schema.json": "0b5e8404e8ad764511b388b4bb8f62b0090d311ad3dd57f69c1cefab8b0880fb",
+      "stages/d30-change-ain/stage.json": "1995fcdfb7ab8981690fccfd4a00f23a30e022e27ff698066657a5e879b4f3a2",
+      "stages/d30-change-ain/task/attempt-1.jsonl": "6ac357dc2852a6d9017b7ab08f2352fdac6381bc65b479735810650ddce4c1d0",
+      "stages/d30-change-ain/task/call.json": "30b21dbb58678b9b4f37ff45fed355bf7a7cec7cbfab9876ddd4cdd66640f37f",
+      "stages/d30-change-ain/task/prompt.txt": "90d6e563dc116074099849d8a3eb93e8967b9402ae17cd88ee7fcbeda6b80add",
+      "stages/d30-change-ain/task/schema.json": "262c4804f6eefb2867b4892e19f9d99bc77c157e3486277523cd5661a13538ce",
+      "stages/d30-change-ir/artifact.json": "ced18f53a8e5aabce99d060183768b61738fd9a636888dde97db19874d6322e6",
+      "stages/d30-change-ir/judge.json": "e74e6c45cf63283d61cc8713d0b166990d82c8db3a0a4e535ab6b0b15c5b6fb5",
+      "stages/d30-change-ir/predecessor.txt": "b4572f060a44540d1018fdf10d9cefd0f60f69d9fa1491a01d60b31b6213abdb",
+      "stages/d30-change-ir/preparation/attempt-1.jsonl": "b302e174cf1c16740218c129117add799572c1abaa673a6424ed075508c02e19",
+      "stages/d30-change-ir/preparation/call.json": "f3e2548875dc02bfdf44a04ff2ad322f9193ef13111a22a34c81b0f4960581ab",
+      "stages/d30-change-ir/preparation/prompt.txt": "442e9f6899400ddd5fc02def20328f15d788169120cab3478f4e44e45bb8d107",
+      "stages/d30-change-ir/preparation/schema.json": "0b5e8404e8ad764511b388b4bb8f62b0090d311ad3dd57f69c1cefab8b0880fb",
+      "stages/d30-change-ir/stage.json": "72cc14effbcbbe5fd2b531844f1dbc5daabd18c57af9f81ba58b542c071b3d3d",
+      "stages/d30-change-ir/task/attempt-1.jsonl": "168a7a4a868621b7db7d639e33bbd4f949d5539e81f3e051c00536aca46d09a1",
+      "stages/d30-change-ir/task/call.json": "c5edde9163eefc91b1caf53efd4a11ab3f03b5cf3d3c00a5b67021a411883f6b",
+      "stages/d30-change-ir/task/prompt.txt": "06dbf8c63021efee58b82591b22d82f8c6e2db1ec519afb424225f1b65ddf04b",
+      "stages/d30-change-ir/task/schema.json": "262c4804f6eefb2867b4892e19f9d99bc77c157e3486277523cd5661a13538ce",
+      "stages/d30-change-python/artifact.py": "7e8ce553096b59002377a3e010ee6104e9c6374deb2024246a726dcf62a6ecdf",
+      "stages/d30-change-python/judge.json": "df6c989a5626bddaffda0b40b764fbb1195f8b66cdb03b3a68278a8a2c31b0af",
+      "stages/d30-change-python/predecessor.txt": "19563f319195ae17216969730296c291edc874f9c75fe125846ed4cfd5692ba4",
+      "stages/d30-change-python/preparation/attempt-1.jsonl": "976d3578e1009cadc7be447b28691ad15641786b582b55c48a2c73826666576c",
+      "stages/d30-change-python/preparation/call.json": "15836dedf75b388e782ff438ae2305a524de5114bd81ff2fb2a1f9162caf4d7d",
+      "stages/d30-change-python/preparation/prompt.txt": "5be27c072750704ec741b39ea15626566fe05a0c20955634b97bf9885bf9c4c4",
+      "stages/d30-change-python/preparation/schema.json": "0b5e8404e8ad764511b388b4bb8f62b0090d311ad3dd57f69c1cefab8b0880fb",
+      "stages/d30-change-python/stage.json": "2e456d44d7453e46dff8048ce24e4270418bd33af58cc4e32c0273b1cb1b9911",
+      "stages/d30-change-python/task/attempt-1.jsonl": "f5c6d5b899be0719aa700bdcd999a1917c3807b60eb7c85ceec7364af67d8d5c",
+      "stages/d30-change-python/task/call.json": "8b0b18435815d4f806d43de97dc79686836a0cca5ba4c5e63d8196c778d5d118",
+      "stages/d30-change-python/task/prompt.txt": "8bff4678f7e7fe83467454a4ad4e1c99fc1ef88ae71df95c030b3d65ab5c1d8b",
+      "stages/d30-change-python/task/schema.json": "262c4804f6eefb2867b4892e19f9d99bc77c157e3486277523cd5661a13538ce",
+      "stages/d30-repair-ain/filter_before_id_reservation-judge.json": "3a026a07204e66269fa5363de72631d5dcc0859918036da8adc273dfac63768e",
+      "stages/d30-repair-ain/filter_before_id_reservation.json": "3e0f4042c40e2cef4f118611f3571bbfb5ed316e25f98e79111ed90c7a1a49b1",
+      "stages/d30-repair-ain/frontier_equality_rejected-judge.json": "86a950f1453595256ab64838469c24f07d6aabf0968d0e1fbc901cb1df047975",
+      "stages/d30-repair-ain/frontier_equality_rejected.json": "141d0ffbe1df69f713848fad833982b5442c6ace16b469000f0f08c09cd7d8b1",
+      "stages/d30-repair-ain/judge.json": "af1bb25a8151b879ca94817f821e3ae181b6b76578bacf3cdb4c2c53909f1d0d",
+      "stages/d30-repair-ain/predecessor.txt": "76e669f39e0d192934e47b26f4b020fb827983d794fda2f5c1f4cb7add0058f1",
+      "stages/d30-repair-ain/preparation/attempt-1.jsonl": "accf072778f9db960a4fcb3bfb212e87cace19a627b29996b666857d53e90285",
+      "stages/d30-repair-ain/preparation/call.json": "e92bf4fadd7e09b420f332681f81df44f2f16a07e8fb2b412d877ba6ae9cfc31",
+      "stages/d30-repair-ain/preparation/prompt.txt": "085ee1af3633fa63384d92498b894f514d967293cbd1d493867bc7710e7a6a15",
+      "stages/d30-repair-ain/preparation/schema.json": "0b5e8404e8ad764511b388b4bb8f62b0090d311ad3dd57f69c1cefab8b0880fb",
+      "stages/d30-repair-ain/single_pending_drain-judge.json": "55fb68d7dac8838dc3a2d8c65e7876e4e406ab1ee3f486c79705d6e6a5f7ed04",
+      "stages/d30-repair-ain/single_pending_drain.json": "cc0cc50ffb0b202d548839ac362cd5aa644c16ef3dd526ba2a436402a2fcdcac",
+      "stages/d30-repair-ain/stage.json": "065ff0eeaa29c03e1de6db833aa244c8334ad73c2c81996c4a798c9d1c6fb795",
+      "stages/d30-repair-ain/supplied-broken-judge.json": "34b22dd878180fb6a3a2f5a3ec6bd89de38b1fa5e2f506222b44d8f67129a497",
+      "stages/d30-repair-ain/supplied-broken.json": "76e669f39e0d192934e47b26f4b020fb827983d794fda2f5c1f4cb7add0058f1",
+      "stages/d30-repair-ain/task/attempt-1.jsonl": "96a7d9df3543d4fe2e60c5695d1d1d9fafa2fe03191b3b792597206f59511029",
+      "stages/d30-repair-ain/task/attempt-2.jsonl": "063c154aa057c20fe27b057416c6118177b9ba3f59c68bb2d9c394f058bed276",
+      "stages/d30-repair-ain/task/call.json": "69ed5099ad530b1351f2d74417c96e1135e681b7994b7cab11d4aad89b1bd2e7",
+      "stages/d30-repair-ain/task/prompt.txt": "9382d884ec30354f6e07fc6e7d61d765cd86cac4d0bd36177f6a49550e80e223",
+      "stages/d30-repair-ain/task/schema.json": "262c4804f6eefb2867b4892e19f9d99bc77c157e3486277523cd5661a13538ce",
+      "stages/d30-repair-ir/artifact.json": "ced18f53a8e5aabce99d060183768b61738fd9a636888dde97db19874d6322e6",
+      "stages/d30-repair-ir/filter_before_id_reservation-judge.json": "669b38d0542a252c824d05112d34f985810f8400c3471b1db6313ba46cc21c3d",
+      "stages/d30-repair-ir/filter_before_id_reservation.json": "b6a077f061aac34bbd95fc1943a64d65aa5c733464848ff3e95df587e694a0c7",
+      "stages/d30-repair-ir/frontier_equality_rejected-judge.json": "7253ec0d77acfdb883e806529060a5fcdf033fbb5c4f1b63c18d34c95ba1bd5a",
+      "stages/d30-repair-ir/frontier_equality_rejected.json": "9d5990518f1db98776a50e1c3bbf6c91fc1aa243aebbc335810f23bbd4083976",
+      "stages/d30-repair-ir/judge.json": "d2a53a54e925d7ccf493de347cae2d4603783b92dc9264c23008ce3d43eb76ae",
+      "stages/d30-repair-ir/predecessor.txt": "e4637db63b97c0a146cee6ae4d7d7ebc0967980a3e117848978a0f8f6ee2b1f1",
+      "stages/d30-repair-ir/preparation/attempt-1.jsonl": "3fdf1c82763ae2f0617154ef80fdeac258061894a529a340167ae9220e04fa3c",
+      "stages/d30-repair-ir/preparation/call.json": "5bf4d577c7f0a87421072d0e6cc727f762b9e455953142e5f9e6858f2a6850c9",
+      "stages/d30-repair-ir/preparation/prompt.txt": "f62b638a5569db3552715ef2839dfab6807fdf4474d0484d53b835794cfb5fe2",
+      "stages/d30-repair-ir/preparation/schema.json": "0b5e8404e8ad764511b388b4bb8f62b0090d311ad3dd57f69c1cefab8b0880fb",
+      "stages/d30-repair-ir/single_pending_drain-judge.json": "9e56176f2827931ca9c365ae560a4143bfceb5fd39135de8d5d1d2ac8b273147",
+      "stages/d30-repair-ir/single_pending_drain.json": "5af6b2b0df5afe103e5ba465feb8af8e6950e023c8a90ea2c959c45d6ca2a332",
+      "stages/d30-repair-ir/stage.json": "d877a082b6dc188fea036c7f527716856b9512b5e457be2da72eed1c57439efb",
+      "stages/d30-repair-ir/supplied-broken-judge.json": "ad5e9a5f8c42408172f38392bf9916b93a6d08e4d3bcc6095352b32a608c31f9",
+      "stages/d30-repair-ir/supplied-broken.json": "e4637db63b97c0a146cee6ae4d7d7ebc0967980a3e117848978a0f8f6ee2b1f1",
+      "stages/d30-repair-ir/task/attempt-1.jsonl": "5a5a6de8e8cc439a7d8ca146cb8e7de223abe4d234782ba49c045f137238390b",
+      "stages/d30-repair-ir/task/call.json": "9e663c88ebd26b9793d321220da70ecff5a6cadca844cde29e4e0e92756a9053",
+      "stages/d30-repair-ir/task/prompt.txt": "3eb4b341dc9a6fcd7a76697f449790ae51950ea167b33e1d7834dbedd016b4b2",
+      "stages/d30-repair-ir/task/schema.json": "262c4804f6eefb2867b4892e19f9d99bc77c157e3486277523cd5661a13538ce",
+      "summary.json": "6551a0a0cd5bd94206b22fba1eb30ec939ce2db53c07d6ddcaaf22084ab0601e"
+    },
+    "original_manifest_sha256": "6cdc13d23c77fde4f15fac2d6b28c6d76592a9359dfdcf71cdbab487eb5ad4e7",
+    "continued_utc": "2026-11-06T14:29:31.641405+00:00",
+    "note": "Original records are reused, not independent replications. Two quota failures have unknown usage.",
+    "finished_utc": "2026-11-06T14:40:29.837098+00:00"
+  },
+  "scope": "In-context familiarity, not native model training; two paired workflow variants.",
+  "cost_unit": "hypothetical normalized resource units; not dollars",
+  "weights": {
+    "primary": {
+      "uncached_input": 1,
+      "cached_input": 0.1,
+      "output": 5
+    },
+    "cache_neutral": {
+      "uncached_input": 1,
+      "cached_input": 1,
+      "output": 5
+    },
+    "output_1": {
+      "uncached_input": 1,
+      "cached_input": 0.1,
+      "output": 1
+    },
+    "output_10": {
+      "uncached_input": 1,
+      "cached_input": 0.1,
+      "output": 10
+    },
+    "cache_neutral_output_1": {
+      "uncached_input": 1,
+      "cached_input": 1,
+      "output": 1
+    },
+    "cache_neutral_output_10": {
+      "uncached_input": 1,
+      "cached_input": 1,
+      "output": 10
+    }
+  },
+  "assigned_chains": 6,
+  "assigned_stages": 18,
+  "planned_calls": 36,
+  "observed_stages": 18,
+  "missing_assignments": [],
+  "unexpected_assignments": [],
+  "duplicate_assignments": [],
+  "modes": {
+    "python": {
+      "label": "Python",
+      "assigned_chains": 2,
+      "assigned_stages": 6,
+      "observed_stages": 6,
+      "assignments_complete": true,
+      "preparation_passes": 6,
+      "fluency_passes": 6,
+      "functional_passes": 6,
+      "stage_passes": 6,
+      "diagnostic_repair_passes": 2,
+      "fallback_stages": 0,
+      "successful_chains": 2,
+      "chains": [
+        {
+          "delta": 30,
+          "complete": true,
+          "successful": true,
+          "stage_successes": 3,
+          "genuine_repair": true,
+          "fallback": false
+        },
+        {
+          "delta": 75,
+          "complete": true,
+          "successful": true,
+          "stage_successes": 3,
+          "genuine_repair": true,
+          "fallback": false
+        }
+      ],
+      "resources": {
+        "complete": true,
+        "attempts": 12,
+        "preparation_attempts": 6,
+        "task_attempts": 6,
+        "timeouts": 0,
+        "tool_violating_attempts": 0,
+        "nonzero_exit_attempts": 0,
+        "usage_totals": {
+          "input_tokens": 250087,
+          "cached_input_tokens": 37632,
+          "output_tokens": 7340,
+          "reasoning_output_tokens": 3774
+        },
+        "known_usage_subtotals": {
+          "input_tokens": 250087,
+          "cached_input_tokens": 37632,
+          "output_tokens": 7340,
+          "reasoning_output_tokens": 3774
+        },
+        "missing_counters_by_attempt": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_output_tokens": 0
+        },
+        "missing_calls": 0,
+        "elapsed_seconds": 227.79753909999272,
+        "known_elapsed_subtotal_seconds": 227.79753909999272,
+        "missing_elapsed_attempts": 0,
+        "issues": [],
+        "normalized_costs": {
+          "primary": 252918.2,
+          "cache_neutral": 286787,
+          "output_1": 223558.2,
+          "output_10": 289618.2,
+          "cache_neutral_output_1": 257427,
+          "cache_neutral_output_10": 323487
+        },
+        "costs_complete": {
+          "primary": true,
+          "cache_neutral": true,
+          "output_1": true,
+          "output_10": true,
+          "cache_neutral_output_1": true,
+          "cache_neutral_output_10": true
+        },
+        "by_call_kind": {
+          "preparation_call": {
+            "complete": true,
+            "attempts": 6,
+            "preparation_attempts": 6,
+            "task_attempts": 0,
+            "timeouts": 0,
+            "tool_violating_attempts": 0,
+            "nonzero_exit_attempts": 0,
+            "usage_totals": {
+              "input_tokens": 123520,
+              "cached_input_tokens": 12544,
+              "output_tokens": 816,
+              "reasoning_output_tokens": 474
+            },
+            "known_usage_subtotals": {
+              "input_tokens": 123520,
+              "cached_input_tokens": 12544,
+              "output_tokens": 816,
+              "reasoning_output_tokens": 474
+            },
+            "missing_counters_by_attempt": {
+              "input_tokens": 0,
+              "cached_input_tokens": 0,
+              "output_tokens": 0,
+              "reasoning_output_tokens": 0
+            },
+            "missing_calls": 0,
+            "elapsed_seconds": 46.33924910001224,
+            "known_elapsed_subtotal_seconds": 46.33924910001224,
+            "missing_elapsed_attempts": 0,
+            "issues": [],
+            "normalized_costs": {
+              "primary": 116310.4,
+              "cache_neutral": 127600,
+              "output_1": 113046.4,
+              "output_10": 120390.4,
+              "cache_neutral_output_1": 124336,
+              "cache_neutral_output_10": 131680
+            },
+            "costs_complete": {
+              "primary": true,
+              "cache_neutral": true,
+              "output_1": true,
+              "output_10": true,
+              "cache_neutral_output_1": true,
+              "cache_neutral_output_10": true
+            }
+          },
+          "task_call": {
+            "complete": true,
+            "attempts": 6,
+            "preparation_attempts": 0,
+            "task_attempts": 6,
+            "timeouts": 0,
+            "tool_violating_attempts": 0,
+            "nonzero_exit_attempts": 0,
+            "usage_totals": {
+              "input_tokens": 126567,
+              "cached_input_tokens": 25088,
+              "output_tokens": 6524,
+              "reasoning_output_tokens": 3300
+            },
+            "known_usage_subtotals": {
+              "input_tokens": 126567,
+              "cached_input_tokens": 25088,
+              "output_tokens": 6524,
+              "reasoning_output_tokens": 3300
+            },
+            "missing_counters_by_attempt": {
+              "input_tokens": 0,
+              "cached_input_tokens": 0,
+              "output_tokens": 0,
+              "reasoning_output_tokens": 0
+            },
+            "missing_calls": 0,
+            "elapsed_seconds": 181.45828999998048,
+            "known_elapsed_subtotal_seconds": 181.45828999998048,
+            "missing_elapsed_attempts": 0,
+            "issues": [],
+            "normalized_costs": {
+              "primary": 136607.8,
+              "cache_neutral": 159187,
+              "output_1": 110511.8,
+              "output_10": 169227.8,
+              "cache_neutral_output_1": 133091,
+              "cache_neutral_output_10": 191807
+            },
+            "costs_complete": {
+              "primary": true,
+              "cache_neutral": true,
+              "output_1": true,
+              "output_10": true,
+              "cache_neutral_output_1": true,
+              "cache_neutral_output_10": true
+            }
+          }
+        }
+      },
+      "cost_per_assigned_stage": {
+        "primary": 42153.03333333333,
+        "cache_neutral": 47797.833333333336,
+        "output_1": 37259.700000000004,
+        "output_10": 48269.700000000004,
+        "cache_neutral_output_1": 42904.5,
+        "cache_neutral_output_10": 53914.5
+      },
+      "cost_per_successful_chain": {
+        "primary": 126459.1,
+        "cache_neutral": 143393.5,
+        "output_1": 111779.1,
+        "output_10": 144809.1,
+        "cache_neutral_output_1": 128713.5,
+        "cache_neutral_output_10": 161743.5
+      }
+    },
+    "ir": {
+      "label": "Readable IR",
+      "assigned_chains": 2,
+      "assigned_stages": 6,
+      "observed_stages": 6,
+      "assignments_complete": true,
+      "preparation_passes": 6,
+      "fluency_passes": 6,
+      "functional_passes": 6,
+      "stage_passes": 6,
+      "diagnostic_repair_passes": 2,
+      "fallback_stages": 0,
+      "successful_chains": 2,
+      "chains": [
+        {
+          "delta": 30,
+          "complete": true,
+          "successful": true,
+          "stage_successes": 3,
+          "genuine_repair": true,
+          "fallback": false
+        },
+        {
+          "delta": 75,
+          "complete": true,
+          "successful": true,
+          "stage_successes": 3,
+          "genuine_repair": true,
+          "fallback": false
+        }
+      ],
+      "resources": {
+        "complete": true,
+        "attempts": 12,
+        "preparation_attempts": 6,
+        "task_attempts": 6,
+        "timeouts": 0,
+        "tool_violating_attempts": 0,
+        "nonzero_exit_attempts": 0,
+        "usage_totals": {
+          "input_tokens": 282986,
+          "cached_input_tokens": 12544,
+          "output_tokens": 15552,
+          "reasoning_output_tokens": 6444
+        },
+        "known_usage_subtotals": {
+          "input_tokens": 282986,
+          "cached_input_tokens": 12544,
+          "output_tokens": 15552,
+          "reasoning_output_tokens": 6444
+        },
+        "missing_counters_by_attempt": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_output_tokens": 0
+        },
+        "missing_calls": 0,
+        "elapsed_seconds": 380.266772800067,
+        "known_elapsed_subtotal_seconds": 380.266772800067,
+        "missing_elapsed_attempts": 0,
+        "issues": [],
+        "normalized_costs": {
+          "primary": 349456.4,
+          "cache_neutral": 360746,
+          "output_1": 287248.4,
+          "output_10": 427216.4,
+          "cache_neutral_output_1": 298538,
+          "cache_neutral_output_10": 438506
+        },
+        "costs_complete": {
+          "primary": true,
+          "cache_neutral": true,
+          "output_1": true,
+          "output_10": true,
+          "cache_neutral_output_1": true,
+          "cache_neutral_output_10": true
+        },
+        "by_call_kind": {
+          "preparation_call": {
+            "complete": true,
+            "attempts": 6,
+            "preparation_attempts": 6,
+            "task_attempts": 0,
+            "timeouts": 0,
+            "tool_violating_attempts": 0,
+            "nonzero_exit_attempts": 0,
+            "usage_totals": {
+              "input_tokens": 138178,
+              "cached_input_tokens": 0,
+              "output_tokens": 808,
+              "reasoning_output_tokens": 466
+            },
+            "known_usage_subtotals": {
+              "input_tokens": 138178,
+              "cached_input_tokens": 0,
+              "output_tokens": 808,
+              "reasoning_output_tokens": 466
+            },
+            "missing_counters_by_attempt": {
+              "input_tokens": 0,
+              "cached_input_tokens": 0,
+              "output_tokens": 0,
+              "reasoning_output_tokens": 0
+            },
+            "missing_calls": 0,
+            "elapsed_seconds": 44.34901280008489,
+            "known_elapsed_subtotal_seconds": 44.34901280008489,
+            "missing_elapsed_attempts": 0,
+            "issues": [],
+            "normalized_costs": {
+              "primary": 142218.0,
+              "cache_neutral": 142218,
+              "output_1": 138986.0,
+              "output_10": 146258.0,
+              "cache_neutral_output_1": 138986,
+              "cache_neutral_output_10": 146258
+            },
+            "costs_complete": {
+              "primary": true,
+              "cache_neutral": true,
+              "output_1": true,
+              "output_10": true,
+              "cache_neutral_output_1": true,
+              "cache_neutral_output_10": true
+            }
+          },
+          "task_call": {
+            "complete": true,
+            "attempts": 6,
+            "preparation_attempts": 0,
+            "task_attempts": 6,
+            "timeouts": 0,
+            "tool_violating_attempts": 0,
+            "nonzero_exit_attempts": 0,
+            "usage_totals": {
+              "input_tokens": 144808,
+              "cached_input_tokens": 12544,
+              "output_tokens": 14744,
+              "reasoning_output_tokens": 5978
+            },
+            "known_usage_subtotals": {
+              "input_tokens": 144808,
+              "cached_input_tokens": 12544,
+              "output_tokens": 14744,
+              "reasoning_output_tokens": 5978
+            },
+            "missing_counters_by_attempt": {
+              "input_tokens": 0,
+              "cached_input_tokens": 0,
+              "output_tokens": 0,
+              "reasoning_output_tokens": 0
+            },
+            "missing_calls": 0,
+            "elapsed_seconds": 335.9177599999821,
+            "known_elapsed_subtotal_seconds": 335.9177599999821,
+            "missing_elapsed_attempts": 0,
+            "issues": [],
+            "normalized_costs": {
+              "primary": 207238.4,
+              "cache_neutral": 218528,
+              "output_1": 148262.4,
+              "output_10": 280958.4,
+              "cache_neutral_output_1": 159552,
+              "cache_neutral_output_10": 292248
+            },
+            "costs_complete": {
+              "primary": true,
+              "cache_neutral": true,
+              "output_1": true,
+              "output_10": true,
+              "cache_neutral_output_1": true,
+              "cache_neutral_output_10": true
+            }
+          }
+        }
+      },
+      "cost_per_assigned_stage": {
+        "primary": 58242.73333333334,
+        "cache_neutral": 60124.333333333336,
+        "output_1": 47874.73333333334,
+        "output_10": 71202.73333333334,
+        "cache_neutral_output_1": 49756.333333333336,
+        "cache_neutral_output_10": 73084.33333333333
+      },
+      "cost_per_successful_chain": {
+        "primary": 174728.2,
+        "cache_neutral": 180373.0,
+        "output_1": 143624.2,
+        "output_10": 213608.2,
+        "cache_neutral_output_1": 149269.0,
+        "cache_neutral_output_10": 219253.0
+      }
+    },
+    "ain": {
+      "label": "Numeric AIN",
+      "assigned_chains": 2,
+      "assigned_stages": 6,
+      "observed_stages": 6,
+      "assignments_complete": true,
+      "preparation_passes": 6,
+      "fluency_passes": 6,
+      "functional_passes": 6,
+      "stage_passes": 6,
+      "diagnostic_repair_passes": 2,
+      "fallback_stages": 1,
+      "successful_chains": 1,
+      "chains": [
+        {
+          "delta": 30,
+          "complete": true,
+          "successful": true,
+          "stage_successes": 3,
+          "genuine_repair": true,
+          "fallback": false
+        },
+        {
+          "delta": 75,
+          "complete": true,
+          "successful": false,
+          "stage_successes": 3,
+          "genuine_repair": false,
+          "fallback": true
+        }
+      ],
+      "resources": {
+        "complete": false,
+        "attempts": 14,
+        "preparation_attempts": 6,
+        "task_attempts": 8,
+        "timeouts": 0,
+        "tool_violating_attempts": 0,
+        "nonzero_exit_attempts": 2,
+        "usage_totals": {
+          "input_tokens": null,
+          "cached_input_tokens": null,
+          "output_tokens": null,
+          "reasoning_output_tokens": null
+        },
+        "known_usage_subtotals": {
+          "input_tokens": 278969,
+          "cached_input_tokens": 27776,
+          "output_tokens": 16081,
+          "reasoning_output_tokens": 11606
+        },
+        "missing_counters_by_attempt": {
+          "input_tokens": 2,
+          "cached_input_tokens": 2,
+          "output_tokens": 2,
+          "reasoning_output_tokens": 2
+        },
+        "missing_calls": 0,
+        "elapsed_seconds": 416.32363199983956,
+        "known_elapsed_subtotal_seconds": 416.32363199983956,
+        "missing_elapsed_attempts": 0,
+        "issues": [],
+        "normalized_costs": {
+          "primary": null,
+          "cache_neutral": null,
+          "output_1": null,
+          "output_10": null,
+          "cache_neutral_output_1": null,
+          "cache_neutral_output_10": null
+        },
+        "costs_complete": {
+          "primary": false,
+          "cache_neutral": false,
+          "output_1": false,
+          "output_10": false,
+          "cache_neutral_output_1": false,
+          "cache_neutral_output_10": false
+        },
+        "by_call_kind": {
+          "preparation_call": {
+            "complete": true,
+            "attempts": 6,
+            "preparation_attempts": 6,
+            "task_attempts": 0,
+            "timeouts": 0,
+            "tool_violating_attempts": 0,
+            "nonzero_exit_attempts": 0,
+            "usage_totals": {
+              "input_tokens": 135978,
+              "cached_input_tokens": 27776,
+              "output_tokens": 918,
+              "reasoning_output_tokens": 576
+            },
+            "known_usage_subtotals": {
+              "input_tokens": 135978,
+              "cached_input_tokens": 27776,
+              "output_tokens": 918,
+              "reasoning_output_tokens": 576
+            },
+            "missing_counters_by_attempt": {
+              "input_tokens": 0,
+              "cached_input_tokens": 0,
+              "output_tokens": 0,
+              "reasoning_output_tokens": 0
+            },
+            "missing_calls": 0,
+            "elapsed_seconds": 49.325623199983966,
+            "known_elapsed_subtotal_seconds": 49.325623199983966,
+            "missing_elapsed_attempts": 0,
+            "issues": [],
+            "normalized_costs": {
+              "primary": 115569.6,
+              "cache_neutral": 140568,
+              "output_1": 111897.6,
+              "output_10": 120159.6,
+              "cache_neutral_output_1": 136896,
+              "cache_neutral_output_10": 145158
+            },
+            "costs_complete": {
+              "primary": true,
+              "cache_neutral": true,
+              "output_1": true,
+              "output_10": true,
+              "cache_neutral_output_1": true,
+              "cache_neutral_output_10": true
+            }
+          },
+          "task_call": {
+            "complete": false,
+            "attempts": 8,
+            "preparation_attempts": 0,
+            "task_attempts": 8,
+            "timeouts": 0,
+            "tool_violating_attempts": 0,
+            "nonzero_exit_attempts": 2,
+            "usage_totals": {
+              "input_tokens": null,
+              "cached_input_tokens": null,
+              "output_tokens": null,
+              "reasoning_output_tokens": null
+            },
+            "known_usage_subtotals": {
+              "input_tokens": 142991,
+              "cached_input_tokens": 0,
+              "output_tokens": 15163,
+              "reasoning_output_tokens": 11030
+            },
+            "missing_counters_by_attempt": {
+              "input_tokens": 2,
+              "cached_input_tokens": 2,
+              "output_tokens": 2,
+              "reasoning_output_tokens": 2
+            },
+            "missing_calls": 0,
+            "elapsed_seconds": 366.9980087998556,
+            "known_elapsed_subtotal_seconds": 366.9980087998556,
+            "missing_elapsed_attempts": 0,
+            "issues": [],
+            "normalized_costs": {
+              "primary": null,
+              "cache_neutral": null,
+              "output_1": null,
+              "output_10": null,
+              "cache_neutral_output_1": null,
+              "cache_neutral_output_10": null
+            },
+            "costs_complete": {
+              "primary": false,
+              "cache_neutral": false,
+              "output_1": false,
+              "output_10": false,
+              "cache_neutral_output_1": false,
+              "cache_neutral_output_10": false
+            }
+          }
+        }
+      },
+      "cost_per_assigned_stage": {
+        "primary": null,
+        "cache_neutral": null,
+        "output_1": null,
+        "output_10": null,
+        "cache_neutral_output_1": null,
+        "cache_neutral_output_10": null
+      },
+      "cost_per_successful_chain": {
+        "primary": null,
+        "cache_neutral": null,
+        "output_1": null,
+        "output_10": null,
+        "cache_neutral_output_1": null,
+        "cache_neutral_output_10": null
+      }
+    }
+  },
+  "ain_saving_fraction_per_successful_chain": {
+    "python": {
+      "primary": null,
+      "cache_neutral": null,
+      "output_1": null,
+      "output_10": null,
+      "cache_neutral_output_1": null,
+      "cache_neutral_output_10": null
+    },
+    "ir": {
+      "primary": null,
+      "cache_neutral": null,
+      "output_1": null,
+      "output_10": null,
+      "cache_neutral_output_1": null,
+      "cache_neutral_output_10": null
+    }
+  },
+  "stages": [
+    {
+      "id": "d30-build-ain",
+      "mode": "ain",
+      "delta": 30,
+      "stage": "build",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    },
+    {
+      "id": "d30-build-ir",
+      "mode": "ir",
+      "delta": 30,
+      "stage": "build",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    },
+    {
+      "id": "d30-build-python",
+      "mode": "python",
+      "delta": 30,
+      "stage": "build",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    },
+    {
+      "id": "d30-change-ain",
+      "mode": "ain",
+      "delta": 30,
+      "stage": "change",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    },
+    {
+      "id": "d30-change-ir",
+      "mode": "ir",
+      "delta": 30,
+      "stage": "change",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    },
+    {
+      "id": "d30-change-python",
+      "mode": "python",
+      "delta": 30,
+      "stage": "change",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    },
+    {
+      "id": "d30-repair-ain",
+      "mode": "ain",
+      "delta": 30,
+      "stage": "repair",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    },
+    {
+      "id": "d30-repair-ir",
+      "mode": "ir",
+      "delta": 30,
+      "stage": "repair",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    },
+    {
+      "id": "d30-repair-python",
+      "mode": "python",
+      "delta": 30,
+      "stage": "repair",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    },
+    {
+      "id": "d75-build-ain",
+      "mode": "ain",
+      "delta": 75,
+      "stage": "build",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    },
+    {
+      "id": "d75-build-ir",
+      "mode": "ir",
+      "delta": 75,
+      "stage": "build",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    },
+    {
+      "id": "d75-build-python",
+      "mode": "python",
+      "delta": 75,
+      "stage": "build",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    },
+    {
+      "id": "d75-change-ain",
+      "mode": "ain",
+      "delta": 75,
+      "stage": "change",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    },
+    {
+      "id": "d75-change-ir",
+      "mode": "ir",
+      "delta": 75,
+      "stage": "change",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    },
+    {
+      "id": "d75-change-python",
+      "mode": "python",
+      "delta": 75,
+      "stage": "change",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    },
+    {
+      "id": "d75-repair-ain",
+      "mode": "ain",
+      "delta": 75,
+      "stage": "repair",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": false,
+      "harness_failure": false,
+      "fallback": true,
+      "harness_notes": [
+        "canonical fallback: no genuine primary-chain repair",
+        "no verified genuine handoff"
+      ]
+    },
+    {
+      "id": "d75-repair-ir",
+      "mode": "ir",
+      "delta": 75,
+      "stage": "repair",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    },
+    {
+      "id": "d75-repair-python",
+      "mode": "python",
+      "delta": 75,
+      "stage": "repair",
+      "preparation_passed": true,
+      "fluency_passed": true,
+      "functional_passed": true,
+      "stage_passed": true,
+      "genuine_handoff": true,
+      "harness_failure": false,
+      "fallback": false,
+      "harness_notes": []
+    }
+  ],
+  "figures": [
+    "resource-and-success.svg",
+    "cost-sensitivity.svg"
+  ],
+  "chart_note": null
+}

@@ -1,0 +1,25 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "elapsed_seconds": 7.965118899999652,
+      "exit_code": 0,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 22190,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 138,
+        "reasoning_output_tokens": 81
+      },
+      "response_text": "{\"fluency\":{\"categories\":[\"filtered\",\"duplicate\",\"late\"],\"anchored_group_counts\":[1,1],\"sum_0_to_4\":10,\"finalized_order_offsets\":[5,7],\"syntax_value\":14}}",
+      "substantive_response": true,
+      "tool_violations": [],
+      "invalid_jsonl_lines": 0,
+      "turn_completed": true,
+      "error_types": [],
+      "stderr_bytes": 158,
+      "stderr_sha256": "97ecdc62046cd9bacee041c534a474e39fb35c03b47d1f9d170ad79af29ee530"
+    }
+  ]
+}

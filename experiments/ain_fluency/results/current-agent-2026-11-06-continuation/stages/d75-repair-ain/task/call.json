@@ -1,0 +1,25 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "elapsed_seconds": 55.82424619997619,
+      "exit_code": 0,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 23254,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2268,
+        "reasoning_output_tokens": 1540
+      },
+      "response_text": "{\"fluency\":{\"categories\":[\"filtered\",\"duplicate\",\"late\"],\"anchored_group_counts\":[1,1],\"sum_0_to_4\":10,\"finalized_order_offsets\":[5,7],\"syntax_value\":14},\"program\":\"[0,\\\"e3b73a2d382ced84693bb97b70c9c385459ab4cf0d45dc875a607018dce57260\\\",[3,4,5,5,0,0,0,0,0,1,6,7,8,0,0,0,0,0,0],[0],8,0,[[[[8,1,0,[0]],[0,13,0],[0,14,1],[0,15,2],[0,16,3]],[100,1]],[[[8,9,1,[0]]],[101,9,2,14]],[[[8,-1,3,[0]],[8,2,2,[0]],[8,-1,4,[0,1,2]],[8,4,5,[2]],[6,9,4,13]],[101,9,3,10]],[[[8,6,7,[2]],[8,5,6,[1]],[4,9,6,5]],[101,9,4,5]],[[[8,-1,14,[0,1,13]]],[100,1]],[[[8,9,8,[0,1,2]]],[101,9,6,7]],[[[8,-1,14,[0,1,14]]],[100,1]],[[[8,-1,9,[0,1,2]],[8,3,12,[2]],[8,8,10,[3]],[8,7,11,[0]],[0,17,75],[3,18,6,5],[4,9,18,17]],[101,9,15,17]],[[[8,-1,14,[0,1,15]]],[100,1]],[[[8,-1,13,[0,1,3]],[8,-1,14,[0,1,16]]],[100,1]],[[[8,-1,15,[0,1,2]]],[100,11]],[[[8,9,16,[0,1]]],[101,9,12,13]],[[[8,3,17,[0,1]],[8,-1,18,[0,1,3]]],[100,11]],[[[8,10,19,[0,1]],[8,11,20,[0,1,10]],[8,-1,21,[0,1,11]]],[100,1]],[[[8,12,22,[0,1]]],[102,12]],[[[4,9,7,16]],[101,9,16,17]],[[[2,7,7,14]],[100,17]],[[[4,9,8,7]],[101,9,8,9]]]]\",\"explanation\":\"Events exactly at the frontier are admitted, new IDs are reserved before severity filtering, and all ready events are drained before finalization. The threshold is min(3, configured_minimum + 1) when timestamp minus frontier is less than 75, and configured_minimum otherwise.\"}",
+      "substantive_response": true,
+      "tool_violations": [],
+      "invalid_jsonl_lines": 0,
+      "turn_completed": true,
+      "error_types": [],
+      "stderr_bytes": 158,
+      "stderr_sha256": "7b0cf94eee1072dbd033f4e092089a558439d42913afa6960a36312910a28156"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "elapsed_seconds": 2.2007142000366002,
+      "exit_code": 1,
+      "timed_out": false,
+      "usage": null,
+      "response_text": null,
+      "substantive_response": false,
+      "tool_violations": [],
+      "invalid_jsonl_lines": 0,
+      "turn_completed": false,
+      "error_types": [
+        "error",
+        "turn.failed"
+      ],
+      "stderr_bytes": 442,
+      "stderr_sha256": "96b70d985c264d8a0297e736a598a5c6e12e9bae6a1df437e8fa172d8c9d4f38"
+    },
+    {
+      "attempt": 2,
+      "elapsed_seconds": 2.537874199973885,
+      "exit_code": 1,
+      "timed_out": false,
+      "usage": null,
+      "response_text": null,
+      "substantive_response": false,
+      "tool_violations": [],
+      "invalid_jsonl_lines": 0,
+      "turn_completed": false,
+      "error_types": [
+        "error",
+        "turn.failed"
+      ],
+      "stderr_bytes": 442,
+      "stderr_sha256": "081e0066f8f4092629a5f874875e49e0aef791d1af26fe041d968af182ca81df"
+    }
+  ]
+}
