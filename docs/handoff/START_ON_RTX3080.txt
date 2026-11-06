@@ -1,0 +1,29 @@
+Continue my AICC/AIN research on this computer.
+
+Repository: https://github.com/izikon78/AICC
+Required branch: research/ain-fluency-current-agents
+
+Clone that branch into the current folder if it is empty. If this repository is
+already present, inspect its state and preserve local changes before fetching
+the branch. Do not overwrite unrelated files or assume main has the latest work.
+
+Read docs/handoff/RTX3080_CONTINUATION.md first, then the linked hypotheses,
+trained-native protocol and completed experiment overview.
+
+This computer has an RTX 3080 with 10 GB dedicated GPU memory and 32 GB system
+RAM; verify the hardware locally. I want a matched whole-agent comparison:
+conventional workflow versus an agent that learns AIN before evaluation and
+uses it for working records, memory, tool interactions and executable artifacts.
+Human-readable output is an optional projection. AIN knowledge should not be
+retaught through a recurring language manual.
+
+Begin with repository/hardware/software checks and prepare a bounded local
+memory-fit, training-speed and tiny AIN-learning feasibility test. The proposed
+9M training presentations and 600k evaluation tokens are planning estimates,
+not a frozen run budget. Establish measured feasibility and concrete limits
+before substantial training. Do not incur paid service charges.
+
+Preserve earlier data and credits. Do not claim that native savings were proved,
+that the earlier prompted controller test rejected the whole-agent hypothesis,
+or that the complete verbatim chat was transferred. Never copy credentials or
+recover/reuse the old GitHub token pasted in the original chat.

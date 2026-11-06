@@ -8,6 +8,7 @@ Concept, architecture, and research direction: **Izik Bachar**.
 
 ## Start here
 
+- [Continue on another computer: RTX 3080 handoff and current next task](docs/handoff/RTX3080_CONTINUATION.md)
 - [Current-agent AIN fluency experiment: plan, completed results and charts](experiments/ain_fluency/RESULTS_OVERVIEW.md)
 - [Fresh-context replication instructions for AI agents](experiments/ain_fluency/AGENT_REPLICATION_BRIEF.md)
 - [Native AIN feasibility decision and primary-source research](docs/research/NATIVE_AIN_FEASIBILITY_2026-11-05.md)
