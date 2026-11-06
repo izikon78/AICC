@@ -1,0 +1,8 @@
+{
+  "cell": "python_optimize",
+  "passed": false,
+  "judge_exception": {
+    "type": "ValueError",
+    "message": "Frozen initial artifact changed: python_repair"
+  }
+}

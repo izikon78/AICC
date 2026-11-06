@@ -1,0 +1,1117 @@
+test_anchored_windows_strict_boundary_and_creation_ties (test_engine.WorkflowConformanceTests.test_anchored_windows_strict_boundary_and_creation_ties) ... 
+  test_anchored_windows_strict_boundary_and_creation_ties (test_engine.WorkflowConformanceTests.test_anchored_windows_strict_boundary_and_creation_ties) (mode='python') ... FAIL
+test_append_only_restart_resumes_the_committed_prefix (test_engine.WorkflowConformanceTests.test_append_only_restart_resumes_the_committed_prefix) ... 
+  test_append_only_restart_resumes_the_committed_prefix (test_engine.WorkflowConformanceTests.test_append_only_restart_resumes_the_committed_prefix) (mode='python') ... FAIL
+test_authority_is_checked_per_policy_and_immediately_before_commit (test_engine.WorkflowConformanceTests.test_authority_is_checked_per_policy_and_immediately_before_commit) ... 
+  test_authority_is_checked_per_policy_and_immediately_before_commit (test_engine.WorkflowConformanceTests.test_authority_is_checked_per_policy_and_immediately_before_commit) (mode='python', stage='policy') ... FAIL
+test_cancel_at_precommit_is_observed_before_publication (test_engine.WorkflowConformanceTests.test_cancel_at_precommit_is_observed_before_publication) ... ok
+test_cancellation_before_admission_leaves_sink_unchanged (test_engine.WorkflowConformanceTests.test_cancellation_before_admission_leaves_sink_unchanged) ... ok
+test_cancellation_during_policy_takes_precedence_and_preserves_prior_epoch (test_engine.WorkflowConformanceTests.test_cancellation_during_policy_takes_precedence_and_preserves_prior_epoch) ... 
+  test_cancellation_during_policy_takes_precedence_and_preserves_prior_epoch (test_engine.WorkflowConformanceTests.test_cancellation_during_policy_takes_precedence_and_preserves_prior_epoch) (mode='python') ... FAIL
+test_changed_or_truncated_committed_prefix_cannot_resume (test_engine.WorkflowConformanceTests.test_changed_or_truncated_committed_prefix_cannot_resume) ... 
+  test_changed_or_truncated_committed_prefix_cannot_resume (test_engine.WorkflowConformanceTests.test_changed_or_truncated_committed_prefix_cannot_resume) (mode='python', change='changed') ... FAIL
+  test_changed_or_truncated_committed_prefix_cannot_resume (test_engine.WorkflowConformanceTests.test_changed_or_truncated_committed_prefix_cannot_resume) (mode='python', change='truncated') ... FAIL
+test_checkpoint_tampering_and_config_mismatch_are_rejected (test_engine.WorkflowConformanceTests.test_checkpoint_tampering_and_config_mismatch_are_rejected) ... ok
+test_configuration_rejects_boolean_nonpositive_and_inconsistent_limits (test_engine.WorkflowConformanceTests.test_configuration_rejects_boolean_nonpositive_and_inconsistent_limits) ... ok
+test_count_and_severity_overflow_via_trusted_boundary_fixture (test_engine.WorkflowConformanceTests.test_count_and_severity_overflow_via_trusted_boundary_fixture) ... ok
+test_counter_overflow_is_not_wrapped_or_silently_serialized (test_engine.WorkflowConformanceTests.test_counter_overflow_is_not_wrapped_or_silently_serialized) ... ok
+test_documented_ten_record_trace_has_explicit_outputs_and_effects (test_engine.WorkflowConformanceTests.test_documented_ten_record_trace_has_explicit_outputs_and_effects) ... 
+  test_documented_ten_record_trace_has_explicit_outputs_and_effects (test_engine.WorkflowConformanceTests.test_documented_ten_record_trace_has_explicit_outputs_and_effects) (mode='python') ... FAIL
+test_each_state_capacity_fails_atomically_with_a_named_resource (test_engine.WorkflowConformanceTests.test_each_state_capacity_fails_atomically_with_a_named_resource) ... 
+  test_each_state_capacity_fails_atomically_with_a_named_resource (test_engine.WorkflowConformanceTests.test_each_state_capacity_fails_atomically_with_a_named_resource) (mode='python', resource='dedupe_entries') ... FAIL
+  test_each_state_capacity_fails_atomically_with_a_named_resource (test_engine.WorkflowConformanceTests.test_each_state_capacity_fails_atomically_with_a_named_resource) (mode='python', resource='buffered_events') ... FAIL
+  test_each_state_capacity_fails_atomically_with_a_named_resource (test_engine.WorkflowConformanceTests.test_each_state_capacity_fails_atomically_with_a_named_resource) (mode='python', resource='open_groups') ... FAIL
+  test_each_state_capacity_fails_atomically_with_a_named_resource (test_engine.WorkflowConformanceTests.test_each_state_capacity_fails_atomically_with_a_named_resource) (mode='python', resource='epoch_reports') ... FAIL
+test_empty_end_commits_but_input_exhaustion_is_not_end (test_engine.WorkflowConformanceTests.test_empty_end_commits_but_input_exhaustion_is_not_end) ... ok
+test_end_is_infinity_and_exact_timestamp_arithmetic_does_not_wrap (test_engine.WorkflowConformanceTests.test_end_is_infinity_and_exact_timestamp_arithmetic_does_not_wrap) ... ok
+test_failure_before_commit_rolls_back_and_replay_publishes_once (test_engine.WorkflowConformanceTests.test_failure_before_commit_rolls_back_and_replay_publishes_once) ... 
+  test_failure_before_commit_rolls_back_and_replay_publishes_once (test_engine.WorkflowConformanceTests.test_failure_before_commit_rolls_back_and_replay_publishes_once) (mode='python') ... FAIL
+test_first_input_id_wins_before_filtering_and_timestamp_sort (test_engine.WorkflowConformanceTests.test_first_input_id_wins_before_filtering_and_timestamp_sort) ... 
+  test_first_input_id_wins_before_filtering_and_timestamp_sort (test_engine.WorkflowConformanceTests.test_first_input_id_wins_before_filtering_and_timestamp_sort) (mode='python') ... FAIL
+test_frontier_equality_waits_and_remains_admissible (test_engine.WorkflowConformanceTests.test_frontier_equality_waits_and_remains_admissible) ... 
+  test_frontier_equality_waits_and_remains_admissible (test_engine.WorkflowConformanceTests.test_frontier_equality_waits_and_remains_admissible) (mode='python') ... FAIL
+test_group_identity_is_stable_on_replay_and_scoped_by_source (test_engine.WorkflowConformanceTests.test_group_identity_is_stable_on_replay_and_scoped_by_source) ... 
+  test_group_identity_is_stable_on_replay_and_scoped_by_source (test_engine.WorkflowConformanceTests.test_group_identity_is_stable_on_replay_and_scoped_by_source) (mode='python') ... ERROR
+test_horizon_eviction_is_exact_and_late_id_does_not_reserve (test_engine.WorkflowConformanceTests.test_horizon_eviction_is_exact_and_late_id_does_not_reserve) ... 
+  test_horizon_eviction_is_exact_and_late_id_does_not_reserve (test_engine.WorkflowConformanceTests.test_horizon_eviction_is_exact_and_late_id_does_not_reserve) (mode='python') ... FAIL
+test_invalid_future_row_does_not_erase_an_already_committed_epoch (test_engine.WorkflowConformanceTests.test_invalid_future_row_does_not_erase_an_already_committed_epoch) ... 
+  test_invalid_future_row_does_not_erase_an_already_committed_epoch (test_engine.WorkflowConformanceTests.test_invalid_future_row_does_not_erase_an_already_committed_epoch) (mode='python', invalid_value='1.5') ... FAIL
+  test_invalid_future_row_does_not_erase_an_already_committed_epoch (test_engine.WorkflowConformanceTests.test_invalid_future_row_does_not_erase_an_already_committed_epoch) (mode='python', invalid_value="'\\ud800'") ... FAIL
+test_later_duplicate_does_not_change_original_retention_timestamp (test_engine.WorkflowConformanceTests.test_later_duplicate_does_not_change_original_retention_timestamp) ... ok
+test_lost_ack_recovery_does_not_duplicate_visible_publication (test_engine.WorkflowConformanceTests.test_lost_ack_recovery_does_not_duplicate_visible_publication) ... 
+  test_lost_ack_recovery_does_not_duplicate_visible_publication (test_engine.WorkflowConformanceTests.test_lost_ack_recovery_does_not_duplicate_visible_publication) (mode='python') ... FAIL
+test_lowest_group_policy_error_wins_over_completion_order (test_engine.WorkflowConformanceTests.test_lowest_group_policy_error_wins_over_completion_order) ... 
+  test_lowest_group_policy_error_wins_over_completion_order (test_engine.WorkflowConformanceTests.test_lowest_group_policy_error_wins_over_completion_order) (mode='python') ... FAIL
+test_message_case_and_compatibility_characters_remain_distinct (test_engine.WorkflowConformanceTests.test_message_case_and_compatibility_characters_remain_distinct) ... 
+  test_message_case_and_compatibility_characters_remain_distinct (test_engine.WorkflowConformanceTests.test_message_case_and_compatibility_characters_remain_distinct) (mode='python') ... FAIL
+test_new_event_after_durable_end_is_rejected (test_engine.WorkflowConformanceTests.test_new_event_after_durable_end_is_rejected) ... ok
+test_nfkc_casefold_and_explicit_whitespace_normalization (test_engine.WorkflowConformanceTests.test_nfkc_casefold_and_explicit_whitespace_normalization) ... 
+  test_nfkc_casefold_and_explicit_whitespace_normalization (test_engine.WorkflowConformanceTests.test_nfkc_casefold_and_explicit_whitespace_normalization) (mode='python') ... FAIL
+test_observed_cancellation_drains_inflight_calls_without_publishing (test_engine.WorkflowConformanceTests.test_observed_cancellation_drains_inflight_calls_without_publishing) ... 
+  test_observed_cancellation_drains_inflight_calls_without_publishing (test_engine.WorkflowConformanceTests.test_observed_cancellation_drains_inflight_calls_without_publishing) (mode='python') ... FAIL
+test_offsets_and_watermarks_are_monotone_but_equal_watermarks_are_valid (test_engine.WorkflowConformanceTests.test_offsets_and_watermarks_are_monotone_but_equal_watermarks_are_valid) ... ok
+test_old_or_duplicate_offset_in_appended_suffix_is_not_silently_skipped (test_engine.WorkflowConformanceTests.test_old_or_duplicate_offset_in_appended_suffix_is_not_silently_skipped) ... ok
+test_policy_version_change_during_work_is_rejected_before_commit (test_engine.WorkflowConformanceTests.test_policy_version_change_during_work_is_rejected_before_commit) ... 
+  test_policy_version_change_during_work_is_rejected_before_commit (test_engine.WorkflowConformanceTests.test_policy_version_change_during_work_is_rejected_before_commit) (mode='python') ... FAIL
+test_private_policy_output_types_and_reason_allowlist (test_engine.WorkflowConformanceTests.test_private_policy_output_types_and_reason_allowlist) ... 
+  test_private_policy_output_types_and_reason_allowlist (test_engine.WorkflowConformanceTests.test_private_policy_output_types_and_reason_allowlist) (mode='python', case=0) ... FAIL
+  test_private_policy_output_types_and_reason_allowlist (test_engine.WorkflowConformanceTests.test_private_policy_output_types_and_reason_allowlist) (mode='python', case=1) ... FAIL
+  test_private_policy_output_types_and_reason_allowlist (test_engine.WorkflowConformanceTests.test_private_policy_output_types_and_reason_allowlist) (mode='python', case=2) ... FAIL
+  test_private_policy_output_types_and_reason_allowlist (test_engine.WorkflowConformanceTests.test_private_policy_output_types_and_reason_allowlist) (mode='python', case=3) ... FAIL
+  test_private_policy_output_types_and_reason_allowlist (test_engine.WorkflowConformanceTests.test_private_policy_output_types_and_reason_allowlist) (mode='python', case=4) ... FAIL
+  test_private_policy_output_types_and_reason_allowlist (test_engine.WorkflowConformanceTests.test_private_policy_output_types_and_reason_allowlist) (mode='python', case=5) ... FAIL
+test_python_extra_whitespace_controls_bom_and_zero_width_are_not_collapsed (test_engine.WorkflowConformanceTests.test_python_extra_whitespace_controls_bom_and_zero_width_are_not_collapsed) ... 
+  test_python_extra_whitespace_controls_bom_and_zero_width_are_not_collapsed (test_engine.WorkflowConformanceTests.test_python_extra_whitespace_controls_bom_and_zero_width_are_not_collapsed) (mode='python') ... FAIL
+test_reverse_completion_still_publishes_creation_order (test_engine.WorkflowConformanceTests.test_reverse_completion_still_publishes_creation_order) ... 
+  test_reverse_completion_still_publishes_creation_order (test_engine.WorkflowConformanceTests.test_reverse_completion_still_publishes_creation_order) (mode='python') ... FAIL
+test_same_epoch_same_payload_is_idempotent_and_different_payload_conflicts (test_engine.WorkflowConformanceTests.test_same_epoch_same_payload_is_idempotent_and_different_payload_conflicts) ... ERROR
+test_scheduler_respects_running_and_waiting_limits (test_engine.WorkflowConformanceTests.test_scheduler_respects_running_and_waiting_limits) ... FAIL
+test_stale_writer_cannot_commit (test_engine.WorkflowConformanceTests.test_stale_writer_cannot_commit) ... ok
+test_strict_record_shapes_bounds_and_plain_values (test_engine.WorkflowConformanceTests.test_strict_record_shapes_bounds_and_plain_values) ... ok
+test_tenant_and_event_id_are_exact_identifiers (test_engine.WorkflowConformanceTests.test_tenant_and_event_id_are_exact_identifiers) ... 
+  test_tenant_and_event_id_are_exact_identifiers (test_engine.WorkflowConformanceTests.test_tenant_and_event_id_are_exact_identifiers) (mode='python') ... FAIL
+test_tenant_scope_and_policy_version_are_pinned (test_engine.WorkflowConformanceTests.test_tenant_scope_and_policy_version_are_pinned) ... 
+  test_tenant_scope_and_policy_version_are_pinned (test_engine.WorkflowConformanceTests.test_tenant_scope_and_policy_version_are_pinned) (mode='python') ... FAIL
+test_unicode_scalar_size_limits_are_inclusive_and_minimum_zero_is_valid (test_engine.WorkflowConformanceTests.test_unicode_scalar_size_limits_are_inclusive_and_minimum_zero_is_valid) ... ok
+test_validation_is_not_skipped_for_duplicate_filtered_or_late_rows (test_engine.WorkflowConformanceTests.test_validation_is_not_skipped_for_duplicate_filtered_or_late_rows) ... ok
+test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) ... 
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=0) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=1) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=4) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=5) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=6) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=7) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=10) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=12) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=13) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=14) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=15) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=16) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=17) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=19) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=20) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=21) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=22) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=25) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=26) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=27) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=28) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=29) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=31) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=34) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=35) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=36) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=37) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=39) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=40) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=44) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=46) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=47) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=48) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=51) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=53) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=55) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=56) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=57) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=58) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=59) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=60) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=61) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=62) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=63) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=64) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=66) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=69) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=71) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=74) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=75) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=76) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=77) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=78) ... FAIL
+  test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=79) ... FAIL
+test_malformed_discard_candidates (test_generated.GeneratedParity.test_malformed_discard_candidates) ... ok
+test_all_blocks_are_type_checked_before_first_effect (test_language.LanguageTests.test_all_blocks_are_type_checked_before_first_effect) ... ok
+test_arithmetic_example_files_are_authorable_and_equivalent (test_language.LanguageTests.test_arithmetic_example_files_are_authorable_and_equivalent) ... ok
+test_bool_is_not_integer_in_source_or_numeric_metadata (test_language.LanguageTests.test_bool_is_not_integer_in_source_or_numeric_metadata) ... ok
+test_catalog_names_ids_signatures_and_effects_are_pinned (test_language.LanguageTests.test_catalog_names_ids_signatures_and_effects_are_pinned) ... ok
+test_codec_is_semantic_and_numeric_round_trip_is_stable (test_language.LanguageTests.test_codec_is_semantic_and_numeric_round_trip_is_stable) ... ok
+test_duplicate_labels_and_parameters_and_unknown_targets (test_language.LanguageTests.test_duplicate_labels_and_parameters_and_unknown_targets) ... ok
+test_exact_arithmetic_loop_and_both_serializations (test_language.LanguageTests.test_exact_arithmetic_loop_and_both_serializations) ... ok
+test_host_exceptions_are_not_hidden_or_converted (test_language.LanguageTests.test_host_exceptions_are_not_hidden_or_converted) ... ok
+test_invalid_catalogs_are_rejected_without_invoking_them (test_language.LanguageTests.test_invalid_catalogs_are_rejected_without_invoking_them) ... ok
+test_large_integer_is_exact_and_negative_values_are_allowed (test_language.LanguageTests.test_large_integer_is_exact_and_negative_values_are_allowed) ... ok
+test_loop_backedge_cannot_supply_first_iteration_initialization (test_language.LanguageTests.test_loop_backedge_cannot_supply_first_iteration_initialization) ... ok
+test_loop_fuel_is_exact_and_does_not_call_before_available_step (test_language.LanguageTests.test_loop_fuel_is_exact_and_does_not_call_before_available_step) ... ok
+test_move_sub_le_eq_and_not (test_language.LanguageTests.test_move_sub_le_eq_and_not) ... ok
+test_named_and_positional_arguments_and_strict_scalar_types (test_language.LanguageTests.test_named_and_positional_arguments_and_strict_scalar_types) ... ok
+test_no_opaque_constants_or_opaque_comparison (test_language.LanguageTests.test_no_opaque_constants_or_opaque_comparison) ... ok
+test_numeric_unknown_opcodes_arity_and_out_of_range_references (test_language.LanguageTests.test_numeric_unknown_opcodes_arity_and_out_of_range_references) ... ok
+test_read_before_write_within_block_is_rejected (test_language.LanguageTests.test_read_before_write_within_block_is_rejected) ... ok
+test_scalar_catalog_result_contract_is_checked (test_language.LanguageTests.test_scalar_catalog_result_contract_is_checked) ... ok
+test_scalar_string_equality (test_language.LanguageTests.test_scalar_string_equality) ... ok
+test_schema_pin_is_not_callable_implementation_authentication (test_language.LanguageTests.test_schema_pin_is_not_callable_implementation_authentication) ... ok
+test_strict_json_rejects_duplicate_keys_and_nonfinite_literals (test_language.LanguageTests.test_strict_json_rejects_duplicate_keys_and_nonfinite_literals) ... ok
+test_uninitialized_read_rejected_on_a_join (test_language.LanguageTests.test_uninitialized_read_rejected_on_a_join) ... ok
+test_unknown_keys_and_missing_fields_are_rejected (test_language.LanguageTests.test_unknown_keys_and_missing_fields_are_rejected) ... ok
+test_void_calls_and_void_return_omit_destination_and_value (test_language.LanguageTests.test_void_calls_and_void_return_omit_destination_and_value) ... ok
+test_wrong_operator_return_branch_and_call_types (test_language.LanguageTests.test_wrong_operator_return_branch_and_call_types) ... ok
+
+======================================================================
+ERROR: test_group_identity_is_stable_on_replay_and_scoped_by_source (test_engine.WorkflowConformanceTests.test_group_identity_is_stable_on_replay_and_scoped_by_source) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 573, in test_group_identity_is_stable_on_replay_and_scoped_by_source
+    self.assertEqual(one['reports'][0]['group_id'], again['reports'][0]['group_id'])
+                     ~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_same_epoch_same_payload_is_idempotent_and_different_payload_conflicts (test_engine.WorkflowConformanceTests.test_same_epoch_same_payload_is_idempotent_and_different_payload_conflicts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 482, in test_same_epoch_same_payload_is_idempotent_and_different_payload_conflicts
+    transaction['reports'][0]['score'] = 76
+    ~~~~~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+
+======================================================================
+FAIL: test_anchored_windows_strict_boundary_and_creation_ties (test_engine.WorkflowConformanceTests.test_anchored_windows_strict_boundary_and_creation_ties) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 140, in test_anchored_windows_strict_boundary_and_creation_ties
+    self.assert_success(self.run_mode(records, mode, config=Config(window=10)), groups, counters(accepted=6))
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 34, in assert_success
+    self.assertEqual(result['counters'], counts)
+AssertionError: {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 5} != {'late': 0, 'duplicate': 0, 'filtered': 0, 'accepted': 6}
+- {'accepted': 5, 'duplicate': 0, 'filtered': 0, 'late': 1}
+?              ^                                         ^
+
++ {'accepted': 6, 'duplicate': 0, 'filtered': 0, 'late': 0}
+?              ^                                         ^
+
+
+======================================================================
+FAIL: test_append_only_restart_resumes_the_committed_prefix (test_engine.WorkflowConformanceTests.test_append_only_restart_resumes_the_committed_prefix) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 523, in test_append_only_restart_resumes_the_committed_prefix
+    self.assert_success(result, [expected_group(0, 0, 2, 1, 1)], counters(accepted=1))
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 34, in assert_success
+    self.assertEqual(result['counters'], counts)
+AssertionError: {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0} != {'late': 0, 'duplicate': 0, 'filtered': 0, 'accepted': 1}
+- {'accepted': 0, 'duplicate': 0, 'filtered': 0, 'late': 1}
+?              ^                                         ^
+
++ {'accepted': 1, 'duplicate': 0, 'filtered': 0, 'late': 0}
+?              ^                                         ^
+
+
+======================================================================
+FAIL: test_authority_is_checked_per_policy_and_immediately_before_commit (test_engine.WorkflowConformanceTests.test_authority_is_checked_per_policy_and_immediately_before_commit) (mode='python', stage='policy')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 357, in test_authority_is_checked_per_policy_and_immediately_before_commit
+    self.assert_error(result, 'AUTHORITY')
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 46, in assert_error
+    self.assertEqual(result['status'], 'ERROR', result)
+AssertionError: 'COMPLETE' != 'ERROR'
+- COMPLETE
++ ERROR
+ : {'status': 'COMPLETE', 'reports': [], 'counters': {'late': 2, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 3, 'source_prefix_sha256': '73ba1abe2ed1f3ef183da82bb165a1f60dea313d0be5668a4b12ea4b44df698a', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 2, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': '9bbb50b223c54e76b488e72d33bada5a8eb4b72cdfcbf1d46afa88143822fa94'}, 'trace': [{'source_id': 'default', 'epoch_offset': 3, 'reports': [], 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 3, 'source_prefix_sha256': '73ba1abe2ed1f3ef183da82bb165a1f60dea313d0be5668a4b12ea4b44df698a', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 2, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': '9bbb50b223c54e76b488e72d33bada5a8eb4b72cdfcbf1d46afa88143822fa94'}}], 'error': None}
+
+======================================================================
+FAIL: test_cancellation_during_policy_takes_precedence_and_preserves_prior_epoch (test_engine.WorkflowConformanceTests.test_cancellation_during_policy_takes_precedence_and_preserves_prior_epoch) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 408, in test_cancellation_during_policy_takes_precedence_and_preserves_prior_epoch
+    self.assertEqual(len(result['reports']), 1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_changed_or_truncated_committed_prefix_cannot_resume (test_engine.WorkflowConformanceTests.test_changed_or_truncated_committed_prefix_cannot_resume) (mode='python', change='changed')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 538, in test_changed_or_truncated_committed_prefix_cannot_resume
+    self.assert_error(result, 'CHECKPOINT', reports=1)
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 48, in assert_error
+    self.assertEqual(len(result['reports']), reports)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_changed_or_truncated_committed_prefix_cannot_resume (test_engine.WorkflowConformanceTests.test_changed_or_truncated_committed_prefix_cannot_resume) (mode='python', change='truncated')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 538, in test_changed_or_truncated_committed_prefix_cannot_resume
+    self.assert_error(result, 'CHECKPOINT', reports=1)
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 48, in assert_error
+    self.assertEqual(len(result['reports']), reports)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_documented_ten_record_trace_has_explicit_outputs_and_effects (test_engine.WorkflowConformanceTests.test_documented_ten_record_trace_has_explicit_outputs_and_effects) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 57, in test_documented_ten_record_trace_has_explicit_outputs_and_effects
+    self.assert_success(result, groups, counters(late=1, duplicate=1, filtered=1, accepted=4))
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 34, in assert_success
+    self.assertEqual(result['counters'], counts)
+AssertionError: {'late': 2, 'duplicate': 1, 'filtered': 1, 'accepted': 3} != {'late': 1, 'duplicate': 1, 'filtered': 1, 'accepted': 4}
+- {'accepted': 3, 'duplicate': 1, 'filtered': 1, 'late': 2}
+?              ^                                         ^
+
++ {'accepted': 4, 'duplicate': 1, 'filtered': 1, 'late': 1}
+?              ^                                         ^
+
+
+======================================================================
+FAIL: test_each_state_capacity_fails_atomically_with_a_named_resource (test_engine.WorkflowConformanceTests.test_each_state_capacity_fails_atomically_with_a_named_resource) (mode='python', resource='dedupe_entries')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 260, in test_each_state_capacity_fails_atomically_with_a_named_resource
+    self.assert_error(result, 'CAPACITY')
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 46, in assert_error
+    self.assertEqual(result['status'], 'ERROR', result)
+AssertionError: 'COMPLETE' != 'ERROR'
+- COMPLETE
++ ERROR
+ : {'status': 'COMPLETE', 'reports': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 1, 'accepted': 0}, 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 1, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 3, 'source_prefix_sha256': '829ba921e08e9883b24c2552e4208536b003e585a67b039a67d566d47de1850c', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 1, 'accepted': 0}, 'integrity': 'ce8255ea5e1731dd615475f35c91e78361510f9e27111d6f5c487b323b783674'}, 'trace': [{'source_id': 'default', 'epoch_offset': 3, 'reports': [], 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 1, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 3, 'source_prefix_sha256': '829ba921e08e9883b24c2552e4208536b003e585a67b039a67d566d47de1850c', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 1, 'accepted': 0}, 'integrity': 'ce8255ea5e1731dd615475f35c91e78361510f9e27111d6f5c487b323b783674'}}], 'error': None}
+
+======================================================================
+FAIL: test_each_state_capacity_fails_atomically_with_a_named_resource (test_engine.WorkflowConformanceTests.test_each_state_capacity_fails_atomically_with_a_named_resource) (mode='python', resource='buffered_events')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 260, in test_each_state_capacity_fails_atomically_with_a_named_resource
+    self.assert_error(result, 'CAPACITY')
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 46, in assert_error
+    self.assertEqual(result['status'], 'ERROR', result)
+AssertionError: 'COMPLETE' != 'ERROR'
+- COMPLETE
++ ERROR
+ : {'status': 'COMPLETE', 'reports': [{'source_id': 'default', 'group_id': '10f60b9e1a20ade79d3d205d952b89df2a0793a538e03720051c855e9273edfa', 'tenant': 't', 'device': 'pump', 'kind': 'alert', 'message': 'm', 'first_timestamp': 1, 'last_timestamp': 1, 'first_offset': 2, 'count': 1, 'severity_sum': 1, 'score': 77, 'reason': 2, 'policy_version': 'fixture-v1'}], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 1}, 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 1, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 3, 'source_prefix_sha256': '76fa497196fdec2895e828cce7768a56bc00ccfd4d9ccd59c9a60c747d71f075', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 1}, 'integrity': 'c9dc93856e4e83600b0688dcf910430e5f7bd3fc6ef79be25ed6aec0b65597fb'}, 'trace': [{'source_id': 'default', 'epoch_offset': 3, 'reports': [{'source_id': 'default', 'group_id': '10f60b9e1a20ade79d3d205d952b89df2a0793a538e03720051c855e9273edfa', 'tenant': 't', 'device': 'pump', 'kind': 'alert', 'message': 'm', 'first_timestamp': 1, 'last_timestamp': 1, 'first_offset': 2, 'count': 1, 'severity_sum': 1, 'score': 77, 'reason': 2, 'policy_version': 'fixture-v1'}], 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 1, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 3, 'source_prefix_sha256': '76fa497196fdec2895e828cce7768a56bc00ccfd4d9ccd59c9a60c747d71f075', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 1}, 'integrity': 'c9dc93856e4e83600b0688dcf910430e5f7bd3fc6ef79be25ed6aec0b65597fb'}}], 'error': None}
+
+======================================================================
+FAIL: test_each_state_capacity_fails_atomically_with_a_named_resource (test_engine.WorkflowConformanceTests.test_each_state_capacity_fails_atomically_with_a_named_resource) (mode='python', resource='open_groups')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 260, in test_each_state_capacity_fails_atomically_with_a_named_resource
+    self.assert_error(result, 'CAPACITY')
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 46, in assert_error
+    self.assertEqual(result['status'], 'ERROR', result)
+AssertionError: 'INCOMPLETE' != 'ERROR'
+- INCOMPLETE
++ ERROR
+ : {'status': 'INCOMPLETE', 'reports': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 1}, 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 10, 'lateness': 0, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 1, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 3, 'source_prefix_sha256': '8ab22ddbbb25add2509344fc5a65f492bc39d9030a1ae351f16ddf7755133d58', 'watermark': 5, 'complete': False, 'seen': [{'tenant': 't', 'event_id': 'B', 'timestamp': 1}], 'pending': [], 'groups': [{'tenant': 't', 'device': 'b', 'kind': 'alert', 'message': 'm', 'first_timestamp': 1, 'last_timestamp': 1, 'first_offset': 2, 'count': 1, 'severity_sum': 1}], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 1}, 'integrity': '60df765cab00223acdfb7d92c7919bf6072cafeb3e5b15c62f4084cdfad2b1eb'}, 'trace': [{'source_id': 'default', 'epoch_offset': 3, 'reports': [], 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 10, 'lateness': 0, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 1, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 3, 'source_prefix_sha256': '8ab22ddbbb25add2509344fc5a65f492bc39d9030a1ae351f16ddf7755133d58', 'watermark': 5, 'complete': False, 'seen': [{'tenant': 't', 'event_id': 'B', 'timestamp': 1}], 'pending': [], 'groups': [{'tenant': 't', 'device': 'b', 'kind': 'alert', 'message': 'm', 'first_timestamp': 1, 'last_timestamp': 1, 'first_offset': 2, 'count': 1, 'severity_sum': 1}], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 1}, 'integrity': '60df765cab00223acdfb7d92c7919bf6072cafeb3e5b15c62f4084cdfad2b1eb'}}], 'error': None}
+
+======================================================================
+FAIL: test_each_state_capacity_fails_atomically_with_a_named_resource (test_engine.WorkflowConformanceTests.test_each_state_capacity_fails_atomically_with_a_named_resource) (mode='python', resource='epoch_reports')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 260, in test_each_state_capacity_fails_atomically_with_a_named_resource
+    self.assert_error(result, 'CAPACITY')
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 46, in assert_error
+    self.assertEqual(result['status'], 'ERROR', result)
+AssertionError: 'INCOMPLETE' != 'ERROR'
+- INCOMPLETE
++ ERROR
+ : {'status': 'INCOMPLETE', 'reports': [{'source_id': 'default', 'group_id': '10f60b9e1a20ade79d3d205d952b89df2a0793a538e03720051c855e9273edfa', 'tenant': 't', 'device': 'b', 'kind': 'alert', 'message': 'm', 'first_timestamp': 1, 'last_timestamp': 1, 'first_offset': 2, 'count': 1, 'severity_sum': 1, 'score': 77, 'reason': 2, 'policy_version': 'fixture-v1'}], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 1}, 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 10, 'lateness': 0, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 1, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 3, 'source_prefix_sha256': '5102275ee2b62dd7062def56d2177877b94f0d22c3798fdbdc40e6abd972ccd3', 'watermark': 20, 'complete': False, 'seen': [{'tenant': 't', 'event_id': 'B', 'timestamp': 1}], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 1}, 'integrity': '7ebfe7297e3c3a9025d3ec4c9bb3af6a4b3eb2f25af3760d7c800855186e20f7'}, 'trace': [{'source_id': 'default', 'epoch_offset': 3, 'reports': [{'source_id': 'default', 'group_id': '10f60b9e1a20ade79d3d205d952b89df2a0793a538e03720051c855e9273edfa', 'tenant': 't', 'device': 'b', 'kind': 'alert', 'message': 'm', 'first_timestamp': 1, 'last_timestamp': 1, 'first_offset': 2, 'count': 1, 'severity_sum': 1, 'score': 77, 'reason': 2, 'policy_version': 'fixture-v1'}], 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 10, 'lateness': 0, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 1, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 3, 'source_prefix_sha256': '5102275ee2b62dd7062def56d2177877b94f0d22c3798fdbdc40e6abd972ccd3', 'watermark': 20, 'complete': False, 'seen': [{'tenant': 't', 'event_id': 'B', 'timestamp': 1}], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 1}, 'integrity': '7ebfe7297e3c3a9025d3ec4c9bb3af6a4b3eb2f25af3760d7c800855186e20f7'}}], 'error': None}
+
+======================================================================
+FAIL: test_failure_before_commit_rolls_back_and_replay_publishes_once (test_engine.WorkflowConformanceTests.test_failure_before_commit_rolls_back_and_replay_publishes_once) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 457, in test_failure_before_commit_rolls_back_and_replay_publishes_once
+    self.assert_success(replay, [expected_group(0, 0, 1, 1, 1)], counters(accepted=1))
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 34, in assert_success
+    self.assertEqual(result['counters'], counts)
+AssertionError: {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0} != {'late': 0, 'duplicate': 0, 'filtered': 0, 'accepted': 1}
+- {'accepted': 0, 'duplicate': 0, 'filtered': 0, 'late': 1}
+?              ^                                         ^
+
++ {'accepted': 1, 'duplicate': 0, 'filtered': 0, 'late': 0}
+?              ^                                         ^
+
+
+======================================================================
+FAIL: test_first_input_id_wins_before_filtering_and_timestamp_sort (test_engine.WorkflowConformanceTests.test_first_input_id_wins_before_filtering_and_timestamp_sort) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 81, in test_first_input_id_wins_before_filtering_and_timestamp_sort
+    self.assert_success(self.run_mode(records, mode), [expected_group(20, 20, 3, 1, 2)],
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 34, in assert_success
+    self.assertEqual(result['counters'], counts)
+AssertionError: {'late': 1, 'duplicate': 0, 'filtered': 1, 'accepted': 1} != {'late': 0, 'duplicate': 1, 'filtered': 1, 'accepted': 1}
+- {'accepted': 1, 'duplicate': 0, 'filtered': 1, 'late': 1}
+?                              ^                         ^
+
++ {'accepted': 1, 'duplicate': 1, 'filtered': 1, 'late': 0}
+?                              ^                         ^
+
+
+======================================================================
+FAIL: test_frontier_equality_waits_and_remains_admissible (test_engine.WorkflowConformanceTests.test_frontier_equality_waits_and_remains_admissible) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 150, in test_frontier_equality_waits_and_remains_admissible
+    self.assert_success(result, [expected_group(10, 10, 1, 2, 2)], counters(late=1, accepted=2))
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 34, in assert_success
+    self.assertEqual(result['counters'], counts)
+AssertionError: {'late': 2, 'duplicate': 0, 'filtered': 0, 'accepted': 1} != {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 2}
+- {'accepted': 1, 'duplicate': 0, 'filtered': 0, 'late': 2}
+?              ^                                         ^
+
++ {'accepted': 2, 'duplicate': 0, 'filtered': 0, 'late': 1}
+?              ^                                         ^
+
+
+======================================================================
+FAIL: test_horizon_eviction_is_exact_and_late_id_does_not_reserve (test_engine.WorkflowConformanceTests.test_horizon_eviction_is_exact_and_late_id_does_not_reserve) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 160, in test_horizon_eviction_is_exact_and_late_id_does_not_reserve
+    self.assert_success(self.run_mode(records, mode, config=config),
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 34, in assert_success
+    self.assertEqual(result['counters'], counts)
+AssertionError: {'late': 3, 'duplicate': 0, 'filtered': 1, 'accepted': 0} != {'late': 1, 'duplicate': 1, 'filtered': 1, 'accepted': 1}
+- {'accepted': 0, 'duplicate': 0, 'filtered': 1, 'late': 3}
+?              ^               ^                         ^
+
++ {'accepted': 1, 'duplicate': 1, 'filtered': 1, 'late': 1}
+?              ^               ^                         ^
+
+
+======================================================================
+FAIL: test_invalid_future_row_does_not_erase_an_already_committed_epoch (test_engine.WorkflowConformanceTests.test_invalid_future_row_does_not_erase_an_already_committed_epoch) (mode='python', invalid_value='1.5')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 561, in test_invalid_future_row_does_not_erase_an_already_committed_epoch
+    self.assert_error(result, 'VALIDATION', reports=1)
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 48, in assert_error
+    self.assertEqual(len(result['reports']), reports)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_invalid_future_row_does_not_erase_an_already_committed_epoch (test_engine.WorkflowConformanceTests.test_invalid_future_row_does_not_erase_an_already_committed_epoch) (mode='python', invalid_value="'\\ud800'")
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 561, in test_invalid_future_row_does_not_erase_an_already_committed_epoch
+    self.assert_error(result, 'VALIDATION', reports=1)
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 48, in assert_error
+    self.assertEqual(len(result['reports']), reports)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_lost_ack_recovery_does_not_duplicate_visible_publication (test_engine.WorkflowConformanceTests.test_lost_ack_recovery_does_not_duplicate_visible_publication) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 466, in test_lost_ack_recovery_does_not_duplicate_visible_publication
+    self.assert_error(lost, 'LOST_ACK', reports=1)
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 48, in assert_error
+    self.assertEqual(len(result['reports']), reports)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_lowest_group_policy_error_wins_over_completion_order (test_engine.WorkflowConformanceTests.test_lowest_group_policy_error_wins_over_completion_order) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 333, in test_lowest_group_policy_error_wins_over_completion_order
+    self.assert_error(result, 'POLICY')
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 46, in assert_error
+    self.assertEqual(result['status'], 'ERROR', result)
+AssertionError: 'COMPLETE' != 'ERROR'
+- COMPLETE
++ ERROR
+ : {'status': 'COMPLETE', 'reports': [], 'counters': {'late': 2, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 2, 'queue': 1, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 3, 'source_prefix_sha256': 'bd2cedb17a6c57e523ed487ce7bd0c668ee29a4f7b9869366f74f1093341aec5', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 2, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': 'd339498b96bc6c3d84221bbd18c8106237ecfa6a20ef0a7d4f86aac88cd9b16b'}, 'trace': [{'source_id': 'default', 'epoch_offset': 3, 'reports': [], 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 2, 'queue': 1, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 3, 'source_prefix_sha256': 'bd2cedb17a6c57e523ed487ce7bd0c668ee29a4f7b9869366f74f1093341aec5', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 2, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': 'd339498b96bc6c3d84221bbd18c8106237ecfa6a20ef0a7d4f86aac88cd9b16b'}}], 'error': None}
+
+======================================================================
+FAIL: test_message_case_and_compatibility_characters_remain_distinct (test_engine.WorkflowConformanceTests.test_message_case_and_compatibility_characters_remain_distinct) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 120, in test_message_case_and_compatibility_characters_remain_distinct
+    self.assert_success(self.run_mode(records, mode), groups, counters(accepted=4))
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 34, in assert_success
+    self.assertEqual(result['counters'], counts)
+AssertionError: {'late': 4, 'duplicate': 0, 'filtered': 0, 'accepted': 0} != {'late': 0, 'duplicate': 0, 'filtered': 0, 'accepted': 4}
+- {'accepted': 0, 'duplicate': 0, 'filtered': 0, 'late': 4}
+?              ^                                         ^
+
++ {'accepted': 4, 'duplicate': 0, 'filtered': 0, 'late': 0}
+?              ^                                         ^
+
+
+======================================================================
+FAIL: test_nfkc_casefold_and_explicit_whitespace_normalization (test_engine.WorkflowConformanceTests.test_nfkc_casefold_and_explicit_whitespace_normalization) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 100, in test_nfkc_casefold_and_explicit_whitespace_normalization
+    self.assert_success(self.run_mode(records, mode),
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 34, in assert_success
+    self.assertEqual(result['counters'], counts)
+AssertionError: {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 1} != {'late': 0, 'duplicate': 0, 'filtered': 0, 'accepted': 2}
+- {'accepted': 1, 'duplicate': 0, 'filtered': 0, 'late': 1}
+?              ^                                         ^
+
++ {'accepted': 2, 'duplicate': 0, 'filtered': 0, 'late': 0}
+?              ^                                         ^
+
+
+======================================================================
+FAIL: test_observed_cancellation_drains_inflight_calls_without_publishing (test_engine.WorkflowConformanceTests.test_observed_cancellation_drains_inflight_calls_without_publishing) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 432, in test_observed_cancellation_drains_inflight_calls_without_publishing
+    self.assertEqual(result['status'], 'CANCELLED')
+AssertionError: 'COMPLETE' != 'CANCELLED'
+- COMPLETE
++ CANCELLED
+
+
+======================================================================
+FAIL: test_policy_version_change_during_work_is_rejected_before_commit (test_engine.WorkflowConformanceTests.test_policy_version_change_during_work_is_rejected_before_commit) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 379, in test_policy_version_change_during_work_is_rejected_before_commit
+    self.assert_error(result, 'POLICY_VERSION')
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 46, in assert_error
+    self.assertEqual(result['status'], 'ERROR', result)
+AssertionError: 'COMPLETE' != 'ERROR'
+- COMPLETE
++ ERROR
+ : {'status': 'COMPLETE', 'reports': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 2, 'source_prefix_sha256': '178b7af55871a4dd84a2b7289c292168c850da46393fc12086836ddd44f80346', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': 'df051676a886794d74a5514ecb906eec279f7a8ccf23f1aa0d753e3ef21af741'}, 'trace': [{'source_id': 'default', 'epoch_offset': 2, 'reports': [], 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 2, 'source_prefix_sha256': '178b7af55871a4dd84a2b7289c292168c850da46393fc12086836ddd44f80346', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': 'df051676a886794d74a5514ecb906eec279f7a8ccf23f1aa0d753e3ef21af741'}}], 'error': None}
+
+======================================================================
+FAIL: test_private_policy_output_types_and_reason_allowlist (test_engine.WorkflowConformanceTests.test_private_policy_output_types_and_reason_allowlist) (mode='python', case=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 301, in test_private_policy_output_types_and_reason_allowlist
+    self.assert_error(result, 'POLICY')
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 46, in assert_error
+    self.assertEqual(result['status'], 'ERROR', result)
+AssertionError: 'COMPLETE' != 'ERROR'
+- COMPLETE
++ ERROR
+ : {'status': 'COMPLETE', 'reports': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 2, 'source_prefix_sha256': '178b7af55871a4dd84a2b7289c292168c850da46393fc12086836ddd44f80346', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': 'df051676a886794d74a5514ecb906eec279f7a8ccf23f1aa0d753e3ef21af741'}, 'trace': [{'source_id': 'default', 'epoch_offset': 2, 'reports': [], 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 2, 'source_prefix_sha256': '178b7af55871a4dd84a2b7289c292168c850da46393fc12086836ddd44f80346', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': 'df051676a886794d74a5514ecb906eec279f7a8ccf23f1aa0d753e3ef21af741'}}], 'error': None}
+
+======================================================================
+FAIL: test_private_policy_output_types_and_reason_allowlist (test_engine.WorkflowConformanceTests.test_private_policy_output_types_and_reason_allowlist) (mode='python', case=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 301, in test_private_policy_output_types_and_reason_allowlist
+    self.assert_error(result, 'POLICY')
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 46, in assert_error
+    self.assertEqual(result['status'], 'ERROR', result)
+AssertionError: 'COMPLETE' != 'ERROR'
+- COMPLETE
++ ERROR
+ : {'status': 'COMPLETE', 'reports': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 2, 'source_prefix_sha256': '178b7af55871a4dd84a2b7289c292168c850da46393fc12086836ddd44f80346', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': 'df051676a886794d74a5514ecb906eec279f7a8ccf23f1aa0d753e3ef21af741'}, 'trace': [{'source_id': 'default', 'epoch_offset': 2, 'reports': [], 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 2, 'source_prefix_sha256': '178b7af55871a4dd84a2b7289c292168c850da46393fc12086836ddd44f80346', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': 'df051676a886794d74a5514ecb906eec279f7a8ccf23f1aa0d753e3ef21af741'}}], 'error': None}
+
+======================================================================
+FAIL: test_private_policy_output_types_and_reason_allowlist (test_engine.WorkflowConformanceTests.test_private_policy_output_types_and_reason_allowlist) (mode='python', case=2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 301, in test_private_policy_output_types_and_reason_allowlist
+    self.assert_error(result, 'POLICY')
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 46, in assert_error
+    self.assertEqual(result['status'], 'ERROR', result)
+AssertionError: 'COMPLETE' != 'ERROR'
+- COMPLETE
++ ERROR
+ : {'status': 'COMPLETE', 'reports': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 2, 'source_prefix_sha256': '178b7af55871a4dd84a2b7289c292168c850da46393fc12086836ddd44f80346', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': 'df051676a886794d74a5514ecb906eec279f7a8ccf23f1aa0d753e3ef21af741'}, 'trace': [{'source_id': 'default', 'epoch_offset': 2, 'reports': [], 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 2, 'source_prefix_sha256': '178b7af55871a4dd84a2b7289c292168c850da46393fc12086836ddd44f80346', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': 'df051676a886794d74a5514ecb906eec279f7a8ccf23f1aa0d753e3ef21af741'}}], 'error': None}
+
+======================================================================
+FAIL: test_private_policy_output_types_and_reason_allowlist (test_engine.WorkflowConformanceTests.test_private_policy_output_types_and_reason_allowlist) (mode='python', case=3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 301, in test_private_policy_output_types_and_reason_allowlist
+    self.assert_error(result, 'POLICY')
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 46, in assert_error
+    self.assertEqual(result['status'], 'ERROR', result)
+AssertionError: 'COMPLETE' != 'ERROR'
+- COMPLETE
++ ERROR
+ : {'status': 'COMPLETE', 'reports': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 2, 'source_prefix_sha256': '178b7af55871a4dd84a2b7289c292168c850da46393fc12086836ddd44f80346', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': 'df051676a886794d74a5514ecb906eec279f7a8ccf23f1aa0d753e3ef21af741'}, 'trace': [{'source_id': 'default', 'epoch_offset': 2, 'reports': [], 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 2, 'source_prefix_sha256': '178b7af55871a4dd84a2b7289c292168c850da46393fc12086836ddd44f80346', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': 'df051676a886794d74a5514ecb906eec279f7a8ccf23f1aa0d753e3ef21af741'}}], 'error': None}
+
+======================================================================
+FAIL: test_private_policy_output_types_and_reason_allowlist (test_engine.WorkflowConformanceTests.test_private_policy_output_types_and_reason_allowlist) (mode='python', case=4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 301, in test_private_policy_output_types_and_reason_allowlist
+    self.assert_error(result, 'POLICY')
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 46, in assert_error
+    self.assertEqual(result['status'], 'ERROR', result)
+AssertionError: 'COMPLETE' != 'ERROR'
+- COMPLETE
++ ERROR
+ : {'status': 'COMPLETE', 'reports': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 2, 'source_prefix_sha256': '178b7af55871a4dd84a2b7289c292168c850da46393fc12086836ddd44f80346', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': 'df051676a886794d74a5514ecb906eec279f7a8ccf23f1aa0d753e3ef21af741'}, 'trace': [{'source_id': 'default', 'epoch_offset': 2, 'reports': [], 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 2, 'source_prefix_sha256': '178b7af55871a4dd84a2b7289c292168c850da46393fc12086836ddd44f80346', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': 'df051676a886794d74a5514ecb906eec279f7a8ccf23f1aa0d753e3ef21af741'}}], 'error': None}
+
+======================================================================
+FAIL: test_private_policy_output_types_and_reason_allowlist (test_engine.WorkflowConformanceTests.test_private_policy_output_types_and_reason_allowlist) (mode='python', case=5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 301, in test_private_policy_output_types_and_reason_allowlist
+    self.assert_error(result, 'POLICY')
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 46, in assert_error
+    self.assertEqual(result['status'], 'ERROR', result)
+AssertionError: 'COMPLETE' != 'ERROR'
+- COMPLETE
++ ERROR
+ : {'status': 'COMPLETE', 'reports': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 2, 'source_prefix_sha256': '178b7af55871a4dd84a2b7289c292168c850da46393fc12086836ddd44f80346', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': 'df051676a886794d74a5514ecb906eec279f7a8ccf23f1aa0d753e3ef21af741'}, 'trace': [{'source_id': 'default', 'epoch_offset': 2, 'reports': [], 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': None, 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 2, 'source_prefix_sha256': '178b7af55871a4dd84a2b7289c292168c850da46393fc12086836ddd44f80346', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': 'df051676a886794d74a5514ecb906eec279f7a8ccf23f1aa0d753e3ef21af741'}}], 'error': None}
+
+======================================================================
+FAIL: test_python_extra_whitespace_controls_bom_and_zero_width_are_not_collapsed (test_engine.WorkflowConformanceTests.test_python_extra_whitespace_controls_bom_and_zero_width_are_not_collapsed) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 112, in test_python_extra_whitespace_controls_bom_and_zero_width_are_not_collapsed
+    self.assert_success(self.run_mode(records, mode), groups, counters(accepted=7))
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 34, in assert_success
+    self.assertEqual(result['counters'], counts)
+AssertionError: {'late': 7, 'duplicate': 0, 'filtered': 0, 'accepted': 0} != {'late': 0, 'duplicate': 0, 'filtered': 0, 'accepted': 7}
+- {'accepted': 0, 'duplicate': 0, 'filtered': 0, 'late': 7}
+?              ^                                         ^
+
++ {'accepted': 7, 'duplicate': 0, 'filtered': 0, 'late': 0}
+?              ^                                         ^
+
+
+======================================================================
+FAIL: test_reverse_completion_still_publishes_creation_order (test_engine.WorkflowConformanceTests.test_reverse_completion_still_publishes_creation_order) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 318, in test_reverse_completion_still_publishes_creation_order
+    self.assert_success(result, [expected_group(0, 0, 1, 1, 1, device='z'),
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 34, in assert_success
+    self.assertEqual(result['counters'], counts)
+AssertionError: {'late': 2, 'duplicate': 0, 'filtered': 0, 'accepted': 0} != {'late': 0, 'duplicate': 0, 'filtered': 0, 'accepted': 2}
+- {'accepted': 0, 'duplicate': 0, 'filtered': 0, 'late': 2}
+?              ^                                         ^
+
++ {'accepted': 2, 'duplicate': 0, 'filtered': 0, 'late': 0}
+?              ^                                         ^
+
+
+======================================================================
+FAIL: test_scheduler_respects_running_and_waiting_limits (test_engine.WorkflowConformanceTests.test_scheduler_respects_running_and_waiting_limits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 342, in test_scheduler_respects_running_and_waiting_limits
+    self.assertEqual(len(result['reports']), 6)
+AssertionError: 0 != 6
+
+======================================================================
+FAIL: test_tenant_and_event_id_are_exact_identifiers (test_engine.WorkflowConformanceTests.test_tenant_and_event_id_are_exact_identifiers) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 90, in test_tenant_and_event_id_are_exact_identifiers
+    self.assert_success(self.run_mode(records, mode), groups, counters(accepted=4))
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 34, in assert_success
+    self.assertEqual(result['counters'], counts)
+AssertionError: {'late': 4, 'duplicate': 0, 'filtered': 0, 'accepted': 0} != {'late': 0, 'duplicate': 0, 'filtered': 0, 'accepted': 4}
+- {'accepted': 0, 'duplicate': 0, 'filtered': 0, 'late': 4}
+?              ^                                         ^
+
++ {'accepted': 4, 'duplicate': 0, 'filtered': 0, 'late': 0}
+?              ^                                         ^
+
+
+======================================================================
+FAIL: test_tenant_scope_and_policy_version_are_pinned (test_engine.WorkflowConformanceTests.test_tenant_scope_and_policy_version_are_pinned) (mode='python')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 363, in test_tenant_scope_and_policy_version_are_pinned
+    self.assert_error(self.run_mode([event(1, 'A', 0, tenant='private'), end(2)], mode,
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_engine.py", line 46, in assert_error
+    self.assertEqual(result['status'], 'ERROR', result)
+AssertionError: 'COMPLETE' != 'ERROR'
+- COMPLETE
++ ERROR
+ : {'status': 'COMPLETE', 'reports': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': ['public'], 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 2, 'source_prefix_sha256': '568def05c117df6d009a2caf46887691ee559bf03246910d50b1f73bb3831a50', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': '862cce1dc086d3871ab50cb49b2cd6582586454cef3aabf3bceaa4f9e4616658'}, 'trace': [{'source_id': 'default', 'epoch_offset': 2, 'reports': [], 'checkpoint': {'version': 0, 'source_id': 'default', 'manifest': {'config': {'window': 600, 'lateness': 120, 'dedupe_horizon': 1200, 'concurrency': 8, 'queue': 32, 'buffered_events': 100000, 'dedupe_entries': 200000, 'open_groups': 100000, 'epoch_reports': 100000, 'minimum': 1}, 'policy_version': 'fixture-v1', 'allowed_tenants': ['public'], 'allowed_reasons': [0, 1, 2, 3], 'unicode': '15.0.0'}, 'cursor': 2, 'source_prefix_sha256': '568def05c117df6d009a2caf46887691ee559bf03246910d50b1f73bb3831a50', 'watermark': 0, 'complete': True, 'seen': [], 'pending': [], 'groups': [], 'counters': {'late': 1, 'duplicate': 0, 'filtered': 0, 'accepted': 0}, 'integrity': '862cce1dc086d3871ab50cb49b2cd6582586454cef3aabf3bceaa4f9e4616658'}}], 'error': None}
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '967902fb470a3077c83683454f4ad941f5cd4307b[46083 chars]None} != {'sta[63 chars]d': '10f60b9e1a20ade79d3d205d952b89df2a0793a53[48201 chars]None}
+Diff is 219853 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': 'b98834d98032a0dd45596a185429ee914290aad3f[57195 chars]None} != {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[59717 chars]None}
+Diff is 276635 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '6395b299853dfb3364ba349d2b33de8fccd5798e8[57399 chars]None} != {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[66377 chars]None}
+Diff is 340248 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': 'b98834d98032a0dd45596a185429ee914290aad3f[70185 chars]None} != {'sta[63 chars]d': '10f60b9e1a20ade79d3d205d952b89df2a0793a53[72331 chars]None}
+Diff is 241430 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=6)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '34f874cc3e73d7f740c1ea23c346e356850350948[44427 chars]None} != {'sta[63 chars]d': '967902fb470a3077c83683454f4ad941f5cd4307b[45286 chars]None}
+Diff is 254528 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=7)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[2763 chars]te': 2, 'duplicate': 23, 'filtered': 8, 'accep[70535 chars]None} != {'sta[2763 chars]te': 0, 'duplicate': 25, 'filtered': 8, 'accep[71616 chars]None}
+Diff is 239467 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=10)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '967902fb470a3077c83683454f4ad941f5cd4307b[75620 chars]None} != {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[77594 chars]None}
+Diff is 338923 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=12)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '263eea84fbc4f2cecee38504babd231fbb59bb5c3[72425 chars]None} != {'sta[63 chars]d': '1b1e3987f272a474b81ffb9b3a74fc1843977853d[73979 chars]None}
+Diff is 320850 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=13)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[80669 chars]None} != {'sta[63 chars]d': '967902fb470a3077c83683454f4ad941f5cd4307b[78836 chars]None}
+Diff is 291477 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=14)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '95a8457614154fb8f11ab392af6ff9e3a8f36870e[67753 chars]None} != {'sta[63 chars]d': '10f60b9e1a20ade79d3d205d952b89df2a0793a53[70680 chars]None}
+Diff is 362154 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=15)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': 'c818fbf792e015f9f06ee3d4b61ea769347ff2287[87473 chars]None} != {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[92431 chars]None}
+Diff is 328203 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=16)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[73196 chars]None} != {'sta[63 chars]d': '10f60b9e1a20ade79d3d205d952b89df2a0793a53[79807 chars]None}
+Diff is 267138 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=17)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '0d620f8f91596c9b4067cb91a57244a81986c557c[43285 chars]None} != {'sta[63 chars]d': '1b1e3987f272a474b81ffb9b3a74fc1843977853d[47634 chars]None}
+Diff is 218416 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=19)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[64 chars]': '10f60b9e1a20ade79d3d205d952b89df2a0793a538[43334 chars]None} != {'sta[64 chars]': '1b1e3987f272a474b81ffb9b3a74fc1843977853dc[43922 chars]None}
+Diff is 145493 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=20)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[1634 chars]nt': 3, 'severity_sum': 6, 'score': 200, 'reas[69982 chars]None} != {'sta[1634 chars]nt': 2, 'severity_sum': 4, 'score': 200, 'reas[69355 chars]None}
+Diff is 240904 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=21)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '8d57d8874e309b13fd04334bc89969dca49efc8a1[65753 chars]None} != {'sta[63 chars]d': '10f60b9e1a20ade79d3d205d952b89df2a0793a53[72145 chars]None}
+Diff is 312683 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=22)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[51123 chars]None} != {'sta[63 chars]d': '8443596f120b0a1356e3803378d4e979168f210a8[53807 chars]None}
+Diff is 237611 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=25)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '34f874cc3e73d7f740c1ea23c346e356850350948[68463 chars]None} != {'sta[63 chars]d': '10f60b9e1a20ade79d3d205d952b89df2a0793a53[72313 chars]None}
+Diff is 326753 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=26)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[620 chars]nt': 5, 'severity_sum': 9, 'score': 180, 'reas[78757 chars]None} != {'sta[620 chars]nt': 4, 'severity_sum': 8, 'score': 200, 'reas[77279 chars]None}
+Diff is 262273 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=27)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '1b1e3987f272a474b81ffb9b3a74fc1843977853d[34895 chars]None} != {'sta[63 chars]d': '34f874cc3e73d7f740c1ea23c346e356850350948[35370 chars]None}
+Diff is 122961 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=28)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '967902fb470a3077c83683454f4ad941f5cd4307b[55364 chars]None} != {'sta[63 chars]d': '8443596f120b0a1356e3803378d4e979168f210a8[57613 chars]None}
+Diff is 200477 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=29)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '1b1e3987f272a474b81ffb9b3a74fc1843977853d[87646 chars]None} != {'sta[63 chars]d': '0d620f8f91596c9b4067cb91a57244a81986c557c[90403 chars]None}
+Diff is 399003 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=31)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': 'b98834d98032a0dd45596a185429ee914290aad3f[54077 chars]None} != {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[55362 chars]None}
+Diff is 272006 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=34)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[2417 chars]te': 1, 'duplicate': 25, 'filtered': 8, 'accep[64489 chars]None} != {'sta[2417 chars]te': 0, 'duplicate': 26, 'filtered': 8, 'accep[64489 chars]None}
+Diff is 215109 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=35)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '967902fb470a3077c83683454f4ad941f5cd4307b[55624 chars]None} != {'sta[63 chars]d': '8443596f120b0a1356e3803378d4e979168f210a8[58503 chars]None}
+Diff is 199366 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=36)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '1b1e3987f272a474b81ffb9b3a74fc1843977853d[65264 chars]None} != {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[66814 chars]None}
+Diff is 254777 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=37)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': 'c818fbf792e015f9f06ee3d4b61ea769347ff2287[73305 chars]None} != {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[73501 chars]None}
+Diff is 297915 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=39)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[585 chars]p': 194, 'first_offset': 1, 'count': 7, 'sever[61779 chars]None} != {'sta[585 chars]p': 166, 'first_offset': 1, 'count': 6, 'sever[61202 chars]None}
+Diff is 203290 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=40)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '95a8457614154fb8f11ab392af6ff9e3a8f36870e[59369 chars]None} != {'sta[63 chars]d': '1b1e3987f272a474b81ffb9b3a74fc1843977853d[61325 chars]None}
+Diff is 229382 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=44)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '8443596f120b0a1356e3803378d4e979168f210a8[60812 chars]None} != {'sta[63 chars]d': 'b98834d98032a0dd45596a185429ee914290aad3f[61512 chars]None}
+Diff is 210625 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=46)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '34f874cc3e73d7f740c1ea23c346e356850350948[63159 chars]None} != {'sta[63 chars]d': '8443596f120b0a1356e3803378d4e979168f210a8[68223 chars]None}
+Diff is 244932 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=47)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '4182c2066037043d3b0611bac33c8dafae06b636b[35811 chars]None} != {'sta[63 chars]d': '10f60b9e1a20ade79d3d205d952b89df2a0793a53[39113 chars]None}
+Diff is 138825 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=48)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[2751 chars]te': 1, 'duplicate': 25, 'filtered': 8, 'accep[90458 chars]None} != {'sta[2751 chars]te': 0, 'duplicate': 25, 'filtered': 9, 'accep[91376 chars]None}
+Diff is 305465 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=51)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '1b1e3987f272a474b81ffb9b3a74fc1843977853d[69078 chars]None} != {'sta[63 chars]d': '8443596f120b0a1356e3803378d4e979168f210a8[72616 chars]None}
+Diff is 239708 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=53)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '0d620f8f91596c9b4067cb91a57244a81986c557c[67453 chars]None} != {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[70386 chars]None}
+Diff is 262751 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=55)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[59136 chars]None} != {'sta[63 chars]d': '10f60b9e1a20ade79d3d205d952b89df2a0793a53[61201 chars]None}
+Diff is 311870 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=56)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': 'da74499009f8bc8e77a4be187ba0e50716aaf9bee[42890 chars]None} != {'sta[63 chars]d': '967902fb470a3077c83683454f4ad941f5cd4307b[43983 chars]None}
+Diff is 144544 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=57)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '10f60b9e1a20ade79d3d205d952b89df2a0793a53[63189 chars]None} != {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[64918 chars]None}
+Diff is 214794 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=58)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '967902fb470a3077c83683454f4ad941f5cd4307b[91797 chars]None} != {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[94900 chars]None}
+Diff is 377901 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=59)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[64 chars]': '1efb2f11242de816986fbffa3b3a9be46796fc0900[72691 chars]None} != {'sta[64 chars]': '10f60b9e1a20ade79d3d205d952b89df2a0793a538[80132 chars]None}
+Diff is 310206 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=60)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[67767 chars]None} != {'sta[63 chars]d': '8443596f120b0a1356e3803378d4e979168f210a8[67973 chars]None}
+Diff is 230328 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=61)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '967902fb470a3077c83683454f4ad941f5cd4307b[79914 chars]None} != {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[85137 chars]None}
+Diff is 345093 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=62)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[2753 chars]te': 1, 'duplicate': 20, 'filtered': 10, 'acce[94524 chars]None} != {'sta[2753 chars]te': 0, 'duplicate': 21, 'filtered': 10, 'acce[95016 chars]None}
+Diff is 314771 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=63)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '8443596f120b0a1356e3803378d4e979168f210a8[66404 chars]None} != {'sta[63 chars]d': '10f60b9e1a20ade79d3d205d952b89df2a0793a53[67918 chars]None}
+Diff is 324167 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=64)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '7593452616ae72259af63f35cd7ea929a23e2bf90[71483 chars]None} != {'sta[63 chars]d': '8443596f120b0a1356e3803378d4e979168f210a8[76218 chars]None}
+Diff is 446302 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=66)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[2757 chars]te': 1, 'duplicate': 20, 'filtered': 6, 'accep[89326 chars]None} != {'sta[2757 chars]te': 0, 'duplicate': 20, 'filtered': 7, 'accep[90244 chars]None}
+Diff is 302477 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=69)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '8443596f120b0a1356e3803378d4e979168f210a8[53603 chars]None} != {'sta[63 chars]d': 'b98834d98032a0dd45596a185429ee914290aad3f[54839 chars]None}
+Diff is 188892 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=71)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '8443596f120b0a1356e3803378d4e979168f210a8[64470 chars]None} != {'sta[63 chars]d': '967902fb470a3077c83683454f4ad941f5cd4307b[66193 chars]None}
+Diff is 230213 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=74)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '10f60b9e1a20ade79d3d205d952b89df2a0793a53[53828 chars]None} != {'sta[63 chars]d': '0d620f8f91596c9b4067cb91a57244a81986c557c[58812 chars]None}
+Diff is 224390 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=75)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': 'a1b0d24d785e0880ab574e1585d62162c1e6441a9[66823 chars]None} != {'sta[63 chars]d': '1b1e3987f272a474b81ffb9b3a74fc1843977853d[69711 chars]None}
+Diff is 347239 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=76)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': 'b98834d98032a0dd45596a185429ee914290aad3f[77032 chars]None} != {'sta[63 chars]d': '8443596f120b0a1356e3803378d4e979168f210a8[77195 chars]None}
+Diff is 333367 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=77)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': 'b98834d98032a0dd45596a185429ee914290aad3f[65772 chars]None} != {'sta[63 chars]d': '967902fb470a3077c83683454f4ad941f5cd4307b[71004 chars]None}
+Diff is 321425 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=78)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[64 chars]': '1834d57d6fefdcd55c6389411e39309d77ce1def8d[71850 chars]None} != {'sta[64 chars]': '1b1e3987f272a474b81ffb9b3a74fc1843977853dc[77491 chars]None}
+Diff is 287791 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_eighty_seeded_streams (test_generated.GeneratedParity.test_eighty_seeded_streams) (seed=79)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\personal\AICC\work\ain-v0-foundation\experiments\ain_v0\tests\test_generated.py", line 34, in test_eighty_seeded_streams
+    self.assertEqual(outputs[0], outputs[1])
+AssertionError: {'sta[63 chars]d': '967902fb470a3077c83683454f4ad941f5cd4307b[68562 chars]None} != {'sta[63 chars]d': '10f60b9e1a20ade79d3d205d952b89df2a0793a53[70869 chars]None}
+Diff is 243694 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 69 tests in 41.647s
+
+FAILED (failures=88, errors=2)
