@@ -1,0 +1,23 @@
+{
+  "mode": "independent accounting",
+  "matches_reference": true,
+  "reference": "results/approved-core-2026-11-06",
+  "excluded_runtime_fields": [
+    "episodes[*].execution_seconds"
+  ],
+  "manifest_normalization": "Source path separators normalized to '/'",
+  "checks": {
+    "totals.json": {
+      "match": true,
+      "first_difference": null,
+      "expected_canonical_sha256": "aa2abf6604467e7c28365eadee47fe9e8d90a1c2d7c563cbc97dd165d61651c6",
+      "actual_canonical_sha256": "aa2abf6604467e7c28365eadee47fe9e8d90a1c2d7c563cbc97dd165d61651c6"
+    },
+    "episodes.json": {
+      "match": true,
+      "first_difference": null,
+      "expected_canonical_sha256": "467047c105ed2d11968e22a68d5156996bf41896cb4b218b658bcb330e23a1b8",
+      "actual_canonical_sha256": "467047c105ed2d11968e22a68d5156996bf41896cb4b218b658bcb330e23a1b8"
+    }
+  }
+}

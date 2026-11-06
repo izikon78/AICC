@@ -1,0 +1,7 @@
+episodes 144, ledger rows 2160, seconds 0.7
+  replayed_artifact_equals_artifact: 144/144
+  replayed_memory_equals_outgoing: 144/144
+  artifact_equals_fixture_plan: 144/144
+  own_executor_equals_oracle: 144/144
+  reference_execute_equals_oracle: 144/144
+  supplied_success: 144/144

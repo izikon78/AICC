@@ -1,0 +1,55 @@
+{
+ "sealed_utc": "2026-11-06T22:36:40Z",
+ "agent": "Claude Opus 5.5 (Anthropic; self-reported)",
+ "git_revision": "2b6541a24ef71dcd4390f526042ebf131501fc51",
+ "implementation": {
+  "counter.py": "f07bc913768c10532a8741e2bcf5c714fdae542f544cf1b2065732d22ed8a8a8"
+ },
+ "inputs": {
+  "trace-inputs.json": "6f54c67509944390c7730438fc2d3058b3cb1aa5a89915674918579e5550b31e",
+  "workloads.py (oracle and reference execute only)": "6382ece9a227fa892bbd7e0a2cd4f7a979b7b2178e9aa1be4ae55e1e1f0ab52e",
+  "REPLICATION_SPEC.md": "44fc55c4d6eeaff94cc29873a4c003fcc5ac07097cad078758ca52cfe2cf7d76"
+ },
+ "tokenizer": {
+  "file": "tokenizer.json",
+  "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+  "pinned_sha256_matches": true,
+  "obtained_from": "npm @lenml/tokenizer-qwen2_5 3.7.2 models/tokenizer.json (Hugging Face unreachable from this sandbox); byte-identical to the pinned Qwen/Qwen2.5-1.5B revision file",
+  "other_pinned_files": "not obtained (config.json, tokenizer_config.json, vocab.json, merges.txt, LICENSE); not needed for add_special_tokens=False encoding with the tokenizers library"
+ },
+ "environment": {
+  "python": "3.12.3",
+  "platform": "Linux-6.18.44-fc-v300-x86_64-with-glibc2.39",
+  "tokenizers": "0.21.4",
+  "transformers": "4.51.3",
+  "numpy": "2.5.4"
+ },
+ "outputs": {
+  "episodes.json": "08aa54adbe1f014da2d8ddbf38ec3bd15c7289e5b7be04e368f92cc004e44e54",
+  "totals.json": "b3243b035ec26e210b7e3a79a853fc5395f4d2d340fb8c64edb1d457f226c70c",
+  "checks.json": "c71f871d8c3c1a8f3dd81ee62e217b8f5f0669d44712d9b60628bced44f26ff7"
+ },
+ "materials_consulted_before_sealing": [
+  "AGENT_START_HERE.md",
+  "Draft 8 PDF pages 1-4 (pdftotext)",
+  "AIN_LANGUAGE_AND_THEORY.md",
+  "REPLICATION_SPEC.md",
+  "trace-inputs.json",
+  "tokenizer-files.sha256.json",
+  "requirements-reproduce.txt",
+  "workloads.py: public names, signatures and docstrings via introspection only; expected() and execute() called; source not read",
+  "file NAMES and SIZES of results/ and validation/ (visible in a git tree listing); none opened"
+ ],
+ "not_consulted_before_sealing": [
+  "accounting.py",
+  "run.py",
+  "report.py",
+  "reproduce.py",
+  "README.md",
+  "ARTICLE_REPRODUCTION_BRIEF.md",
+  "results/*",
+  "validation/*",
+  "test_*.py",
+  "PACKAGE_MANIFEST.json"
+ ]
+}
