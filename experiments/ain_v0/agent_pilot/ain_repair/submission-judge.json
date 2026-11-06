@@ -1,0 +1,10 @@
+{
+  "cell": "ain_repair",
+  "candidate": "candidate.json",
+  "candidate_sha256": "cd2f2595eda8a99031c73bf5d71540234feadcf8015ba6914080642872802ce7",
+  "tests_run": 69,
+  "failures": 0,
+  "errors": 0,
+  "normalization": [],
+  "passed": true
+}

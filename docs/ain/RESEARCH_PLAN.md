@@ -1,6 +1,6 @@
 # AIN research plan
 
-Status: proposed research, 5 November 2026. No AIN compiler, language-trained model, or experiment described below has been implemented or executed by this plan.
+Status update, 5 November 2026: the [first executable development study](../../experiments/ain_v0/FIRST_EXECUTION_REPORT.md) now implements the engineering foundation: Python, typed IR and numeric AIN controls; 69 passing tests; 27 matched processing workers; and six first-submission agent edits. Numeric AIN is a mechanical serialization control in this version and showed no execution saving. The larger version-pinned model comparison, matched adaptation and dedicated-token phases below remain proposed. No language-trained model was built.
 
 **AIN is the working name for AI Native Language.** It is not a claim that the name is unique or that a new language has been validated. AICC remains the AI Computational Commons: the separate proposal for discovering, binding, and reusing governed capabilities.
 
@@ -110,6 +110,11 @@ The near-term hypothesis is unsupported under the tested conditions if AIN fails
 
 ## Next deliverables, in order
 
+Execution record: items 1–4 now have a tested development implementation. Item 5
+has a small public development pilot, not a securely closed final evaluation.
+The [first execution report](../../experiments/ain_v0/FIRST_EXECUTION_REPORT.md)
+records results, failed preflights, measurement limits and the next experiments.
+
 1. Review and freeze the complex task's semantics, trace format, resource limits, and error priority.
 2. Build the readable reference and shared deterministic conformance harness, including cancellation, restart, and invalid-input traces.
 3. Define the smallest typed core needed by the task; implement and cross-check the conventional IR and AIN front ends.
@@ -118,4 +123,4 @@ The near-term hypothesis is unsupported under the tested conditions if AIN fails
 6. Execute Phase A only with an agreed provider/budget setup; publish all attempts and raw accounting.
 7. Decide from those results whether matched adaptation or dedicated tokens justify their additional cost. Register a new protocol before either phase.
 
-Authorship: this plan was prepared by OpenAI Codex under Izik Bachar's research direction. It describes future work, not an independent replication or an executed language experiment.
+Authorship: this plan was prepared by OpenAI Codex under Izik Bachar's research direction. The linked development study is same-session engineering evidence; the broader model experiments remain future work.

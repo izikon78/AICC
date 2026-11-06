@@ -8,13 +8,14 @@ Concept, architecture, and research direction: **Izik Bachar**.
 
 ## Start here
 
+- [First executable AIN study: code, tests, agent edits, charts and results](https://github.com/izikon78/AICC/blob/research/ain-v0-foundation/experiments/ain_v0/FIRST_EXECUTION_REPORT.md)
 - [Latest article and printable review copy](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/article)
 - [AIN research plan and next deliverables](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/ain)
 - [Complex streaming task and illustrative AIN representation](https://github.com/izikon78/AICC/blob/research/ain-language-and-study-results/docs/ain/COMPLEX_TASK.md)
 - [Combined processing-study results](https://github.com/izikon78/AICC/blob/research/ain-language-and-study-results/docs/research/REPLICATION_SYNTHESIS_2026-11-05.md)
 - [Charts, pie charts, CSV data, and source hashes](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/article/figures/draft8)
 
-The research materials are maintained on `research/ain-language-and-study-results`; this README on `main` is the project entry point. Draft studies remain reviewable without treating them as final validation.
+The article and reviewed processing archive are maintained on `research/ain-language-and-study-results`; the first executable AIN study is on `research/ain-v0-foundation`. The project description on `main` is the public entry point. Draft studies remain reviewable without treating them as final validation.
 
 ## What has been tested
 
@@ -28,9 +29,14 @@ These results provide an engineering foundation and a reproducible benchmark. Th
 |---|---|
 | Equivalent event-processing flows and binding prototype | Implemented and measured |
 | Original plus two submitted remeasurements | Records reviewed; raw data and provenance preserved |
-| AIN semantics and complex benchmark | Proposed research specification |
+| AIN v0 semantics and complex benchmark | Implemented engineering prototype; 69 tests, 27 workers and six agent-edit submissions pass |
 | Complete AIN compiler or native-operation model | Not implemented or evaluated |
 | Lifecycle economics and billed AI savings | Not established |
+
+The first AIN run establishes executable/editable feasibility for its tested
+cases. Numeric AIN and readable IR have identical control flow in this version.
+The numeric interpreter was slower than direct Python; neither printed length
+nor a reduction in selected operation calls establishes native-language savings.
 
 ## Next phase
 

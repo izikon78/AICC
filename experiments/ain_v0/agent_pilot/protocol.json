@@ -1,0 +1,85 @@
+{
+  "design": "six fresh-context one-submission development cells; one per representation and task",
+  "tasks": [
+    {
+      "cell": "python_repair",
+      "mode": "python",
+      "task": "repair",
+      "attempt_limit": 1,
+      "initial_sha256": "5c642286467bd71d357429b11163b544b546d7fb5689ef8cf25bab4df796c3df"
+    },
+    {
+      "cell": "ir_repair",
+      "mode": "ir",
+      "task": "repair",
+      "attempt_limit": 1,
+      "initial_sha256": "c9f9654feb8c066ae21f56e4cff0066a5bbb097b3f2d4afa2daed3df17e29625"
+    },
+    {
+      "cell": "ain_repair",
+      "mode": "ain",
+      "task": "repair",
+      "attempt_limit": 1,
+      "initial_sha256": "cfd3b958c9007aaf2ca2b07bff864b31b5b0dcb786eaa94132b218e44db13c18"
+    },
+    {
+      "cell": "python_optimize",
+      "mode": "python",
+      "task": "optimize",
+      "attempt_limit": 1,
+      "initial_sha256": "70be46b101b967c26501a5af133c29799230667b0d1d961bc3a1de0356ea8ffa"
+    },
+    {
+      "cell": "ir_optimize",
+      "mode": "ir",
+      "task": "optimize",
+      "attempt_limit": 1,
+      "initial_sha256": "da57dcf499bd7ec535af624762509c3ec5b1b2f4e448945307048f9c7005e5c7"
+    },
+    {
+      "cell": "ain_optimize",
+      "mode": "ain",
+      "task": "optimize",
+      "attempt_limit": 1,
+      "initial_sha256": "cd2f2595eda8a99031c73bf5d71540234feadcf8015ba6914080642872802ce7"
+    }
+  ],
+  "judge_and_source_sha256": {
+    "ain/__init__.py": "99d434b4651eb33cde4b929e3b077bf78fb1904342c5839a7bb4d0abecc134ad",
+    "ain/engine.py": "9a755cf4faeaddc2e098c33d4de60603e8503f8128759bba1d770987cde40dc8",
+    "ain/language.py": "97ec92ef89f3c4008f9122441261966a80d2d1e44c4bc4e9a47149c39e568d9e",
+    "ain/programs.py": "74165f37817552b37e87e0e193120f434bb0665dfd9d88a87d4be5f0d88ae19e",
+    "ain/reference.py": "589641180e9db8ea0f95252c63bcf599e626e1538a16c6ca779452ef81181fac",
+    "ain/runner.py": "d4240d0974ef94988a3689585a9d2e8d2e52c6950ebcae7963315f7c431bd187",
+    "export_programs.py": "1501d46a268801d39490aa2df4156ebed8a1801af010d31329d6232ddfbabd5d",
+    "pilot_tools.py": "a23a915333e43bcafe28c0136b21da1c80e2fe434c3c89144f47ee4d8985eb9f",
+    "programs/workflow.python.py": "589641180e9db8ea0f95252c63bcf599e626e1538a16c6ca779452ef81181fac",
+    "run_study.py": "7db0d40828ed05baed90361b952e50c09b3175881fbe65bc6c6f8db87dbf324a",
+    "summarize_study.py": "553098f5dbf9b4e74a8bf4189b2b64420cdf9059a3231b205b8d4d665a8b8292",
+    "tests/fixtures.py": "edee5b9cbc69333c8c45ce3c5ad3bcce23c77fecf0d85c0c095e0920fbb3630e",
+    "tests/test_engine.py": "142f93f59269e7cf79bee178cc713bd1d051c2b9bebbe506a02b942e200673cd",
+    "tests/test_generated.py": "a43478516f4c4145147754094adef67ed920650e50f10c89d5b64f31f73c1685",
+    "tests/test_language.py": "3f4d1850a60e3c511fee1dd493a4b1830d8047298930c9225bff4af524bc48c3",
+    "LANGUAGE.md": "79f3e13fc44d39e7dcb4b7ead7fa60bb5088e46e7d74622c3fc4d24c66f36383",
+    "ENGINE.md": "683c88b105657b1ce3ef4e0060f912178ab1142c229e3fa37de9a9b278ad763f",
+    "programs/catalog.json": "602c1b079553ac74c1df9e8e8d01def7249a06924816544cc25e556aca37a998",
+    "../../docs/ain/COMPLEX_TASK.md": "29e3267a1f3fcd757c2412af822f57431b90c9823b2dc65febca06094be54b44"
+  },
+  "model_identity": null,
+  "billed_tokens": null,
+  "dollar_cost": null,
+  "limitations": [
+    "same shared host; source access restriction is cooperative, not isolation",
+    "no provider attestation, model training or custom tokenizer",
+    "one chain per task/form; no inferential success or timing comparison"
+  ],
+  "previous_preflight_protocol_sha256": "832ba5b8b00a71732b91936290d6bc2a689ea523264eac920775dafe00c98bca",
+  "dispatch_order": [
+    "ir_repair",
+    "ain_repair",
+    "python_repair",
+    "ir_optimize",
+    "python_optimize",
+    "ain_optimize"
+  ]
+}

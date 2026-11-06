@@ -1,6 +1,6 @@
 # Proposed AIN task: a transactional streaming workflow
 
-Status: specification and illustrative representation, 5 November 2026. **This workflow has not been implemented or benchmarked.** The numeric sketch below is not a final grammar, a compiler, or evidence of model learning.
+Status update, 5 November 2026: this contract now has an [AIN v0 development implementation](../../experiments/ain_v0/README.md), shared Python/IR controls and local engineering measurements. The original numeric sketch below remains illustrative; the implemented grammar is documented in [LANGUAGE.md](../../experiments/ain_v0/LANGUAGE.md). Neither is evidence of a language-trained model.
 
 The task is intended to test whether an agent can express, change, and optimize substantial computation with a precise machine-oriented representation. It combines event-time ordering, retained state, private policy, bounded asynchronous work, and atomic publication. AICC could supply some capabilities; the identical bodies and contracts must also be available through ordinary libraries.
 
@@ -130,7 +130,7 @@ Use one tenant/key, window 600, lateness 120, minimum severity one, and the limi
 | 9 | ID `A`, timestamp 1,400, severity 2 | Admit as a new occurrence after horizon eviction |
 | 10 | Explicit end marker | Drain and finalize `A`; commit the final checkpoint |
 
-The trace specifies expected behavior by inspection; no program was run to produce it. Separate cases must exercise normalization, exact window boundaries, timestamp limits, checkpoint retry, cancellation, policy failures, and capacity exhaustion.
+The trace was originally specified by inspection. It is now checked against explicit expected outputs and commits in the development suite's `test_documented_ten_record_trace_has_explicit_outputs_and_effects`. Separate cases exercise normalization, exact window boundaries, timestamp limits, checkpoint retry, cancellation, policy failures, and capacity exhaustion. See the [expected cases](../../experiments/ain_v0/EXPECTED_CASES.md) for implemented coverage and its limits.
 
 ## Required task variations and conformance evidence
 
@@ -143,4 +143,4 @@ The trace specifies expected behavior by inspection; no program was run to produ
 - Crash before staging, before atomic commit, and after commit/before acknowledgment; replay must preserve exactly one visible publication per epoch.
 - Ask an agent to optimize, repair, and hand off the implementation while preserving the same effect trace and limits.
 
-The reference, conventional typed IR, symbolic-spelling control, and AIN candidate must use the same generated traces, private-policy fixtures, transaction harness, and resource limits. Differential output equality alone does not test recovery or authority behavior; compare the visible effect/state traces too. Publish test definitions and measured outcomes when an implementation exists. Until then, these are requirements and future tasks, not passed tests.
+The reference, conventional typed IR, symbolic-spelling control, and AIN candidate must use the same generated traces, private-policy fixtures, transaction harness, and resource limits. Differential output equality alone does not test recovery or authority behavior; compare the visible effect/state traces too. The [first development study](../../experiments/ain_v0/README.md) now records test definitions and local outcomes. Those cases are engineering evidence, not a completed final model evaluation.
