@@ -5,10 +5,58 @@ from a fresh checkout. Prior AIN knowledge is unnecessary. It supports an exact
 rerun of the reference implementation and an independent reconstruction of the
 accounting from the published specification and semantic trace inputs.
 
-Begin with [AIN_LANGUAGE_AND_THEORY.md](AIN_LANGUAGE_AND_THEORY.md) for the
-language theory, abstract program structure, function/loop reuse and links to
-the implemented prototype's concrete syntax. Then follow this guide and
-`REPLICATION_SPEC.md` for the current test.
+## Read the article's language theory and syntax first
+
+Begin with Izik Bachar's
+[AICC Article Draft 8 Review PDF](https://github.com/izikon78/AICC/blob/4df5ab0f54b2c2951c21e62bc089707bc495646d/docs/article/AICC_Article_Draft_8_Review.pdf).
+The same PDF is available in this checkout at
+[`docs/article/AICC_Article_Draft_8_Review.pdf`](../../docs/article/AICC_Article_Draft_8_Review.pdf).
+Read PDF pages 1-4 before implementing the replication. Pages 1-2 introduce the
+language theory and capability reuse. Pages 3-4 explain the admission logic and
+its numeric AIN syntax sketch. Page 4 contains the symbolic program and its
+operation/field explanations.
+
+The [Draft 8 Markdown companion](https://github.com/izikon78/AICC/blob/4df5ab0f54b2c2951c21e62bc089707bc495646d/docs/article/AICC_Article_Draft_8.md#admission-order-that-an-optimizer-must-preserve)
+provides selectable source for the same example under the admission-order section.
+Use it alongside the PDF when your tools need text extraction.
+
+### Symbol key from the article's example
+
+| Article notation | Meaning in the admission example |
+|---|---|
+| `@42(e,s,c,h,l) { ... }` | Numeric function identifier and its ordered parameters |
+| `!101(e)` | Invoke the validation operation |
+| `!201(...)`, `!202(...)` | Look up a retained identifier and reserve it under the capacity contract |
+| `!203(...)`, `!204(...)` | Insert the pending event and normalize grouping fields |
+| `?(condition):^[...]` | Conditional exit returning the stated outcome and state |
+| `e[2]`, `s[0]`, `l[0]` | Positional references into the event, state and limits |
+| `^[code,s]` | Return an outcome code together with state |
+
+The example assigns event slots to tenant, identifier, timestamp, severity and
+source offset. The state holds the retained-ID table and pending-event heap.
+The limits supply their capacities. Late, duplicate and filtered outcomes have
+explicit return codes, and the accepted path returns its own outcome.
+
+Preserve the computational order illustrated by the article. Check lateness
+before reserving an identifier. Reserve the first non-late occurrence before
+severity filtering so a later duplicate remains suppressed. Normalize while
+preserving the source offset, then insert an accepted event under its capacity
+and ordering contract. Short references retain these semantic obligations.
+
+### Apply the theory to this replication
+
+Use the article as the primary explanation of AIN's intended language theory and
+symbolic notation. Its example is presented as an illustrative numeric view.
+For this theory test, adopt the user's premise that a fluent optimized language
+and approved core already exist. Recreate the published accounting under that
+premise, including the operands and new information carried by each operation.
+
+Continue with [AIN_LANGUAGE_AND_THEORY.md](AIN_LANGUAGE_AND_THEORY.md) for the
+package's conceptual bridge, then [REPLICATION_SPEC.md](REPLICATION_SPEC.md) for
+the exact interface and counting rules. The implemented prototype's separate
+concrete grammar is in [AIN v0 LANGUAGE.md](../ain_v0/LANGUAGE.md). The package's
+call-stream counter is a measurement model for the stated premise. The article
+supplies the theory and symbolic example that motivate it.
 
 AIN means **AI Native Language**, the working name for Izik Bachar's proposed
 machine-oriented programming representation. The central idea is that agents
@@ -90,7 +138,8 @@ Use the environment's Python executable from the setup commands above.
 ## Independent reconstruction
 
 This mode is intended for an agent's independent article review. Start with this
-file, then read [REPLICATION_SPEC.md](REPLICATION_SPEC.md) and the supplied
+file and its required Draft 8 article pages, then read
+[REPLICATION_SPEC.md](REPLICATION_SPEC.md) and the supplied
 `trace-inputs.json`. Implement the frozen accounting, Python rendering and
 per-request history recurrence in a new directory. Use the published semantic
 inputs and pinned tokenizer. Keep the implementation independent of the
@@ -152,6 +201,9 @@ Recreate the approved-core workflow theory test in this repository for an
 independent article review. Begin with
 experiments/approved_workflow_theory/AGENT_START_HERE.md. Assume I have provided
 no other background about AIN. Read the premises before measuring anything.
+Read the linked Draft 8 article first, especially PDF pages 1-4 and the numeric
+AIN example on page 4. Use that article to understand the intended theory and
+syntax, then use REPLICATION_SPEC.md for this test's exact accounting contract.
 
 Use independent reconstruction mode first. Read REPLICATION_SPEC.md and the
 published semantic trace-inputs.json. Implement your own counter and renderer in

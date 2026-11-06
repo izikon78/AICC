@@ -3,6 +3,13 @@
 Concept and research direction by Izik Bachar. This guide prepares an agent with
 no AIN background to understand the approved-core theory experiment.
 
+The primary article source is
+[Draft 8, PDF pages 1-4](https://github.com/izikon78/AICC/blob/4df5ab0f54b2c2951c21e62bc089707bc495646d/docs/article/AICC_Article_Draft_8_Review.pdf).
+Page 4 shows the numeric admission-program sketch, including a function reference,
+operation calls, conditional exits, indexed fields and return values. The
+[Markdown companion](https://github.com/izikon78/AICC/blob/4df5ab0f54b2c2951c21e62bc089707bc495646d/docs/article/AICC_Article_Draft_8.md#admission-order-that-an-optimizer-must-preserve)
+contains the same syntax example. Read that source before the accounting model.
+
 ## The proposed language
 
 AIN means AI Native Language. The proposal is a machine-oriented executable
