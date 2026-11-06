@@ -1,5 +1,13 @@
 # AIN research plan
 
+**Current priority, 6 November 2026:** test a model that has learned AIN before
+evaluation. Fixed language knowledge belongs in trained parameters/vocabulary;
+it is not a grammar primer supplied on every task. The
+[three current hypotheses](NATIVE_HYPOTHESES.md),
+[primary-source reassessment](../research/NATIVE_AIN_FEASIBILITY_2026-11-05.md)
+and [draft trained-native protocol](TRAINED_NATIVE_PILOT_PROTOCOL.md) govern the
+next experiment. More untrained spelling trials are optional diagnostics.
+
 Status update, 5 November 2026: the [first executable development study](../../experiments/ain_v0/FIRST_EXECUTION_REPORT.md) now implements the engineering foundation: Python, typed IR and numeric AIN controls; 69 passing tests; 27 matched processing workers; and six first-submission agent edits. Numeric AIN is a mechanical serialization control in this version and showed no execution saving. The larger version-pinned model comparison, matched adaptation and dedicated-token phases below remain proposed. No language-trained model was built.
 
 **AIN is the working name for AI Native Language.** It is not a claim that the name is unique or that a new language has been validated. AICC remains the AI Computational Commons: the separate proposal for discovering, binding, and reusing governed capabilities.
@@ -30,7 +38,7 @@ The first deliverable is a small, language-neutral semantic core and a readable 
 
 ## Keep three language experiments separate
 
-### Phase A: existing models and existing tokenizers
+### Diagnostic condition A: existing models and existing tokenizers
 
 Freeze a model version and evaluate four forms without changing its weights or tokenizer:
 
@@ -45,17 +53,36 @@ Python, IR, and AIN must reach the same effectful primitives and pass the same c
 
 Phase A can test usability under an existing tokenizer. It cannot establish the advantage of dedicated opcode tokens or of a model trained to think in the proposed representation.
 
-### Phase B: matched adaptation
+### Primary next condition B: matched native learning or adaptation
 
-Only after Phase A's executable artifacts and evaluation protocol are reviewable, propose adapting matched copies of one base model. Give each representation equivalent training tasks and the same training-compute budget, tuning opportunity, context limits, and tooling. Publish the adaptation data and transformations where permitted.
+The executable engineering foundation now exists. Repair and freeze its judge,
+then test language knowledge learned before inference. A clean mechanism study
+can train small matched models from scratch on equivalent semantic tasks. An
+applied adaptation study can instead use matched copies of one pretrained base,
+with an unadapted control and explicit prior-familiarity limitations. These are
+different conditions and should be labeled separately.
+
+Use equivalent tasks and comparable tuning, context, tools, vocabulary/parameter
+accounting and hardware. Report equal semantic-exposure and equal training-compute
+views where feasible; raw token counts can contain different amounts of program
+information. Fixed grammar/core-language primers are absent at evaluation;
+necessary task-specific metadata remains equal and counted. Publish training data
+and transformations where permitted. See the linked draft protocol for gates,
+stopping rules and unresolved numeric resource caps.
 
 Keep task families, not just event seeds, separate between training, validation, and final evaluation. Select checkpoints and hyperparameters using validation only. Freeze them before opening the final set. Include an unadapted control and an equally adapted conventional-source/IR control.
 
 This phase is a proposal, not permission to incur training or API charges. Actual providers, supported training methods, budgets, and accounting must be agreed before execution.
 
-### Phase C: dedicated tokens or another native model interface
+### Condition C: dedicated tokens or another native model interface
 
-A dedicated operation vocabulary changes more than surface spelling: tokenizer behavior, embeddings, model training, and possibly the interface all change. Treat it as another experiment. Document vocabulary size, parameter changes, initialization, data exposure, training compute, inference compute, and decoding constraints.
+A dedicated operation vocabulary changes tokenizer behavior, embeddings, training
+and possibly the interface. It can be included as a controlled factor in the
+native-learning study rather than postponed behind a large untrained model
+benchmark. Document vocabulary size, parameter changes, initialization, data
+exposure, training/inference compute and decoding constraints. Give readable IR
+an equivalent semantic-token opportunity. Opaque display names alone are a
+renaming control, not an independently different native architecture.
 
 Compare with conventional representations receiving matched adaptation and compute. Report token length within each tokenizer, but do not equate a custom-token reduction with an equal reduction in compute, latency, or provider billing. Include vocabulary construction and training in any lifecycle cost claim. An unavailable model/tokenizer interface is an explicit execution limitation, not an implemented feature.
 
@@ -108,7 +135,7 @@ A positive result requires the preregistered correctness/success gate and improv
 
 The near-term hypothesis is unsupported under the tested conditions if AIN fails conformance or misses the registered improvement rule. A precise null or adverse result can reject that specified claim. It would not prove that every future native representation is useless. Conversely, success on this one workflow cannot establish a universal language advantage.
 
-## Next deliverables, in order
+## Original engineering roadmap and execution record
 
 Execution record: items 1–4 now have a tested development implementation. Item 5
 has a small public development pilot, not a securely closed final evaluation.
@@ -120,7 +147,24 @@ records results, failed preflights, measurement limits and the next experiments.
 3. Define the smallest typed core needed by the task; implement and cross-check the conventional IR and AIN front ends.
 4. Publish equivalent source/IR/AIN examples, catalogs, type errors, and lowering artifacts. Mark any incomplete construct explicitly.
 5. Run the development pilot, inspect measurement overhead, and freeze the evaluation protocol and fresh task commitments.
-6. Execute Phase A only with an agreed provider/budget setup; publish all attempts and raw accounting.
-7. Decide from those results whether matched adaptation or dedicated tokens justify their additional cost. Register a new protocol before either phase.
+6. The earlier roadmap proposed a larger fixed-model Phase A comparison. It is
+   now optional diagnostic work rather than the main test of native learning.
+7. Matched native learning and token/structure ablations are the primary next
+   hypothesis test, with a concrete training interface and resource cap first.
+
+## Current next deliverables
+
+1. Repair the measuring instrument, reconcile semantics and freeze independent
+   correctness/effect judgments. Preserve both original implementations.
+2. Expose enough authorable logic for unseen construction, repair and optimization;
+   compare equal source/IR/AIN capabilities and constrained-decoding opportunities.
+3. Freeze model architecture, vocabulary, data/template splits, training seeds,
+   compute/cash ceilings, correctness tolerance and practical resource margin.
+   The draft protocol is not yet a completed preregistration.
+4. Run matched native learning/adaptation without a fixed-language primer, then
+   evaluate closed task families with complete inference/tool accounting.
+5. Continue only if the declared correctness/resource gate passes. Otherwise
+   publish the bounded negative/inconclusive result and pause scaling. Test AICC
+   lifecycle effects and AI implementation/compiler effects separately later.
 
 Authorship: this plan was prepared by OpenAI Codex under Izik Bachar's research direction. The linked development study is same-session engineering evidence; the broader model experiments remain future work.

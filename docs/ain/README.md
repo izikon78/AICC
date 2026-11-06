@@ -4,13 +4,24 @@
 
 The proposed value is a precise representation that helps agents author, inspect, change, and exchange complex programs while a deterministic runtime enforces their computational semantics. Any improvement in correctness, repair effort, latency, or measured cost must be compared with strong conventional source and structured-program controls.
 
+The main condition is a model that **already knows AIN through training**. The
+fixed language is not retaught in every prompt. The executable prototypes and
+spelling measurements supply controls; they do not test that central condition.
+Read the [three hypotheses](NATIVE_HYPOTHESES.md) and
+[feasibility reassessment](../research/NATIVE_AIN_FEASIBILITY_2026-11-05.md).
+
 ## Next work
 
 1. Read the [research plan](RESEARCH_PLAN.md) and [complex benchmark task](COMPLEX_TASK.md).
 2. Freeze a small typed semantic core and reference interpreter. Specify errors, numeric behavior, resources, effects, cancellation, ordering, and state transitions before choosing a compact spelling.
 3. Produce equivalent conventional-source, structured-IR, and AIN views of the same complex programs, with equal libraries and metadata. Demonstrate conformance before using model performance as evidence.
-4. Run a bounded existing-model pilot on fresh tasks, recording correct completion, edits, failures, time, and available billed usage. Keep this distinct from representation-specific model training.
-5. Only after the pilot informs feasibility, design matched training/adaptation experiments for dedicated operation tokens with declared compute/data budgets and fresh held-out evaluation.
+4. The first executable development study and a small public existing-model edit
+   pilot are complete. Repair the judge gaps and specify the actual native-learning
+   condition using the [draft protocol](TRAINED_NATIVE_PILOT_PROTOCOL.md).
+5. Train matched native/ordinary/IR conditions with declared data/compute budgets,
+   no fixed-language primer at evaluation and closed structural task splits.
+   Additional untrained spelling comparisons are optional controls. Dedicated
+   tokens, representation structure and constrained decoding need separate ablations.
 
 No paid model runs or native-language model training are authorized or executed by this planning package. The earlier [867-parameter network](../../experiments/processing_study/README.md) predicts kernel costs; it is not an AIN model. See the [replication synthesis](../research/REPLICATION_SYNTHESIS_2026-11-05.md) for what the existing experiments do establish.
 

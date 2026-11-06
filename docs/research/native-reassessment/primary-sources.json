@@ -1,0 +1,176 @@
+{
+  "review_completed_utc": "2026-11-06T06:10:26.883554+00:00",
+  "publication_cutoff": "2026-11-05",
+  "scope": "targeted primary-source review; not exhaustive systematic review",
+  "sources": [
+    {
+      "id": "S1",
+      "urls": [
+        "https://arxiv.org/html/2602.09112v1"
+      ],
+      "evidence_row": "S1 \u00b7 [Cadmus, 2026 preprint](https://arxiv.org/html/2602.09112v1) | Learned fixed instruction tokens and executable VM tasks. Its narrow arithmetic comparison and stated training cost are not general AIN performance or a budget quote.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S2",
+      "urls": [
+        "https://arxiv.org/html/2403.03894v3"
+      ],
+      "evidence_row": "S2 \u00b7 [IRCoder, 2024 v3](https://arxiv.org/html/2403.03894v3) | Paired source/LLVM-IR continued pretraining, with source-only/unpaired controls. Improved code capabilities; does not measure cheaper native-IR authoring. IR can be longer than source.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S3",
+      "urls": [
+        "https://arxiv.org/html/2510.10216v2"
+      ],
+      "evidence_row": "S3 \u00b7 [TyFlow, February 2026 v2](https://arxiv.org/html/2510.10216v2) | Learned type/synthesis decisions improve selected code outcomes. Representation, pruning and dynamic context are bundled, so isolate their costs/effects.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S4",
+      "urls": [
+        "https://arxiv.org/html/2506.01084v2"
+      ],
+      "evidence_row": "S4 \u00b7 [zip2zip, NeurIPS 2025 v2](https://arxiv.org/html/2506.01084v2) | Learned LZW hypertokens reduce token counts and sometimes improve hardware throughput. Quality/overhead tradeoffs and inconsistent main/appendix resource figures prevent adopting a headline AIN cost estimate.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S5",
+      "urls": [
+        "https://aclanthology.org/2024.emnlp-main.40/"
+      ],
+      "evidence_row": "S5 \u00b7 [Tokenization Is More Than Compression, EMNLP 2024](https://aclanthology.org/2024.emnlp-main.40/) | 64 models show that minimum-length segmentation is not a sufficient quality objective. General NLP rather than program authoring.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S6",
+      "urls": [
+        "https://arxiv.org/html/2605.01188v2"
+      ],
+      "evidence_row": "S6 \u00b7 [Compute Optimal Tokenization, May 2026 v2 preprint](https://arxiv.org/html/2605.01188v2) | Fixed-compute scaling studies find task/scale-dependent compression tradeoffs. Estimated FLOPs and text tasks are not programming invoices.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S7",
+      "urls": [
+        "https://arxiv.org/abs/2504.09246v2"
+      ],
+      "evidence_row": "S7 \u00b7 [Type-Constrained Code Generation, PLDI 2025](https://arxiv.org/abs/2504.09246v2) | Type constraints improve conventional-language code outcomes. Required strong control; include checker cost.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S8",
+      "urls": [
+        "https://arxiv.org/html/2412.06769v4"
+      ],
+      "evidence_row": "S8 \u00b7 [Coconut, COLM 2025; August 2026 v4](https://arxiv.org/html/2412.06769v4) | Trained latent reasoning has task-dependent accuracy/efficiency. Latent steps are not executable language instructions.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S9",
+      "urls": [
+        "https://arxiv.org/abs/2310.02226v3"
+      ],
+      "evidence_row": "S9 \u00b7 [Pause Tokens, ICLR 2024](https://arxiv.org/abs/2310.02226v3) | Extra trained computation can improve answers. Shorter trajectories can remove useful work.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S10",
+      "urls": [
+        "https://people.csail.mit.edu/asolar/papers/EllisWNSMHCST21.pdf"
+      ],
+      "evidence_row": "S10 \u00b7 [DreamCoder, PLDI 2021](https://people.csail.mit.edu/asolar/papers/EllisWNSMHCST21.pdf) | Joint library and synthesis-policy learning supports reusable abstractions. Specialized synthesis, not AICC lifecycle economics.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S11",
+      "urls": [
+        "https://research.google/pubs/mlir-scaling-compiler-infrastructure-for-domain-specific-computation/",
+        "https://mlir.llvm.org/docs/LangRef/"
+      ],
+      "evidence_row": "S11 \u00b7 [MLIR, CGO 2021](https://research.google/pubs/mlir-scaling-compiler-infrastructure-for-domain-specific-computation/), [official reference](https://mlir.llvm.org/docs/LangRef/) | Machine-oriented dialects, transformations and alternate serializations already exist. They do not establish lower AI authoring cost.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S12",
+      "urls": [
+        "https://openxla.org/xla/architecture"
+      ],
+      "evidence_row": "S12 \u00b7 [OpenXLA architecture, official documentation](https://openxla.org/xla/architecture) | Existing graph optimization, fusion, memory planning and hardware lowering define the systems baseline.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S13",
+      "urls": [
+        "https://arxiv.org/html/2411.02820v4"
+      ],
+      "evidence_row": "S13 \u00b7 [DroidSpeak, July 2025 v4](https://arxiv.org/html/2411.02820v4) | Cross-model KV reuse avoids repeated prefill under compatibility limits. Cache reuse rather than a native code language.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S14",
+      "urls": [
+        "https://arxiv.org/html/2511.20639v3"
+      ],
+      "evidence_row": "S14 \u00b7 [LatentMAS, June 2026 v3 preprint](https://arxiv.org/html/2511.20639v3) | Latent collaboration reports reduced communication/work on its benchmarks. Transfer/architecture assumptions and task scope differ from AIN.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S15",
+      "urls": [
+        "https://arxiv.org/abs/2205.14135"
+      ],
+      "evidence_row": "S15 \u00b7 [FlashAttention, 2022](https://arxiv.org/abs/2205.14135) | IO-aware algorithms reduce memory movement. A concrete systems mechanism rather than a spelling advantage.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S16",
+      "urls": [
+        "https://arxiv.org/html/1706.03762v7"
+      ],
+      "evidence_row": "S16 \u00b7 [Attention Is All You Need, 2017](https://arxiv.org/html/1706.03762v7) | Layered autoregressive computation explains why units/steps and hardware work must be distinguished.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S17",
+      "urls": [
+        "https://arxiv.org/abs/2407.02524"
+      ],
+      "evidence_row": "S17 \u00b7 [Meta LLM Compiler, 2024](https://arxiv.org/abs/2407.02524) | Pretraining on IR/assembly supports compiler tasks. Training scale and its objective differ from a matched native-language cost study.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S18",
+      "urls": [
+        "https://proceedings.mlr.press/v267/jiang25p.html"
+      ],
+      "evidence_row": "S18 \u00b7 [Can LLMs Understand IRs?, ICML 2025](https://proceedings.mlr.press/v267/jiang25p.html) | Existing models struggle with instruction-level/control-flow reasoning. Parsing a representation is insufficient evidence of understanding; not a matched native-training test.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S19",
+      "urls": [
+        "https://arxiv.org/abs/2607.22807v2"
+      ],
+      "evidence_row": "S19 \u00b7 [Tokenmaxxing, October 2026 v2 preprint](https://arxiv.org/abs/2607.22807v2) | Agent trajectories vary in usage, compilation failures and redundant revisions across languages. Motivates whole-trajectory accounting; prior familiarity remains a confound.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S20",
+      "urls": [
+        "https://www.unison-lang.org/docs/the-big-idea/"
+      ],
+      "evidence_row": "S20 \u00b7 [Unison, official design documentation](https://www.unison-lang.org/docs/the-big-idea/) | Content-addressed definitions and names as metadata precede the short-reference proposal.",
+      "paper_experiments_reproduced_here": false
+    },
+    {
+      "id": "S21",
+      "urls": [
+        "https://webassembly.github.io/spec/core/intro/introduction.html"
+      ],
+      "evidence_row": "S21 \u00b7 [WebAssembly core introduction, official specification](https://webassembly.github.io/spec/core/intro/introduction.html) | Compact instruction formats, validation, compilation and text views are established design territory. They do not establish trained-model efficiency.",
+      "paper_experiments_reproduced_here": false
+    }
+  ]
+}

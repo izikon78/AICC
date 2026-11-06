@@ -8,8 +8,11 @@ Concept, architecture, and research direction: **Izik Bachar**.
 
 ## Start here
 
+- [Native AIN feasibility decision and primary-source research](docs/research/NATIVE_AIN_FEASIBILITY_2026-11-05.md)
+- [Article Draft 9: AIN - A Native Language for More Efficient AI](docs/article/AICC_Article_Draft_9.md)
+- [Current native-learning hypotheses and training protocol](docs/ain/NATIVE_HYPOTHESES.md)
 - [First executable AIN study: code, tests, agent edits, charts and results](https://github.com/izikon78/AICC/blob/research/ain-v0-foundation/experiments/ain_v0/FIRST_EXECUTION_REPORT.md)
-- [Latest article and printable review copy](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/article)
+- [Preserved Draft 8 and its Word/PDF review copies](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/article)
 - [AIN research plan and next deliverables](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/ain)
 - [Complex streaming task and illustrative AIN representation](https://github.com/izikon78/AICC/blob/research/ain-language-and-study-results/docs/ain/COMPLEX_TASK.md)
 - [Combined processing-study results](https://github.com/izikon78/AICC/blob/research/ain-language-and-study-results/docs/research/REPLICATION_SYNTHESIS_2026-11-05.md)
@@ -40,10 +43,15 @@ nor a reduction in selected operation calls establishes native-language savings.
 
 ## Next phase
 
-1. Freeze the complex task's observable semantics and build a readable reference implementation with adversarial state/effect traces.
-2. Implement a small typed semantic core and equivalent conventional-source, structured-IR, and AIN views.
-3. Evaluate current models on fresh build, edit, repair, optimization, and handoff tasks with equal libraries and evidence.
-4. Use those results to decide whether matched model adaptation and dedicated operation tokens justify further experiments.
+1. Repair and freeze the judge, preserving the two existing executable prototypes
+   and all measured results as records of their tested conditions.
+2. Expose sufficient authorable logic and prepare equivalent semantic data for
+   source, readable IR, spelling controls and any distinct AIN structure.
+3. Freeze a bounded actual training setup. The main condition is a model that
+   already knows its language before evaluation, with no fixed-language primer.
+4. Compare matched native learning/adaptation on closed programming tasks, with
+   actual inference/tool resources per correct chain and a declared stop rule.
+   Test AICC lifecycle and AI implementation/compiler effects separately later.
 
 The research question is whether AIN improves correct completed work and maintenance effort, rather than merely shortening printed code. Future results must include failures, repair effort, applicable billing, setup/training costs, and strong conventional controls.
 
