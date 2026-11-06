@@ -1,0 +1,542 @@
+{
+  "id": "d30-repair-ir",
+  "mode": "ir",
+  "stage": "repair",
+  "delta": 30,
+  "preparation_passed": true,
+  "fluency_passed": true,
+  "preparation_call": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 6.764734800031874,
+        "exit_code": 0,
+        "timed_out": false,
+        "usage": {
+          "input_tokens": 22186,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 132,
+          "reasoning_output_tokens": 75
+        },
+        "response_text": "{\"fluency\":{\"categories\":[\"filtered\",\"duplicate\",\"late\"],\"anchored_group_counts\":[1,1],\"sum_0_to_4\":10,\"finalized_order_offsets\":[5,7],\"syntax_value\":14}}",
+        "substantive_response": true,
+        "tool_violations": [],
+        "invalid_jsonl_lines": 0,
+        "turn_completed": true,
+        "error_types": [],
+        "stderr_bytes": 158,
+        "stderr_sha256": "281ef2a952a8acb6ad70b436c6e7772cf9d7c5ec29fd284dfb0c1246ded5d75b"
+      }
+    ]
+  },
+  "task_call": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "elapsed_seconds": 54.29180649999762,
+        "exit_code": 0,
+        "timed_out": false,
+        "usage": {
+          "input_tokens": 24185,
+          "cached_input_tokens": 12544,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2504,
+          "reasoning_output_tokens": 919
+        },
+        "response_text": "{\"fluency\":{\"categories\":[\"filtered\",\"duplicate\",\"late\"],\"anchored_group_counts\":[1,1],\"sum_0_to_4\":10,\"finalized_order_offsets\":[5,7],\"syntax_value\":14},\"program\":\"{\\\"version\\\":0,\\\"registers\\\":{\\\"host\\\":\\\"host\\\",\\\"state\\\":\\\"state\\\",\\\"record\\\":\\\"record\\\",\\\"kind\\\":\\\"int\\\",\\\"zero\\\":\\\"int\\\",\\\"one\\\":\\\"int\\\",\\\"two\\\":\\\"int\\\",\\\"three\\\":\\\"int\\\",\\\"thirty\\\":\\\"int\\\",\\\"has_record\\\":\\\"bool\\\",\\\"is_event\\\":\\\"bool\\\",\\\"event_time\\\":\\\"int\\\",\\\"current_frontier\\\":\\\"int\\\",\\\"age\\\":\\\"int\\\",\\\"is_near\\\":\\\"bool\\\",\\\"can_raise\\\":\\\"bool\\\",\\\"is_late\\\":\\\"bool\\\",\\\"is_duplicate\\\":\\\"bool\\\",\\\"event_severity\\\":\\\"int\\\",\\\"threshold\\\":\\\"int\\\",\\\"is_filtered\\\":\\\"bool\\\",\\\"normalized\\\":\\\"record\\\",\\\"has_pending\\\":\\\"bool\\\",\\\"pending\\\":\\\"record\\\",\\\"groups\\\":\\\"groups\\\",\\\"reports\\\":\\\"reports\\\",\\\"out\\\":\\\"result\\\"},\\\"parameters\\\":[\\\"host\\\"],\\\"return_type\\\":\\\"result\\\",\\\"entry\\\":\\\"start\\\",\\\"blocks\\\":[{\\\"label\\\":\\\"start\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"const\\\",\\\"dest\\\":\\\"zero\\\",\\\"value\\\":0},{\\\"op\\\":\\\"const\\\",\\\"dest\\\":\\\"one\\\",\\\"value\\\":1},{\\\"op\\\":\\\"const\\\",\\\"dest\\\":\\\"two\\\",\\\"value\\\":2},{\\\"op\\\":\\\"const\\\",\\\"dest\\\":\\\"three\\\",\\\"value\\\":3},{\\\"op\\\":\\\"const\\\",\\\"dest\\\":\\\"thirty\\\",\\\"value\\\":30},{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"restore\\\",\\\"args\\\":[\\\"host\\\"],\\\"dest\\\":\\\"state\\\"}],\\\"terminator\\\":{\\\"op\\\":\\\"jump\\\",\\\"target\\\":\\\"source_test\\\"}},{\\\"label\\\":\\\"source_test\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"has_next\\\",\\\"args\\\":[\\\"host\\\"],\\\"dest\\\":\\\"has_record\\\"}],\\\"terminator\\\":{\\\"op\\\":\\\"branch\\\",\\\"cond\\\":\\\"has_record\\\",\\\"then\\\":\\\"read_record\\\",\\\"else\\\":\\\"done\\\"}},{\\\"label\\\":\\\"read_record\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"check_cancel\\\",\\\"args\\\":[\\\"host\\\"]},{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"next_record\\\",\\\"args\\\":[\\\"host\\\"],\\\"dest\\\":\\\"record\\\"},{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"validate_record\\\",\\\"args\\\":[\\\"host\\\",\\\"state\\\",\\\"record\\\"]},{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"record_kind\\\",\\\"args\\\":[\\\"record\\\"],\\\"dest\\\":\\\"kind\\\"},{\\\"op\\\":\\\"eq\\\",\\\"dest\\\":\\\"is_event\\\",\\\"left\\\":\\\"kind\\\",\\\"right\\\":\\\"zero\\\"}],\\\"terminator\\\":{\\\"op\\\":\\\"branch\\\",\\\"cond\\\":\\\"is_event\\\",\\\"then\\\":\\\"late_test\\\",\\\"else\\\":\\\"advance_epoch\\\"}},{\\\"label\\\":\\\"late_test\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"timestamp\\\",\\\"args\\\":[\\\"record\\\"],\\\"dest\\\":\\\"event_time\\\"},{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"frontier\\\",\\\"args\\\":[\\\"state\\\"],\\\"dest\\\":\\\"current_frontier\\\"},{\\\"op\\\":\\\"lt\\\",\\\"dest\\\":\\\"is_late\\\",\\\"left\\\":\\\"event_time\\\",\\\"right\\\":\\\"current_frontier\\\"}],\\\"terminator\\\":{\\\"op\\\":\\\"branch\\\",\\\"cond\\\":\\\"is_late\\\",\\\"then\\\":\\\"count_late\\\",\\\"else\\\":\\\"duplicate_test\\\"}},{\\\"label\\\":\\\"count_late\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"count\\\",\\\"args\\\":[\\\"host\\\",\\\"state\\\",\\\"zero\\\"]}],\\\"terminator\\\":{\\\"op\\\":\\\"jump\\\",\\\"target\\\":\\\"source_test\\\"}},{\\\"label\\\":\\\"duplicate_test\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"seen\\\",\\\"args\\\":[\\\"host\\\",\\\"state\\\",\\\"record\\\"],\\\"dest\\\":\\\"is_duplicate\\\"}],\\\"terminator\\\":{\\\"op\\\":\\\"branch\\\",\\\"cond\\\":\\\"is_duplicate\\\",\\\"then\\\":\\\"count_duplicate\\\",\\\"else\\\":\\\"reserve_and_filter\\\"}},{\\\"label\\\":\\\"count_duplicate\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"count\\\",\\\"args\\\":[\\\"host\\\",\\\"state\\\",\\\"one\\\"]}],\\\"terminator\\\":{\\\"op\\\":\\\"jump\\\",\\\"target\\\":\\\"source_test\\\"}},{\\\"label\\\":\\\"reserve_and_filter\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"reserve\\\",\\\"args\\\":[\\\"host\\\",\\\"state\\\",\\\"record\\\"]},{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"severity\\\",\\\"args\\\":[\\\"record\\\"],\\\"dest\\\":\\\"event_severity\\\"},{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"minimum\\\",\\\"args\\\":[\\\"host\\\"],\\\"dest\\\":\\\"threshold\\\"},{\\\"op\\\":\\\"sub\\\",\\\"dest\\\":\\\"age\\\",\\\"left\\\":\\\"event_time\\\",\\\"right\\\":\\\"current_frontier\\\"},{\\\"op\\\":\\\"lt\\\",\\\"dest\\\":\\\"is_near\\\",\\\"left\\\":\\\"age\\\",\\\"right\\\":\\\"thirty\\\"}],\\\"terminator\\\":{\\\"op\\\":\\\"branch\\\",\\\"cond\\\":\\\"is_near\\\",\\\"then\\\":\\\"adjust_threshold\\\",\\\"else\\\":\\\"filter_event\\\"}},{\\\"label\\\":\\\"adjust_threshold\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"lt\\\",\\\"dest\\\":\\\"can_raise\\\",\\\"left\\\":\\\"threshold\\\",\\\"right\\\":\\\"three\\\"}],\\\"terminator\\\":{\\\"op\\\":\\\"branch\\\",\\\"cond\\\":\\\"can_raise\\\",\\\"then\\\":\\\"raise_threshold\\\",\\\"else\\\":\\\"filter_event\\\"}},{\\\"label\\\":\\\"raise_threshold\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"add\\\",\\\"dest\\\":\\\"threshold\\\",\\\"left\\\":\\\"threshold\\\",\\\"right\\\":\\\"one\\\"}],\\\"terminator\\\":{\\\"op\\\":\\\"jump\\\",\\\"target\\\":\\\"filter_event\\\"}},{\\\"label\\\":\\\"filter_event\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"lt\\\",\\\"dest\\\":\\\"is_filtered\\\",\\\"left\\\":\\\"event_severity\\\",\\\"right\\\":\\\"threshold\\\"}],\\\"terminator\\\":{\\\"op\\\":\\\"branch\\\",\\\"cond\\\":\\\"is_filtered\\\",\\\"then\\\":\\\"count_filtered\\\",\\\"else\\\":\\\"accept_event\\\"}},{\\\"label\\\":\\\"count_filtered\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"count\\\",\\\"args\\\":[\\\"host\\\",\\\"state\\\",\\\"two\\\"]}],\\\"terminator\\\":{\\\"op\\\":\\\"jump\\\",\\\"target\\\":\\\"source_test\\\"}},{\\\"label\\\":\\\"accept_event\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"normalize\\\",\\\"args\\\":[\\\"record\\\"],\\\"dest\\\":\\\"normalized\\\"},{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"buffer\\\",\\\"args\\\":[\\\"host\\\",\\\"state\\\",\\\"normalized\\\"]},{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"count\\\",\\\"args\\\":[\\\"host\\\",\\\"state\\\",\\\"three\\\"]}],\\\"terminator\\\":{\\\"op\\\":\\\"jump\\\",\\\"target\\\":\\\"source_test\\\"}},{\\\"label\\\":\\\"advance_epoch\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"advance\\\",\\\"args\\\":[\\\"host\\\",\\\"state\\\",\\\"record\\\"]}],\\\"terminator\\\":{\\\"op\\\":\\\"jump\\\",\\\"target\\\":\\\"pending_test\\\"}},{\\\"label\\\":\\\"pending_test\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"pending_ready\\\",\\\"args\\\":[\\\"host\\\",\\\"state\\\"],\\\"dest\\\":\\\"has_pending\\\"}],\\\"terminator\\\":{\\\"op\\\":\\\"branch\\\",\\\"cond\\\":\\\"has_pending\\\",\\\"then\\\":\\\"aggregate_next\\\",\\\"else\\\":\\\"finalize_epoch\\\"}},{\\\"label\\\":\\\"aggregate_next\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"pop_pending\\\",\\\"args\\\":[\\\"host\\\",\\\"state\\\"],\\\"dest\\\":\\\"pending\\\"},{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"aggregate\\\",\\\"args\\\":[\\\"host\\\",\\\"state\\\",\\\"pending\\\"]}],\\\"terminator\\\":{\\\"op\\\":\\\"jump\\\",\\\"target\\\":\\\"pending_test\\\"}},{\\\"label\\\":\\\"finalize_epoch\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"ready_groups\\\",\\\"args\\\":[\\\"host\\\",\\\"state\\\"],\\\"dest\\\":\\\"groups\\\"},{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"score\\\",\\\"args\\\":[\\\"host\\\",\\\"state\\\",\\\"groups\\\"],\\\"dest\\\":\\\"reports\\\"},{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"commit\\\",\\\"args\\\":[\\\"host\\\",\\\"state\\\",\\\"reports\\\"]}],\\\"terminator\\\":{\\\"op\\\":\\\"jump\\\",\\\"target\\\":\\\"source_test\\\"}},{\\\"label\\\":\\\"done\\\",\\\"instructions\\\":[{\\\"op\\\":\\\"call\\\",\\\"fn\\\":\\\"result\\\",\\\"args\\\":[\\\"host\\\",\\\"state\\\"],\\\"dest\\\":\\\"out\\\"}],\\\"terminator\\\":{\\\"op\\\":\\\"return\\\",\\\"value\\\":\\\"out\\\"}}]}\",\"explanation\":\"Events exactly at the frontier are admitted, and first admitted IDs are reserved before severity filtering. Each epoch drains all ready buffered events before finalization, scoring, and commit. The threshold is min(3, configured_minimum + 1) when timestamp - current_frontier < 30, and configured_minimum otherwise.\"}",
+        "substantive_response": true,
+        "tool_violations": [],
+        "invalid_jsonl_lines": 0,
+        "turn_completed": true,
+        "error_types": [],
+        "stderr_bytes": 158,
+        "stderr_sha256": "3168948b7d3e5fdf02edd114ba65ca71701d83bc919b7f01a2ca298a43d44c1f"
+      }
+    ]
+  },
+  "judge": {
+    "artifact_sha256": "ced18f53a8e5aabce99d060183768b61738fd9a636888dde97db19874d6322e6",
+    "cases": 55,
+    "delta": 30,
+    "details": [
+      {
+        "actual_sha256": "eba911121f9e5d7ad7a50fe96ca69ac65bd58a9fae164bddba049c930badf98a",
+        "case": "published_ten_record_trace",
+        "expected_sha256": "eba911121f9e5d7ad7a50fe96ca69ac65bd58a9fae164bddba049c930badf98a",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "6e277c8fe0fd5bb041d34d41a403275364237f56e09dc702395e98c326ec6948",
+        "case": "near_frontier_manual_minimum_0",
+        "expected_sha256": "6e277c8fe0fd5bb041d34d41a403275364237f56e09dc702395e98c326ec6948",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "9cf812d9f3e28dec2d758112a4e574dbcc311ab4813d9fe6fd6c6f3fe2d1543a",
+        "case": "near_frontier_manual_minimum_1",
+        "expected_sha256": "9cf812d9f3e28dec2d758112a4e574dbcc311ab4813d9fe6fd6c6f3fe2d1543a",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "4b0fdeb9e95b9ddf7fa89003eab2a07ee8115f204e0fe97555509286aefa4f6e",
+        "case": "near_frontier_manual_minimum_2",
+        "expected_sha256": "4b0fdeb9e95b9ddf7fa89003eab2a07ee8115f204e0fe97555509286aefa4f6e",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "ec7030c9acdc538b68e835fe121d7f4caed3034026064a4297235b11c6054572",
+        "case": "near_frontier_manual_minimum_3",
+        "expected_sha256": "ec7030c9acdc538b68e835fe121d7f4caed3034026064a4297235b11c6054572",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "c23435220c52156866fcc13675e5f485167d0a4ea633dd165fdb2ab1f8947351",
+        "case": "drain_many_tied_and_out_of_order",
+        "expected_sha256": "c23435220c52156866fcc13675e5f485167d0a4ea633dd165fdb2ab1f8947351",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "e59c5a5108e30099cf2912812999e66422f92bd5f6c546a6b5f1d12b56710335",
+        "case": "nfkc_and_message_case",
+        "expected_sha256": "e59c5a5108e30099cf2912812999e66422f92bd5f6c546a6b5f1d12b56710335",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "4bad2f57547f505500d62b113270a9031facaae29c51feaeb5b47b98dcdd3bef",
+        "case": "anchored_window_equality",
+        "expected_sha256": "4bad2f57547f505500d62b113270a9031facaae29c51feaeb5b47b98dcdd3bef",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "c042b408f8b39b67959d43159bd8671599c07a57f8731eb7c54a7044b5088123",
+        "case": "first_id_before_threshold",
+        "expected_sha256": "c042b408f8b39b67959d43159bd8671599c07a57f8731eb7c54a7044b5088123",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "117ff063f1fa926c5204bf4f4cb32a001ec8e0f3b3d08cdab6cb08220073e6f9",
+        "case": "late_id_not_reserved",
+        "expected_sha256": "117ff063f1fa926c5204bf4f4cb32a001ec8e0f3b3d08cdab6cb08220073e6f9",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "07d0f01f3ab8d50bfb46f9fbb6924d62c807ba5f50a1271acdf8ec564b82ecb4",
+        "case": "horizon_readmission",
+        "expected_sha256": "07d0f01f3ab8d50bfb46f9fbb6924d62c807ba5f50a1271acdf8ec564b82ecb4",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "d790a91b9798ddada98692d56732c9e0d7bb229a8cadaab1b37cc33f9589a55f",
+        "case": "frontier_equal_waits",
+        "expected_sha256": "d790a91b9798ddada98692d56732c9e0d7bb229a8cadaab1b37cc33f9589a55f",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "3f84e259cae364d0177f919be6033a2efc3806a0b39d3bf2212a29b0a2b5f1b2",
+        "case": "eof_not_end",
+        "expected_sha256": "3f84e259cae364d0177f919be6033a2efc3806a0b39d3bf2212a29b0a2b5f1b2",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "82f8b5fd5981773ac89f81b51111aaee921eaeb312a77c44d9e995b5c8666b50",
+        "case": "empty_input",
+        "expected_sha256": "82f8b5fd5981773ac89f81b51111aaee921eaeb312a77c44d9e995b5c8666b50",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "baafc9ea339be8b103084a6e7cff034229a47982629a8dc33e36564fd0d7781d",
+        "case": "empty_end",
+        "expected_sha256": "baafc9ea339be8b103084a6e7cff034229a47982629a8dc33e36564fd0d7781d",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "afa5f8f102578509de1e43558dc74e700352ffbb027a61406bfb25639c70dcd0",
+        "case": "after_end_same_invocation",
+        "expected_sha256": "afa5f8f102578509de1e43558dc74e700352ffbb027a61406bfb25639c70dcd0",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "6144ada31617dd90af1870dc1dcacc28284d5334b8d9c56ee5b25e1b5e3596af",
+        "case": "invalid_duplicate_payload",
+        "expected_sha256": "6144ada31617dd90af1870dc1dcacc28284d5334b8d9c56ee5b25e1b5e3596af",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "72b542632c155241075e1baf7fd89be3fb0bc8ee3f44e0031d31ef110be7172d",
+        "case": "invalid_late_payload",
+        "expected_sha256": "72b542632c155241075e1baf7fd89be3fb0bc8ee3f44e0031d31ef110be7172d",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "073c363230333184b5c7508be333496dec0caf5b48291b1172a88b0e85b070c1",
+        "case": "future_invalid_preserves_commit",
+        "expected_sha256": "073c363230333184b5c7508be333496dec0caf5b48291b1172a88b0e85b070c1",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "aa72af71e6d584129b04d5b8845d09b5d33b820932a24b2a8ca3c94a4d3ea5f0",
+        "case": "decreasing_watermark",
+        "expected_sha256": "aa72af71e6d584129b04d5b8845d09b5d33b820932a24b2a8ca3c94a4d3ea5f0",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "39e28ad079915f32c9857527baa2e95a454450362eea4409946e6f24b590c18d",
+        "case": "duplicate_offset",
+        "expected_sha256": "39e28ad079915f32c9857527baa2e95a454450362eea4409946e6f24b590c18d",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "c2996ea083bba2f18367f93195b8e2ab0b9a19e88cc8e1886f32b6c904997f3c",
+        "case": "signed_timestamp_maximum",
+        "expected_sha256": "c2996ea083bba2f18367f93195b8e2ab0b9a19e88cc8e1886f32b6c904997f3c",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "01b04726642ab1054fbf189109176d676ec442ea8bab3b49044eaefd5845e5e0",
+        "case": "capacity_dedupe_entries",
+        "expected_sha256": "01b04726642ab1054fbf189109176d676ec442ea8bab3b49044eaefd5845e5e0",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "a1e809e179c7c6fb18873f019141721b07fb34b9d6c9dba8bf09e7dfc7001c1b",
+        "case": "capacity_buffered_events",
+        "expected_sha256": "a1e809e179c7c6fb18873f019141721b07fb34b9d6c9dba8bf09e7dfc7001c1b",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "adc6340070f45b293bfd9682df5af34d1c5278dd61ff475e330f4eb98a510ebb",
+        "case": "capacity_open_groups",
+        "expected_sha256": "adc6340070f45b293bfd9682df5af34d1c5278dd61ff475e330f4eb98a510ebb",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "96ec667752a000c4761bcf3fbe5452c6422649f127b4eb6668bfcec4cf34b469",
+        "case": "capacity_epoch_reports",
+        "expected_sha256": "96ec667752a000c4761bcf3fbe5452c6422649f127b4eb6668bfcec4cf34b469",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "c083880b01b47288084e14543c546d50149234cbba57e83a5d2486c299cbf2ee",
+        "case": "authority_policy",
+        "expected_sha256": "c083880b01b47288084e14543c546d50149234cbba57e83a5d2486c299cbf2ee",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "8259a5cac280848950302d974593a7e310a26d1f50a55b56ea783e401a757a32",
+        "case": "authority_commit",
+        "expected_sha256": "8259a5cac280848950302d974593a7e310a26d1f50a55b56ea783e401a757a32",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "6e9e8c95c5ec667852e47ed4505c5ec83df696ef39b4482d48b8b3edf38b5171",
+        "case": "cancel_before",
+        "expected_sha256": "6e9e8c95c5ec667852e47ed4505c5ec83df696ef39b4482d48b8b3edf38b5171",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "6e9e8c95c5ec667852e47ed4505c5ec83df696ef39b4482d48b8b3edf38b5171",
+        "case": "cancel_policy",
+        "expected_sha256": "6e9e8c95c5ec667852e47ed4505c5ec83df696ef39b4482d48b8b3edf38b5171",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "4164d241a1ac76b7b73290fa4860bd3a92536d5ddd800be1fcca387a13b8e3d6",
+        "case": "policy_error",
+        "expected_sha256": "4164d241a1ac76b7b73290fa4860bd3a92536d5ddd800be1fcca387a13b8e3d6",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "ff664732a4d84abdc0d652b1673450e3e3bb93ddb147853931733110f68b872b",
+        "case": "invalid_policy",
+        "expected_sha256": "ff664732a4d84abdc0d652b1673450e3e3bb93ddb147853931733110f68b872b",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "e2066acb5fb008737019432f09e79f24987ed9ffc52e58f1beaa2348f856950c",
+        "case": "scope",
+        "expected_sha256": "e2066acb5fb008737019432f09e79f24987ed9ffc52e58f1beaa2348f856950c",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "088abbec57b11b89d80ebdb85efeac0f90e2579ecd66dad1f65e8ebd17c3a930",
+        "case": "generated_0",
+        "expected_sha256": "088abbec57b11b89d80ebdb85efeac0f90e2579ecd66dad1f65e8ebd17c3a930",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "d16ba2a416f6574978de1b331d01f608d5c63e5a9ca8e30eb0509967b3fbfefc",
+        "case": "generated_1",
+        "expected_sha256": "d16ba2a416f6574978de1b331d01f608d5c63e5a9ca8e30eb0509967b3fbfefc",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "aa068a0a505f2c9538f658278b3a6916fd1b0bddb4b53df62461f31cb2acd1eb",
+        "case": "generated_2",
+        "expected_sha256": "aa068a0a505f2c9538f658278b3a6916fd1b0bddb4b53df62461f31cb2acd1eb",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "3ba491ad7b06fcb07f11788ef70c15346d7707ac16be2811115f262ca5b9c3a8",
+        "case": "generated_3",
+        "expected_sha256": "3ba491ad7b06fcb07f11788ef70c15346d7707ac16be2811115f262ca5b9c3a8",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "88b36aeaffe6823eaa8b89b22993a2a41b6b264f0a6540d782872f1cabc2209c",
+        "case": "generated_4",
+        "expected_sha256": "88b36aeaffe6823eaa8b89b22993a2a41b6b264f0a6540d782872f1cabc2209c",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "f5b719dce0af3be8a8fcdf06ba98d3ffc76888c8fe3f7221af6b690e17746783",
+        "case": "generated_5",
+        "expected_sha256": "f5b719dce0af3be8a8fcdf06ba98d3ffc76888c8fe3f7221af6b690e17746783",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "894c2a0bae48e881d737461c9e25c39242149e3ea78404b4c064d18f982243e0",
+        "case": "generated_6",
+        "expected_sha256": "894c2a0bae48e881d737461c9e25c39242149e3ea78404b4c064d18f982243e0",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "8364aaa2b192d69aaa60f7df435b9fcf4d966eeda6f69dfa72ca99383df448e8",
+        "case": "generated_7",
+        "expected_sha256": "8364aaa2b192d69aaa60f7df435b9fcf4d966eeda6f69dfa72ca99383df448e8",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "6d719e87ea728ea0bd02f2c89d0f82ce2fb8379ee42d23c0588b95e494b897a6",
+        "case": "generated_8",
+        "expected_sha256": "6d719e87ea728ea0bd02f2c89d0f82ce2fb8379ee42d23c0588b95e494b897a6",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "3c8fc2be19594e36380671cd9895166d0be911749acb7f400fbd5af2d987d7eb",
+        "case": "generated_9",
+        "expected_sha256": "3c8fc2be19594e36380671cd9895166d0be911749acb7f400fbd5af2d987d7eb",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "4bf2bf841690284e5d6e45ba45605619b7b7982abc15a7e5bb44c27f81378f21",
+        "case": "generated_10",
+        "expected_sha256": "4bf2bf841690284e5d6e45ba45605619b7b7982abc15a7e5bb44c27f81378f21",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "b1b4db25484e5b1881ecd0cd8b4977ab9a88d7227334370c987729c72eed87f3",
+        "case": "generated_11",
+        "expected_sha256": "b1b4db25484e5b1881ecd0cd8b4977ab9a88d7227334370c987729c72eed87f3",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "395f0eb69731aec396ad1ce3275978fc33d723d49236d2ccb34bda7f46771ecd",
+        "case": "generated_12",
+        "expected_sha256": "395f0eb69731aec396ad1ce3275978fc33d723d49236d2ccb34bda7f46771ecd",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "2c67885f17e994767b6d05b3b6c18c484a78a677f4629c8ac1706f27c4709c7f",
+        "case": "generated_13",
+        "expected_sha256": "2c67885f17e994767b6d05b3b6c18c484a78a677f4629c8ac1706f27c4709c7f",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "042173e54792062287e59b081f073306d67bc11848c433ae387108cc711ff8f4",
+        "case": "generated_14",
+        "expected_sha256": "042173e54792062287e59b081f073306d67bc11848c433ae387108cc711ff8f4",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "1c8918b661b0da4549cba7fd04dbc9cd29d289eedf9dfe31ac73ad29da757519",
+        "case": "generated_15",
+        "expected_sha256": "1c8918b661b0da4549cba7fd04dbc9cd29d289eedf9dfe31ac73ad29da757519",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "056e92d614113d4c89863246da2c6e2952b09c173d12feb0a40dc644405b3720",
+        "case": "generated_16",
+        "expected_sha256": "056e92d614113d4c89863246da2c6e2952b09c173d12feb0a40dc644405b3720",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "998d00df3a6d381c4f71a2c554741a2926b54d4b957db22e72ccac2ec6dd8c62",
+        "case": "generated_17",
+        "expected_sha256": "998d00df3a6d381c4f71a2c554741a2926b54d4b957db22e72ccac2ec6dd8c62",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "5238a40babb3777e0bcc5c4a815127efc49c43259a12cf56fdb73f3b30418613",
+        "case": "generated_18",
+        "expected_sha256": "5238a40babb3777e0bcc5c4a815127efc49c43259a12cf56fdb73f3b30418613",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "actual_sha256": "69109705cd1d0605a5c39a356c5a7d29d81975c92eef72a3ac20b6122f5bd604",
+        "case": "generated_19",
+        "expected_sha256": "69109705cd1d0605a5c39a356c5a7d29d81975c92eef72a3ac20b6122f5bd604",
+        "oracle_manual_gate": true,
+        "passed": true,
+        "violations": []
+      },
+      {
+        "case": "recovery_before_commit",
+        "passed": true
+      },
+      {
+        "case": "recovery_after_commit",
+        "passed": true
+      }
+    ],
+    "mode": "ir",
+    "passed": true,
+    "passed_cases": 55,
+    "stage": "repair",
+    "judge_exit_code": 0
+  },
+  "harness_failure": false,
+  "fallback": false,
+  "genuine_handoff": true,
+  "repair_provenance": {
+    "kind": "not_applicable",
+    "corruption": {
+      "fallback": false,
+      "reason": null,
+      "faults": [
+        "frontier_equality_rejected",
+        "filter_before_id_reservation",
+        "single_pending_drain"
+      ],
+      "mutation_count": 3,
+      "syntax_valid": true,
+      "type_valid": true,
+      "input_sha256": "ced18f53a8e5aabce99d060183768b61738fd9a636888dde97db19874d6322e6",
+      "method": "typed_ir_structure",
+      "output_sha256": "e4637db63b97c0a146cee6ae4d7d7ebc0967980a3e117848978a0f8f6ee2b1f1"
+    },
+    "standalone_faults": {
+      "frontier_equality_rejected": {
+        "rejected": true,
+        "passed_cases": 31,
+        "cases": 55
+      },
+      "filter_before_id_reservation": {
+        "rejected": true,
+        "passed_cases": 33,
+        "cases": 55
+      },
+      "single_pending_drain": {
+        "rejected": true,
+        "passed_cases": 25,
+        "cases": 55
+      }
+    }
+  },
+  "artifact_path": "stages/d30-repair-ir/artifact.json",
+  "stage_passed": true
+}

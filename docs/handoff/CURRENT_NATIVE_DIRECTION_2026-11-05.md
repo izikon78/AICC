@@ -1,5 +1,8 @@
 # Current research direction: trained-native AIN
 
+For the latest whole-agent clarification, completed fluency experiment and
+RTX 3080 destination setup, read [the cross-computer continuation handoff](RTX3080_CONTINUATION.md).
+
 This supplements the dated conversation reconstruction without claiming to import
 the complete original chat. The user's current goal is to determine whether AIN
 learned before inference reduces AI usage, and whether AICC adds later value.

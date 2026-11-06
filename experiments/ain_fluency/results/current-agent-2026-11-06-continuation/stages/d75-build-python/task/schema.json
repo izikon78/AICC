@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "fluency",
+    "program",
+    "explanation"
+  ],
+  "properties": {
+    "fluency": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "categories",
+        "anchored_group_counts",
+        "sum_0_to_4",
+        "finalized_order_offsets",
+        "syntax_value"
+      ],
+      "properties": {
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "anchored_group_counts": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "sum_0_to_4": {
+          "type": "integer"
+        },
+        "finalized_order_offsets": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "syntax_value": {
+          "type": "integer"
+        }
+      }
+    },
+    "program": {
+      "type": "string"
+    },
+    "explanation": {
+      "type": "string"
+    }
+  }
+}

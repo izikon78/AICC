@@ -1,0 +1,151 @@
+{
+  "protocol": 1,
+  "plan_commit": "82405a53f1ea92b0992b657323617fecb3b3dfaf",
+  "harness_commit": "3e3a57b267e9bb6b0a936cc021d6e41e58482158",
+  "source_sha256": {
+    "docs/ain/COMPLEX_TASK.md": "29e3267a1f3fcd757c2412af822f57431b90c9823b2dc65febca06094be54b44",
+    "experiments/ain_fluency/judge.py": "4c96db33ab5798d6ad61803b46368cc1a8f6f2138dec0e25a67f35dd6c7d976d",
+    "experiments/ain_fluency/PARTICIPANT_GUIDE.md": "108cc074988f162214d3b6cb2f5769df8909edc85b01277bba325e4488375fa1",
+    "experiments/ain_fluency/PLAN.md": "dd2e19b8c8217baec16111ed9612c62cb7448f5cca5cc3a4ec31e5881369493e",
+    "experiments/ain_fluency/report.py": "13e4194a5541377b59deadbeb607b857ec8adbc244069a2dae8e5a021694d79a",
+    "experiments/ain_fluency/run.py": "d0c26c753b9c13be4449b114b49867649cd58f9fe8de8cf733ffef7faa5729d5",
+    "experiments/ain_fluency/tasks.py": "3a1af7254095fe8e097753c11641746a903564ccd3e213ee1cc97d222ee4ce30",
+    "experiments/ain_fluency/tests/test_judge.py": "cff38fc34b8fe9c2fe52a356557a3daba6e8bbd5728b9e36aa1187ec29c21b1d",
+    "experiments/ain_fluency/tests/test_report.py": "d79a1b32713f990d9d84c3940e4ab1289b81eab94e6ba7297d7ed474123f580c",
+    "experiments/ain_fluency/tests/test_run.py": "d0727dad1ec6d1fcc7e3db04d99a7a7b11a89c416bb240aee2f53a38a3f31c7e",
+    "experiments/ain_fluency/tests/test_tasks.py": "178491a388acf36f7e03e1cf01ff9bfb6f2fe6c99debe09dbf0aa1bd45abe8be",
+    "experiments/ain_v0/ain/__init__.py": "99d434b4651eb33cde4b929e3b077bf78fb1904342c5839a7bb4d0abecc134ad",
+    "experiments/ain_v0/ain/engine.py": "9a755cf4faeaddc2e098c33d4de60603e8503f8128759bba1d770987cde40dc8",
+    "experiments/ain_v0/ain/language.py": "97ec92ef89f3c4008f9122441261966a80d2d1e44c4bc4e9a47149c39e568d9e",
+    "experiments/ain_v0/ain/programs.py": "74165f37817552b37e87e0e193120f434bb0665dfd9d88a87d4be5f0d88ae19e",
+    "experiments/ain_v0/ain/reference.py": "589641180e9db8ea0f95252c63bcf599e626e1538a16c6ca779452ef81181fac",
+    "experiments/ain_v0/ain/runner.py": "d4240d0974ef94988a3689585a9d2e8d2e52c6950ebcae7963315f7c431bd187",
+    "experiments/ain_v0/ENGINE.md": "683c88b105657b1ce3ef4e0060f912178ab1142c229e3fa37de9a9b278ad763f",
+    "experiments/ain_v0/LANGUAGE.md": "79f3e13fc44d39e7dcb4b7ead7fa60bb5088e46e7d74622c3fc4d24c66f36383",
+    "experiments/ain_v0/programs/arithmetic-example.ain.json": "78d6a68764a8793d39f6908eecc52fb15948b61be5e667745d2ebde8c3e74c9e",
+    "experiments/ain_v0/programs/arithmetic-example.ir.json": "13f1cbd55a09c4521fcd5a1e7907f3e90405b8f93e23dc8799c89f841213499d"
+  },
+  "model": "gpt-6.1-sol",
+  "effort": "ultra",
+  "codex_version": "codex-cli 0.166.0-alpha.6",
+  "python": "3.12.14",
+  "seed": 20261106,
+  "timeout_seconds": 300,
+  "started_utc": "2026-11-06T07:25:10.214274+00:00",
+  "order": [
+    {
+      "id": "d30-build-ir",
+      "mode": "ir",
+      "stage": "build",
+      "delta": 30
+    },
+    {
+      "id": "d30-build-python",
+      "mode": "python",
+      "stage": "build",
+      "delta": 30
+    },
+    {
+      "id": "d30-build-ain",
+      "mode": "ain",
+      "stage": "build",
+      "delta": 30
+    },
+    {
+      "id": "d30-change-ir",
+      "mode": "ir",
+      "stage": "change",
+      "delta": 30
+    },
+    {
+      "id": "d30-change-ain",
+      "mode": "ain",
+      "stage": "change",
+      "delta": 30
+    },
+    {
+      "id": "d30-change-python",
+      "mode": "python",
+      "stage": "change",
+      "delta": 30
+    },
+    {
+      "id": "d30-repair-ir",
+      "mode": "ir",
+      "stage": "repair",
+      "delta": 30
+    },
+    {
+      "id": "d30-repair-ain",
+      "mode": "ain",
+      "stage": "repair",
+      "delta": 30
+    },
+    {
+      "id": "d30-repair-python",
+      "mode": "python",
+      "stage": "repair",
+      "delta": 30
+    },
+    {
+      "id": "d75-build-python",
+      "mode": "python",
+      "stage": "build",
+      "delta": 75
+    },
+    {
+      "id": "d75-build-ir",
+      "mode": "ir",
+      "stage": "build",
+      "delta": 75
+    },
+    {
+      "id": "d75-build-ain",
+      "mode": "ain",
+      "stage": "build",
+      "delta": 75
+    },
+    {
+      "id": "d75-change-python",
+      "mode": "python",
+      "stage": "change",
+      "delta": 75
+    },
+    {
+      "id": "d75-change-ain",
+      "mode": "ain",
+      "stage": "change",
+      "delta": 75
+    },
+    {
+      "id": "d75-change-ir",
+      "mode": "ir",
+      "stage": "change",
+      "delta": 75
+    },
+    {
+      "id": "d75-repair-ir",
+      "mode": "ir",
+      "stage": "repair",
+      "delta": 75
+    },
+    {
+      "id": "d75-repair-python",
+      "mode": "python",
+      "stage": "repair",
+      "delta": 75
+    },
+    {
+      "id": "d75-repair-ain",
+      "mode": "ain",
+      "stage": "repair",
+      "delta": 75
+    }
+  ],
+  "billing_dollars": null,
+  "preparation": "Separate graded call, full prompt/response replayed in task context.",
+  "scope": "In-context simulation; not trained-native weights or tokenizer changes.",
+  "status": "incomplete_service_failure",
+  "completed_stages": 8,
+  "stopped_at": "d30-repair-ain"
+}

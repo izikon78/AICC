@@ -1,0 +1,369 @@
+This is a controlled experiment. Do not use tools, browse, read files or run commands. Return only the requested JSON. The preparation transcript below is replayed from a separate turn; it is context, not learned model weights.
+
+<preparation_prompt>
+You are a participant in a frozen representation study. This is the preparation and comprehension step, before a separate scored coding submission. You are not claimed to have been trained in this language. Study the supplied public semantics and syntax. Use NO tools, terminal, browser, repository access or external information. All necessary material is supplied here. Do not produce a stream implementation.
+Representation: ir; upcoming stage: change; near-frontier change delta: 30.
+PUBLIC STREAM CONTRACT
+## Inputs and fixed example configuration
+
+A source is a replayable, single-consumer log with stable record offsets. A record is an event, a watermark, or an explicit end marker. A crash is not an end marker. Only one writer may advance a given source's committed checkpoint; a fencing token rejects stale writers.
+
+| Parameter | Example value | Meaning |
+|---|---:|---|
+| `window` | 600 | Anchored grouping width, in integer logical ticks |
+| `lateness` | 120 | Frontier lags the latest watermark by this many ticks |
+| `dedupe_horizon` | 1,200 | Event-time retention after the first admitted occurrence |
+| `concurrency` | 8 | Maximum running private-policy calls |
+| `queue` | 32 | Maximum waiting private-policy calls, excluding running calls |
+| `buffered_events` | 100,000 | Maximum admitted events awaiting event-time processing |
+| `dedupe_entries` | 200,000 | Maximum retained event IDs |
+| `open_groups` | 100,000 | Maximum unfinished groups |
+| `epoch_reports` | 100,000 | Maximum finalized reports staged for one transaction |
+
+All parameters are positive integers except `lateness`, which may be zero. Booleans are not integers for this contract. The horizon must be at least the window width. Limits are part of the task, not parameters an optimizer may silently raise.
+
+Every event has exactly seven fields: strings `tenant`, `event_id`, `device`, `kind`, and `message`, plus integer `timestamp` and `severity`. Timestamps and stable record offsets are between zero and signed 64-bit maximum; severity is 0 through 3. Tenant and event ID are nonempty and at most 128 Unicode scalar values; tags are at most 256 and message at most 4,096. Reject unpaired surrogates. Validate every record before deciding whether it is late, duplicate, or below a severity threshold. Use plain decoded values, not objects with user-defined accessors.
+
+The task receives a tenant-scoped, versioned private scoring function and a publication sink. The agent receives their interfaces and permitted test fixtures, not production private-rule source. A synthetic fixture is not evidence that the host protects secrets from adversarial code.
+
+## Observable stream semantics
+
+1. **Admission and offsets.** Input offsets strictly increase. Validate the complete record at its source offset. A valid watermark is nondecreasing; a decreasing watermark is an error. Start with watermark zero. For a watermark `W`, define frontier `C = max(0, W - lateness)`.
+2. **Late records.** An event arriving with `timestamp < C` is counted as late and discarded. Equality is admitted. A late event does not reserve an ID. Timestamps need not be in order among admitted events.
+3. **Finite dedupe.** Among currently retained IDs, the first admitted input occurrence of `(tenant, event_id)` wins, regardless of a later duplicate's timestamp, content, or severity. Reserve an ID before severity filtering. A low-severity first occurrence can therefore suppress a later high-severity duplicate. Retain it until a watermark advances `C >= first_timestamp + dedupe_horizon`; then evict it. A new admitted occurrence after eviction is new work. This is deliberately not global deduplication.
+4. **Normalization and filtering.** Normalize device and kind with Unicode NFKC, case folding, then whitespace collapse. Collapse message whitespace while preserving case. Collapse replaces each maximal whitespace run with U+0020 and trims both ends; the whitespace set is U+0009–000D, U+0020, U+0085, U+00A0, U+1680, U+2000–200A, U+2028, U+2029, U+202F, U+205F, and U+3000. Pin Unicode 15.0.0 for normalization/case folding in the initial condition; another version is a separate dependency condition. The example minimum severity is one; a configurable minimum must be an integer from zero through three, excluding booleans. Tenant and event ID are exact identifiers and are never case folded.
+5. **Event-time processing.** Buffer surviving admitted events. At each watermark, consume all buffered events with `timestamp < C`, in ascending `(timestamp, source_offset)` order. Rows exactly at the frontier wait. No source record after that watermark is consumed until its epoch has either committed or failed.
+6. **Anchored groups.** Group by `(tenant, normalized_device, normalized_kind, normalized_message)`. For each key, an event joins its newest group exactly when `event.timestamp - group.first < window`; otherwise open a new group. Track first/last timestamp, first offset, count, and severity sum. The window does not slide with the last event.
+7. **Finalization.** A group is complete when `group.first + window <= C`. Sort all groups finalized in an epoch by `(first_timestamp, first_offset)`. Exact arithmetic is used for frontier/window/horizon comparisons; intermediate additions cannot wrap. Count and severity sum must fit a signed 64-bit result; detect overflow and fail the epoch, without wrapping or publishing partial reports.
+8. **End marker.** A valid explicit end marker drains all remaining buffered events and finalizes all groups. Treat it as a logical positive-infinity frontier, not a maximum timestamp that could lose boundary events. Publish the final checkpoint and mark the source complete. A new event after that checkpoint is an error.
+
+Late, duplicate, filtered, and accepted counters belong to the epoch checkpoint. Define each raw event's category in that order; a duplicate is not counted again as filtered. Normalization and exact dedupe must preserve the specified result even if caching or partitioning changes the execution flow.
+
+## Private work, concurrency, and failure
+
+Invoke the pinned private-policy version once for each finalized group. For a group and version, the policy is deterministic and free of external side effects. It returns an integer score from 0 through 1,000 and an allowlisted numeric reason code, or a declared error. Output reports contain the group fields, score, reason code, policy version, and a stable group identity derived from source identity and first offset. Private intermediate data are excluded from logs and reports.
+
+At most eight calls run and at most 32 wait in the example configuration. Apply backpressure before reading more source input; do not discard or reorder work to satisfy those limits. Completion order is arbitrary. Publication order must still follow the finalized-group order. Limits also apply when an operator is fused or implemented in another language.
+
+Complete and inspect the epoch's policy outcomes before publication. If calls fail, report the failed group with the lowest finalized-group index, irrespective of completion order. An implementation may continue the remaining epoch calls to make this result deterministic. No report from that epoch becomes visible.
+
+Check host authority immediately before each policy invocation and before transaction commit. AICC binding, if used, must satisfy the same rule. Batching calls is not equivalent if it removes required checks. This is a cooperative in-process contract, not preemption or a production security boundary.
+
+Cancellation is a caller-level token. Check it before admission of the next source record, before starting each policy call, and immediately before commit. Once observed, start no new policy calls, request cooperative cancellation, drain running calls, discard that epoch's uncommitted state and reports, and return `CANCELLED`. A running policy call need not stop in the middle of an instruction. Completed earlier epochs remain committed. No real-time cancellation bound is claimed. A cancellation observed during an epoch takes precedence over its policy-error result.
+
+## Atomic publication and recovery
+
+At a watermark, stage one transaction containing the ordered reports, counters, source cursor, watermark, retained dedupe entries, buffered events, and unfinished groups. The policy/version manifest and configuration are part of the checkpoint identity. Do not commit while policy work remains outstanding.
+
+The sink must atomically publish the reports and the corresponding checkpoint under the writer's fencing token. Its epoch identity is `(source_id, watermark_record_offset)`; the explicit end marker also has its own stable offset. Repeating the same epoch with the same canonical transaction payload returns its existing receipt without appending reports. Reusing that identity with a different payload is an error. Concurrent stale writers cannot commit over a newer cursor.
+
+Before commit failure, visible reports and checkpoint remain unchanged. After a successful commit, restart resumes after that cursor with its saved state. A crash after the sink commits but before the caller receives the receipt is handled by the same idempotent epoch identity. Pure policy work may run again after a retry; report publication must not be duplicated. These properties depend on the proposed sink contract and must be tested with a reference sink before they are claimed.
+
+Capacity checks occur before inserting a new buffered event, dedupe entry, unfinished group, or staged report. Exceeding a limit fails the epoch with a named `CAPACITY` error; no silent drop or automatic capacity increase is permitted. If watermarks stop advancing, the workflow may reach a limit and fail. It does not promise progress on every stream.
+
+The bounds constrain active in-memory state, with bounded-size event fields. Checkpoint copies, task queues, and transaction staging must be included in memory accounting. The durable input log and published output history can grow. Do not describe the whole system as constant-storage or reuse the old workload's memory numbers.
+
+
+PUBLIC HOST IMPLEMENTATION CONTRACT
+# AIN v0 workflow host and fixture interface
+
+This standard-library implementation supplies the 23 capabilities frozen in
+[INTEGRATION.md](INTEGRATION.md). The readable Python reference and the two VM
+serializations own the source loop, admission decisions, buffering/drain loop,
+and epoch sequencing. They share these capability bodies. Agreement among them
+does not constitute three independent implementations of stream semantics.
+
+The host implements the contract in
+[COMPLEX_TASK.md](../../docs/ain/COMPLEX_TASK.md). It uses exact Python integers
+for timestamp/window/horizon comparisons and rejects signed-result overflow.
+It requires a Python runtime reporting Unicode `15.0.0`; its whitespace set is
+explicit and does not use the runtime's broader `str.isspace()` definition.
+Each event is fully validated before late/duplicate/filter classification.
+
+## Running and inspecting
+
+`Host(records, config=None, sink=None, **options)` takes a plain replayable list
+of decoded record envelopes. `Config` accepts the fields/defaults in the frozen
+ABI, including severity `minimum=1`. Boolean integers, unknown fields, nonplain
+objects, invalid Unicode scalars, and malformed records are rejected. Inputs
+are safely copied. A malformed future record raises its validation error when
+admitted, allowing earlier valid epochs to remain committed. Copying rejects
+custom accessors without invoking them; a deferred error retains no such object.
+
+The source may grow by appending a suffix. A checkpoint stores a SHA-256 digest
+of the exact source prefix through its committed cursor, plus a separate
+configuration/policy/Unicode manifest. Restore checks that prefix and boundary,
+permits additional records, and rejects a changed or truncated committed prefix.
+Pass the complete replayable log, including the committed prefix, on restart.
+Source exhaustion without an explicit end returns `INCOMPLETE`, without flushing
+uncommitted work. A record appended after durable end is a validation error.
+
+The result is canonical JSON data with `status`, `reports`, `counters`,
+`checkpoint`, `trace`, and `error`. Status is `COMPLETE`, `INCOMPLETE`, `ERROR`,
+or `CANCELLED`. Reports, counters, checkpoint and effect trace reflect committed
+state only, even when a later epoch fails. An error has `code`, `message`, and
+`details`. `Host.outcome(error)` constructs the same result after a
+`WorkflowError`; unexpected host errors propagate through the runner.
+
+Each report contains `source_id`, `group_id`, `tenant`, `device`, `kind`,
+`message`, `first_timestamp`, `last_timestamp`, `first_offset`, `count`,
+`severity_sum`, `score`, `reason`, and `policy_version`. Group identity is the
+SHA-256 of canonical JSON `[source_id, first_offset]`. Canonical commit trace
+entries contain `source_id`, `epoch_offset`, ordered `reports`, and the complete
+checkpoint. Policy thread timing and completion order do not enter this trace.
+
+## Trusted local fixture options
+
+These are Python test hooks, not serializable instructions or capabilities
+available to an untrusted program. No private-policy source, sandbox, secrecy,
+or isolation property is demonstrated by these fixtures.
+
+| Option | Interface |
+|---|---|
+| `source_id` | Nonempty exact Unicode identifier, at most 256 scalars; default `default` |
+| `writer_token` | Positive integer from `sink.acquire(source_id)`; omitted means acquire on restore |
+| `policy` | Callable `(group_copy, pinned_version, cancel_event)` returning `(score, reason)` or exactly `{"score": int, "reason": int}` |
+| `policy_version` | Pinned nonempty string, default `fixture-v1`; a callable's optional `.version` must match before invocation and commit |
+| `allowed_tenants` | Identifier collection, or `None` for unrestricted synthetic fixture tenancy |
+| `allowed_reasons` | Nonempty integer allowlist; default `(0,1,2,3)` |
+| `authority` | Callable `(stage, group_copy_or_None)` returning exactly `True`; stages are `policy` and `precommit` |
+| `cancel` | `threading.Event`-like token with `is_set()`, or a callable returning whether cancellation was requested |
+| `fault` | `before_commit`, `after_commit`, or callable `(stage, host)`; a callable may raise `WorkflowError` to inject failure |
+
+The default synthetic policy returns
+`(min(1000, severity_sum * 100 // count), 0)`. Policy exceptions or invalid
+results become sanitized `POLICY` errors with the canonical `group_index`;
+private exception text is not included. All epoch outcomes are inspected before
+publication. The lowest finalized-group index failure wins regardless of
+completion order. Cancellation observed during that epoch takes precedence.
+
+Every scoring epoch creates at most `concurrency` worker threads and a bounded
+`queue.Queue(maxsize=queue)` of waiting indices. Workers check cancellation and
+authority before policy invocation. The producer blocks on the bounded queue;
+the source loop cannot read another record until the scoring epoch commits or
+fails. A caller cancellation sets the shared cooperative policy event, prevents
+queued work from invoking policy after observing cancellation, and drains
+running work. There is no preemption or real-time cancellation bound.
+
+Operational telemetry is available separately as `host.scheduler`:
+`peak_running`, `peak_waiting`, `started`, `finished`. It is excluded from
+canonical workflow results because timing is not deterministic. The Python
+fixture runs on threads; it provides real bounded asynchronous scheduling but
+does not establish CPU parallel speedup under Python's GIL.
+
+## Reference transactions and recovery
+
+`Sink` is an in-memory transactional test double. It is not process-durable
+storage. Its mutex and a single replacement store publish reports/checkpoint/
+receipt/trace together. The restart tests reuse the same sink object to model
+durable state. A future storage adapter needs its own atomicity and crash tests.
+
+`sink.acquire(source_id)` advances a fencing token. A stale token cannot publish.
+`sink.commit(source_id, epoch_offset, {"reports": ..., "checkpoint": ...}, token)`
+returns a receipt. Same epoch plus same canonical payload returns the existing
+receipt; a changed payload gives `EPOCH_CONFLICT`. Existing complete sources and
+backward cursors cannot advance. `sink.snapshot()` returns a consistent
+inspection view. `reports`, `checkpoints`, `receipts`, `trace`, and `fences` are
+also exposed for trusted quiescent inspection and corruption test fixtures.
+
+`before_commit` raises `CRASH_BEFORE_COMMIT` before publication. `after_commit`
+raises `LOST_ACK` after atomic publication but before the caller receives the
+receipt. Restart verifies its checkpoint and resumes after its cursor, so a
+lost acknowledgment cannot append duplicate reports. Sink idempotence separately
+handles retries of the identical epoch payload under a current fencing token.
+Integrity hashes detect accidental corruption; they are not authentication.
+
+Named failures include `VALIDATION`, `CAPACITY` (with `resource`), `OVERFLOW`,
+`POLICY`, `POLICY_VERSION`, `AUTHORITY`, `CHECKPOINT`, `FENCED`, `EPOCH_CONFLICT`,
+`CANCELLED`, `CRASH_BEFORE_COMMIT`, `LOST_ACK`, and dependency mismatch
+`DEPENDENCY`. Configuration/source restore mismatch gives `CHECKPOINT`; policy
+manifest mismatch gives `POLICY_VERSION`.
+
+## Storage and measurement boundaries
+
+Pending events, retained IDs, unfinished groups, and staged epoch reports obey
+their explicit capacity limits before insertion. Queue entries, worker copies,
+policy outcomes, the checkpoint snapshot, and transaction copies also consume
+memory. The host retains a safe copy of the replayable input list. This test
+sink retains output/checkpoint trace history and makes transaction copies.
+Memory therefore includes bounded active state and growing input/output history;
+the complete system is not constant-storage. Prefix verification and hashing
+are included work; no production checkpoint I/O or network latency is modeled.
+
+No paid model calls, model training, special tokenizer, billing-token savings,
+energy savings, or independent provider reproduction are established here.
+
+PUBLIC CAPABILITY SCHEMA (identical in every representation)
+[{"id":0,"name":"restore","args":["host"],"return":"state","effect":"state"},{"id":1,"name":"has_next","args":["host"],"return":"bool","effect":"input"},{"id":2,"name":"next_record","args":["host"],"return":"record","effect":"input"},{"id":3,"name":"check_cancel","args":["host"],"return":"void","effect":"state"},{"id":4,"name":"validate_record","args":["host","state","record"],"return":"void","effect":"state"},{"id":5,"name":"record_kind","args":["record"],"return":"int","effect":"pure"},{"id":6,"name":"frontier","args":["state"],"return":"int","effect":"pure"},{"id":7,"name":"timestamp","args":["record"],"return":"int","effect":"pure"},{"id":8,"name":"seen","args":["host","state","record"],"return":"bool","effect":"state"},{"id":9,"name":"reserve","args":["host","state","record"],"return":"void","effect":"state"},{"id":10,"name":"severity","args":["record"],"return":"int","effect":"pure"},{"id":11,"name":"minimum","args":["host"],"return":"int","effect":"pure"},{"id":12,"name":"normalize","args":["record"],"return":"record","effect":"pure"},{"id":13,"name":"buffer","args":["host","state","record"],"return":"void","effect":"state"},{"id":14,"name":"count","args":["host","state","int"],"return":"void","effect":"state"},{"id":15,"name":"advance","args":["host","state","record"],"return":"void","effect":"state"},{"id":16,"name":"pending_ready","args":["host","state"],"return":"bool","effect":"state"},{"id":17,"name":"pop_pending","args":["host","state"],"return":"record","effect":"state"},{"id":18,"name":"aggregate","args":["host","state","record"],"return":"void","effect":"state"},{"id":19,"name":"ready_groups","args":["host","state"],"return":"groups","effect":"state"},{"id":20,"name":"score","args":["host","state","groups"],"return":"reports","effect":"policy"},{"id":21,"name":"commit","args":["host","state","reports"],"return":"void","effect":"commit"},{"id":22,"name":"result","args":["host","state"],"return":"result","effect":"state"}]
+Complete catalog schema SHA-256: e3b73a2d382ced84693bb97b70c9c385459ab4cf0d45dc875a607018dce57260
+Record-kind codes: event=0, watermark=1, end=2. Count category codes: late=0, duplicate=1, filtered=2, accepted=3. The host's advance operation updates frontier and expires retained IDs; pending_ready tests whether an event can now be processed (all pending after END); pop_pending removes the next ordered event; aggregate updates anchored groups; ready_groups yields every finalized group in required order. score performs the bounded policy epoch, and commit publishes that epoch and checkpoint atomically. restore restores committed state and positions the source cursor. The language program must express source iteration, admission decisions, pending iteration and epoch sequencing. It must not replace these with a whole-workflow primitive. Continue validating source records after END; a trailing record is an error. A source ending without END is INCOMPLETE, not a reason to flush. Propagate declared host errors; the evaluation wrapper converts them with host.outcome(error). Return result(host,state) after exhaustion.
+
+LANGUAGE GRAMMAR
+## Public API
+
+```python
+validate_ir(document, catalog) -> CompiledProgram
+encode_ain(document, catalog) -> list
+decode_ain(numeric_document, catalog) -> dict
+run_ir(document, catalog, arguments, fuel=1_000_000) -> value
+run_ain(numeric_document, catalog, arguments, fuel=1_000_000) -> value
+loads_json(text_or_bytes) -> decoded_json
+load_json(path) -> decoded_json
+loads_ir(text_or_bytes, catalog) -> checked_readable_document
+loads_ain(text_or_bytes, catalog) -> checked_numeric_document
+```
+
+`LanguageError` reports syntax, type, catalog, initialization, argument, or scalar-result contract errors. `FuelExhausted` is its subclass. Host exceptions propagate unchanged; the workflow runner, rather than this VM, decides how declared workflow errors become canonical status results. Unexpected implementation exceptions must remain visible.
+
+Arguments are a positional list/tuple in declared parameter order. A readable program also accepts a dict containing exactly its parameter names. Numeric decoding generates names `r0`, `r1`, etc.; use positional arguments when sharing one call site between forms.
+
+Source-file loading must use the strict JSON helpers. They reject duplicate object keys at every depth, `NaN`, infinities, and floating literals that overflow to infinity. The language has no floating-point type; even finite floats are invalid instruction constants. A caller passing an already-decoded Python dict is responsible for having preserved this parsing rule: duplicate keys already erased by a permissive parser cannot be recovered by later validation. `load_json` reads UTF-8 and permits an initial byte-order mark.
+
+## Readable IR
+
+The program object has exactly these fields:
+
+```json
+{
+  "version": 0,
+  "registers": {"a": "int", "b": "int", "answer": "int"},
+  "parameters": ["a", "b"],
+  "return_type": "int",
+  "entry": "start",
+  "blocks": [{
+    "label": "start",
+    "instructions": [{"op": "add", "dest": "answer", "left": "a", "right": "b"}],
+    "terminator": {"op": "return", "value": "answer"}
+  }]
+}
+```
+
+Names are nonempty strings. Register and block names occupy separate namespaces. Registers are declared once and may be **written repeatedly**, including loop counters and registers updated across blocks. This is not SSA; duplicate declarations, block labels, parameter names, JSON keys, and catalog operation names are rejected. No instruction implicitly declares a register.
+
+Types are exact `int`, `bool`, `str`, plus opaque `host`, `state`, `record`, `groups`, `reports`, and `result`. `void` is allowed only as a function/program return type. Integer arithmetic is exact Python-integer arithmetic, without fixed-width wraparound; the workflow host must enforce any narrower timestamp/result bounds in its own contract. Booleans are never integers for arithmetic, IDs, indices, versions, fuel, or scalar arguments/results.
+
+| Instruction | Exact operand fields after `op` | Rule |
+|---|---|---|
+| `const` | `dest`, `value` | Literal exact int/bool/str; same scalar type as destination |
+| `move` | `dest`, `src` | Identical source/destination types; aliases opaque values |
+| `add`, `sub` | `dest`, `left`, `right` | int × int → int |
+| `lt`, `le` | `dest`, `left`, `right` | int × int → bool |
+| `eq` | `dest`, `left`, `right` | Equal scalar operand types → bool; no opaque comparisons |
+| `not` | `dest`, `src` | bool → bool |
+| `call` | `fn`, `args`, plus `dest` for a nonvoid result | Readable catalog name and ordered register-name arguments |
+
+Every block ends with exactly one terminator:
+
+- `{"op":"jump","target":"label"}`
+- `{"op":"branch","cond":"bool_register","then":"label","else":"label"}`
+- `{"op":"return","value":"register"}` for a nonvoid program
+- `{"op":"return"}` for a void program
+
+A void call **omits** `dest`; `"dest": null` is invalid. Likewise a void return omits `value`. Unknown/missing keys, undeclared references, wrong arity, incompatible types, unknown operations, and targets outside the program are errors.
+
+## Validation before effects
+
+Validation checks syntax and types for **all** blocks before any catalog call executes, including unreachable blocks. Every target must name a declared block. The forward must-analysis checks definite register initialization at every instruction and terminator reachable from entry. It intersects predecessor exit sets and iterates to a fixed point over loop backedges; a value produced only on a later iteration cannot justify its first read. Entry always has the parameter-only initial state, even if a backedge targets entry. Instructions read their operands before writing the destination.
+
+Unreachable blocks remain syntax/type checked; definite initialization there is vacuous because no entry path reaches them. There is no constant-folding exception for a branch with a literal condition: both CFG edges participate in the must-analysis. The checker can conservatively reject a program whose safety would require proving a condition always true. It does not prove termination or capability semantics.
+
+The returned `CompiledProgram` contains immutable normalized instruction/terminator tuples and a read-only snapshot of catalog records. Later mutation of the supplied dicts does not rewrite that compiled structure. Callable bodies, closures, and opaque host objects remain trusted and mutable; this is not code-integrity enforcement.
+
+## Catalog and opaque values
+
+The supplied catalog is a dict of nonnegative integer IDs to records with exactly `name`, `args`, `return`, `effect`, and `fn`. For example:
+
+```python
+{12: {"name": "normalize", "args": ["record"], "return": "record",
+      "effect": "pure", "fn": normalize_record}}
+```
+
+Argument type lists cannot contain `void`. Effects are `pure`, `state`, `input`, `policy`, or `commit`. They are declarations and part of identity; the VM cannot inspect a function to establish that it is pure or authorized. The host decides which capabilities exist and checks dynamic authority.
+
+Static typing keeps opaque register kinds and capability signatures distinct. The VM cannot infer a Python implementation type for an opaque value from this ABI. It therefore does not authenticate or inspect opaque arguments/results. The host's primitives must validate their records, checkpoints, scopes, and internal invariants. There is no ownership, linear-type, isolation, or secret-protection proof. Scalar arguments and scalar capability return values are checked by exact Python type at runtime; a void capability must return `None`. A bad runtime result can only be detected after that capability call, not before any effects it performed.
+
+## Numeric AIN v0 format
+
+The entire numeric document is a JSON list, with no JSON objects:
+
+```text
+[0, catalog_schema_sha256, register_type_codes, parameter_register_indices,
+ return_type_code, entry_block_index, blocks]
+```
+
+Registers are numbered by declaration order; blocks by their list order. Each block is `[instruction_lists, terminator_list]`. All operation, register, block, and type references are integers. String constants and the catalog hash are strings; boolean constants remain booleans.
+
+| Type | Code | Type | Code |
+|---|---:|---|---:|
+| int | 0 | bool | 1 |
+| str | 2 | host | 3 |
+| state | 4 | record | 5 |
+| groups | 6 | reports | 7 |
+| result | 8 | void | 9 |
+
+| Instruction/terminator | Numeric list |
+|---|---|
+| const | `[0, dest, literal]` |
+| move | `[1, dest, src]` |
+| add / sub | `[2, dest, left, right]` / `[3, dest, left, right]` |
+| lt / le / eq | `[4, dest, left, right]` / `[5, dest, left, right]` / `[6, dest, left, right]` |
+| not | `[7, dest, src]` |
+| call | `[8, dest_or_minus_one, catalog_ID, [arg_registers...]]` |
+| jump | `[100, block]` |
+| branch | `[101, condition_register, then_block, else_block]` |
+| return | `[102, value_register]`; `[102]` for void |
+
+`-1` is allowed only as a void call's destination sentinel; it is not a register index. Numeric documents undergo structural validation, catalog-identity checking, decoding, and the same full IR checker before execution. Boolean IDs/indices and out-of-range indices are rejected. There is no implicit type coercion.
+
+Decoding reconstructs names `r0`, `r1`, … and `b0`, `b1`, … rather than retaining cosmetic source names. `encode_ain(decode_ain(encoded, catalog), catalog)` preserves the canonical numeric document. The two forms intentionally retain the same blocks, branches, calls, and effects; numeric encoding does not hide a whole workflow in a new primitive.
+
+### Catalog identity
+
+The hash pins the **complete supplied catalog schema**, including unused entries. Its input is a list sorted by numeric ID, each row:
+
+```text
+[ID, readable_name, [argument_type_codes...], return_type_code, effect_code]
+```
+
+Effect codes are pure=0, state=1, input=2, policy=3, commit=4. Serialize that list with Python JSON `ensure_ascii=True` and separators `(',', ':')`, then SHA-256 its ASCII bytes. Any change to an ID, name, signature, effect, or catalog membership requires re-encoding. A numeric ID cannot silently be rebound to an incompatible declared operation.
+
+This is a schema-consistency check, not a signature or a callable implementation hash. Replacing a callable while keeping its declared metadata produces the same schema hash. Code identity and host provenance require separate frozen-source records or a stronger future mechanism. Do not describe this digest as production compatibility or security certification.
+
+## Fuel and other limits
+
+Each executed instruction and terminator consumes one fuel unit, including a catalog call. Fuel is a nonnegative exact integer. Zero fuel raises before the first step; exhaustion raises before the next step and never implicitly returns a partial result. A return itself consumes fuel. Fuel does not roll back previously performed effects; transactional rollback belongs to the workflow host.
+
+Fuel bounds VM dispatch, not validation time, source size, integer allocation, wall-clock time, or work inside a capability. A blocked or expensive host function is not preempted by the VM. The host's bounded scheduler, state capacities, cancellation checks, and sink contract remain necessary.
+
+
+The stream submission has ONE host parameter and returns result. Do not copy the arithmetic example's parameter or result types. All registers and blocks must be declared. For numeric AIN, use the complete HOST catalog hash above; the arithmetic example below uses an EMPTY catalog and its hash is unsuitable for the stream program.
+Submit readable IR JSON object.
+SMALL ARITHMETIC LOOP EXAMPLE (sums 0 <= i < n):
+{"version":0,"registers":{"n":"int","i":"int","sum":"int","one":"int","more":"bool"},"parameters":["n"],"return_type":"int","entry":"start","blocks":[{"label":"start","instructions":[{"op":"const","dest":"i","value":0},{"op":"const","dest":"sum","value":0},{"op":"const","dest":"one","value":1}],"terminator":{"op":"jump","target":"test"}},{"label":"test","instructions":[{"op":"lt","dest":"more","left":"i","right":"n"}],"terminator":{"op":"branch","cond":"more","then":"step","else":"done"}},{"label":"step","instructions":[{"op":"add","dest":"sum","left":"sum","right":"i"},{"op":"add","dest":"i","left":"i","right":"one"}],"terminator":{"op":"jump","target":"test"}},{"label":"done","instructions":[],"terminator":{"op":"return","value":"sum"}}]}
+
+COMPREHENSION QUESTIONS
+{
+  "categories": "Use the ORIGINAL minimum rule, not the later change. With frontier 780, minimum 1, an empty retained-ID set, no ID eviction, and valid same-tenant events, classify these arrivals in order: (ID A, timestamp 780, severity 0), (ID A, timestamp 781, severity 3), (ID B, timestamp 779, severity 3). Return three lowercase category names (late, duplicate, filtered, accepted).",
+  "anchored_group_counts": "Under window 600, two accepted unique-ID events of the same normalized grouping key have timestamps 100 and 700. After an explicit end, return the counts of their groups in final order.",
+  "sum_0_to_4": "The arithmetic loop example sums integers 0 <= i < n. What integer does it return for n=5?",
+  "finalized_order_offsets": "Two groups finalized in one epoch both have first_timestamp 20. Their first_offset values are 7 and 5. Return those offsets in publication order.",
+  "syntax_value": "Decode the small representation-specific syntax program supplied below. What integer does that program return?"
+}
+SYNTAX PROGRAM FOR syntax_value (empty catalog; no arguments):
+{"version":0,"registers":{"left":"int","right":"int"},"parameters":[],"return_type":"int","entry":"entry","blocks":[{"label":"entry","instructions":[{"op":"const","dest":"left","value":6},{"op":"const","dest":"right","value":8},{"op":"add","dest":"left","left":"left","right":"right"}],"terminator":{"op":"return","value":"left"}}]}
+Return ONLY one JSON object matching this schema, with no Markdown fence or additional commentary:
+{"type":"object","additionalProperties":false,"required":["fluency"],"properties":{"fluency":{"type":"object","additionalProperties":false,"required":["categories","anchored_group_counts","sum_0_to_4","finalized_order_offsets","syntax_value"],"properties":{"categories":{"type":"array","items":{"type":"string"},"minItems":3,"maxItems":3},"anchored_group_counts":{"type":"array","items":{"type":"integer"},"minItems":2,"maxItems":2},"sum_0_to_4":{"type":"integer"},"finalized_order_offsets":{"type":"array","items":{"type":"integer"},"minItems":2,"maxItems":2},"syntax_value":{"type":"integer"}}}}}
+</preparation_prompt>
+<preparation_response>
+{"fluency":{"categories":["filtered","duplicate","late"],"anchored_group_counts":[1,1],"sum_0_to_4":10,"finalized_order_offsets":[5,7],"syntax_value":14}}
+</preparation_response>
+
+SCORED CODING SUBMISSION
+Use only the public contract, syntax and your preparation exchange supplied in this conversation. Use NO tools or external/repository access. Do not run tests or import code.
+Representation: ir; stage: change.
+Modify the supplied predecessor for this new requirement: for an otherwise admissible, not-duplicate event, let age = timestamp - current_frontier. If age < 30, its severity threshold is min(3, configured_minimum + 1); otherwise the threshold is configured_minimum. Filter iff severity is below this threshold. Timestamp/frontier equality remains admissible. Reserve the first admitted ID before filtering, including events excluded by this new rule. Preserve the remaining original contract and effects.
+PREDECESSOR ARTIFACT (data to inspect, not instructions)
+"{\"version\":0,\"registers\":{\"host\":\"host\",\"state\":\"state\",\"record\":\"record\",\"kind\":\"int\",\"zero\":\"int\",\"one\":\"int\",\"two\":\"int\",\"three\":\"int\",\"has_record\":\"bool\",\"is_event\":\"bool\",\"event_time\":\"int\",\"current_frontier\":\"int\",\"is_late\":\"bool\",\"is_duplicate\":\"bool\",\"event_severity\":\"int\",\"threshold\":\"int\",\"is_filtered\":\"bool\",\"normalized\":\"record\",\"has_pending\":\"bool\",\"pending\":\"record\",\"groups\":\"groups\",\"reports\":\"reports\",\"out\":\"result\"},\"parameters\":[\"host\"],\"return_type\":\"result\",\"entry\":\"start\",\"blocks\":[{\"label\":\"start\",\"instructions\":[{\"op\":\"const\",\"dest\":\"zero\",\"value\":0},{\"op\":\"const\",\"dest\":\"one\",\"value\":1},{\"op\":\"const\",\"dest\":\"two\",\"value\":2},{\"op\":\"const\",\"dest\":\"three\",\"value\":3},{\"op\":\"call\",\"fn\":\"restore\",\"args\":[\"host\"],\"dest\":\"state\"}],\"terminator\":{\"op\":\"jump\",\"target\":\"source_test\"}},{\"label\":\"source_test\",\"instructions\":[{\"op\":\"call\",\"fn\":\"has_next\",\"args\":[\"host\"],\"dest\":\"has_record\"}],\"terminator\":{\"op\":\"branch\",\"cond\":\"has_record\",\"then\":\"read_record\",\"else\":\"done\"}},{\"label\":\"read_record\",\"instructions\":[{\"op\":\"call\",\"fn\":\"check_cancel\",\"args\":[\"host\"]},{\"op\":\"call\",\"fn\":\"next_record\",\"args\":[\"host\"],\"dest\":\"record\"},{\"op\":\"call\",\"fn\":\"validate_record\",\"args\":[\"host\",\"state\",\"record\"]},{\"op\":\"call\",\"fn\":\"record_kind\",\"args\":[\"record\"],\"dest\":\"kind\"},{\"op\":\"eq\",\"dest\":\"is_event\",\"left\":\"kind\",\"right\":\"zero\"}],\"terminator\":{\"op\":\"branch\",\"cond\":\"is_event\",\"then\":\"late_test\",\"else\":\"advance_epoch\"}},{\"label\":\"late_test\",\"instructions\":[{\"op\":\"call\",\"fn\":\"timestamp\",\"args\":[\"record\"],\"dest\":\"event_time\"},{\"op\":\"call\",\"fn\":\"frontier\",\"args\":[\"state\"],\"dest\":\"current_frontier\"},{\"op\":\"lt\",\"dest\":\"is_late\",\"left\":\"event_time\",\"right\":\"current_frontier\"}],\"terminator\":{\"op\":\"branch\",\"cond\":\"is_late\",\"then\":\"count_late\",\"else\":\"duplicate_test\"}},{\"label\":\"count_late\",\"instructions\":[{\"op\":\"call\",\"fn\":\"count\",\"args\":[\"host\",\"state\",\"zero\"]}],\"terminator\":{\"op\":\"jump\",\"target\":\"source_test\"}},{\"label\":\"duplicate_test\",\"instructions\":[{\"op\":\"call\",\"fn\":\"seen\",\"args\":[\"host\",\"state\",\"record\"],\"dest\":\"is_duplicate\"}],\"terminator\":{\"op\":\"branch\",\"cond\":\"is_duplicate\",\"then\":\"count_duplicate\",\"else\":\"reserve_and_filter\"}},{\"label\":\"count_duplicate\",\"instructions\":[{\"op\":\"call\",\"fn\":\"count\",\"args\":[\"host\",\"state\",\"one\"]}],\"terminator\":{\"op\":\"jump\",\"target\":\"source_test\"}},{\"label\":\"reserve_and_filter\",\"instructions\":[{\"op\":\"call\",\"fn\":\"reserve\",\"args\":[\"host\",\"state\",\"record\"]},{\"op\":\"call\",\"fn\":\"severity\",\"args\":[\"record\"],\"dest\":\"event_severity\"},{\"op\":\"call\",\"fn\":\"minimum\",\"args\":[\"host\"],\"dest\":\"threshold\"},{\"op\":\"lt\",\"dest\":\"is_filtered\",\"left\":\"event_severity\",\"right\":\"threshold\"}],\"terminator\":{\"op\":\"branch\",\"cond\":\"is_filtered\",\"then\":\"count_filtered\",\"else\":\"accept_event\"}},{\"label\":\"count_filtered\",\"instructions\":[{\"op\":\"call\",\"fn\":\"count\",\"args\":[\"host\",\"state\",\"two\"]}],\"terminator\":{\"op\":\"jump\",\"target\":\"source_test\"}},{\"label\":\"accept_event\",\"instructions\":[{\"op\":\"call\",\"fn\":\"normalize\",\"args\":[\"record\"],\"dest\":\"normalized\"},{\"op\":\"call\",\"fn\":\"buffer\",\"args\":[\"host\",\"state\",\"normalized\"]},{\"op\":\"call\",\"fn\":\"count\",\"args\":[\"host\",\"state\",\"three\"]}],\"terminator\":{\"op\":\"jump\",\"target\":\"source_test\"}},{\"label\":\"advance_epoch\",\"instructions\":[{\"op\":\"call\",\"fn\":\"advance\",\"args\":[\"host\",\"state\",\"record\"]}],\"terminator\":{\"op\":\"jump\",\"target\":\"pending_test\"}},{\"label\":\"pending_test\",\"instructions\":[{\"op\":\"call\",\"fn\":\"pending_ready\",\"args\":[\"host\",\"state\"],\"dest\":\"has_pending\"}],\"terminator\":{\"op\":\"branch\",\"cond\":\"has_pending\",\"then\":\"aggregate_next\",\"else\":\"finalize_epoch\"}},{\"label\":\"aggregate_next\",\"instructions\":[{\"op\":\"call\",\"fn\":\"pop_pending\",\"args\":[\"host\",\"state\"],\"dest\":\"pending\"},{\"op\":\"call\",\"fn\":\"aggregate\",\"args\":[\"host\",\"state\",\"pending\"]}],\"terminator\":{\"op\":\"jump\",\"target\":\"pending_test\"}},{\"label\":\"finalize_epoch\",\"instructions\":[{\"op\":\"call\",\"fn\":\"ready_groups\",\"args\":[\"host\",\"state\"],\"dest\":\"groups\"},{\"op\":\"call\",\"fn\":\"score\",\"args\":[\"host\",\"state\",\"groups\"],\"dest\":\"reports\"},{\"op\":\"call\",\"fn\":\"commit\",\"args\":[\"host\",\"state\",\"reports\"]}],\"terminator\":{\"op\":\"jump\",\"target\":\"source_test\"}},{\"label\":\"done\",\"instructions\":[{\"op\":\"call\",\"fn\":\"result\",\"args\":[\"host\",\"state\"],\"dest\":\"out\"}],\"terminator\":{\"op\":\"return\",\"value\":\"out\"}}]}"
+
+Return ONLY a JSON object with fields fluency, program, explanation. Repeat your five comprehension/syntax answers under fluency. program is a STRING containing complete Python source (python), or complete serialized JSON (ir/ain), not a nested JSON program. explanation is at most three short sentences describing observable changes; do not include private reasoning. No Markdown fences. Required schema:
+{"type":"object","additionalProperties":false,"required":["fluency","program","explanation"],"properties":{"fluency":{"type":"object","additionalProperties":false,"required":["categories","anchored_group_counts","sum_0_to_4","finalized_order_offsets","syntax_value"],"properties":{"categories":{"type":"array","items":{"type":"string"},"minItems":3,"maxItems":3},"anchored_group_counts":{"type":"array","items":{"type":"integer"},"minItems":2,"maxItems":2},"sum_0_to_4":{"type":"integer"},"finalized_order_offsets":{"type":"array","items":{"type":"integer"},"minItems":2,"maxItems":2},"syntax_value":{"type":"integer"}}},"program":{"type":"string"},"explanation":{"type":"string"}}}
