@@ -1,0 +1,14 @@
+{
+  "historical_assets_unchanged": true,
+  "ain_v0_asset_hashes_verified": 133,
+  "exact_opening_preserved": true,
+  "broken_local_markdown_links": 0,
+  "credential_patterns": 0,
+  "pdf_pages": 6,
+  "pdf_links": 26,
+  "pdf_visual_review": "all six page PNGs inspected; no clipping/overlap/missing glyphs",
+  "unique_narratives_fully_reviewed": 50,
+  "indexed_records": 85,
+  "primary_sources": 21,
+  "training_runs_started": 0
+}

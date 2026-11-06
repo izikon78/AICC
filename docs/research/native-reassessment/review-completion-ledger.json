@@ -1,0 +1,253 @@
+{
+  "completed_date": "2026-11-06",
+  "basis": "Actual full contents displayed to and read by audit agent; source hashes rechecked before inventory upgrade.",
+  "upgrades": [
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\docs\\research\\REPLICATION_SYNTHESIS_2026-11-05.md",
+      "relative_path": "docs/research/REPLICATION_SYNTHESIS_2026-11-05.md",
+      "sha256": "21f8058ae68c83ff5e182175b2d332511ceecb424820673e15325f08770452a6",
+      "initial_review_level": "claim_and_conclusion_sections",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\agents\\claude\\processing-study-replication-2026-11-05\\AGENT_REPORT.md",
+      "relative_path": "agents/claude/processing-study-replication-2026-11-05/AGENT_REPORT.md",
+      "sha256": "bd9efdb7fff6e951adcdd29c0d06daea6cdafc3eb2734fb28aeea6238041925a",
+      "initial_review_level": "claim_and_conclusion_sections",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\agents\\claude\\round7\\Round7_Results_Claude_Opus_5.5.md",
+      "relative_path": "agents/claude/round7/Round7_Results_Claude_Opus_5.5.md",
+      "sha256": "2486d5f7c87fb19215ab181cd8c939eccb53258cb5d93788144de9b283d7003e",
+      "initial_review_level": "claim_and_conclusion_sections",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\agents\\claude\\round8\\Round8_Results_Claude_Opus_5.5.md",
+      "relative_path": "agents/claude/round8/Round8_Results_Claude_Opus_5.5.md",
+      "sha256": "2072ed2320a43320789d966f2a0a4b712bc4ece4da98cdc0ed3c49a0f864b376",
+      "initial_review_level": "claim_and_conclusion_sections",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\agents\\claude\\round9-efficiency\\AICC_Efficiency_Research_Report_Claude.md",
+      "relative_path": "agents/claude/round9-efficiency/AICC_Efficiency_Research_Report_Claude.md",
+      "sha256": "92d07048fc84c38929db4935df2f4146aebbc1dcb6b5d6173e5522f738326d28",
+      "initial_review_level": "claim_and_conclusion_sections",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\agents\\gemini\\efficiency\\aicc_efficiency_independent_research_report.md",
+      "relative_path": "agents/gemini/efficiency/aicc_efficiency_independent_research_report.md",
+      "sha256": "acffb72aa786c124c23ef7f7b5dd6a3ea8fafa31f756d828ada64c3b050d33e5",
+      "initial_review_level": "claim_and_conclusion_sections",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\agents\\gemini\\round7\\ai_think_tank_round_7_experiment_results_gemini.md",
+      "relative_path": "agents/gemini/round7/ai_think_tank_round_7_experiment_results_gemini.md",
+      "sha256": "d5c6d3b0201a9266eefdef6efbb4850359e2532a4a40ed7de2b822c285b4ce1d",
+      "initial_review_level": "claim_and_conclusion_sections",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\agents\\gemini\\round8\\ai_think_tank_round_8_1_correction_reconciliation_gemini.md",
+      "relative_path": "agents/gemini/round8/ai_think_tank_round_8_1_correction_reconciliation_gemini.md",
+      "sha256": "c4d4eb85f460aaa5b3ff22cfe46f3ec8cfc4a947df8c4e60ee365327d0c19a15",
+      "initial_review_level": "claim_and_conclusion_sections",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\agents\\gemini\\round8\\ai_think_tank_round_8_experiment_results_gemini.md",
+      "relative_path": "agents/gemini/round8/ai_think_tank_round_8_experiment_results_gemini.md",
+      "sha256": "85d01a04d59199230cff5fe1a1ee1eedc4301b3795921da7a2d7d2aadf4fe13e",
+      "initial_review_level": "claim_and_conclusion_sections",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\agents\\gpt6\\round7\\AI_Think_Tank_Round7_GPT6_Report.md",
+      "relative_path": "agents/gpt6/round7/AI_Think_Tank_Round7_GPT6_Report.md",
+      "sha256": "0d4d88f45c5c79f4cc36649db93ce7fe3035f19a463b23e8a5f418c1916004e7",
+      "initial_review_level": "claim_and_conclusion_sections",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\agents\\grok\\efficiency\\Grok_AICC_Efficiency_Independent_Research_Report.md",
+      "relative_path": "agents/grok/efficiency/Grok_AICC_Efficiency_Independent_Research_Report.md",
+      "sha256": "35a0947005bf9f14daf729e05ebac15d8cc6352ff93b3890945b3a37736b6c6b",
+      "initial_review_level": "claim_and_conclusion_sections",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\agents\\grok\\history\\Grok_Responses_for_OpenAI.md",
+      "relative_path": "agents/grok/history/Grok_Responses_for_OpenAI.md",
+      "sha256": "7a586f6c38addf9ed409cc87de7ffff2b34ae9c5fe0a9131a537ce20a1167249",
+      "initial_review_level": "claim_and_conclusion_sections",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\agents\\grok\\round7\\Grok_Round7_Experiment_Results.md",
+      "relative_path": "agents/grok/round7/Grok_Round7_Experiment_Results.md",
+      "sha256": "795665c421b5b9938229f6a00478c378b125e4f7cb21429a3d8188e31889ec93",
+      "initial_review_level": "claim_and_conclusion_sections",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\agents\\grok\\round8\\Grok_Round8.1_Response.md",
+      "relative_path": "agents/grok/round8/Grok_Round8.1_Response.md",
+      "sha256": "29dddab9671fc516213dc4f6e83a1c247e194d3e44652cfc6ffd05f2175cca4c",
+      "initial_review_level": "claim_and_conclusion_sections",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\agents\\grok\\round8\\Grok_Round8_AICC_Results.md",
+      "relative_path": "agents/grok/round8/Grok_Round8_AICC_Results.md",
+      "sha256": "f3dc0631c3c88fb9fedaca0efb76c4d024c8d2fc32b61e4fc9fbb6476ac82f46",
+      "initial_review_level": "claim_and_conclusion_sections",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\experiments\\ain_v0\\FIRST_EXECUTION_REPORT.md",
+      "relative_path": "experiments/ain_v0/FIRST_EXECUTION_REPORT.md",
+      "sha256": "86d812b97e582f6717ca53c53add94f32d0a63dac7da5f917a05e0e770c2f716",
+      "initial_review_level": "claim_and_conclusion_sections",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\AI_Native_Language_Shared_Functionality_Cross_Agent_Response_v3.md",
+      "relative_path": "AI_Native_Language_Shared_Functionality_Cross_Agent_Response_v3.md",
+      "sha256": "3606b2b89721658d8e5c05e8f99b4fe7c594274df4b9df0171d5fccbf5b8107f",
+      "initial_review_level": "theory_headings_and_claim_passages",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\AI_Native_Software_Research_Challenge.md",
+      "relative_path": "AI_Native_Software_Research_Challenge.md",
+      "sha256": "47cdc9c652ccafff6a4f69d8fdca8bf3be5eafb8095718a1a228ea0dd670c5d2",
+      "initial_review_level": "theory_headings_and_claim_passages",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\AI_Native_Symbolic_Language_Challenge_v2.md",
+      "relative_path": "AI_Native_Symbolic_Language_Challenge_v2.md",
+      "sha256": "8befe3a110b4d9e37533240f96a66789d7001935835a033661200e66a0938d53",
+      "initial_review_level": "theory_headings_and_claim_passages",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\ai_think_tank_consolidated_responses_md.md",
+      "relative_path": "ai_think_tank_consolidated_responses_md.md",
+      "sha256": "4117e0d8d48dfffb0a4122c6196f15303f15a8c6083f809a05ef1929fdf0cc92",
+      "initial_review_level": "theory_headings_and_claim_passages",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\AI_Think_Tank_Round5_Reply_to_Gemini.md",
+      "relative_path": "AI_Think_Tank_Round5_Reply_to_Gemini.md",
+      "sha256": "8e419acd63ce9c9af5c5e860e3975fa85215affed038bab32d5d77c017800633",
+      "initial_review_level": "theory_headings_and_claim_passages",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\AI_Think_Tank_Round5_Reply_to_Grok.md",
+      "relative_path": "AI_Think_Tank_Round5_Reply_to_Grok.md",
+      "sha256": "a1e18d01a4cd42bf5eeaa1f16ecf9e830d2e51ab0e645a2b742e1700f6528549",
+      "initial_review_level": "theory_headings_and_claim_passages",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\AI_Think_Tank_Round6_Response_to_Gemini.md",
+      "relative_path": "AI_Think_Tank_Round6_Response_to_Gemini.md",
+      "sha256": "61f08efe0b237c945824cba796b18e8a93b27d9735edd58eedbf9d8af3f3b249",
+      "initial_review_level": "theory_headings_and_claim_passages",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\ai_think_tank_round_5_response.md",
+      "relative_path": "ai_think_tank_round_5_response.md",
+      "sha256": "302d4fa59b537bcd9a3dbf2d27ae79d351eed12e0e1ba360a4550ce0bfd545bd",
+      "initial_review_level": "theory_headings_and_claim_passages",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\Gemoini_ai_native_software_architecture_research_evaluation.md",
+      "relative_path": "Gemoini_ai_native_software_architecture_research_evaluation.md",
+      "sha256": "b633f54e6615b9c16a02033b60cbc0699e1ed175eb315e8fd64a15854a65d5e3",
+      "initial_review_level": "theory_headings_and_claim_passages",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\Reuse-First Execution and AI-Native Authoring — Independent Review (v3).md",
+      "relative_path": "Reuse-First Execution and AI-Native Authoring — Independent Review (v3).md",
+      "sha256": "09fe2094290b8f05540afe824affae5468e566b0c58d75487d55619844bdf42c",
+      "initial_review_level": "theory_headings_and_claim_passages",
+      "review_level": "full_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\docs\\article\\AICC_Article_Draft_4_Review_Copy.pdf",
+      "relative_path": "docs/article/AICC_Article_Draft_4_Review_Copy.pdf",
+      "sha256": "58b90a191c6f5967ad70125f9cd8d68c54246e43353030aa9762583e7a80ad07",
+      "initial_review_level": "pdf_text_extracted_theory_passages",
+      "review_level": "full_extracted_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\docs\\research\\AICC_Efficiency_Research_Review_Copy.pdf",
+      "relative_path": "docs/research/AICC_Efficiency_Research_Review_Copy.pdf",
+      "sha256": "5c193ae0e61ed2828b32ae4e3fbaf579790b9c3c9f24b0973339129eb23fc746",
+      "initial_review_level": "pdf_text_extracted_theory_passages",
+      "review_level": "full_extracted_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\work\\ain-v0-foundation\\experiments\\efficiency\\AICC_Token_Cost_Compute_Research_Protocol.pdf",
+      "relative_path": "experiments/efficiency/AICC_Token_Cost_Compute_Research_Protocol.pdf",
+      "sha256": "d00691bb6b76f930c3f121c28d5ae228eb2a5b12345455f271ccfbd8f3add795",
+      "initial_review_level": "pdf_text_extracted_theory_passages",
+      "review_level": "full_extracted_narrative"
+    },
+    {
+      "path": "D:\\personal\\AICC\\AI_Native_Software_Article_Draft_1_Print.pdf",
+      "relative_path": "AI_Native_Software_Article_Draft_1_Print.pdf",
+      "sha256": "5fa57279978604029436371c28c599b523ff7a24bd0310d360ce9b20ff7091e6",
+      "initial_review_level": "pdf_text_extracted_theory_passages",
+      "review_level": "full_extracted_narrative"
+    }
+  ],
+  "remaining_targeted_narratives": [],
+  "coverage": {
+    "indexed_records": 85,
+    "unique_byte_contents": 60,
+    "full_narrative_records": 51,
+    "full_unique_narrative_contents": 50,
+    "review_levels": {
+      "duplicate_no_repeat": 23,
+      "full_extracted_narrative": 4,
+      "full_narrative": 47,
+      "metadata_only_supporting_log_or_decision": 9,
+      "rendition_metadata": 2
+    }
+  },
+  "additional_duplicate_pdf_aliases": [
+    {
+      "path": "D:\\personal\\AICC\\AICC_Article_Draft_4_Review_Copy.pdf",
+      "sha256": "58b90a191c6f5967ad70125f9cd8d68c54246e43353030aa9762583e7a80ad07",
+      "byte_identical_to": "D:\\personal\\AICC\\work\\ain-v0-foundation\\docs\\article\\AICC_Article_Draft_4_Review_Copy.pdf",
+      "review_level": "duplicate_alias_no_repeat",
+      "included_in_indexed_record_count": false
+    },
+    {
+      "path": "D:\\personal\\AICC\\AICC_Efficiency_Research_Review_Copy.pdf",
+      "sha256": "5c193ae0e61ed2828b32ae4e3fbaf579790b9c3c9f24b0973339129eb23fc746",
+      "byte_identical_to": "D:\\personal\\AICC\\work\\ain-v0-foundation\\docs\\research\\AICC_Efficiency_Research_Review_Copy.pdf",
+      "review_level": "duplicate_alias_no_repeat",
+      "included_in_indexed_record_count": false
+    },
+    {
+      "path": "D:\\personal\\AICC\\AICC_Token_Cost_Compute_Research_Protocol.pdf",
+      "sha256": "d00691bb6b76f930c3f121c28d5ae228eb2a5b12345455f271ccfbd8f3add795",
+      "byte_identical_to": "D:\\personal\\AICC\\work\\ain-v0-foundation\\experiments\\efficiency\\AICC_Token_Cost_Compute_Research_Protocol.pdf",
+      "review_level": "duplicate_alias_no_repeat",
+      "included_in_indexed_record_count": false
+    }
+  ]
+}

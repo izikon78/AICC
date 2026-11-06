@@ -1,6 +1,13 @@
 # AI Computational Commons (AICC)
 ## Recommended research architecture — November 3, 2026
 
+Historical recommendation retained below. The current article's primary next
+experiment is trained-native AIN, following the originator's clarification and
+[5 November reassessment](../research/NATIVE_AIN_FEASIBILITY_2026-11-05.md).
+The [current N1–N3 hypotheses](../ain/NATIVE_HYPOTHESES.md) supplement, rather
+than silently rename, the historical H1–H4 labels here. Earlier reuse-first
+prioritization does not supersede the current native-language research goal.
+
 **Status:** Strong research recommendation from the current ChatGPT-assisted AI think-tank process. Not an OpenAI organizational recommendation, deployed standard, independently reviewed security design, or proven economic improvement.
 
 ## The thesis
