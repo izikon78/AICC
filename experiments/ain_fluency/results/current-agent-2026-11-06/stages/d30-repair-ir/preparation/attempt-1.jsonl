@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a1afc4-e2af-7981-afbe-26a34605fca0"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"{\"fluency\":{\"categories\":[\"filtered\",\"duplicate\",\"late\"],\"anchored_group_counts\":[1,1],\"sum_0_to_4\":10,\"finalized_order_offsets\":[5,7],\"syntax_value\":14}}"}}
+{"type":"turn.completed","usage":{"input_tokens":22186,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":132,"reasoning_output_tokens":75}}
