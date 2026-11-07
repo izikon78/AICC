@@ -1,0 +1,663 @@
+{
+  "provenance": {
+    "approved_test_commit": "2b6541a24ef71dcd4390f526042ebf131501fc51",
+    "claude_submission_commit": "e9a8a5111717a57427fac50605cf5cbe0c86b316",
+    "source_sha256": {
+      "results/approved-core-2026-11-06/totals.json": "6e886ff6e89b6b1c0bebbb8849fe2dbd3715ce4db62d6e1370177151f0332798",
+      "trace-inputs.json": "6f54c67509944390c7730438fc2d3058b3cb1aa5a89915674918579e5550b31e",
+      "validation/codex-independent-2026-11-06/INDEPENDENT_REPORT.md": "f258b5b9ea0b42326285173c3d3dc2a17ea1a650aa2cfac81bf2007fde7fb6fc",
+      "validation/codex-independent-2026-11-06/initial-v1/totals.json": "6e886ff6e89b6b1c0bebbb8849fe2dbd3715ce4db62d6e1370177151f0332798",
+      "validation/claude-opus-5.5-independent-2026-11-06/INDEPENDENT_REPORT.md": "cf01f4e7e9140a0668b6b505bb9af204d1333b03c6e8cbba6479b128c9debd54",
+      "validation/claude-opus-5.5-independent-2026-11-06/initial-v1/totals.json": "b3243b035ec26e210b7e3a79a853fc5395f4d2d340fb8c64edb1d457f226c70c",
+      "validation/claude-opus-5.5-independent-2026-11-06/extension-v1/sensitivity.json": "66710b1509f87cec7ae6062c6e7a2f3d6063bc02119518d78c9b9854e7a3c7bd"
+    },
+    "units": "Measured Python text tokens and modeled ideal units; equal position cost assumed",
+    "model_inference_calls_in_test": 0,
+    "grok_status": "?? pending"
+  },
+  "episodes": {
+    "build": {
+      "chain": "events-00",
+      "domain": "events",
+      "stage": "build",
+      "schedule": "resident",
+      "success": true,
+      "actions": [
+        [
+          {
+            "op": "record",
+            "args": {
+              "value": {
+                "domain": "events",
+                "parameters": {
+                  "minimum": 2,
+                  "cutoff": 20
+                },
+                "stage": "build"
+              }
+            }
+          },
+          {
+            "op": "write",
+            "args": {
+              "program": [
+                {
+                  "op": "filter_eq",
+                  "args": {
+                    "field": "kind",
+                    "value": "event"
+                  }
+                },
+                {
+                  "op": "dedupe_by",
+                  "args": {
+                    "field": "id"
+                  }
+                },
+                {
+                  "op": "filter_gte",
+                  "args": {
+                    "field": "severity",
+                    "value": 2
+                  }
+                },
+                {
+                  "op": "filter_lt",
+                  "args": {
+                    "field": "timestamp",
+                    "value": 20
+                  }
+                },
+                {
+                  "op": "group_sum",
+                  "args": {
+                    "key_field": "group",
+                    "value_field": "value"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "op": "check",
+            "args": {}
+          }
+        ],
+        [
+          {
+            "op": "remember",
+            "args": {
+              "value": {
+                "domain": "events",
+                "parameters": {
+                  "minimum": 2,
+                  "cutoff": 20
+                },
+                "artifact": "p",
+                "checks_passed": true
+              }
+            }
+          },
+          {
+            "op": "submit",
+            "args": {}
+          }
+        ]
+      ],
+      "host_observations": [
+        {
+          "stored": true
+        },
+        {
+          "passed": true
+        },
+        {
+          "submitted": true
+        }
+      ],
+      "common_input": {
+        "requirements": "Keep event records. Reserve the first occurrence of each id before severity filtering. Keep severity >= minimum and timestamp < cutoff. Sum value by group in key order.",
+        "stage": "build",
+        "parameters": {
+          "minimum": 2,
+          "cutoff": 20
+        },
+        "data_handle": "records",
+        "schema": [
+          "group",
+          "id",
+          "kind",
+          "severity",
+          "timestamp",
+          "value"
+        ]
+      },
+      "predecessor": [],
+      "incoming_memory": {},
+      "outgoing_memory": {
+        "domain": "events",
+        "parameters": {
+          "minimum": 2,
+          "cutoff": 20
+        },
+        "artifact": "p",
+        "checks_passed": true
+      },
+      "working_records": [
+        {
+          "domain": "events",
+          "parameters": {
+            "minimum": 2,
+            "cutoff": 20
+          },
+          "stage": "build"
+        }
+      ],
+      "artifact": [
+        {
+          "op": "filter_eq",
+          "args": {
+            "field": "kind",
+            "value": "event"
+          }
+        },
+        {
+          "op": "dedupe_by",
+          "args": {
+            "field": "id"
+          }
+        },
+        {
+          "op": "filter_gte",
+          "args": {
+            "field": "severity",
+            "value": 2
+          }
+        },
+        {
+          "op": "filter_lt",
+          "args": {
+            "field": "timestamp",
+            "value": 20
+          }
+        },
+        {
+          "op": "group_sum",
+          "args": {
+            "key_field": "group",
+            "value_field": "value"
+          }
+        }
+      ]
+    },
+    "change": {
+      "chain": "events-00",
+      "domain": "events",
+      "stage": "change",
+      "schedule": "resident",
+      "success": true,
+      "actions": [
+        [
+          {
+            "op": "record",
+            "args": {
+              "value": {
+                "domain": "events",
+                "parameters": {
+                  "minimum": 3,
+                  "cutoff": 20
+                },
+                "stage": "change"
+              }
+            }
+          },
+          {
+            "op": "patch",
+            "args": {
+              "index": 2,
+              "kind": "arg",
+              "key": "value",
+              "value": 3
+            }
+          }
+        ],
+        [
+          {
+            "op": "check",
+            "args": {}
+          }
+        ],
+        [
+          {
+            "op": "remember",
+            "args": {
+              "value": {
+                "domain": "events",
+                "parameters": {
+                  "minimum": 3,
+                  "cutoff": 20
+                },
+                "artifact": "p",
+                "checks_passed": true
+              }
+            }
+          },
+          {
+            "op": "submit",
+            "args": {}
+          }
+        ]
+      ],
+      "host_observations": [
+        {
+          "stored": true
+        },
+        {
+          "passed": true
+        },
+        {
+          "submitted": true
+        }
+      ],
+      "common_input": {
+        "requirements": "Keep event records. Reserve the first occurrence of each id before severity filtering. Keep severity >= minimum and timestamp < cutoff. Sum value by group in key order.",
+        "stage": "change",
+        "parameters": {
+          "minimum": 3,
+          "cutoff": 20
+        },
+        "data_handle": "records",
+        "schema": [
+          "group",
+          "id",
+          "kind",
+          "severity",
+          "timestamp",
+          "value"
+        ]
+      },
+      "predecessor": [
+        {
+          "op": "filter_eq",
+          "args": {
+            "field": "kind",
+            "value": "event"
+          }
+        },
+        {
+          "op": "dedupe_by",
+          "args": {
+            "field": "id"
+          }
+        },
+        {
+          "op": "filter_gte",
+          "args": {
+            "field": "severity",
+            "value": 2
+          }
+        },
+        {
+          "op": "filter_lt",
+          "args": {
+            "field": "timestamp",
+            "value": 20
+          }
+        },
+        {
+          "op": "group_sum",
+          "args": {
+            "key_field": "group",
+            "value_field": "value"
+          }
+        }
+      ],
+      "incoming_memory": {
+        "domain": "events",
+        "parameters": {
+          "minimum": 2,
+          "cutoff": 20
+        },
+        "artifact": "p",
+        "checks_passed": true
+      },
+      "outgoing_memory": {
+        "domain": "events",
+        "parameters": {
+          "minimum": 3,
+          "cutoff": 20
+        },
+        "artifact": "p",
+        "checks_passed": true
+      },
+      "working_records": [
+        {
+          "domain": "events",
+          "parameters": {
+            "minimum": 3,
+            "cutoff": 20
+          },
+          "stage": "change"
+        }
+      ],
+      "artifact": [
+        {
+          "op": "filter_eq",
+          "args": {
+            "field": "kind",
+            "value": "event"
+          }
+        },
+        {
+          "op": "dedupe_by",
+          "args": {
+            "field": "id"
+          }
+        },
+        {
+          "op": "filter_gte",
+          "args": {
+            "field": "severity",
+            "value": 3
+          }
+        },
+        {
+          "op": "filter_lt",
+          "args": {
+            "field": "timestamp",
+            "value": 20
+          }
+        },
+        {
+          "op": "group_sum",
+          "args": {
+            "key_field": "group",
+            "value_field": "value"
+          }
+        }
+      ]
+    },
+    "repair": {
+      "chain": "events-00",
+      "domain": "events",
+      "stage": "repair",
+      "schedule": "resident",
+      "success": true,
+      "actions": [
+        [
+          {
+            "op": "record",
+            "args": {
+              "value": {
+                "domain": "events",
+                "parameters": {
+                  "minimum": 3,
+                  "cutoff": 20
+                },
+                "stage": "repair"
+              }
+            }
+          },
+          {
+            "op": "patch",
+            "args": {
+              "index": 3,
+              "kind": "op",
+              "key": null,
+              "value": "filter_lt"
+            }
+          }
+        ],
+        [
+          {
+            "op": "check",
+            "args": {}
+          }
+        ],
+        [
+          {
+            "op": "remember",
+            "args": {
+              "value": {
+                "domain": "events",
+                "parameters": {
+                  "minimum": 3,
+                  "cutoff": 20
+                },
+                "artifact": "p",
+                "checks_passed": true
+              }
+            }
+          },
+          {
+            "op": "submit",
+            "args": {}
+          }
+        ]
+      ],
+      "host_observations": [
+        {
+          "stored": true
+        },
+        {
+          "passed": true
+        },
+        {
+          "submitted": true
+        }
+      ],
+      "common_input": {
+        "requirements": "Keep event records. Reserve the first occurrence of each id before severity filtering. Keep severity >= minimum and timestamp < cutoff. Sum value by group in key order.",
+        "stage": "repair",
+        "parameters": {
+          "minimum": 3,
+          "cutoff": 20
+        },
+        "data_handle": "records",
+        "schema": [
+          "group",
+          "id",
+          "kind",
+          "severity",
+          "timestamp",
+          "value"
+        ]
+      },
+      "predecessor": [
+        {
+          "op": "filter_eq",
+          "args": {
+            "field": "kind",
+            "value": "event"
+          }
+        },
+        {
+          "op": "dedupe_by",
+          "args": {
+            "field": "id"
+          }
+        },
+        {
+          "op": "filter_gte",
+          "args": {
+            "field": "severity",
+            "value": 3
+          }
+        },
+        {
+          "op": "filter_gte",
+          "args": {
+            "field": "timestamp",
+            "value": 20
+          }
+        },
+        {
+          "op": "group_sum",
+          "args": {
+            "key_field": "group",
+            "value_field": "value"
+          }
+        }
+      ],
+      "incoming_memory": {
+        "domain": "events",
+        "parameters": {
+          "minimum": 3,
+          "cutoff": 20
+        },
+        "artifact": "p",
+        "checks_passed": true
+      },
+      "outgoing_memory": {
+        "domain": "events",
+        "parameters": {
+          "minimum": 3,
+          "cutoff": 20
+        },
+        "artifact": "p",
+        "checks_passed": true
+      },
+      "working_records": [
+        {
+          "domain": "events",
+          "parameters": {
+            "minimum": 3,
+            "cutoff": 20
+          },
+          "stage": "repair"
+        }
+      ],
+      "artifact": [
+        {
+          "op": "filter_eq",
+          "args": {
+            "field": "kind",
+            "value": "event"
+          }
+        },
+        {
+          "op": "dedupe_by",
+          "args": {
+            "field": "id"
+          }
+        },
+        {
+          "op": "filter_gte",
+          "args": {
+            "field": "severity",
+            "value": 3
+          }
+        },
+        {
+          "op": "filter_lt",
+          "args": {
+            "field": "timestamp",
+            "value": 20
+          }
+        },
+        {
+          "op": "group_sum",
+          "args": {
+            "key_field": "group",
+            "value_field": "value"
+          }
+        }
+      ]
+    }
+  },
+  "numeric_build": [
+    5,
+    [
+      1,
+      [
+        0,
+        35
+      ],
+      [
+        0,
+        18
+      ]
+    ],
+    [
+      5,
+      [
+        0,
+        31
+      ]
+    ],
+    [
+      2,
+      [
+        0,
+        50
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    [
+      3,
+      [
+        0,
+        57
+      ],
+      [
+        1,
+        20
+      ]
+    ],
+    [
+      6,
+      [
+        0,
+        28
+      ],
+      [
+        0,
+        59
+      ]
+    ]
+  ],
+  "numeric_patches": {
+    "change": [
+      13,
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        59
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "repair": [
+      13,
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        40
+      ],
+      [
+        3
+      ],
+      [
+        0,
+        27
+      ]
+    ]
+  }
+}

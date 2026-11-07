@@ -1,16 +1,39 @@
 # Article drafts and research figures
 
-The current article source is **[Draft 9, AIN: A Native Language for More Efficient AI](AICC_Article_Draft_9.md)**,
-dated 6 November 2026. It restores trained-native AIN as the central question,
-separates authoring/compilation/inference/system claims, and incorporates the
+The current article is **[Draft 10, AIN: A Native Language for More Efficient AI](AICC_Article_Draft_10.md)**,
+dated 6 November 2026. It presents only the latest approved-core workflow
+accounting results, real executable-core examples with a verified numeric display
+projection, three new figures, and a Codex/Claude comparison with Grok marked
+`??` until its submission arrives. The conditional 24.0% and 12.8% position
+reductions are not measured model-compute or monetary savings.
+
+- [Print-ready Draft 10 PDF](AICC_Article_Draft_10_Review.pdf)
+- [Editable Draft 10 Word](AICC_Article_Draft_10_Review.docx)
+- [Editable Draft 10 source](AICC_Article_Draft_10.md)
+- [Latest figures and source data](figures/draft10/README.md)
+- [Verified real-code examples](examples/draft10/README.md)
+- [Downloadable AI-agent replication packet](../replication/downloads/AICC_Approved_Core_Agent_Packet.zip)
+- [Packet instructions and reproduction](../replication/APPROVED_CORE_AGENT_PACKET.md)
+
+The article and figures preserve the assumed fluent vocabulary, approved shared
+core, perfect composition and equal-position-cost boundary. The next model-based
+study remains [matched native learning](../ain/TRAINED_NATIVE_PILOT_PROTOCOL.md).
+The packet separates a new agent's first reconstruction from later access to
+expected results and the article; prior exposure must be disclosed.
+
+## Historical Draft 9
+
+Draft 9 restores trained-native AIN as the central question, separates
+authoring/compilation/inference/system claims and incorporates the
 [primary-source reassessment](../research/NATIVE_AIN_FEASIBILITY_2026-11-05.md).
-The next study is [matched native learning](../ain/TRAINED_NATIVE_PILOT_PROTOCOL.md).
 
 - [Printable Draft 9 PDF](AICC_Article_Draft_9_Review.pdf)
 - [Editable Draft 9 Markdown](AICC_Article_Draft_9.md)
 
-The printable and Word files below remain **historical Draft 8**; they have not
-been relabeled as Draft 9. All historical drafts and measured figures are retained.
+## Historical Draft 8
+
+The printable and Word files below remain historical Draft 8. They have not been
+relabeled as newer work. All historical drafts and measured figures are retained.
 
 - [Print PDF](AICC_Article_Draft_8_Review.pdf)
 - [Editable Word copy](AICC_Article_Draft_8_Review.docx)
