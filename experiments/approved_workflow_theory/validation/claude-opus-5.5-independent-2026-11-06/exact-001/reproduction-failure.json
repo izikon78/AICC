@@ -1,0 +1,14 @@
+{
+  "error": "LocalEntryNotFoundError('An error happened while trying to locate the file on the Hub and we cannot find the requested files in the local cache. Please check your connection and try again or make sure your Internet connection is on.')",
+  "environment": {
+    "python": "3.12.3 (main, Mar  3 2026, 12:15:18) [GCC 13.3.0]",
+    "platform": "Linux-6.18.44-fc-v300-x86_64-with-glibc2.39",
+    "model_inference_calls": 0,
+    "packages": {
+      "transformers": "4.51.3",
+      "tokenizers": "0.21.4",
+      "huggingface-hub": "0.36.2"
+    },
+    "git_commit": "2b6541a24ef71dcd4390f526042ebf131501fc51"
+  }
+}

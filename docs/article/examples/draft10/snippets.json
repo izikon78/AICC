@@ -1,0 +1,38 @@
+{
+  "EXAMPLE_BUILD_PYTHON": "```python\nlambda r: group_sum(\n    filter_lt(\n        filter_gte(\n            dedupe_by(filter_eq(r, 'kind', 'event'), 'id'),\n            'severity', 2),\n        'timestamp', 20),\n    'group', 'value')\n```",
+  "EXAMPLE_BUILD_AIN": "```json\n[5,\n [1,[0,35],[0,18]],\n [5,[0,31]],\n [2,[0,50],[1,2]],\n [3,[0,57],[1,20]],\n [6,[0,28],[0,59]]]\n```",
+  "EXAMPLE_PATCH_AIN": "```json\n[13,[1,2],[0,1],[0,59],[1,3]]\n[13,[1,3],[0,40],[3],[0,27]]\n```",
+  "EXAMPLE_CORE_FUNCTION": "```python\ndef dedupe_by(rows, field):\n    seen = set()\n    result = []\n    for row in rows:\n        identity = row[field]\n        if identity not in seen:\n            seen.add(identity)\n            result.append(row)\n    return result\n```",
+  "EXACT_COUNTED_DESCRIPTIVE_PYTHON": "lambda r:group_sum(filter_lt(filter_gte(dedupe_by(filter_eq(r,'kind','event'),'id'),'severity',2),'timestamp',20),'group','value')",
+  "legend": {
+    "operations": {
+      "1": "filter_eq",
+      "5": "dedupe_by",
+      "2": "filter_gte",
+      "3": "filter_lt",
+      "6": "group_sum",
+      "13": "patch"
+    },
+    "symbols": {
+      "35": "kind",
+      "18": "event",
+      "31": "id",
+      "50": "severity",
+      "57": "timestamp",
+      "28": "group",
+      "59": "value",
+      "1": "arg",
+      "40": "op",
+      "27": "filter_lt"
+    },
+    "value_tags": {
+      "0": "static symbol ID",
+      "1": "exact integer",
+      "3": "null"
+    }
+  },
+  "display_disclosure": "New lossless numeric display projection of actual approved artifacts/actions; not the frozen unit encoding, finalized AIN syntax or model-generated code. Do not tokenize this printed view to infer the reported reductions.",
+  "python_disclosure": "Whitespace-formatted descriptive Python view; AST-equivalent to the artifact's frozen one-line renderer. The result table uses its separately frozen short-alias control.",
+  "core_disclosure": "The unchanged dedupe_by implementation is shared by every representation; this loop is not newly synthesized by an agent.",
+  "EXAMPLE_LEGEND": "The leading 5 is the number of calls. Operation IDs 1, 5, 2, 3 and 6 mean filter_eq, dedupe_by, filter_gte, filter_lt and group_sum; 13 is patch. Values tagged 0 are frozen symbol references, 1 means an exact integer, and 3 means null. Symbol IDs 35, 18, 31, 50, 57, 28 and 59 mean kind, event, id, severity, timestamp, group and value. In the patch records, symbol 1 means arg, 40 means op and 27 means filter_lt. Patch indices are zero-based. These IDs and explicit display tags are only a lossless human-facing projection of the real semantic artifacts; they are not the frozen ideal-unit accounting."
+}

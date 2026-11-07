@@ -1,0 +1,117 @@
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+{
+  "resident": {
+    "python": {
+      "common_input_text_tokens": 15102,
+      "artifact_input_units": 6606,
+      "memory_input_units": 5238,
+      "reprocessed_history_units": 7764,
+      "shared_framing_positions": 1512,
+      "input_positions": 36222,
+      "authored_content_units": 5850,
+      "output_positions": 6066,
+      "host_observation_units": 1080
+    },
+    "python_aliases": {
+      "common_input_text_tokens": 15102,
+      "artifact_input_units": 5346,
+      "memory_input_units": 5238,
+      "reprocessed_history_units": 7488,
+      "shared_framing_positions": 1512,
+      "input_positions": 34686,
+      "authored_content_units": 5712,
+      "output_positions": 5928,
+      "host_observation_units": 1080
+    },
+    "ideal_ain": {
+      "common_input_text_tokens": 15102,
+      "artifact_input_units": 2700,
+      "memory_input_units": 2970,
+      "reprocessed_history_units": 4860,
+      "shared_framing_positions": 1512,
+      "input_positions": 27144,
+      "authored_content_units": 3498,
+      "output_positions": 3714,
+      "host_observation_units": 864
+    },
+    "ideal_ir": {
+      "common_input_text_tokens": 15102,
+      "artifact_input_units": 2700,
+      "memory_input_units": 2970,
+      "reprocessed_history_units": 4860,
+      "shared_framing_positions": 1512,
+      "input_positions": 27144,
+      "authored_content_units": 3498,
+      "output_positions": 3714,
+      "host_observation_units": 864
+    },
+    "ideal_python": {
+      "common_input_text_tokens": 15102,
+      "artifact_input_units": 2700,
+      "memory_input_units": 2970,
+      "reprocessed_history_units": 4860,
+      "shared_framing_positions": 1512,
+      "input_positions": 27144,
+      "authored_content_units": 3498,
+      "output_positions": 3714,
+      "host_observation_units": 864
+    }
+  },
+  "inspect": {
+    "python": {
+      "common_input_text_tokens": 50886,
+      "artifact_input_units": 6606,
+      "memory_input_units": 5238,
+      "reprocessed_history_units": 7764,
+      "shared_framing_positions": 1512,
+      "input_positions": 72006,
+      "authored_content_units": 5850,
+      "output_positions": 6066,
+      "host_observation_units": 1080
+    },
+    "python_aliases": {
+      "common_input_text_tokens": 50886,
+      "artifact_input_units": 5346,
+      "memory_input_units": 5238,
+      "reprocessed_history_units": 7488,
+      "shared_framing_positions": 1512,
+      "input_positions": 70470,
+      "authored_content_units": 5712,
+      "output_positions": 5928,
+      "host_observation_units": 1080
+    },
+    "ideal_ain": {
+      "common_input_text_tokens": 50886,
+      "artifact_input_units": 2700,
+      "memory_input_units": 2970,
+      "reprocessed_history_units": 4860,
+      "shared_framing_positions": 1512,
+      "input_positions": 62928,
+      "authored_content_units": 3498,
+      "output_positions": 3714,
+      "host_observation_units": 864
+    },
+    "ideal_ir": {
+      "common_input_text_tokens": 50886,
+      "artifact_input_units": 2700,
+      "memory_input_units": 2970,
+      "reprocessed_history_units": 4860,
+      "shared_framing_positions": 1512,
+      "input_positions": 62928,
+      "authored_content_units": 3498,
+      "output_positions": 3714,
+      "host_observation_units": 864
+    },
+    "ideal_python": {
+      "common_input_text_tokens": 50886,
+      "artifact_input_units": 2700,
+      "memory_input_units": 2970,
+      "reprocessed_history_units": 4860,
+      "shared_framing_positions": 1512,
+      "input_positions": 62928,
+      "authored_content_units": 3498,
+      "output_positions": 3714,
+      "host_observation_units": 864
+    }
+  }
+}

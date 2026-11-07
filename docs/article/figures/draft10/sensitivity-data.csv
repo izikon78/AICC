@@ -1,0 +1,7 @@
+scenario,label,schedule,baseline_positions,ideal_positions,reduction_percent
+frozen,Frozen assumptions,resident,40614,30858,24.021273452504065
+frozen,Frozen assumptions,inspect,76398,66642,12.769967800204196
+compact_json,Compact JSON in Python,resident,39264,30858,21.408924205378977
+compact_json,Compact JSON in Python,inspect,75048,66642,11.200831467860572
+no_static,No learned static symbols,resident,40614,56964,-40.25705421775743
+no_static,No learned static symbols,inspect,76398,92748,-21.401083798005182

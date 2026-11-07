@@ -1,0 +1,35 @@
+{
+  "scope": "Published accounting reconstruction, not model inference performance",
+  "agents": [
+    {
+      "agent": "Codex independent reconstruction",
+      "resident_reduction_percent": 24.021273452504065,
+      "inspect_reduction_percent": 12.769967800204196,
+      "stage_episodes": 144,
+      "ledger_rows": 2160,
+      "first_counter_matches": true,
+      "reference_rerun": "Passed; 20 tests on recorded earlier package revision",
+      "identity": "As stated in the submitted report"
+    },
+    {
+      "agent": "Claude Opus 5.5",
+      "resident_reduction_percent": 24.021273452504065,
+      "inspect_reduction_percent": 12.769967800204196,
+      "stage_episodes": 144,
+      "ledger_rows": 2160,
+      "first_counter_matches": true,
+      "reference_rerun": "Exact wrapper blocked at download; labeled deviation matched; 21 tests",
+      "identity": "Self-reported"
+    },
+    {
+      "agent": "Grok",
+      "resident_reduction_percent": "??",
+      "inspect_reduction_percent": "??",
+      "stage_episodes": "??",
+      "ledger_rows": "??",
+      "first_counter_matches": "??",
+      "reference_rerun": "?? pending",
+      "identity": "??"
+    }
+  ]
+}

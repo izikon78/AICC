@@ -1,0 +1,118 @@
+{
+  "provenance": {
+    "approved_test_commit": "2b6541a24ef71dcd4390f526042ebf131501fc51",
+    "claude_submission_commit": "e9a8a5111717a57427fac50605cf5cbe0c86b316",
+    "source_sha256": {
+      "results/approved-core-2026-11-06/totals.json": "6e886ff6e89b6b1c0bebbb8849fe2dbd3715ce4db62d6e1370177151f0332798",
+      "trace-inputs.json": "6f54c67509944390c7730438fc2d3058b3cb1aa5a89915674918579e5550b31e",
+      "validation/codex-independent-2026-11-06/INDEPENDENT_REPORT.md": "f258b5b9ea0b42326285173c3d3dc2a17ea1a650aa2cfac81bf2007fde7fb6fc",
+      "validation/codex-independent-2026-11-06/initial-v1/totals.json": "6e886ff6e89b6b1c0bebbb8849fe2dbd3715ce4db62d6e1370177151f0332798",
+      "validation/claude-opus-5.5-independent-2026-11-06/INDEPENDENT_REPORT.md": "cf01f4e7e9140a0668b6b505bb9af204d1333b03c6e8cbba6479b128c9debd54",
+      "validation/claude-opus-5.5-independent-2026-11-06/initial-v1/totals.json": "b3243b035ec26e210b7e3a79a853fc5395f4d2d340fb8c64edb1d457f226c70c",
+      "validation/claude-opus-5.5-independent-2026-11-06/extension-v1/sensitivity.json": "66710b1509f87cec7ae6062c6e7a2f3d6063bc02119518d78c9b9854e7a3c7bd"
+    },
+    "units": "Measured Python text tokens and modeled ideal units; equal position cost assumed",
+    "model_inference_calls_in_test": 0,
+    "grok_status": "?? pending"
+  },
+  "schedules": [
+    {
+      "schedule": "resident",
+      "python_input": 34686,
+      "python_output": 5928,
+      "python_total": 40614,
+      "ideal_input": 27144,
+      "ideal_output": 3714,
+      "ideal_total": 30858,
+      "difference": 9756,
+      "reduction_percent": 24.021273452504065
+    },
+    {
+      "schedule": "inspect",
+      "python_input": 70470,
+      "python_output": 5928,
+      "python_total": 76398,
+      "ideal_input": 62928,
+      "ideal_output": 3714,
+      "ideal_total": 66642,
+      "difference": 9756,
+      "reduction_percent": 12.769967800204196
+    }
+  ],
+  "components": [
+    {
+      "key": "artifact_input_units",
+      "label": "Predecessor artifact",
+      "positions": 2646,
+      "share_percent": 27.121771217712176
+    },
+    {
+      "key": "memory_input_units",
+      "label": "Incoming memory",
+      "positions": 2268,
+      "share_percent": 23.247232472324722
+    },
+    {
+      "key": "reprocessed_history_units",
+      "label": "Replayed history",
+      "positions": 2628,
+      "share_percent": 26.937269372693727
+    },
+    {
+      "key": "authored_content_units",
+      "label": "Authored output",
+      "positions": 2214,
+      "share_percent": 22.69372693726937
+    }
+  ],
+  "sensitivities": [
+    {
+      "scenario": "frozen",
+      "label": "Frozen assumptions",
+      "schedule": "resident",
+      "baseline_positions": 40614,
+      "ideal_positions": 30858,
+      "reduction_percent": 24.021273452504065
+    },
+    {
+      "scenario": "frozen",
+      "label": "Frozen assumptions",
+      "schedule": "inspect",
+      "baseline_positions": 76398,
+      "ideal_positions": 66642,
+      "reduction_percent": 12.769967800204196
+    },
+    {
+      "scenario": "compact_json",
+      "label": "Compact JSON in Python",
+      "schedule": "resident",
+      "baseline_positions": 39264,
+      "ideal_positions": 30858,
+      "reduction_percent": 21.408924205378977
+    },
+    {
+      "scenario": "compact_json",
+      "label": "Compact JSON in Python",
+      "schedule": "inspect",
+      "baseline_positions": 75048,
+      "ideal_positions": 66642,
+      "reduction_percent": 11.200831467860572
+    },
+    {
+      "scenario": "no_static",
+      "label": "No learned static symbols",
+      "schedule": "resident",
+      "baseline_positions": 40614,
+      "ideal_positions": 56964,
+      "reduction_percent": -40.25705421775743
+    },
+    {
+      "scenario": "no_static",
+      "label": "No learned static symbols",
+      "schedule": "inspect",
+      "baseline_positions": 76398,
+      "ideal_positions": 92748,
+      "reduction_percent": -21.401083798005182
+    }
+  ]
+}

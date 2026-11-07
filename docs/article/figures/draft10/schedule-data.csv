@@ -1,0 +1,3 @@
+schedule,python_input,python_output,python_total,ideal_input,ideal_output,ideal_total,difference,reduction_percent
+resident,34686,5928,40614,27144,3714,30858,9756,24.021273452504065
+inspect,70470,5928,76398,62928,3714,66642,9756,12.769967800204196
