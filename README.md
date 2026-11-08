@@ -8,7 +8,10 @@ Concept, architecture, and research direction: **Izik Bachar**.
 
 ## Start here
 
-- [Article Draft 10 with latest approved-core results and Grok pending](docs/article/AICC_Article_Draft_10.md)
+- [Current article Draft 11 with language examples and reviewed experiment stages](docs/article/AICC_Article_Draft_11.md)
+- [Draft 11 printable PDF](docs/article/AICC_Article_Draft_11_Review.pdf)
+- [All-branch experiment review and numerical audit](docs/article/review/draft11/README.md)
+- [Historical Draft 10 approved-core article](docs/article/AICC_Article_Draft_10.md)
 - [Portable packet for Grok and other AI agents](docs/replication/APPROVED_CORE_AGENT_PACKET.md)
 - [Continue on another computer: RTX 3080 handoff and current next task](docs/handoff/RTX3080_CONTINUATION.md)
 - [Current-agent AIN fluency experiment: plan, completed results and charts](experiments/ain_fluency/RESULTS_OVERVIEW.md)
@@ -23,7 +26,11 @@ Concept, architecture, and research direction: **Izik Bachar**.
 - [Combined processing-study results](https://github.com/izikon78/AICC/blob/research/ain-language-and-study-results/docs/research/REPLICATION_SYNTHESIS_2026-11-05.md)
 - [Charts, pie charts, CSV data, and source hashes](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/article/figures/draft8)
 
-The article and reviewed processing archive are maintained on `research/ain-language-and-study-results`; the first executable AIN study is on `research/ain-v0-foundation`. The project description on `main` is the public entry point. Draft studies remain reviewable without treating them as final validation.
+The current article and expanded experiment review are published on
+`research/ain-article-draft-11`. Earlier article and processing records remain on
+`research/ain-language-and-study-results`, and the first executable AIN study is
+on `research/ain-v0-foundation`. The project description on `main` is the public
+entry point. Versioned drafts and their original evidence remain available.
 
 ## What has been tested
 
@@ -40,13 +47,31 @@ two quota-rejected requests have unknown usage, and one valid register-reusing
 AIN predecessor exceeded the fault injector's capabilities. The overview
 separates those limitations from model correctness and native-training claims.
 
+Local Qwen2.5-1.5B LoRA screens subsequently tested full and compact formats on
+small affine arithmetic tasks. Python passed 24/24 in both screens; readable IR
+passed 15/24 and 24/24, and numeric AIN passed 7/24 and 23/24. The screens used
+one seed and different interfaces and evaluation caps. The compact screen gave
+every arm the same LLVM backend and executed native code for its bounded subset.
+Their frozen reports are linked from [Draft 11](docs/article/AICC_Article_Draft_11.md).
+
+The approved-core workflow experiment estimates 24.0% fewer counted total
+positions with resident data and 12.8% fewer with records in context, compared
+with short-alias Python. It grants fluent vocabulary, approved shared core,
+perfect composition and equal cost per counted position. Ideal AIN, readable IR
+and Python interfaces tie under equal encoding opportunities. These conditional
+accounting results and independent reconstructions are documented in the
+[reproduction package](experiments/approved_workflow_theory/AGENT_START_HERE.md).
+
 | Area | Current status |
 |---|---|
 | Equivalent event-processing flows and binding prototype | Implemented and measured |
 | Original plus two submitted remeasurements | Records reviewed; raw data and provenance preserved |
 | AIN v0 semantics and complex benchmark | Implemented engineering prototype; 69 tests, 27 workers and six agent-edit submissions pass |
 | Current-agent fluency simulation | 18/18 submitted artifacts pass; no established cost saving; in-context preparation only |
-| Complete AIN compiler or native-operation model | Not implemented or evaluated |
+| Local pretrained-model adaptation | Small one-seed full/compact arithmetic screens completed |
+| Bounded AIN/IR native compiler | Shared LLVM add/sub backend implemented and checked |
+| Approved-core workflow theory | Executed supplied plans and conditional accounting; independent counters match |
+| Fluent learned whole-agent system | Matched learning and unseen-task efficiency remain future work |
 | Lifecycle economics and billed AI savings | Not established |
 
 The first AIN run establishes executable/editable feasibility for its tested
@@ -60,9 +85,11 @@ nor a reduction in selected operation calls establishes native-language savings.
    and all measured results as records of their tested conditions.
 2. Expose sufficient authorable logic and prepare equivalent semantic data for
    source, readable IR, spelling controls and any distinct AIN structure.
-3. Freeze a bounded actual training setup. The main condition is a model that
-   already knows its language before evaluation, with no fixed-language primer.
-4. Compare matched native learning/adaptation on closed programming tasks, with
+3. Extend the local adaptation apparatus to matched whole-agent episodes, with
+   a stable vocabulary, explicit memory/tools and reserved task structures.
+   Freeze its learning budgets and a condition that knows its language before
+   evaluation, with no recurring fixed-language primer.
+4. Compare matched learned agents on unseen programming workflows, with
    actual inference/tool resources per correct chain and a declared stop rule.
    Test AICC lifecycle and AI implementation/compiler effects separately later.
 
@@ -79,6 +106,8 @@ The research question is whether AIN improves correct completed work and mainten
 
 The processing benchmark uses Python/NumPy and no paid model API calls. The
 current-agent experiment uses an existing Codex sign-in and records reported
-inference usage; actual native-language training remains future work. Earlier
+inference usage. Local pretrained-model adaptations and a bounded native compiler
+screen are now recorded; training exclusively on AIN and full learned-agent
+efficiency remain future studies. Earlier
 reports, unfavorable findings, original archives, and contribution credits are
 retained alongside their limitations.

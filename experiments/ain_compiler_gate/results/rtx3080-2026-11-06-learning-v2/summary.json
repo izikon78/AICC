@@ -1,0 +1,92 @@
+{
+  "python": {
+    "before": {
+      "assigned": 24,
+      "correct": 1,
+      "attempted": 24,
+      "timeouts": 0,
+      "output_caps": 20,
+      "input_tokens": 841,
+      "output_tokens": 1327,
+      "generation_seconds": 60.81710610001028,
+      "compiler_seconds": 0.009746399999130517,
+      "judge_seconds": 0.0554196999873966
+    },
+    "after": {
+      "assigned": 24,
+      "correct": 24,
+      "attempted": 24,
+      "timeouts": 0,
+      "output_caps": 0,
+      "input_tokens": 841,
+      "output_tokens": 169,
+      "generation_seconds": 7.732221200014465,
+      "compiler_seconds": 0.13221089998842217,
+      "judge_seconds": 0.1356100999910268
+    }
+  },
+  "ir": {
+    "before": {
+      "assigned": 24,
+      "correct": 0,
+      "attempted": 24,
+      "timeouts": 0,
+      "output_caps": 16,
+      "input_tokens": 793,
+      "output_tokens": 1222,
+      "generation_seconds": 56.36928410000837,
+      "compiler_seconds": 0.0,
+      "judge_seconds": 0.04273609998926986
+    },
+    "after": {
+      "assigned": 24,
+      "correct": 24,
+      "attempted": 24,
+      "timeouts": 0,
+      "output_caps": 0,
+      "input_tokens": 793,
+      "output_tokens": 201,
+      "generation_seconds": 9.336834900008398,
+      "compiler_seconds": 0.1406319999950938,
+      "judge_seconds": 0.14437860003090464
+    }
+  },
+  "ain": {
+    "before": {
+      "assigned": 24,
+      "correct": 0,
+      "attempted": 24,
+      "timeouts": 0,
+      "output_caps": 24,
+      "input_tokens": 817,
+      "output_tokens": 1536,
+      "generation_seconds": 70.26355760000297,
+      "compiler_seconds": 0.0,
+      "judge_seconds": 0.04370329999073874
+    },
+    "after": {
+      "assigned": 24,
+      "correct": 23,
+      "attempted": 24,
+      "timeouts": 0,
+      "output_caps": 0,
+      "input_tokens": 817,
+      "output_tokens": 201,
+      "generation_seconds": 9.163560800014238,
+      "compiler_seconds": 0.1313763999933144,
+      "judge_seconds": 0.13443770001322264
+    }
+  },
+  "aborted_v1": {
+    "assigned": 8,
+    "correct": 0,
+    "attempted": 8,
+    "timeouts": 0,
+    "output_caps": 6,
+    "input_tokens": 271,
+    "output_tokens": 412,
+    "generation_seconds": 19.328269999998156,
+    "compiler_seconds": 0.0,
+    "judge_seconds": 0.038799900001322385
+  }
+}

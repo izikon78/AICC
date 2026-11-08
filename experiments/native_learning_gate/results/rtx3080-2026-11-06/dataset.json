@@ -1,0 +1,2234 @@
+[
+  {
+    "id": "train-add-000",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 1. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        1
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 1)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":1},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,1],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-001",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 2. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        2
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 2)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":2},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,2],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-002",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 3. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        3
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 3)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,3],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-003",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 4. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        4
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 4)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,4],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-004",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 5. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        5
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 5)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":5},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,5],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-005",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 6. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        6
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 6)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":6},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,6],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-006",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 7. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        7
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 7)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":7},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,7],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-007",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 8. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        8
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 8)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":8},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,8],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-008",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 9. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        9
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 9)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":9},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,9],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-009",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 10. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        10
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 10)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":10},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,10],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-010",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 11. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        11
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 11)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":11},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,11],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-011",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 12. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        12
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 12)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":12},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,12],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-012",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 13. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        13
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 13)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":13},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,13],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-013",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 14. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        14
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 14)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":14},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,14],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-014",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 15. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        15
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 15)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":15},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,15],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-015",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 16. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        16
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 16)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":16},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,16],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-016",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 17. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        17
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 17)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":17},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,17],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-017",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 18. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        18
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 18)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":18},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,18],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-018",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 19. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        19
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 19)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":19},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,19],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-019",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 20. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        20
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 20)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":20},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,20],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-020",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 21. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        21
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 21)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":21},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,21],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-021",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 22. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        22
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 22)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":22},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,22],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-022",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 23. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        23
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 23)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":23},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,23],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-023",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 24. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        24
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 24)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":24},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,24],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-024",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 25. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        25
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 25)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":25},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,25],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-025",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 26. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        26
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 26)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":26},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,26],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-026",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 27. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        27
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 27)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":27},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,27],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-027",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 28. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        28
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 28)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":28},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,28],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-028",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 29. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        29
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 29)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":29},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,29],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-029",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 30. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        30
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 30)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":30},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,30],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-030",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 31. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        31
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 31)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":31},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,31],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add-031",
+    "split": "train",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 32. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        32
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 32)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":32},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,32],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "dev-add-000",
+    "split": "dev",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 101. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        101
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 101)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":101},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,101],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "dev-add-001",
+    "split": "dev",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 102. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        102
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 102)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":102},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,102],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "dev-add-002",
+    "split": "dev",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 103. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        103
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 103)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":103},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,103],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "dev-add-003",
+    "split": "dev",
+    "family": "add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 104. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        104
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x + 104)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":104},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,104],[2,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-000",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 1. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        1
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 1)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":1},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,1],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-001",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 2. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        2
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 2)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":2},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,2],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-002",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 3. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        3
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 3)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,3],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-003",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 4. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        4
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 4)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,4],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-004",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 5. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        5
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 5)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":5},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,5],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-005",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 6. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        6
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 6)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":6},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,6],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-006",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 7. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        7
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 7)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":7},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,7],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-007",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 8. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        8
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 8)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":8},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,8],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-008",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 9. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        9
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 9)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":9},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,9],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-009",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 10. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        10
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 10)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":10},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,10],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-010",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 11. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        11
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 11)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":11},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,11],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-011",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 12. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        12
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 12)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":12},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,12],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-012",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 13. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        13
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 13)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":13},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,13],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-013",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 14. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        14
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 14)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":14},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,14],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-014",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 15. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        15
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 15)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":15},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,15],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-015",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 16. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        16
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 16)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":16},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,16],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-016",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 17. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        17
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 17)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":17},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,17],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-017",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 18. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        18
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 18)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":18},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,18],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-018",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 19. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        19
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 19)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":19},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,19],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-019",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 20. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        20
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 20)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":20},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,20],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-020",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 21. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        21
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 21)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":21},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,21],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-021",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 22. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        22
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 22)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":22},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,22],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-022",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 23. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        23
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 23)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":23},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,23],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-023",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 24. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        24
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 24)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":24},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,24],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-024",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 25. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        25
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 25)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":25},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,25],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-025",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 26. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        26
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 26)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":26},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,26],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-026",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 27. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        27
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 27)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":27},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,27],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-027",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 28. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        28
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 28)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":28},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,28],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-028",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 29. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        29
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 29)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":29},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,29],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-029",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 30. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        30
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 30)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":30},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,30],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-030",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 31. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        31
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 31)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":31},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,31],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-sub-031",
+    "split": "train",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 32. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        32
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 32)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":32},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,32],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "dev-sub-000",
+    "split": "dev",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 101. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        101
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 101)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":101},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,101],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "dev-sub-001",
+    "split": "dev",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 102. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        102
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 102)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":102},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,102],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "dev-sub-002",
+    "split": "dev",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 103. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        103
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 103)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":103},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,103],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "dev-sub-003",
+    "split": "dev",
+    "family": "sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 104. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        104
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return (x - 104)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":104},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,104],[3,2,0,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-000",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 1, then add 1. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        1
+      ],
+      [
+        "add",
+        1
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 1) + 1)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":1},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":1},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,1],[2,2,0,1],[0,1,1],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-001",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 1, then add 2. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        1
+      ],
+      [
+        "add",
+        2
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 1) + 2)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":1},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":2},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,1],[2,2,0,1],[0,1,2],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-002",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 1, then add 3. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        1
+      ],
+      [
+        "add",
+        3
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 1) + 3)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":1},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,1],[2,2,0,1],[0,1,3],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-003",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 1, then add 4. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        1
+      ],
+      [
+        "add",
+        4
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 1) + 4)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":1},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,1],[2,2,0,1],[0,1,4],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-004",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 2, then add 1. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        2
+      ],
+      [
+        "add",
+        1
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 2) + 1)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":2},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":1},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,2],[2,2,0,1],[0,1,1],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-005",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 2, then add 2. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        2
+      ],
+      [
+        "add",
+        2
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 2) + 2)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":2},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":2},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,2],[2,2,0,1],[0,1,2],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-006",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 2, then add 3. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        2
+      ],
+      [
+        "add",
+        3
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 2) + 3)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":2},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,2],[2,2,0,1],[0,1,3],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-007",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 2, then add 4. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        2
+      ],
+      [
+        "add",
+        4
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 2) + 4)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":2},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,2],[2,2,0,1],[0,1,4],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-008",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 3, then add 1. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        3
+      ],
+      [
+        "add",
+        1
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 3) + 1)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":1},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,3],[2,2,0,1],[0,1,1],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-009",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 3, then add 2. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        3
+      ],
+      [
+        "add",
+        2
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 3) + 2)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":2},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,3],[2,2,0,1],[0,1,2],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-010",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 3, then add 3. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        3
+      ],
+      [
+        "add",
+        3
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 3) + 3)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,3],[2,2,0,1],[0,1,3],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-011",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 3, then add 4. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        3
+      ],
+      [
+        "add",
+        4
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 3) + 4)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,3],[2,2,0,1],[0,1,4],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-012",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 4, then add 1. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        4
+      ],
+      [
+        "add",
+        1
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 4) + 1)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":1},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,4],[2,2,0,1],[0,1,1],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-013",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 4, then add 2. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        4
+      ],
+      [
+        "add",
+        2
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 4) + 2)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":2},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,4],[2,2,0,1],[0,1,2],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-014",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 4, then add 3. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        4
+      ],
+      [
+        "add",
+        3
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 4) + 3)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,4],[2,2,0,1],[0,1,3],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-015",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 4, then add 4. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        4
+      ],
+      [
+        "add",
+        4
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 4) + 4)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,4],[2,2,0,1],[0,1,4],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-016",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 5, then add 1. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        5
+      ],
+      [
+        "add",
+        1
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 5) + 1)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":5},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":1},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,5],[2,2,0,1],[0,1,1],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-017",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 5, then add 2. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        5
+      ],
+      [
+        "add",
+        2
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 5) + 2)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":5},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":2},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,5],[2,2,0,1],[0,1,2],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-018",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 5, then add 3. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        5
+      ],
+      [
+        "add",
+        3
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 5) + 3)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":5},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,5],[2,2,0,1],[0,1,3],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-019",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 5, then add 4. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        5
+      ],
+      [
+        "add",
+        4
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 5) + 4)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":5},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,5],[2,2,0,1],[0,1,4],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-020",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 6, then add 1. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        6
+      ],
+      [
+        "add",
+        1
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 6) + 1)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":6},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":1},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,6],[2,2,0,1],[0,1,1],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-021",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 6, then add 2. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        6
+      ],
+      [
+        "add",
+        2
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 6) + 2)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":6},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":2},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,6],[2,2,0,1],[0,1,2],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-022",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 6, then add 3. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        6
+      ],
+      [
+        "add",
+        3
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 6) + 3)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":6},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,6],[2,2,0,1],[0,1,3],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-023",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 6, then add 4. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        6
+      ],
+      [
+        "add",
+        4
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 6) + 4)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":6},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,6],[2,2,0,1],[0,1,4],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-024",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 7, then add 1. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        7
+      ],
+      [
+        "add",
+        1
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 7) + 1)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":7},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":1},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,7],[2,2,0,1],[0,1,1],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-025",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 7, then add 2. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        7
+      ],
+      [
+        "add",
+        2
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 7) + 2)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":7},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":2},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,7],[2,2,0,1],[0,1,2],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-026",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 7, then add 3. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        7
+      ],
+      [
+        "add",
+        3
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 7) + 3)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":7},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,7],[2,2,0,1],[0,1,3],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-027",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 7, then add 4. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        7
+      ],
+      [
+        "add",
+        4
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 7) + 4)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":7},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,7],[2,2,0,1],[0,1,4],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-028",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 8, then add 1. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        8
+      ],
+      [
+        "add",
+        1
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 8) + 1)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":8},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":1},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,8],[2,2,0,1],[0,1,1],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-029",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 8, then add 2. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        8
+      ],
+      [
+        "add",
+        2
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 8) + 2)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":8},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":2},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,8],[2,2,0,1],[0,1,2],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-030",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 8, then add 3. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        8
+      ],
+      [
+        "add",
+        3
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 8) + 3)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":8},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,8],[2,2,0,1],[0,1,3],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "train-add_add-031",
+    "split": "train",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 8, then add 4. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        8
+      ],
+      [
+        "add",
+        4
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 8) + 4)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":8},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,8],[2,2,0,1],[0,1,4],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "dev-add_add-000",
+    "split": "dev",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 101, then add 105. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        101
+      ],
+      [
+        "add",
+        105
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 101) + 105)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":101},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":105},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,101],[2,2,0,1],[0,1,105],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "dev-add_add-001",
+    "split": "dev",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 102, then add 106. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        102
+      ],
+      [
+        "add",
+        106
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 102) + 106)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":102},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":106},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,102],[2,2,0,1],[0,1,106],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "dev-add_add-002",
+    "split": "dev",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 103, then add 107. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        103
+      ],
+      [
+        "add",
+        107
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 103) + 107)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":103},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":107},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,103],[2,2,0,1],[0,1,107],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "dev-add_add-003",
+    "split": "dev",
+    "family": "add_add",
+    "prompt": "Write a program with one integer input x. Starting with x, add 104, then add 108. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        104
+      ],
+      [
+        "add",
+        108
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 104) + 108)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":104},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":108},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,104],[2,2,0,1],[0,1,108],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "holdout-sub_add-000",
+    "split": "holdout",
+    "family": "sub_add",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 3, then add 9. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        3
+      ],
+      [
+        "add",
+        9
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x - 3) + 9)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":9},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,3],[3,2,0,1],[0,1,9],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "holdout-sub_add-001",
+    "split": "holdout",
+    "family": "sub_add",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 4, then add 10. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        4
+      ],
+      [
+        "add",
+        10
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x - 4) + 10)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":10},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,4],[3,2,0,1],[0,1,10],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "holdout-sub_add-002",
+    "split": "holdout",
+    "family": "sub_add",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 5, then add 11. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        5
+      ],
+      [
+        "add",
+        11
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x - 5) + 11)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":5},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":11},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,5],[3,2,0,1],[0,1,11],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "holdout-sub_add-003",
+    "split": "holdout",
+    "family": "sub_add",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 6, then add 12. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        6
+      ],
+      [
+        "add",
+        12
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x - 6) + 12)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":6},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":12},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,6],[3,2,0,1],[0,1,12],[2,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "holdout-add_sub-000",
+    "split": "holdout",
+    "family": "add_sub",
+    "prompt": "Write a program with one integer input x. Starting with x, add 3, then subtract 9. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        3
+      ],
+      [
+        "sub",
+        9
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 3) - 9)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":9},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,3],[2,2,0,1],[0,1,9],[3,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "holdout-add_sub-001",
+    "split": "holdout",
+    "family": "add_sub",
+    "prompt": "Write a program with one integer input x. Starting with x, add 4, then subtract 10. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        4
+      ],
+      [
+        "sub",
+        10
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 4) - 10)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":10},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,4],[2,2,0,1],[0,1,10],[3,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "holdout-add_sub-002",
+    "split": "holdout",
+    "family": "add_sub",
+    "prompt": "Write a program with one integer input x. Starting with x, add 5, then subtract 11. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        5
+      ],
+      [
+        "sub",
+        11
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 5) - 11)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":5},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":11},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,5],[2,2,0,1],[0,1,11],[3,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "holdout-add_sub-003",
+    "split": "holdout",
+    "family": "add_sub",
+    "prompt": "Write a program with one integer input x. Starting with x, add 6, then subtract 12. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "add",
+        6
+      ],
+      [
+        "sub",
+        12
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x + 6) - 12)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":6},{\"op\":\"add\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":12},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,6],[2,2,0,1],[0,1,12],[3,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "holdout-sub_sub-000",
+    "split": "holdout",
+    "family": "sub_sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 3, then subtract 9. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        3
+      ],
+      [
+        "sub",
+        9
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x - 3) - 9)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":3},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":9},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,3],[3,2,0,1],[0,1,9],[3,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "holdout-sub_sub-001",
+    "split": "holdout",
+    "family": "sub_sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 4, then subtract 10. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        4
+      ],
+      [
+        "sub",
+        10
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x - 4) - 10)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":4},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":10},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,4],[3,2,0,1],[0,1,10],[3,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "holdout-sub_sub-002",
+    "split": "holdout",
+    "family": "sub_sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 5, then subtract 11. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        5
+      ],
+      [
+        "sub",
+        11
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x - 5) - 11)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":5},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":11},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,5],[3,2,0,1],[0,1,11],[3,2,2,1]],[102,2]]]]"
+    }
+  },
+  {
+    "id": "holdout-sub_sub-003",
+    "split": "holdout",
+    "family": "sub_sub",
+    "prompt": "Write a program with one integer input x. Starting with x, subtract 6, then subtract 12. Return the resulting integer. Output only the program in {format}.",
+    "steps": [
+      [
+        "sub",
+        6
+      ],
+      [
+        "sub",
+        12
+      ]
+    ],
+    "targets": {
+      "python": "def solve(x):\n    return ((x - 6) - 12)",
+      "ir": "{\"version\":0,\"registers\":{\"x\":\"int\",\"c\":\"int\",\"y\":\"int\"},\"parameters\":[\"x\"],\"return_type\":\"int\",\"entry\":\"b\",\"blocks\":[{\"label\":\"b\",\"instructions\":[{\"op\":\"const\",\"dest\":\"c\",\"value\":6},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"x\",\"right\":\"c\"},{\"op\":\"const\",\"dest\":\"c\",\"value\":12},{\"op\":\"sub\",\"dest\":\"y\",\"left\":\"y\",\"right\":\"c\"}],\"terminator\":{\"op\":\"return\",\"value\":\"y\"}}]}",
+      "ain": "[0,\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",[0,0,0],[0],0,0,[[[[0,1,6],[3,2,0,1],[0,1,12],[3,2,2,1]],[102,2]]]]"
+    }
+  }
+]

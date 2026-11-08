@@ -1,0 +1,6 @@
+{
+  "saved_baseline_predictions": 8,
+  "status": "aborted_before_adaptation",
+  "reason": "Compiler review found boundary parity defect at 16 signed operations. Repair instrument, refreeze sources and restart before comparing learning results.",
+  "original_manifest": "manifest.json"
+}

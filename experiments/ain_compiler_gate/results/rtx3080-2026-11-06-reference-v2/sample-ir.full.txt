@@ -1,0 +1,1 @@
+{"version":0,"registers":{"x":"int","c":"int","y":"int"},"parameters":["x"],"return_type":"int","entry":"b","blocks":[{"label":"b","instructions":[{"op":"const","dest":"c","value":3},{"op":"sub","dest":"y","left":"x","right":"c"},{"op":"const","dest":"c","value":9},{"op":"add","dest":"y","left":"y","right":"c"}],"terminator":{"op":"return","value":"y"}}]}

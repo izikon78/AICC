@@ -1,0 +1,5 @@
+schedule,profile,total_positions,ideal_reduction_fraction
+resident,python_total,40614,0.24021273452504066
+inspect,python_total,76398,0.12769967800204196
+resident,ideal_total,30858,0.24021273452504066
+inspect,ideal_total,66642,0.12769967800204196

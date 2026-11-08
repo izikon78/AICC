@@ -1,0 +1,94 @@
+{
+  "recovered_source_commit": "4cd023fb78e966d202ace372d4e4bbf9588a5456",
+  "recovered_manifest_checks": [
+    {
+      "file": "Round8_Results_Claude_Opus_5.5.md",
+      "expected": "7e6c0497830e3be3a1afe48377cafbec4f04bada2ddd84b762bae67d14347789",
+      "actual": "7e6c0497830e3be3a1afe48377cafbec4f04bada2ddd84b762bae67d14347789",
+      "match": true
+    },
+    {
+      "file": "T10_DECISIONS_BEFORE_TESTS.md",
+      "expected": "e3046d9a98150513929b2282f7cb434923d57dda2fc03ffa6d7c0a754963d9ff",
+      "actual": "e3046d9a98150513929b2282f7cb434923d57dda2fc03ffa6d7c0a754963d9ff",
+      "match": true
+    },
+    {
+      "file": "_solution_body.py",
+      "expected": "c44b38209f26c9f54e785b7e37c7490c54e39ca2107bb91d4b259855f50ef6af",
+      "actual": "c44b38209f26c9f54e785b7e37c7490c54e39ca2107bb91d4b259855f50ef6af",
+      "match": true
+    },
+    {
+      "file": "contract_sufficiency.py",
+      "expected": "ad1173b3dc853d8edcbb0a29aa1816c7ea0dde409f316b8079c7789677f2f895",
+      "actual": "ad1173b3dc853d8edcbb0a29aa1816c7ea0dde409f316b8079c7789677f2f895",
+      "match": true
+    },
+    {
+      "file": "h3_persistence.py",
+      "expected": "23aecb7a4128e5696bfcf42cb4e5fb9b9d87c4be7d848b9ba3bdcf84b1a2d575",
+      "actual": "23aecb7a4128e5696bfcf42cb4e5fb9b9d87c4be7d848b9ba3bdcf84b1a2d575",
+      "match": true
+    },
+    {
+      "file": "h3_persistence_results.json",
+      "expected": "3ceb358bcee367b9e988374d9bc360228f97e31e8fd157c44fd2aa8700eb308d",
+      "actual": "3ceb358bcee367b9e988374d9bc360228f97e31e8fd157c44fd2aa8700eb308d",
+      "match": true
+    },
+    {
+      "file": "multiagent_contract.py",
+      "expected": "563810ab7f40d641a3894c305ecbd1b6f8f2e8fc00ecfd8ae17316e062f47b27",
+      "actual": "563810ab7f40d641a3894c305ecbd1b6f8f2e8fc00ecfd8ae17316e062f47b27",
+      "match": true
+    },
+    {
+      "file": "privacy_track.py",
+      "expected": "6fb82049c3ec33d41514df519180399a24a35d4b7f8d12bc4f98dcd18943042f",
+      "actual": "6fb82049c3ec33d41514df519180399a24a35d4b7f8d12bc4f98dcd18943042f",
+      "match": true
+    },
+    {
+      "file": "reimpl_from_contract.py",
+      "expected": "f94738fba5946fdf5ec4b8ea4af669965443e4c1d13c08cdd4fc08c9d94cb86c",
+      "actual": "f94738fba5946fdf5ec4b8ea4af669965443e4c1d13c08cdd4fc08c9d94cb86c",
+      "match": true
+    },
+    {
+      "file": "reimpl_fuzz.py",
+      "expected": "133e239e07854497167e44c82ae8e628a781843e647a178fb6c9b296bdffaba1",
+      "actual": "133e239e07854497167e44c82ae8e628a781843e647a178fb6c9b296bdffaba1",
+      "match": true
+    },
+    {
+      "file": "reimpl_fuzz_results.json",
+      "expected": "8f7eaa99bc33324d2d55bcc3613c1e31e02122ed7f48bd5e5849a73c2ff18096",
+      "actual": "8f7eaa99bc33324d2d55bcc3613c1e31e02122ed7f48bd5e5849a73c2ff18096",
+      "match": true
+    },
+    {
+      "file": "submission.py",
+      "expected": "de5bb7b46488d2ab2c5d2d6c734d28aa128fa19da9aa77beb294ccac52015399",
+      "actual": "de5bb7b46488d2ab2c5d2d6c734d28aa128fa19da9aa77beb294ccac52015399",
+      "match": true
+    },
+    {
+      "file": "sufficiency_results.json",
+      "expected": "f8405a4d9b18f8c953617ea308029f2b4ea01964f6ed4e65ba08680c23725bfc",
+      "actual": "f8405a4d9b18f8c953617ea308029f2b4ea01964f6ed4e65ba08680c23725bfc",
+      "match": true
+    },
+    {
+      "file": "trust_probe.py",
+      "expected": "1b4c36239d362a1e5ca9646d24a292d6ffbc085803904f361cc4c0e9cb664120",
+      "actual": "1b4c36239d362a1e5ca9646d24a292d6ffbc085803904f361cc4c0e9cb664120",
+      "match": true
+    }
+  ],
+  "all_recovered_hashes_match": true,
+  "round9_csv_rows": 55,
+  "harness_rows": 50,
+  "authoring_note_rows": 3,
+  "not_executed_rows": 2
+}

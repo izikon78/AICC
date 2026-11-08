@@ -1,0 +1,60 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+{"event": "fit", "arm": "ain", "loss": 2.8533475399017334, "seconds": 0.5223415000000386, "tokens": 129, "peak_allocated_gib": 3.310546875, "peak_reserved_gib": 3.3828125}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "dev-add-000", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "holdout-sub_add-000", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "dev-add-001", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "holdout-sub_add-001", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "dev-add-002", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "holdout-sub_add-002", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "dev-add-003", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "holdout-sub_add-003", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "dev-sub-000", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "holdout-add_sub-000", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "dev-sub-001", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "holdout-add_sub-001", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "dev-sub-002", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "holdout-add_sub-002", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "dev-sub-003", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "holdout-add_sub-003", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "dev-add_add-000", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "holdout-sub_sub-000", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "dev-add_add-001", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "holdout-sub_sub-001", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "dev-add_add-002", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "holdout-sub_sub-002", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "dev-add_add-003", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "prediction", "arm": "ain", "stage": "before", "id": "holdout-sub_sub-003", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN: expected an ordinary JSON array"}
+{"event": "train", "arm": "ain", "step": 6, "epoch": 1, "loss": 2.1103326082229614, "elapsed_seconds": 5.814417899993714}
+{"event": "train", "arm": "ain", "step": 12, "epoch": 1, "loss": 1.6077212989330292, "elapsed_seconds": 11.660179099999368}
+{"event": "train", "arm": "ain", "step": 18, "epoch": 1, "loss": 0.8985184133052826, "elapsed_seconds": 17.48726270000043}
+{"event": "train", "arm": "ain", "step": 24, "epoch": 1, "loss": 0.11926236003637314, "elapsed_seconds": 24.104030099995725}
+{"event": "train", "arm": "ain", "step": 30, "epoch": 2, "loss": 0.12434422597289085, "elapsed_seconds": 30.027069499999925}
+{"event": "train", "arm": "ain", "step": 36, "epoch": 2, "loss": 0.026253816206008196, "elapsed_seconds": 35.85614799999894}
+{"event": "train", "arm": "ain", "step": 42, "epoch": 2, "loss": 0.01882306847255677, "elapsed_seconds": 41.79860669999471}
+{"event": "train", "arm": "ain", "step": 48, "epoch": 2, "loss": 0.005322977027390152, "elapsed_seconds": 47.735798899993824}
+{"event": "train", "arm": "ain", "step": 54, "epoch": 3, "loss": 0.014848254279058892, "elapsed_seconds": 53.5954172999991}
+{"event": "train", "arm": "ain", "step": 60, "epoch": 3, "loss": 0.005444827314931899, "elapsed_seconds": 59.429023799995775}
+{"event": "train", "arm": "ain", "step": 66, "epoch": 3, "loss": 0.05134237257880159, "elapsed_seconds": 66.10312719999638}
+{"event": "train", "arm": "ain", "step": 72, "epoch": 3, "loss": 0.002578858460765332, "elapsed_seconds": 72.2076687000008}
+C:\Users\Izik\Downloads\AICC\.venv\Lib\site-packages\peft\utils\save_and_load.py:236: UserWarning: Could not find a config file in Qwen/Qwen2.5-1.5B - will assume that the vocabulary was not modified.
+  warnings.warn(
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "dev-add-000", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN terminator: unknown opcode or wrong arity"}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "holdout-sub_add-000", "syntax_ok": true, "correct": false, "error": "wrong result for x=-17: -5 != -11"}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "dev-add-001", "syntax_ok": true, "correct": false, "error": "wrong result for x=-17: 102 != 85"}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "holdout-sub_add-001", "syntax_ok": true, "correct": false, "error": "wrong result for x=-17: -3 != -11"}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "dev-add-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "holdout-sub_add-002", "syntax_ok": true, "correct": false, "error": "wrong result for x=-17: -1 != -11"}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "dev-add-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "holdout-sub_add-003", "syntax_ok": false, "correct": false, "error": "LanguageError: JSON: Expecting ',' delimiter: line 1 column 137 (char 136)"}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "dev-sub-000", "syntax_ok": true, "correct": false, "error": "wrong result for x=-17: 101 != -118"}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "holdout-add_sub-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "dev-sub-001", "syntax_ok": true, "correct": false, "error": "wrong result for x=-17: 102 != -119"}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "holdout-add_sub-001", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN instruction: unknown opcode or wrong arity"}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "dev-sub-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "holdout-add_sub-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "dev-sub-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "holdout-add_sub-003", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN instruction: unknown opcode or wrong arity"}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "dev-add_add-000", "syntax_ok": false, "correct": false, "error": "LanguageError: AIN terminator: unknown opcode or wrong arity"}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "holdout-sub_sub-000", "syntax_ok": true, "correct": false, "error": "wrong result for x=-17: -5 != -29"}
+{"event": "prediction", "arm": "ain", "stage": "after", "id": "dev-add_add-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "arm_complete", "arm": "ain", "after": {"dev": {"correct": 5, "assigned": 12, "syntax_valid": 8, "inference_seconds": 47.80018159998872, "input_tokens": 354, "output_tokens": 1022}, "holdout": {"correct": 2, "assigned": 12, "syntax_valid": 6, "inference_seconds": 47.32732790001319, "input_tokens": 339, "output_tokens": 1006}}, "dev_gate_pass": false}

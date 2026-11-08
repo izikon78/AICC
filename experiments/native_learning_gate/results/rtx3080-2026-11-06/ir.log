@@ -1,0 +1,48 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+{"event": "fit", "arm": "ir", "loss": 1.4875472784042358, "seconds": 0.5221443000045838, "tokens": 114, "peak_allocated_gib": 3.310546875, "peak_reserved_gib": 3.3828125}
+{"event": "prediction", "arm": "ir", "stage": "before", "id": "dev-add-000", "syntax_ok": false, "correct": false, "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"}
+{"event": "prediction", "arm": "ir", "stage": "before", "id": "holdout-sub_add-000", "syntax_ok": false, "correct": false, "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"}
+{"event": "prediction", "arm": "ir", "stage": "before", "id": "dev-add-001", "syntax_ok": false, "correct": false, "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"}
+{"event": "prediction", "arm": "ir", "stage": "before", "id": "holdout-sub_add-001", "syntax_ok": false, "correct": false, "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"}
+{"event": "prediction", "arm": "ir", "stage": "before", "id": "dev-add-002", "syntax_ok": false, "correct": false, "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"}
+{"event": "prediction", "arm": "ir", "stage": "before", "id": "holdout-sub_add-002", "syntax_ok": false, "correct": false, "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"}
+{"event": "prediction", "arm": "ir", "stage": "before", "id": "dev-add-003", "syntax_ok": false, "correct": false, "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"}
+{"event": "prediction", "arm": "ir", "stage": "before", "id": "holdout-sub_add-003", "syntax_ok": false, "correct": false, "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"}
+{"event": "prediction", "arm": "ir", "stage": "before", "id": "dev-sub-000", "syntax_ok": false, "correct": false, "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"}
+{"event": "prediction", "arm": "ir", "stage": "before", "id": "holdout-add_sub-000", "syntax_ok": false, "correct": false, "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"}
+{"event": "prediction", "arm": "ir", "stage": "before", "id": "dev-sub-001", "syntax_ok": false, "correct": false, "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"}
+{"event": "train", "arm": "ir", "step": 6, "epoch": 1, "loss": 0.13842014968395233, "elapsed_seconds": 5.873758499998075}
+{"event": "train", "arm": "ir", "step": 12, "epoch": 1, "loss": 0.006488644838100299, "elapsed_seconds": 11.537378200002422}
+{"event": "train", "arm": "ir", "step": 18, "epoch": 1, "loss": 0.0008356066246051341, "elapsed_seconds": 17.276478500003577}
+{"event": "train", "arm": "ir", "step": 24, "epoch": 1, "loss": 0.0002450176398269832, "elapsed_seconds": 23.04258139999729}
+{"event": "train", "arm": "ir", "step": 30, "epoch": 2, "loss": 0.0002609787006804254, "elapsed_seconds": 28.897342399999616}
+{"event": "train", "arm": "ir", "step": 36, "epoch": 2, "loss": 0.0002430462700431235, "elapsed_seconds": 34.58704659999785}
+{"event": "train", "arm": "ir", "step": 42, "epoch": 2, "loss": 0.00020032415341120213, "elapsed_seconds": 40.426114800000505}
+{"event": "train", "arm": "ir", "step": 48, "epoch": 2, "loss": 9.896035589918029e-05, "elapsed_seconds": 46.27005259999714}
+{"event": "train", "arm": "ir", "step": 54, "epoch": 3, "loss": 5.929159851802979e-05, "elapsed_seconds": 52.04013809999742}
+{"event": "train", "arm": "ir", "step": 60, "epoch": 3, "loss": 3.8646237044304144e-05, "elapsed_seconds": 57.961386000002676}
+{"event": "train", "arm": "ir", "step": 66, "epoch": 3, "loss": 2.836459361788002e-05, "elapsed_seconds": 63.79362039999978}
+{"event": "train", "arm": "ir", "step": 72, "epoch": 3, "loss": 2.270988852615119e-05, "elapsed_seconds": 69.54634369999985}
+C:\Users\Izik\Downloads\AICC\.venv\Lib\site-packages\peft\utils\save_and_load.py:236: UserWarning: Could not find a config file in Qwen/Qwen2.5-1.5B - will assume that the vocabulary was not modified.
+  warnings.warn(
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "dev-add-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "holdout-sub_add-000", "syntax_ok": true, "correct": false, "error": "wrong result for x=-17: -5 != -11"}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "dev-add-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "holdout-sub_add-001", "syntax_ok": true, "correct": false, "error": "wrong result for x=-17: -3 != -11"}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "dev-add-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "holdout-sub_add-002", "syntax_ok": true, "correct": false, "error": "wrong result for x=-17: -1 != -11"}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "dev-add-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "holdout-sub_add-003", "syntax_ok": true, "correct": false, "error": "wrong result for x=-17: 1 != -11"}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "dev-sub-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "holdout-add_sub-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "dev-sub-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "holdout-add_sub-001", "syntax_ok": true, "correct": false, "error": "wrong result for x=-17: -31 != -23"}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "dev-sub-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "holdout-add_sub-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "dev-sub-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "holdout-add_sub-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "dev-add_add-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "holdout-sub_sub-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "dev-add_add-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "after", "id": "holdout-sub_sub-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "arm_complete", "arm": "ir", "after": {"dev": {"correct": 10, "assigned": 12, "syntax_valid": 10, "inference_seconds": 41.67701850000594, "input_tokens": 354, "output_tokens": 900}, "holdout": {"correct": 5, "assigned": 12, "syntax_valid": 10, "inference_seconds": 51.284654199989745, "input_tokens": 377, "output_tokens": 1107}}, "dev_gate_pass": true}

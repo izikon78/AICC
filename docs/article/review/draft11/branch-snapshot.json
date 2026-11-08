@@ -1,0 +1,219 @@
+{
+  "review_date": "2026-11-07",
+  "scope": "All 14 published remote branch tips at review start, plus two local adaptation/compiler engineering studies",
+  "branches": [
+    {
+      "branch": "origin/claude/ain-v0-plan-execution",
+      "tip": "a28436311f152ce65bdb317918c49d75c256bf25",
+      "tree_files": 344,
+      "evidence_entries": 299,
+      "experiment_families": [
+        "README.md",
+        "ain_v0",
+        "efficiency",
+        "lifecycle-pilot",
+        "processing_study",
+        "round7",
+        "round8"
+      ],
+      "review_group": "processing/native"
+    },
+    {
+      "branch": "origin/claude/approved-core-replication",
+      "tip": "e9a8a5111717a57427fac50605cf5cbe0c86b316",
+      "tree_files": 966,
+      "evidence_entries": 913,
+      "experiment_families": [
+        "README.md",
+        "ain_fluency",
+        "ain_v0",
+        "approved_workflow_theory",
+        "efficiency",
+        "lifecycle-pilot",
+        "processing_study",
+        "round7",
+        "round8"
+      ],
+      "review_group": "latest"
+    },
+    {
+      "branch": "origin/claude/cross-review",
+      "tip": "4cd023fb78e966d202ace372d4e4bbf9588a5456",
+      "tree_files": 219,
+      "evidence_entries": 200,
+      "experiment_families": [
+        "README.md",
+        "efficiency",
+        "round7",
+        "round8"
+      ],
+      "review_group": "history"
+    },
+    {
+      "branch": "origin/claude/processing-study-replication",
+      "tip": "2f17cd3825f8e9785c919da2add80d1e35e97b97",
+      "tree_files": 276,
+      "evidence_entries": 253,
+      "experiment_families": [
+        "README.md",
+        "efficiency",
+        "lifecycle-pilot",
+        "processing_study",
+        "round7",
+        "round8"
+      ],
+      "review_group": "processing/native"
+    },
+    {
+      "branch": "origin/claude/results",
+      "tip": "93c0c175ee3c996ac3b28fee76600e1350e15d23",
+      "tree_files": 95,
+      "evidence_entries": 94,
+      "experiment_families": [],
+      "review_group": "history"
+    },
+    {
+      "branch": "origin/main",
+      "tip": "c7d7ccd2fcefe46da44be51bd97328d9a190f451",
+      "tree_files": 1,
+      "evidence_entries": 0,
+      "experiment_families": [],
+      "review_group": "history"
+    },
+    {
+      "branch": "origin/research/ain-fluency-current-agents",
+      "tip": "60ba43bad3588815ecebe1504c35f2dfe7f0e97d",
+      "tree_files": 882,
+      "evidence_entries": 829,
+      "experiment_families": [
+        "README.md",
+        "ain_fluency",
+        "ain_v0",
+        "efficiency",
+        "lifecycle-pilot",
+        "processing_study",
+        "round7",
+        "round8"
+      ],
+      "review_group": "latest"
+    },
+    {
+      "branch": "origin/research/ain-language-and-study-results",
+      "tip": "261ed8ee3e870df1ab51a40aeb1e2a9e32f3d549",
+      "tree_files": 320,
+      "evidence_entries": 275,
+      "experiment_families": [
+        "README.md",
+        "efficiency",
+        "lifecycle-pilot",
+        "processing_study",
+        "round7",
+        "round8"
+      ],
+      "review_group": "processing/native"
+    },
+    {
+      "branch": "origin/research/ain-v0-foundation",
+      "tip": "dcb47b51245a51a7474949f04c47464d1363d755",
+      "tree_files": 454,
+      "evidence_entries": 409,
+      "experiment_families": [
+        "README.md",
+        "ain_v0",
+        "efficiency",
+        "lifecycle-pilot",
+        "processing_study",
+        "round7",
+        "round8"
+      ],
+      "review_group": "processing/native"
+    },
+    {
+      "branch": "origin/research/approved-core-article-draft-10",
+      "tip": "53cb324e70ac801e9636f7fa0972a82fe99ae511",
+      "tree_files": 998,
+      "evidence_entries": 913,
+      "experiment_families": [
+        "README.md",
+        "ain_fluency",
+        "ain_v0",
+        "approved_workflow_theory",
+        "efficiency",
+        "lifecycle-pilot",
+        "processing_study",
+        "round7",
+        "round8"
+      ],
+      "review_group": "latest"
+    },
+    {
+      "branch": "origin/research/approved-core-replication",
+      "tip": "2b6541a24ef71dcd4390f526042ebf131501fc51",
+      "tree_files": 942,
+      "evidence_entries": 889,
+      "experiment_families": [
+        "README.md",
+        "ain_fluency",
+        "ain_v0",
+        "approved_workflow_theory",
+        "efficiency",
+        "lifecycle-pilot",
+        "processing_study",
+        "round7",
+        "round8"
+      ],
+      "review_group": "latest"
+    },
+    {
+      "branch": "origin/research/consolidated-archive-2026-11-04",
+      "tip": "c6eb51028f7172b6a0d4c349fab56be3ecf5ac25",
+      "tree_files": 179,
+      "evidence_entries": 160,
+      "experiment_families": [
+        "README.md",
+        "efficiency",
+        "lifecycle-pilot",
+        "round7",
+        "round8"
+      ],
+      "review_group": "history"
+    },
+    {
+      "branch": "origin/research/native-ain-hypothesis-reassessment",
+      "tip": "e86d372701d42b8036eceabc4e4d40326230ef10",
+      "tree_files": 469,
+      "evidence_entries": 418,
+      "experiment_families": [
+        "README.md",
+        "ain_v0",
+        "efficiency",
+        "lifecycle-pilot",
+        "processing_study",
+        "round7",
+        "round8"
+      ],
+      "review_group": "processing/native"
+    },
+    {
+      "branch": "origin/research/processing-and-learning-study",
+      "tip": "63d012095a6db66a71918cb574fb2c6ceaecf147",
+      "tree_files": 230,
+      "evidence_entries": 207,
+      "experiment_families": [
+        "README.md",
+        "efficiency",
+        "lifecycle-pilot",
+        "processing_study",
+        "round7",
+        "round8"
+      ],
+      "review_group": "processing/native"
+    }
+  ],
+  "evidence_entries_across_branches": 5859,
+  "distinct_evidence_blobs": 796,
+  "local_studies": [
+    "experiments/native_learning_gate",
+    "experiments/ain_compiler_gate"
+  ]
+}

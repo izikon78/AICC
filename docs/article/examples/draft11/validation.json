@@ -1,0 +1,296 @@
+{
+  "examples_sha256": "5858ef023494cc76ab755a5e7c2c4cd906149fdbf17f57ccf5da3e47a49fbdaf",
+  "examples": 5,
+  "unique_catalog_operations": 15,
+  "structural_checks_passed": true,
+  "mock_contract_scenarios": 13,
+  "mock_contract_scenarios_passed": 13,
+  "actual_ain_compiler_runs": 0,
+  "actual_database_connections": 0,
+  "actual_http_requests": 0,
+  "actual_os_threads_started": 0,
+  "source_compiler_execution": "Documentary source reviewed against API contracts, without running these five language toolchains",
+  "structure": [
+    {
+      "example": "csharp_database",
+      "passed": true,
+      "function_id": 50,
+      "call_ids": [
+        501,
+        502,
+        503
+      ],
+      "source_lines": 12,
+      "ain_lines": 6
+    },
+    {
+      "example": "python_http_api",
+      "passed": true,
+      "function_id": 51,
+      "call_ids": [
+        511,
+        512,
+        513
+      ],
+      "source_lines": 6,
+      "ain_lines": 6
+    },
+    {
+      "example": "cpp_thread_management",
+      "passed": true,
+      "function_id": 52,
+      "call_ids": [
+        521,
+        521,
+        523,
+        523
+      ],
+      "source_lines": 10,
+      "ain_lines": 7
+    },
+    {
+      "example": "ruby_paid_totals",
+      "passed": true,
+      "function_id": 53,
+      "call_ids": [
+        531,
+        532,
+        533
+      ],
+      "source_lines": 8,
+      "ain_lines": 6
+    },
+    {
+      "example": "java_active_emails",
+      "passed": true,
+      "function_id": 54,
+      "call_ids": [
+        541,
+        542,
+        543,
+        544
+      ],
+      "source_lines": 8,
+      "ain_lines": 7
+    }
+  ],
+  "scenarios": [
+    {
+      "case": "database_success",
+      "passed": true,
+      "events": [
+        [
+          "open",
+          "database",
+          "db"
+        ],
+        [
+          "query",
+          "SELECT * FROM Users"
+        ],
+        [
+          "close",
+          "db"
+        ]
+      ]
+    },
+    {
+      "case": "database_connect",
+      "passed": true,
+      "events": [
+        [
+          "open",
+          "database",
+          "db"
+        ],
+        [
+          "close",
+          "db"
+        ]
+      ]
+    },
+    {
+      "case": "database_query",
+      "passed": true,
+      "events": [
+        [
+          "open",
+          "database",
+          "db"
+        ],
+        [
+          "query",
+          "SELECT * FROM Users"
+        ],
+        [
+          "close",
+          "db"
+        ]
+      ]
+    },
+    {
+      "case": "http_success",
+      "passed": true,
+      "events": [
+        [
+          "open",
+          "http",
+          "response"
+        ],
+        [
+          "get",
+          "https://example.test/users",
+          10
+        ],
+        [
+          "close",
+          "response"
+        ]
+      ]
+    },
+    {
+      "case": "http_bad_json",
+      "passed": true,
+      "events": [
+        [
+          "open",
+          "http",
+          "response"
+        ],
+        [
+          "get",
+          "https://example.test/users",
+          10
+        ],
+        [
+          "close",
+          "response"
+        ]
+      ]
+    },
+    {
+      "case": "http_bad_utf8",
+      "passed": true,
+      "events": [
+        [
+          "open",
+          "http",
+          "response"
+        ],
+        [
+          "get",
+          "https://example.test/users",
+          10
+        ],
+        [
+          "close",
+          "response"
+        ]
+      ]
+    },
+    {
+      "case": "http_open_error",
+      "passed": true,
+      "events": [
+        [
+          "open",
+          "http",
+          "response"
+        ],
+        [
+          "get",
+          "https://example.test/users",
+          10
+        ],
+        [
+          "close",
+          "response"
+        ]
+      ]
+    },
+    {
+      "case": "threads_reverse_completion",
+      "passed": true,
+      "events": [
+        [
+          "open",
+          "worker",
+          1
+        ],
+        [
+          "open",
+          "worker",
+          2
+        ],
+        [
+          "completed",
+          2,
+          9
+        ],
+        [
+          "completed",
+          1,
+          7
+        ],
+        [
+          "join",
+          1
+        ],
+        [
+          "join",
+          2
+        ]
+      ]
+    },
+    {
+      "case": "threads_second_spawn_failure",
+      "passed": true,
+      "events": [
+        [
+          "open",
+          "worker",
+          1
+        ],
+        [
+          "stop",
+          1
+        ],
+        [
+          "join",
+          1
+        ]
+      ]
+    },
+    {
+      "case": "ruby_paid_refunds_and_exact_large_integers",
+      "passed": true,
+      "result": [
+        [
+          "A",
+          100
+        ],
+        [
+          "B",
+          1180591620717411303624
+        ]
+      ]
+    },
+    {
+      "case": "ruby_empty_input",
+      "passed": true
+    },
+    {
+      "case": "java_active_distinct_ascii_order",
+      "passed": true,
+      "result": [
+        "A@example.test",
+        "a@example.test",
+        "b@example.test"
+      ]
+    },
+    {
+      "case": "java_empty_input",
+      "passed": true
+    }
+  ]
+}

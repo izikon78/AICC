@@ -1,0 +1,64 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "dev-add-000", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "holdout-sub_add-000", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "dev-add-001", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "holdout-sub_add-001", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "dev-add-002", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "holdout-sub_add-002", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "dev-add-003", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "holdout-sub_add-003", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "dev-sub-000", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "holdout-add_sub-000", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "dev-sub-001", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "holdout-add_sub-001", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "dev-sub-002", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "holdout-add_sub-002", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "dev-sub-003", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "holdout-add_sub-003", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "dev-add_add-000", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "holdout-sub_sub-000", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "dev-add_add-001", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "holdout-sub_sub-001", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "dev-add_add-002", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "holdout-sub_sub-002", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "dev-add_add-003", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ir", "stage": "ir-before", "id": "holdout-sub_sub-003", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "train", "arm": "ir", "step": 6, "epoch": 1, "loss": 0.16592412441968918, "elapsed_seconds": 5.81802400000015}
+{"event": "train", "arm": "ir", "step": 12, "epoch": 1, "loss": 4.221862172926194e-05, "elapsed_seconds": 11.556796599994414}
+{"event": "train", "arm": "ir", "step": 18, "epoch": 1, "loss": 2.802751953367988e-05, "elapsed_seconds": 17.22976059999928}
+{"event": "train", "arm": "ir", "step": 24, "epoch": 1, "loss": 8.03138044602747e-06, "elapsed_seconds": 23.018286099999386}
+{"event": "train", "arm": "ir", "step": 30, "epoch": 2, "loss": 1.0176744922318903e-05, "elapsed_seconds": 28.73016999999527}
+{"event": "train", "arm": "ir", "step": 36, "epoch": 2, "loss": 4.4509475287668465e-06, "elapsed_seconds": 34.338259899996046}
+{"event": "train", "arm": "ir", "step": 42, "epoch": 2, "loss": 5.116264276239235e-06, "elapsed_seconds": 40.085399799994775}
+{"event": "train", "arm": "ir", "step": 48, "epoch": 2, "loss": 3.952501913317974e-06, "elapsed_seconds": 45.8936842999974}
+{"event": "train", "arm": "ir", "step": 54, "epoch": 3, "loss": 1.7352327859043726e-06, "elapsed_seconds": 51.64498359999561}
+{"event": "train", "arm": "ir", "step": 60, "epoch": 3, "loss": 1.2375386546636946e-06, "elapsed_seconds": 57.30473229999916}
+{"event": "train", "arm": "ir", "step": 66, "epoch": 3, "loss": 8.866172080956858e-07, "elapsed_seconds": 63.02868409999792}
+{"event": "train", "arm": "ir", "step": 72, "epoch": 3, "loss": 9.991205445203377e-07, "elapsed_seconds": 68.71792419999838}
+C:\Users\Izik\Downloads\AICC\.venv\Lib\site-packages\peft\utils\save_and_load.py:236: UserWarning: Could not find a config file in Qwen/Qwen2.5-1.5B - will assume that the vocabulary was not modified.
+  warnings.warn(
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "dev-add-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "holdout-sub_add-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "dev-add-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "holdout-sub_add-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "dev-add-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "holdout-sub_add-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "dev-add-003", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "holdout-sub_add-003", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "dev-sub-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "holdout-add_sub-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "dev-sub-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "holdout-add_sub-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "dev-sub-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "holdout-add_sub-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "dev-sub-003", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "holdout-add_sub-003", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "dev-add_add-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "holdout-sub_sub-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "dev-add_add-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "holdout-sub_sub-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "dev-add_add-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "holdout-sub_sub-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "dev-add_add-003", "correct": true, "error": null}
+{"event": "prediction", "arm": "ir", "stage": "ir-after", "id": "holdout-sub_sub-003", "correct": true, "error": null}
+{"event": "arm_complete", "arm": "ir", "after": {"dev": {"correct": 12, "assigned": 12, "syntax_valid": 12, "inference_seconds": 4.406701399995654, "input_tokens": 388, "output_tokens": 96}, "holdout": {"correct": 12, "assigned": 12, "syntax_valid": 12, "inference_seconds": 4.930133500012744, "input_tokens": 405, "output_tokens": 105}}, "dev_gate_pass": true}

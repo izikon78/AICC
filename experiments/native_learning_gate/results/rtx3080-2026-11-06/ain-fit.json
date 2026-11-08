@@ -1,0 +1,7 @@
+{
+  "loss": 2.8533475399017334,
+  "seconds": 0.5223415000000386,
+  "tokens": 129,
+  "peak_allocated_gib": 3.310546875,
+  "peak_reserved_gib": 3.3828125
+}

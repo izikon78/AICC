@@ -1,0 +1,316 @@
+{
+  "comparison_tip": "53cb324e70ac801e9636f7fa0972a82fe99ae511",
+  "branches": [
+    {
+      "branch": "origin/main",
+      "tip": "c7d7ccd2fcefe46da44be51bd97328d9a190f451",
+      "total_tree_files": 1,
+      "relevant_files": 1,
+      "narrative_data_files": 1,
+      "content_not_present_at_draft10_tip": [
+        {
+          "path": "README.md",
+          "blob": "bf753e827c1b5c548478227becd28bffe71ccb72",
+          "type": "blob"
+        }
+      ]
+    },
+    {
+      "branch": "origin/claude/results",
+      "tip": "93c0c175ee3c996ac3b28fee76600e1350e15d23",
+      "total_tree_files": 95,
+      "relevant_files": 95,
+      "narrative_data_files": 47,
+      "content_not_present_at_draft10_tip": [
+        {
+          "path": "README.md",
+          "blob": "2ef2f8459406c44e530401eecfc3539b19ccb78a",
+          "type": "blob"
+        }
+      ]
+    },
+    {
+      "branch": "origin/claude/cross-review",
+      "tip": "4cd023fb78e966d202ace372d4e4bbf9588a5456",
+      "total_tree_files": 219,
+      "relevant_files": 211,
+      "narrative_data_files": 101,
+      "content_not_present_at_draft10_tip": [
+        {
+          "path": "README.md",
+          "blob": "0b96e3db7df0b22badd3c51d28a81f2f5bd97617",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/README.md",
+          "blob": "d2137a01a12680ac918b18395ffb162e1eb48164",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/cross-review/CROSS_REVIEW_2026-11-04.md",
+          "blob": "9fbf75aed8c61abed8868c4f403f4ddb44aff70e",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/cross-review/frozen_token_counts.txt",
+          "blob": "d52dc8a1ca18eeb5e98882fec44f6c302b29f7fc",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/cross-review/round8_1_answers.py",
+          "blob": "e1895f568559298ec5bb7877e4d748c6086db5c1",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/cross-review/round8_1_answers_output.txt",
+          "blob": "6df830992cf59ec609c9aaf41a9a6ccae990e008",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/README.md",
+          "blob": "8bb2106145961fae4cbfcc3c75d98191f9aaac27",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/a_b_results.json",
+          "blob": "379d31609981a9a46212f384dd1f46c415589e96",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/b_extra.py",
+          "blob": "22cf7bdf6778447b7f9b45ae4aa6796ce414c168",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/count.js",
+          "blob": "ceeb508c532d940de2579b519fe8050b4395db32",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/countlist.js",
+          "blob": "bc608e839138aeb52c93d5766e66e4e6b8abdba1",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/lang.py",
+          "blob": "1abfe2f3672ef0a1fd8ffb4ece4eeffbae2c5a50",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/measure.py",
+          "blob": "433ca68c431357689a413776dcda7ad5020999e6",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/mutate.py",
+          "blob": "5a17185595835cb1792aadc40c3545a4cd08d19a",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/mutation_results.json",
+          "blob": "d3d1488d1729427b804ddced99c1515426a33075",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/prod.py",
+          "blob": "6b38190b6dc48c2541a835898bd72a157cf2345e",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/prod_results.json",
+          "blob": "114310ff7ab23476f5538bb2190db607c558732a",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/progs/main.apl",
+          "blob": "bfa6bc707028251bdbc7a3b451095aa452d20c69",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/progs/main.cs",
+          "blob": "7c70d49a32c9bee0f3213398bf7b614bea929e03",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/progs/main.dis",
+          "blob": "20bfc30208279787ad66b95d8335baa5c39d2952",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/progs/main.fs",
+          "blob": "aedf47d4dc53b787574bb7c69ded8c80ff9e4a70",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/progs/main.py",
+          "blob": "1970bc91fe5b56953e0d8635a46740c09413766a",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/progs/main.rkt",
+          "blob": "c6572f14d06471a72952d5461be30c23fa196e19",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/progs/main.wasm",
+          "blob": "10553649faa7b6efd07c5bae0a7b9f4479988bd3",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/progs/main_guarded.fs",
+          "blob": "f2b66323bd1bb3cf4c3266b8263713d91760fac9",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/progs/main_min.cs",
+          "blob": "c6a3c8bb32bffdf2ebeaf8310aa9e52b52afef81",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/progs/main_min.py",
+          "blob": "ebe1f1a72fdc7612174c3bd8d19c1973b355fcf3",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/run_traces.py",
+          "blob": "462a50fbfc25f867517b6f89d61b04d10c8e3fcb",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/spec_a.txt",
+          "blob": "727df9a5768dc37f2acc23e5b0aee8370a04bccf",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/tok.py",
+          "blob": "94bf404b68c0085d1bd7165ca6a35269fa91f24d",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/token_results.json",
+          "blob": "4f1a5fe119f713f9b611682c1df757b28c4c385d",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/tokstr.js",
+          "blob": "ed4bdbb6a9b74b3545328e44ee58e3f553135ee4",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/language-prototypes-v2/variants.py",
+          "blob": "b68e218904621e99aec27437c252d3d18ceb0348",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/round8-earlier-attempt/PROVENANCE.md",
+          "blob": "9b3f13614c308b425db55028cfe4f2c59ec1196c",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/round8-earlier-attempt/Round8_Results_Claude_Opus_5.5.md",
+          "blob": "98848531925074634898a0ae30977d5b7c619696",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/round8-earlier-attempt/SHA256SUMS.txt",
+          "blob": "fd3f012aa95e4aacc165ad9ca29b3e03f38d7cac",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/round8-earlier-attempt/T10_DECISIONS_BEFORE_TESTS.md",
+          "blob": "919bd47de5078db04b547c34e1fe808c926ac713",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/round8-earlier-attempt/_solution_body.py",
+          "blob": "65f30cca140a3e32cbe316d9e519517b119d23ce",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/round8-earlier-attempt/contract_sufficiency.py",
+          "blob": "9a5dcef4484e8d26b035e5062ceef4a3df9705ec",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/round8-earlier-attempt/h3_persistence.py",
+          "blob": "249e8ddeac074ecdb5fa370be3b68084299d86d0",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/round8-earlier-attempt/h3_persistence_results.json",
+          "blob": "744ae1d50e778edc11f9fa6efce019c00dab44e2",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/round8-earlier-attempt/multiagent_contract.py",
+          "blob": "b51153d8e77b083c754665ba64d0b03b7e993102",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/round8-earlier-attempt/privacy_track.py",
+          "blob": "b6e065d22bc3c75f44f7d193601184433e05e170",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/round8-earlier-attempt/reimpl_from_contract.py",
+          "blob": "cd46e48fc08339de3777150f7a1508e86cfc1b27",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/round8-earlier-attempt/reimpl_fuzz.py",
+          "blob": "7bd455c83be1feb931bd600ccd1d5d8c0d51f395",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/round8-earlier-attempt/reimpl_fuzz_results.json",
+          "blob": "e2f59700397170ca9925a93efbdc8aeb099665ba",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/round8-earlier-attempt/submission.py",
+          "blob": "3c894d144ab2d3b9eb41ad5f6b712d94f0129d07",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/round8-earlier-attempt/sufficiency_results.json",
+          "blob": "5bad51d2e18c4c23dfac1df6ff6c5c0e2a4e7c6d",
+          "type": "blob"
+        },
+        {
+          "path": "agents/claude/round8-earlier-attempt/trust_probe.py",
+          "blob": "0048df9f9eec6c1bccbeef4c7e720d936a8723bb",
+          "type": "blob"
+        },
+        {
+          "path": "experiments/README.md",
+          "blob": "db8076dbf8d2abf7fad5f72af1d20ed36f7ea506",
+          "type": "blob"
+        }
+      ]
+    },
+    {
+      "branch": "origin/research/consolidated-archive-2026-11-04",
+      "tip": "c6eb51028f7172b6a0d4c349fab56be3ecf5ac25",
+      "total_tree_files": 179,
+      "relevant_files": 171,
+      "narrative_data_files": 93,
+      "content_not_present_at_draft10_tip": [
+        {
+          "path": "README.md",
+          "blob": "4ac2aeede4e9a46ddf3f047e2d1b568118fd776b",
+          "type": "blob"
+        },
+        {
+          "path": "experiments/README.md",
+          "blob": "db8076dbf8d2abf7fad5f72af1d20ed36f7ea506",
+          "type": "blob"
+        },
+        {
+          "path": "experiments/lifecycle-pilot/README.md",
+          "blob": "3e2ea895d5c7bb2c9112f4de7f43b2394d317a90",
+          "type": "blob"
+        }
+      ]
+    }
+  ]
+}

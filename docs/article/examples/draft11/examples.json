@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "date": "2026-11-07",
+  "research_direction": "Izik Bachar",
+  "notation": "Draft 8 style symbolic sketches using @, ! and return bundles",
+  "operation_id_scope": "Example-local catalog assignments. These IDs are illustrative and have no global AICC registration claim.",
+  "status": "Article examples of the theory under approved-core and resource-contract assumptions",
+  "examples": [
+    {
+      "id": "csharp_database",
+      "title": "C sharp database query",
+      "source_language": "csharp",
+      "source": "using System.Data;\nusing System.Threading.Tasks;\nusing Microsoft.Data.SqlClient;\nstatic async Task<DataTable> ReadUsers(string connectionString) {\n    await using var db = new SqlConnection(connectionString);\n    await db.OpenAsync();\n    await using var command = new SqlCommand(\"SELECT * FROM Users\", db);\n    await using var reader = await command.ExecuteReaderAsync();\n    var rows = new DataTable();\n    rows.Load(reader);\n    return rows;\n}",
+      "ain": "@50(c) {\n  d=!501(c);\n  r=!502(d,\"SELECT * FROM Users\");\n  !503(d);\n  ^[r];\n}",
+      "catalog": [
+        {
+          "id": 501,
+          "name": "db_open",
+          "parameters": [
+            "configuration"
+          ],
+          "arity": 1,
+          "returns": "owned database handle",
+          "contract": "Open the supplied SQL Server configuration. The function scope owns allocated resources during connection failure."
+        },
+        {
+          "id": 502,
+          "name": "db_query_rows",
+          "parameters": [
+            "database",
+            "sql"
+          ],
+          "arity": 2,
+          "returns": "materialized row table",
+          "contract": "Execute the literal query and fully materialize rows before returning. Reader and command resources belong to the approved operation."
+        },
+        {
+          "id": 503,
+          "name": "db_close",
+          "parameters": [
+            "database"
+          ],
+          "arity": 1,
+          "returns": "void",
+          "contract": "Release the owned database handle. A completed SELECT has no implied result ordering without ORDER BY."
+        }
+      ],
+      "contracts": [
+        "The C# excerpt is a method with its required namespaces, using Microsoft.Data.SqlClient and System.Data.",
+        "Configuration and authorization are supplied by the caller. The SQL literal is new task information.",
+        "The SQL Server Users table exists. The result contains all rows and columns supplied by that query.",
+        "The approved AIN function scope cleans up owned resources on any exit. The explicit close is the successful path."
+      ],
+      "expected_call_ids": [
+        501,
+        502,
+        503
+      ],
+      "status": "Illustrative source-to-AIN pairing with declared approved-operation contracts",
+      "execution_evidence": "Deterministic mock contract scenarios and structural checks only",
+      "source_lines": 12,
+      "ain_lines": 6
+    },
+    {
+      "id": "python_http_api",
+      "title": "Python HTTP API request",
+      "source_language": "python",
+      "source": "import json\nfrom urllib.request import urlopen\n\ndef fetch_users(url):\n    with urlopen(url, timeout=10) as response:\n        return json.loads(response.read().decode(\"utf-8\"))",
+      "ain": "@51(u) {\n  h=!511(u,10);\n  r=!512(h);\n  !513(h);\n  ^[r];\n}",
+      "catalog": [
+        {
+          "id": 511,
+          "name": "http_get",
+          "parameters": [
+            "url",
+            "timeout_seconds"
+          ],
+          "arity": 2,
+          "returns": "owned response handle",
+          "contract": "Perform GET against the supplied HTTPS endpoint using a ten-second network timeout."
+        },
+        {
+          "id": 512,
+          "name": "http_json",
+          "parameters": [
+            "response"
+          ],
+          "arity": 1,
+          "returns": "materialized JSON value",
+          "contract": "Read the response body, decode UTF-8 and parse valid JSON before returning."
+        },
+        {
+          "id": 513,
+          "name": "http_close",
+          "parameters": [
+            "response"
+          ],
+          "arity": 1,
+          "returns": "void",
+          "contract": "Close the owned response. Function-scope cleanup also applies when reading or parsing fails."
+        }
+      ],
+      "contracts": [
+        "The URL is supplied by the caller and identifies an HTTPS JSON API.",
+        "The timeout is a network-operation timeout, with the same interpretation as urllib timeout.",
+        "Response bodies and decoded JSON are fully materialized, so the response can be closed before returning.",
+        "HTTP, decoding and JSON errors propagate through the approved error contract after cleanup."
+      ],
+      "expected_call_ids": [
+        511,
+        512,
+        513
+      ],
+      "status": "Illustrative source-to-AIN pairing with declared approved-operation contracts",
+      "execution_evidence": "Deterministic mock contract scenarios and structural checks only",
+      "source_lines": 6,
+      "ain_lines": 6
+    },
+    {
+      "id": "cpp_thread_management",
+      "title": "C plus plus thread lifetime",
+      "source_language": "cpp",
+      "source": "#include <thread>\n#include <stop_token>\nvoid worker1(std::stop_token, int) noexcept;\nvoid worker2(std::stop_token, int) noexcept;\nvoid run_pair() {\n    std::jthread a([](std::stop_token s) { worker1(s, 7); });\n    std::jthread b([](std::stop_token s) { worker2(s, 9); });\n    a.join();\n    b.join();\n}",
+      "ain": "@52() {\n  a=!521(1,7);\n  b=!521(2,9);\n  !523(a);\n  !523(b);\n  ^[];\n}",
+      "catalog": [
+        {
+          "id": 521,
+          "name": "worker_spawn",
+          "parameters": [
+            "worker_reference",
+            "argument"
+          ],
+          "arity": 2,
+          "returns": "owned worker handle",
+          "contract": "Start the approved worker with an implicit cooperative stop token. Worker references 1 and 2 identify worker1 and worker2."
+        },
+        {
+          "id": 523,
+          "name": "worker_join",
+          "parameters": [
+            "worker"
+          ],
+          "arity": 1,
+          "returns": "void",
+          "contract": "Wait for the owned worker to finish. On abnormal scope exit, remaining owned workers receive stop requests and are joined."
+        }
+      ],
+      "contracts": [
+        "The source requires C++20 std::jthread. Approved worker bodies are supplied elsewhere.",
+        "Workers accept a stop token, cooperate with cancellation and handle/report their own exceptions without allowing exceptions to escape.",
+        "The normal path joins both workers. Completion order is unrestricted.",
+        "A failed second spawn triggers stop/join cleanup of the first owned worker, corresponding to jthread scope cleanup.",
+        "The native runtime scheduling policy and performance remain separate implementation choices."
+      ],
+      "expected_call_ids": [
+        521,
+        521,
+        523,
+        523
+      ],
+      "status": "Illustrative source-to-AIN pairing with declared approved-operation contracts",
+      "execution_evidence": "Deterministic mock contract scenarios and structural checks only",
+      "source_lines": 10,
+      "ain_lines": 7
+    },
+    {
+      "id": "ruby_paid_totals",
+      "title": "Ruby paid order totals",
+      "source_language": "ruby",
+      "source": "def paid_totals(orders)\n  totals = Hash.new(0)\n  orders.each do |order|\n    next unless order[:paid]\n    totals[order[:customer]] += order[:amount_cents]\n  end\n  totals.sort.to_h\nend",
+      "ain": "@53(o) {\n  p=!531(o,\"paid\");\n  t=!532(p,\"customer\",\"amount_cents\");\n  r=!533(t);\n  ^[r];\n}",
+      "catalog": [
+        {
+          "id": 531,
+          "name": "rows_where_true",
+          "parameters": [
+            "rows",
+            "field"
+          ],
+          "arity": 2,
+          "returns": "rows",
+          "contract": "Keep rows whose declared boolean field is true."
+        },
+        {
+          "id": 532,
+          "name": "sum_by_key",
+          "parameters": [
+            "rows",
+            "key_field",
+            "amount_field"
+          ],
+          "arity": 3,
+          "returns": "mapping",
+          "contract": "Sum exact integer cent amounts for each customer, starting at zero."
+        },
+        {
+          "id": 533,
+          "name": "sort_group_keys",
+          "parameters": [
+            "mapping"
+          ],
+          "arity": 1,
+          "returns": "ordered mapping",
+          "contract": "Return the mapping with ascending ASCII string keys."
+        }
+      ],
+      "contracts": [
+        "Every row has a boolean paid value, an ASCII customer string and an exact integer amount_cents.",
+        "Amounts use integer cents, including negative refunds. Addition uses exact integer semantics.",
+        "Output preserves ascending customer-key iteration order.",
+        "The approved filter, grouping and sorting implementations contain the traversal loops."
+      ],
+      "expected_call_ids": [
+        531,
+        532,
+        533
+      ],
+      "status": "Illustrative source-to-AIN pairing with declared approved-operation contracts",
+      "execution_evidence": "Deterministic mock contract scenarios and structural checks only",
+      "source_lines": 8,
+      "ain_lines": 6
+    },
+    {
+      "id": "java_active_emails",
+      "title": "Java active user emails",
+      "source_language": "java",
+      "source": "import java.util.List;\nclass UserQueries {\n    record User(boolean active, String email) {}\n    static List<String> activeEmails(List<User> users) {\n        return users.stream().filter(User::active)\n            .map(User::email).distinct().sorted().toList();\n    }\n}",
+      "ain": "@54(u) {\n  a=!541(u,\"active\");\n  e=!542(a,\"email\");\n  d=!543(e);\n  r=!544(d);\n  ^[r];\n}",
+      "catalog": [
+        {
+          "id": 541,
+          "name": "active_rows",
+          "parameters": [
+            "rows",
+            "field"
+          ],
+          "arity": 2,
+          "returns": "rows",
+          "contract": "Keep rows whose declared boolean field is true."
+        },
+        {
+          "id": 542,
+          "name": "project_field",
+          "parameters": [
+            "rows",
+            "field"
+          ],
+          "arity": 2,
+          "returns": "string sequence",
+          "contract": "Read the required non-null email field from each selected row."
+        },
+        {
+          "id": 543,
+          "name": "distinct_values",
+          "parameters": [
+            "values"
+          ],
+          "arity": 1,
+          "returns": "sequence",
+          "contract": "Keep one occurrence of each exact string value."
+        },
+        {
+          "id": 544,
+          "name": "sort_strings",
+          "parameters": [
+            "values"
+          ],
+          "arity": 1,
+          "returns": "immutable sequence",
+          "contract": "Return unique email values sorted by Java String natural order. The example fixture domain is ASCII."
+        }
+      ],
+      "contracts": [
+        "The source targets Java 17 or later and uses record, streams and Stream.toList.",
+        "Every input User has a boolean active flag and a non-null ASCII email string.",
+        "Equality and ordering are case-sensitive. ASCII restriction gives the mock oracle the same ordering as Java String natural order.",
+        "The returned email sequence is immutable, matching the Stream.toList result contract."
+      ],
+      "expected_call_ids": [
+        541,
+        542,
+        543,
+        544
+      ],
+      "status": "Illustrative source-to-AIN pairing with declared approved-operation contracts",
+      "execution_evidence": "Deterministic mock contract scenarios and structural checks only",
+      "source_lines": 8,
+      "ain_lines": 7
+    }
+  ]
+}
