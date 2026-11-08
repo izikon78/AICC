@@ -1,0 +1,19 @@
+{
+  "known_answer_smoke": true,
+  "prior_exposure": true,
+  "fresh_path_contains_spaces": true,
+  "offline_tokenizer_only": true,
+  "matched_outputs": {
+    "totals.json": true,
+    "summary.json": true,
+    "stage-checks.json": true,
+    "probes.json": true,
+    "ledger.json": true
+  },
+  "decoded_stage_checks": 720,
+  "literal_state_probes": 50,
+  "apparatus_tests_passed": 4,
+  "model_inference_calls": 0,
+  "external_systems_executed": [],
+  "source_commit": "927b73187531c97bf4b01bda7f249722971905c7"
+}
