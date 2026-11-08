@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-08",
+  "main_links_in_pdf_verified": 21,
+  "pdf_pages": 21,
+  "pdf_pages_pixel_identical_to_reviewed_version": 21,
+  "local_publication_links_verified": 90,
+  "source_sha256": "6c7fca37ca171a0b29279206f9652608944409ab9801a8d2a976cad1f8f9bb0c",
+  "pdf_sha256": "7811b9daaf9ec6c167112e937d489011a49be64e8117a02c0a14512853928e83",
+  "zip_sha256": "a101c15474fe727da6b03edb4804649e86a0ee220dd5f5b89e1c9c710f70025b",
+  "zip_bytes": 5238953,
+  "payload_files_verified": 310,
+  "preserved_execution_files_verified": 270,
+  "current_guide_links_in_extracted_packet": 30,
+  "packaging_source_commit": "0e060866f1d9541b90f9023bc3e67fa5aaab55fc",
+  "fresh_extraction_with_spaces": true,
+  "new_model_calls": 0,
+  "root_readme_reveals_expected_numeric_totals": false
+}

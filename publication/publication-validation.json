@@ -1,7 +1,7 @@
 {
   "date": "2026-11-08",
   "source_sha256": "6c7fca37ca171a0b29279206f9652608944409ab9801a8d2a976cad1f8f9bb0c",
-  "pdf_sha256": "7be15e751cd1a4ac409fd766830e9d060a472d19d9755471f7c4c8e782187169",
+  "pdf_sha256": "7811b9daaf9ec6c167112e937d489011a49be64e8117a02c0a14512853928e83",
   "pdf_pages": 21,
   "embedded_figures": 5,
   "pdf_uri_links": 51,
@@ -39,12 +39,19 @@
     "actual_model_calls": 0,
     "fresh_extracted_packet_matches": true
   },
-  "packet_sha256": "15dbde72d3c7353cafb1021d70ea3fd21cfddc83a857cf9efe886049fcb91688",
-  "packet_packaging_source_commit": "927b73187531c97bf4b01bda7f249722971905c7",
+  "packet_sha256": "a101c15474fe727da6b03edb4804649e86a0ee220dd5f5b89e1c9c710f70025b",
+  "packet_packaging_source_commit": "0e060866f1d9541b90f9023bc3e67fa5aaab55fc",
   "independent_same_session_review": {
     "passed": true,
     "request_response_token_recounts": 4320,
     "raw_ledger_rows_reaggregated": 2160,
     "no_blockers_reported": true
+  },
+  "main_consolidation": {
+    "pdf_repository_links": 21,
+    "pixel_identical_reviewed_pages": 21,
+    "local_publication_links_verified": 90,
+    "current_archive_payload_files": 310,
+    "unchanged_execution_files": 270
   }
 }

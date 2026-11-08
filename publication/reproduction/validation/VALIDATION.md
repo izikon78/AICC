@@ -6,17 +6,25 @@ new independent learned-agent or provider result.
 
 ## Current package
 
-The archive contains 309 manifest-verified payload files and is 5,236,041 bytes.
+The archive contains 310 manifest-verified payload files and is 5,238,953 bytes.
 Its SHA-256 and source revision are in PACKET_VALIDATION.json and the external
 ZIP manifest. The packaging source revision is
-927b73187531c97bf4b01bda7f249722971905c7. A fresh extraction into a Windows path
+0e060866f1d9541b90f9023bc3e67fa5aaab55fc. A fresh extraction into a Windows path
 containing spaces verified all payload hashes, all 59 frozen approved-core files
 and six pinned tokenizer assets. The package includes no prior article copies,
 model weights or adapters.
 
+The main-branch consolidation adds the AI-agent review guide and canonical main
+links. All 270 experiment/script/tokenizer files in the preceding validated
+packet remain byte-identical. Thirty local links in the current extracted guides
+resolve, and their article/download links point to the canonical main copies.
+The main PDF's twenty-one rendered pages match the reviewed copy pixel for pixel.
+`main-consolidation-checks.json` records these checks. No unchanged runtime or
+model workload was repeated for a link/documentation update.
+
 ## Added representation-comparison route
 
-The new wrapper ran offline from that fresh extraction in a prepared Python
+The representation wrapper ran offline from the preceding validated extraction in a prepared Python
 3.12 environment. All eighteen CPU package pins matched. Four regression tests,
 720 decoded-stage checks and fifty literal/state probes passed. Its ledger,
 totals, stage checks, probes and summary matched all five corresponding observed

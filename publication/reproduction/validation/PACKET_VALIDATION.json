@@ -4,12 +4,12 @@
   "prior_exposure_to_expected_results": true,
   "independent_reconstruction_claim": false,
   "zip": "AICC_Final_Experiments_Packet.zip",
-  "zip_sha256": "15dbde72d3c7353cafb1021d70ea3fd21cfddc83a857cf9efe886049fcb91688",
-  "zip_bytes": 5236041,
+  "zip_sha256": "a101c15474fe727da6b03edb4804649e86a0ee220dd5f5b89e1c9c710f70025b",
+  "zip_bytes": 5238953,
   "fresh_extraction_with_spaces": true,
   "final_payload_verification": {
     "passed": true,
-    "files_checked": 309,
+    "files_checked": 310,
     "errors": []
   },
   "approved_core_tests_passed": 21,
@@ -36,7 +36,7 @@
   "new_gpu_training_runs": 0,
   "new_million_event_stress_runs": 0,
   "experiment_model_inference_calls": 0,
-  "checks_after_final_doc_packaging": "Current309filepacketverifiedafterfresh extraction. The256baselineexecutionfilesmatchprevioussmoke-testedversion. NewrepresentationwrapperreranofflineandallfiveoutputJSONsmatchexactly.",
+  "checks_after_final_doc_packaging": "Main310filepacketfresh-extractedandhash-verified;270execution/script/tokenizerfilesidenticaltoc99caf5smoke-testedpacket;currentguidelinksverified.PDFpagespixel-identicalwithmainhyperlinks.",
   "optional_environment_note": "Native/processing checks used existing experiment Python with recorded dependency versions; CPU accounting used existing Python3.12 with all18 package pins matched. Setup installer was not rerun.",
   "optional_environment": {
     "python": "3.12.14",
@@ -50,7 +50,7 @@
   ],
   "previous_article_files_in_payload": [],
   "model_or_adapter_weight_files_in_payload": [],
-  "packaging_source_commit": "927b73187531c97bf4b01bda7f249722971905c7",
+  "packaging_source_commit": "0e060866f1d9541b90f9023bc3e67fa5aaab55fc",
   "figure_builder_change": "Only trailing EOF newline whitespace changed after the first smoke test; source bytes match after stripping terminal CR/LF.",
   "figure_rebuild_outputs_compared": 14,
   "figure_rebuild_all_outputs_identical": true,
@@ -74,5 +74,23 @@
     "model_inference_calls": 0,
     "external_systems_executed": [],
     "source_commit": "927b73187531c97bf4b01bda7f249722971905c7"
+  },
+  "main_consolidation": {
+    "date": "2026-11-08",
+    "main_links_in_pdf_verified": 21,
+    "pdf_pages": 21,
+    "pdf_pages_pixel_identical_to_reviewed_version": 21,
+    "local_publication_links_verified": 90,
+    "source_sha256": "6c7fca37ca171a0b29279206f9652608944409ab9801a8d2a976cad1f8f9bb0c",
+    "pdf_sha256": "7811b9daaf9ec6c167112e937d489011a49be64e8117a02c0a14512853928e83",
+    "zip_sha256": "a101c15474fe727da6b03edb4804649e86a0ee220dd5f5b89e1c9c710f70025b",
+    "zip_bytes": 5238953,
+    "payload_files_verified": 310,
+    "preserved_execution_files_verified": 270,
+    "current_guide_links_in_extracted_packet": 30,
+    "packaging_source_commit": "0e060866f1d9541b90f9023bc3e67fa5aaab55fc",
+    "fresh_extraction_with_spaces": true,
+    "new_model_calls": 0,
+    "root_readme_reveals_expected_numeric_totals": false
   }
 }
