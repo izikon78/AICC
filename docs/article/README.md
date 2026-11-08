@@ -1,6 +1,18 @@
 # Article drafts and research figures
 
-The current article is **[Draft 11, AIN A Native Language for More Efficient AI](AICC_Article_Draft_11.md)**,
+The current publication is the **[final draft](../../publication/AICC_Final_Draft.md)**,
+dated 8 November 2026. Its standalone package includes the article, theory,
+selected final evidence, phased research programme and portable testing routes.
+
+- [Final review PDF](../../publication/AICC_Final_Draft_Review.pdf)
+- [Publication entry point](../../publication/README.md)
+- [Final test package and instructions](../../publication/reproduction/START_HERE.md)
+- [Research programme](../../publication/RESEARCH_PLAN.md)
+- [Publication validation](../../publication/VALIDATION.md)
+
+## Historical Draft 11
+
+**[Draft 11, AIN A Native Language for More Efficient AI](AICC_Article_Draft_11.md)**,
 dated 7 November 2026. It preserves Izik's introduction and develops the language
 theory through five source/AIN examples in C#, Python, C++, Ruby and Java. The
 article reviews all fourteen published branch tips in its snapshot, traces the

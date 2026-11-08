@@ -1,0 +1,635 @@
+{
+  "date": "2026-11-07",
+  "figure_build_base_commit": "53cb324e70ac801e9636f7fa0972a82fe99ae511",
+  "source_branches": {
+    "origin/research/ain-fluency-current-agents": "60ba43bad3588815ecebe1504c35f2dfe7f0e97d",
+    "origin/research/approved-core-replication": "2b6541a24ef71dcd4390f526042ebf131501fc51",
+    "origin/claude/approved-core-replication": "e9a8a5111717a57427fac50605cf5cbe0c86b316",
+    "origin/research/approved-core-article-draft-10": "53cb324e70ac801e9636f7fa0972a82fe99ae511"
+  },
+  "source_sha256": {
+    "experiments/processing_study/results/full-2026-11-05/stress-raw.json": "f9a929bdf74375d24ce7e7dbe08697feed484f3c0eeef4ae32665ace1898dcfd",
+    "experiments/processing_study/results/full-2026-11-05/stress-summary.json": "48b2031dfc8e34e0936422b3f3f4fd638e73cd3b0af638bcf61e59ad7ec79525",
+    "experiments/processing_study/results/full-2026-11-05/learning-report.json": "4b8b4dfdbe2effc1347b94563eca32d93db6b3c7cb48c87275909a510515b93b",
+    "experiments/processing_study/results/full-2026-11-05/granularity.json": "a5047894baacdfc598f33face82049f5057b846d867a0f553de7e34c402a6549",
+    "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/stress-raw.json": "048dd2fab668f72152f6eb3edde6b0ec0b0c810f6b8954d4a9548b18992a5a8d",
+    "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/stress-summary.json": "e25303ea6e95534f718d97050aafa394ec4f7c64091cfc2289a8bffe242c9773",
+    "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/learning-report.json": "8ed0fbc8210dd0f867563d7d3a9dd427b50ec33091b4e721126f682f958a355c",
+    "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/granularity.json": "fb333604c2d94220a7d34a15953491b19d58e6844be26760ad4ee155f89116b2",
+    "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/stress-raw.json": "b2de28a8ad4abf4ebf7dfafad76abce4062985df36606ff05bc05a8a8c677085",
+    "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/stress-summary.json": "64a88d43b77470767b99582861d6bff683a6fba866d6ff776e54381041b1900f",
+    "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/learning-report.json": "f7a9f8f1b5548f3d5d2002dc4e1a277d0f82b559c6679a1772eca4ca564d2024",
+    "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/granularity.json": "c38e55ba10ba183c8cc8287d99de8e94ea8bbbf3e1dc04d4990291502250ad0e",
+    "experiments/native_learning_gate/results/rtx3080-2026-11-06/manifest.json": "74ad4b0d51b46e555ba898473bad91a0d39d99eda1954c914c45fa537b721bb6",
+    "experiments/native_learning_gate/results/rtx3080-2026-11-06/python-after.json": "a0ec9f17d4ef1e821122a5125fb747d763cd0acd6b9dc56db46f815092991d52",
+    "experiments/native_learning_gate/results/rtx3080-2026-11-06/ir-after.json": "48285b614fade4e8f76ce92c377bcd991a1124fce75f7eea17104f55decb9e08",
+    "experiments/native_learning_gate/results/rtx3080-2026-11-06/ain-after.json": "8d788f776d1e58dbc2914b203882119e079d862b9487fcd9694df7a9a08fbce7",
+    "experiments/ain_compiler_gate/results/rtx3080-2026-11-06-learning-v2/manifest.json": "05f7d57d53277bc43da8708d788cbb1a48cbf435aee71c9c661d1f63646ef88b",
+    "experiments/ain_compiler_gate/results/rtx3080-2026-11-06-learning-v2/python-after.json": "1ea3bda90b7a1868a3b707397e8c774e37c02635662fd78d9cf021c43f696b35",
+    "experiments/ain_compiler_gate/results/rtx3080-2026-11-06-learning-v2/ir-after.json": "7d33601532719ec528dbd30ac12df3fdec237bf89b6a163fcbbf6ee48aa25da1",
+    "experiments/ain_compiler_gate/results/rtx3080-2026-11-06-learning-v2/ain-after.json": "d75d05121b18a81951bd01603b3d6fe8531ff81ac0f233775c2a99f49c36dfad",
+    "experiments/approved_workflow_theory/results/approved-core-2026-11-06/totals.json": "6e886ff6e89b6b1c0bebbb8849fe2dbd3715ce4db62d6e1370177151f0332798",
+    "experiments/approved_workflow_theory/results/approved-core-2026-11-06/manifest.json": "753886d8d85208e6f2fd360fa25ac7327cc1216d802e2336b53b22b941b9ab20"
+  },
+  "review_input_sha256": {
+    "processing": "e944c4c9e8b488912d780d1800d783bc95d24c720ac9a9b5b79c401312d64cb4",
+    "latest": "873fe98a82a195f2b14340385e701026dafc19b32765d8efce30b46ed4d37e93"
+  },
+  "processing": [
+    {
+      "agent_record": "Codex",
+      "reported_host": "Windows 11",
+      "source_commit": "75de32b757b8bdc43886213ee6b9dd9470717918",
+      "path": "experiments/processing_study/results/full-2026-11-05",
+      "workers": 45,
+      "all_within_and_across_host_output_signatures_match": true,
+      "per_job_mode_medians": [
+        {
+          "job": "repeated-shuffled",
+          "mode": "reference",
+          "pipeline_seconds": 6.231347100023413,
+          "worker_seconds": 10.667213600012474,
+          "peak_mib": 814.40234375
+        },
+        {
+          "job": "repeated-shuffled",
+          "mode": "static",
+          "pipeline_seconds": 3.2262319999863394,
+          "worker_seconds": 7.366732599999523,
+          "peak_mib": 561.71484375
+        },
+        {
+          "job": "repeated-shuffled",
+          "mode": "aicc_static",
+          "pipeline_seconds": 3.227102200005902,
+          "worker_seconds": 7.620206699997652,
+          "peak_mib": 561.828125
+        },
+        {
+          "job": "repeated-shuffled",
+          "mode": "learned",
+          "pipeline_seconds": 3.182558100001188,
+          "worker_seconds": 7.792785700003151,
+          "peak_mib": 563.671875
+        },
+        {
+          "job": "repeated-shuffled",
+          "mode": "aicc_learned",
+          "pipeline_seconds": 3.6254955000185873,
+          "worker_seconds": 7.2811212000087835,
+          "peak_mib": 563.0859375
+        },
+        {
+          "job": "diverse-shuffled",
+          "mode": "reference",
+          "pipeline_seconds": 8.649673900014022,
+          "worker_seconds": 19.11286189997918,
+          "peak_mib": 1060.15625
+        },
+        {
+          "job": "diverse-shuffled",
+          "mode": "static",
+          "pipeline_seconds": 6.417942400003085,
+          "worker_seconds": 17.015385900012916,
+          "peak_mib": 845.50390625
+        },
+        {
+          "job": "diverse-shuffled",
+          "mode": "aicc_static",
+          "pipeline_seconds": 6.506443299993407,
+          "worker_seconds": 17.79690089999349,
+          "peak_mib": 846.20703125
+        },
+        {
+          "job": "diverse-shuffled",
+          "mode": "learned",
+          "pipeline_seconds": 6.255770100018708,
+          "worker_seconds": 17.077511699986644,
+          "peak_mib": 849.51171875
+        },
+        {
+          "job": "diverse-shuffled",
+          "mode": "aicc_learned",
+          "pipeline_seconds": 6.6092829999979585,
+          "worker_seconds": 17.658271899999818,
+          "peak_mib": 847.38671875
+        },
+        {
+          "job": "ordered-stream",
+          "mode": "reference",
+          "pipeline_seconds": 7.796452499984298,
+          "worker_seconds": 8.753058100002818,
+          "peak_mib": 515.5234375
+        },
+        {
+          "job": "ordered-stream",
+          "mode": "static",
+          "pipeline_seconds": 5.3853195999981835,
+          "worker_seconds": 6.140841199987335,
+          "peak_mib": 135.76171875
+        },
+        {
+          "job": "ordered-stream",
+          "mode": "aicc_static",
+          "pipeline_seconds": 5.326457399991341,
+          "worker_seconds": 6.079845799977193,
+          "peak_mib": 135.77734375
+        },
+        {
+          "job": "ordered-stream",
+          "mode": "learned",
+          "pipeline_seconds": 6.02800770002068,
+          "worker_seconds": 6.855132600001525,
+          "peak_mib": 210.99609375
+        },
+        {
+          "job": "ordered-stream",
+          "mode": "aicc_learned",
+          "pipeline_seconds": 5.461108000017703,
+          "worker_seconds": 6.146807499986608,
+          "peak_mib": 210.7421875
+        }
+      ],
+      "equal_job_sum_of_medians": {
+        "static": {
+          "pipeline_reduction_percent": 33.72500688856188,
+          "worker_reduction_percent": 20.78775628046987
+        },
+        "aicc_static": {
+          "pipeline_reduction_percent": 33.59047294233982,
+          "worker_reduction_percent": 18.260077867186876
+        },
+        "learned": {
+          "pipeline_reduction_percent": 31.79868162991899,
+          "worker_reduction_percent": 17.6671424407698
+        },
+        "aicc_learned": {
+          "pipeline_reduction_percent": 30.786441002701615,
+          "worker_reduction_percent": 19.32605086652057
+        }
+      },
+      "selector": {
+        "parameters": 867,
+        "train_jobs": 72,
+        "validation_jobs": 24,
+        "heldout_jobs": 24,
+        "label_collection_seconds": 19.60258390000672,
+        "neural_fitting_seconds": 0.32124130000011064,
+        "selected_epoch": 164,
+        "learned_heldout_kernel_seconds": 0.4572968499560375,
+        "static_heldout_kernel_seconds": 0.4530580999562517,
+        "learned_percent_above_static": 0.9355864071727504
+      },
+      "granularity": {
+        "ordinary_batch_seconds": 0.19251969998003915,
+        "aicc_batch_seconds": 0.20363420000649057,
+        "aicc_split_seconds": 4.615542500017909,
+        "aicc_split_to_batch_ratio": 22.66585131510716,
+        "equal_output_checks": 8096,
+        "checksums_equal": true
+      },
+      "source_sha256": {
+        "stress-raw.json": "f9a929bdf74375d24ce7e7dbe08697feed484f3c0eeef4ae32665ace1898dcfd",
+        "stress-summary.json": "48b2031dfc8e34e0936422b3f3f4fd638e73cd3b0af638bcf61e59ad7ec79525",
+        "learning-report.json": "4b8b4dfdbe2effc1347b94563eca32d93db6b3c7cb48c87275909a510515b93b",
+        "granularity.json": "a5047894baacdfc598f33face82049f5057b846d867a0f553de7e34c402a6549"
+      }
+    },
+    {
+      "agent_record": "Claude",
+      "reported_host": "Linux",
+      "source_commit": "2f17cd3825f8e9785c919da2add80d1e35e97b97",
+      "path": "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002",
+      "workers": 45,
+      "all_within_and_across_host_output_signatures_match": true,
+      "per_job_mode_medians": [
+        {
+          "job": "repeated-shuffled",
+          "mode": "reference",
+          "pipeline_seconds": 4.87806544,
+          "worker_seconds": 7.161033159999988,
+          "peak_mib": 815.69140625
+        },
+        {
+          "job": "repeated-shuffled",
+          "mode": "static",
+          "pipeline_seconds": 2.2497167090000403,
+          "worker_seconds": 4.524439907999977,
+          "peak_mib": 561.859375
+        },
+        {
+          "job": "repeated-shuffled",
+          "mode": "aicc_static",
+          "pipeline_seconds": 2.081066835999991,
+          "worker_seconds": 4.39603449599997,
+          "peak_mib": 561.62890625
+        },
+        {
+          "job": "repeated-shuffled",
+          "mode": "learned",
+          "pipeline_seconds": 2.292244891999985,
+          "worker_seconds": 4.669369290999953,
+          "peak_mib": 564.1640625
+        },
+        {
+          "job": "repeated-shuffled",
+          "mode": "aicc_learned",
+          "pipeline_seconds": 2.0563827299999957,
+          "worker_seconds": 4.27749605300005,
+          "peak_mib": 564.15234375
+        },
+        {
+          "job": "diverse-shuffled",
+          "mode": "reference",
+          "pipeline_seconds": 6.269453752000004,
+          "worker_seconds": 12.348188203000007,
+          "peak_mib": 1065.1328125
+        },
+        {
+          "job": "diverse-shuffled",
+          "mode": "static",
+          "pipeline_seconds": 4.890548851000062,
+          "worker_seconds": 11.288800342000059,
+          "peak_mib": 847.21875
+        },
+        {
+          "job": "diverse-shuffled",
+          "mode": "aicc_static",
+          "pipeline_seconds": 4.88865721500008,
+          "worker_seconds": 11.364002360999962,
+          "peak_mib": 847.1015625
+        },
+        {
+          "job": "diverse-shuffled",
+          "mode": "learned",
+          "pipeline_seconds": 4.999051899000051,
+          "worker_seconds": 11.350079012999913,
+          "peak_mib": 849.43359375
+        },
+        {
+          "job": "diverse-shuffled",
+          "mode": "aicc_learned",
+          "pipeline_seconds": 4.848849030999986,
+          "worker_seconds": 11.347209518,
+          "peak_mib": 849.4296875
+        },
+        {
+          "job": "ordered-stream",
+          "mode": "reference",
+          "pipeline_seconds": 5.148345835999976,
+          "worker_seconds": 5.5479057109999985,
+          "peak_mib": 515.6875
+        },
+        {
+          "job": "ordered-stream",
+          "mode": "static",
+          "pipeline_seconds": 3.242010855999979,
+          "worker_seconds": 3.582583764999981,
+          "peak_mib": 136.61328125
+        },
+        {
+          "job": "ordered-stream",
+          "mode": "aicc_static",
+          "pipeline_seconds": 3.258050983999965,
+          "worker_seconds": 3.602285099000028,
+          "peak_mib": 136.77734375
+        },
+        {
+          "job": "ordered-stream",
+          "mode": "learned",
+          "pipeline_seconds": 3.1390758219999952,
+          "worker_seconds": 3.4680850269999155,
+          "peak_mib": 139.140625
+        },
+        {
+          "job": "ordered-stream",
+          "mode": "aicc_learned",
+          "pipeline_seconds": 3.347395393999932,
+          "worker_seconds": 3.6978202539999074,
+          "peak_mib": 139.3046875
+        }
+      ],
+      "equal_job_sum_of_medians": {
+        "static": {
+          "pipeline_reduction_percent": 36.28889047521575,
+          "worker_reduction_percent": 22.593584022145574
+        },
+        "aicc_static": {
+          "pipeline_reduction_percent": 37.23699222209802,
+          "worker_reduction_percent": 22.72728673635187
+        },
+        "learned": {
+          "pipeline_reduction_percent": 35.993746910162216,
+          "worker_reduction_percent": 22.227583100615654
+        },
+        "aicc_learned": {
+          "pipeline_reduction_percent": 37.084486540704766,
+          "worker_reduction_percent": 22.88610833981213
+        }
+      },
+      "selector": {
+        "parameters": 867,
+        "train_jobs": 72,
+        "validation_jobs": 24,
+        "heldout_jobs": 24,
+        "label_collection_seconds": 12.56026723299999,
+        "neural_fitting_seconds": 0.1546901640000442,
+        "selected_epoch": 456,
+        "learned_heldout_kernel_seconds": 0.25512938149995534,
+        "static_heldout_kernel_seconds": 0.2551295715000208,
+        "learned_percent_above_static": -7.447198862031712e-05
+      },
+      "granularity": {
+        "ordinary_batch_seconds": 0.12254203600002711,
+        "aicc_batch_seconds": 0.12258736399996906,
+        "aicc_split_seconds": 3.5337825280000743,
+        "aicc_split_to_batch_ratio": 28.826645852348747,
+        "equal_output_checks": 8096,
+        "checksums_equal": true
+      },
+      "source_sha256": {
+        "stress-raw.json": "048dd2fab668f72152f6eb3edde6b0ec0b0c810f6b8954d4a9548b18992a5a8d",
+        "stress-summary.json": "e25303ea6e95534f718d97050aafa394ec4f7c64091cfc2289a8bffe242c9773",
+        "learning-report.json": "8ed0fbc8210dd0f867563d7d3a9dd427b50ec33091b4e721126f682f958a355c",
+        "granularity.json": "fb333604c2d94220a7d34a15953491b19d58e6844be26760ad4ee155f89116b2"
+      }
+    },
+    {
+      "agent_record": "Grok",
+      "reported_host": "Windows 10",
+      "source_commit": "9a0fb7fd89e3fe0ce48bc691c3b659bc6c94c6ef",
+      "path": "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001",
+      "workers": 45,
+      "all_within_and_across_host_output_signatures_match": true,
+      "per_job_mode_medians": [
+        {
+          "job": "repeated-shuffled",
+          "mode": "reference",
+          "pipeline_seconds": 2.8716149000101723,
+          "worker_seconds": 4.605690700002015,
+          "peak_mib": 814.015625
+        },
+        {
+          "job": "repeated-shuffled",
+          "mode": "static",
+          "pipeline_seconds": 1.3638404000084847,
+          "worker_seconds": 3.04677359998459,
+          "peak_mib": 559.88671875
+        },
+        {
+          "job": "repeated-shuffled",
+          "mode": "aicc_static",
+          "pipeline_seconds": 1.3284126000362448,
+          "worker_seconds": 3.021317899983842,
+          "peak_mib": 560.109375
+        },
+        {
+          "job": "repeated-shuffled",
+          "mode": "learned",
+          "pipeline_seconds": 1.4469727000105195,
+          "worker_seconds": 3.0793971000239253,
+          "peak_mib": 562.02734375
+        },
+        {
+          "job": "repeated-shuffled",
+          "mode": "aicc_learned",
+          "pipeline_seconds": 1.3938084000255913,
+          "worker_seconds": 3.0753521000151522,
+          "peak_mib": 562.421875
+        },
+        {
+          "job": "diverse-shuffled",
+          "mode": "reference",
+          "pipeline_seconds": 3.762675300007686,
+          "worker_seconds": 7.860722600016743,
+          "peak_mib": 1057.4375
+        },
+        {
+          "job": "diverse-shuffled",
+          "mode": "static",
+          "pipeline_seconds": 2.716620899969712,
+          "worker_seconds": 6.655555100005586,
+          "peak_mib": 844.91796875
+        },
+        {
+          "job": "diverse-shuffled",
+          "mode": "aicc_static",
+          "pipeline_seconds": 2.7379741999902762,
+          "worker_seconds": 6.654697399993893,
+          "peak_mib": 843.89453125
+        },
+        {
+          "job": "diverse-shuffled",
+          "mode": "learned",
+          "pipeline_seconds": 2.7146265999763273,
+          "worker_seconds": 6.793458000000101,
+          "peak_mib": 846.95703125
+        },
+        {
+          "job": "diverse-shuffled",
+          "mode": "aicc_learned",
+          "pipeline_seconds": 2.7112718999851495,
+          "worker_seconds": 6.656151800008956,
+          "peak_mib": 847.1328125
+        },
+        {
+          "job": "ordered-stream",
+          "mode": "reference",
+          "pipeline_seconds": 3.268469200003892,
+          "worker_seconds": 3.6201797000248916,
+          "peak_mib": 513.71875
+        },
+        {
+          "job": "ordered-stream",
+          "mode": "static",
+          "pipeline_seconds": 2.3684034000034444,
+          "worker_seconds": 2.6806329000391997,
+          "peak_mib": 133.734375
+        },
+        {
+          "job": "ordered-stream",
+          "mode": "aicc_static",
+          "pipeline_seconds": 2.3853529000189155,
+          "worker_seconds": 2.7017062999657355,
+          "peak_mib": 133.48828125
+        },
+        {
+          "job": "ordered-stream",
+          "mode": "learned",
+          "pipeline_seconds": 2.534469000005629,
+          "worker_seconds": 2.87202760000946,
+          "peak_mib": 209.109375
+        },
+        {
+          "job": "ordered-stream",
+          "mode": "aicc_learned",
+          "pipeline_seconds": 2.6325981999980286,
+          "worker_seconds": 2.9989814999862574,
+          "peak_mib": 209.3828125
+        }
+      ],
+      "equal_job_sum_of_medians": {
+        "static": {
+          "pipeline_reduction_percent": 34.87810377411091,
+          "worker_reduction_percent": 23.023093827289742
+        },
+        "aicc_static": {
+          "pipeline_reduction_percent": 34.84907146152349,
+          "worker_reduction_percent": 23.055667536874434
+        },
+        "learned": {
+          "pipeline_reduction_percent": 32.3817935031546,
+          "worker_reduction_percent": 20.773263176367397
+        },
+        "aicc_learned": {
+          "pipeline_reduction_percent": 31.961605570322437,
+          "worker_reduction_percent": 20.862761928670515
+        }
+      },
+      "selector": {
+        "parameters": 867,
+        "train_jobs": 72,
+        "validation_jobs": 24,
+        "heldout_jobs": 24,
+        "label_collection_seconds": 8.223795800004154,
+        "neural_fitting_seconds": 0.156677299994044,
+        "selected_epoch": 900,
+        "learned_heldout_kernel_seconds": 0.20032270005322061,
+        "static_heldout_kernel_seconds": 0.19453765006619506,
+        "learned_percent_above_static": 2.9737431212195187
+      },
+      "granularity": {
+        "ordinary_batch_seconds": 0.10761860001366585,
+        "aicc_batch_seconds": 0.10867799998959526,
+        "aicc_split_seconds": 2.6865899999975227,
+        "aicc_split_to_batch_ratio": 24.720642634707435,
+        "equal_output_checks": 8096,
+        "checksums_equal": true
+      },
+      "source_sha256": {
+        "stress-raw.json": "b2de28a8ad4abf4ebf7dfafad76abce4062985df36606ff05bc05a8a8c677085",
+        "stress-summary.json": "64a88d43b77470767b99582861d6bff683a6fba866d6ff776e54381041b1900f",
+        "learning-report.json": "f7a9f8f1b5548f3d5d2002dc4e1a277d0f82b559c6679a1772eca4ca564d2024",
+        "granularity.json": "c38e55ba10ba183c8cc8287d99de8e94ea8bbbf3e1dc04d4990291502250ad0e"
+      }
+    }
+  ],
+  "adaptation": {
+    "full_format": {
+      "source": "experiments/native_learning_gate/results/rtx3080-2026-11-06",
+      "config": {
+        "model": "Qwen/Qwen2.5-1.5B",
+        "revision": "8faed761d45a263340a0528343f099c05c9a4323",
+        "seed": 20261106,
+        "arms": [
+          "python",
+          "ir",
+          "ain"
+        ],
+        "epochs": 3,
+        "gradient_accumulation": 4,
+        "learning_rate": 0.001,
+        "lora_rank": 16,
+        "lora_alpha": 32,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "max_sequence": 512,
+        "max_new_tokens": 320,
+        "train_seconds_per_arm": 300,
+        "eval_seconds_per_stage": 90,
+        "peak_reserved_limit_gib": 7.8,
+        "gate_dev_correct_fraction": 0.75,
+        "purpose": "memory, throughput and executable language-learning screen"
+      },
+      "source_base_commit": "60ba43bad3588815ecebe1504c35f2dfe7f0e97d",
+      "arms": {
+        "python": {
+          "correct": 24,
+          "assigned": 24,
+          "attempted": 24,
+          "stage_timeouts": 0
+        },
+        "ir": {
+          "correct": 15,
+          "assigned": 24,
+          "attempted": 20,
+          "stage_timeouts": 4
+        },
+        "ain": {
+          "correct": 7,
+          "assigned": 24,
+          "attempted": 19,
+          "stage_timeouts": 5
+        }
+      }
+    },
+    "compact_native": {
+      "source": "experiments/ain_compiler_gate/results/rtx3080-2026-11-06-learning-v2",
+      "config": {
+        "model": "Qwen/Qwen2.5-1.5B",
+        "revision": "8faed761d45a263340a0528343f099c05c9a4323",
+        "seed": 20261106,
+        "epochs": 3,
+        "gradient_accumulation": 4,
+        "learning_rate": 0.001,
+        "lora_rank": 16,
+        "lora_alpha": 32,
+        "lora_targets": [
+          "q_proj",
+          "v_proj"
+        ],
+        "max_sequence": 256,
+        "max_new_tokens": 64,
+        "train_seconds_per_arm": 300,
+        "eval_seconds_per_stage": 120,
+        "hard_seconds_per_arm": 600,
+        "peak_reserved_limit_gib": 7.8,
+        "dev_threshold": 9,
+        "purpose": "compact authoring with a common native compiler backend"
+      },
+      "source_base_commit": "60ba43bad3588815ecebe1504c35f2dfe7f0e97d",
+      "arms": {
+        "python": {
+          "correct": 24,
+          "assigned": 24,
+          "attempted": 24,
+          "stage_timeouts": 0
+        },
+        "ir": {
+          "correct": 24,
+          "assigned": 24,
+          "attempted": 24,
+          "stage_timeouts": 0
+        },
+        "ain": {
+          "correct": 23,
+          "assigned": 24,
+          "attempted": 24,
+          "stage_timeouts": 0
+        }
+      }
+    }
+  },
+  "theory": {
+    "resident": {
+      "python_total": 40614,
+      "ideal_total": 30858,
+      "reduction_fraction": 0.24021273452504066,
+      "ideal_ir_and_python_equal_ain": true
+    },
+    "inspect": {
+      "python_total": 76398,
+      "ideal_total": 66642,
+      "reduction_fraction": 0.12769967800204196,
+      "ideal_ir_and_python_equal_ain": true
+    }
+  },
+  "measurement_boundaries": {
+    "processing": "Each host is normalized against its own reference; equal-job sum of medians; same three public inputs.",
+    "memory": "Within-host/workload process-lifetime peak ratio; Linux RSS and Windows working set have different accounting.",
+    "adaptation": "One seed, reused arithmetic tasks; format, constraints, native backend and evaluation caps differ.",
+    "theory": "Observed Python text tokens and modeled ideal code units, equal cost per position assumed; no model inference calls."
+  }
+}

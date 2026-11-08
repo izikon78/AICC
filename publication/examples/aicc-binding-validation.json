@@ -1,0 +1,15 @@
+{
+  "scope": "In-process example against the preserved processing prototype",
+  "model_calls": 0,
+  "checks": {
+    "bound_call_matches_reference": true,
+    "compatible_handoff_matches_reference": true,
+    "incompatible_receiving_requirements_rejected": true
+  },
+  "output_signature": {
+    "groups": 10,
+    "events_retained": 34,
+    "severity_sum": 66,
+    "sha256": "6becbee67e91fe498e3cc790062cbf9d3c403b38f14be15ea14e95947066e0cc"
+  }
+}
