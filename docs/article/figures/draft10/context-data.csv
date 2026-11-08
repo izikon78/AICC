@@ -1,0 +1,5 @@
+key,label,positions,share_percent
+artifact_input_units,Predecessor artifact,2646,27.121771217712176
+memory_input_units,Incoming memory,2268,23.247232472324722
+reprocessed_history_units,Replayed history,2628,26.937269372693727
+authored_content_units,Authored output,2214,22.69372693726937

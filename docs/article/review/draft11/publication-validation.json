@@ -1,0 +1,43 @@
+{
+  "validation_date": "2026-11-08",
+  "article_snapshot_date": "2026-11-07",
+  "source_sha256": "6fc8234202a42dfefc58db45c4600a9f02485c4c715fa80ea327992e7b56744b",
+  "pdf_sha256": "daac8f3614005c7b8d6315866969a8c495d55359d784203c89787f851cb0f2cc",
+  "pdf_pages": 15,
+  "page_size_points": [
+    612.0,
+    792.0
+  ],
+  "pdf_uri_links": 31,
+  "embedded_figure_images": 4,
+  "content_outside_print_safe_bounds": [],
+  "extracted_text_characters": 35511,
+  "page_text_sha256": [
+    "d47cdc7e30ae8f824ddd4437dcf3eecc5845c32e6badc66202641c1d8dc9218b",
+    "565a69659d920e82183bdaa9942152a7403a91cd4b0f9c792a03006906f40f55",
+    "357f88920953fb51e003de2185593cfc4f348f914e14da17b794f021c31fd441",
+    "f187d0884c76cd8603564a99b21c5a723b10590a748719475adfb0ac174bf38a",
+    "da5f33c37bd282bbe3ff96387fb2b5dd9c5b38f74be60eac4375b2631f877b79",
+    "b59e31890ea7605d8ad7efec1c22729a2b8cad72f2c2329fd35f6c55fef24f07",
+    "18f77d7f62ace81ab6f6003f8881cfd3eb2deb662047d273bf5ceb90182c2282",
+    "edfb29e3e8142494b74d2803016d928963cf9ba8b1a709d49317bb04ba8204fc",
+    "945fc0d13e9c6332e960d9a2f4ab45c7f2615db0eef3e0226e59725f9fd6c8b0",
+    "673df5e76dc634b1ae800e1efceb530fb04386f09a0356573dca9ddf6ebef9fc",
+    "6f9f86bfe4a807e8964d96c59bc80b98f7145898172dda6e03f52cecef6b6c87",
+    "4c1d0a4c30e113af72f599d8b6c00b6bf06a651d17f60713bc5100d12aa62433",
+    "0f0409cd600c18e1c4e4d815af63baa2157f1b7016c3ae144be817f65995fdf8",
+    "9679f9fa80aab036ccc54ec848043567f22e6a7ae437899a6a01a1694c1cb744",
+    "d0fcc1678ec6baaa24011a4c79fb37e5568b20b68a4be1cece885319617f5b68"
+  ],
+  "required_headings_in_pdf": {
+    "Introduction and theory": true,
+    "AIN language meaning and strategy": true,
+    "Experiment stages and findings": true,
+    "AICC shared library and functionality": true,
+    "Implementation and future meaning": true,
+    "Conclusions": true,
+    "References": true,
+    "Credits": true
+  },
+  "source_placeholders": []
+}

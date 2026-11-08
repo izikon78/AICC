@@ -1,0 +1,1303 @@
+{
+  "scope": "New Draft 10 display projection; not new model inference or frozen efficiency data",
+  "episodes": 144,
+  "passed": true,
+  "checks": [
+    {
+      "chain": "events-00",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-00",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-00",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-00",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-01",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-01",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-01",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-01",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-02",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-02",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-02",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-02",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-03",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-03",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-03",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-03",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-04",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-04",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-04",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-04",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-05",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-05",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-05",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-05",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-00",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-00",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-00",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-00",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-01",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-01",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-01",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-01",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-02",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-02",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-02",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-02",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-03",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-03",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-03",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-03",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-04",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-04",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-04",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-04",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-05",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-05",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-05",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-05",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-00",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-00",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-00",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-00",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-01",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-01",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-01",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-01",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-02",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-02",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-02",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-02",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-03",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-03",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-03",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-03",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-04",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-04",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-04",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-04",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-05",
+      "stage": "build",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-05",
+      "stage": "change",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-05",
+      "stage": "repair",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-05",
+      "stage": "handoff",
+      "schedule": "resident",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-00",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-00",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-00",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-00",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-01",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-01",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-01",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-01",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-02",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-02",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-02",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-02",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-03",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-03",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-03",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-03",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-04",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-04",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-04",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-04",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-05",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-05",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-05",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "events-05",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-00",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-00",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-00",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-00",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-01",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-01",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-01",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-01",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-02",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-02",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-02",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-02",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-03",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-03",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-03",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-03",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-04",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-04",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-04",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-04",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-05",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-05",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-05",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "cache-05",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-00",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-00",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-00",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-00",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-01",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-01",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-01",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-01",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-02",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-02",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-02",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-02",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-03",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-03",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-03",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-03",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-04",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-04",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-04",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-04",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-05",
+      "stage": "build",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-05",
+      "stage": "change",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-05",
+      "stage": "repair",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    },
+    {
+      "chain": "publication-05",
+      "stage": "handoff",
+      "schedule": "inspect",
+      "program_roundtrip": true,
+      "action_roundtrip": true,
+      "actions_reconstruct_program": true,
+      "decoded_program_matches_oracle": true
+    }
+  ]
+}

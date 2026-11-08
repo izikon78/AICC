@@ -1,0 +1,474 @@
+{
+ "submission.py": [
+  [
+   "SPEC",
+   "controller: runs=1 single start message",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "controller: runs=4 ordinals 2..4",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "controller: large runs=100000 returns 100000 messages",
+   "PASS",
+   ""
+  ],
+  [
+   "UNSPEC",
+   "controller: runs=True (bool is an int subclass in Python)",
+   "OBSERVED",
+   "['Starting controller service for True runs']"
+  ],
+  [
+   "UNSPEC",
+   "controller: runs=3.0 (float)",
+   "OBSERVED",
+   "raises TypeError"
+  ],
+  [
+   "SPEC",
+   "bool timestamp is invalid and skipped",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "negative timestamp is invalid",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "float timestamp 20.0 is invalid",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "numeric-string timestamp '20' is invalid",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "blank event_id '   ' is invalid",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "non-string message (None) is invalid",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "empty-string message is valid (contract only requires a string)",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "non-dict entries are skipped silently",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "severity is case-insensitive ('CRITICAL')",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "unknown severity 'error' is invalid",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "device/kind trimmed and lower-cased, so the two events group",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "message internal whitespace collapsed",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "device is NOT whitespace-collapsed (contract: trim + lowercase only)",
+   "PASS",
+   "groups=2"
+  ],
+  [
+   "SPEC",
+   "window boundary inclusive (600 apart, window 600)",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "601 apart starts a new group",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "chaining on most recent accepted timestamp (0, 500, 1000)",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "filtered events do not extend a window",
+   "PASS",
+   "groups=2"
+  ],
+  [
+   "SPEC",
+   "event_ids in processing order (timestamp, event_id)",
+   "PASS",
+   "['c', 'a', 'b']"
+  ],
+  [
+   "SPEC",
+   "groups ordered by (first_timestamp, device, ...)",
+   "PASS",
+   ""
+  ],
+  [
+   "UNSPEC",
+   "representation of highest severity in output",
+   "OBSERVED",
+   "'critical'"
+  ],
+  [
+   "SPEC",
+   "window_seconds=True -> ValueError",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "window_seconds=600.0 -> ValueError",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "min_severity=True -> ValueError",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "min_severity=1.0 -> ValueError",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "events as tuple -> TypeError",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "events=None -> TypeError",
+   "PASS",
+   ""
+  ],
+  [
+   "UNSPEC",
+   "both events and window invalid: which error wins",
+   "OBSERVED",
+   "ValueError"
+  ],
+  [
+   "SPEC",
+   "input list and dicts are not mutated",
+   "PASS",
+   ""
+  ],
+  [
+   "UNSPEC",
+   "severity with surrounding spaces ' info '",
+   "OBSERVED",
+   "valid"
+  ],
+  [
+   "UNSPEC",
+   "message leading/trailing whitespace: groups with trimmed twin?",
+   "OBSERVED",
+   "groups=1, message='high pressure'"
+  ],
+  [
+   "UNSPEC",
+   "sort key uses trimmed or raw event_id; ids reported",
+   "OBSERVED",
+   "['a', 'b']"
+  ],
+  [
+   "UNSPEC",
+   "duplicate event_id counted twice?",
+   "OBSERVED",
+   "count=2, ids=['a', 'a']"
+  ],
+  [
+   "UNSPEC",
+   "non-breaking space treated as whitespace in message",
+   "OBSERVED",
+   "groups=1"
+  ],
+  [
+   "UNSPEC",
+   "extra keys in event dicts",
+   "OBSERVED",
+   "accepted"
+  ]
+ ],
+ "submission_registry.py": [
+  [
+   "SPEC",
+   "controller: runs=1 single start message",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "controller: runs=4 ordinals 2..4",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "controller: large runs=100000 returns 100000 messages",
+   "PASS",
+   ""
+  ],
+  [
+   "UNSPEC",
+   "controller: runs=True (bool is an int subclass in Python)",
+   "OBSERVED",
+   "['Starting controller service for True runs']"
+  ],
+  [
+   "UNSPEC",
+   "controller: runs=3.0 (float)",
+   "OBSERVED",
+   "raises TypeError"
+  ],
+  [
+   "SPEC",
+   "bool timestamp is invalid and skipped",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "negative timestamp is invalid",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "float timestamp 20.0 is invalid",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "numeric-string timestamp '20' is invalid",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "blank event_id '   ' is invalid",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "non-string message (None) is invalid",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "empty-string message is valid (contract only requires a string)",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "non-dict entries are skipped silently",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "severity is case-insensitive ('CRITICAL')",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "unknown severity 'error' is invalid",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "device/kind trimmed and lower-cased, so the two events group",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "message internal whitespace collapsed",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "device is NOT whitespace-collapsed (contract: trim + lowercase only)",
+   "PASS",
+   "groups=2"
+  ],
+  [
+   "SPEC",
+   "window boundary inclusive (600 apart, window 600)",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "601 apart starts a new group",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "chaining on most recent accepted timestamp (0, 500, 1000)",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "filtered events do not extend a window",
+   "PASS",
+   "groups=2"
+  ],
+  [
+   "SPEC",
+   "event_ids in processing order (timestamp, event_id)",
+   "PASS",
+   "['c', 'a', 'b']"
+  ],
+  [
+   "SPEC",
+   "groups ordered by (first_timestamp, device, ...)",
+   "PASS",
+   ""
+  ],
+  [
+   "UNSPEC",
+   "representation of highest severity in output",
+   "OBSERVED",
+   "'critical'"
+  ],
+  [
+   "SPEC",
+   "window_seconds=True -> ValueError",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "window_seconds=600.0 -> ValueError",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "min_severity=True -> ValueError",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "min_severity=1.0 -> ValueError",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "events as tuple -> TypeError",
+   "PASS",
+   ""
+  ],
+  [
+   "SPEC",
+   "events=None -> TypeError",
+   "PASS",
+   ""
+  ],
+  [
+   "UNSPEC",
+   "both events and window invalid: which error wins",
+   "OBSERVED",
+   "ValueError"
+  ],
+  [
+   "SPEC",
+   "input list and dicts are not mutated",
+   "PASS",
+   ""
+  ],
+  [
+   "UNSPEC",
+   "severity with surrounding spaces ' info '",
+   "OBSERVED",
+   "valid"
+  ],
+  [
+   "UNSPEC",
+   "message leading/trailing whitespace: groups with trimmed twin?",
+   "OBSERVED",
+   "groups=1, message='high pressure'"
+  ],
+  [
+   "UNSPEC",
+   "sort key uses trimmed or raw event_id; ids reported",
+   "OBSERVED",
+   "['a', 'b']"
+  ],
+  [
+   "UNSPEC",
+   "duplicate event_id counted twice?",
+   "OBSERVED",
+   "count=2, ids=['a', 'a']"
+  ],
+  [
+   "UNSPEC",
+   "non-breaking space treated as whitespace in message",
+   "OBSERVED",
+   "groups=1"
+  ],
+  [
+   "UNSPEC",
+   "extra keys in event dicts",
+   "OBSERVED",
+   "accepted"
+  ]
+ ]
+}

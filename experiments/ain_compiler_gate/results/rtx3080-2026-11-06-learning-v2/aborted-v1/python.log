@@ -1,0 +1,9 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "dev-add-000", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "holdout-sub_add-000", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "dev-add-001", "correct": false, "error": "ValueError: expected one small solve function"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "holdout-sub_add-001", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "dev-add-002", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "holdout-sub_add-002", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "dev-add-003", "correct": false, "error": "ValueError: expected one small solve function"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "holdout-sub_add-003", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}

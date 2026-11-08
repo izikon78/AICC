@@ -1,0 +1,19 @@
+record,host,job,mode,reference_peak_mib,candidate_peak_mib,reference_percent
+Codex,Windows 11,repeated-shuffled,static,814.40234375,561.71484375,68.97264577647528
+Codex,Windows 11,diverse-shuffled,static,1060.15625,845.50390625,79.75276344878408
+Codex,Windows 11,ordered-stream,static,515.5234375,135.76171875,26.33473259884523
+Codex,Windows 11,repeated-shuffled,aicc_static,814.40234375,561.828125,68.98655551665092
+Codex,Windows 11,diverse-shuffled,aicc_static,1060.15625,846.20703125,79.81908621960207
+Codex,Windows 11,ordered-stream,aicc_static,515.5234375,135.77734375,26.33776349887099
+Claude,Linux,repeated-shuffled,static,815.69140625,561.859375,68.88136502296268
+Claude,Linux,diverse-shuffled,static,1065.1328125,847.21875,79.54113703543426
+Claude,Linux,ordered-stream,static,515.6875,136.61328125,26.491485880499333
+Claude,Linux,repeated-shuffled,aicc_static,815.69140625,561.62890625,68.85311061838836
+Claude,Linux,diverse-shuffled,aicc_static,1065.1328125,847.1015625,79.5301348863478
+Claude,Linux,ordered-stream,aicc_static,515.6875,136.77734375,26.523300206035632
+Grok,Windows 10,repeated-shuffled,static,814.015625,559.88671875,68.78083190970689
+Grok,Windows 10,diverse-shuffled,static,1057.4375,844.91796875,79.90240262426857
+Grok,Windows 10,ordered-stream,static,513.71875,133.734375,26.03260538962224
+Grok,Windows 10,repeated-shuffled,aicc_static,814.015625,560.109375,68.80818473232624
+Grok,Windows 10,diverse-shuffled,aicc_static,1057.4375,843.89453125,79.80561794432295
+Grok,Windows 10,ordered-stream,aicc_static,513.71875,133.48828125,25.98470101587688

@@ -1,0 +1,22 @@
+{
+  "workflow.ir.json": {
+    "utf8_bytes": 7678,
+    "sha256": "b8c71242e96159934112977887eb82c115b9446848123cae08a97e98cc735ca9"
+  },
+  "workflow.ain.json": {
+    "utf8_bytes": 799,
+    "sha256": "4919df54a6b42fb9eb16078dbd6e4aee1d59065cad65cca807066656a4ce67ac"
+  },
+  "catalog.json": {
+    "utf8_bytes": 4076,
+    "sha256": "602c1b079553ac74c1df9e8e8d01def7249a06924816544cc25e556aca37a998"
+  },
+  "workflow.python.py": {
+    "utf8_bytes": 1523,
+    "sha256": "589641180e9db8ea0f95252c63bcf599e626e1538a16c6ca779452ef81181fac"
+  },
+  "ir_canonical_json_bytes": 3410,
+  "ain_canonical_json_bytes": 798,
+  "billing_tokens": null,
+  "note": "Artifact bytes are not tokens or complete authoring context. All forms require the same host contract; IR/AIN additionally require their grammar/codebook."
+}

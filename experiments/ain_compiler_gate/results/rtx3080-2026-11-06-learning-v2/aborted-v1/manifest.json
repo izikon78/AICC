@@ -1,0 +1,43 @@
+{
+  "config": {
+    "model": "Qwen/Qwen2.5-1.5B",
+    "revision": "8faed761d45a263340a0528343f099c05c9a4323",
+    "seed": 20261106,
+    "epochs": 3,
+    "gradient_accumulation": 4,
+    "learning_rate": 0.001,
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lora_targets": [
+      "q_proj",
+      "v_proj"
+    ],
+    "max_sequence": 256,
+    "max_new_tokens": 64,
+    "train_seconds_per_arm": 300,
+    "eval_seconds_per_stage": 120,
+    "hard_seconds_per_arm": 600,
+    "peak_reserved_limit_gib": 7.8,
+    "dev_threshold": 9,
+    "purpose": "compact authoring with a common native compiler backend"
+  },
+  "git_head": "60ba43bad3588815ecebe1504c35f2dfe7f0e97d",
+  "source_sha256": {
+    "experiments\\ain_compiler_gate\\run.py": "79421c7c75defb22f01965fc5a627c60d23884f05225d4e78ee6abaea3a42e22",
+    "experiments\\ain_compiler_gate\\data.py": "f9788d42aca042240a7b24ece3605c3f839b58f74c84890ac5920116b784d140",
+    "experiments\\ain_compiler_gate\\compiler.py": "c5f2815ee1ae946209cfcf59106235526b096eae5c444f5dedad386a9a28bab0",
+    "experiments\\native_learning_gate\\run.py": "377e8dd6ba69edc8de5bbe5dbc86206c261a2cddaed313a69239075928fe3c2c",
+    "experiments\\native_learning_gate\\data.py": "a9f94f31c2b78fee55d22d12a32b0e136252d2a1c7809a82e9848004b21e084a",
+    "experiments\\ain_v0\\ain\\language.py": "97ec92ef89f3c4008f9122441261966a80d2d1e44c4bc4e9a47149c39e568d9e"
+  },
+  "dataset_sha256": "658d96cac2c6d475211dc873a40b84e15c8d7e92f85ed231e01fc58914d6b6f6",
+  "packages": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.51.3",
+    "peft": "0.15.2",
+    "accelerate": "1.6.0",
+    "llvmlite": "0.44.0"
+  },
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "cuda_runtime": "12.8"
+}

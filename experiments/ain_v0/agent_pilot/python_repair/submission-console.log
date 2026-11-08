@@ -1,0 +1,1 @@
+{"cell": "python_repair", "candidate": "candidate.py", "candidate_sha256": "70be46b101b967c26501a5af133c29799230667b0d1d961bc3a1de0356ea8ffa", "tests_run": 69, "failures": 0, "errors": 0, "normalization": [], "passed": true}

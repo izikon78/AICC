@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": 418,
+  "failed_checks": [],
+  "scored_stages": 18,
+  "attempts": 38,
+  "metered_attempts": 36,
+  "unmetered_attempts": 2,
+  "earlier_artifacts_unchanged": 133
+}

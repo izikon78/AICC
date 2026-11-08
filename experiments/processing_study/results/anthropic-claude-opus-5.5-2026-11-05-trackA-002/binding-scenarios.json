@@ -1,0 +1,44 @@
+{
+  "checks": [
+    {
+      "case": "cold binding",
+      "pass": true
+    },
+    {
+      "case": "20 calls reuse one metadata fit check",
+      "pass": true
+    },
+    {
+      "case": "repeat bind can reuse exact compatibility decision",
+      "pass": true
+    },
+    {
+      "case": "new host revalidates JSON record and current receiving requirements",
+      "pass": true
+    },
+    {
+      "case": "incompatible receiving task cannot trust old record",
+      "pass": true
+    },
+    {
+      "case": "unrelated capability update leaves binding usable",
+      "pass": true
+    },
+    {
+      "case": "relevant declared dependency change rejects old alias",
+      "pass": true
+    },
+    {
+      "case": "revocation rejects restored alias",
+      "pass": true
+    },
+    {
+      "case": "caller scope assertion does not grant host authority",
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "scope": "new host processes/metadata only, not model learning or cross-provider agent transfer",
+  "security_limit": "in-process trusted-host mechanisms, not isolation or real authentication",
+  "validation_limit": "full_validations counts metadata fit, not conformance proofs"
+}

@@ -1,0 +1,22 @@
+{
+  "version": 0,
+  "registers": {"n": "int", "i": "int", "sum": "int", "one": "int", "more": "bool"},
+  "parameters": ["n"],
+  "return_type": "int",
+  "entry": "start",
+  "blocks": [
+    {"label": "start", "instructions": [
+      {"op": "const", "dest": "i", "value": 0},
+      {"op": "const", "dest": "sum", "value": 0},
+      {"op": "const", "dest": "one", "value": 1}
+    ], "terminator": {"op": "jump", "target": "test"}},
+    {"label": "test", "instructions": [
+      {"op": "lt", "dest": "more", "left": "i", "right": "n"}
+    ], "terminator": {"op": "branch", "cond": "more", "then": "step", "else": "done"}},
+    {"label": "step", "instructions": [
+      {"op": "add", "dest": "sum", "left": "sum", "right": "i"},
+      {"op": "add", "dest": "i", "left": "i", "right": "one"}
+    ], "terminator": {"op": "jump", "target": "test"}},
+    {"label": "done", "instructions": [], "terminator": {"op": "return", "value": "sum"}}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "cell": "ir_repair",
+  "candidate": "candidate.json",
+  "candidate_sha256": "da57dcf499bd7ec535af624762509c3ec5b1b2f4e448945307048f9c7005e5c7",
+  "tests_run": 69,
+  "failures": 0,
+  "errors": 0,
+  "normalization": [],
+  "passed": true
+}

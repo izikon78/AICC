@@ -1,0 +1,130 @@
+{
+  "date": "2026-11-04",
+  "python": "3.12.14",
+  "platform": "Windows",
+  "node": "v24.22.1",
+  "checks": [
+    {
+      "label": "Existing H3 binding-state prototype",
+      "exit_code": 0,
+      "stdout": "20 alias calls after one validation                  ok; full validations = 1; last = 'Restarting controller service for run 20 of 20'\nmodel-visible verdict line                           cap:controller.logs@1 fit(T1 exact messages,runs<=0 no messages) valid; policy pure; impl c64e921573c2\nenvironment change (locale)                          StaleBinding: environment changed since validation\nrequirement change (new obligation)                  StaleBinding: requirement changed since validation\npolicy change (caller now allows filesystem.write)   StaleBinding: policy changed since validation\ncontract text change                                 StaleBinding: contract changed since validation\nimplementation replaced in-process                   StaleBinding: impl changed since validation\nrevocation of the implementation digest              StaleBinding: revoked implementation digest\ntampered code at validation time                     StaleBinding: cap:controller.logs@1: loaded code does not match the trusted manifest\nrollup_and_save under pure policy                    StaleBinding: cap:activity.rollup_and_save@1: declared effects ['filesystem.write'] exceed policy\nper-function digests differ across handles           True\n",
+      "stderr": ""
+    },
+    {
+      "label": "Existing group_by_window conformance pool",
+      "exit_code": 0,
+      "stdout": "variant                                             clean        sharp s    final sigma       ligature U+001C separat     U+FEFF BOM  invalid  total\nalt_python (contract)                            200/200        200/200        200/200        200/200        200/200        200/200     6/6   1206/1206\nalt_js_naive (shared text, JS defaults)          200/200         67/200         61/200        200/200         10/200         15/200     6/6   559/1206\nalt_js_faithful (contract tables)                200/200        200/200        200/200        200/200        200/200        200/200     6/6   1206/1206\n\nfirst divergence for alt_js_naive (shared text, JS defaults) (sharp s):\n  input devices/messages: [('\u0130stanbul', 'high pressure'), ('Stra\u00dfe', ' high  pressure '), ('Pump-1', ' high  pressure ')]\n  reference: {\"ok\": true, \"groups\": [{\"device\": \"pump-1\", \"kind\": \"pressure\", \"message\": \"High pressure\", \"first\": 3, \"last\": 3, \"count\": 1}, {\"device\": \"strasse\", \"kind\": \"\n  variant:   {\"ok\": true, \"groups\": [{\"device\": \"pump-1\", \"kind\": \"pressure\", \"message\": \"High pressure\", \"first\": 3, \"last\": 3, \"count\": 1}, {\"device\": \"stra\u00dfe\", \"kind\": \"t\n\nconformance_vectors.json: 1206 cases, 1555359 bytes\n",
+      "stderr": ""
+    }
+  ],
+  "conformance": {
+    "alt_python (contract)": {
+      "clean": [
+        200,
+        200
+      ],
+      "sharp s": [
+        200,
+        200
+      ],
+      "final sigma": [
+        200,
+        200
+      ],
+      "ligature": [
+        200,
+        200
+      ],
+      "U+001C separator": [
+        200,
+        200
+      ],
+      "U+FEFF BOM": [
+        200,
+        200
+      ],
+      "invalid": [
+        6,
+        6
+      ],
+      "total": [
+        1206,
+        1206
+      ]
+    },
+    "alt_js_naive (shared text, JS defaults)": {
+      "clean": [
+        200,
+        200
+      ],
+      "sharp s": [
+        67,
+        200
+      ],
+      "final sigma": [
+        61,
+        200
+      ],
+      "ligature": [
+        200,
+        200
+      ],
+      "U+001C separator": [
+        10,
+        200
+      ],
+      "U+FEFF BOM": [
+        15,
+        200
+      ],
+      "invalid": [
+        6,
+        6
+      ],
+      "total": [
+        559,
+        1206
+      ]
+    },
+    "alt_js_faithful (contract tables)": {
+      "clean": [
+        200,
+        200
+      ],
+      "sharp s": [
+        200,
+        200
+      ],
+      "final sigma": [
+        200,
+        200
+      ],
+      "ligature": [
+        200,
+        200
+      ],
+      "U+001C separator": [
+        200,
+        200
+      ],
+      "U+FEFF BOM": [
+        200,
+        200
+      ],
+      "invalid": [
+        6,
+        6
+      ],
+      "total": [
+        1206,
+        1206
+      ]
+    }
+  },
+  "limits": [
+    "Reruns existing finished programs; no new independent agent authoring.",
+    "Same fixed test pool and original author; not held-out proof of general equivalence.",
+    "Binding prototype is in-process and not an execution security boundary.",
+    "No billed tokens, dollar cost, model latency, or cross-agent knowledge transfer measured."
+  ]
+}

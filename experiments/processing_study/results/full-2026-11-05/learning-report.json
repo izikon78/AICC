@@ -1,0 +1,374 @@
+{
+  "training": {
+    "architecture": [
+      8,
+      32,
+      16,
+      3
+    ],
+    "epochs_attempted": 900,
+    "selected_epoch": 164,
+    "validation_loss": 0.19132829401229803,
+    "history": [
+      {
+        "epoch": 1,
+        "training_loss": 1.235388122325193,
+        "validation_loss": 1.2340806477540327
+      },
+      {
+        "epoch": 50,
+        "training_loss": 0.029352866806967397,
+        "validation_loss": 0.30636942582115556
+      },
+      {
+        "epoch": 100,
+        "training_loss": 0.010327869072469147,
+        "validation_loss": 0.2112317677828306
+      },
+      {
+        "epoch": 150,
+        "training_loss": 0.005986629286126568,
+        "validation_loss": 0.19233731456721465
+      },
+      {
+        "epoch": 200,
+        "training_loss": 0.0038304948671732263,
+        "validation_loss": 0.1942496835353968
+      },
+      {
+        "epoch": 250,
+        "training_loss": 0.0024708893452487575,
+        "validation_loss": 0.19509745280136884
+      },
+      {
+        "epoch": 300,
+        "training_loss": 0.001816453239008343,
+        "validation_loss": 0.19383546395332762
+      },
+      {
+        "epoch": 350,
+        "training_loss": 0.001410973692154684,
+        "validation_loss": 0.19597853532356485
+      },
+      {
+        "epoch": 400,
+        "training_loss": 0.0011170917623182773,
+        "validation_loss": 0.19867183506730532
+      },
+      {
+        "epoch": 450,
+        "training_loss": 0.0009020015829295535,
+        "validation_loss": 0.20214771928918188
+      },
+      {
+        "epoch": 500,
+        "training_loss": 0.0007382446350559053,
+        "validation_loss": 0.20642354748637562
+      },
+      {
+        "epoch": 550,
+        "training_loss": 0.0006082581120811942,
+        "validation_loss": 0.21091410244203676
+      },
+      {
+        "epoch": 600,
+        "training_loss": 0.0005061845903376546,
+        "validation_loss": 0.21550864482498622
+      },
+      {
+        "epoch": 650,
+        "training_loss": 0.00042283460098844057,
+        "validation_loss": 0.2205303488657845
+      },
+      {
+        "epoch": 700,
+        "training_loss": 0.0003538557839276207,
+        "validation_loss": 0.2256885534524137
+      },
+      {
+        "epoch": 750,
+        "training_loss": 0.0002986156484124441,
+        "validation_loss": 0.2306790037367719
+      },
+      {
+        "epoch": 800,
+        "training_loss": 0.0002527743209505704,
+        "validation_loss": 0.23514152016587123
+      },
+      {
+        "epoch": 850,
+        "training_loss": 0.00021389438491469176,
+        "validation_loss": 0.2393864216367858
+      },
+      {
+        "epoch": 900,
+        "training_loss": 0.00018002368241159066,
+        "validation_loss": 0.2437637445311818
+      }
+    ],
+    "optimizer": "Adam",
+    "loss": "masked squared error on normalized log execution time"
+  },
+  "training_seconds": 0.32124130000011064,
+  "data_collection_seconds": 19.60258390000672,
+  "static_policy": {
+    "unordered_plan": "partitioned",
+    "use_ordered_when_declared": true,
+    "training_kernel_seconds": 1.1250629999994999,
+    "candidate_policies": [
+      {
+        "unordered_plan": "cached",
+        "use_ordered_when_declared": false,
+        "training_kernel_seconds": 1.1812753000413068
+      },
+      {
+        "unordered_plan": "cached",
+        "use_ordered_when_declared": true,
+        "training_kernel_seconds": 1.141146700043464
+      },
+      {
+        "unordered_plan": "partitioned",
+        "use_ordered_when_declared": false,
+        "training_kernel_seconds": 1.1647258000011789
+      },
+      {
+        "unordered_plan": "partitioned",
+        "use_ordered_when_declared": true,
+        "training_kernel_seconds": 1.1250629999994999
+      }
+    ]
+  },
+  "held_out_kernel_evaluation": {
+    "records": [
+      {
+        "job": "test-000",
+        "learned": "partitioned",
+        "static": "partitioned",
+        "oracle": "cached",
+        "learned_seconds": 0.04063784999016207,
+        "static_seconds": 0.04063784999016207,
+        "oracle_seconds": 0.029877150009269826
+      },
+      {
+        "job": "test-001",
+        "learned": "cached",
+        "static": "ordered",
+        "oracle": "cached",
+        "learned_seconds": 0.0023761500196997076,
+        "static_seconds": 0.0027776500064646825,
+        "oracle_seconds": 0.0023761500196997076
+      },
+      {
+        "job": "test-002",
+        "learned": "partitioned",
+        "static": "partitioned",
+        "oracle": "cached",
+        "learned_seconds": 0.036726149992318824,
+        "static_seconds": 0.036726149992318824,
+        "oracle_seconds": 0.03209649999917019
+      },
+      {
+        "job": "test-003",
+        "learned": "partitioned",
+        "static": "partitioned",
+        "oracle": "partitioned",
+        "learned_seconds": 0.021864549999008887,
+        "static_seconds": 0.021864549999008887,
+        "oracle_seconds": 0.021864549999008887
+      },
+      {
+        "job": "test-004",
+        "learned": "cached",
+        "static": "partitioned",
+        "oracle": "partitioned",
+        "learned_seconds": 0.013629549997858703,
+        "static_seconds": 0.011846549998153932,
+        "oracle_seconds": 0.011846549998153932
+      },
+      {
+        "job": "test-005",
+        "learned": "ordered",
+        "static": "ordered",
+        "oracle": "partitioned",
+        "learned_seconds": 0.04287350000231527,
+        "static_seconds": 0.04287350000231527,
+        "oracle_seconds": 0.03732995002064854
+      },
+      {
+        "job": "test-006",
+        "learned": "cached",
+        "static": "partitioned",
+        "oracle": "cached",
+        "learned_seconds": 0.0017533000063849613,
+        "static_seconds": 0.002710899992962368,
+        "oracle_seconds": 0.0017533000063849613
+      },
+      {
+        "job": "test-007",
+        "learned": "ordered",
+        "static": "ordered",
+        "oracle": "ordered",
+        "learned_seconds": 0.0362716000090586,
+        "static_seconds": 0.0362716000090586,
+        "oracle_seconds": 0.0362716000090586
+      },
+      {
+        "job": "test-008",
+        "learned": "partitioned",
+        "static": "partitioned",
+        "oracle": "partitioned",
+        "learned_seconds": 0.03616439999314025,
+        "static_seconds": 0.03616439999314025,
+        "oracle_seconds": 0.03616439999314025
+      },
+      {
+        "job": "test-009",
+        "learned": "cached",
+        "static": "partitioned",
+        "oracle": "cached",
+        "learned_seconds": 0.0015985000063665211,
+        "static_seconds": 0.0018561999895609915,
+        "oracle_seconds": 0.0015985000063665211
+      },
+      {
+        "job": "test-010",
+        "learned": "cached",
+        "static": "partitioned",
+        "oracle": "partitioned",
+        "learned_seconds": 0.0053381500038085505,
+        "static_seconds": 0.004749400002765469,
+        "oracle_seconds": 0.004749400002765469
+      },
+      {
+        "job": "test-011",
+        "learned": "cached",
+        "static": "ordered",
+        "oracle": "ordered",
+        "learned_seconds": 0.0016080999776022509,
+        "static_seconds": 0.001507949986262247,
+        "oracle_seconds": 0.001507949986262247
+      },
+      {
+        "job": "test-012",
+        "learned": "cached",
+        "static": "partitioned",
+        "oracle": "cached",
+        "learned_seconds": 0.01215724999201484,
+        "static_seconds": 0.01331525000568945,
+        "oracle_seconds": 0.01215724999201484
+      },
+      {
+        "job": "test-013",
+        "learned": "cached",
+        "static": "partitioned",
+        "oracle": "cached",
+        "learned_seconds": 0.0064324499981012195,
+        "static_seconds": 0.007314799993764609,
+        "oracle_seconds": 0.0064324499981012195
+      },
+      {
+        "job": "test-014",
+        "learned": "partitioned",
+        "static": "partitioned",
+        "oracle": "cached",
+        "learned_seconds": 0.009794450015760958,
+        "static_seconds": 0.009794450015760958,
+        "oracle_seconds": 0.008536499997717328
+      },
+      {
+        "job": "test-015",
+        "learned": "partitioned",
+        "static": "partitioned",
+        "oracle": "partitioned",
+        "learned_seconds": 0.02311760000884533,
+        "static_seconds": 0.02311760000884533,
+        "oracle_seconds": 0.02311760000884533
+      },
+      {
+        "job": "test-016",
+        "learned": "cached",
+        "static": "partitioned",
+        "oracle": "partitioned",
+        "learned_seconds": 0.04269714999827556,
+        "static_seconds": 0.03922079998301342,
+        "oracle_seconds": 0.03922079998301342
+      },
+      {
+        "job": "test-017",
+        "learned": "partitioned",
+        "static": "ordered",
+        "oracle": "cached",
+        "learned_seconds": 0.00366324998321943,
+        "static_seconds": 0.004736200004117563,
+        "oracle_seconds": 0.003611249994719401
+      },
+      {
+        "job": "test-018",
+        "learned": "cached",
+        "static": "ordered",
+        "oracle": "partitioned",
+        "learned_seconds": 0.01805324999440927,
+        "static_seconds": 0.016328700017766096,
+        "oracle_seconds": 0.01589145000616554
+      },
+      {
+        "job": "test-019",
+        "learned": "partitioned",
+        "static": "partitioned",
+        "oracle": "partitioned",
+        "learned_seconds": 0.03764039999805391,
+        "static_seconds": 0.03764039999805391,
+        "oracle_seconds": 0.03764039999805391
+      },
+      {
+        "job": "test-020",
+        "learned": "cached",
+        "static": "partitioned",
+        "oracle": "cached",
+        "learned_seconds": 0.006934499993803911,
+        "static_seconds": 0.008052549994317815,
+        "oracle_seconds": 0.006934499993803911
+      },
+      {
+        "job": "test-021",
+        "learned": "partitioned",
+        "static": "ordered",
+        "oracle": "ordered",
+        "learned_seconds": 0.015516849991399795,
+        "static_seconds": 0.015110599997569807,
+        "oracle_seconds": 0.015110599997569807
+      },
+      {
+        "job": "test-022",
+        "learned": "partitioned",
+        "static": "partitioned",
+        "oracle": "cached",
+        "learned_seconds": 0.018952749989693984,
+        "static_seconds": 0.018952749989693984,
+        "oracle_seconds": 0.01739020000968594
+      },
+      {
+        "job": "test-023",
+        "learned": "partitioned",
+        "static": "ordered",
+        "oracle": "cached",
+        "learned_seconds": 0.021495149994734675,
+        "static_seconds": 0.01948729998548515,
+        "oracle_seconds": 0.01882229998591356
+      }
+    ],
+    "learned_kernel_seconds": 0.4572968499560375,
+    "static_kernel_seconds": 0.4530580999562517,
+    "oracle_kernel_seconds": 0.42230130001553334,
+    "oracle_matches": 11,
+    "jobs": 24,
+    "selection_overhead_included": false,
+    "note": "Kernel-only estimates from measured held-out jobs. Separate end-to-end workers include feature/inference/binding overhead."
+  },
+  "train_jobs": 72,
+  "validation_jobs": 24,
+  "test_jobs": 24,
+  "trainable_parameters": 867,
+  "large_job_limit": "Jobs above 14,000 events are size extrapolation. No tuning on stress results.",
+  "deep_learning_scope": "Actual two-hidden-layer neural cost-model training, not LLM/native-opcode training."
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "cell": "python_repair",
+    "permitted_source_bundle_bytes": 44550,
+    "files": [
+      {
+        "path": "LANGUAGE.md",
+        "bytes": 12222
+      },
+      {
+        "path": "ENGINE.md",
+        "bytes": 8077
+      },
+      {
+        "path": "programs/catalog.json",
+        "bytes": 4076
+      },
+      {
+        "path": "../../docs/ain/COMPLEX_TASK.md",
+        "bytes": 17170
+      },
+      {
+        "path": "agent_pilot/python_repair/TASK.md",
+        "bytes": 1447
+      },
+      {
+        "path": "agent_pilot/python_repair/initial.py",
+        "bytes": 1558
+      }
+    ],
+    "actual_tool_context_tokens": null,
+    "billed_tokens": null
+  },
+  {
+    "cell": "ir_repair",
+    "permitted_source_bundle_bytes": 51109,
+    "files": [
+      {
+        "path": "LANGUAGE.md",
+        "bytes": 12222
+      },
+      {
+        "path": "ENGINE.md",
+        "bytes": 8077
+      },
+      {
+        "path": "programs/catalog.json",
+        "bytes": 4076
+      },
+      {
+        "path": "../../docs/ain/COMPLEX_TASK.md",
+        "bytes": 17170
+      },
+      {
+        "path": "agent_pilot/ir_repair/TASK.md",
+        "bytes": 1447
+      },
+      {
+        "path": "agent_pilot/ir_repair/initial.json",
+        "bytes": 8117
+      }
+    ],
+    "actual_tool_context_tokens": null,
+    "billed_tokens": null
+  },
+  {
+    "cell": "ain_repair",
+    "permitted_source_bundle_bytes": 48287,
+    "files": [
+      {
+        "path": "LANGUAGE.md",
+        "bytes": 12222
+      },
+      {
+        "path": "ENGINE.md",
+        "bytes": 8077
+      },
+      {
+        "path": "programs/catalog.json",
+        "bytes": 4076
+      },
+      {
+        "path": "../../docs/ain/COMPLEX_TASK.md",
+        "bytes": 17170
+      },
+      {
+        "path": "agent_pilot/ain_repair/TASK.md",
+        "bytes": 1448
+      },
+      {
+        "path": "agent_pilot/ain_repair/initial.json",
+        "bytes": 5294
+      }
+    ],
+    "actual_tool_context_tokens": null,
+    "billed_tokens": null
+  },
+  {
+    "cell": "python_optimize",
+    "permitted_source_bundle_bytes": 44684,
+    "files": [
+      {
+        "path": "LANGUAGE.md",
+        "bytes": 12222
+      },
+      {
+        "path": "ENGINE.md",
+        "bytes": 8077
+      },
+      {
+        "path": "programs/catalog.json",
+        "bytes": 4076
+      },
+      {
+        "path": "../../docs/ain/COMPLEX_TASK.md",
+        "bytes": 17170
+      },
+      {
+        "path": "agent_pilot/python_optimize/TASK.md",
+        "bytes": 1582
+      },
+      {
+        "path": "agent_pilot/python_optimize/initial.py",
+        "bytes": 1557
+      }
+    ],
+    "actual_tool_context_tokens": null,
+    "billed_tokens": null
+  },
+  {
+    "cell": "ir_optimize",
+    "permitted_source_bundle_bytes": 51244,
+    "files": [
+      {
+        "path": "LANGUAGE.md",
+        "bytes": 12222
+      },
+      {
+        "path": "ENGINE.md",
+        "bytes": 8077
+      },
+      {
+        "path": "programs/catalog.json",
+        "bytes": 4076
+      },
+      {
+        "path": "../../docs/ain/COMPLEX_TASK.md",
+        "bytes": 17170
+      },
+      {
+        "path": "agent_pilot/ir_optimize/TASK.md",
+        "bytes": 1582
+      },
+      {
+        "path": "agent_pilot/ir_optimize/initial.json",
+        "bytes": 8117
+      }
+    ],
+    "actual_tool_context_tokens": null,
+    "billed_tokens": null
+  },
+  {
+    "cell": "ain_optimize",
+    "permitted_source_bundle_bytes": 48422,
+    "files": [
+      {
+        "path": "LANGUAGE.md",
+        "bytes": 12222
+      },
+      {
+        "path": "ENGINE.md",
+        "bytes": 8077
+      },
+      {
+        "path": "programs/catalog.json",
+        "bytes": 4076
+      },
+      {
+        "path": "../../docs/ain/COMPLEX_TASK.md",
+        "bytes": 17170
+      },
+      {
+        "path": "agent_pilot/ain_optimize/TASK.md",
+        "bytes": 1583
+      },
+      {
+        "path": "agent_pilot/ain_optimize/initial.json",
+        "bytes": 5294
+      }
+    ],
+    "actual_tool_context_tokens": null,
+    "billed_tokens": null
+  }
+]

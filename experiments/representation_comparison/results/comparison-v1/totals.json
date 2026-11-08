@@ -1,0 +1,126 @@
+{
+  "resident": {
+    "python_repr": {
+      "input_text_tokens": 35118,
+      "output_text_tokens": 5712,
+      "input_utf8_bytes": 128136,
+      "output_utf8_bytes": 16512,
+      "common_tokens_isolated": 15102,
+      "artifact_tokens_isolated": 5346,
+      "memory_tokens_isolated": 5238,
+      "history_tokens_isolated": 8136,
+      "total_text_tokens": 40830,
+      "wrapper_and_boundary_delta": 1296
+    },
+    "python_compact": {
+      "input_text_tokens": 32316,
+      "output_text_tokens": 4548,
+      "input_utf8_bytes": 124956,
+      "output_utf8_bytes": 15276,
+      "common_tokens_isolated": 15102,
+      "artifact_tokens_isolated": 5022,
+      "memory_tokens_isolated": 3888,
+      "history_tokens_isolated": 7008,
+      "total_text_tokens": 36864,
+      "wrapper_and_boundary_delta": 1296
+    },
+    "readable_ir": {
+      "input_text_tokens": 35280,
+      "output_text_tokens": 5490,
+      "input_utf8_bytes": 136656,
+      "output_utf8_bytes": 19128,
+      "common_tokens_isolated": 15102,
+      "artifact_tokens_isolated": 6822,
+      "memory_tokens_isolated": 3888,
+      "history_tokens_isolated": 8172,
+      "total_text_tokens": 40770,
+      "wrapper_and_boundary_delta": 1296
+    },
+    "numeric_arrays": {
+      "input_text_tokens": 34092,
+      "output_text_tokens": 5274,
+      "input_utf8_bytes": 125364,
+      "output_utf8_bytes": 16128,
+      "common_tokens_isolated": 15102,
+      "artifact_tokens_isolated": 5994,
+      "memory_tokens_isolated": 3888,
+      "history_tokens_isolated": 7812,
+      "total_text_tokens": 39366,
+      "wrapper_and_boundary_delta": 1296
+    },
+    "symbolic_ain": {
+      "input_text_tokens": 37908,
+      "output_text_tokens": 5634,
+      "input_utf8_bytes": 131358,
+      "output_utf8_bytes": 16614,
+      "common_tokens_isolated": 15102,
+      "artifact_tokens_isolated": 9126,
+      "memory_tokens_isolated": 3888,
+      "history_tokens_isolated": 8496,
+      "total_text_tokens": 43542,
+      "wrapper_and_boundary_delta": 1296
+    }
+  },
+  "inspect": {
+    "python_repr": {
+      "input_text_tokens": 70902,
+      "output_text_tokens": 5712,
+      "input_utf8_bytes": 244272,
+      "output_utf8_bytes": 16512,
+      "common_tokens_isolated": 50886,
+      "artifact_tokens_isolated": 5346,
+      "memory_tokens_isolated": 5238,
+      "history_tokens_isolated": 8136,
+      "total_text_tokens": 76614,
+      "wrapper_and_boundary_delta": 1296
+    },
+    "python_compact": {
+      "input_text_tokens": 68100,
+      "output_text_tokens": 4548,
+      "input_utf8_bytes": 241092,
+      "output_utf8_bytes": 15276,
+      "common_tokens_isolated": 50886,
+      "artifact_tokens_isolated": 5022,
+      "memory_tokens_isolated": 3888,
+      "history_tokens_isolated": 7008,
+      "total_text_tokens": 72648,
+      "wrapper_and_boundary_delta": 1296
+    },
+    "readable_ir": {
+      "input_text_tokens": 71064,
+      "output_text_tokens": 5490,
+      "input_utf8_bytes": 252792,
+      "output_utf8_bytes": 19128,
+      "common_tokens_isolated": 50886,
+      "artifact_tokens_isolated": 6822,
+      "memory_tokens_isolated": 3888,
+      "history_tokens_isolated": 8172,
+      "total_text_tokens": 76554,
+      "wrapper_and_boundary_delta": 1296
+    },
+    "numeric_arrays": {
+      "input_text_tokens": 69876,
+      "output_text_tokens": 5274,
+      "input_utf8_bytes": 241500,
+      "output_utf8_bytes": 16128,
+      "common_tokens_isolated": 50886,
+      "artifact_tokens_isolated": 5994,
+      "memory_tokens_isolated": 3888,
+      "history_tokens_isolated": 7812,
+      "total_text_tokens": 75150,
+      "wrapper_and_boundary_delta": 1296
+    },
+    "symbolic_ain": {
+      "input_text_tokens": 73692,
+      "output_text_tokens": 5634,
+      "input_utf8_bytes": 247494,
+      "output_utf8_bytes": 16614,
+      "common_tokens_isolated": 50886,
+      "artifact_tokens_isolated": 9126,
+      "memory_tokens_isolated": 3888,
+      "history_tokens_isolated": 8496,
+      "total_text_tokens": 79326,
+      "wrapper_and_boundary_delta": 1296
+    }
+  }
+}

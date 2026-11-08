@@ -1,0 +1,1062 @@
+
+=================================================================== ARM A: python fixtures/test_tasks.py --submission submission.py
+{
+  "passed": 14,
+  "total": 14,
+  "cases": [
+    {
+      "case": "controller n=-2",
+      "pass": true
+    },
+    {
+      "case": "controller n=0",
+      "pass": true
+    },
+    {
+      "case": "controller n=1",
+      "pass": true
+    },
+    {
+      "case": "controller n=2",
+      "pass": true
+    },
+    {
+      "case": "controller n=3",
+      "pass": true
+    },
+    {
+      "case": "controller n=17",
+      "pass": true
+    },
+    {
+      "case": "rollup case 1",
+      "pass": true
+    },
+    {
+      "case": "rollup case 2",
+      "pass": true
+    },
+    {
+      "case": "rollup case 3",
+      "pass": true
+    },
+    {
+      "case": "rollup case 4",
+      "pass": true
+    },
+    {
+      "case": "rollup case 5",
+      "pass": true
+    },
+    {
+      "case": "error (0, 0)",
+      "pass": true,
+      "actual_error": "ValueError"
+    },
+    {
+      "case": "error (600, 3)",
+      "pass": true,
+      "actual_error": "ValueError"
+    },
+    {
+      "case": "error (600, 0)",
+      "pass": true,
+      "actual_error": "TypeError"
+    }
+  ]
+}
+
+=================================================================== ARM B: python fixtures/test_tasks.py --submission submission_registry.py
+{
+  "passed": 14,
+  "total": 14,
+  "cases": [
+    {
+      "case": "controller n=-2",
+      "pass": true
+    },
+    {
+      "case": "controller n=0",
+      "pass": true
+    },
+    {
+      "case": "controller n=1",
+      "pass": true
+    },
+    {
+      "case": "controller n=2",
+      "pass": true
+    },
+    {
+      "case": "controller n=3",
+      "pass": true
+    },
+    {
+      "case": "controller n=17",
+      "pass": true
+    },
+    {
+      "case": "rollup case 1",
+      "pass": true
+    },
+    {
+      "case": "rollup case 2",
+      "pass": true
+    },
+    {
+      "case": "rollup case 3",
+      "pass": true
+    },
+    {
+      "case": "rollup case 4",
+      "pass": true
+    },
+    {
+      "case": "rollup case 5",
+      "pass": true
+    },
+    {
+      "case": "error (0, 0)",
+      "pass": true,
+      "actual_error": "ValueError"
+    },
+    {
+      "case": "error (600, 3)",
+      "pass": true,
+      "actual_error": "ValueError"
+    },
+    {
+      "case": "error (600, 0)",
+      "pass": true,
+      "actual_error": "TypeError"
+    }
+  ]
+}
+
+=================================================================== ARM C: python fixtures/test_tasks.py --python-controller controller_submission.py
+{
+  "passed": 6,
+  "total": 6,
+  "cases": [
+    {
+      "case": "python controller n=-2",
+      "pass": true
+    },
+    {
+      "case": "python controller n=0",
+      "pass": true
+    },
+    {
+      "case": "python controller n=1",
+      "pass": true
+    },
+    {
+      "case": "python controller n=2",
+      "pass": true
+    },
+    {
+      "case": "python controller n=3",
+      "pass": true
+    },
+    {
+      "case": "python controller n=17",
+      "pass": true
+    }
+  ]
+}
+
+=================================================================== ARM D: python fixtures/test_tasks.py --symbolic controller_submission.sym
+{
+  "passed": 6,
+  "total": 6,
+  "cases": [
+    {
+      "case": "symbolic n=-2",
+      "pass": true
+    },
+    {
+      "case": "symbolic n=0",
+      "pass": true
+    },
+    {
+      "case": "symbolic n=1",
+      "pass": true
+    },
+    {
+      "case": "symbolic n=2",
+      "pass": true
+    },
+    {
+      "case": "symbolic n=3",
+      "pass": true
+    },
+    {
+      "case": "symbolic n=17",
+      "pass": true
+    }
+  ]
+}
+
+=================================================================== H3: python fixtures/binding_checks.py
+PASS: unauthorized effect denied
+PASS: mismatching artifact digest denied
+PASS: reuse binding available
+
+=================================================================== COUNTEREXAMPLE zero_based: python fixtures/test_tasks.py --submission counterexamples/submission_zero_based.py
+{"passed": 11, "total": 14, "failed": ["controller n=2", "controller n=3", "controller n=17"]}
+
+=================================================================== COUNTEREXAMPLE by_eventid: python fixtures/test_tasks.py --submission counterexamples/submission_by_eventid.py
+{"passed": 12, "total": 14, "failed": ["rollup case 1", "rollup case 3"]}
+
+=================================================================== COUNTEREXAMPLE and_save: python fixtures/test_tasks.py --submission counterexamples/submission_and_save.py
+registry.CapabilityDenied: denied effects: ['filesystem.write']
+
+=================================================================== ADVERSARIAL contract tests (held-out, black-box)
+
+### submission.py: SPEC 29/29 pass
+  [UNSPEC] controller: runs=True (bool is an int subclass in Python): OBSERVED ['Starting controller service for True runs']
+  [UNSPEC] controller: runs=3.0 (float): OBSERVED raises TypeError
+  [UNSPEC] representation of highest severity in output: OBSERVED 'critical'
+  [UNSPEC] both events and window invalid: which error wins: OBSERVED ValueError
+  [UNSPEC] severity with surrounding spaces ' info ': OBSERVED valid
+  [UNSPEC] message leading/trailing whitespace: groups with trimmed twin?: OBSERVED groups=1, message='high pressure'
+  [UNSPEC] sort key uses trimmed or raw event_id; ids reported: OBSERVED ['a', 'b']
+  [UNSPEC] duplicate event_id counted twice?: OBSERVED count=2, ids=['a', 'a']
+  [UNSPEC] non-breaking space treated as whitespace in message: OBSERVED groups=1
+  [UNSPEC] extra keys in event dicts: OBSERVED accepted
+
+### submission_registry.py: SPEC 29/29 pass
+  [UNSPEC] controller: runs=True (bool is an int subclass in Python): OBSERVED ['Starting controller service for True runs']
+  [UNSPEC] controller: runs=3.0 (float): OBSERVED raises TypeError
+  [UNSPEC] representation of highest severity in output: OBSERVED 'critical'
+  [UNSPEC] both events and window invalid: which error wins: OBSERVED ValueError
+  [UNSPEC] severity with surrounding spaces ' info ': OBSERVED valid
+  [UNSPEC] message leading/trailing whitespace: groups with trimmed twin?: OBSERVED groups=1, message='high pressure'
+  [UNSPEC] sort key uses trimmed or raw event_id; ids reported: OBSERVED ['a', 'b']
+  [UNSPEC] duplicate event_id counted twice?: OBSERVED count=2, ids=['a', 'a']
+  [UNSPEC] non-breaking space treated as whitespace in message: OBSERVED groups=1
+  [UNSPEC] extra keys in event dicts: OBSERVED accepted
+
+identical results across ['submission.py', 'submission_registry.py']: True
+
+=================================================================== INDEPENDENT contract-only implementation through the harness
+{
+  "passed": 10,
+  "total": 14,
+  "cases": [
+    {
+      "case": "controller n=-2",
+      "pass": true
+    },
+    {
+      "case": "controller n=0",
+      "pass": true
+    },
+    {
+      "case": "controller n=1",
+      "pass": true
+    },
+    {
+      "case": "controller n=2",
+      "pass": true
+    },
+    {
+      "case": "controller n=3",
+      "pass": true
+    },
+    {
+      "case": "controller n=17",
+      "pass": true
+    },
+    {
+      "case": "rollup case 1",
+      "pass": false,
+      "expected": [
+        {
+          "device": "aps-1",
+          "kind": "alert",
+          "message": "Disk Low",
+          "first_timestamp": 10,
+          "last_timestamp": 20,
+          "severity": "critical",
+          "count": 2,
+          "event_ids": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "device": "aps-1",
+          "kind": "alert",
+          "message": "Disk Low",
+          "first_timestamp": 80,
+          "last_timestamp": 80,
+          "severity": "info",
+          "count": 1,
+          "event_ids": [
+            "c"
+          ]
+        }
+      ],
+      "actual": [
+        {
+          "device": "aps-1",
+          "kind": "alert",
+          "message": " Disk Low ",
+          "first_timestamp": 10,
+          "last_timestamp": 10,
+          "severity": 1,
+          "count": 1,
+          "event_ids": [
+            "a"
+          ]
+        },
+        {
+          "device": "aps-1",
+          "kind": "alert",
+          "message": "Disk Low",
+          "first_timestamp": 20,
+          "last_timestamp": 20,
+          "severity": 2,
+          "count": 1,
+          "event_ids": [
+            "b"
+          ]
+        },
+        {
+          "device": "aps-1",
+          "kind": "alert",
+          "message": "Disk Low",
+          "first_timestamp": 80,
+          "last_timestamp": 80,
+          "severity": 0,
+          "count": 1,
+          "event_ids": [
+            "c"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "rollup case 2",
+      "pass": false,
+      "expected": [
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": "M",
+          "first_timestamp": 1,
+          "last_timestamp": 1,
+          "severity": "critical",
+          "count": 1,
+          "event_ids": [
+            "a"
+          ]
+        },
+        {
+          "device": "b",
+          "kind": "status",
+          "message": "ok",
+          "first_timestamp": 3,
+          "last_timestamp": 3,
+          "severity": "warning",
+          "count": 1,
+          "event_ids": [
+            "b"
+          ]
+        }
+      ],
+      "actual": [
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": "M",
+          "first_timestamp": 1,
+          "last_timestamp": 1,
+          "severity": 2,
+          "count": 1,
+          "event_ids": [
+            "a"
+          ]
+        },
+        {
+          "device": "b",
+          "kind": "status",
+          "message": "ok",
+          "first_timestamp": 3,
+          "last_timestamp": 3,
+          "severity": 1,
+          "count": 1,
+          "event_ids": [
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "rollup case 3",
+      "pass": false,
+      "expected": [
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": "M",
+          "first_timestamp": 1,
+          "last_timestamp": 9,
+          "severity": "critical",
+          "count": 3,
+          "event_ids": [
+            "x",
+            "y",
+            "z"
+          ]
+        }
+      ],
+      "actual": [
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": " M ",
+          "first_timestamp": 1,
+          "last_timestamp": 1,
+          "severity": 1,
+          "count": 1,
+          "event_ids": [
+            "x"
+          ]
+        },
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": "M",
+          "first_timestamp": 4,
+          "last_timestamp": 9,
+          "severity": 2,
+          "count": 2,
+          "event_ids": [
+            "y",
+            "z"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "rollup case 4",
+      "pass": false,
+      "expected": [
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": "M",
+          "first_timestamp": 1,
+          "last_timestamp": 1,
+          "severity": "critical",
+          "count": 1,
+          "event_ids": [
+            "y"
+          ]
+        }
+      ],
+      "actual": [
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": " M ",
+          "first_timestamp": 1,
+          "last_timestamp": 1,
+          "severity": 2,
+          "count": 1,
+          "event_ids": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "rollup case 5",
+      "pass": true
+    },
+    {
+      "case": "error (0, 0)",
+      "pass": true,
+      "actual_error": "ValueError"
+    },
+    {
+      "case": "error (600, 3)",
+      "pass": true,
+      "actual_error": "ValueError"
+    },
+    {
+      "case": "error (600, 0)",
+      "pass": true,
+      "actual_error": "TypeError"
+    }
+  ]
+}
+
+=================================================================== VARIANT variants/v1_severity_names.py
+{
+  "passed": 11,
+  "total": 14,
+  "cases": [
+    {
+      "case": "controller n=-2",
+      "pass": true
+    },
+    {
+      "case": "controller n=0",
+      "pass": true
+    },
+    {
+      "case": "controller n=1",
+      "pass": true
+    },
+    {
+      "case": "controller n=2",
+      "pass": true
+    },
+    {
+      "case": "controller n=3",
+      "pass": true
+    },
+    {
+      "case": "controller n=17",
+      "pass": true
+    },
+    {
+      "case": "rollup case 1",
+      "pass": false,
+      "expected": [
+        {
+          "device": "aps-1",
+          "kind": "alert",
+          "message": "Disk Low",
+          "first_timestamp": 10,
+          "last_timestamp": 20,
+          "severity": "critical",
+          "count": 2,
+          "event_ids": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "device": "aps-1",
+          "kind": "alert",
+          "message": "Disk Low",
+          "first_timestamp": 80,
+          "last_timestamp": 80,
+          "severity": "info",
+          "count": 1,
+          "event_ids": [
+            "c"
+          ]
+        }
+      ],
+      "actual": [
+        {
+          "device": "aps-1",
+          "kind": "alert",
+          "message": " Disk Low ",
+          "first_timestamp": 10,
+          "last_timestamp": 10,
+          "severity": "warning",
+          "count": 1,
+          "event_ids": [
+            "a"
+          ]
+        },
+        {
+          "device": "aps-1",
+          "kind": "alert",
+          "message": "Disk Low",
+          "first_timestamp": 20,
+          "last_timestamp": 20,
+          "severity": "critical",
+          "count": 1,
+          "event_ids": [
+            "b"
+          ]
+        },
+        {
+          "device": "aps-1",
+          "kind": "alert",
+          "message": "Disk Low",
+          "first_timestamp": 80,
+          "last_timestamp": 80,
+          "severity": "info",
+          "count": 1,
+          "event_ids": [
+            "c"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "rollup case 2",
+      "pass": true
+    },
+    {
+      "case": "rollup case 3",
+      "pass": false,
+      "expected": [
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": "M",
+          "first_timestamp": 1,
+          "last_timestamp": 9,
+          "severity": "critical",
+          "count": 3,
+          "event_ids": [
+            "x",
+            "y",
+            "z"
+          ]
+        }
+      ],
+      "actual": [
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": " M ",
+          "first_timestamp": 1,
+          "last_timestamp": 1,
+          "severity": "warning",
+          "count": 1,
+          "event_ids": [
+            "x"
+          ]
+        },
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": "M",
+          "first_timestamp": 4,
+          "last_timestamp": 9,
+          "severity": "critical",
+          "count": 2,
+          "event_ids": [
+            "y",
+            "z"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "rollup case 4",
+      "pass": false,
+      "expected": [
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": "M",
+          "first_timestamp": 1,
+          "last_timestamp": 1,
+          "severity": "critical",
+          "count": 1,
+          "event_ids": [
+            "y"
+          ]
+        }
+      ],
+      "actual": [
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": " M ",
+          "first_timestamp": 1,
+          "last_timestamp": 1,
+          "severity": "critical",
+          "count": 1,
+          "event_ids": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "rollup case 5",
+      "pass": true
+    },
+    {
+      "case": "error (0, 0)",
+      "pass": true,
+      "actual_error": "ValueError"
+    },
+    {
+      "case": "error (600, 3)",
+      "pass": true,
+      "actual_error": "ValueError"
+    },
+    {
+      "case": "error (600, 0)",
+      "pass": true,
+      "actual_error": "TypeError"
+    }
+  ]
+}
+
+=================================================================== VARIANT variants/v2_plus_severity_trim.py
+{
+  "passed": 11,
+  "total": 14,
+  "cases": [
+    {
+      "case": "controller n=-2",
+      "pass": true
+    },
+    {
+      "case": "controller n=0",
+      "pass": true
+    },
+    {
+      "case": "controller n=1",
+      "pass": true
+    },
+    {
+      "case": "controller n=2",
+      "pass": true
+    },
+    {
+      "case": "controller n=3",
+      "pass": true
+    },
+    {
+      "case": "controller n=17",
+      "pass": true
+    },
+    {
+      "case": "rollup case 1",
+      "pass": false,
+      "expected": [
+        {
+          "device": "aps-1",
+          "kind": "alert",
+          "message": "Disk Low",
+          "first_timestamp": 10,
+          "last_timestamp": 20,
+          "severity": "critical",
+          "count": 2,
+          "event_ids": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "device": "aps-1",
+          "kind": "alert",
+          "message": "Disk Low",
+          "first_timestamp": 80,
+          "last_timestamp": 80,
+          "severity": "info",
+          "count": 1,
+          "event_ids": [
+            "c"
+          ]
+        }
+      ],
+      "actual": [
+        {
+          "device": "aps-1",
+          "kind": "alert",
+          "message": " Disk Low ",
+          "first_timestamp": 10,
+          "last_timestamp": 10,
+          "severity": "warning",
+          "count": 1,
+          "event_ids": [
+            "a"
+          ]
+        },
+        {
+          "device": "aps-1",
+          "kind": "alert",
+          "message": "Disk Low",
+          "first_timestamp": 20,
+          "last_timestamp": 20,
+          "severity": "critical",
+          "count": 1,
+          "event_ids": [
+            "b"
+          ]
+        },
+        {
+          "device": "aps-1",
+          "kind": "alert",
+          "message": "Disk Low",
+          "first_timestamp": 80,
+          "last_timestamp": 80,
+          "severity": "info",
+          "count": 1,
+          "event_ids": [
+            "c"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "rollup case 2",
+      "pass": true
+    },
+    {
+      "case": "rollup case 3",
+      "pass": false,
+      "expected": [
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": "M",
+          "first_timestamp": 1,
+          "last_timestamp": 9,
+          "severity": "critical",
+          "count": 3,
+          "event_ids": [
+            "x",
+            "y",
+            "z"
+          ]
+        }
+      ],
+      "actual": [
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": " M ",
+          "first_timestamp": 1,
+          "last_timestamp": 1,
+          "severity": "warning",
+          "count": 1,
+          "event_ids": [
+            "x"
+          ]
+        },
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": "M",
+          "first_timestamp": 4,
+          "last_timestamp": 9,
+          "severity": "critical",
+          "count": 2,
+          "event_ids": [
+            "y",
+            "z"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "rollup case 4",
+      "pass": false,
+      "expected": [
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": "M",
+          "first_timestamp": 1,
+          "last_timestamp": 1,
+          "severity": "critical",
+          "count": 1,
+          "event_ids": [
+            "y"
+          ]
+        }
+      ],
+      "actual": [
+        {
+          "device": "a",
+          "kind": "alert",
+          "message": " M ",
+          "first_timestamp": 1,
+          "last_timestamp": 1,
+          "severity": "critical",
+          "count": 1,
+          "event_ids": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "rollup case 5",
+      "pass": true
+    },
+    {
+      "case": "error (0, 0)",
+      "pass": true,
+      "actual_error": "ValueError"
+    },
+    {
+      "case": "error (600, 3)",
+      "pass": true,
+      "actual_error": "ValueError"
+    },
+    {
+      "case": "error (600, 0)",
+      "pass": true,
+      "actual_error": "TypeError"
+    }
+  ]
+}
+
+=================================================================== VARIANT variants/v3_plus_message_split.py
+{
+  "passed": 14,
+  "total": 14,
+  "cases": [
+    {
+      "case": "controller n=-2",
+      "pass": true
+    },
+    {
+      "case": "controller n=0",
+      "pass": true
+    },
+    {
+      "case": "controller n=1",
+      "pass": true
+    },
+    {
+      "case": "controller n=2",
+      "pass": true
+    },
+    {
+      "case": "controller n=3",
+      "pass": true
+    },
+    {
+      "case": "controller n=17",
+      "pass": true
+    },
+    {
+      "case": "rollup case 1",
+      "pass": true
+    },
+    {
+      "case": "rollup case 2",
+      "pass": true
+    },
+    {
+      "case": "rollup case 3",
+      "pass": true
+    },
+    {
+      "case": "rollup case 4",
+      "pass": true
+    },
+    {
+      "case": "rollup case 5",
+      "pass": true
+    },
+    {
+      "case": "error (0, 0)",
+      "pass": true,
+      "actual_error": "ValueError"
+    },
+    {
+      "case": "error (600, 3)",
+      "pass": true,
+      "actual_error": "ValueError"
+    },
+    {
+      "case": "error (600, 0)",
+      "pass": true,
+      "actual_error": "TypeError"
+    }
+  ]
+}
+
+=================================================================== DIFFERENTIAL fuzz: reused capability vs contract-only implementation
+none (clean control)                       disagree 292/300   ignoring severity representation   0/300
+mixed case and padding in device/kind      disagree 290/300   ignoring severity representation   0/300
+event_id padded                            disagree 284/300   ignoring severity representation   0/300
+duplicate event_ids                        disagree 295/300   ignoring severity representation   0/300
+severity padded with spaces                disagree 291/300   ignoring severity representation 264/300
+message edge whitespace                    disagree 291/300   ignoring severity representation 263/300
+message non-breaking space                 disagree 288/300   ignoring severity representation 261/300
+
+=================================================================== TOKENS: python fixtures/token_measure.py (unmodified)
+fixtures/baseline_api.md bytes= 1205 tokens= 264 sha256= b74c82b8a590e589
+fixtures/capability_cards.md bytes= 1436 tokens= 337 sha256= 00bc0c0b6a7e5826
+fixtures/activity_contract.md bytes= 1728 tokens= 375 sha256= 8b2257daad4ddb5b
+fixtures/capabilities.py bytes= 5319 tokens= 1206 sha256= 2ba783a4711069b2
+fixtures/registry.py bytes= 1428 tokens= 345 sha256= 0376f94786f343b4
+fixtures/symbolic_runtime.py bytes= 4573 tokens= 1143 sha256= 37c3304e2dd13fc6
+
+=================================================================== TOKENS + H3 payloads: python h3_payloads.py
+1_repeat_contract_every_call                 bytes  25731  o200k   6030  cl100k   5980  cumulative(history resent)   61850
+2_contract_once_then_alias                   bytes   2771  o200k    735  cl100k    730  cumulative(history resent)   13240
+2b_contract_once_full_handles                bytes   4023  o200k   1062  cl100k   1039  cumulative(history resent)   16330
+3_verdict_lines_then_alias (illustrative)    bytes    517  o200k    230  cl100k    228  cumulative(history resent)    3140
+
+submission.py (Arm A)                        bytes    558  o200k    124  cl100k    123
+submission_registry.py (Arm B)               bytes    699  o200k    162  cl100k    160
+controller_submission.py (Arm C)             bytes    549  o200k    139  cl100k    138
+controller_submission.sym (Arm D)            bytes     45  o200k     29  cl100k     29
+contract ctrl (card + API bullet)            bytes    542  o200k    136  cl100k    136
+contract rollup (card + activity_contract.md) bytes   1870  o200k    416  cl100k    413
+Arm C function only (no docstring)           bytes    342  o200k     97  cl100k     95
+
+symbolic program token pieces (o200k): ['@', '1', '(n', ':I', '){', 'R', '(n', ',i', '){', '?(', 'i', '=', '0', ',!', '7', '(T', '0', ',n', '),', '!', '7', '(T', '1', ',i', '+', '1', ',n', '))', '}}']
+
+=================================================================== H2 probes: python h2_symbolic_probe.py
+1. single-token mutations of Arm D program: 246 mutants
+   rejected by grammar       202  (82.1%)
+   parser crash (non-grammar exception)    3  (1.2%)
+   crashed while running      10  (4.1%)
+   silently wrong             22  (8.9%)
+   harmless                    9  (3.7%)
+   example parser crash: @1(n:I){R(n+i){?(i=0,!7(T0,n),!7(T1,i+1,n))}}  (',' -> '+')
+   examples of silently wrong programs that the grammar accepts:
+     @1(n:I){R(n,i){?(n=0,!7(T0,n),!7(T1,i+1,n))}}      (token 17: 'i' -> 'n')
+     @1(n:I){R(n,i){?(i=1,!7(T0,n),!7(T1,i+1,n))}}      (token 19: '0' -> '1')
+     @1(n:I){R(n,i){?(i=2,!7(T0,n),!7(T1,i+1,n))}}      (token 19: '0' -> '2')
+     @1(n:I){R(n,i){?(i=3,!7(T0,n),!7(T1,i+1,n))}}      (token 19: '0' -> '3')
+     @1(n:I){R(n,i){?(i=4,!7(T0,n),!7(T1,i+1,n))}}      (token 19: '0' -> '4')
+     @1(n:I){R(n,i){?(i=5,!7(T0,n),!7(T1,i+1,n))}}      (token 19: '0' -> '5')
+
+2. identifier-lexing hazard (same program, different names):
+   param='n'      index='i'    -> ok   lexed as ['(', 'n']
+   param='count'  index='k'    -> ok   lexed as ['(', 'count']
+   param='Runs'   index='i'    -> rejected: expected ':', got 'uns'   lexed as ['(', 'R']
+   param='n'      index='Idx'  -> rejected: expected ')', got 'dx'   lexed as ['(', 'n']
+   param='Items'  index='j'    -> rejected: expected ':', got 'tems'   lexed as ['(', 'I']
+   param='T1x'    index='i'    -> rejected: expected ':', got 'x'   lexed as ['(', 'T1']
+
+3. bool input outside the tested domain:
+   Arm D symbolic runtime: raises TypeError
+   Arm A/B reused capability: ['Starting controller service for True runs']
+   Arm C new Python: raises TypeError
+
+4. fair token comparison (o200k_base, tiktoken 0.14.0):
+   Arm D symbolic program                                         bytes    45  tokens    29
+   Python, same host-held templates T0/T1                         bytes    61  tokens    27
+   Python, templates inline (minimal)                             bytes   143  tokens    44
+   grammar documentation the author needed (symbolic_runtime.py)  bytes  4573  tokens  1143
+   fair Python variant passes the six T1 inputs: True
+
+=================================================================== H3 trust probes: python h3_trust_probe.py
+(a) lying capability: declared pure, actually writes a file
+    toy bind accepted it; call returned 1 group; file written: True
+    with audit-hook guard: blocked undeclared effect filesystem.write: /tmp/r7_exfil.txt | file written: False
+
+(b) digest check vs code actually executed
+    bind with expected_digest passed; handle(2) -> ['Starting controller service for 2 runs', 'EXFILTRATED']
+
+(c) file-level digest: one unrelated edit invalidates every handle
+    cap:controller.logs@1 -> artifact digest changed
+    cap:activity.rollup@1 -> artifact digest changed
+
+=================================================================== H3 binding cache prototype: python h3_binding_cache.py
+20 alias calls after one validation                  ok; full validations = 1; last = 'Restarting controller service for run 20 of 20'
+model-visible verdict line                           cap:controller.logs@1 fit(T1 exact messages,runs<=0 no messages) valid; policy pure; impl c64e921573c2
+environment change (locale)                          StaleBinding: environment changed since validation
+requirement change (new obligation)                  StaleBinding: requirement changed since validation
+policy change (caller now allows filesystem.write)   StaleBinding: policy changed since validation
+contract text change                                 StaleBinding: contract changed since validation
+implementation replaced in-process                   StaleBinding: impl changed since validation
+revocation of the implementation digest              StaleBinding: revoked implementation digest
+tampered code at validation time                     StaleBinding: cap:controller.logs@1: loaded code does not match the trusted manifest
+rollup_and_save under pure policy                    StaleBinding: cap:activity.rollup_and_save@1: declared effects ['filesystem.write'] exceed policy
+per-function digests differ across handles           True

@@ -1,0 +1,22 @@
+command: .venv/bin/python tools/processing_granularity.py --output experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/granularity.json --events 1000000 --repeats 3
+start_utc: 2026-11-05T15:29:30.528Z
+GRANULARITY ordinary_batch: 0.1380s
+GRANULARITY aicc_split: 3.6113s
+GRANULARITY ordinary_split: 0.1801s
+GRANULARITY ordinary_split: 0.1683s
+GRANULARITY ordinary_fused: 0.1382s
+GRANULARITY aicc_fused: 1.9304s
+GRANULARITY aicc_split: 3.4772s
+GRANULARITY aicc_batch: 0.1226s
+GRANULARITY ordinary_fused: 0.1317s
+GRANULARITY ordinary_fused: 0.1406s
+GRANULARITY ordinary_split: 0.1510s
+GRANULARITY aicc_split: 3.5338s
+GRANULARITY aicc_fused: 1.8240s
+GRANULARITY aicc_batch: 0.1253s
+GRANULARITY aicc_fused: 1.7461s
+GRANULARITY ordinary_batch: 0.1223s
+GRANULARITY aicc_batch: 0.1221s
+GRANULARITY ordinary_batch: 0.1225s
+end_utc: 2026-11-05T15:29:48.536Z
+exit_status: 0

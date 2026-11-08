@@ -1,0 +1,26 @@
+test_approved_call_stream_charges_opcode_and_each_typed_operand (test_accounting.AccountingTests.test_approved_call_stream_charges_opcode_and_each_typed_operand) ... ok
+test_cached_tokenizer_counts_are_separately_observed (test_accounting.AccountingTests.test_cached_tokenizer_counts_are_separately_observed) ... None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+ok
+test_call_stream_fallback_and_schema_reject_hidden_operands (test_accounting.AccountingTests.test_call_stream_fallback_and_schema_reject_hidden_operands) ... ok
+test_every_key_container_and_new_literal_is_charged (test_accounting.AccountingTests.test_every_key_container_and_new_literal_is_charged) ... ok
+test_fixed_capacity_and_payload_bounds_are_enforced (test_accounting.AccountingTests.test_fixed_capacity_and_payload_bounds_are_enforced) ... ok
+test_invalid_values_and_cycles_fail (test_accounting.AccountingTests.test_invalid_values_and_cycles_fail) ... ok
+test_new_literal_information_increases_the_count (test_accounting.AccountingTests.test_new_literal_information_increases_the_count) ... ok
+test_static_renaming_and_equal_semantic_controls_match (test_accounting.AccountingTests.test_static_renaming_and_equal_semantic_controls_match) ... ok
+test_canonical_json_hash_ignores_mapping_order (test_reproduce.ReproductionTests.test_canonical_json_hash_ignores_mapping_order) ... ok
+test_independent_comparison_accepts_exact_ledgers_and_rejects_changes (test_reproduce.ReproductionTests.test_independent_comparison_accepts_exact_ledgers_and_rejects_changes) ... ok
+test_missing_independent_results_fail_comparison (test_reproduce.ReproductionTests.test_missing_independent_results_fail_comparison) ... ok
+test_runtime_exclusion_is_limited_to_episode_timing (test_reproduce.ReproductionTests.test_runtime_exclusion_is_limited_to_episode_timing) ... ok
+test_change_and_repair_each_need_one_patch_and_handoff_reuses (test_run.TraceTests.test_change_and_repair_each_need_one_patch_and_handoff_reuses) ... ok
+test_history_is_reprocessed_and_equal_ideal_controls_tie (test_run.TraceTests.test_history_is_reprocessed_and_equal_ideal_controls_tie) ... ok
+test_python_alias_and_descriptive_renderings_execute_same_plan (test_run.TraceTests.test_python_alias_and_descriptive_renderings_execute_same_plan) ... ok
+test_all_72_workflow_stages_match_independent_oracles (test_workloads.WorkflowTests.test_all_72_workflow_stages_match_independent_oracles) ... ok
+test_changes_have_observable_effects_and_broken_predecessors_fail (test_workloads.WorkflowTests.test_changes_have_observable_effects_and_broken_predecessors_fail) ... ok
+test_event_order_boundary_and_cache_version_ties (test_workloads.WorkflowTests.test_event_order_boundary_and_cache_version_ties) ... ok
+test_plans_reject_unknown_capabilities_and_mutate_no_inputs (test_workloads.WorkflowTests.test_plans_reject_unknown_capabilities_and_mutate_no_inputs) ... ok
+test_retry_while_loop_success_exhaustion_and_exact_delays (test_workloads.WorkflowTests.test_retry_while_loop_success_exhaustion_and_exact_delays) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 2.336s
+
+OK

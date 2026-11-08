@@ -1,0 +1,85 @@
+{
+  "design": "fresh context, one submission per task/form; same-session shared-host development pilot",
+  "started_utc": "2026-11-06 02:45:12 UTC",
+  "model_identity": null,
+  "billed_tokens": null,
+  "dollar_cost": null,
+  "source_access": "cooperative permitted-source list; no secure isolation",
+  "dispatch_order": [
+    "ir_repair",
+    "ain_repair",
+    "python_repair",
+    "ir_optimize",
+    "python_optimize",
+    "ain_optimize"
+  ],
+  "cells": [
+    {
+      "cell": "ir_repair",
+      "agent": "/root/pilot_ir_repair",
+      "fork_turns": "none",
+      "attempt_limit": 1,
+      "status": "submitted_and_passed",
+      "recorded_utc": "2026-11-06 02:45:12 UTC",
+      "submission_recorded_utc": "2026-11-06 02:46:42 UTC",
+      "final_message": "Changed the late-event comparison from `timestamp <= frontier` to `timestamp < frontier`, admitting events exactly at the current frontier.",
+      "judgment_recorded_utc": "2026-11-06 02:50:47 UTC"
+    },
+    {
+      "cell": "ain_repair",
+      "agent": "/root/pilot_ain_repair",
+      "fork_turns": "none",
+      "attempt_limit": 1,
+      "status": "submitted_and_passed",
+      "recorded_utc": "2026-11-06 02:45:12 UTC",
+      "submission_recorded_utc": "2026-11-06 02:46:42 UTC",
+      "final_message": "Changed the late-event comparison from `timestamp <= frontier` to `timestamp < frontier`, admitting events exactly at the frontier.",
+      "judgment_recorded_utc": "2026-11-06 02:50:47 UTC"
+    },
+    {
+      "cell": "python_repair",
+      "agent": "/root/pilot_python_repair",
+      "fork_turns": "none",
+      "attempt_limit": 1,
+      "status": "submitted_and_passed",
+      "recorded_utc": "2026-11-06 02:45:12 UTC",
+      "submission_recorded_utc": "2026-11-06 02:46:42 UTC",
+      "final_message": "Changed the late-event comparison from `<=` to `<`, admitting timestamps equal to the frontier while preserving all other behavior.",
+      "judgment_recorded_utc": "2026-11-06 02:50:47 UTC"
+    },
+    {
+      "cell": "ir_optimize",
+      "agent": "/root/pilot_ir_optimize",
+      "fork_turns": "none",
+      "attempt_limit": 1,
+      "status": "submitted_and_passed",
+      "recorded_utc": "2026-11-06 02:46:42 UTC",
+      "final_message": "Moved normalization into the accepted-event branch and read severity from the raw validated record, preserving ID reservation before filtering and all cancellation, authority, and commit checks.",
+      "judgment_recorded_utc": "2026-11-06 02:50:47 UTC"
+    },
+    {
+      "cell": "python_optimize",
+      "agent": "/root/pilot_python_optimize",
+      "fork_turns": "none",
+      "attempt_limit": 1,
+      "status": "submitted_and_passed",
+      "recorded_utc": "2026-11-06 02:46:42 UTC",
+      "final_message": "Moved normalization after severity filtering so only accepted events are normalized, while preserving full validation, ID reservation, cancellation, authority, and commit checks.",
+      "judgment_recorded_utc": "2026-11-06 02:50:47 UTC"
+    },
+    {
+      "cell": "ain_optimize",
+      "agent": "/root/pilot_ain_optimize",
+      "fork_turns": "none",
+      "attempt_limit": 1,
+      "status": "submitted_and_passed",
+      "recorded_utc": "2026-11-06 02:46:42 UTC",
+      "final_message": "Updated candidate.json to filter by raw severity after validation and ID reservation, normalizing only accepted events while preserving all cancellation, authority, and commit checks.",
+      "judgment_recorded_utc": "2026-11-06 02:50:47 UTC"
+    }
+  ],
+  "completed_utc": "2026-11-06 02:50:47 UTC",
+  "parent_code_repairs_after_submission": 0,
+  "feedback_retries": 0,
+  "note": "Recorded timestamps reflect parent bookkeeping, not precise per-model latency. Full agent tool transcripts and token usage are unavailable; judge logs and returned edits are preserved."
+}

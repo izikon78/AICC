@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="468pt" height="334.8pt" viewBox="0 0 468 334.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:description>Proposed AIN/AICC workflow architecture. The full learned-agent system is future work; existing experiments implement selected components.</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>AICC final publication figure builder</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 334.8
+L 468 334.8
+L 468 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 29.0394 97.841952
+L 145.5246 97.841952
+Q 150.8598 97.841952 150.8598 93.904704
+L 150.8598 48.954456
+Q 150.8598 45.017208 145.5246 45.017208
+L 29.0394 45.017208
+Q 23.7042 45.017208 23.7042 48.954456
+L 23.7042 93.904704
+Q 23.7042 97.841952 29.0394 97.841952
+z
+" clip-path="url(#pac3fc59177)" style="fill: #eef1f3; stroke: #637580; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 173.5344 97.841952
+L 290.0196 97.841952
+Q 295.3548 97.841952 295.3548 93.904704
+L 295.3548 48.954456
+Q 295.3548 45.017208 290.0196 45.017208
+L 173.5344 45.017208
+Q 168.1992 45.017208 168.1992 48.954456
+L 168.1992 93.904704
+Q 168.1992 97.841952 173.5344 97.841952
+z
+" clip-path="url(#pac3fc59177)" style="fill: #dceaf2; stroke: #637580; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 318.0294 97.841952
+L 434.5146 97.841952
+Q 439.8498 97.841952 439.8498 93.904704
+L 439.8498 48.954456
+Q 439.8498 45.017208 434.5146 45.017208
+L 318.0294 45.017208
+Q 312.6942 45.017208 312.6942 48.954456
+L 312.6942 93.904704
+Q 312.6942 97.841952 318.0294 97.841952
+z
+" clip-path="url(#pac3fc59177)" style="fill: #dceaf2; stroke: #637580; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 318.0294 204.475752
+L 434.5146 204.475752
+Q 439.8498 204.475752 439.8498 200.538504
+L 439.8498 155.588256
+Q 439.8498 151.651008 434.5146 151.651008
+L 318.0294 151.651008
+Q 312.6942 151.651008 312.6942 155.588256
+L 312.6942 200.538504
+Q 312.6942 204.475752 318.0294 204.475752
+z
+" clip-path="url(#pac3fc59177)" style="fill: #ddf2ef; stroke: #637580; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 173.5344 204.475752
+L 290.0196 204.475752
+Q 295.3548 204.475752 295.3548 200.538504
+L 295.3548 155.588256
+Q 295.3548 151.651008 290.0196 151.651008
+L 173.5344 151.651008
+Q 168.1992 151.651008 168.1992 155.588256
+L 168.1992 200.538504
+Q 168.1992 204.475752 173.5344 204.475752
+z
+" clip-path="url(#pac3fc59177)" style="fill: #ddf2ef; stroke: #637580; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 29.0394 204.475752
+L 145.5246 204.475752
+Q 150.8598 204.475752 150.8598 200.538504
+L 150.8598 155.588256
+Q 150.8598 151.651008 145.5246 151.651008
+L 29.0394 151.651008
+Q 23.7042 151.651008 23.7042 155.588256
+L 23.7042 200.538504
+Q 23.7042 204.475752 29.0394 204.475752
+z
+" clip-path="url(#pac3fc59177)" style="fill: #eef1f3; stroke: #637580; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 152.862128 72.24984
+Q 159.529036 72.24984 165.077911 72.24984
+" clip-path="url(#pac3fc59177)" style="fill: none; stroke: #4b606c; stroke-linecap: round"/>
+    <path d="M 160.677911 70.04984
+L 165.077911 72.24984
+L 160.677911 74.44984
+z
+" clip-path="url(#pac3fc59177)" style="fill: #4b606c; stroke: #4b606c; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 297.357128 72.24984
+Q 304.024036 72.24984 309.572911 72.24984
+" clip-path="url(#pac3fc59177)" style="fill: none; stroke: #4b606c; stroke-linecap: round"/>
+    <path d="M 305.172911 70.04984
+L 309.572911 72.24984
+L 305.172911 74.44984
+z
+" clip-path="url(#pac3fc59177)" style="fill: #4b606c; stroke: #4b606c; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 376.272 99.842057
+Q 376.272 124.745706 376.272 148.531322
+" clip-path="url(#pac3fc59177)" style="fill: none; stroke: #4b606c; stroke-linecap: round"/>
+    <path d="M 378.472 144.131322
+L 376.272 148.531322
+L 374.072 144.131322
+z
+" clip-path="url(#pac3fc59177)" style="fill: #4b606c; stroke: #4b606c; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 310.691872 178.88364
+Q 304.024964 178.88364 298.476089 178.88364
+" clip-path="url(#pac3fc59177)" style="fill: none; stroke: #4b606c; stroke-linecap: round"/>
+    <path d="M 302.876089 181.08364
+L 298.476089 178.88364
+L 302.876089 176.68364
+z
+" clip-path="url(#pac3fc59177)" style="fill: #4b606c; stroke: #4b606c; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 166.196872 178.88364
+Q 159.529964 178.88364 153.981089 178.88364
+" clip-path="url(#pac3fc59177)" style="fill: none; stroke: #4b606c; stroke-linecap: round"/>
+    <path d="M 158.381089 181.08364
+L 153.981089 178.88364
+L 158.381089 176.68364
+z
+" clip-path="url(#pac3fc59177)" style="fill: #4b606c; stroke: #4b606c; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 87.282 151.651008
+L 87.282 126.387
+L 231.777 126.387
+L 231.777 98.959986
+" clip-path="url(#pac3fc59177)" style="fill: none; stroke: #637580; stroke-linecap: round"/>
+    <path d="M 229.577 103.359986
+L 231.777 98.959986
+L 233.977 103.359986
+z
+" clip-path="url(#pac3fc59177)" style="fill: #637580; stroke: #637580; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 165.9762 212.678352
+L 442.5174 212.678352
+Q 447.8526 212.678352 447.8526 208.741104
+L 447.8526 143.448408
+Q 447.8526 139.51116 442.5174 139.51116
+L 165.9762 139.51116
+Q 160.641 139.51116 160.641 143.448408
+L 160.641 208.741104
+Q 160.641 212.678352 165.9762 212.678352
+L 165.9762 212.678352
+z
+" clip-path="url(#pac3fc59177)" style="fill: none; stroke-dasharray: 3.33,1.44; stroke-dashoffset: 0; stroke: #007f7a; stroke-width: 0.9; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 318.0294 286.501752
+L 434.5146 286.501752
+Q 439.8498 286.501752 439.8498 282.564504
+L 439.8498 242.535816
+Q 439.8498 238.598568 434.5146 238.598568
+L 318.0294 238.598568
+Q 312.6942 238.598568 312.6942 242.535816
+L 312.6942 282.564504
+Q 312.6942 286.501752 318.0294 286.501752
+z
+" clip-path="url(#pac3fc59177)" style="fill: #eef1f3; stroke: #637580; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 439.8498 72.24984
+L 451.854 72.24984
+L 451.854 262.55016
+L 440.967834 262.55016
+" clip-path="url(#pac3fc59177)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #637580; stroke-linecap: round"/>
+    <path d="M 445.367834 264.75016
+L 440.967834 262.55016
+L 445.367834 260.35016
+z
+" clip-path="url(#pac3fc59177)" style="fill: #637580; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #637580; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202020" x="234" y="14.83164" transform="rotate(-0 234 14.83164)">AIN / AICC workflow</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202020" x="234" y="29.924424" transform="rotate(-0 234 29.924424)">Proposed learned representation and governed execution</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202020" x="87.282" y="61.395623" transform="rotate(-0 87.282 61.395623)">Task + saved record</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(26.693719 74.78915)">requirements / parameters</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(28.960594 86.489149)">prior artifact and memory</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202020" x="231.777" y="61.395623" transform="rotate(-0 231.777 61.395623)">Learned agent</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(175.070672 74.78915)">fluent AIN representation</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(175.773094 86.489149)">select / compose / revise</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202020" x="376.272" y="61.395623" transform="rotate(-0 376.272 61.395623)">Executable record</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(324.285047 74.78915)">program + tool actions</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(338.191453 86.489149)">working memory</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202020" x="376.272" y="168.029423" transform="rotate(-0 376.272 168.029423)">Host binding</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(314.873016 181.42295)">contract, version, authority</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(330.689813 193.12295)">resource obligations</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202020" x="231.777" y="168.029423" transform="rotate(-0 231.777 168.029423)">Approved execution</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(179.361844 181.42295)">shared implementation</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(173.315672 193.12295)">compiler / native backend</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202020" x="87.282" y="168.029423" transform="rotate(-0 87.282 168.029423)">Observations</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(33.38325 181.835684)">results, errors and state</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(38.705203 193.12295)">returned to the agent</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202020" x="151.749" y="120.481128" transform="rotate(-0 151.749 120.481128)">feedback</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #007f7a" x="304.2468" y="224.8182" transform="rotate(-0 304.2468 224.8182)">Host authority and execution boundary</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202020" x="376.272" y="254.976983" transform="rotate(-0 376.272 254.976983)">Human-readable view</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(352.130906 263.189496)">on request</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(318.25575 275.14895)">projection cost is counted</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(87.282 241.690478)">Blue: agent representation</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(87.282 256.062353)">Teal: host and runtime</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #202020" transform="translate(87.282 268.690478)">Gray: supplied or returned data</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202020" x="234" y="306.516096" transform="rotate(-0 234 306.516096)">Proposed complete architecture; experiments implement selected components.</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202020" x="234" y="321.60888" transform="rotate(-0 234 321.60888)">Count generation, checks, tool traffic, memory and requested projections.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pac3fc59177">
+   <rect x="11.7" y="3.348" width="444.6" height="328.104"/>
+  </clipPath>
+ </defs>
+</svg>

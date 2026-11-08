@@ -1,0 +1,22 @@
+{
+  "events_per_job": 1000000,
+  "repeats": 3,
+  "train_jobs": 72,
+  "validation_jobs": 24,
+  "test_jobs": 24,
+  "epochs": 900,
+  "reuse_model": false,
+  "source_sha256_before_run": {
+    "aicc_processing/__init__.py": "4c4f24062c942ec0a5e1c4c1b2d8271ab5cc155b6590174db23acb3332c14528",
+    "aicc_processing/benchmark.py": "1878044cfad5e59ab93f667d6fcb15a6877feb998be55f08c2f9dde83df707f3",
+    "aicc_processing/data.py": "9aaf7ebee10d286238b1ab0a88ca0f98de5c083ed16921893284a294f65763bd",
+    "aicc_processing/kernels.py": "b75d5a1cb5693645ac0684e60f3629c4e57b94c41340c60f2fcef92f2941edbc",
+    "aicc_processing/learning.py": "3c687be5289f5aaad6128ee775cc46b94e06212a9ccd84c2b5e73fa8bfac76fc",
+    "aicc_processing/runtime.py": "190a1d53e822a1cd281f500b40cbeb195e66ef607bdd1b09c3324150ebecec86",
+    "aicc_processing/scenarios.py": "5ac4cf74788d4fe1296d8b253eb6582397a42967230f581809d9b919df54372d",
+    "run_study.py": "daffca09e0294a41f47049a7933f4a4ec105805b92d45cedfc7297c9a78cd0d2",
+    "tests/test_kernels.py": "ae28f453235bc36eedb23c55ed5370658a9572641ba040b615bdbce15bcb5b09",
+    "tests/test_learning.py": "873d7c2087318f6619fecc8c39bc563011c16b9f759fbe586f3cedae95863201",
+    "tests/test_runtime.py": "2dc96d8795bb0b68d4784c25a4d689e4c6c456a9b48611a33d981fb51c79b303"
+  }
+}

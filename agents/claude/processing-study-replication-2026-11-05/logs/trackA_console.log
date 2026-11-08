@@ -1,0 +1,23 @@
+command: ../../.venv/bin/python -u run_study.py --output results/anthropic-claude-opus-5.5-2026-11-05-trackA-001 --events 1000000 --repeats 3 --train-jobs 72 --validation-jobs 24 --test-jobs 24 --epochs 900
+start_utc: 2026-11-05T15:18:30.575Z
+CALIBRATION train: 8/72
+CALIBRATION train: 16/72
+CALIBRATION train: 24/72
+CALIBRATION train: 32/72
+CALIBRATION train: 40/72
+CALIBRATION train: 48/72
+CALIBRATION train: 56/72
+CALIBRATION train: 64/72
+CALIBRATION train: 72/72
+CALIBRATION validation: 8/24
+CALIBRATION validation: 16/24
+CALIBRATION validation: 24/24
+CALIBRATION test: 8/24
+CALIBRATION test: 16/24
+CALIBRATION test: 24/24
+TRAINED: 867 parameters; held-out kernel seconds learned=0.2678, static=0.2605
+STRESS 1/45 repeated-shuffled reference: 4.597s plan=reference, peak=816.5 MiB
+STRESS 2/45 repeated-shuffled learned: 2.145s plan=partitioned, peak=565.2 MiB
+STRESS 3/45 diverse-shuffled reference: 6.123s plan=reference, peak=1066.0 MiB
+STRESS 4/45 repeated-shuffled learned: 2.291s plan=partitioned, peak=565.1 MiB
+STRESS 5/45 ordered-stream static: 3.701s plan=ordered, peak=137.4 MiB

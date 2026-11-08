@@ -1,0 +1,5042 @@
+[
+  {
+    "chain": "events-00",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "build",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "change",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "repair",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "handoff",
+    "schedule": "resident",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "events-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "cache-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-00",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-01",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-02",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-03",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-04",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "build",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "change",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "repair",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_repr",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "python_compact",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "readable_ir",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "numeric_arrays",
+    "decoded_execution_and_state_match": true
+  },
+  {
+    "chain": "publication-05",
+    "stage": "handoff",
+    "schedule": "inspect",
+    "profile": "symbolic_ain",
+    "decoded_execution_and_state_match": true
+  }
+]

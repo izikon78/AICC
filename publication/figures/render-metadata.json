@@ -1,0 +1,47 @@
+{
+  "publication": "AIN final draft",
+  "matplotlib": "3.11.2",
+  "source_chart_data_sha256": "099ddabd29806a25303a002f977210631f990b27f1b029a0cb3e395f2a44861a",
+  "verified_primary_source_count": 22,
+  "conceptual_figure": "ain-aicc-workflow is a proposed architecture, not a measured result",
+  "figure_inches": {
+    "ain-aicc-workflow": [
+      6.5,
+      4.65
+    ],
+    "processing-cost": [
+      6.5,
+      3.35
+    ],
+    "memory-cost": [
+      6.5,
+      3.45
+    ],
+    "adaptation-correctness": [
+      6.5,
+      3.45
+    ],
+    "approved-core-demand": [
+      6.5,
+      3.5
+    ]
+  },
+  "png_dpi": 300,
+  "svg_text": "selectable DejaVu Sans",
+  "outputs_sha256": {
+    "adaptation-correctness.csv": "21bc281600cde0820bfbd937be34234d7f21f00c9c2f311142e6c893fa293b69",
+    "adaptation-correctness.png": "05e43d96b3676ab4a03e1e67e9088c4e7194a14da2f1fb514a7ec659fd87e29e",
+    "adaptation-correctness.svg": "645bec6e4718a35fa914d4713b81ae73d45f24d3e7c80c50a791d9bc1f04fa79",
+    "ain-aicc-workflow.png": "e158887f69ef46fb8ee8e79e38d131d52bbe2d9c3d0cc29e431fb3d58d98d82e",
+    "ain-aicc-workflow.svg": "c58076577a50a40d494bb92663e70ed0dce4c40b4eb094274a04a252fe50ffcf",
+    "approved-core-demand.csv": "8120eacd8b733d2cb92ec2866a819d83659cf9335ed82507ab012e5b0fa68016",
+    "approved-core-demand.png": "37ed57a28047647bbecf7ce6a4fb147121fae613c2c73f9eff7bf4a540ade7cd",
+    "approved-core-demand.svg": "a54ac517bad7b09256428af6708ed386e0cee913a2094eaf099b5ebacc6d2a0e",
+    "memory-cost.csv": "3c61e8c7b9100dbd0b8b75db8adbbd001104c20125cc1010e812c81603209392",
+    "memory-cost.png": "41d88905f440015a8d1dbc63b30d3d6ef65a43c5d718791a85d40766aabe5c58",
+    "memory-cost.svg": "b226d14f9b77a3e24f427827954e5d4a6b2c0dbd6e45dc4c9974d40ed2e4df71",
+    "processing-cost.csv": "7f92147df8fcfe6615508c07826565e8accefe94fd4e70f47a9e8c5401563371",
+    "processing-cost.png": "b01624f168fcfe092f475a58a31ba0d6a44f812e27f9363b5d9118547abeb84a",
+    "processing-cost.svg": "cf4d60fba842c965749a07e5df83d737a67c5ec645f52e96bff86b04d555db0b"
+  }
+}

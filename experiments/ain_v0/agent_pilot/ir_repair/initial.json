@@ -1,0 +1,439 @@
+{
+  "version": 0,
+  "registers": {
+    "h": "host",
+    "s": "state",
+    "r": "record",
+    "nr": "record",
+    "kind": "int",
+    "frontier": "int",
+    "stamp": "int",
+    "minimum": "int",
+    "sev": "int",
+    "b": "bool",
+    "g": "groups",
+    "p": "reports",
+    "ret": "result",
+    "c0": "int",
+    "c1": "int",
+    "c2": "int",
+    "c3": "int"
+  },
+  "parameters": [
+    "h"
+  ],
+  "return_type": "result",
+  "entry": "entry",
+  "blocks": [
+    {
+      "label": "entry",
+      "instructions": [
+        {
+          "op": "call",
+          "fn": "restore",
+          "args": [
+            "h"
+          ],
+          "dest": "s"
+        },
+        {
+          "op": "const",
+          "dest": "c0",
+          "value": 0
+        },
+        {
+          "op": "const",
+          "dest": "c1",
+          "value": 1
+        },
+        {
+          "op": "const",
+          "dest": "c2",
+          "value": 2
+        },
+        {
+          "op": "const",
+          "dest": "c3",
+          "value": 3
+        }
+      ],
+      "terminator": {
+        "op": "jump",
+        "target": "loop"
+      }
+    },
+    {
+      "label": "loop",
+      "instructions": [
+        {
+          "op": "call",
+          "fn": "has_next",
+          "args": [
+            "h"
+          ],
+          "dest": "b"
+        }
+      ],
+      "terminator": {
+        "op": "branch",
+        "cond": "b",
+        "then": "read",
+        "else": "done"
+      }
+    },
+    {
+      "label": "read",
+      "instructions": [
+        {
+          "op": "call",
+          "fn": "check_cancel",
+          "args": [
+            "h"
+          ]
+        },
+        {
+          "op": "call",
+          "fn": "next_record",
+          "args": [
+            "h"
+          ],
+          "dest": "r"
+        },
+        {
+          "op": "call",
+          "fn": "validate_record",
+          "args": [
+            "h",
+            "s",
+            "r"
+          ]
+        },
+        {
+          "op": "call",
+          "fn": "record_kind",
+          "args": [
+            "r"
+          ],
+          "dest": "kind"
+        },
+        {
+          "op": "eq",
+          "dest": "b",
+          "left": "kind",
+          "right": "c0"
+        }
+      ],
+      "terminator": {
+        "op": "branch",
+        "cond": "b",
+        "then": "event",
+        "else": "control"
+      }
+    },
+    {
+      "label": "event",
+      "instructions": [
+        {
+          "op": "call",
+          "fn": "timestamp",
+          "args": [
+            "r"
+          ],
+          "dest": "stamp"
+        },
+        {
+          "op": "call",
+          "fn": "frontier",
+          "args": [
+            "s"
+          ],
+          "dest": "frontier"
+        },
+        {
+          "op": "le",
+          "dest": "b",
+          "left": "stamp",
+          "right": "frontier"
+        }
+      ],
+      "terminator": {
+        "op": "branch",
+        "cond": "b",
+        "then": "late",
+        "else": "dedupe"
+      }
+    },
+    {
+      "label": "late",
+      "instructions": [
+        {
+          "op": "call",
+          "fn": "count",
+          "args": [
+            "h",
+            "s",
+            "c0"
+          ]
+        }
+      ],
+      "terminator": {
+        "op": "jump",
+        "target": "loop"
+      }
+    },
+    {
+      "label": "dedupe",
+      "instructions": [
+        {
+          "op": "call",
+          "fn": "seen",
+          "args": [
+            "h",
+            "s",
+            "r"
+          ],
+          "dest": "b"
+        }
+      ],
+      "terminator": {
+        "op": "branch",
+        "cond": "b",
+        "then": "duplicate",
+        "else": "reserve"
+      }
+    },
+    {
+      "label": "duplicate",
+      "instructions": [
+        {
+          "op": "call",
+          "fn": "count",
+          "args": [
+            "h",
+            "s",
+            "c1"
+          ]
+        }
+      ],
+      "terminator": {
+        "op": "jump",
+        "target": "loop"
+      }
+    },
+    {
+      "label": "reserve",
+      "instructions": [
+        {
+          "op": "call",
+          "fn": "reserve",
+          "args": [
+            "h",
+            "s",
+            "r"
+          ]
+        },
+        {
+          "op": "call",
+          "fn": "normalize",
+          "args": [
+            "r"
+          ],
+          "dest": "nr"
+        },
+        {
+          "op": "call",
+          "fn": "severity",
+          "args": [
+            "nr"
+          ],
+          "dest": "sev"
+        },
+        {
+          "op": "call",
+          "fn": "minimum",
+          "args": [
+            "h"
+          ],
+          "dest": "minimum"
+        },
+        {
+          "op": "lt",
+          "dest": "b",
+          "left": "sev",
+          "right": "minimum"
+        }
+      ],
+      "terminator": {
+        "op": "branch",
+        "cond": "b",
+        "then": "filtered",
+        "else": "accept"
+      }
+    },
+    {
+      "label": "filtered",
+      "instructions": [
+        {
+          "op": "call",
+          "fn": "count",
+          "args": [
+            "h",
+            "s",
+            "c2"
+          ]
+        }
+      ],
+      "terminator": {
+        "op": "jump",
+        "target": "loop"
+      }
+    },
+    {
+      "label": "accept",
+      "instructions": [
+        {
+          "op": "call",
+          "fn": "buffer",
+          "args": [
+            "h",
+            "s",
+            "nr"
+          ]
+        },
+        {
+          "op": "call",
+          "fn": "count",
+          "args": [
+            "h",
+            "s",
+            "c3"
+          ]
+        }
+      ],
+      "terminator": {
+        "op": "jump",
+        "target": "loop"
+      }
+    },
+    {
+      "label": "control",
+      "instructions": [
+        {
+          "op": "call",
+          "fn": "advance",
+          "args": [
+            "h",
+            "s",
+            "r"
+          ]
+        }
+      ],
+      "terminator": {
+        "op": "jump",
+        "target": "drain"
+      }
+    },
+    {
+      "label": "drain",
+      "instructions": [
+        {
+          "op": "call",
+          "fn": "pending_ready",
+          "args": [
+            "h",
+            "s"
+          ],
+          "dest": "b"
+        }
+      ],
+      "terminator": {
+        "op": "branch",
+        "cond": "b",
+        "then": "pop",
+        "else": "finalize"
+      }
+    },
+    {
+      "label": "pop",
+      "instructions": [
+        {
+          "op": "call",
+          "fn": "pop_pending",
+          "args": [
+            "h",
+            "s"
+          ],
+          "dest": "nr"
+        },
+        {
+          "op": "call",
+          "fn": "aggregate",
+          "args": [
+            "h",
+            "s",
+            "nr"
+          ]
+        }
+      ],
+      "terminator": {
+        "op": "jump",
+        "target": "drain"
+      }
+    },
+    {
+      "label": "finalize",
+      "instructions": [
+        {
+          "op": "call",
+          "fn": "ready_groups",
+          "args": [
+            "h",
+            "s"
+          ],
+          "dest": "g"
+        },
+        {
+          "op": "call",
+          "fn": "score",
+          "args": [
+            "h",
+            "s",
+            "g"
+          ],
+          "dest": "p"
+        },
+        {
+          "op": "call",
+          "fn": "commit",
+          "args": [
+            "h",
+            "s",
+            "p"
+          ]
+        }
+      ],
+      "terminator": {
+        "op": "jump",
+        "target": "loop"
+      }
+    },
+    {
+      "label": "done",
+      "instructions": [
+        {
+          "op": "call",
+          "fn": "result",
+          "args": [
+            "h",
+            "s"
+          ],
+          "dest": "ret"
+        }
+      ],
+      "terminator": {
+        "op": "return",
+        "value": "ret"
+      }
+    }
+  ]
+}

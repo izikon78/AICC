@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+/work/
+.venv/
+.env
+.env.*
+!.env.example
+/experiments/processing_study/results/smoke-*/

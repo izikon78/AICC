@@ -1,0 +1,46 @@
+{
+  "config": {
+    "model": "Qwen/Qwen2.5-1.5B",
+    "revision": "8faed761d45a263340a0528343f099c05c9a4323",
+    "seed": 20261106,
+    "arms": [
+      "python",
+      "ir",
+      "ain"
+    ],
+    "epochs": 3,
+    "gradient_accumulation": 4,
+    "learning_rate": 0.001,
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lora_targets": [
+      "q_proj",
+      "v_proj"
+    ],
+    "max_sequence": 512,
+    "max_new_tokens": 320,
+    "train_seconds_per_arm": 300,
+    "eval_seconds_per_stage": 90,
+    "peak_reserved_limit_gib": 7.8,
+    "gate_dev_correct_fraction": 0.75,
+    "purpose": "memory, throughput and executable language-learning screen"
+  },
+  "git_head": "60ba43bad3588815ecebe1504c35f2dfe7f0e97d",
+  "source_sha256": {
+    "experiments\\native_learning_gate\\run.py": "377e8dd6ba69edc8de5bbe5dbc86206c261a2cddaed313a69239075928fe3c2c",
+    "experiments\\native_learning_gate\\data.py": "a9f94f31c2b78fee55d22d12a32b0e136252d2a1c7809a82e9848004b21e084a",
+    "experiments\\ain_v0\\ain\\language.py": "97ec92ef89f3c4008f9122441261966a80d2d1e44c4bc4e9a47149c39e568d9e"
+  },
+  "dataset_sha256": "a1c1b4f122869c9b059896b4cb94dd03e8f3af70beb744361121e152b836d2db",
+  "packages": {
+    "torch": "2.7.1+cu128",
+    "transformers": "4.51.3",
+    "peft": "0.15.2",
+    "accelerate": "1.6.0",
+    "huggingface-hub": "0.36.2"
+  },
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "gpu_bytes": 10736762880,
+  "cuda_runtime": "12.8",
+  "bf16_supported": true
+}

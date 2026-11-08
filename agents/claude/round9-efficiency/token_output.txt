@@ -1,0 +1,11 @@
+  A conventional  R8 tasks 1-8 solution (submission_A.py)                                  bytes   2122  tokens   528
+  A conventional  R8 shared docs read (API_CONTRACTS.md + TASKS.md)                        bytes   7615  tokens  1682
+  B AICC          R8 tasks 1-8 solution (submission_B.py)                                  bytes   2681  tokens   713
+  B AICC          R8 docs read (same shared docs; no smaller cards exist in the packet)    bytes   7615  tokens  1682
+  A conventional  R7 controller in Python (controller_submission.py)                       bytes    549  tokens   139
+  A conventional  R7 controller, Python with the same host-held templates                  bytes     61  tokens    27
+  C symbolic      R7 controller in toy symbolic grammar (.sym)                             bytes     45  tokens    29
+  C symbolic      R7 grammar documentation the author read (symbolic_runtime.py)           bytes   4573  tokens  1143
+  C symbolic      v2 Language A controller (if/else)                                       bytes    140  tokens    47
+  C symbolic      v2 Language A reference sheet (per session)                              bytes    968  tokens   317
+  D symbolic+AICC  NOT EXECUTED: neither toy grammar can express the R8 tasks (no dicts, lists, sorting or library calls)

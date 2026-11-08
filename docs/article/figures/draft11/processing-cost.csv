@@ -1,0 +1,10 @@
+record,host,mode,sum_pipeline_medians_seconds,within_host_reference_percent
+Codex,Windows 11,reference,22.677473500021733,100.0
+Claude,Linux,reference,16.29586502799998,100.0
+Grok,Windows 10,reference,9.90275940002175,100.0
+Codex,Windows 11,static,15.029493999987608,66.27499311143812
+Claude,Linux,static,10.382276416000082,63.711109524784256
+Grok,Windows 10,static,6.448864699981641,65.12189622588909
+Codex,Windows 11,aicc_static,15.06000289999065,66.40952705766018
+Claude,Linux,aicc_static,10.227775035000036,62.763007777901976
+Grok,Windows 10,aicc_static,6.451739700045437,65.15092853847652

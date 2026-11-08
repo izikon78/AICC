@@ -1,0 +1,322 @@
+[
+  {
+    "profile": "python_repr",
+    "case": 0,
+    "roundtrip": true,
+    "program_text_tokens": 11
+  },
+  {
+    "profile": "python_repr",
+    "case": 1,
+    "roundtrip": true,
+    "program_text_tokens": 11
+  },
+  {
+    "profile": "python_repr",
+    "case": 2,
+    "roundtrip": true,
+    "program_text_tokens": 265
+  },
+  {
+    "profile": "python_repr",
+    "case": 3,
+    "roundtrip": true,
+    "program_text_tokens": 18
+  },
+  {
+    "profile": "python_repr",
+    "case": 4,
+    "roundtrip": true,
+    "program_text_tokens": 15
+  },
+  {
+    "profile": "python_repr",
+    "case": 5,
+    "roundtrip": true,
+    "program_text_tokens": 14
+  },
+  {
+    "profile": "python_repr",
+    "case": 6,
+    "roundtrip": true,
+    "program_text_tokens": 10
+  },
+  {
+    "profile": "python_repr",
+    "case": 7,
+    "roundtrip": true,
+    "program_text_tokens": 10
+  },
+  {
+    "profile": "python_repr",
+    "case": 8,
+    "roundtrip": true,
+    "program_text_tokens": 15
+  },
+  {
+    "profile": "python_repr",
+    "case": "continuation_state",
+    "roundtrip": true,
+    "next_decisions": [
+      "reject",
+      "accept"
+    ],
+    "state_free_records_collide": true
+  },
+  {
+    "profile": "python_compact",
+    "case": 0,
+    "roundtrip": true,
+    "program_text_tokens": 11
+  },
+  {
+    "profile": "python_compact",
+    "case": 1,
+    "roundtrip": true,
+    "program_text_tokens": 11
+  },
+  {
+    "profile": "python_compact",
+    "case": 2,
+    "roundtrip": true,
+    "program_text_tokens": 265
+  },
+  {
+    "profile": "python_compact",
+    "case": 3,
+    "roundtrip": true,
+    "program_text_tokens": 18
+  },
+  {
+    "profile": "python_compact",
+    "case": 4,
+    "roundtrip": true,
+    "program_text_tokens": 15
+  },
+  {
+    "profile": "python_compact",
+    "case": 5,
+    "roundtrip": true,
+    "program_text_tokens": 14
+  },
+  {
+    "profile": "python_compact",
+    "case": 6,
+    "roundtrip": true,
+    "program_text_tokens": 10
+  },
+  {
+    "profile": "python_compact",
+    "case": 7,
+    "roundtrip": true,
+    "program_text_tokens": 10
+  },
+  {
+    "profile": "python_compact",
+    "case": 8,
+    "roundtrip": true,
+    "program_text_tokens": 14
+  },
+  {
+    "profile": "python_compact",
+    "case": "continuation_state",
+    "roundtrip": true,
+    "next_decisions": [
+      "reject",
+      "accept"
+    ],
+    "state_free_records_collide": true
+  },
+  {
+    "profile": "readable_ir",
+    "case": 0,
+    "roundtrip": true,
+    "program_text_tokens": 11
+  },
+  {
+    "profile": "readable_ir",
+    "case": 1,
+    "roundtrip": true,
+    "program_text_tokens": 11
+  },
+  {
+    "profile": "readable_ir",
+    "case": 2,
+    "roundtrip": true,
+    "program_text_tokens": 265
+  },
+  {
+    "profile": "readable_ir",
+    "case": 3,
+    "roundtrip": true,
+    "program_text_tokens": 18
+  },
+  {
+    "profile": "readable_ir",
+    "case": 4,
+    "roundtrip": true,
+    "program_text_tokens": 14
+  },
+  {
+    "profile": "readable_ir",
+    "case": 5,
+    "roundtrip": true,
+    "program_text_tokens": 14
+  },
+  {
+    "profile": "readable_ir",
+    "case": 6,
+    "roundtrip": true,
+    "program_text_tokens": 10
+  },
+  {
+    "profile": "readable_ir",
+    "case": 7,
+    "roundtrip": true,
+    "program_text_tokens": 10
+  },
+  {
+    "profile": "readable_ir",
+    "case": 8,
+    "roundtrip": true,
+    "program_text_tokens": 15
+  },
+  {
+    "profile": "readable_ir",
+    "case": "continuation_state",
+    "roundtrip": true,
+    "next_decisions": [
+      "reject",
+      "accept"
+    ],
+    "state_free_records_collide": true
+  },
+  {
+    "profile": "numeric_arrays",
+    "case": 0,
+    "roundtrip": true,
+    "program_text_tokens": 9
+  },
+  {
+    "profile": "numeric_arrays",
+    "case": 1,
+    "roundtrip": true,
+    "program_text_tokens": 9
+  },
+  {
+    "profile": "numeric_arrays",
+    "case": 2,
+    "roundtrip": true,
+    "program_text_tokens": 263
+  },
+  {
+    "profile": "numeric_arrays",
+    "case": 3,
+    "roundtrip": true,
+    "program_text_tokens": 16
+  },
+  {
+    "profile": "numeric_arrays",
+    "case": 4,
+    "roundtrip": true,
+    "program_text_tokens": 12
+  },
+  {
+    "profile": "numeric_arrays",
+    "case": 5,
+    "roundtrip": true,
+    "program_text_tokens": 12
+  },
+  {
+    "profile": "numeric_arrays",
+    "case": 6,
+    "roundtrip": true,
+    "program_text_tokens": 8
+  },
+  {
+    "profile": "numeric_arrays",
+    "case": 7,
+    "roundtrip": true,
+    "program_text_tokens": 8
+  },
+  {
+    "profile": "numeric_arrays",
+    "case": 8,
+    "roundtrip": true,
+    "program_text_tokens": 13
+  },
+  {
+    "profile": "numeric_arrays",
+    "case": "continuation_state",
+    "roundtrip": true,
+    "next_decisions": [
+      "reject",
+      "accept"
+    ],
+    "state_free_records_collide": true
+  },
+  {
+    "profile": "symbolic_ain",
+    "case": 0,
+    "roundtrip": true,
+    "program_text_tokens": 19
+  },
+  {
+    "profile": "symbolic_ain",
+    "case": 1,
+    "roundtrip": true,
+    "program_text_tokens": 19
+  },
+  {
+    "profile": "symbolic_ain",
+    "case": 2,
+    "roundtrip": true,
+    "program_text_tokens": 273
+  },
+  {
+    "profile": "symbolic_ain",
+    "case": 3,
+    "roundtrip": true,
+    "program_text_tokens": 26
+  },
+  {
+    "profile": "symbolic_ain",
+    "case": 4,
+    "roundtrip": true,
+    "program_text_tokens": 22
+  },
+  {
+    "profile": "symbolic_ain",
+    "case": 5,
+    "roundtrip": true,
+    "program_text_tokens": 22
+  },
+  {
+    "profile": "symbolic_ain",
+    "case": 6,
+    "roundtrip": true,
+    "program_text_tokens": 18
+  },
+  {
+    "profile": "symbolic_ain",
+    "case": 7,
+    "roundtrip": true,
+    "program_text_tokens": 18
+  },
+  {
+    "profile": "symbolic_ain",
+    "case": 8,
+    "roundtrip": true,
+    "program_text_tokens": 22
+  },
+  {
+    "profile": "symbolic_ain",
+    "case": "continuation_state",
+    "roundtrip": true,
+    "next_decisions": [
+      "reject",
+      "accept"
+    ],
+    "state_free_records_collide": true
+  }
+]

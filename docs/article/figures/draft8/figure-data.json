@@ -1,0 +1,85 @@
+{
+  "scope": "Recorded processing studies, not AIN performance measurements",
+  "source_sha256": {
+    "experiments/processing_study/results/full-2026-11-05/stress-raw.json": "f9a929bdf74375d24ce7e7dbe08697feed484f3c0eeef4ae32665ace1898dcfd",
+    "experiments/processing_study/results/full-2026-11-05/stress-summary.json": "48b2031dfc8e34e0936422b3f3f4fd638e73cd3b0af638bcf61e59ad7ec79525",
+    "experiments/processing_study/results/full-2026-11-05/learning-report.json": "4b8b4dfdbe2effc1347b94563eca32d93db6b3c7cb48c87275909a510515b93b",
+    "experiments/processing_study/results/full-2026-11-05/run-config.json": "47d793ef15073e397a3cecccdd7340f6d637706f23bffa24bf9f8f3eea4e422a",
+    "experiments/processing_study/results/full-2026-11-05/run-metadata.json": "d4448cc841f1e2efee24c022e593f2caa537f30261a8e2164c28745ff3d64148",
+    "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/stress-raw.json": "048dd2fab668f72152f6eb3edde6b0ec0b0c810f6b8954d4a9548b18992a5a8d",
+    "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/stress-summary.json": "e25303ea6e95534f718d97050aafa394ec4f7c64091cfc2289a8bffe242c9773",
+    "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/learning-report.json": "8ed0fbc8210dd0f867563d7d3a9dd427b50ec33091b4e721126f682f958a355c",
+    "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/run-config.json": "47d793ef15073e397a3cecccdd7340f6d637706f23bffa24bf9f8f3eea4e422a",
+    "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/run-metadata.json": "56175544804e314274b4beadfa42f108c96894dc7b927034cbc71b61cd361a0e",
+    "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/stress-raw.json": "b2de28a8ad4abf4ebf7dfafad76abce4062985df36606ff05bc05a8a8c677085",
+    "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/stress-summary.json": "64a88d43b77470767b99582861d6bff683a6fba866d6ff776e54381041b1900f",
+    "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/learning-report.json": "f7a9f8f1b5548f3d5d2002dc4e1a277d0f82b559c6679a1772eca4ca564d2024",
+    "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/run-config.json": "47d793ef15073e397a3cecccdd7340f6d637706f23bffa24bf9f8f3eea4e422a",
+    "experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/run-metadata.json": "5a5107a7bc917b0eda502f853f7e6f849653a6c47e2e72f03716d58de6ba8584"
+  },
+  "completed_workers": 135,
+  "unique_dataset_shapes": 3,
+  "runs": [
+    {
+      "label": "Original Windows",
+      "directory": "full-2026-11-05",
+      "ordinary_pipeline_saved_percent": 33.72500688856188,
+      "aicc_pipeline_saved_percent": 33.59047294233982,
+      "aicc_worker_saved_percent": 18.260077867186876,
+      "memory_saved_percent": [
+        31.02735422352473,
+        20.24723655121592,
+        73.66526740115478
+      ],
+      "learned_extra_kernel_percent": 0.9355864071727504,
+      "pie_pipeline_seconds": 46.32840119997854,
+      "pie_other_worker_seconds": 47.05082669999683,
+      "pie_worker_seconds": 93.37922789997538,
+      "pie_pipeline_percent": 49.61317655100333
+    },
+    {
+      "label": "Claude Linux",
+      "directory": "anthropic-claude-opus-5.5-2026-11-05-trackA-002",
+      "ordinary_pipeline_saved_percent": 36.28889047521575,
+      "aicc_pipeline_saved_percent": 37.23699222209802,
+      "aicc_worker_saved_percent": 22.72728673635187,
+      "memory_saved_percent": [
+        31.118634977037306,
+        20.45886296456575,
+        73.50851411950067
+      ],
+      "learned_extra_kernel_percent": -7.447198862031712e-05,
+      "pie_pipeline_seconds": 30.889716575999955,
+      "pie_other_worker_seconds": 27.14278226199997,
+      "pie_worker_seconds": 58.032498837999924,
+      "pie_pipeline_percent": 53.22830688754219
+    },
+    {
+      "label": "Grok Windows",
+      "directory": "grok-4.7-2026-11-05-trackA-001",
+      "ordinary_pipeline_saved_percent": 34.87810377411091,
+      "aicc_pipeline_saved_percent": 34.84907146152349,
+      "aicc_worker_saved_percent": 23.055667536874434,
+      "memory_saved_percent": [
+        31.219168090293103,
+        20.097597375731425,
+        73.96739461037775
+      ],
+      "learned_extra_kernel_percent": 2.9737431212195187,
+      "pie_pipeline_seconds": 19.399825700034853,
+      "pie_other_worker_seconds": 17.846403700008523,
+      "pie_worker_seconds": 37.246229400043376,
+      "pie_pipeline_percent": 52.085341288297656
+    }
+  ],
+  "figures": [
+    "processing-gains",
+    "memory-gains",
+    "neural-selection",
+    "worker-time-pies",
+    "ain-comparison-design"
+  ],
+  "pie_definition": "For each run, sum pipeline_seconds and sum(worker_wall_seconds-pipeline_seconds) over nine aicc_static workers. This is a partition of total actual worker time, not sums of medians or billing.",
+  "matplotlib": "3.11.2",
+  "no_new_benchmark_executed": true
+}

@@ -1,0 +1,5 @@
+  A           R8-composition-T1..T8      pass 20/20 x10  wall p50    19.2 ms p95    21.0  cpu p50    19.0 ms  peak RSS p50  17.2 MB
+  B           R8-composition-T1..T8      pass 20/20 x10  wall p50    20.3 ms p95    47.8  cpu p50    20.3 ms  peak RSS p50  17.2 MB
+  B-security  R8-private-scope-checks    pass 3/3 x10  wall p50    17.4 ms p95    29.2  cpu p50    17.3 ms  peak RSS p50  17.2 MB
+  A           R7-T1-controller           pass 6/6 x10  wall p50    17.6 ms p95    18.5  cpu p50    17.3 ms  peak RSS p50  13.5 MB
+  C           R7-T1-controller           pass 6/6 x10  wall p50    17.7 ms p95    29.8  cpu p50    17.5 ms  peak RSS p50  13.5 MB

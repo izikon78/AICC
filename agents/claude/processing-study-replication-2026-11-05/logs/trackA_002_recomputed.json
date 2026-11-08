@@ -1,0 +1,1222 @@
+{
+ "rows": 45,
+ "unique_combinations": 45,
+ "expected": 45,
+ "signatures": {
+  "repeated-shuffled": [
+   [
+    49367,
+    651662,
+    1301787,
+    "b4976982669566fbb1f2493a27d35da50a2d7f71340b82d7e13400ff3e149ead"
+   ]
+  ],
+  "diverse-shuffled": [
+   [
+    712972,
+    713608,
+    1427605,
+    "2c52242c415917ec4ec967b9075f245d3591a6ea19979b867a147e985ef8ec11"
+   ]
+  ],
+  "ordered-stream": [
+   [
+    49518,
+    681930,
+    1364236,
+    "b7122424f5f2709f1d76339a0998084f9e3195492f9e301b8acd242fe043128e"
+   ]
+  ]
+ },
+ "all_signatures_match_within_job": true,
+ "mode_summaries": [
+  {
+   "job": "repeated-shuffled",
+   "mode": "reference",
+   "repetitions": 3,
+   "selected_plans": [
+    "reference"
+   ],
+   "median_pipeline_seconds": 4.87806544,
+   "min_pipeline_seconds": 4.643289997000011,
+   "max_pipeline_seconds": 4.992797177,
+   "median_worker_wall_seconds": 7.161033159999988,
+   "min_worker_wall_seconds": 6.997631453999929,
+   "max_worker_wall_seconds": 7.528723676000027,
+   "median_peak_mib": 815.69140625,
+   "min_peak_mib": 815.58203125,
+   "max_peak_mib": 815.71875,
+   "median_cpu_seconds": 4.764637908,
+   "median_kernel_seconds": 4.87805133400002,
+   "median_feature_seconds": 0.0,
+   "median_selection_seconds": 0.0,
+   "median_host_register_bind_seconds": 0.0,
+   "raw_pipeline_seconds": [
+    4.992797177,
+    4.643289997000011,
+    4.87806544
+   ],
+   "raw_worker_wall_seconds": [
+    7.528723676000027,
+    6.997631453999929,
+    7.161033159999988
+   ],
+   "raw_peak_mib": [
+    815.58203125,
+    815.71875,
+    815.69140625
+   ],
+   "output_signature": "b4976982669566fbb1f2493a27d35da50a2d7f71340b82d7e13400ff3e149ead"
+  },
+  {
+   "job": "repeated-shuffled",
+   "mode": "static",
+   "repetitions": 3,
+   "selected_plans": [
+    "partitioned"
+   ],
+   "median_pipeline_seconds": 2.2497167090000403,
+   "min_pipeline_seconds": 2.079028189999974,
+   "max_pipeline_seconds": 2.3186733960000083,
+   "median_worker_wall_seconds": 4.524439907999977,
+   "min_worker_wall_seconds": 4.493196054000009,
+   "max_worker_wall_seconds": 4.531452398999988,
+   "median_peak_mib": 561.859375,
+   "min_peak_mib": 561.78515625,
+   "max_peak_mib": 561.91796875,
+   "median_cpu_seconds": 2.189427601,
+   "median_kernel_seconds": 2.249456589000033,
+   "median_feature_seconds": 0.0,
+   "median_selection_seconds": 3.832999993846897e-06,
+   "median_host_register_bind_seconds": 0.0,
+   "raw_pipeline_seconds": [
+    2.079028189999974,
+    2.2497167090000403,
+    2.3186733960000083
+   ],
+   "raw_worker_wall_seconds": [
+    4.531452398999988,
+    4.493196054000009,
+    4.524439907999977
+   ],
+   "raw_peak_mib": [
+    561.859375,
+    561.91796875,
+    561.78515625
+   ],
+   "output_signature": "b4976982669566fbb1f2493a27d35da50a2d7f71340b82d7e13400ff3e149ead"
+  },
+  {
+   "job": "repeated-shuffled",
+   "mode": "aicc_static",
+   "repetitions": 3,
+   "selected_plans": [
+    "partitioned"
+   ],
+   "median_pipeline_seconds": 2.081066835999991,
+   "min_pipeline_seconds": 2.0416132409999364,
+   "max_pipeline_seconds": 2.2203949299999977,
+   "median_worker_wall_seconds": 4.39603449599997,
+   "min_worker_wall_seconds": 4.3060292469999695,
+   "max_worker_wall_seconds": 4.6461101720000215,
+   "median_peak_mib": 561.62890625,
+   "min_peak_mib": 561.5859375,
+   "max_peak_mib": 561.6875,
+   "median_cpu_seconds": 2.0727930839999997,
+   "median_kernel_seconds": 2.0800253859999884,
+   "median_feature_seconds": 0.0,
+   "median_selection_seconds": 3.3900000744324643e-06,
+   "median_host_register_bind_seconds": 0.0010216870000476774,
+   "raw_pipeline_seconds": [
+    2.2203949299999977,
+    2.081066835999991,
+    2.0416132409999364
+   ],
+   "raw_worker_wall_seconds": [
+    4.6461101720000215,
+    4.39603449599997,
+    4.3060292469999695
+   ],
+   "raw_peak_mib": [
+    561.6875,
+    561.5859375,
+    561.62890625
+   ],
+   "output_signature": "b4976982669566fbb1f2493a27d35da50a2d7f71340b82d7e13400ff3e149ead"
+  },
+  {
+   "job": "repeated-shuffled",
+   "mode": "learned",
+   "repetitions": 3,
+   "selected_plans": [
+    "partitioned"
+   ],
+   "median_pipeline_seconds": 2.292244891999985,
+   "min_pipeline_seconds": 2.160171934999994,
+   "max_pipeline_seconds": 2.543045353000025,
+   "median_worker_wall_seconds": 4.669369290999953,
+   "min_worker_wall_seconds": 4.363347589,
+   "max_worker_wall_seconds": 4.953721566000013,
+   "median_peak_mib": 564.1640625,
+   "min_peak_mib": 564.06640625,
+   "max_peak_mib": 564.16796875,
+   "median_cpu_seconds": 2.1454121560000003,
+   "median_kernel_seconds": 2.291088446999993,
+   "median_feature_seconds": 0.0002475469999581037,
+   "median_selection_seconds": 0.0008639819999416432,
+   "median_host_register_bind_seconds": 0.0,
+   "raw_pipeline_seconds": [
+    2.543045353000025,
+    2.160171934999994,
+    2.292244891999985
+   ],
+   "raw_worker_wall_seconds": [
+    4.953721566000013,
+    4.363347589,
+    4.669369290999953
+   ],
+   "raw_peak_mib": [
+    564.1640625,
+    564.16796875,
+    564.06640625
+   ],
+   "output_signature": "b4976982669566fbb1f2493a27d35da50a2d7f71340b82d7e13400ff3e149ead"
+  },
+  {
+   "job": "repeated-shuffled",
+   "mode": "aicc_learned",
+   "repetitions": 3,
+   "selected_plans": [
+    "partitioned"
+   ],
+   "median_pipeline_seconds": 2.0563827299999957,
+   "min_pipeline_seconds": 2.011608774000024,
+   "max_pipeline_seconds": 2.242829438000058,
+   "median_worker_wall_seconds": 4.27749605300005,
+   "min_worker_wall_seconds": 4.247638078999955,
+   "max_worker_wall_seconds": 4.615369551000072,
+   "median_peak_mib": 564.15234375,
+   "min_peak_mib": 564.0078125,
+   "max_peak_mib": 564.1875,
+   "median_cpu_seconds": 2.009611219,
+   "median_kernel_seconds": 2.0551571999999396,
+   "median_feature_seconds": 0.00022761799993986642,
+   "median_selection_seconds": 0.00018889399996169232,
+   "median_host_register_bind_seconds": 0.0009361810000427795,
+   "raw_pipeline_seconds": [
+    2.011608774000024,
+    2.0563827299999957,
+    2.242829438000058
+   ],
+   "raw_worker_wall_seconds": [
+    4.247638078999955,
+    4.27749605300005,
+    4.615369551000072
+   ],
+   "raw_peak_mib": [
+    564.0078125,
+    564.15234375,
+    564.1875
+   ],
+   "output_signature": "b4976982669566fbb1f2493a27d35da50a2d7f71340b82d7e13400ff3e149ead"
+  },
+  {
+   "job": "diverse-shuffled",
+   "mode": "reference",
+   "repetitions": 3,
+   "selected_plans": [
+    "reference"
+   ],
+   "median_pipeline_seconds": 6.269453752000004,
+   "min_pipeline_seconds": 5.943073050999942,
+   "max_pipeline_seconds": 6.323933181000029,
+   "median_worker_wall_seconds": 12.348188203000007,
+   "min_worker_wall_seconds": 11.887848378000058,
+   "max_worker_wall_seconds": 12.818472807000035,
+   "median_peak_mib": 1065.1328125,
+   "min_peak_mib": 1065.05859375,
+   "max_peak_mib": 1065.140625,
+   "median_cpu_seconds": 6.080585340999999,
+   "median_kernel_seconds": 6.269403900000043,
+   "median_feature_seconds": 0.0,
+   "median_selection_seconds": 0.0,
+   "median_host_register_bind_seconds": 0.0,
+   "raw_pipeline_seconds": [
+    6.323933181000029,
+    6.269453752000004,
+    5.943073050999942
+   ],
+   "raw_worker_wall_seconds": [
+    12.348188203000007,
+    12.818472807000035,
+    11.887848378000058
+   ],
+   "raw_peak_mib": [
+    1065.1328125,
+    1065.05859375,
+    1065.140625
+   ],
+   "output_signature": "2c52242c415917ec4ec967b9075f245d3591a6ea19979b867a147e985ef8ec11"
+  },
+  {
+   "job": "diverse-shuffled",
+   "mode": "static",
+   "repetitions": 3,
+   "selected_plans": [
+    "partitioned"
+   ],
+   "median_pipeline_seconds": 4.890548851000062,
+   "min_pipeline_seconds": 4.871372785999938,
+   "max_pipeline_seconds": 5.730772868000031,
+   "median_worker_wall_seconds": 11.288800342000059,
+   "min_worker_wall_seconds": 11.26235210499999,
+   "max_worker_wall_seconds": 13.312697487999912,
+   "median_peak_mib": 847.21875,
+   "min_peak_mib": 847.15625,
+   "max_peak_mib": 847.296875,
+   "median_cpu_seconds": 4.870600905,
+   "median_kernel_seconds": 4.890314202000013,
+   "median_feature_seconds": 0.0,
+   "median_selection_seconds": 8.756900001571921e-05,
+   "median_host_register_bind_seconds": 0.0,
+   "raw_pipeline_seconds": [
+    5.730772868000031,
+    4.890548851000062,
+    4.871372785999938
+   ],
+   "raw_worker_wall_seconds": [
+    13.312697487999912,
+    11.288800342000059,
+    11.26235210499999
+   ],
+   "raw_peak_mib": [
+    847.21875,
+    847.15625,
+    847.296875
+   ],
+   "output_signature": "2c52242c415917ec4ec967b9075f245d3591a6ea19979b867a147e985ef8ec11"
+  },
+  {
+   "job": "diverse-shuffled",
+   "mode": "aicc_static",
+   "repetitions": 3,
+   "selected_plans": [
+    "partitioned"
+   ],
+   "median_pipeline_seconds": 4.88865721500008,
+   "min_pipeline_seconds": 4.787574972000016,
+   "max_pipeline_seconds": 5.047278656000003,
+   "median_worker_wall_seconds": 11.364002360999962,
+   "min_worker_wall_seconds": 11.009867052999994,
+   "max_worker_wall_seconds": 11.427992545999928,
+   "median_peak_mib": 847.1015625,
+   "min_peak_mib": 847.046875,
+   "max_peak_mib": 847.14453125,
+   "median_cpu_seconds": 4.810287591,
+   "median_kernel_seconds": 4.886196091000102,
+   "median_feature_seconds": 0.0,
+   "median_selection_seconds": 4.007100005765096e-05,
+   "median_host_register_bind_seconds": 0.003176739999958045,
+   "raw_pipeline_seconds": [
+    5.047278656000003,
+    4.787574972000016,
+    4.88865721500008
+   ],
+   "raw_worker_wall_seconds": [
+    11.364002360999962,
+    11.009867052999994,
+    11.427992545999928
+   ],
+   "raw_peak_mib": [
+    847.14453125,
+    847.046875,
+    847.1015625
+   ],
+   "output_signature": "2c52242c415917ec4ec967b9075f245d3591a6ea19979b867a147e985ef8ec11"
+  },
+  {
+   "job": "diverse-shuffled",
+   "mode": "learned",
+   "repetitions": 3,
+   "selected_plans": [
+    "partitioned"
+   ],
+   "median_pipeline_seconds": 4.999051899000051,
+   "min_pipeline_seconds": 4.790125759000034,
+   "max_pipeline_seconds": 5.051733001000002,
+   "median_worker_wall_seconds": 11.350079012999913,
+   "min_worker_wall_seconds": 11.015845931999934,
+   "max_worker_wall_seconds": 11.782346812000014,
+   "median_peak_mib": 849.43359375,
+   "min_peak_mib": 849.3984375,
+   "max_peak_mib": 849.578125,
+   "median_cpu_seconds": 4.949911524999999,
+   "median_kernel_seconds": 4.996985539999969,
+   "median_feature_seconds": 0.0007284929999968881,
+   "median_selection_seconds": 0.0012255489999688507,
+   "median_host_register_bind_seconds": 0.0,
+   "raw_pipeline_seconds": [
+    5.051733001000002,
+    4.790125759000034,
+    4.999051899000051
+   ],
+   "raw_worker_wall_seconds": [
+    11.350079012999913,
+    11.015845931999934,
+    11.782346812000014
+   ],
+   "raw_peak_mib": [
+    849.3984375,
+    849.578125,
+    849.43359375
+   ],
+   "output_signature": "2c52242c415917ec4ec967b9075f245d3591a6ea19979b867a147e985ef8ec11"
+  },
+  {
+   "job": "diverse-shuffled",
+   "mode": "aicc_learned",
+   "repetitions": 3,
+   "selected_plans": [
+    "partitioned"
+   ],
+   "median_pipeline_seconds": 4.848849030999986,
+   "min_pipeline_seconds": 4.838864810000018,
+   "max_pipeline_seconds": 5.050628540000048,
+   "median_worker_wall_seconds": 11.347209518,
+   "min_worker_wall_seconds": 11.157052021000027,
+   "max_worker_wall_seconds": 11.400562151000031,
+   "median_peak_mib": 849.4296875,
+   "min_peak_mib": 849.3984375,
+   "max_peak_mib": 849.515625,
+   "median_cpu_seconds": 4.817540548999999,
+   "median_kernel_seconds": 4.8440084409999145,
+   "median_feature_seconds": 0.0006453810000266458,
+   "median_selection_seconds": 0.0013508450000472294,
+   "median_host_register_bind_seconds": 0.002030246000003899,
+   "raw_pipeline_seconds": [
+    5.050628540000048,
+    4.848849030999986,
+    4.838864810000018
+   ],
+   "raw_worker_wall_seconds": [
+    11.400562151000031,
+    11.157052021000027,
+    11.347209518
+   ],
+   "raw_peak_mib": [
+    849.4296875,
+    849.515625,
+    849.3984375
+   ],
+   "output_signature": "2c52242c415917ec4ec967b9075f245d3591a6ea19979b867a147e985ef8ec11"
+  },
+  {
+   "job": "ordered-stream",
+   "mode": "reference",
+   "repetitions": 3,
+   "selected_plans": [
+    "reference"
+   ],
+   "median_pipeline_seconds": 5.148345835999976,
+   "min_pipeline_seconds": 4.957582145999936,
+   "max_pipeline_seconds": 5.194486062999999,
+   "median_worker_wall_seconds": 5.5479057109999985,
+   "min_worker_wall_seconds": 5.342692853000017,
+   "max_worker_wall_seconds": 5.593874539000012,
+   "median_peak_mib": 515.6875,
+   "min_peak_mib": 515.67578125,
+   "max_peak_mib": 515.8046875,
+   "median_cpu_seconds": 4.934043149,
+   "median_kernel_seconds": 5.148335698999972,
+   "median_feature_seconds": 0.0,
+   "median_selection_seconds": 0.0,
+   "median_host_register_bind_seconds": 0.0,
+   "raw_pipeline_seconds": [
+    5.194486062999999,
+    4.957582145999936,
+    5.148345835999976
+   ],
+   "raw_worker_wall_seconds": [
+    5.593874539000012,
+    5.342692853000017,
+    5.5479057109999985
+   ],
+   "raw_peak_mib": [
+    515.8046875,
+    515.67578125,
+    515.6875
+   ],
+   "output_signature": "b7122424f5f2709f1d76339a0998084f9e3195492f9e301b8acd242fe043128e"
+  },
+  {
+   "job": "ordered-stream",
+   "mode": "static",
+   "repetitions": 3,
+   "selected_plans": [
+    "ordered"
+   ],
+   "median_pipeline_seconds": 3.242010855999979,
+   "min_pipeline_seconds": 3.191708021000011,
+   "max_pipeline_seconds": 3.5841585269999996,
+   "median_worker_wall_seconds": 3.582583764999981,
+   "min_worker_wall_seconds": 3.5794814660000043,
+   "max_worker_wall_seconds": 3.9704749029999675,
+   "median_peak_mib": 136.61328125,
+   "min_peak_mib": 136.57421875,
+   "max_peak_mib": 136.671875,
+   "median_cpu_seconds": 3.232293401,
+   "median_kernel_seconds": 3.242001658999925,
+   "median_feature_seconds": 0.0,
+   "median_selection_seconds": 7.060000370984199e-07,
+   "median_host_register_bind_seconds": 0.0,
+   "raw_pipeline_seconds": [
+    3.191708021000011,
+    3.242010855999979,
+    3.5841585269999996
+   ],
+   "raw_worker_wall_seconds": [
+    3.5794814660000043,
+    3.582583764999981,
+    3.9704749029999675
+   ],
+   "raw_peak_mib": [
+    136.671875,
+    136.61328125,
+    136.57421875
+   ],
+   "output_signature": "b7122424f5f2709f1d76339a0998084f9e3195492f9e301b8acd242fe043128e"
+  },
+  {
+   "job": "ordered-stream",
+   "mode": "aicc_static",
+   "repetitions": 3,
+   "selected_plans": [
+    "ordered"
+   ],
+   "median_pipeline_seconds": 3.258050983999965,
+   "min_pipeline_seconds": 3.160480014999962,
+   "max_pipeline_seconds": 3.4045997270000043,
+   "median_worker_wall_seconds": 3.602285099000028,
+   "min_worker_wall_seconds": 3.5252823800000215,
+   "max_worker_wall_seconds": 3.7548954840000306,
+   "median_peak_mib": 136.77734375,
+   "min_peak_mib": 136.61328125,
+   "max_peak_mib": 136.78125,
+   "median_cpu_seconds": 3.242474643,
+   "median_kernel_seconds": 3.257308481999985,
+   "median_feature_seconds": 0.0,
+   "median_selection_seconds": 7.84000008025032e-07,
+   "median_host_register_bind_seconds": 0.0007142529999555336,
+   "raw_pipeline_seconds": [
+    3.160480014999962,
+    3.258050983999965,
+    3.4045997270000043
+   ],
+   "raw_worker_wall_seconds": [
+    3.5252823800000215,
+    3.602285099000028,
+    3.7548954840000306
+   ],
+   "raw_peak_mib": [
+    136.77734375,
+    136.61328125,
+    136.78125
+   ],
+   "output_signature": "b7122424f5f2709f1d76339a0998084f9e3195492f9e301b8acd242fe043128e"
+  },
+  {
+   "job": "ordered-stream",
+   "mode": "learned",
+   "repetitions": 3,
+   "selected_plans": [
+    "ordered"
+   ],
+   "median_pipeline_seconds": 3.1390758219999952,
+   "min_pipeline_seconds": 3.04462739600001,
+   "max_pipeline_seconds": 3.1763095950000206,
+   "median_worker_wall_seconds": 3.4680850269999155,
+   "min_worker_wall_seconds": 3.377734024999995,
+   "max_worker_wall_seconds": 3.5528073930000232,
+   "median_peak_mib": 139.140625,
+   "min_peak_mib": 139.07421875,
+   "max_peak_mib": 139.19921875,
+   "median_cpu_seconds": 3.12354384,
+   "median_kernel_seconds": 3.138037598999972,
+   "median_feature_seconds": 0.0009316530000091916,
+   "median_selection_seconds": 0.0001619120000100338,
+   "median_host_register_bind_seconds": 0.0,
+   "raw_pipeline_seconds": [
+    3.1763095950000206,
+    3.1390758219999952,
+    3.04462739600001
+   ],
+   "raw_worker_wall_seconds": [
+    3.5528073930000232,
+    3.4680850269999155,
+    3.377734024999995
+   ],
+   "raw_peak_mib": [
+    139.07421875,
+    139.19921875,
+    139.140625
+   ],
+   "output_signature": "b7122424f5f2709f1d76339a0998084f9e3195492f9e301b8acd242fe043128e"
+  },
+  {
+   "job": "ordered-stream",
+   "mode": "aicc_learned",
+   "repetitions": 3,
+   "selected_plans": [
+    "ordered"
+   ],
+   "median_pipeline_seconds": 3.347395393999932,
+   "min_pipeline_seconds": 3.1683807850000107,
+   "max_pipeline_seconds": 3.4950901079999994,
+   "median_worker_wall_seconds": 3.6978202539999074,
+   "min_worker_wall_seconds": 3.531056537999973,
+   "max_worker_wall_seconds": 3.8904341420000037,
+   "median_peak_mib": 139.3046875,
+   "min_peak_mib": 139.1640625,
+   "max_peak_mib": 139.37109375,
+   "median_cpu_seconds": 3.245697257,
+   "median_kernel_seconds": 3.3453678170000103,
+   "median_feature_seconds": 0.0010085210000170264,
+   "median_selection_seconds": 0.00018519900004321244,
+   "median_host_register_bind_seconds": 0.0007481490000031954,
+   "raw_pipeline_seconds": [
+    3.4950901079999994,
+    3.1683807850000107,
+    3.347395393999932
+   ],
+   "raw_worker_wall_seconds": [
+    3.8904341420000037,
+    3.531056537999973,
+    3.6978202539999074
+   ],
+   "raw_peak_mib": [
+    139.3046875,
+    139.37109375,
+    139.1640625
+   ],
+   "output_signature": "b7122424f5f2709f1d76339a0998084f9e3195492f9e301b8acd242fe043128e"
+  }
+ ],
+ "aicc_register_bind_median_ms": 0.9166440000285547,
+ "aicc_register_bind_max_ms": 4.895734000001539,
+ "equal_job_mix": {
+  "reference": {
+   "pipeline": 16.29586502799998,
+   "worker": 25.057127073999993,
+   "pipeline_reduction_vs_reference_percent": 0.0,
+   "worker_reduction_vs_reference_percent": 0.0
+  },
+  "static": {
+   "pipeline": 10.382276416000082,
+   "worker": 19.395824015000017,
+   "pipeline_reduction_vs_reference_percent": 36.28889047521575,
+   "worker_reduction_vs_reference_percent": 22.593584022145574
+  },
+  "aicc_static": {
+   "pipeline": 10.227775035000036,
+   "worker": 19.36232195599996,
+   "pipeline_reduction_vs_reference_percent": 37.23699222209802,
+   "worker_reduction_vs_reference_percent": 22.72728673635187
+  },
+  "learned": {
+   "pipeline": 10.430372613000031,
+   "worker": 19.48753333099978,
+   "pipeline_reduction_vs_reference_percent": 35.993746910162216,
+   "worker_reduction_vs_reference_percent": 22.227583100615654
+  },
+  "aicc_learned": {
+   "pipeline": 10.252627154999914,
+   "worker": 19.322525824999957,
+   "pipeline_reduction_vs_reference_percent": 37.084486540704766,
+   "worker_reduction_vs_reference_percent": 22.88610833981213
+  }
+ },
+ "comparisons": [
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 4.87806544,
+   "candidate_value": 2.2497167090000403,
+   "saved_percent": 53.880964971227606,
+   "speedup_ratio": 2.16830208909646,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 7.161033159999988,
+   "candidate_value": 4.524439907999977,
+   "saved_percent": 36.81861531835185,
+   "speedup_ratio": 1.582744672404217,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 815.69140625,
+   "candidate_value": 561.859375,
+   "saved_percent": 31.11863497703731,
+   "speedup_ratio": 1.4517714619427682,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 2.2497167090000403,
+   "candidate_value": 2.081066835999991,
+   "saved_percent": 7.496493772987592,
+   "speedup_ratio": 1.0810401040863304,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 4.524439907999977,
+   "candidate_value": 4.39603449599997,
+   "saved_percent": 2.8380399477284226,
+   "speedup_ratio": 1.0292093731559306,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 561.859375,
+   "candidate_value": 561.62890625,
+   "saved_percent": 0.04101893823521233,
+   "speedup_ratio": 1.0004103577067265,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 2.2497167090000403,
+   "candidate_value": 2.292244891999985,
+   "saved_percent": -1.8903794788832726,
+   "speedup_ratio": 0.9814469286643981,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 4.524439907999977,
+   "candidate_value": 4.669369290999953,
+   "saved_percent": -3.20325578296921,
+   "speedup_ratio": 0.9689616789832146,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 561.859375,
+   "candidate_value": 564.1640625,
+   "saved_percent": -0.41018938235212327,
+   "speedup_ratio": 0.9959148629748106,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 2.292244891999985,
+   "candidate_value": 2.0563827299999957,
+   "saved_percent": 10.289570840495998,
+   "speedup_ratio": 1.1146975991186183,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 4.669369290999953,
+   "candidate_value": 4.27749605300005,
+   "saved_percent": 8.392423335528951,
+   "speedup_ratio": 1.0916127643706555,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 564.1640625,
+   "candidate_value": 564.15234375,
+   "saved_percent": 0.0020771883178929,
+   "speedup_ratio": 1.000020772314659,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 4.87806544,
+   "candidate_value": 2.081066835999991,
+   "saved_percent": 57.3382755603215,
+   "speedup_ratio": 2.344021516087445,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 7.161033159999988,
+   "candidate_value": 4.39603449599997,
+   "saved_percent": 38.611728255144996,
+   "speedup_ratio": 1.6289756521510328,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 815.69140625,
+   "candidate_value": 561.62890625,
+   "saved_percent": 31.14688938161165,
+   "speedup_ratio": 1.4523672075505818,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 6.269453752000004,
+   "candidate_value": 4.890548851000062,
+   "saved_percent": 21.99401982286033,
+   "speedup_ratio": 1.2819529960769067,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 12.348188203000007,
+   "candidate_value": 11.288800342000059,
+   "saved_percent": 8.579297979460407,
+   "speedup_ratio": 1.0938441489711257,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 1065.1328125,
+   "candidate_value": 847.21875,
+   "saved_percent": 20.458862964565746,
+   "speedup_ratio": 1.2572110951274391,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 4.890548851000062,
+   "candidate_value": 4.88865721500008,
+   "saved_percent": 0.038679421423124756,
+   "speedup_ratio": 1.000386943881886,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 11.288800342000059,
+   "candidate_value": 11.364002360999962,
+   "saved_percent": -0.6661648423359332,
+   "speedup_ratio": 0.9933824354649918,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 847.21875,
+   "candidate_value": 847.1015625,
+   "saved_percent": 0.013832023901737302,
+   "speedup_ratio": 1.0001383393741528,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 4.890548851000062,
+   "candidate_value": 4.999051899000051,
+   "saved_percent": -2.218627219679055,
+   "speedup_ratio": 0.9782952747456588,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 11.288800342000059,
+   "candidate_value": 11.350079012999913,
+   "saved_percent": -0.5428271308144834,
+   "speedup_ratio": 0.9946010357346704,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 847.21875,
+   "candidate_value": 849.43359375,
+   "saved_percent": -0.261425251742835,
+   "speedup_ratio": 0.9973925639787542,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 4.999051899000051,
+   "candidate_value": 4.848849030999986,
+   "saved_percent": 3.004627097992514,
+   "speedup_ratio": 1.0309770147595394,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 11.350079012999913,
+   "candidate_value": 11.347209518,
+   "saved_percent": 0.025281718273739873,
+   "speedup_ratio": 1.0002528811154285,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 849.43359375,
+   "candidate_value": 849.4296875,
+   "saved_percent": 0.00045986525947897265,
+   "speedup_ratio": 1.0000045986737425,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 6.269453752000004,
+   "candidate_value": 4.88865721500008,
+   "saved_percent": 22.024192084668286,
+   "speedup_ratio": 1.282449039945604,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 12.348188203000007,
+   "candidate_value": 11.364002360999962,
+   "saved_percent": 7.970285403982876,
+   "speedup_ratio": 1.086605564724068,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 1065.1328125,
+   "candidate_value": 847.1015625,
+   "saved_percent": 20.4698651136522,
+   "speedup_ratio": 1.2573850169235168,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 5.148345835999976,
+   "candidate_value": 3.242010855999979,
+   "saved_percent": 37.028106516657985,
+   "speedup_ratio": 1.5880100544610913,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 5.5479057109999985,
+   "candidate_value": 3.582583764999981,
+   "saved_percent": 35.42457367477091,
+   "speedup_ratio": 1.5485766907113832,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 515.6875,
+   "candidate_value": 136.61328125,
+   "saved_percent": 73.50851411950066,
+   "speedup_ratio": 3.7747977010836933,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 3.242010855999979,
+   "candidate_value": 3.258050983999965,
+   "saved_percent": -0.494758614712859,
+   "speedup_ratio": 0.9950767719477818,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 3.582583764999981,
+   "candidate_value": 3.602285099000028,
+   "saved_percent": -0.549919702995327,
+   "speedup_ratio": 0.9945308787454065,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 136.61328125,
+   "candidate_value": 136.77734375,
+   "saved_percent": -0.1200926428959483,
+   "speedup_ratio": 0.9988005140654005,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 3.242010855999979,
+   "candidate_value": 3.1390758219999952,
+   "saved_percent": 3.1750366847008604,
+   "speedup_ratio": 1.0327915092966442,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 3.582583764999981,
+   "candidate_value": 3.4680850269999155,
+   "saved_percent": 3.195982160100765,
+   "speedup_ratio": 1.0330149742894608,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 136.61328125,
+   "candidate_value": 139.140625,
+   "saved_percent": -1.8499985703256798,
+   "speedup_ratio": 0.9818360471645143,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 3.1390758219999952,
+   "candidate_value": 3.347395393999932,
+   "saved_percent": -6.636334507753633,
+   "speedup_ratio": 0.9377666670709588,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 3.4680850269999155,
+   "candidate_value": 3.6978202539999074,
+   "saved_percent": -6.624267433221657,
+   "speedup_ratio": 0.9378727976971057,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 139.140625,
+   "candidate_value": 139.3046875,
+   "saved_percent": -0.11791128579449747,
+   "speedup_ratio": 0.9988222758117885,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 5.148345835999976,
+   "candidate_value": 3.258050983999965,
+   "saved_percent": 36.71654764880134,
+   "speedup_ratio": 1.5801919188137639,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 5.5479057109999985,
+   "candidate_value": 3.602285099000028,
+   "saved_percent": 35.06946068211524,
+   "speedup_ratio": 1.5401073370178453,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 515.6875,
+   "candidate_value": 136.77734375,
+   "saved_percent": 73.47669979396437,
+   "speedup_ratio": 3.770269884335285,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  }
+ ],
+ "granularity": {
+  "differential_operation_cases": 8096,
+  "all_outputs_equal": true,
+  "summary": [
+   {
+    "mode": "ordinary_split",
+    "median_seconds": 0.1682603309999422,
+    "min_seconds": 0.15103509499999745,
+    "max_seconds": 0.18011918600006993
+   },
+   {
+    "mode": "ordinary_fused",
+    "median_seconds": 0.13818428600006882,
+    "min_seconds": 0.13168713400000343,
+    "max_seconds": 0.1405811930000027
+   },
+   {
+    "mode": "aicc_split",
+    "median_seconds": 3.5337825280000743,
+    "min_seconds": 3.477208850000011,
+    "max_seconds": 3.611336849000054
+   },
+   {
+    "mode": "aicc_fused",
+    "median_seconds": 1.823977967000019,
+    "min_seconds": 1.7461113530000603,
+    "max_seconds": 1.9304439589999447
+   },
+   {
+    "mode": "ordinary_batch",
+    "median_seconds": 0.12254203600002711,
+    "min_seconds": 0.1222682379999469,
+    "max_seconds": 0.13801156800002445
+   },
+   {
+    "mode": "aicc_batch",
+    "median_seconds": 0.12258736399996906,
+    "min_seconds": 0.12205047600002672,
+    "max_seconds": 0.1252720260000615
+   }
+  ]
+ }
+}

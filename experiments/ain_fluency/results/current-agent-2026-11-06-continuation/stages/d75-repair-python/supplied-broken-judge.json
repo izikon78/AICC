@@ -1,0 +1,4611 @@
+{
+  "artifact_sha256": "df36ec645c25cc271e5ad4c674c5da89c57a868a013318b6224fad643b0e1445",
+  "cases": 55,
+  "delta": 75,
+  "details": [
+    {
+      "actual": {
+        "commits": [
+          5,
+          8,
+          10
+        ],
+        "counters": {
+          "accepted": 4,
+          "duplicate": 0,
+          "filtered": 1,
+          "late": 2
+        },
+        "cursor": 10,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 2,
+            "first_timestamp": 90,
+            "kind": "alert",
+            "last_timestamp": 90,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 4,
+            "first_timestamp": 150,
+            "kind": "alert",
+            "last_timestamp": 150,
+            "message": "m",
+            "severity_sum": 1,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 3,
+            "first_timestamp": 200,
+            "kind": "alert",
+            "last_timestamp": 200,
+            "message": "m",
+            "severity_sum": 2,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "56baccbbe68d24a0fab815a3d1f98418d1c7d741b9ef514bf0c83638e3e98937",
+      "case": "published_ten_record_trace",
+      "expected": {
+        "commits": [
+          5,
+          8,
+          10
+        ],
+        "counters": {
+          "accepted": 4,
+          "duplicate": 1,
+          "filtered": 1,
+          "late": 1
+        },
+        "cursor": 10,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 4,
+            "first_timestamp": 150,
+            "kind": "alert",
+            "last_timestamp": 200,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 7,
+            "first_timestamp": 780,
+            "kind": "alert",
+            "last_timestamp": 780,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 9,
+            "first_timestamp": 1400,
+            "kind": "alert",
+            "last_timestamp": 1400,
+            "message": "m",
+            "severity_sum": 2,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "eba911121f9e5d7ad7a50fe96ca69ac65bd58a9fae164bddba049c930badf98a",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          1,
+          8
+        ],
+        "counters": {
+          "accepted": 3,
+          "duplicate": 0,
+          "filtered": 1,
+          "late": 2
+        },
+        "cursor": 8,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 4,
+            "first_timestamp": 781,
+            "kind": "alert",
+            "last_timestamp": 781,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "e4cd46ff4a418bac0466d37a87f20e522a20ae266842b073d31eb28b47dd2515",
+      "case": "near_frontier_manual_minimum_0",
+      "expected": {
+        "commits": [
+          1,
+          8
+        ],
+        "counters": {
+          "accepted": 2,
+          "duplicate": 1,
+          "filtered": 2,
+          "late": 1
+        },
+        "cursor": 8,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 6,
+            "first_timestamp": 855,
+            "kind": "alert",
+            "last_timestamp": 856,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "3141c75332a4a2b5c496134fa38b333786b3fe28f268514689d6c21fd9458d3f",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          1,
+          8
+        ],
+        "counters": {
+          "accepted": 3,
+          "duplicate": 0,
+          "filtered": 1,
+          "late": 2
+        },
+        "cursor": 8,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 4,
+            "first_timestamp": 781,
+            "kind": "alert",
+            "last_timestamp": 781,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "b5d06b87b6dd6325b1f2241aafbd5ec14a34fe64295cb994f42116b053e04fe0",
+      "case": "near_frontier_manual_minimum_1",
+      "expected": {
+        "commits": [
+          1,
+          8
+        ],
+        "counters": {
+          "accepted": 2,
+          "duplicate": 1,
+          "filtered": 2,
+          "late": 1
+        },
+        "cursor": 8,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 6,
+            "first_timestamp": 855,
+            "kind": "alert",
+            "last_timestamp": 856,
+            "message": "m",
+            "severity_sum": 4,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "974c3940c0615ca8e65cbc4e6513feb27d52165e0c44173e9c23a578aed99b67",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          1,
+          8
+        ],
+        "counters": {
+          "accepted": 3,
+          "duplicate": 0,
+          "filtered": 1,
+          "late": 2
+        },
+        "cursor": 8,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 4,
+            "first_timestamp": 781,
+            "kind": "alert",
+            "last_timestamp": 781,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "29762a05a0221e1bc8cba37d0579096d31b524d384b1032b4f39580601ace1b0",
+      "case": "near_frontier_manual_minimum_2",
+      "expected": {
+        "commits": [
+          1,
+          8
+        ],
+        "counters": {
+          "accepted": 2,
+          "duplicate": 1,
+          "filtered": 2,
+          "late": 1
+        },
+        "cursor": 8,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 6,
+            "first_timestamp": 855,
+            "kind": "alert",
+            "last_timestamp": 856,
+            "message": "m",
+            "severity_sum": 5,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "e0591e19fe79d0c241fcd12558c6490ee885dbc49257f234807e366d3c150d89",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          1,
+          8
+        ],
+        "counters": {
+          "accepted": 4,
+          "duplicate": 0,
+          "filtered": 0,
+          "late": 2
+        },
+        "cursor": 8,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 4,
+            "first_timestamp": 781,
+            "kind": "alert",
+            "last_timestamp": 781,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "10335e6b20e5e16651ba36e87fd7b60534c2eccaf7e4219e28ccc1bb9a3d2b77",
+      "case": "near_frontier_manual_minimum_3",
+      "expected": {
+        "commits": [
+          1,
+          8
+        ],
+        "counters": {
+          "accepted": 4,
+          "duplicate": 1,
+          "filtered": 0,
+          "late": 1
+        },
+        "cursor": 8,
+        "error": null,
+        "groups": [
+          {
+            "count": 4,
+            "device": "pump",
+            "first_offset": 3,
+            "first_timestamp": 780,
+            "kind": "alert",
+            "last_timestamp": 856,
+            "message": "m",
+            "severity_sum": 12,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "3f22b920d1db02e982459085a183649f1109f69fc68e1770e9166cd0f8c34679",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          5
+        ],
+        "counters": {
+          "accepted": 4,
+          "duplicate": 0,
+          "filtered": 0,
+          "late": 0
+        },
+        "cursor": 5,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 2,
+            "first_timestamp": 100,
+            "kind": "alert",
+            "last_timestamp": 100,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "32f5590c76d2b08a3cd736bbff390360ed96e103d08d2ff6dd1b5459811db5df",
+      "case": "drain_many_tied_and_out_of_order",
+      "expected": {
+        "commits": [
+          5
+        ],
+        "counters": {
+          "accepted": 4,
+          "duplicate": 0,
+          "filtered": 0,
+          "late": 0
+        },
+        "cursor": 5,
+        "error": null,
+        "groups": [
+          {
+            "count": 3,
+            "device": "pump",
+            "first_offset": 2,
+            "first_timestamp": 100,
+            "kind": "alert",
+            "last_timestamp": 200,
+            "message": "m",
+            "severity_sum": 8,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 4,
+            "first_timestamp": 800,
+            "kind": "alert",
+            "last_timestamp": 800,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "c23435220c52156866fcc13675e5f485167d0a4ea633dd165fdb2ab1f8947351",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          4
+        ],
+        "counters": {
+          "accepted": 3,
+          "duplicate": 0,
+          "filtered": 0,
+          "late": 0
+        },
+        "cursor": 4,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 1,
+            "first_timestamp": 100,
+            "kind": "alert",
+            "last_timestamp": 100,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "f9d92a4dfa64bd7c61f641fe8bf6006b5ea594f7492025c46dea0c95bdfc0e5e",
+      "case": "nfkc_and_message_case",
+      "expected": {
+        "commits": [
+          4
+        ],
+        "counters": {
+          "accepted": 3,
+          "duplicate": 0,
+          "filtered": 0,
+          "late": 0
+        },
+        "cursor": 4,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 1,
+            "first_timestamp": 100,
+            "kind": "alert",
+            "last_timestamp": 101,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 3,
+            "first_timestamp": 102,
+            "kind": "alert",
+            "last_timestamp": 102,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "e59c5a5108e30099cf2912812999e66422f92bd5f6c546a6b5f1d12b56710335",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          4
+        ],
+        "counters": {
+          "accepted": 3,
+          "duplicate": 0,
+          "filtered": 0,
+          "late": 0
+        },
+        "cursor": 4,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 1,
+            "first_timestamp": 100,
+            "kind": "alert",
+            "last_timestamp": 100,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "403b350a74875e7c71e862b6e6380381a09917242a7b7650d79abaacc2991207",
+      "case": "anchored_window_equality",
+      "expected": {
+        "commits": [
+          4
+        ],
+        "counters": {
+          "accepted": 3,
+          "duplicate": 0,
+          "filtered": 0,
+          "late": 0
+        },
+        "cursor": 4,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 1,
+            "first_timestamp": 100,
+            "kind": "alert",
+            "last_timestamp": 699,
+            "message": "m",
+            "severity_sum": 6,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 3,
+            "first_timestamp": 700,
+            "kind": "alert",
+            "last_timestamp": 700,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "4bad2f57547f505500d62b113270a9031facaae29c51feaeb5b47b98dcdd3bef",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          4
+        ],
+        "counters": {
+          "accepted": 2,
+          "duplicate": 0,
+          "filtered": 0,
+          "late": 1
+        },
+        "cursor": 4,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 2,
+            "first_timestamp": 1,
+            "kind": "alert",
+            "last_timestamp": 1,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "2633d10dac07a014f212bc388c3dfd0d6a7aff7cbf3f553b63383c70dc9dcbe6",
+      "case": "first_id_before_threshold",
+      "expected": {
+        "commits": [
+          4
+        ],
+        "counters": {
+          "accepted": 1,
+          "duplicate": 1,
+          "filtered": 1,
+          "late": 0
+        },
+        "cursor": 4,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 3,
+            "first_timestamp": 200,
+            "kind": "alert",
+            "last_timestamp": 200,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "c042b408f8b39b67959d43159bd8671599c07a57f8731eb7c54a7044b5088123",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          1,
+          4
+        ],
+        "counters": {
+          "accepted": 0,
+          "duplicate": 0,
+          "filtered": 0,
+          "late": 2
+        },
+        "cursor": 4,
+        "error": null,
+        "groups": [],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "5271a48a285e6dec79308df1d3959fa5d9efd7340d792b4d4f5a27d354b81489",
+      "case": "late_id_not_reserved",
+      "expected": {
+        "commits": [
+          1,
+          4
+        ],
+        "counters": {
+          "accepted": 1,
+          "duplicate": 0,
+          "filtered": 0,
+          "late": 1
+        },
+        "cursor": 4,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 3,
+            "first_timestamp": 780,
+            "kind": "alert",
+            "last_timestamp": 780,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "117ff063f1fa926c5204bf4f4cb32a001ec8e0f3b3d08cdab6cb08220073e6f9",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          2,
+          4
+        ],
+        "counters": {
+          "accepted": 1,
+          "duplicate": 0,
+          "filtered": 0,
+          "late": 1
+        },
+        "cursor": 4,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 1,
+            "first_timestamp": 100,
+            "kind": "alert",
+            "last_timestamp": 100,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "64a799e05849524f131be575fa939c2ad022270c90f275f2348cc8f698dca34f",
+      "case": "horizon_readmission",
+      "expected": {
+        "commits": [
+          2,
+          4
+        ],
+        "counters": {
+          "accepted": 2,
+          "duplicate": 0,
+          "filtered": 0,
+          "late": 0
+        },
+        "cursor": 4,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 1,
+            "first_timestamp": 100,
+            "kind": "alert",
+            "last_timestamp": 100,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 3,
+            "first_timestamp": 1300,
+            "kind": "alert",
+            "last_timestamp": 1300,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "07d0f01f3ab8d50bfb46f9fbb6924d62c807ba5f50a1271acdf8ec564b82ecb4",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual_sha256": "d790a91b9798ddada98692d56732c9e0d7bb229a8cadaab1b37cc33f9589a55f",
+      "case": "frontier_equal_waits",
+      "expected_sha256": "d790a91b9798ddada98692d56732c9e0d7bb229a8cadaab1b37cc33f9589a55f",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "3f84e259cae364d0177f919be6033a2efc3806a0b39d3bf2212a29b0a2b5f1b2",
+      "case": "eof_not_end",
+      "expected_sha256": "3f84e259cae364d0177f919be6033a2efc3806a0b39d3bf2212a29b0a2b5f1b2",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "82f8b5fd5981773ac89f81b51111aaee921eaeb312a77c44d9e995b5c8666b50",
+      "case": "empty_input",
+      "expected_sha256": "82f8b5fd5981773ac89f81b51111aaee921eaeb312a77c44d9e995b5c8666b50",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "baafc9ea339be8b103084a6e7cff034229a47982629a8dc33e36564fd0d7781d",
+      "case": "empty_end",
+      "expected_sha256": "baafc9ea339be8b103084a6e7cff034229a47982629a8dc33e36564fd0d7781d",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "afa5f8f102578509de1e43558dc74e700352ffbb027a61406bfb25639c70dcd0",
+      "case": "after_end_same_invocation",
+      "expected_sha256": "afa5f8f102578509de1e43558dc74e700352ffbb027a61406bfb25639c70dcd0",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "6144ada31617dd90af1870dc1dcacc28284d5334b8d9c56ee5b25e1b5e3596af",
+      "case": "invalid_duplicate_payload",
+      "expected_sha256": "6144ada31617dd90af1870dc1dcacc28284d5334b8d9c56ee5b25e1b5e3596af",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "72b542632c155241075e1baf7fd89be3fb0bc8ee3f44e0031d31ef110be7172d",
+      "case": "invalid_late_payload",
+      "expected_sha256": "72b542632c155241075e1baf7fd89be3fb0bc8ee3f44e0031d31ef110be7172d",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "073c363230333184b5c7508be333496dec0caf5b48291b1172a88b0e85b070c1",
+      "case": "future_invalid_preserves_commit",
+      "expected_sha256": "073c363230333184b5c7508be333496dec0caf5b48291b1172a88b0e85b070c1",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "aa72af71e6d584129b04d5b8845d09b5d33b820932a24b2a8ca3c94a4d3ea5f0",
+      "case": "decreasing_watermark",
+      "expected_sha256": "aa72af71e6d584129b04d5b8845d09b5d33b820932a24b2a8ca3c94a4d3ea5f0",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "39e28ad079915f32c9857527baa2e95a454450362eea4409946e6f24b590c18d",
+      "case": "duplicate_offset",
+      "expected_sha256": "39e28ad079915f32c9857527baa2e95a454450362eea4409946e6f24b590c18d",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "c2996ea083bba2f18367f93195b8e2ab0b9a19e88cc8e1886f32b6c904997f3c",
+      "case": "signed_timestamp_maximum",
+      "expected_sha256": "c2996ea083bba2f18367f93195b8e2ab0b9a19e88cc8e1886f32b6c904997f3c",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "01b04726642ab1054fbf189109176d676ec442ea8bab3b49044eaefd5845e5e0",
+      "case": "capacity_dedupe_entries",
+      "expected_sha256": "01b04726642ab1054fbf189109176d676ec442ea8bab3b49044eaefd5845e5e0",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "a1e809e179c7c6fb18873f019141721b07fb34b9d6c9dba8bf09e7dfc7001c1b",
+      "case": "capacity_buffered_events",
+      "expected_sha256": "a1e809e179c7c6fb18873f019141721b07fb34b9d6c9dba8bf09e7dfc7001c1b",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          3
+        ],
+        "counters": {
+          "accepted": 2,
+          "duplicate": 0,
+          "filtered": 0,
+          "late": 0
+        },
+        "cursor": 3,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "a",
+            "first_offset": 1,
+            "first_timestamp": 100,
+            "kind": "alert",
+            "last_timestamp": 100,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "34d8ede4a69b76edd7f7afcaa2834df2c68c86604de4d47f63546e8d8625aaf9",
+      "case": "capacity_open_groups",
+      "expected": {
+        "commits": [],
+        "counters": {
+          "accepted": 0,
+          "duplicate": 0,
+          "filtered": 0,
+          "late": 0
+        },
+        "cursor": null,
+        "error": {
+          "code": "CAPACITY",
+          "details": {
+            "resource": "open_groups"
+          },
+          "message": "unfinished groups exceed capacity"
+        },
+        "groups": [],
+        "status": "ERROR"
+      },
+      "expected_sha256": "adc6340070f45b293bfd9682df5af34d1c5278dd61ff475e330f4eb98a510ebb",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          3
+        ],
+        "counters": {
+          "accepted": 2,
+          "duplicate": 0,
+          "filtered": 0,
+          "late": 0
+        },
+        "cursor": 3,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "a",
+            "first_offset": 1,
+            "first_timestamp": 100,
+            "kind": "alert",
+            "last_timestamp": 100,
+            "message": "m",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "50ec84e6a3f97a43dacc4d31dfb269da6e6f5d784bc89c0e89efc7a64c59f9c9",
+      "case": "capacity_epoch_reports",
+      "expected": {
+        "commits": [],
+        "counters": {
+          "accepted": 0,
+          "duplicate": 0,
+          "filtered": 0,
+          "late": 0
+        },
+        "cursor": null,
+        "error": {
+          "code": "CAPACITY",
+          "details": {
+            "resource": "epoch_reports"
+          },
+          "message": "staged reports exceed capacity"
+        },
+        "groups": [],
+        "status": "ERROR"
+      },
+      "expected_sha256": "96ec667752a000c4761bcf3fbe5452c6422649f127b4eb6668bfcec4cf34b469",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual_sha256": "c083880b01b47288084e14543c546d50149234cbba57e83a5d2486c299cbf2ee",
+      "case": "authority_policy",
+      "expected_sha256": "c083880b01b47288084e14543c546d50149234cbba57e83a5d2486c299cbf2ee",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "8259a5cac280848950302d974593a7e310a26d1f50a55b56ea783e401a757a32",
+      "case": "authority_commit",
+      "expected_sha256": "8259a5cac280848950302d974593a7e310a26d1f50a55b56ea783e401a757a32",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "6e9e8c95c5ec667852e47ed4505c5ec83df696ef39b4482d48b8b3edf38b5171",
+      "case": "cancel_before",
+      "expected_sha256": "6e9e8c95c5ec667852e47ed4505c5ec83df696ef39b4482d48b8b3edf38b5171",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "6e9e8c95c5ec667852e47ed4505c5ec83df696ef39b4482d48b8b3edf38b5171",
+      "case": "cancel_policy",
+      "expected_sha256": "6e9e8c95c5ec667852e47ed4505c5ec83df696ef39b4482d48b8b3edf38b5171",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "4164d241a1ac76b7b73290fa4860bd3a92536d5ddd800be1fcca387a13b8e3d6",
+      "case": "policy_error",
+      "expected_sha256": "4164d241a1ac76b7b73290fa4860bd3a92536d5ddd800be1fcca387a13b8e3d6",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "ff664732a4d84abdc0d652b1673450e3e3bb93ddb147853931733110f68b872b",
+      "case": "invalid_policy",
+      "expected_sha256": "ff664732a4d84abdc0d652b1673450e3e3bb93ddb147853931733110f68b872b",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual_sha256": "e2066acb5fb008737019432f09e79f24987ed9ffc52e58f1beaa2348f856950c",
+      "case": "scope",
+      "expected_sha256": "e2066acb5fb008737019432f09e79f24987ed9ffc52e58f1beaa2348f856950c",
+      "oracle_manual_gate": true,
+      "passed": true,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          7,
+          19,
+          21,
+          24,
+          29,
+          33,
+          38,
+          40,
+          44,
+          46,
+          51
+        ],
+        "counters": {
+          "accepted": 24,
+          "duplicate": 10,
+          "filtered": 1,
+          "late": 5
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 16,
+            "first_timestamp": 50,
+            "kind": "alert",
+            "last_timestamp": 153,
+            "message": "a b",
+            "severity_sum": 5,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 9,
+            "first_timestamp": 82,
+            "kind": "alert",
+            "last_timestamp": 82,
+            "message": "a b",
+            "severity_sum": 1,
+            "tenant": "T"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 3,
+            "first_timestamp": 106,
+            "kind": "alert",
+            "last_timestamp": 115,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 2,
+            "first_timestamp": 197,
+            "kind": "alert",
+            "last_timestamp": 197,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 6,
+            "first_timestamp": 201,
+            "kind": "alert",
+            "last_timestamp": 201,
+            "message": "a b",
+            "severity_sum": 0,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 20,
+            "first_timestamp": 219,
+            "kind": "alert",
+            "last_timestamp": 219,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 11,
+            "first_timestamp": 229,
+            "kind": "alert",
+            "last_timestamp": 229,
+            "message": "a b",
+            "severity_sum": 1,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 12,
+            "first_timestamp": 357,
+            "kind": "alert",
+            "last_timestamp": 357,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "00365ab15d18766a1e4d907831067dfa9cd71f27809f1c9a1ef75a5b2ffe445b",
+      "case": "generated_0",
+      "expected": {
+        "commits": [
+          7,
+          19,
+          21,
+          24,
+          29,
+          33,
+          38,
+          40,
+          44,
+          46,
+          51
+        ],
+        "counters": {
+          "accepted": 23,
+          "duplicate": 12,
+          "filtered": 2,
+          "late": 3
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 4,
+            "device": "pump",
+            "first_offset": 5,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 478,
+            "message": "a b",
+            "severity_sum": 4,
+            "tenant": "t"
+          },
+          {
+            "count": 4,
+            "device": "pump",
+            "first_offset": 16,
+            "first_timestamp": 50,
+            "kind": "alert",
+            "last_timestamp": 357,
+            "message": "a b",
+            "severity_sum": 8,
+            "tenant": "T"
+          },
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 9,
+            "first_timestamp": 82,
+            "kind": "alert",
+            "last_timestamp": 656,
+            "message": "a b",
+            "severity_sum": 4,
+            "tenant": "T"
+          },
+          {
+            "count": 4,
+            "device": "pump",
+            "first_offset": 3,
+            "first_timestamp": 106,
+            "kind": "alert",
+            "last_timestamp": 366,
+            "message": "A b",
+            "severity_sum": 7,
+            "tenant": "t"
+          },
+          {
+            "count": 4,
+            "device": "pump",
+            "first_offset": 26,
+            "first_timestamp": 612,
+            "kind": "alert",
+            "last_timestamp": 1058,
+            "message": "A b",
+            "severity_sum": 8,
+            "tenant": "T"
+          },
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 39,
+            "first_timestamp": 826,
+            "kind": "alert",
+            "last_timestamp": 836,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 34,
+            "first_timestamp": 863,
+            "kind": "alert",
+            "last_timestamp": 863,
+            "message": "a b",
+            "severity_sum": 1,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 48,
+            "first_timestamp": 1073,
+            "kind": "alert",
+            "last_timestamp": 1144,
+            "message": "a b",
+            "severity_sum": 0,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "8822b2e950e21947496a442eea388737ee93fbad929329e25de73adb2129d226",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          3,
+          8,
+          31,
+          51
+        ],
+        "counters": {
+          "accepted": 16,
+          "duplicate": 11,
+          "filtered": 7,
+          "late": 13
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 1,
+            "first_timestamp": 40,
+            "kind": "alert",
+            "last_timestamp": 40,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 11,
+            "first_timestamp": 99,
+            "kind": "alert",
+            "last_timestamp": 99,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "1b779218c2e4d72d313c3545c48a1887ccf828cd3e8cbf97ff254246c6605c35",
+      "case": "generated_1",
+      "expected": {
+        "commits": [
+          3,
+          8,
+          31,
+          51
+        ],
+        "counters": {
+          "accepted": 15,
+          "duplicate": 21,
+          "filtered": 4,
+          "late": 7
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 3,
+            "device": "motor",
+            "first_offset": 2,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 364,
+            "message": "A b",
+            "severity_sum": 8,
+            "tenant": "t"
+          },
+          {
+            "count": 3,
+            "device": "pump",
+            "first_offset": 1,
+            "first_timestamp": 40,
+            "kind": "alert",
+            "last_timestamp": 456,
+            "message": "a b",
+            "severity_sum": 7,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 11,
+            "first_timestamp": 99,
+            "kind": "alert",
+            "last_timestamp": 223,
+            "message": "a b",
+            "severity_sum": 5,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 19,
+            "first_timestamp": 153,
+            "kind": "alert",
+            "last_timestamp": 182,
+            "message": "a b",
+            "severity_sum": 4,
+            "tenant": "T"
+          },
+          {
+            "count": 3,
+            "device": "pump",
+            "first_offset": 10,
+            "first_timestamp": 198,
+            "kind": "alert",
+            "last_timestamp": 326,
+            "message": "A b",
+            "severity_sum": 9,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 39,
+            "first_timestamp": 283,
+            "kind": "alert",
+            "last_timestamp": 283,
+            "message": "A b",
+            "severity_sum": 1,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 33,
+            "first_timestamp": 318,
+            "kind": "alert",
+            "last_timestamp": 318,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "6a0f7b1c8d59f2d2fe48c46fe5c2765ded07629256b827907f2ada890ab8121a",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          8,
+          17,
+          33,
+          45,
+          51
+        ],
+        "counters": {
+          "accepted": 13,
+          "duplicate": 9,
+          "filtered": 15,
+          "late": 9
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 12,
+            "first_timestamp": 109,
+            "kind": "alert",
+            "last_timestamp": 109,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 10,
+            "first_timestamp": 114,
+            "kind": "alert",
+            "last_timestamp": 114,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 14,
+            "first_timestamp": 122,
+            "kind": "alert",
+            "last_timestamp": 122,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "de70c1fdff7172aca3c26ba323aa1bae2bc37829e79c250773a01c3e285f4611",
+      "case": "generated_2",
+      "expected": {
+        "commits": [
+          8,
+          17,
+          33,
+          45,
+          51
+        ],
+        "counters": {
+          "accepted": 9,
+          "duplicate": 18,
+          "filtered": 15,
+          "late": 4
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 2,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 109,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "t"
+          },
+          {
+            "count": 4,
+            "device": "motor",
+            "first_offset": 10,
+            "first_timestamp": 114,
+            "kind": "alert",
+            "last_timestamp": 470,
+            "message": "a b",
+            "severity_sum": 10,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 6,
+            "first_timestamp": 187,
+            "kind": "alert",
+            "last_timestamp": 187,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 19,
+            "first_timestamp": 263,
+            "kind": "alert",
+            "last_timestamp": 263,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 25,
+            "first_timestamp": 317,
+            "kind": "alert",
+            "last_timestamp": 317,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "b0a7ef49ea34f76463a37230382c24afaaa0ce4072df4166c292dbd66251faca",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          1,
+          6,
+          12,
+          13,
+          14,
+          18,
+          33,
+          37,
+          41,
+          49,
+          51
+        ],
+        "counters": {
+          "accepted": 4,
+          "duplicate": 3,
+          "filtered": 19,
+          "late": 14
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 22,
+            "first_timestamp": 572,
+            "kind": "alert",
+            "last_timestamp": 700,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 21,
+            "first_timestamp": 703,
+            "kind": "alert",
+            "last_timestamp": 703,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "8e9056b719261fab76ca42117634d842f2389716d6af7e4fa31edc42f6053594",
+      "case": "generated_3",
+      "expected": {
+        "commits": [
+          1,
+          6,
+          12,
+          13,
+          14,
+          18,
+          33,
+          37,
+          41,
+          49,
+          51
+        ],
+        "counters": {
+          "accepted": 3,
+          "duplicate": 10,
+          "filtered": 14,
+          "late": 13
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 22,
+            "first_timestamp": 572,
+            "kind": "alert",
+            "last_timestamp": 700,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 21,
+            "first_timestamp": 703,
+            "kind": "alert",
+            "last_timestamp": 703,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "643ea643034803498921171673600327053e2df4b05d5382fbd56d9fd12c3050",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          1,
+          7,
+          10,
+          11,
+          19,
+          27,
+          30,
+          33,
+          36,
+          37,
+          41,
+          48,
+          51
+        ],
+        "counters": {
+          "accepted": 20,
+          "duplicate": 7,
+          "filtered": 3,
+          "late": 8
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 5,
+            "first_timestamp": 182,
+            "kind": "alert",
+            "last_timestamp": 182,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 9,
+            "first_timestamp": 194,
+            "kind": "alert",
+            "last_timestamp": 194,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 3,
+            "device": "motor",
+            "first_offset": 17,
+            "first_timestamp": 205,
+            "kind": "alert",
+            "last_timestamp": 364,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 8,
+            "first_timestamp": 224,
+            "kind": "alert",
+            "last_timestamp": 396,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 4,
+            "first_timestamp": 344,
+            "kind": "alert",
+            "last_timestamp": 344,
+            "message": "a b",
+            "severity_sum": 0,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 21,
+            "first_timestamp": 446,
+            "kind": "alert",
+            "last_timestamp": 446,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 14,
+            "first_timestamp": 471,
+            "kind": "alert",
+            "last_timestamp": 471,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "7def74880496d5bb4e066db5c1aa177216729df8dc476efaeafc956e6b940b15",
+      "case": "generated_4",
+      "expected": {
+        "commits": [
+          1,
+          7,
+          10,
+          11,
+          19,
+          27,
+          30,
+          33,
+          36,
+          37,
+          41,
+          48,
+          51
+        ],
+        "counters": {
+          "accepted": 18,
+          "duplicate": 9,
+          "filtered": 3,
+          "late": 8
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 5,
+            "first_timestamp": 182,
+            "kind": "alert",
+            "last_timestamp": 508,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 9,
+            "first_timestamp": 194,
+            "kind": "alert",
+            "last_timestamp": 446,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "t"
+          },
+          {
+            "count": 4,
+            "device": "motor",
+            "first_offset": 17,
+            "first_timestamp": 205,
+            "kind": "alert",
+            "last_timestamp": 600,
+            "message": "a b",
+            "severity_sum": 4,
+            "tenant": "t"
+          },
+          {
+            "count": 4,
+            "device": "motor",
+            "first_offset": 8,
+            "first_timestamp": 224,
+            "kind": "alert",
+            "last_timestamp": 603,
+            "message": "A b",
+            "severity_sum": 7,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 12,
+            "first_timestamp": 564,
+            "kind": "alert",
+            "last_timestamp": 1126,
+            "message": "a b",
+            "severity_sum": 4,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 22,
+            "first_timestamp": 582,
+            "kind": "alert",
+            "last_timestamp": 582,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 32,
+            "first_timestamp": 737,
+            "kind": "alert",
+            "last_timestamp": 737,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 35,
+            "first_timestamp": 788,
+            "kind": "alert",
+            "last_timestamp": 788,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 49,
+            "first_timestamp": 1387,
+            "kind": "alert",
+            "last_timestamp": 1387,
+            "message": "a b",
+            "severity_sum": 0,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "7f7c50100e4d8944a3e2212e4e83b5005d56bd0df1fff66a601d9a0b4a505b32",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          8,
+          17,
+          25,
+          30,
+          31,
+          42,
+          44,
+          48,
+          50,
+          51
+        ],
+        "counters": {
+          "accepted": 14,
+          "duplicate": 8,
+          "filtered": 5,
+          "late": 14
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 1,
+            "first_timestamp": 167,
+            "kind": "alert",
+            "last_timestamp": 180,
+            "message": "A b",
+            "severity_sum": 4,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 12,
+            "first_timestamp": 168,
+            "kind": "alert",
+            "last_timestamp": 168,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 38,
+            "first_timestamp": 196,
+            "kind": "alert",
+            "last_timestamp": 196,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 15,
+            "first_timestamp": 212,
+            "kind": "alert",
+            "last_timestamp": 212,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "7e517ba8336858d896bc2fb499eeacbb14e3bffb255557373a449c2141ad3cab",
+      "case": "generated_5",
+      "expected": {
+        "commits": [
+          8,
+          17,
+          25,
+          30,
+          31,
+          42,
+          44,
+          48,
+          50,
+          51
+        ],
+        "counters": {
+          "accepted": 17,
+          "duplicate": 11,
+          "filtered": 6,
+          "late": 7
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 2,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 168,
+            "message": "A b",
+            "severity_sum": 6,
+            "tenant": "t"
+          },
+          {
+            "count": 5,
+            "device": "pump",
+            "first_offset": 7,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 371,
+            "message": "a b",
+            "severity_sum": 10,
+            "tenant": "t"
+          },
+          {
+            "count": 3,
+            "device": "motor",
+            "first_offset": 1,
+            "first_timestamp": 167,
+            "kind": "alert",
+            "last_timestamp": 370,
+            "message": "A b",
+            "severity_sum": 6,
+            "tenant": "T"
+          },
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 15,
+            "first_timestamp": 212,
+            "kind": "alert",
+            "last_timestamp": 494,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 13,
+            "first_timestamp": 287,
+            "kind": "alert",
+            "last_timestamp": 287,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 36,
+            "first_timestamp": 409,
+            "kind": "alert",
+            "last_timestamp": 652,
+            "message": "a b",
+            "severity_sum": 4,
+            "tenant": "T"
+          },
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 41,
+            "first_timestamp": 493,
+            "kind": "alert",
+            "last_timestamp": 741,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "73da41c5c7f4791d416bbf9f83c617af5dab76933d9c4667d45f1ac63efde7c9",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          17,
+          18,
+          27,
+          31,
+          51
+        ],
+        "counters": {
+          "accepted": 11,
+          "duplicate": 4,
+          "filtered": 19,
+          "late": 12
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 11,
+            "first_timestamp": 140,
+            "kind": "alert",
+            "last_timestamp": 140,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 24,
+            "first_timestamp": 196,
+            "kind": "alert",
+            "last_timestamp": 196,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 10,
+            "first_timestamp": 205,
+            "kind": "alert",
+            "last_timestamp": 205,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "fa29ce1e169b84eab67d05fb72ca9a3083343be5439f1f9430728dc2b20c339c",
+      "case": "generated_6",
+      "expected": {
+        "commits": [
+          17,
+          18,
+          27,
+          31,
+          51
+        ],
+        "counters": {
+          "accepted": 8,
+          "duplicate": 15,
+          "filtered": 17,
+          "late": 6
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 15,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 196,
+            "message": "A b",
+            "severity_sum": 6,
+            "tenant": "t"
+          },
+          {
+            "count": 4,
+            "device": "motor",
+            "first_offset": 16,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 570,
+            "message": "A b",
+            "severity_sum": 11,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 10,
+            "first_timestamp": 205,
+            "kind": "alert",
+            "last_timestamp": 205,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 12,
+            "first_timestamp": 222,
+            "kind": "alert",
+            "last_timestamp": 222,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "e4b4507fda73cd69c3de557b6ac9881bce2a8513c2fe9f33552167adcbcca016",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          1,
+          7,
+          10,
+          20,
+          35,
+          38,
+          42,
+          43,
+          46,
+          48,
+          51
+        ],
+        "counters": {
+          "accepted": 9,
+          "duplicate": 3,
+          "filtered": 22,
+          "late": 6
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 11,
+            "first_timestamp": 48,
+            "kind": "alert",
+            "last_timestamp": 197,
+            "message": "A b",
+            "severity_sum": 6,
+            "tenant": "T"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 25,
+            "first_timestamp": 165,
+            "kind": "alert",
+            "last_timestamp": 234,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 36,
+            "first_timestamp": 268,
+            "kind": "alert",
+            "last_timestamp": 268,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 32,
+            "first_timestamp": 403,
+            "kind": "alert",
+            "last_timestamp": 403,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 40,
+            "first_timestamp": 585,
+            "kind": "alert",
+            "last_timestamp": 585,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 39,
+            "first_timestamp": 660,
+            "kind": "alert",
+            "last_timestamp": 660,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "cad4b3bd7885c41b3b55afbd0dca4a0986fcb39e6d9079e4327c3082a9e5e5ba",
+      "case": "generated_7",
+      "expected": {
+        "commits": [
+          1,
+          7,
+          10,
+          20,
+          35,
+          38,
+          42,
+          43,
+          46,
+          48,
+          51
+        ],
+        "counters": {
+          "accepted": 5,
+          "duplicate": 13,
+          "filtered": 19,
+          "late": 3
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 3,
+            "device": "pump",
+            "first_offset": 25,
+            "first_timestamp": 165,
+            "kind": "alert",
+            "last_timestamp": 660,
+            "message": "a b",
+            "severity_sum": 9,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 19,
+            "first_timestamp": 197,
+            "kind": "alert",
+            "last_timestamp": 197,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 36,
+            "first_timestamp": 268,
+            "kind": "alert",
+            "last_timestamp": 268,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "e3cb8b5bff7756f54f5a71c6e0b425399924b06cb91d426b96fc96f6a8aad7af",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          10,
+          12,
+          17,
+          22,
+          34,
+          36,
+          38,
+          48,
+          49,
+          51
+        ],
+        "counters": {
+          "accepted": 19,
+          "duplicate": 10,
+          "filtered": 2,
+          "late": 10
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 11,
+            "first_timestamp": 19,
+            "kind": "alert",
+            "last_timestamp": 87,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 3,
+            "device": "pump",
+            "first_offset": 3,
+            "first_timestamp": 83,
+            "kind": "alert",
+            "last_timestamp": 242,
+            "message": "a b",
+            "severity_sum": 5,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 6,
+            "first_timestamp": 145,
+            "kind": "alert",
+            "last_timestamp": 145,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 16,
+            "first_timestamp": 160,
+            "kind": "alert",
+            "last_timestamp": 160,
+            "message": "A b",
+            "severity_sum": 0,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 8,
+            "first_timestamp": 177,
+            "kind": "alert",
+            "last_timestamp": 177,
+            "message": "a b",
+            "severity_sum": 1,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "ded3fd51cc4b4c4cdf090c7b1cf146aee833e61083e3b71b1b97e0d6e91f7eee",
+      "case": "generated_8",
+      "expected": {
+        "commits": [
+          10,
+          12,
+          17,
+          22,
+          34,
+          36,
+          38,
+          48,
+          49,
+          51
+        ],
+        "counters": {
+          "accepted": 21,
+          "duplicate": 11,
+          "filtered": 3,
+          "late": 6
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 5,
+            "device": "pump",
+            "first_offset": 2,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 261,
+            "message": "a b",
+            "severity_sum": 8,
+            "tenant": "t"
+          },
+          {
+            "count": 4,
+            "device": "motor",
+            "first_offset": 4,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 288,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "t"
+          },
+          {
+            "count": 5,
+            "device": "pump",
+            "first_offset": 9,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 382,
+            "message": "a b",
+            "severity_sum": 9,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 6,
+            "first_timestamp": 145,
+            "kind": "alert",
+            "last_timestamp": 145,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "T"
+          },
+          {
+            "count": 3,
+            "device": "pump",
+            "first_offset": 16,
+            "first_timestamp": 160,
+            "kind": "alert",
+            "last_timestamp": 536,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 41,
+            "first_timestamp": 522,
+            "kind": "alert",
+            "last_timestamp": 522,
+            "message": "a b",
+            "severity_sum": 1,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 35,
+            "first_timestamp": 568,
+            "kind": "alert",
+            "last_timestamp": 568,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 50,
+            "first_timestamp": 940,
+            "kind": "alert",
+            "last_timestamp": 940,
+            "message": "a b",
+            "severity_sum": 0,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "de69bedb958b1e2a5381cd2b5fb222a93eb518eab484720b36328c8fe196d495",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          10,
+          24,
+          25,
+          27,
+          31,
+          35,
+          37,
+          44,
+          50,
+          51
+        ],
+        "counters": {
+          "accepted": 18,
+          "duplicate": 8,
+          "filtered": 5,
+          "late": 10
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 3,
+            "first_timestamp": 18,
+            "kind": "alert",
+            "last_timestamp": 98,
+            "message": "a b",
+            "severity_sum": 5,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 4,
+            "first_timestamp": 20,
+            "kind": "alert",
+            "last_timestamp": 20,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 22,
+            "first_timestamp": 58,
+            "kind": "alert",
+            "last_timestamp": 102,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 23,
+            "first_timestamp": 63,
+            "kind": "alert",
+            "last_timestamp": 63,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 16,
+            "first_timestamp": 162,
+            "kind": "alert",
+            "last_timestamp": 162,
+            "message": "a b",
+            "severity_sum": 1,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 6,
+            "first_timestamp": 170,
+            "kind": "alert",
+            "last_timestamp": 170,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 15,
+            "first_timestamp": 249,
+            "kind": "alert",
+            "last_timestamp": 249,
+            "message": "A b",
+            "severity_sum": 1,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "b71674ee774a76c2a81695f6c619844ea8a0b1c37f771dd790acd0ae625362f5",
+      "case": "generated_9",
+      "expected": {
+        "commits": [
+          10,
+          24,
+          25,
+          27,
+          31,
+          35,
+          37,
+          44,
+          50,
+          51
+        ],
+        "counters": {
+          "accepted": 19,
+          "duplicate": 14,
+          "filtered": 5,
+          "late": 3
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 4,
+            "device": "pump",
+            "first_offset": 1,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 249,
+            "message": "A b",
+            "severity_sum": 9,
+            "tenant": "t"
+          },
+          {
+            "count": 3,
+            "device": "pump",
+            "first_offset": 2,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 573,
+            "message": "a b",
+            "severity_sum": 7,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 12,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 0,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "T"
+          },
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 3,
+            "first_timestamp": 18,
+            "kind": "alert",
+            "last_timestamp": 98,
+            "message": "a b",
+            "severity_sum": 5,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 22,
+            "first_timestamp": 58,
+            "kind": "alert",
+            "last_timestamp": 102,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "T"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 23,
+            "first_timestamp": 63,
+            "kind": "alert",
+            "last_timestamp": 170,
+            "message": "A b",
+            "severity_sum": 4,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 29,
+            "first_timestamp": 486,
+            "kind": "alert",
+            "last_timestamp": 486,
+            "message": "A b",
+            "severity_sum": 1,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 39,
+            "first_timestamp": 968,
+            "kind": "alert",
+            "last_timestamp": 1021,
+            "message": "A b",
+            "severity_sum": 4,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 42,
+            "first_timestamp": 997,
+            "kind": "alert",
+            "last_timestamp": 1052,
+            "message": "a b",
+            "severity_sum": 5,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "5b1cffe1fe5c60fc28866296713169397b65754372b352c3a85f76d99e53cdf4",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          3,
+          12,
+          16,
+          23,
+          31,
+          35,
+          36,
+          50,
+          51
+        ],
+        "counters": {
+          "accepted": 7,
+          "duplicate": 1,
+          "filtered": 22,
+          "late": 12
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 1,
+            "first_timestamp": 94,
+            "kind": "alert",
+            "last_timestamp": 94,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 19,
+            "first_timestamp": 103,
+            "kind": "alert",
+            "last_timestamp": 391,
+            "message": "a b",
+            "severity_sum": 4,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 11,
+            "first_timestamp": 137,
+            "kind": "alert",
+            "last_timestamp": 137,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 26,
+            "first_timestamp": 235,
+            "kind": "alert",
+            "last_timestamp": 235,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "fa09057ff82c5443c799aeb00fb224c5dae4d6ca78cc88a74f09aed563b4d023",
+      "case": "generated_10",
+      "expected": {
+        "commits": [
+          3,
+          12,
+          16,
+          23,
+          31,
+          35,
+          36,
+          50,
+          51
+        ],
+        "counters": {
+          "accepted": 6,
+          "duplicate": 10,
+          "filtered": 18,
+          "late": 8
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 1,
+            "first_timestamp": 94,
+            "kind": "alert",
+            "last_timestamp": 94,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 19,
+            "first_timestamp": 103,
+            "kind": "alert",
+            "last_timestamp": 391,
+            "message": "a b",
+            "severity_sum": 4,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 11,
+            "first_timestamp": 137,
+            "kind": "alert",
+            "last_timestamp": 521,
+            "message": "A b",
+            "severity_sum": 5,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 41,
+            "first_timestamp": 502,
+            "kind": "alert",
+            "last_timestamp": 502,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "b4b12822a7cfe33a86eb883c8e69e0ed4741230922478d64e5fe5cc6281966e5",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          6,
+          9,
+          16,
+          21,
+          30,
+          31,
+          40,
+          44,
+          51
+        ],
+        "counters": {
+          "accepted": 6,
+          "duplicate": 2,
+          "filtered": 28,
+          "late": 6
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 3,
+            "first_timestamp": 211,
+            "kind": "alert",
+            "last_timestamp": 211,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 8,
+            "first_timestamp": 319,
+            "kind": "alert",
+            "last_timestamp": 319,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 26,
+            "first_timestamp": 457,
+            "kind": "alert",
+            "last_timestamp": 457,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 38,
+            "first_timestamp": 851,
+            "kind": "alert",
+            "last_timestamp": 851,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "27734f7ab7bb45f625eb8a1569899df575bfaf9113d1d35a7cfd5d83741d222d",
+      "case": "generated_11",
+      "expected": {
+        "commits": [
+          6,
+          9,
+          16,
+          21,
+          30,
+          31,
+          40,
+          44,
+          51
+        ],
+        "counters": {
+          "accepted": 5,
+          "duplicate": 16,
+          "filtered": 17,
+          "late": 4
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 1,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 211,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 8,
+            "first_timestamp": 319,
+            "kind": "alert",
+            "last_timestamp": 319,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 26,
+            "first_timestamp": 457,
+            "kind": "alert",
+            "last_timestamp": 457,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 46,
+            "first_timestamp": 1027,
+            "kind": "alert",
+            "last_timestamp": 1027,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "ad8e7436046033447423cfecce0d02ae0195bb1c628adbdba30f6d31431840d0",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          5,
+          26,
+          29,
+          32,
+          34,
+          36,
+          38,
+          41,
+          47,
+          51
+        ],
+        "counters": {
+          "accepted": 17,
+          "duplicate": 10,
+          "filtered": 1,
+          "late": 13
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 24,
+            "first_timestamp": 67,
+            "kind": "alert",
+            "last_timestamp": 67,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 21,
+            "first_timestamp": 86,
+            "kind": "alert",
+            "last_timestamp": 86,
+            "message": "a b",
+            "severity_sum": 1,
+            "tenant": "T"
+          },
+          {
+            "count": 4,
+            "device": "pump",
+            "first_offset": 16,
+            "first_timestamp": 111,
+            "kind": "alert",
+            "last_timestamp": 173,
+            "message": "a b",
+            "severity_sum": 5,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 27,
+            "first_timestamp": 131,
+            "kind": "alert",
+            "last_timestamp": 144,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "7d6f4a7d406ca38e5798d49cbf4b742450b68c15fd0a085a0bf3009f3d3858a0",
+      "case": "generated_12",
+      "expected": {
+        "commits": [
+          5,
+          26,
+          29,
+          32,
+          34,
+          36,
+          38,
+          41,
+          47,
+          51
+        ],
+        "counters": {
+          "accepted": 18,
+          "duplicate": 16,
+          "filtered": 4,
+          "late": 3
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 7,
+            "device": "pump",
+            "first_offset": 11,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 255,
+            "message": "a b",
+            "severity_sum": 12,
+            "tenant": "t"
+          },
+          {
+            "count": 4,
+            "device": "pump",
+            "first_offset": 13,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 144,
+            "message": "A b",
+            "severity_sum": 8,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 24,
+            "first_timestamp": 67,
+            "kind": "alert",
+            "last_timestamp": 67,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 10,
+            "first_timestamp": 220,
+            "kind": "alert",
+            "last_timestamp": 220,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 2,
+            "first_timestamp": 226,
+            "kind": "alert",
+            "last_timestamp": 271,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 35,
+            "first_timestamp": 267,
+            "kind": "alert",
+            "last_timestamp": 267,
+            "message": "a b",
+            "severity_sum": 1,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 44,
+            "first_timestamp": 616,
+            "kind": "alert",
+            "last_timestamp": 616,
+            "message": "a b",
+            "severity_sum": 0,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 45,
+            "first_timestamp": 712,
+            "kind": "alert",
+            "last_timestamp": 712,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "16d2c1db001bd32b23fc3ef9dbe0d7c87ae4745a4706b6d3bd992e21774edc66",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          10,
+          18,
+          21,
+          24,
+          25,
+          32,
+          34,
+          40,
+          42,
+          51
+        ],
+        "counters": {
+          "accepted": 19,
+          "duplicate": 4,
+          "filtered": 9,
+          "late": 9
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 13,
+            "first_timestamp": 3,
+            "kind": "alert",
+            "last_timestamp": 3,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 5,
+            "first_timestamp": 28,
+            "kind": "alert",
+            "last_timestamp": 28,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 3,
+            "device": "pump",
+            "first_offset": 1,
+            "first_timestamp": 55,
+            "kind": "alert",
+            "last_timestamp": 391,
+            "message": "A b",
+            "severity_sum": 6,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 2,
+            "first_timestamp": 128,
+            "kind": "alert",
+            "last_timestamp": 128,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 16,
+            "first_timestamp": 289,
+            "kind": "alert",
+            "last_timestamp": 289,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 22,
+            "first_timestamp": 447,
+            "kind": "alert",
+            "last_timestamp": 447,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 31,
+            "first_timestamp": 569,
+            "kind": "alert",
+            "last_timestamp": 569,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "48bc114aa3a27f80fb1e44cd4bdb14f4b08cb86568c0db335f070d1978d0e856",
+      "case": "generated_13",
+      "expected": {
+        "commits": [
+          10,
+          18,
+          21,
+          24,
+          25,
+          32,
+          34,
+          40,
+          42,
+          51
+        ],
+        "counters": {
+          "accepted": 16,
+          "duplicate": 12,
+          "filtered": 9,
+          "late": 4
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 4,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 128,
+            "message": "a b",
+            "severity_sum": 5,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 15,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 0,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 5,
+            "first_timestamp": 28,
+            "kind": "alert",
+            "last_timestamp": 447,
+            "message": "a b",
+            "severity_sum": 5,
+            "tenant": "T"
+          },
+          {
+            "count": 3,
+            "device": "pump",
+            "first_offset": 1,
+            "first_timestamp": 55,
+            "kind": "alert",
+            "last_timestamp": 391,
+            "message": "A b",
+            "severity_sum": 6,
+            "tenant": "t"
+          },
+          {
+            "count": 3,
+            "device": "pump",
+            "first_offset": 31,
+            "first_timestamp": 569,
+            "kind": "alert",
+            "last_timestamp": 904,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 45,
+            "first_timestamp": 864,
+            "kind": "alert",
+            "last_timestamp": 864,
+            "message": "a b",
+            "severity_sum": 1,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 46,
+            "first_timestamp": 888,
+            "kind": "alert",
+            "last_timestamp": 888,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 36,
+            "first_timestamp": 902,
+            "kind": "alert",
+            "last_timestamp": 902,
+            "message": "A b",
+            "severity_sum": 1,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 39,
+            "first_timestamp": 949,
+            "kind": "alert",
+            "last_timestamp": 1134,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "b82d1139137d66ff3bb56368a20368461a846095afcf76e27e62654803e9d056",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          8,
+          10,
+          13,
+          19,
+          37,
+          38,
+          49,
+          51
+        ],
+        "counters": {
+          "accepted": 10,
+          "duplicate": 4,
+          "filtered": 19,
+          "late": 10
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 6,
+            "first_timestamp": 28,
+            "kind": "alert",
+            "last_timestamp": 444,
+            "message": "A b",
+            "severity_sum": 5,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 5,
+            "first_timestamp": 84,
+            "kind": "alert",
+            "last_timestamp": 84,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 9,
+            "first_timestamp": 185,
+            "kind": "alert",
+            "last_timestamp": 185,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 16,
+            "first_timestamp": 454,
+            "kind": "alert",
+            "last_timestamp": 454,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 26,
+            "first_timestamp": 480,
+            "kind": "alert",
+            "last_timestamp": 480,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "752dcfc22dc107603d12f6e741f1e3c5d83975290daa2f0429760c4fc8f871f7",
+      "case": "generated_14",
+      "expected": {
+        "commits": [
+          8,
+          10,
+          13,
+          19,
+          37,
+          38,
+          49,
+          51
+        ],
+        "counters": {
+          "accepted": 7,
+          "duplicate": 9,
+          "filtered": 17,
+          "late": 10
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 3,
+            "device": "motor",
+            "first_offset": 6,
+            "first_timestamp": 28,
+            "kind": "alert",
+            "last_timestamp": 504,
+            "message": "A b",
+            "severity_sum": 8,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 5,
+            "first_timestamp": 84,
+            "kind": "alert",
+            "last_timestamp": 84,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 9,
+            "first_timestamp": 185,
+            "kind": "alert",
+            "last_timestamp": 185,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 21,
+            "first_timestamp": 505,
+            "kind": "alert",
+            "last_timestamp": 505,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 39,
+            "first_timestamp": 831,
+            "kind": "alert",
+            "last_timestamp": 831,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "e78f5c6a7f61b96674ca95041d19100eeae763497d209be67d12f97541751b0c",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          2,
+          4,
+          8,
+          13,
+          15,
+          19,
+          20,
+          22,
+          23,
+          26,
+          28,
+          31,
+          34,
+          44,
+          49,
+          51
+        ],
+        "counters": {
+          "accepted": 6,
+          "duplicate": 3,
+          "filtered": 21,
+          "late": 5
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 3,
+            "first_timestamp": 331,
+            "kind": "alert",
+            "last_timestamp": 620,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 29,
+            "first_timestamp": 890,
+            "kind": "alert",
+            "last_timestamp": 890,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 32,
+            "first_timestamp": 998,
+            "kind": "alert",
+            "last_timestamp": 998,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 30,
+            "first_timestamp": 1205,
+            "kind": "alert",
+            "last_timestamp": 1205,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "66136941eacd6271f1dc158e0de275282d420e3b461c54e03bf71db0bcb1f35c",
+      "case": "generated_15",
+      "expected": {
+        "commits": [
+          2,
+          4,
+          8,
+          13,
+          15,
+          19,
+          20,
+          22,
+          23,
+          26,
+          28,
+          31,
+          34,
+          44,
+          49,
+          51
+        ],
+        "counters": {
+          "accepted": 4,
+          "duplicate": 10,
+          "filtered": 17,
+          "late": 4
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 3,
+            "first_timestamp": 331,
+            "kind": "alert",
+            "last_timestamp": 620,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 32,
+            "first_timestamp": 998,
+            "kind": "alert",
+            "last_timestamp": 998,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 30,
+            "first_timestamp": 1205,
+            "kind": "alert",
+            "last_timestamp": 1205,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "7ec6ecb65ea6b20c9cd8305964f95a553546da18d6c69b73666e561b5f508aec",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          4,
+          5,
+          6,
+          30,
+          31,
+          42,
+          49,
+          50,
+          51
+        ],
+        "counters": {
+          "accepted": 20,
+          "duplicate": 14,
+          "filtered": 2,
+          "late": 6
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 3,
+            "first_timestamp": 17,
+            "kind": "alert",
+            "last_timestamp": 17,
+            "message": "A b",
+            "severity_sum": 1,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 10,
+            "first_timestamp": 31,
+            "kind": "alert",
+            "last_timestamp": 31,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 24,
+            "first_timestamp": 81,
+            "kind": "alert",
+            "last_timestamp": 81,
+            "message": "a b",
+            "severity_sum": 0,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 21,
+            "first_timestamp": 122,
+            "kind": "alert",
+            "last_timestamp": 122,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 7,
+            "first_timestamp": 168,
+            "kind": "alert",
+            "last_timestamp": 168,
+            "message": "A b",
+            "severity_sum": 1,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 2,
+            "first_timestamp": 176,
+            "kind": "alert",
+            "last_timestamp": 176,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "86ce151f7a78fe767539c259317c75060e75db216d7fa2fc2814a6b632563878",
+      "case": "generated_16",
+      "expected": {
+        "commits": [
+          4,
+          5,
+          6,
+          30,
+          31,
+          42,
+          49,
+          50,
+          51
+        ],
+        "counters": {
+          "accepted": 21,
+          "duplicate": 17,
+          "filtered": 2,
+          "late": 2
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 7,
+            "device": "pump",
+            "first_offset": 15,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 547,
+            "message": "a b",
+            "severity_sum": 12,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 3,
+            "first_timestamp": 17,
+            "kind": "alert",
+            "last_timestamp": 17,
+            "message": "A b",
+            "severity_sum": 1,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 10,
+            "first_timestamp": 31,
+            "kind": "alert",
+            "last_timestamp": 31,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 24,
+            "first_timestamp": 81,
+            "kind": "alert",
+            "last_timestamp": 599,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 7,
+            "first_timestamp": 168,
+            "kind": "alert",
+            "last_timestamp": 168,
+            "message": "A b",
+            "severity_sum": 1,
+            "tenant": "T"
+          },
+          {
+            "count": 2,
+            "device": "motor",
+            "first_offset": 2,
+            "first_timestamp": 176,
+            "kind": "alert",
+            "last_timestamp": 358,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 5,
+            "device": "pump",
+            "first_offset": 12,
+            "first_timestamp": 179,
+            "kind": "alert",
+            "last_timestamp": 572,
+            "message": "a b",
+            "severity_sum": 9,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 29,
+            "first_timestamp": 310,
+            "kind": "alert",
+            "last_timestamp": 603,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "8644197afe00bee226664c635ad9a2893043091758969564da7cac65c2b29050",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          8,
+          15,
+          17,
+          21,
+          26,
+          31,
+          32,
+          36,
+          40,
+          51
+        ],
+        "counters": {
+          "accepted": 22,
+          "duplicate": 7,
+          "filtered": 5,
+          "late": 7
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 6,
+            "first_timestamp": 75,
+            "kind": "alert",
+            "last_timestamp": 187,
+            "message": "a b",
+            "severity_sum": 4,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 5,
+            "first_timestamp": 129,
+            "kind": "alert",
+            "last_timestamp": 129,
+            "message": "A b",
+            "severity_sum": 1,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 3,
+            "first_timestamp": 180,
+            "kind": "alert",
+            "last_timestamp": 180,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 10,
+            "first_timestamp": 198,
+            "kind": "alert",
+            "last_timestamp": 319,
+            "message": "A b",
+            "severity_sum": 5,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 2,
+            "first_timestamp": 202,
+            "kind": "alert",
+            "last_timestamp": 202,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 14,
+            "first_timestamp": 310,
+            "kind": "alert",
+            "last_timestamp": 310,
+            "message": "a b",
+            "severity_sum": 1,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 11,
+            "first_timestamp": 312,
+            "kind": "alert",
+            "last_timestamp": 312,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "4a7e313fe8fecd3581d07301a247e82c609fb31f6369da7ac44f13d1ef8f3ed8",
+      "case": "generated_17",
+      "expected": {
+        "commits": [
+          8,
+          15,
+          17,
+          21,
+          26,
+          31,
+          32,
+          36,
+          40,
+          51
+        ],
+        "counters": {
+          "accepted": 19,
+          "duplicate": 13,
+          "filtered": 6,
+          "late": 3
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 4,
+            "device": "pump",
+            "first_offset": 1,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 561,
+            "message": "A b",
+            "severity_sum": 10,
+            "tenant": "t"
+          },
+          {
+            "count": 6,
+            "device": "pump",
+            "first_offset": 4,
+            "first_timestamp": 0,
+            "kind": "alert",
+            "last_timestamp": 554,
+            "message": "a b",
+            "severity_sum": 14,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 5,
+            "first_timestamp": 129,
+            "kind": "alert",
+            "last_timestamp": 129,
+            "message": "A b",
+            "severity_sum": 1,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 3,
+            "first_timestamp": 180,
+            "kind": "alert",
+            "last_timestamp": 180,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 2,
+            "first_timestamp": 202,
+            "kind": "alert",
+            "last_timestamp": 202,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 3,
+            "device": "motor",
+            "first_offset": 14,
+            "first_timestamp": 310,
+            "kind": "alert",
+            "last_timestamp": 491,
+            "message": "a b",
+            "severity_sum": 4,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 18,
+            "first_timestamp": 359,
+            "kind": "alert",
+            "last_timestamp": 359,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 46,
+            "first_timestamp": 962,
+            "kind": "alert",
+            "last_timestamp": 962,
+            "message": "A b",
+            "severity_sum": 1,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 43,
+            "first_timestamp": 1111,
+            "kind": "alert",
+            "last_timestamp": 1111,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "32df22508cc7ee6808520056e8dcdcef471b2e9891f34f440d89e5809a3f18e8",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          1,
+          13,
+          29,
+          37,
+          39,
+          46,
+          47,
+          49,
+          50,
+          51
+        ],
+        "counters": {
+          "accepted": 10,
+          "duplicate": 7,
+          "filtered": 13,
+          "late": 11
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 3,
+            "first_timestamp": 58,
+            "kind": "alert",
+            "last_timestamp": 329,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "T"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 7,
+            "first_timestamp": 94,
+            "kind": "alert",
+            "last_timestamp": 247,
+            "message": "A b",
+            "severity_sum": 6,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 4,
+            "first_timestamp": 154,
+            "kind": "alert",
+            "last_timestamp": 154,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 16,
+            "first_timestamp": 362,
+            "kind": "alert",
+            "last_timestamp": 362,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 12,
+            "first_timestamp": 371,
+            "kind": "alert",
+            "last_timestamp": 495,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 38,
+            "first_timestamp": 718,
+            "kind": "alert",
+            "last_timestamp": 718,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "681523f003f4723c86c364455724b0c429a7e29faab846ef08819af375941a75",
+      "case": "generated_18",
+      "expected": {
+        "commits": [
+          1,
+          13,
+          29,
+          37,
+          39,
+          46,
+          47,
+          49,
+          50,
+          51
+        ],
+        "counters": {
+          "accepted": 10,
+          "duplicate": 7,
+          "filtered": 13,
+          "late": 11
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 3,
+            "first_timestamp": 58,
+            "kind": "alert",
+            "last_timestamp": 329,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "T"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 7,
+            "first_timestamp": 94,
+            "kind": "alert",
+            "last_timestamp": 247,
+            "message": "A b",
+            "severity_sum": 6,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 4,
+            "first_timestamp": 154,
+            "kind": "alert",
+            "last_timestamp": 154,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 16,
+            "first_timestamp": 362,
+            "kind": "alert",
+            "last_timestamp": 362,
+            "message": "a b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 2,
+            "device": "pump",
+            "first_offset": 12,
+            "first_timestamp": 371,
+            "kind": "alert",
+            "last_timestamp": 495,
+            "message": "a b",
+            "severity_sum": 6,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 38,
+            "first_timestamp": 718,
+            "kind": "alert",
+            "last_timestamp": 718,
+            "message": "A b",
+            "severity_sum": 2,
+            "tenant": "t"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 41,
+            "first_timestamp": 814,
+            "kind": "alert",
+            "last_timestamp": 814,
+            "message": "A b",
+            "severity_sum": 3,
+            "tenant": "T"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "3d81b3a13ea794ac4efd9197ce89646bfd37e62941f72af5b13b7baa8e60e472",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "actual": {
+        "commits": [
+          3,
+          8,
+          14,
+          17,
+          21,
+          28,
+          30,
+          34,
+          51
+        ],
+        "counters": {
+          "accepted": 7,
+          "duplicate": 3,
+          "filtered": 24,
+          "late": 8
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 2,
+            "first_timestamp": 67,
+            "kind": "alert",
+            "last_timestamp": 67,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 3,
+            "device": "pump",
+            "first_offset": 7,
+            "first_timestamp": 120,
+            "kind": "alert",
+            "last_timestamp": 362,
+            "message": "a b",
+            "severity_sum": 9,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 31,
+            "first_timestamp": 636,
+            "kind": "alert",
+            "last_timestamp": 636,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "actual_sha256": "6452f6130e8d20ee5c8f2374f43d0dcffd5410ad4c37e0c0ac75c266b2884f63",
+      "case": "generated_19",
+      "expected": {
+        "commits": [
+          3,
+          8,
+          14,
+          17,
+          21,
+          28,
+          30,
+          34,
+          51
+        ],
+        "counters": {
+          "accepted": 5,
+          "duplicate": 12,
+          "filtered": 17,
+          "late": 8
+        },
+        "cursor": 51,
+        "error": null,
+        "groups": [
+          {
+            "count": 1,
+            "device": "motor",
+            "first_offset": 2,
+            "first_timestamp": 67,
+            "kind": "alert",
+            "last_timestamp": 67,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          },
+          {
+            "count": 3,
+            "device": "pump",
+            "first_offset": 7,
+            "first_timestamp": 120,
+            "kind": "alert",
+            "last_timestamp": 362,
+            "message": "a b",
+            "severity_sum": 9,
+            "tenant": "T"
+          },
+          {
+            "count": 1,
+            "device": "pump",
+            "first_offset": 31,
+            "first_timestamp": 636,
+            "kind": "alert",
+            "last_timestamp": 636,
+            "message": "a b",
+            "severity_sum": 3,
+            "tenant": "t"
+          }
+        ],
+        "status": "COMPLETE"
+      },
+      "expected_sha256": "af3a5ef6888081caa9e34f77102678ba6b2b927cf7d3f46010fe3124e290ac93",
+      "oracle_manual_gate": true,
+      "passed": false,
+      "violations": []
+    },
+    {
+      "case": "recovery_before_commit",
+      "passed": true
+    },
+    {
+      "case": "recovery_after_commit",
+      "passed": true
+    }
+  ],
+  "mode": "python",
+  "passed": false,
+  "passed_cases": 22,
+  "stage": "repair",
+  "judge_exit_code": 1
+}

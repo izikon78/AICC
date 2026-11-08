@@ -1,0 +1,13 @@
+{
+  "frozen_utc": "2026-11-06T21:49:36.450567+00:00",
+  "implementation_sha256": "e56101a0937ef7285fddc9910b5f1d24e9e0394c135ad9d1f90ef7ec91170e01",
+  "outputs_sha256": {
+    "checks.json": "039e70c0ae60d073d0d1f36a62d7a156edf9cc62363822f2bb8fa30d2fdd0664",
+    "episodes.json": "3088e9a339f31fd286562d00151de43a2113aecaf52647013004f7b790991e3f",
+    "independent-report-before-comparison.md": "3b46bcde09e2f450224f5d89a00696c4e7eb0a945dabcadb48214b5e5860fd8b",
+    "manifest.json": "9dc79a8b69e3375f84401cbc9cb034129222a59839987ed3c587c5aeff4d36c3",
+    "renderings.json": "bb11bac23ec8f1e3128f0335fb2c91218c5fecb6267f1e90108953ef419ac173",
+    "totals.json": "6e886ff6e89b6b1c0bebbb8849fe2dbd3715ce4db62d6e1370177151f0332798"
+  },
+  "status": "Frozen before any reference aggregate or ledger comparison"
+}

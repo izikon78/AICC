@@ -1,0 +1,9 @@
+design     sigma analysis       false-positive rate (no true effect)    power to detect a true 15% saving
+ 12x3        0.5 tasks-only                                     0.08                                 0.19
+ 12x3        0.5 two-level                                      0.02                                 0.10
+ 12x3        1.0 tasks-only                                     0.09                                 0.14
+ 12x3        1.0 two-level                                      0.04                                 0.05
+ 30x10       0.5 tasks-only                                     0.09                                 0.76
+ 30x10       0.5 two-level                                      0.01                                 0.42
+ 30x10       1.0 tasks-only                                     0.10                                 0.32
+ 30x10       1.0 two-level                                      0.01                                 0.13

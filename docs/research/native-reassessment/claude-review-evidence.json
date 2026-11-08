@@ -1,0 +1,235 @@
+{
+  "commit": "a28436311f152ce65bdb317918c49d75c256bf25",
+  "review": "replay and adversarial probes; submitted branch unchanged",
+  "replay": {
+    "commit": "a28436311f152ce65bdb317918c49d75c256bf25",
+    "verified_sha256_files": 23,
+    "all_hashes_match": true,
+    "replay_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "submitted_python": "3.12.3",
+    "replay_matches_submitted_except_timestamps": true,
+    "hand_cases": 47,
+    "hand_failures": 0,
+    "crash_cases": 12,
+    "crash_passes": 12,
+    "random": {
+      "cases": 400,
+      "mismatches": [],
+      "outcome_distribution": {
+        "CANCELLED": 24,
+        "COMPLETED": 138,
+        "FAILED/AUTHORITY": 14,
+        "FAILED/INVALID_RECORD": 123,
+        "FAILED/POLICY_ERROR": 29,
+        "FAILED/WATERMARK_ORDER": 18,
+        "SUSPENDED": 54
+      }
+    },
+    "type_error_cases": 14,
+    "type_error_identical": 13,
+    "sink_passes": 3,
+    "mutants_detected": 6,
+    "mutant_detection_matches_submitted": true,
+    "program_byte_checks": [
+      {
+        "file": "ain_v0/reference.py",
+        "actual_bytes": 5118,
+        "reported_bytes": 5118
+      },
+      {
+        "file": "programs/workflow.ir",
+        "actual_bytes": 1152,
+        "reported_bytes": 1152
+      },
+      {
+        "file": "programs/workflow.ain",
+        "actual_bytes": 616,
+        "reported_bytes": 616
+      }
+    ],
+    "tiktoken_available": false,
+    "scripts": [
+      {
+        "script": "conformance/run_conformance.py",
+        "exit_code": 0
+      },
+      {
+        "script": "conformance/mutants.py",
+        "exit_code": 0
+      }
+    ]
+  },
+  "token_recount": {
+    "branch_commit": "a28436311f152ce65bdb317918c49d75c256bf25",
+    "tiktoken_version": "0.14.0",
+    "encoding": "o200k_base",
+    "condition": "UTF-8 text with universal-newline reading; tokenizer accounting only, no model or billing",
+    "rows": [
+      {
+        "form": "Python reference",
+        "program_bytes": 5118,
+        "program_tokens": 1245,
+        "catalog_tokens": 126,
+        "total_tokens": 1371,
+        "program_sha256": "5ddeebb41dcf012022890767ed46454535d880302cbf35b8118010d83d416418",
+        "catalog_sha256": "62ff29ccb36b08c2fc47e7ca037a89675fc4b7796b8fb1c4ccaee0f780a92d7b"
+      },
+      {
+        "form": "Readable IR",
+        "program_bytes": 1152,
+        "program_tokens": 298,
+        "catalog_tokens": 282,
+        "total_tokens": 580,
+        "program_sha256": "534484e4e9fc5f4233bdc4def70da226c8ae13d9893ecc9127ecf6346acfed37",
+        "catalog_sha256": "2ab417b5f34bf153eb9a8f2a397735c9335144c9267062398a166e6d26b6e6e0"
+      },
+      {
+        "form": "Numeric AIN sketch",
+        "program_bytes": 616,
+        "program_tokens": 298,
+        "catalog_tokens": 368,
+        "total_tokens": 666,
+        "program_sha256": "7d7323c1d112dc495067e4a85556025def69d024408c3e71377d2b241de0e459",
+        "catalog_sha256": "4a9e7c0e94fcac181fff34dd4144b4c6cd019cae3b13ee0b1927249deb8bb102"
+      }
+    ]
+  },
+  "semantic_probes": [
+    {
+      "case": "after_end_simple",
+      "form": "reference",
+      "outcomes": [
+        {
+          "status": "COMPLETED",
+          "error": null
+        }
+      ],
+      "published_count_fields": [],
+      "checkpoint_cursor": 1
+    },
+    {
+      "case": "after_end_simple",
+      "form": "ir",
+      "outcomes": [
+        {
+          "status": "COMPLETED",
+          "error": null
+        }
+      ],
+      "published_count_fields": [],
+      "checkpoint_cursor": 1
+    },
+    {
+      "case": "after_end_simple",
+      "form": "ain",
+      "outcomes": [
+        {
+          "status": "COMPLETED",
+          "error": null
+        }
+      ],
+      "published_count_fields": [],
+      "checkpoint_cursor": 1
+    },
+    {
+      "case": "after_end_single_run",
+      "form": "reference",
+      "outcomes": [
+        {
+          "status": "COMPLETED",
+          "error": null
+        }
+      ],
+      "published_count_fields": [
+        1
+      ],
+      "checkpoint_cursor": 2
+    },
+    {
+      "case": "after_end_single_run",
+      "form": "ir",
+      "outcomes": [
+        {
+          "status": "COMPLETED",
+          "error": null
+        }
+      ],
+      "published_count_fields": [
+        1
+      ],
+      "checkpoint_cursor": 2
+    },
+    {
+      "case": "after_end_single_run",
+      "form": "ain",
+      "outcomes": [
+        {
+          "status": "COMPLETED",
+          "error": null
+        }
+      ],
+      "published_count_fields": [
+        1
+      ],
+      "checkpoint_cursor": 2
+    },
+    {
+      "case": "negative_group_count_restored",
+      "form": "reference",
+      "outcomes": [
+        {
+          "status": "COMPLETED",
+          "error": null
+        }
+      ],
+      "published_count_fields": [
+        -1
+      ],
+      "checkpoint_cursor": 4
+    },
+    {
+      "case": "negative_group_count_restored",
+      "form": "ir",
+      "outcomes": [
+        {
+          "status": "COMPLETED",
+          "error": null
+        }
+      ],
+      "published_count_fields": [
+        -1
+      ],
+      "checkpoint_cursor": 4
+    },
+    {
+      "case": "negative_group_count_restored",
+      "form": "ain",
+      "outcomes": [
+        {
+          "status": "COMPLETED",
+          "error": null
+        }
+      ],
+      "published_count_fields": [
+        -1
+      ],
+      "checkpoint_cursor": 4
+    }
+  ],
+  "automation_probes": [
+    {
+      "probe": "forced_expectation_failure",
+      "exit_code": 0,
+      "summary_lines": [
+        "hand cases: 47, failing 1"
+      ]
+    },
+    {
+      "probe": "no_mutant_detected",
+      "exit_code": 0,
+      "summary_lines": [
+        "mutants detected: 0 of 6"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+  instantiate_us: 164.8
+  wasm_binary_bytes: 113.0
+  n=3 plain JS                       median 0.091 us  p95 0.143 us
+  n=3 Wasm + host imports            median 0.118 us  p95 0.171 us
+  n=1000 plain JS                    median 23.094 us  p95 33.622 us
+  n=1000 Wasm + host imports         median 30.792 us  p95 44.517 us

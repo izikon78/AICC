@@ -1,0 +1,32 @@
+{
+  "python": {
+    "correct": 120,
+    "compile_seconds": 0.6072138999588788,
+    "legacy_target_tokens": 1719,
+    "compact_target_tokens": 543,
+    "compact_prompt_and_target_tokens": 4470,
+    "legacy_prompt_and_target_tokens": 5886,
+    "target_reduction_fraction": 0.6841186736474695
+  },
+  "ir": {
+    "correct": 120,
+    "compile_seconds": 0.6015458000256331,
+    "legacy_target_tokens": 11151,
+    "compact_target_tokens": 639,
+    "compact_prompt_and_target_tokens": 4326,
+    "legacy_prompt_and_target_tokens": 15318,
+    "target_reduction_fraction": 0.9426957223567393
+  },
+  "ain": {
+    "correct": 120,
+    "compile_seconds": 0.6041810999813606,
+    "legacy_target_tokens": 12279,
+    "compact_target_tokens": 639,
+    "compact_prompt_and_target_tokens": 4446,
+    "legacy_prompt_and_target_tokens": 16446,
+    "target_reduction_fraction": 0.9479599315905204
+  },
+  "shared": {
+    "identical_assembly": 120
+  }
+}

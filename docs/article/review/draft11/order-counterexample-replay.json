@@ -1,0 +1,20 @@
+{
+  "source_commit": "4cd023fb78e966d202ace372d4e4bbf9588a5456",
+  "source_path": "agents/claude/round8-earlier-attempt/multiagent_contract.py",
+  "source_sha256": "563810ab7f40d641a3894c305ecbd1b6f8f2e8fc00ecfd8ae17316e062f47b27",
+  "contract_output_order": "groups in order of first creation during the ordered scan",
+  "input_timestamps": [
+    242,
+    59
+  ],
+  "window": 120,
+  "scan_output_first": [
+    59,
+    242
+  ],
+  "bucketed_output_first": [
+    242,
+    59
+  ],
+  "audit_date": "2026-11-07"
+}

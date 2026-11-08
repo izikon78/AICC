@@ -1,0 +1,37 @@
+{
+ "none (clean control)": {
+  "trials": 300,
+  "disagree": 292,
+  "disagree_ignoring_severity_format": 0
+ },
+ "mixed case and padding in device/kind": {
+  "trials": 300,
+  "disagree": 290,
+  "disagree_ignoring_severity_format": 0
+ },
+ "event_id padded": {
+  "trials": 300,
+  "disagree": 284,
+  "disagree_ignoring_severity_format": 0
+ },
+ "duplicate event_ids": {
+  "trials": 300,
+  "disagree": 295,
+  "disagree_ignoring_severity_format": 0
+ },
+ "severity padded with spaces": {
+  "trials": 300,
+  "disagree": 291,
+  "disagree_ignoring_severity_format": 264
+ },
+ "message edge whitespace": {
+  "trials": 300,
+  "disagree": 291,
+  "disagree_ignoring_severity_format": 263
+ },
+ "message non-breaking space": {
+  "trials": 300,
+  "disagree": 288,
+  "disagree_ignoring_severity_format": 261
+ }
+}

@@ -1,0 +1,9 @@
+{
+  "file": "AICC_Final_Experiments_Packet.zip",
+  "sha256": "15dbde72d3c7353cafb1021d70ea3fd21cfddc83a857cf9efe886049fcb91688",
+  "bytes": 5236041,
+  "payload_files_verified": 309,
+  "frozen_approved_core_files_verified": 59,
+  "tokenizer_assets_verified": 6,
+  "packaging_source_commit": "927b73187531c97bf4b01bda7f249722971905c7"
+}

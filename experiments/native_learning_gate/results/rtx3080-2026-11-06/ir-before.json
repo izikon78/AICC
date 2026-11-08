@@ -1,0 +1,249 @@
+[
+  {
+    "id": "dev-add-000",
+    "split": "dev",
+    "output": "```json\n{\n  \"program\": {\n    \"name\": \"Add101\",\n    \"inputs\": [\n      {\n        \"name\": \"x\",\n        \"type\": \"int\"\n      }\n    ],\n    \"outputs\": [\n      {\n        \"name\": \"result\",\n        \"type\": \"int\"\n      }\n    ],\n    \"body\": [\n      {\n        \"type\": \"if\",\n        \"condition\": {\n          \"type\": \"eq\",\n          \"left\": {\n            \"type\": \"literal\",\n            \"value\": \"x\"\n          },\n          \"right\": {\n            \"type\": \"literal\",\n            \"value\": 0\n          }\n        },\n        \"then\": {\n          \"type\": \"return\",\n          \"value\": {\n            \"type\": \"literal\",\n            \"value\": 101\n          }\n        }\n      },\n      {\n        \"type\": \"return\",\n        \"value\": {\n          \"type\": \"add\",\n          \"left\": {\n            \"type\": \"literal\",\n            \"value\": \"x\"\n          },\n          \"right\": {\n            \"type\": \"literal\",\n            \"value\": 101\n          }\n        }\n      }\n    ]\n  }\n}\n```",
+    "input_tokens": 34,
+    "output_tokens": 254,
+    "truncated": false,
+    "inference_seconds": 11.672118000002229,
+    "judge_seconds": 5.4700001783203334e-05,
+    "syntax_ok": false,
+    "correct": false,
+    "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "id": "holdout-sub_add-000",
+    "split": "holdout",
+    "output": "```json\n{\n  \"program\": {\n    \"name\": \"subtractAndAdd\",\n    \"inputs\": [\n      {\n        \"name\": \"x\",\n        \"type\": \"int\"\n      }\n    ],\n    \"outputs\": [\n      {\n        \"name\": \"result\",\n        \"type\": \"int\"\n      }\n    ],\n    \"body\": [\n      {\n        \"type\": \"assign\",\n        \"name\": \"result\",\n        \"value\": \"x - 3 + 9\"\n      }\n    ]\n  }\n}\n```",
+    "input_tokens": 37,
+    "output_tokens": 111,
+    "truncated": false,
+    "inference_seconds": 5.089697900002648,
+    "judge_seconds": 4.819999594474211e-05,
+    "syntax_ok": false,
+    "correct": false,
+    "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "id": "dev-add-001",
+    "split": "dev",
+    "output": "```json\n{\n  \"program\": {\n    \"name\": \"Add102\",\n    \"inputs\": [\n      {\n        \"name\": \"x\",\n        \"type\": \"int\"\n      }\n    ],\n    \"outputs\": [\n      {\n        \"name\": \"result\",\n        \"type\": \"int\"\n      }\n    ],\n    \"body\": [\n      {\n        \"type\": \"if\",\n        \"condition\": {\n          \"type\": \"eq\",\n          \"left\": {\n            \"type\": \"literal\",\n            \"value\": \"x\"\n          },\n          \"right\": {\n            \"type\": \"literal\",\n            \"value\": 0\n          }\n        },\n        \"then\": {\n          \"type\": \"return\",\n          \"value\": {\n            \"type\": \"literal\",\n            \"value\": 102\n          }\n        }\n      },\n      {\n        \"type\": \"return\",\n        \"value\": {\n          \"type\": \"add\",\n          \"left\": {\n            \"type\": \"literal\",\n            \"value\": \"x\"\n          },\n          \"right\": {\n            \"type\": \"literal\",\n            \"value\": 102\n          }\n        }\n      }\n    ]\n  }\n}\n```",
+    "input_tokens": 34,
+    "output_tokens": 254,
+    "truncated": false,
+    "inference_seconds": 11.486317300004885,
+    "judge_seconds": 4.199999966658652e-05,
+    "syntax_ok": false,
+    "correct": false,
+    "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "id": "holdout-sub_add-001",
+    "split": "holdout",
+    "output": "```json\n{\n  \"program\": {\n    \"name\": \"subtractAndAdd\",\n    \"inputs\": [\n      {\n        \"name\": \"x\",\n        \"type\": \"int\"\n      }\n    ],\n    \"outputs\": [\n      {\n        \"name\": \"result\",\n        \"type\": \"int\"\n      }\n    ],\n    \"body\": [\n      {\n        \"type\": \"assign\",\n        \"name\": \"result\",\n        \"value\": \"x - 4 + 10\"\n      }\n    ]\n  }\n}\n```",
+    "input_tokens": 38,
+    "output_tokens": 112,
+    "truncated": false,
+    "inference_seconds": 5.817111799995473,
+    "judge_seconds": 4.709999484475702e-05,
+    "syntax_ok": false,
+    "correct": false,
+    "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "id": "dev-add-002",
+    "split": "dev",
+    "output": "```json\n{\n  \"program\": {\n    \"name\": \"Add103\",\n    \"inputs\": [\n      {\n        \"name\": \"x\",\n        \"type\": \"int\"\n      }\n    ],\n    \"outputs\": [\n      {\n        \"name\": \"result\",\n        \"type\": \"int\"\n      }\n    ],\n    \"body\": [\n      {\n        \"type\": \"if\",\n        \"condition\": {\n          \"type\": \"eq\",\n          \"left\": {\n            \"type\": \"literal\",\n            \"value\": \"x\"\n          },\n          \"right\": {\n            \"type\": \"literal\",\n            \"value\": 0\n          }\n        },\n        \"then\": {\n          \"type\": \"return\",\n          \"value\": {\n            \"type\": \"literal\",\n            \"value\": 103\n          }\n        }\n      },\n      {\n        \"type\": \"return\",\n        \"value\": {\n          \"type\": \"add\",\n          \"left\": {\n            \"type\": \"literal\",\n            \"value\": \"x\"\n          },\n          \"right\": {\n            \"type\": \"literal\",\n            \"value\": 103\n          }\n        }\n      }\n    ]\n  }\n}\n```",
+    "input_tokens": 34,
+    "output_tokens": 254,
+    "truncated": false,
+    "inference_seconds": 12.634609699998691,
+    "judge_seconds": 4.690000059781596e-05,
+    "syntax_ok": false,
+    "correct": false,
+    "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "id": "holdout-sub_add-002",
+    "split": "holdout",
+    "output": "```json\n{\n  \"program\": {\n    \"name\": \"subtractAndAdd\",\n    \"inputs\": [\n      {\n        \"name\": \"x\",\n        \"type\": \"int\"\n      }\n    ],\n    \"outputs\": [\n      {\n        \"name\": \"result\",\n        \"type\": \"int\"\n      }\n    ],\n    \"body\": [\n      {\n        \"type\": \"assign\",\n        \"name\": \"result\",\n        \"value\": \"x - 5 + 11\"\n      }\n    ]\n  }\n}\n```",
+    "input_tokens": 38,
+    "output_tokens": 112,
+    "truncated": false,
+    "inference_seconds": 5.076810899998236,
+    "judge_seconds": 4.4399996113497764e-05,
+    "syntax_ok": false,
+    "correct": false,
+    "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "id": "dev-add-003",
+    "split": "dev",
+    "output": "```json\n{\n  \"program\": {\n    \"name\": \"Add104\",\n    \"inputs\": [\n      {\n        \"name\": \"x\",\n        \"type\": \"int\"\n      }\n    ],\n    \"outputs\": [\n      {\n        \"name\": \"result\",\n        \"type\": \"int\"\n      }\n    ],\n    \"body\": [\n      {\n        \"type\": \"if\",\n        \"condition\": {\n          \"type\": \"eq\",\n          \"left\": {\n            \"type\": \"literal\",\n            \"value\": \"x\"\n          },\n          \"right\": {\n            \"type\": \"literal\",\n            \"value\": 0\n          }\n        },\n        \"then\": {\n          \"type\": \"return\",\n          \"value\": {\n            \"type\": \"literal\",\n            \"value\": 104\n          }\n        }\n      },\n      {\n        \"type\": \"return\",\n        \"value\": {\n          \"type\": \"add\",\n          \"left\": {\n            \"type\": \"literal\",\n            \"value\": \"x\"\n          },\n          \"right\": {\n            \"type\": \"literal\",\n            \"value\": 104\n          }\n        }\n      }\n    ]\n  }\n}\n```",
+    "input_tokens": 34,
+    "output_tokens": 254,
+    "truncated": false,
+    "inference_seconds": 11.763031999995292,
+    "judge_seconds": 4.3000000005122274e-05,
+    "syntax_ok": false,
+    "correct": false,
+    "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "id": "holdout-sub_add-003",
+    "split": "holdout",
+    "output": "```json\n{\n  \"program\": {\n    \"name\": \"subtractAndAdd\",\n    \"inputs\": [\n      {\n        \"name\": \"x\",\n        \"type\": \"int\"\n      }\n    ],\n    \"outputs\": [\n      {\n        \"name\": \"result\",\n        \"type\": \"int\"\n      }\n    ],\n    \"body\": [\n      {\n        \"type\": \"assign\",\n        \"name\": \"result\",\n        \"value\": \"x - 6 + 12\"\n      }\n    ]\n  }\n}\n```",
+    "input_tokens": 38,
+    "output_tokens": 112,
+    "truncated": false,
+    "inference_seconds": 5.067591700004414,
+    "judge_seconds": 4.289999924367294e-05,
+    "syntax_ok": false,
+    "correct": false,
+    "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "id": "dev-sub-000",
+    "split": "dev",
+    "output": "```json\n{\n  \"program\": {\n    \"name\": \"Subtract101\",\n    \"inputs\": [\n      {\n        \"name\": \"x\",\n        \"type\": \"int\"\n      }\n    ],\n    \"outputs\": [\n      {\n        \"name\": \"result\",\n        \"type\": \"int\"\n      }\n    ],\n    \"body\": [\n      {\n        \"type\": \"assign\",\n        \"name\": \"result\",\n        \"value\": {\n          \"type\": \"subtract\",\n          \"left\": {\n            \"type\": \"literal\",\n            \"value\": 101\n          },\n          \"right\": {\n            \"type\": \"input\",\n            \"name\": \"x\"\n          }\n        }\n      }\n    ]\n  }\n}\n```",
+    "input_tokens": 34,
+    "output_tokens": 158,
+    "truncated": false,
+    "inference_seconds": 7.193530899996404,
+    "judge_seconds": 4.320000152802095e-05,
+    "syntax_ok": false,
+    "correct": false,
+    "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "id": "holdout-add_sub-000",
+    "split": "holdout",
+    "output": "```json\n{\n  \"program\": {\n    \"name\": \"AddSubtract\",\n    \"inputs\": [\n      {\n        \"name\": \"x\",\n        \"type\": \"int\"\n      }\n    ],\n    \"outputs\": [\n      {\n        \"name\": \"result\",\n        \"type\": \"int\"\n      }\n    ],\n    \"body\": [\n      {\n        \"type\": \"if\",\n        \"condition\": {\n          \"type\": \"eq\",\n          \"left\": {\n            \"type\": \"literal\",\n            \"value\": \"x\"\n          },\n          \"right\": {\n            \"type\": \"literal\",\n            \"value\": 0\n          }\n        },\n        \"then\": {\n          \"type\": \"return\",\n          \"value\": {\n            \"type\": \"literal\",\n            \"value\": 0\n          }\n        }\n      },\n      {\n        \"type\": \"return\",\n        \"value\": {\n          \"type\": \"literal\",\n          \"value\": x + 3\n        }\n      },\n      {\n        \"type\": \"return\",\n        \"value\": {\n          \"type\": \"literal\",\n          \"value\": x + 3 - 9\n        }\n      }\n    ]\n  }\n}\n```",
+    "input_tokens": 37,
+    "output_tokens": 253,
+    "truncated": false,
+    "inference_seconds": 11.59903679999843,
+    "judge_seconds": 4.339999577496201e-05,
+    "syntax_ok": false,
+    "correct": false,
+    "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "id": "dev-sub-001",
+    "split": "dev",
+    "output": "```json\n{\n  \"program\": {\n    \"name\": \"Subtract102\",\n    \"inputs\": [\n      {\n        \"name\": \"x\",\n        \"type\": \"int\"\n      }\n    ],\n    \"outputs\": [\n      {\n        \"name\": \"result\",\n        \"type\": \"int\"\n      }\n    ],\n    \"body\": [\n      {\n        \"type\": \"assign\",\n        \"name\": \"result\",\n        \"value\": {\n          \"type\": \"subtract\",\n          \"left\": {\n            \"type\": \"literal\",\n            \"value\": 102\n          },\n          \"right\": {\n            \"type\": \"input\",\n            \"name\": \"x\"\n          }\n        }\n      }\n    ]\n  }\n}\n```",
+    "input_tokens": 34,
+    "output_tokens": 158,
+    "truncated": false,
+    "inference_seconds": 7.297237799997674,
+    "judge_seconds": 4.410000110510737e-05,
+    "syntax_ok": false,
+    "correct": false,
+    "error": "LanguageError: JSON: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "id": "holdout-add_sub-001",
+    "split": "holdout",
+    "correct": false,
+    "error": "stage_time_limit",
+    "syntax_ok": false,
+    "output": ""
+  },
+  {
+    "id": "dev-sub-002",
+    "split": "dev",
+    "correct": false,
+    "error": "stage_time_limit",
+    "syntax_ok": false,
+    "output": ""
+  },
+  {
+    "id": "holdout-add_sub-002",
+    "split": "holdout",
+    "correct": false,
+    "error": "stage_time_limit",
+    "syntax_ok": false,
+    "output": ""
+  },
+  {
+    "id": "dev-sub-003",
+    "split": "dev",
+    "correct": false,
+    "error": "stage_time_limit",
+    "syntax_ok": false,
+    "output": ""
+  },
+  {
+    "id": "holdout-add_sub-003",
+    "split": "holdout",
+    "correct": false,
+    "error": "stage_time_limit",
+    "syntax_ok": false,
+    "output": ""
+  },
+  {
+    "id": "dev-add_add-000",
+    "split": "dev",
+    "correct": false,
+    "error": "stage_time_limit",
+    "syntax_ok": false,
+    "output": ""
+  },
+  {
+    "id": "holdout-sub_sub-000",
+    "split": "holdout",
+    "correct": false,
+    "error": "stage_time_limit",
+    "syntax_ok": false,
+    "output": ""
+  },
+  {
+    "id": "dev-add_add-001",
+    "split": "dev",
+    "correct": false,
+    "error": "stage_time_limit",
+    "syntax_ok": false,
+    "output": ""
+  },
+  {
+    "id": "holdout-sub_sub-001",
+    "split": "holdout",
+    "correct": false,
+    "error": "stage_time_limit",
+    "syntax_ok": false,
+    "output": ""
+  },
+  {
+    "id": "dev-add_add-002",
+    "split": "dev",
+    "correct": false,
+    "error": "stage_time_limit",
+    "syntax_ok": false,
+    "output": ""
+  },
+  {
+    "id": "holdout-sub_sub-002",
+    "split": "holdout",
+    "correct": false,
+    "error": "stage_time_limit",
+    "syntax_ok": false,
+    "output": ""
+  },
+  {
+    "id": "dev-add_add-003",
+    "split": "dev",
+    "correct": false,
+    "error": "stage_time_limit",
+    "syntax_ok": false,
+    "output": ""
+  },
+  {
+    "id": "holdout-sub_sub-003",
+    "split": "holdout",
+    "correct": false,
+    "error": "stage_time_limit",
+    "syntax_ok": false,
+    "output": ""
+  }
+]

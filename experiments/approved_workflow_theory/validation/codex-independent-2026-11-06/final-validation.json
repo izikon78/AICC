@@ -1,0 +1,175 @@
+{
+  "verified_utc": "2026-11-06T21:52:53.357227+00:00",
+  "first_attempt_files_unchanged": true,
+  "first_implementation_unchanged": true,
+  "tracked_files_unchanged": true,
+  "package_pins": {
+    "transformers": {
+      "installed": "4.51.3",
+      "required": "==4.51.3",
+      "matches": true
+    },
+    "tokenizers": {
+      "installed": "0.21.4",
+      "required": "==0.21.4",
+      "matches": true
+    },
+    "huggingface-hub": {
+      "installed": "0.36.2",
+      "required": "==0.36.2",
+      "matches": true
+    },
+    "numpy": {
+      "installed": "2.5.4",
+      "required": "==2.5.4",
+      "matches": true
+    },
+    "packaging": {
+      "installed": "26.3",
+      "required": "==26.3",
+      "matches": true
+    },
+    "PyYAML": {
+      "installed": "6.0.3",
+      "required": "==6.0.3",
+      "matches": true
+    },
+    "regex": {
+      "installed": "2026.9.29",
+      "required": "==2026.9.29",
+      "matches": true
+    },
+    "requests": {
+      "installed": "2.34.2",
+      "required": "==2.34.2",
+      "matches": true
+    },
+    "safetensors": {
+      "installed": "0.8.0",
+      "required": "==0.8.0",
+      "matches": true
+    },
+    "tqdm": {
+      "installed": "4.70.1",
+      "required": "==4.70.1",
+      "matches": true
+    },
+    "filelock": {
+      "installed": "4.2.4",
+      "required": "==4.2.4",
+      "matches": true
+    },
+    "fsspec": {
+      "installed": "2026.9.0",
+      "required": "==2026.9.0",
+      "matches": true
+    },
+    "typing_extensions": {
+      "installed": "4.16.0",
+      "required": "==4.16.0",
+      "matches": true
+    },
+    "certifi": {
+      "installed": "2026.10.23",
+      "required": "==2026.10.23",
+      "matches": true
+    },
+    "charset-normalizer": {
+      "installed": "3.5.2",
+      "required": "==3.5.2",
+      "matches": true
+    },
+    "idna": {
+      "installed": "3.20",
+      "required": "==3.20",
+      "matches": true
+    },
+    "urllib3": {
+      "installed": "2.8.0",
+      "required": "==2.8.0",
+      "matches": true
+    },
+    "colorama": {
+      "installed": "0.4.6",
+      "required": "==0.4.6",
+      "matches": true
+    }
+  },
+  "independent_comparison": {
+    "mode": "independent accounting",
+    "matches_reference": true,
+    "reference": "results/approved-core-2026-11-06",
+    "excluded_runtime_fields": [
+      "episodes[*].execution_seconds"
+    ],
+    "manifest_normalization": "Source path separators normalized to '/'",
+    "checks": {
+      "totals.json": {
+        "match": true,
+        "first_difference": null,
+        "expected_canonical_sha256": "aa2abf6604467e7c28365eadee47fe9e8d90a1c2d7c563cbc97dd165d61651c6",
+        "actual_canonical_sha256": "aa2abf6604467e7c28365eadee47fe9e8d90a1c2d7c563cbc97dd165d61651c6"
+      },
+      "episodes.json": {
+        "match": true,
+        "first_difference": null,
+        "expected_canonical_sha256": "467047c105ed2d11968e22a68d5156996bf41896cb4b218b658bcb330e23a1b8",
+        "actual_canonical_sha256": "467047c105ed2d11968e22a68d5156996bf41896cb4b218b658bcb330e23a1b8"
+      }
+    }
+  },
+  "exact_reference_comparison": {
+    "mode": "exact reproduction",
+    "matches_reference": true,
+    "reference": "results/approved-core-2026-11-06",
+    "excluded_runtime_fields": [
+      "episodes[*].execution_seconds"
+    ],
+    "manifest_normalization": "Source path separators normalized to '/'",
+    "checks": {
+      "fixtures.json": {
+        "match": true,
+        "first_difference": null,
+        "expected_canonical_sha256": "cb773e36aedbdca9455ddd25efe99c3d89ab5d75c0fc58d12b713ed555f46e5d",
+        "actual_canonical_sha256": "cb773e36aedbdca9455ddd25efe99c3d89ab5d75c0fc58d12b713ed555f46e5d"
+      },
+      "approved_core_sources.json": {
+        "match": true,
+        "first_difference": null,
+        "expected_canonical_sha256": "208bfccb892a10ca89a8099178c4984ead4c6e0a84811268ef5a23d9a26ef3a4",
+        "actual_canonical_sha256": "208bfccb892a10ca89a8099178c4984ead4c6e0a84811268ef5a23d9a26ef3a4"
+      },
+      "totals.json": {
+        "match": true,
+        "first_difference": null,
+        "expected_canonical_sha256": "aa2abf6604467e7c28365eadee47fe9e8d90a1c2d7c563cbc97dd165d61651c6",
+        "actual_canonical_sha256": "aa2abf6604467e7c28365eadee47fe9e8d90a1c2d7c563cbc97dd165d61651c6"
+      },
+      "episodes.json": {
+        "match": true,
+        "first_difference": null,
+        "expected_canonical_sha256": "12a21e073de96f8b46c964983f4b35e21f0482eba2b6722377ebda9728b2731d",
+        "actual_canonical_sha256": "12a21e073de96f8b46c964983f4b35e21f0482eba2b6722377ebda9728b2731d"
+      },
+      "summary.json": {
+        "match": true,
+        "first_difference": null,
+        "expected_canonical_sha256": "7fa835c189f7463567c48c55523d1929a585386a3bdfbd19d80e7d773ee2fb05",
+        "actual_canonical_sha256": "7fa835c189f7463567c48c55523d1929a585386a3bdfbd19d80e7d773ee2fb05"
+      },
+      "manifest.json": {
+        "match": true,
+        "first_difference": null
+      }
+    }
+  },
+  "reference_tests_passed": 20,
+  "extracted_fixtures_file_sha256": "871654dad276266e394f7b314e9681c007e3325f68e66b12b89602f629a79a1a",
+  "extracted_core_file_sha256": "f0614ff28bd48faf4226795cb13aa7436c527e2d788aa57d39d835367fcbf020",
+  "reference_manifest_source_hashes": {
+    "experiments\\approved_workflow_theory\\run.py": "ac684631bf4ef1515c79d71eba5aaef36fcdc005c799dc8115b3ef1d0c72ad80",
+    "experiments\\approved_workflow_theory\\workloads.py": "6382ece9a227fa892bbd7e0a2cd4f7a979b7b2178e9aa1be4ae55e1e1f0ab52e",
+    "experiments\\approved_workflow_theory\\accounting.py": "698cd11ea25b4950722eaaf92abe29353d3669354ba6697f61d44c840ca1488a"
+  },
+  "reference_fixture_hash": "b7f62e651da33e27c0442d1d76bc5d21cbc08e4c23cae65d54381725a0fd4ab9"
+}

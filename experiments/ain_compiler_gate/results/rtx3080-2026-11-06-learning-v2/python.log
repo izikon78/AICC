@@ -1,0 +1,64 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "dev-add-000", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "holdout-sub_add-000", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "dev-add-001", "correct": false, "error": "ValueError: expected one small accumulator expression or solve(x) function"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "holdout-sub_add-001", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "dev-add-002", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "holdout-sub_add-002", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "dev-add-003", "correct": false, "error": "ValueError: expected one small accumulator expression or solve(x) function"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "holdout-sub_add-003", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "dev-sub-000", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "holdout-add_sub-000", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "dev-sub-001", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "holdout-add_sub-001", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "dev-sub-002", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "holdout-add_sub-002", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "dev-sub-003", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "holdout-add_sub-003", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "dev-add_add-000", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "holdout-sub_sub-000", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "dev-add_add-001", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "holdout-sub_sub-001", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "dev-add_add-002", "correct": false, "error": "ValueError: expected an accumulator expression or solve(x) function"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "holdout-sub_sub-002", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "dev-add_add-003", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-before", "id": "holdout-sub_sub-003", "correct": false, "error": "SyntaxError: unterminated string literal (detected at line 1) (<unknown>, line 1)"}
+{"event": "train", "arm": "python", "step": 6, "epoch": 1, "loss": 0.00012308241457503755, "elapsed_seconds": 5.837829399999464}
+{"event": "train", "arm": "python", "step": 12, "epoch": 1, "loss": 2.0801936955194833e-06, "elapsed_seconds": 12.032286000001477}
+{"event": "train", "arm": "python", "step": 18, "epoch": 1, "loss": 0.00020915971950330459, "elapsed_seconds": 18.671484200000123}
+{"event": "train", "arm": "python", "step": 24, "epoch": 1, "loss": 1.467839417301775e-05, "elapsed_seconds": 24.545344999998633}
+{"event": "train", "arm": "python", "step": 30, "epoch": 2, "loss": 1.7980711852771947e-07, "elapsed_seconds": 30.339353200004552}
+{"event": "train", "arm": "python", "step": 36, "epoch": 2, "loss": 5.945555088260335e-07, "elapsed_seconds": 36.09090180000203}
+{"event": "train", "arm": "python", "step": 42, "epoch": 2, "loss": 6.84954343910249e-07, "elapsed_seconds": 41.79544970000279}
+{"event": "train", "arm": "python", "step": 48, "epoch": 2, "loss": 1.1523560949910916e-07, "elapsed_seconds": 47.55502710000292}
+{"event": "train", "arm": "python", "step": 54, "epoch": 3, "loss": 9.040034498752902e-08, "elapsed_seconds": 53.48337950000132}
+{"event": "train", "arm": "python", "step": 60, "epoch": 3, "loss": 7.05321401284209e-08, "elapsed_seconds": 59.26727879999817}
+{"event": "train", "arm": "python", "step": 66, "epoch": 3, "loss": 1.0927517557490773e-08, "elapsed_seconds": 65.18941820000327}
+{"event": "train", "arm": "python", "step": 72, "epoch": 3, "loss": 4.967053435223079e-09, "elapsed_seconds": 70.985302400004}
+C:\Users\Izik\Downloads\AICC\.venv\Lib\site-packages\peft\utils\save_and_load.py:236: UserWarning: Could not find a config file in Qwen/Qwen2.5-1.5B - will assume that the vocabulary was not modified.
+  warnings.warn(
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "dev-add-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "holdout-sub_add-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "dev-add-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "holdout-sub_add-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "dev-add-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "holdout-sub_add-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "dev-add-003", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "holdout-sub_add-003", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "dev-sub-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "holdout-add_sub-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "dev-sub-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "holdout-add_sub-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "dev-sub-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "holdout-add_sub-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "dev-sub-003", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "holdout-add_sub-003", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "dev-add_add-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "holdout-sub_sub-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "dev-add_add-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "holdout-sub_sub-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "dev-add_add-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "holdout-sub_sub-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "dev-add_add-003", "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "python-after", "id": "holdout-sub_sub-003", "correct": true, "error": null}
+{"event": "arm_complete", "arm": "python", "after": {"dev": {"correct": 12, "assigned": 12, "syntax_valid": 12, "inference_seconds": 4.0534154000051785, "input_tokens": 412, "output_tokens": 88}, "holdout": {"correct": 12, "assigned": 12, "syntax_valid": 12, "inference_seconds": 3.678805800009286, "input_tokens": 429, "output_tokens": 81}}, "dev_gate_pass": true}

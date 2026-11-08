@@ -1,0 +1,371 @@
+{
+  "analysis_type": "Post-hoc descriptive known-usage accounting and mathematical bounds",
+  "primary_report_replaced": false,
+  "dataset_status": "complete_amended_continuation",
+  "plan_commit": "82405a53f1ea92b0992b657323617fecb3b3dfaf",
+  "harness_commit": "3e3a57b267e9bb6b0a936cc021d6e41e58482158",
+  "continuation_commit": "38612ae7cfeeddd6bac8800fabb67de1b654e46c",
+  "cost_unit": "Hypothetical normalized resource units, not dollars",
+  "weights": {
+    "primary": {
+      "uncached_input": 1,
+      "cached_input": 0.1,
+      "output": 5
+    },
+    "cache_neutral": {
+      "uncached_input": 1,
+      "cached_input": 1,
+      "output": 5
+    },
+    "output_1": {
+      "uncached_input": 1,
+      "cached_input": 0.1,
+      "output": 1
+    },
+    "output_10": {
+      "uncached_input": 1,
+      "cached_input": 0.1,
+      "output": 10
+    }
+  },
+  "modes": {
+    "python": {
+      "label": "Python",
+      "assigned_chains": 2,
+      "assigned_stages": 6,
+      "functional_stage_passes": 6,
+      "full_stage_passes": 6,
+      "fallback_stages": 0,
+      "successful_chains": 2,
+      "attempts": 12,
+      "preparation_attempts": 6,
+      "task_attempts": 6,
+      "wholly_unmetered_attempts": 0,
+      "known_token_subtotals": {
+        "input_tokens": 250087,
+        "cached_input_tokens": 37632,
+        "output_tokens": 7340,
+        "reasoning_output_tokens": 3774
+      },
+      "missing_category_attempts": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "exact_token_totals": {
+        "input_tokens": 250087,
+        "cached_input_tokens": 37632,
+        "output_tokens": 7340,
+        "reasoning_output_tokens": 3774
+      },
+      "costs": {
+        "primary": {
+          "complete": true,
+          "exact_total": 252918.2,
+          "known_metered_subtotal": 252918.2,
+          "cost_lower_bound": 252918.2,
+          "incompletely_metered_attempts": 0,
+          "exact_cost_per_successful_chain": 126459.1,
+          "cost_per_successful_chain_lower_bound": 126459.1,
+          "exact_cost_per_assigned_stage": 42153.03333333333,
+          "cost_per_assigned_stage_lower_bound": 42153.03333333333
+        },
+        "cache_neutral": {
+          "complete": true,
+          "exact_total": 286787,
+          "known_metered_subtotal": 286787,
+          "cost_lower_bound": 286787,
+          "incompletely_metered_attempts": 0,
+          "exact_cost_per_successful_chain": 143393.5,
+          "cost_per_successful_chain_lower_bound": 143393.5,
+          "exact_cost_per_assigned_stage": 47797.833333333336,
+          "cost_per_assigned_stage_lower_bound": 47797.833333333336
+        },
+        "output_1": {
+          "complete": true,
+          "exact_total": 223558.2,
+          "known_metered_subtotal": 223558.2,
+          "cost_lower_bound": 223558.2,
+          "incompletely_metered_attempts": 0,
+          "exact_cost_per_successful_chain": 111779.1,
+          "cost_per_successful_chain_lower_bound": 111779.1,
+          "exact_cost_per_assigned_stage": 37259.700000000004,
+          "cost_per_assigned_stage_lower_bound": 37259.700000000004
+        },
+        "output_10": {
+          "complete": true,
+          "exact_total": 289618.2,
+          "known_metered_subtotal": 289618.2,
+          "cost_lower_bound": 289618.2,
+          "incompletely_metered_attempts": 0,
+          "exact_cost_per_successful_chain": 144809.1,
+          "cost_per_successful_chain_lower_bound": 144809.1,
+          "exact_cost_per_assigned_stage": 48269.700000000004,
+          "cost_per_assigned_stage_lower_bound": 48269.700000000004
+        }
+      }
+    },
+    "ir": {
+      "label": "Readable IR",
+      "assigned_chains": 2,
+      "assigned_stages": 6,
+      "functional_stage_passes": 6,
+      "full_stage_passes": 6,
+      "fallback_stages": 0,
+      "successful_chains": 2,
+      "attempts": 12,
+      "preparation_attempts": 6,
+      "task_attempts": 6,
+      "wholly_unmetered_attempts": 0,
+      "known_token_subtotals": {
+        "input_tokens": 282986,
+        "cached_input_tokens": 12544,
+        "output_tokens": 15552,
+        "reasoning_output_tokens": 6444
+      },
+      "missing_category_attempts": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "exact_token_totals": {
+        "input_tokens": 282986,
+        "cached_input_tokens": 12544,
+        "output_tokens": 15552,
+        "reasoning_output_tokens": 6444
+      },
+      "costs": {
+        "primary": {
+          "complete": true,
+          "exact_total": 349456.4,
+          "known_metered_subtotal": 349456.4,
+          "cost_lower_bound": 349456.4,
+          "incompletely_metered_attempts": 0,
+          "exact_cost_per_successful_chain": 174728.2,
+          "cost_per_successful_chain_lower_bound": 174728.2,
+          "exact_cost_per_assigned_stage": 58242.73333333334,
+          "cost_per_assigned_stage_lower_bound": 58242.73333333334
+        },
+        "cache_neutral": {
+          "complete": true,
+          "exact_total": 360746,
+          "known_metered_subtotal": 360746,
+          "cost_lower_bound": 360746,
+          "incompletely_metered_attempts": 0,
+          "exact_cost_per_successful_chain": 180373.0,
+          "cost_per_successful_chain_lower_bound": 180373.0,
+          "exact_cost_per_assigned_stage": 60124.333333333336,
+          "cost_per_assigned_stage_lower_bound": 60124.333333333336
+        },
+        "output_1": {
+          "complete": true,
+          "exact_total": 287248.4,
+          "known_metered_subtotal": 287248.4,
+          "cost_lower_bound": 287248.4,
+          "incompletely_metered_attempts": 0,
+          "exact_cost_per_successful_chain": 143624.2,
+          "cost_per_successful_chain_lower_bound": 143624.2,
+          "exact_cost_per_assigned_stage": 47874.73333333334,
+          "cost_per_assigned_stage_lower_bound": 47874.73333333334
+        },
+        "output_10": {
+          "complete": true,
+          "exact_total": 427216.4,
+          "known_metered_subtotal": 427216.4,
+          "cost_lower_bound": 427216.4,
+          "incompletely_metered_attempts": 0,
+          "exact_cost_per_successful_chain": 213608.2,
+          "cost_per_successful_chain_lower_bound": 213608.2,
+          "exact_cost_per_assigned_stage": 71202.73333333334,
+          "cost_per_assigned_stage_lower_bound": 71202.73333333334
+        }
+      }
+    },
+    "ain": {
+      "label": "Numeric AIN",
+      "assigned_chains": 2,
+      "assigned_stages": 6,
+      "functional_stage_passes": 6,
+      "full_stage_passes": 6,
+      "fallback_stages": 1,
+      "successful_chains": 1,
+      "attempts": 14,
+      "preparation_attempts": 6,
+      "task_attempts": 8,
+      "wholly_unmetered_attempts": 2,
+      "known_token_subtotals": {
+        "input_tokens": 278969,
+        "cached_input_tokens": 27776,
+        "output_tokens": 16081,
+        "reasoning_output_tokens": 11606
+      },
+      "missing_category_attempts": {
+        "input_tokens": 2,
+        "cached_input_tokens": 2,
+        "output_tokens": 2,
+        "reasoning_output_tokens": 2
+      },
+      "exact_token_totals": {
+        "input_tokens": null,
+        "cached_input_tokens": null,
+        "output_tokens": null,
+        "reasoning_output_tokens": null
+      },
+      "costs": {
+        "primary": {
+          "complete": false,
+          "exact_total": null,
+          "known_metered_subtotal": 334375.6,
+          "cost_lower_bound": 334375.6,
+          "incompletely_metered_attempts": 2,
+          "exact_cost_per_successful_chain": null,
+          "cost_per_successful_chain_lower_bound": 334375.6,
+          "exact_cost_per_assigned_stage": null,
+          "cost_per_assigned_stage_lower_bound": 55729.26666666666
+        },
+        "cache_neutral": {
+          "complete": false,
+          "exact_total": null,
+          "known_metered_subtotal": 359374,
+          "cost_lower_bound": 359374,
+          "incompletely_metered_attempts": 2,
+          "exact_cost_per_successful_chain": null,
+          "cost_per_successful_chain_lower_bound": 359374.0,
+          "exact_cost_per_assigned_stage": null,
+          "cost_per_assigned_stage_lower_bound": 59895.666666666664
+        },
+        "output_1": {
+          "complete": false,
+          "exact_total": null,
+          "known_metered_subtotal": 270051.6,
+          "cost_lower_bound": 270051.6,
+          "incompletely_metered_attempts": 2,
+          "exact_cost_per_successful_chain": null,
+          "cost_per_successful_chain_lower_bound": 270051.6,
+          "exact_cost_per_assigned_stage": null,
+          "cost_per_assigned_stage_lower_bound": 45008.6
+        },
+        "output_10": {
+          "complete": false,
+          "exact_total": null,
+          "known_metered_subtotal": 414780.6,
+          "cost_lower_bound": 414780.6,
+          "incompletely_metered_attempts": 2,
+          "exact_cost_per_successful_chain": null,
+          "cost_per_successful_chain_lower_bound": 414780.6,
+          "exact_cost_per_assigned_stage": null,
+          "cost_per_assigned_stage_lower_bound": 69130.09999999999
+        }
+      }
+    }
+  },
+  "ain_savings_upper_bounds_per_primary_chain": {
+    "python": {
+      "primary": {
+        "savings_upper_bound_fraction": -1.6441402793472353,
+        "point_savings_estimate": null,
+        "reason_if_undefined": null
+      },
+      "cache_neutral": {
+        "savings_upper_bound_fraction": -1.5062084404104787,
+        "point_savings_estimate": null,
+        "reason_if_undefined": null
+      },
+      "output_1": {
+        "savings_upper_bound_fraction": -1.4159400102523634,
+        "point_savings_estimate": null,
+        "reason_if_undefined": null
+      },
+      "output_10": {
+        "savings_upper_bound_fraction": -1.8643268965831563,
+        "point_savings_estimate": null,
+        "reason_if_undefined": null
+      }
+    },
+    "ir": {
+      "primary": {
+        "savings_upper_bound_fraction": -0.913689948159484,
+        "point_savings_estimate": null,
+        "reason_if_undefined": null
+      },
+      "cache_neutral": {
+        "savings_upper_bound_fraction": -0.9923935400531121,
+        "point_savings_estimate": null,
+        "reason_if_undefined": null
+      },
+      "output_1": {
+        "savings_upper_bound_fraction": -0.8802653034794969,
+        "point_savings_estimate": null,
+        "reason_if_undefined": null
+      },
+      "output_10": {
+        "savings_upper_bound_fraction": -0.9417821974999085,
+        "point_savings_estimate": null,
+        "reason_if_undefined": null
+      }
+    }
+  },
+  "ain_savings_upper_bounds_per_assigned_stage": {
+    "python": {
+      "primary": {
+        "savings_upper_bound_fraction": -0.32207013967361764,
+        "point_savings_estimate": null,
+        "denominator": "all 6 assigned stages per form; not adjusted for successful chains"
+      },
+      "cache_neutral": {
+        "savings_upper_bound_fraction": -0.25310422020523937,
+        "point_savings_estimate": null,
+        "denominator": "all 6 assigned stages per form; not adjusted for successful chains"
+      },
+      "output_1": {
+        "savings_upper_bound_fraction": -0.2079700051261817,
+        "point_savings_estimate": null,
+        "denominator": "all 6 assigned stages per form; not adjusted for successful chains"
+      },
+      "output_10": {
+        "savings_upper_bound_fraction": -0.43216344829157816,
+        "point_savings_estimate": null,
+        "denominator": "all 6 assigned stages per form; not adjusted for successful chains"
+      }
+    },
+    "ir": {
+      "primary": {
+        "savings_upper_bound_fraction": 0.043155025920257994,
+        "point_savings_estimate": null,
+        "denominator": "all 6 assigned stages per form; not adjusted for successful chains"
+      },
+      "cache_neutral": {
+        "savings_upper_bound_fraction": 0.0038032299734439556,
+        "point_savings_estimate": null,
+        "denominator": "all 6 assigned stages per form; not adjusted for successful chains"
+      },
+      "output_1": {
+        "savings_upper_bound_fraction": 0.05986734826025153,
+        "point_savings_estimate": null,
+        "denominator": "all 6 assigned stages per form; not adjusted for successful chains"
+      },
+      "output_10": {
+        "savings_upper_bound_fraction": 0.029108901250045838,
+        "point_savings_estimate": null,
+        "denominator": "all 6 assigned stages per form; not adjusted for successful chains"
+      }
+    }
+  },
+  "limits": [
+    "Missing request usage stays unknown; a known subtotal is not an all-attempt point estimate.",
+    "Bounds assume all omitted resource costs are nonnegative and cached input is a subset of input.",
+    "A positive savings upper bound does not establish any saving; actual saving may be lower or negative.",
+    "These are hypothetical token weights, not invoices or realized dollar savings.",
+    "The resumed dataset reuses original observations and includes a multi-hour service break.",
+    "A fallback can make a primary chain ineligible because of mutator support, even when every model submission is correct.",
+    "Only two paired workflow variants per form; no significance claim or native-training conclusion."
+  ],
+  "figures": [
+    "known-normalized-cost.svg",
+    "known-normalized-cost.png",
+    "known-token-counts.svg",
+    "known-token-counts.png"
+  ]
+}

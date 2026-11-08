@@ -1,0 +1,50 @@
+{
+ "alias": {
+  "resident": {
+   "in": 34686,
+   "out": 5928,
+   "common": 15102
+  },
+  "inspect": {
+   "in": 70470,
+   "out": 5928,
+   "common": 50886
+  }
+ },
+ "ideal": {
+  "resident": {
+   "in": 27144,
+   "out": 3714,
+   "common": 15102
+  },
+  "inspect": {
+   "in": 62928,
+   "out": 3714,
+   "common": 50886
+  }
+ },
+ "ideal_no_static_symbols": {
+  "resident": {
+   "in": 46956,
+   "out": 10008,
+   "common": 15102
+  },
+  "inspect": {
+   "in": 82740,
+   "out": 10008,
+   "common": 50886
+  }
+ },
+ "alias_compact_data": {
+  "resident": {
+   "in": 33336,
+   "out": 5928,
+   "common": 15102
+  },
+  "inspect": {
+   "in": 69120,
+   "out": 5928,
+   "common": 50886
+  }
+ }
+}

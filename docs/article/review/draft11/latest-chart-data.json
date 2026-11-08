@@ -1,0 +1,689 @@
+{
+  "review_date": "2026-11-07",
+  "scope": "Read-only audit of latest branch tips and local RTX3080 saved experiments",
+  "branches": {
+    "origin/research/ain-fluency-current-agents": "60ba43bad3588815ecebe1504c35f2dfe7f0e97d",
+    "origin/research/approved-core-replication": "2b6541a24ef71dcd4390f526042ebf131501fc51",
+    "origin/claude/approved-core-replication": "e9a8a5111717a57427fac50605cf5cbe0c86b316",
+    "origin/research/approved-core-article-draft-10": "53cb324e70ac801e9636f7fa0972a82fe99ae511"
+  },
+  "prompted_controller": {
+    "source": "experiments/ain_fluency/results/current-agent-2026-11-06-continuation",
+    "scored_artifacts": 18,
+    "unique_named_execution_cases": 55,
+    "artifact_case_executions": 990,
+    "all_case_executions_pass": true,
+    "modes": {
+      "python": {
+        "artifacts": 6,
+        "correct_artifacts": 6,
+        "requests": 12,
+        "requests_without_usage": 0,
+        "known_token_subtotals": {
+          "input_tokens": 250087,
+          "cached_input_tokens": 37632,
+          "output_tokens": 7340,
+          "reasoning_output_tokens": 3774
+        },
+        "fallbacks": 0
+      },
+      "ir": {
+        "artifacts": 6,
+        "correct_artifacts": 6,
+        "requests": 12,
+        "requests_without_usage": 0,
+        "known_token_subtotals": {
+          "input_tokens": 282986,
+          "cached_input_tokens": 12544,
+          "output_tokens": 15552,
+          "reasoning_output_tokens": 6444
+        },
+        "fallbacks": 0
+      },
+      "ain": {
+        "artifacts": 6,
+        "correct_artifacts": 6,
+        "requests": 14,
+        "requests_without_usage": 2,
+        "known_token_subtotals": {
+          "input_tokens": 278969,
+          "cached_input_tokens": 27776,
+          "output_tokens": 16081,
+          "reasoning_output_tokens": 11606
+        },
+        "fallbacks": 1
+      }
+    }
+  },
+  "full_format_adaptation": {
+    "source": "experiments/native_learning_gate/results/rtx3080-2026-11-06",
+    "config": {
+      "model": "Qwen/Qwen2.5-1.5B",
+      "revision": "8faed761d45a263340a0528343f099c05c9a4323",
+      "seed": 20261106,
+      "arms": [
+        "python",
+        "ir",
+        "ain"
+      ],
+      "epochs": 3,
+      "gradient_accumulation": 4,
+      "learning_rate": 0.001,
+      "lora_rank": 16,
+      "lora_alpha": 32,
+      "lora_targets": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_sequence": 512,
+      "max_new_tokens": 320,
+      "train_seconds_per_arm": 300,
+      "eval_seconds_per_stage": 90,
+      "peak_reserved_limit_gib": 7.8,
+      "gate_dev_correct_fraction": 0.75,
+      "purpose": "memory, throughput and executable language-learning screen"
+    },
+    "source_hash_matches": {
+      "experiments\\native_learning_gate\\run.py": true,
+      "experiments\\native_learning_gate\\data.py": true,
+      "experiments\\ain_v0\\ain\\language.py": true
+    },
+    "arms": {
+      "python": {
+        "stages": {
+          "before": {
+            "assigned": 24,
+            "attempted": 24,
+            "correct": 24,
+            "syntax_valid": 24,
+            "stage_timeouts": 0,
+            "input_tokens": 889,
+            "output_tokens": 353,
+            "generation_seconds": 16.06244110000989,
+            "compiler_seconds": 0,
+            "judge_seconds": 0.0022240999969653785,
+            "splits": {
+              "dev": {
+                "correct": 12,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              },
+              "holdout": {
+                "correct": 12,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              }
+            }
+          },
+          "after": {
+            "assigned": 24,
+            "attempted": 24,
+            "correct": 24,
+            "syntax_valid": 24,
+            "stage_timeouts": 0,
+            "input_tokens": 889,
+            "output_tokens": 417,
+            "generation_seconds": 18.72647799999686,
+            "compiler_seconds": 0,
+            "judge_seconds": 0.0021162999837542884,
+            "splits": {
+              "dev": {
+                "correct": 12,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              },
+              "holdout": {
+                "correct": 12,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              }
+            }
+          }
+        },
+        "training": {
+          "presentations": 288,
+          "processed_tokens": 14100,
+          "supervised_tokens": 4266,
+          "seconds": 68.81119410000247,
+          "tokens_per_second": 204.9085208361396,
+          "stop_reason": "epochs_complete"
+        },
+        "updates": 72,
+        "peak_reserved_gib": 3.40234375,
+        "parameters": 1545893376,
+        "trainable_parameters": 2179072,
+        "vocabulary": 151665,
+        "dev_gate_pass": true
+      },
+      "ir": {
+        "stages": {
+          "before": {
+            "assigned": 24,
+            "attempted": 11,
+            "correct": 0,
+            "syntax_valid": 0,
+            "stage_timeouts": 13,
+            "input_tokens": 392,
+            "output_tokens": 2032,
+            "generation_seconds": 94.69709479999437,
+            "compiler_seconds": 0,
+            "judge_seconds": 0.0004998999866074882,
+            "splits": {
+              "dev": {
+                "correct": 0,
+                "assigned": 12,
+                "attempted": 6,
+                "timeouts": 6
+              },
+              "holdout": {
+                "correct": 0,
+                "assigned": 12,
+                "attempted": 5,
+                "timeouts": 7
+              }
+            }
+          },
+          "after": {
+            "assigned": 24,
+            "attempted": 20,
+            "correct": 15,
+            "syntax_valid": 20,
+            "stage_timeouts": 4,
+            "input_tokens": 731,
+            "output_tokens": 2007,
+            "generation_seconds": 92.96167269999569,
+            "compiler_seconds": 0,
+            "judge_seconds": 0.007441199995810166,
+            "splits": {
+              "dev": {
+                "correct": 10,
+                "assigned": 12,
+                "attempted": 10,
+                "timeouts": 2
+              },
+              "holdout": {
+                "correct": 5,
+                "assigned": 12,
+                "attempted": 10,
+                "timeouts": 2
+              }
+            }
+          }
+        },
+        "training": {
+          "presentations": 288,
+          "processed_tokens": 36276,
+          "supervised_tokens": 26442,
+          "seconds": 69.54649990000325,
+          "tokens_per_second": 521.6078458608138,
+          "stop_reason": "epochs_complete"
+        },
+        "updates": 72,
+        "peak_reserved_gib": 3.416015625,
+        "parameters": 1545893376,
+        "trainable_parameters": 2179072,
+        "vocabulary": 151665,
+        "dev_gate_pass": true
+      },
+      "ain": {
+        "stages": {
+          "before": {
+            "assigned": 24,
+            "attempted": 24,
+            "correct": 0,
+            "syntax_valid": 0,
+            "stage_timeouts": 0,
+            "input_tokens": 889,
+            "output_tokens": 1282,
+            "generation_seconds": 59.21201199999632,
+            "compiler_seconds": 0,
+            "judge_seconds": 0.00175760001729941,
+            "splits": {
+              "dev": {
+                "correct": 0,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              },
+              "holdout": {
+                "correct": 0,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              }
+            }
+          },
+          "after": {
+            "assigned": 24,
+            "attempted": 19,
+            "correct": 7,
+            "syntax_valid": 14,
+            "stage_timeouts": 5,
+            "input_tokens": 693,
+            "output_tokens": 2028,
+            "generation_seconds": 95.1275095000019,
+            "compiler_seconds": 0,
+            "judge_seconds": 0.008198500006983522,
+            "splits": {
+              "dev": {
+                "correct": 5,
+                "assigned": 12,
+                "attempted": 10,
+                "timeouts": 2
+              },
+              "holdout": {
+                "correct": 2,
+                "assigned": 12,
+                "attempted": 9,
+                "timeouts": 3
+              }
+            }
+          }
+        },
+        "training": {
+          "presentations": 288,
+          "processed_tokens": 39252,
+          "supervised_tokens": 29418,
+          "seconds": 72.20782019999751,
+          "tokens_per_second": 543.597630994563,
+          "stop_reason": "epochs_complete"
+        },
+        "updates": 72,
+        "peak_reserved_gib": 3.416015625,
+        "parameters": 1545893376,
+        "trainable_parameters": 2179072,
+        "vocabulary": 151665,
+        "dev_gate_pass": false
+      }
+    }
+  },
+  "compact_native_adaptation": {
+    "source": "experiments/ain_compiler_gate/results/rtx3080-2026-11-06-learning-v2",
+    "config": {
+      "model": "Qwen/Qwen2.5-1.5B",
+      "revision": "8faed761d45a263340a0528343f099c05c9a4323",
+      "seed": 20261106,
+      "epochs": 3,
+      "gradient_accumulation": 4,
+      "learning_rate": 0.001,
+      "lora_rank": 16,
+      "lora_alpha": 32,
+      "lora_targets": [
+        "q_proj",
+        "v_proj"
+      ],
+      "max_sequence": 256,
+      "max_new_tokens": 64,
+      "train_seconds_per_arm": 300,
+      "eval_seconds_per_stage": 120,
+      "hard_seconds_per_arm": 600,
+      "peak_reserved_limit_gib": 7.8,
+      "dev_threshold": 9,
+      "purpose": "compact authoring with a common native compiler backend"
+    },
+    "source_hash_matches": {
+      "experiments\\ain_compiler_gate\\run.py": true,
+      "experiments\\ain_compiler_gate\\data.py": true,
+      "experiments\\ain_compiler_gate\\compiler.py": true,
+      "experiments\\native_learning_gate\\run.py": true,
+      "experiments\\native_learning_gate\\data.py": true,
+      "experiments\\ain_v0\\ain\\language.py": true
+    },
+    "arms": {
+      "python": {
+        "stages": {
+          "before": {
+            "assigned": 24,
+            "attempted": 24,
+            "correct": 1,
+            "syntax_valid": 1,
+            "stage_timeouts": 0,
+            "input_tokens": 841,
+            "output_tokens": 1327,
+            "generation_seconds": 60.81710610001028,
+            "compiler_seconds": 0.009746399999130517,
+            "judge_seconds": 0.0554196999873966,
+            "splits": {
+              "dev": {
+                "correct": 1,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              },
+              "holdout": {
+                "correct": 0,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              }
+            }
+          },
+          "after": {
+            "assigned": 24,
+            "attempted": 24,
+            "correct": 24,
+            "syntax_valid": 24,
+            "stage_timeouts": 0,
+            "input_tokens": 841,
+            "output_tokens": 169,
+            "generation_seconds": 7.732221200014465,
+            "compiler_seconds": 0.13221089998842217,
+            "judge_seconds": 0.1356100999910268,
+            "splits": {
+              "dev": {
+                "correct": 12,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              },
+              "holdout": {
+                "correct": 12,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              }
+            }
+          }
+        },
+        "training": {
+          "presentations": 288,
+          "processed_tokens": 10740,
+          "supervised_tokens": 1482,
+          "seconds": 70.98546210000495,
+          "tokens_per_second": 151.29858540428168,
+          "stop_reason": "epochs_complete"
+        },
+        "updates": 72,
+        "peak_reserved_gib": 3.3984375,
+        "parameters": 1545893376,
+        "trainable_parameters": 2179072,
+        "vocabulary": 151665,
+        "dev_gate_pass": true
+      },
+      "ir": {
+        "stages": {
+          "before": {
+            "assigned": 24,
+            "attempted": 24,
+            "correct": 0,
+            "syntax_valid": 0,
+            "stage_timeouts": 0,
+            "input_tokens": 793,
+            "output_tokens": 1222,
+            "generation_seconds": 56.36928410000837,
+            "compiler_seconds": 0.0,
+            "judge_seconds": 0.04273609998926986,
+            "splits": {
+              "dev": {
+                "correct": 0,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              },
+              "holdout": {
+                "correct": 0,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              }
+            }
+          },
+          "after": {
+            "assigned": 24,
+            "attempted": 24,
+            "correct": 24,
+            "syntax_valid": 24,
+            "stage_timeouts": 0,
+            "input_tokens": 793,
+            "output_tokens": 201,
+            "generation_seconds": 9.336834900008398,
+            "compiler_seconds": 0.1406319999950938,
+            "judge_seconds": 0.14437860003090464,
+            "splits": {
+              "dev": {
+                "correct": 12,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              },
+              "holdout": {
+                "correct": 12,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              }
+            }
+          }
+        },
+        "training": {
+          "presentations": 288,
+          "processed_tokens": 10356,
+          "supervised_tokens": 1674,
+          "seconds": 68.71807719999924,
+          "tokens_per_second": 150.70270330555923,
+          "stop_reason": "epochs_complete"
+        },
+        "updates": 72,
+        "peak_reserved_gib": 3.3984375,
+        "parameters": 1545893376,
+        "trainable_parameters": 2179072,
+        "vocabulary": 151665,
+        "dev_gate_pass": true
+      },
+      "ain": {
+        "stages": {
+          "before": {
+            "assigned": 24,
+            "attempted": 24,
+            "correct": 0,
+            "syntax_valid": 0,
+            "stage_timeouts": 0,
+            "input_tokens": 817,
+            "output_tokens": 1536,
+            "generation_seconds": 70.26355760000297,
+            "compiler_seconds": 0.0,
+            "judge_seconds": 0.04370329999073874,
+            "splits": {
+              "dev": {
+                "correct": 0,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              },
+              "holdout": {
+                "correct": 0,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              }
+            }
+          },
+          "after": {
+            "assigned": 24,
+            "attempted": 24,
+            "correct": 23,
+            "syntax_valid": 24,
+            "stage_timeouts": 0,
+            "input_tokens": 817,
+            "output_tokens": 201,
+            "generation_seconds": 9.163560800014238,
+            "compiler_seconds": 0.1313763999933144,
+            "judge_seconds": 0.13443770001322264,
+            "splits": {
+              "dev": {
+                "correct": 12,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              },
+              "holdout": {
+                "correct": 11,
+                "assigned": 12,
+                "attempted": 12,
+                "timeouts": 0
+              }
+            }
+          }
+        },
+        "training": {
+          "presentations": 288,
+          "processed_tokens": 10644,
+          "supervised_tokens": 1674,
+          "seconds": 68.29130279999663,
+          "tokens_per_second": 155.86172123810363,
+          "stop_reason": "epochs_complete"
+        },
+        "updates": 72,
+        "peak_reserved_gib": 3.3984375,
+        "parameters": 1545893376,
+        "trainable_parameters": 2179072,
+        "vocabulary": 151665,
+        "dev_gate_pass": true
+      }
+    }
+  },
+  "native_reference_encoding": {
+    "source": "experiments/ain_compiler_gate/results/rtx3080-2026-11-06-reference-v2",
+    "artifacts": 360,
+    "native_checks": 3240,
+    "correct": 360,
+    "arms": {
+      "python": {
+        "artifacts": 120,
+        "correct": 120,
+        "full_target_tokens": 1719,
+        "compact_target_tokens": 543,
+        "mean_full_target_tokens": 14.325,
+        "mean_compact_target_tokens": 4.525,
+        "reduction_fraction": 0.6841186736474695
+      },
+      "ir": {
+        "artifacts": 120,
+        "correct": 120,
+        "full_target_tokens": 11151,
+        "compact_target_tokens": 639,
+        "mean_full_target_tokens": 92.925,
+        "mean_compact_target_tokens": 5.325,
+        "reduction_fraction": 0.9426957223567393
+      },
+      "ain": {
+        "artifacts": 120,
+        "correct": 120,
+        "full_target_tokens": 12279,
+        "compact_target_tokens": 639,
+        "mean_full_target_tokens": 102.325,
+        "mean_compact_target_tokens": 5.325,
+        "reduction_fraction": 0.9479599315905204
+      }
+    },
+    "identical_assembly_across_all_3_forms": 120
+  },
+  "approved_core_theory": {
+    "source_branch": "origin/research/approved-core-article-draft-10",
+    "totals_rebuilt_from_raw_match": true,
+    "semantic_episode_records": 144,
+    "ledger_rows": 2160,
+    "cases_per_schedule": 72,
+    "logical_requests_per_schedule": 216,
+    "all_execution_statuses_pass": true,
+    "model_inference_calls": 0,
+    "schedules": {
+      "resident": {
+        "short_alias_python": {
+          "common_input_text_tokens": 15102,
+          "artifact_input_units": 5346,
+          "memory_input_units": 5238,
+          "reprocessed_history_units": 7488,
+          "shared_framing_positions": 1512,
+          "input_positions": 34686,
+          "authored_content_units": 5712,
+          "output_positions": 5928,
+          "host_observation_units": 1080
+        },
+        "ideal": {
+          "common_input_text_tokens": 15102,
+          "artifact_input_units": 2700,
+          "memory_input_units": 2970,
+          "reprocessed_history_units": 4860,
+          "shared_framing_positions": 1512,
+          "input_positions": 27144,
+          "authored_content_units": 3498,
+          "output_positions": 3714,
+          "host_observation_units": 864
+        },
+        "short_alias_python_total": 40614,
+        "ideal_total": 30858,
+        "difference": 9756,
+        "reduction_fraction": 0.24021273452504066,
+        "ideal_controls_identical": true
+      },
+      "inspect": {
+        "short_alias_python": {
+          "common_input_text_tokens": 50886,
+          "artifact_input_units": 5346,
+          "memory_input_units": 5238,
+          "reprocessed_history_units": 7488,
+          "shared_framing_positions": 1512,
+          "input_positions": 70470,
+          "authored_content_units": 5712,
+          "output_positions": 5928,
+          "host_observation_units": 1080
+        },
+        "ideal": {
+          "common_input_text_tokens": 50886,
+          "artifact_input_units": 2700,
+          "memory_input_units": 2970,
+          "reprocessed_history_units": 4860,
+          "shared_framing_positions": 1512,
+          "input_positions": 62928,
+          "authored_content_units": 3498,
+          "output_positions": 3714,
+          "host_observation_units": 864
+        },
+        "short_alias_python_total": 76398,
+        "ideal_total": 66642,
+        "difference": 9756,
+        "reduction_fraction": 0.12769967800204196,
+        "ideal_controls_identical": true
+      }
+    },
+    "output_reduction_fraction": 0.3734817813765182,
+    "sensitivity": {
+      "resident": {
+        "compact_json_python_reduction_fraction": 0.21408924205378976,
+        "without_static_symbols_reduction_fraction": -0.40257054217757426,
+        "representation_dependent_unit_cost_break_even": 1.6191926884996193
+      },
+      "inspect": {
+        "compact_json_python_reduction_fraction": 0.11200831467860572,
+        "without_static_symbols_reduction_fraction": -0.21401083798005183,
+        "representation_dependent_unit_cost_break_even": 1.6191926884996193
+      }
+    },
+    "agent_records": {
+      "codex": {
+        "independent_counter_first_result": "exact match",
+        "exact_wrapper": "passed all6assets",
+        "tested_reference_harness_checks": 20,
+        "scope": "separate agent same-session Windows; not independent provider study"
+      },
+      "claude": {
+        "identity": "Claude Opus 5.5 self-reported",
+        "independent_counter_first_result": "exact match",
+        "exact_wrapper": "failed tokenizer acquisition",
+        "labelled_deviation": "hash-verified tokenizer.json, reference pipeline passed21 checks and6files matched",
+        "context_disclosure": "prior AIN work in same conversation"
+      },
+      "grok": {
+        "status": "pending approved-core submission",
+        "packet_available": true,
+        "packet_smoke_test_reference_checks": 21,
+        "packet_smoke_test_files_matched": 6
+      }
+    }
+  }
+}

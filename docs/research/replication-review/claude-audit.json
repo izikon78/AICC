@@ -1,0 +1,107 @@
+{
+  "reviewed_commit": "2f17cd3825f8e9785c919da2add80d1e35e97b97",
+  "submission_manifest_files_verified": 45,
+  "frozen_core_sources_verified": 11,
+  "original_result_checksums_verified": 21,
+  "matrix_rows_verified": 45,
+  "output_shapes_matching_original": 3,
+  "incomplete_run_rows_excluded": 5,
+  "source_dimensions_and_all_summary_medians_match": true,
+  "split_counts": [
+    72,
+    24,
+    24
+  ],
+  "same_public_calibration_descriptors": true,
+  "unit_test_log_methods_ok": 44,
+  "unit_tests_rerun_in_this_review": false,
+  "high_load_stress_rerun_in_this_review": false,
+  "binding_scenarios_in_submitted_record": 9,
+  "comparisons": [
+    {
+      "job": "repeated-shuffled",
+      "ordinary_pipeline_saved_percent": 53.880964971227606,
+      "ordinary_peak_saved_percent": 31.118634977037306,
+      "aicc_vs_ordinary_pipeline_saved_percent": 7.49649377298759
+    },
+    {
+      "job": "diverse-shuffled",
+      "ordinary_pipeline_saved_percent": 21.994019822860334,
+      "ordinary_peak_saved_percent": 20.45886296456575,
+      "aicc_vs_ordinary_pipeline_saved_percent": 0.03867942142312675
+    },
+    {
+      "job": "ordered-stream",
+      "ordinary_pipeline_saved_percent": 37.02810651665798,
+      "ordinary_peak_saved_percent": 73.50851411950067,
+      "aicc_vs_ordinary_pipeline_saved_percent": -0.49475861471286464
+    }
+  ],
+  "equal_job_mix": {
+    "reference": {
+      "sum_pipeline_medians": 16.29586502799998,
+      "sum_worker_medians": 25.057127073999993,
+      "pipeline_saved_percent": 0.0,
+      "worker_saved_percent": 0.0
+    },
+    "static": {
+      "sum_pipeline_medians": 10.382276416000082,
+      "sum_worker_medians": 19.395824015000017,
+      "pipeline_saved_percent": 36.28889047521575,
+      "worker_saved_percent": 22.593584022145574
+    },
+    "aicc_static": {
+      "sum_pipeline_medians": 10.227775035000036,
+      "sum_worker_medians": 19.36232195599996,
+      "pipeline_saved_percent": 37.23699222209802,
+      "worker_saved_percent": 22.72728673635187
+    },
+    "learned": {
+      "sum_pipeline_medians": 10.430372613000031,
+      "sum_worker_medians": 19.48753333099978,
+      "pipeline_saved_percent": 35.993746910162216,
+      "worker_saved_percent": 22.227583100615654
+    },
+    "aicc_learned": {
+      "sum_pipeline_medians": 10.252627154999914,
+      "sum_worker_medians": 19.322525824999957,
+      "pipeline_saved_percent": 37.084486540704766,
+      "worker_saved_percent": 22.88610833981213
+    }
+  },
+  "learning": [
+    {
+      "run": "full-2026-11-05",
+      "selected_epoch": 164,
+      "collection_seconds": 19.60258390000672,
+      "training_seconds": 0.32124130000011064,
+      "learned_kernel_seconds": 0.4572968499560375,
+      "static_kernel_seconds": 0.4530580999562517,
+      "learned_extra_percent": 0.9355864071727504
+    },
+    {
+      "run": "anthropic-claude-opus-5.5-2026-11-05-trackA-001",
+      "selected_epoch": 415,
+      "collection_seconds": 12.605128965999995,
+      "training_seconds": 0.1457513469999867,
+      "learned_kernel_seconds": 0.2678102305000749,
+      "static_kernel_seconds": 0.260452823499989,
+      "learned_extra_percent": 2.824852079242768
+    },
+    {
+      "run": "anthropic-claude-opus-5.5-2026-11-05-trackA-002",
+      "selected_epoch": 456,
+      "collection_seconds": 12.56026723299999,
+      "training_seconds": 0.1546901640000442,
+      "learned_kernel_seconds": 0.25512938149995534,
+      "static_kernel_seconds": 0.2551295715000208,
+      "learned_extra_percent": -7.447198862031712e-05
+    }
+  ],
+  "checkpoint_rows_reproduced_locally": 18,
+  "checkpoint_review": "Inspected function definitions run with unchanged trusted Runtime; Linux paths/output-writing code omitted.",
+  "granularity_ratio_split_over_batch": 28.826645852348747,
+  "granularity_ratio_aicc_batch_over_ordinary_batch": 1.0003698975585973,
+  "aicc_register_bind_median_ms": 0.9166440000285547,
+  "credential_pattern_screen": "No recognized token or private-key pattern in 46 added files; no pasted credential used by this review."
+}

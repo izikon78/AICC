@@ -1,0 +1,64 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "dev-add-000", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "holdout-sub_add-000", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "dev-add-001", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "holdout-sub_add-001", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "dev-add-002", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "holdout-sub_add-002", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "dev-add-003", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "holdout-sub_add-003", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "dev-sub-000", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "holdout-add_sub-000", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "dev-sub-001", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "holdout-add_sub-001", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "dev-sub-002", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "holdout-add_sub-002", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "dev-sub-003", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "holdout-add_sub-003", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "dev-add_add-000", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "holdout-sub_sub-000", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "dev-add_add-001", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "holdout-sub_sub-001", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "dev-add_add-002", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "holdout-sub_sub-002", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "dev-add_add-003", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "prediction", "arm": "ain", "stage": "ain-before", "id": "holdout-sub_sub-003", "correct": false, "error": "ValueError: expected supported opcode and integer literal per instruction"}
+{"event": "train", "arm": "ain", "step": 6, "epoch": 1, "loss": 0.7954394966363907, "elapsed_seconds": 5.918151099998795}
+{"event": "train", "arm": "ain", "step": 12, "epoch": 1, "loss": 0.37384789413772523, "elapsed_seconds": 11.537650399994163}
+{"event": "train", "arm": "ain", "step": 18, "epoch": 1, "loss": 0.0761959832161665, "elapsed_seconds": 17.251810299996578}
+{"event": "train", "arm": "ain", "step": 24, "epoch": 1, "loss": 0.03686981135979295, "elapsed_seconds": 23.146454999994603}
+{"event": "train", "arm": "ain", "step": 30, "epoch": 2, "loss": 0.00714882806641981, "elapsed_seconds": 28.905501599998388}
+{"event": "train", "arm": "ain", "step": 36, "epoch": 2, "loss": 1.4901156752955558e-07, "elapsed_seconds": 34.55419379999512}
+{"event": "train", "arm": "ain", "step": 42, "epoch": 2, "loss": 1.1309938585668533e-06, "elapsed_seconds": 40.15540019999753}
+{"event": "train", "arm": "ain", "step": 48, "epoch": 2, "loss": 4.485243607632583e-07, "elapsed_seconds": 45.758194699999876}
+{"event": "train", "arm": "ain", "step": 54, "epoch": 3, "loss": 2.6300505773235727e-07, "elapsed_seconds": 51.382634299996425}
+{"event": "train", "arm": "ain", "step": 60, "epoch": 3, "loss": 0.00013088476407041583, "elapsed_seconds": 56.92979070000001}
+{"event": "train", "arm": "ain", "step": 66, "epoch": 3, "loss": 9.760255537116791e-08, "elapsed_seconds": 62.61500939999678}
+{"event": "train", "arm": "ain", "step": 72, "epoch": 3, "loss": 6.072183751371085e-07, "elapsed_seconds": 68.29115089999686}
+C:\Users\Izik\Downloads\AICC\.venv\Lib\site-packages\peft\utils\save_and_load.py:236: UserWarning: Could not find a config file in Qwen/Qwen2.5-1.5B - will assume that the vocabulary was not modified.
+  warnings.warn(
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "dev-add-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "holdout-sub_add-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "dev-add-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "holdout-sub_add-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "dev-add-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "holdout-sub_add-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "dev-add-003", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "holdout-sub_add-003", "correct": false, "error": "wrong result for x=-1000000: -1000018 != -999994"}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "dev-sub-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "holdout-add_sub-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "dev-sub-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "holdout-add_sub-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "dev-sub-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "holdout-add_sub-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "dev-sub-003", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "holdout-add_sub-003", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "dev-add_add-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "holdout-sub_sub-000", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "dev-add_add-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "holdout-sub_sub-001", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "dev-add_add-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "holdout-sub_sub-002", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "dev-add_add-003", "correct": true, "error": null}
+{"event": "prediction", "arm": "ain", "stage": "ain-after", "id": "holdout-sub_sub-003", "correct": true, "error": null}
+{"event": "arm_complete", "arm": "ain", "after": {"dev": {"correct": 12, "assigned": 12, "syntax_valid": 12, "inference_seconds": 4.384958899987396, "input_tokens": 400, "output_tokens": 96}, "holdout": {"correct": 11, "assigned": 12, "syntax_valid": 12, "inference_seconds": 4.7786019000268425, "input_tokens": 417, "output_tokens": 105}}, "dev_gate_pass": true}

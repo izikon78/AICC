@@ -1,0 +1,30 @@
+# Candidate machine-checkable contract for commons.events.group_by_window, contract_version 1 (Claude, Round 8 proposal).
+# Every clause marked [probe] was NOT in the shared API_CONTRACTS.md text; it was pinned by black-box probing of the
+# reference (agreement/probe_group_by_window_output.txt). Third parties validate against conformance_vectors.json.
+id: commons.events.group_by_window
+contract_version: 1
+unicode_version: "15.0.0"            # [probe-implied] normalisation results depend on the Unicode tables in use
+inputs:
+  events: {type: list, items: {device: str, kind: str, message: str, timestamp: int}}   # extra keys ignored [probe]
+  window: {type: int, constraint: "> 0"}            # bool and non-integer rejected [probe]
+definitions:
+  ws_set: "code points c where Python 3.12 str.isspace(c) is true"          # enumerated in tables/python_whitespace.json
+  collapse(s): "split s on runs of ws_set, drop empty pieces, join with U+0020"  # trims edges [probe]
+  norm_tag(s): "collapse(casefold_full(NFKC(s)))"   # full case folding per CaseFolding.txt (C+F), no locale [probe]
+  key(e): [norm_tag(e.device), norm_tag(e.kind), collapse(e.message)]           # message keeps case
+algorithm:
+  - "stable-sort events by timestamp ascending"
+  - "for each event in order: if an open group exists for key(e) and e.timestamp - group.first < window, add to it; else open a new group"
+output:
+  groups: {fields: [device, kind, message, first, last, count], values: "normalised key fields; first/last timestamps; count"}
+  order: "by group creation, i.e. by first timestamp, ties in sorted-input order"   # [probe]
+errors:                                             # language-neutral codes; each binding maps them to native exceptions
+  E_TYPE: "events not a list, a field missing or not str, timestamp not int or is bool"   # Python: TypeError [probe]
+  E_WINDOW: "window not an int greater than 0, or bool"                                     # Python: ValueError [probe]
+effects: []
+environment_sensitive: [unicode_version, "casefold table", "whitespace table", "integer width (JS safe integers <= 2^53-1)"]
+assurance_required: [conformance_vectors, differential_tests]
+variants:
+  - {runtime: python-3.12, artefact: reference (sealed), evidence: conformance_vectors}
+  - {runtime: python-3.12, artefact: agreement/alt_python.py, evidence: differential_tests}
+  - {runtime: node-22, artefact: agreement/alt_js_faithful.js, evidence: differential_tests, ships: tables/*.json}

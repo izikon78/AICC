@@ -1,0 +1,79 @@
+{
+  "packaging_source_commit": "b9e514527cd303c5cd984aadf44a61ebfd30dc6f",
+  "zip_sha256": "84adad0d7ad8432405197d51313226bdff3a4b1d607edf936e41ebb3e0bd425c",
+  "matplotlib": "3.11.2",
+  "verified_primary_source_count": 22,
+  "all_outputs_identical": true,
+  "checks": {
+    "adaptation-correctness.csv": {
+      "match": true,
+      "expected_sha256": "21bc281600cde0820bfbd937be34234d7f21f00c9c2f311142e6c893fa293b69",
+      "actual_sha256": "21bc281600cde0820bfbd937be34234d7f21f00c9c2f311142e6c893fa293b69"
+    },
+    "adaptation-correctness.png": {
+      "match": true,
+      "expected_sha256": "05e43d96b3676ab4a03e1e67e9088c4e7194a14da2f1fb514a7ec659fd87e29e",
+      "actual_sha256": "05e43d96b3676ab4a03e1e67e9088c4e7194a14da2f1fb514a7ec659fd87e29e"
+    },
+    "adaptation-correctness.svg": {
+      "match": true,
+      "expected_sha256": "645bec6e4718a35fa914d4713b81ae73d45f24d3e7c80c50a791d9bc1f04fa79",
+      "actual_sha256": "645bec6e4718a35fa914d4713b81ae73d45f24d3e7c80c50a791d9bc1f04fa79"
+    },
+    "ain-aicc-workflow.png": {
+      "match": true,
+      "expected_sha256": "e158887f69ef46fb8ee8e79e38d131d52bbe2d9c3d0cc29e431fb3d58d98d82e",
+      "actual_sha256": "e158887f69ef46fb8ee8e79e38d131d52bbe2d9c3d0cc29e431fb3d58d98d82e"
+    },
+    "ain-aicc-workflow.svg": {
+      "match": true,
+      "expected_sha256": "c58076577a50a40d494bb92663e70ed0dce4c40b4eb094274a04a252fe50ffcf",
+      "actual_sha256": "c58076577a50a40d494bb92663e70ed0dce4c40b4eb094274a04a252fe50ffcf"
+    },
+    "approved-core-demand.csv": {
+      "match": true,
+      "expected_sha256": "8120eacd8b733d2cb92ec2866a819d83659cf9335ed82507ab012e5b0fa68016",
+      "actual_sha256": "8120eacd8b733d2cb92ec2866a819d83659cf9335ed82507ab012e5b0fa68016"
+    },
+    "approved-core-demand.png": {
+      "match": true,
+      "expected_sha256": "37ed57a28047647bbecf7ce6a4fb147121fae613c2c73f9eff7bf4a540ade7cd",
+      "actual_sha256": "37ed57a28047647bbecf7ce6a4fb147121fae613c2c73f9eff7bf4a540ade7cd"
+    },
+    "approved-core-demand.svg": {
+      "match": true,
+      "expected_sha256": "a54ac517bad7b09256428af6708ed386e0cee913a2094eaf099b5ebacc6d2a0e",
+      "actual_sha256": "a54ac517bad7b09256428af6708ed386e0cee913a2094eaf099b5ebacc6d2a0e"
+    },
+    "memory-cost.csv": {
+      "match": true,
+      "expected_sha256": "3c61e8c7b9100dbd0b8b75db8adbbd001104c20125cc1010e812c81603209392",
+      "actual_sha256": "3c61e8c7b9100dbd0b8b75db8adbbd001104c20125cc1010e812c81603209392"
+    },
+    "memory-cost.png": {
+      "match": true,
+      "expected_sha256": "41d88905f440015a8d1dbc63b30d3d6ef65a43c5d718791a85d40766aabe5c58",
+      "actual_sha256": "41d88905f440015a8d1dbc63b30d3d6ef65a43c5d718791a85d40766aabe5c58"
+    },
+    "memory-cost.svg": {
+      "match": true,
+      "expected_sha256": "b226d14f9b77a3e24f427827954e5d4a6b2c0dbd6e45dc4c9974d40ed2e4df71",
+      "actual_sha256": "b226d14f9b77a3e24f427827954e5d4a6b2c0dbd6e45dc4c9974d40ed2e4df71"
+    },
+    "processing-cost.csv": {
+      "match": true,
+      "expected_sha256": "7f92147df8fcfe6615508c07826565e8accefe94fd4e70f47a9e8c5401563371",
+      "actual_sha256": "7f92147df8fcfe6615508c07826565e8accefe94fd4e70f47a9e8c5401563371"
+    },
+    "processing-cost.png": {
+      "match": true,
+      "expected_sha256": "b01624f168fcfe092f475a58a31ba0d6a44f812e27f9363b5d9118547abeb84a",
+      "actual_sha256": "b01624f168fcfe092f475a58a31ba0d6a44f812e27f9363b5d9118547abeb84a"
+    },
+    "processing-cost.svg": {
+      "match": true,
+      "expected_sha256": "cf4d60fba842c965749a07e5df83d737a67c5ec645f52e96bff86b04d555db0b",
+      "actual_sha256": "cf4d60fba842c965749a07e5df83d737a67c5ec645f52e96bff86b04d555db0b"
+    }
+  }
+}

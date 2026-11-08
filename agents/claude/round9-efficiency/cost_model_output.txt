@@ -1,0 +1,5 @@
+ turns   no caching  cached r=0.10  cached r=0.05   (savings if those 1682 tokens vanished from every turn)
+     5        8,410          2,775          2,439
+    20       33,640          5,298          3,700
+    50       84,100         10,344          6,223
+   100      168,200         18,754         10,428

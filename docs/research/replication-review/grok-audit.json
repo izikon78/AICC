@@ -1,0 +1,89 @@
+{
+  "archive_sha256": "7294263b7fb8f7cc1c77c0d508a6ce5ab56271405bfcc5a38f90d7682f3acc9c",
+  "archive_bytes": 52171,
+  "packet_files": 17,
+  "checksums_matched": 16,
+  "source_manifest_entries_matching_frozen": 11,
+  "actual_executed_source_files_in_archive": false,
+  "all_summary_medians_match_raw": true,
+  "matrix_rows": 45,
+  "matrix_unique_combinations": 45,
+  "matching_original_output_shapes": 3,
+  "public_calibration_descriptors_match_original": true,
+  "split_counts": [
+    72,
+    24,
+    24
+  ],
+  "recorded_unit_methods_ok": 44,
+  "recorded_binding_checks_ok": 9,
+  "granularity_runs": 18,
+  "granularity_differentials": 8096,
+  "benchmark_reexecuted_in_this_review": false,
+  "effects": [
+    {
+      "job": "repeated-shuffled",
+      "ordinary_pipeline_saved_percent": 52.506152548391725,
+      "ordinary_memory_saved_percent": 31.219168090293103,
+      "aicc_vs_ordinary_pipeline_saved_percent": 2.5976499869060587
+    },
+    {
+      "job": "diverse-shuffled",
+      "ordinary_pipeline_saved_percent": 27.80081502211571,
+      "ordinary_memory_saved_percent": 20.097597375731425,
+      "aicc_vs_ordinary_pipeline_saved_percent": -0.7860242855675104
+    },
+    {
+      "job": "ordered-stream",
+      "ordinary_pipeline_saved_percent": 27.537839426462273,
+      "ordinary_memory_saved_percent": 73.96739461037775,
+      "aicc_vs_ordinary_pipeline_saved_percent": -0.7156508901923653
+    }
+  ],
+  "equal_job_mix": {
+    "reference": {
+      "pipeline_sum": 9.90275940002175,
+      "worker_sum": 16.08659300004365,
+      "pipeline_saved_percent": 0.0,
+      "worker_saved_percent": 0.0
+    },
+    "static": {
+      "pipeline_sum": 6.448864699981641,
+      "worker_sum": 12.382961600029375,
+      "pipeline_saved_percent": 34.87810377411091,
+      "worker_saved_percent": 23.023093827289742
+    },
+    "aicc_static": {
+      "pipeline_sum": 6.451739700045437,
+      "worker_sum": 12.37772159994347,
+      "pipeline_saved_percent": 34.84907146152349,
+      "worker_saved_percent": 23.055667536874434
+    },
+    "learned": {
+      "pipeline_sum": 6.696068299992476,
+      "worker_sum": 12.744882700033486,
+      "pipeline_saved_percent": 32.3817935031546,
+      "worker_saved_percent": 20.773263176367397
+    },
+    "aicc_learned": {
+      "pipeline_sum": 6.737678500008769,
+      "worker_sum": 12.730485400010366,
+      "pipeline_saved_percent": 31.961605570322437,
+      "worker_saved_percent": 20.862761928670515
+    }
+  },
+  "learning": {
+    "collection_seconds": 8.223795800004154,
+    "training_seconds": 0.156677299994044,
+    "selected_epoch": 900,
+    "validation_loss": 0.09875081741673775,
+    "learned_kernel_seconds": 0.20032270005322061,
+    "static_kernel_seconds": 0.19453765006619506,
+    "extra_kernel_percent": 2.9737431212195187,
+    "ordered_stress_extra_time_percent": 7.011710927367476,
+    "ordered_stress_extra_memory_percent": 56.36172450052577
+  },
+  "aicc_register_bind_median_ms": 0.8215499692596495,
+  "granularity_ratio_split_over_batch": 24.720642634707435,
+  "credential_pattern_screen": "No recognized token/private-key pattern detected in17files"
+}

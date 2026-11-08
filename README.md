@@ -1,53 +1,77 @@
-# AICC and AIN
+# Giving AI a Language of Its Own
 
-Research into how AI agents can create, change, and reuse software through precise computational representations.
+AIN/AICC working paper, primary evidence and reproducible experiments.
+Concept, architecture and research direction by **Izik Bachar**.
+Current publication on `main`, dated 8 November 2026.
 
-**AIN — AI Native Language** is the working name for the project's next research direction: a proposed programming representation designed for machine authoring, with explicit semantics, types, state, effects, and resource behavior. **AICC — AI Computational Commons** is the companion proposal for discovering and composing reusable capabilities through precise contracts and scoped bindings.
+**AIN (AI Native Language) is a reference concept** for an AI-oriented language
+and native compilation architecture. AICC (AI Computational Commons) is the
+companion proposal for approved, versioned capabilities. The complete proposed
+system remains conceptual; this repository supplies bounded implementations,
+measurements and a research programme.
 
-Concept, architecture, and research direction: **Izik Bachar**.
+## AI agents and independent reviewers start here
 
-## Start here
+Read the [agent review guide](publication/AGENT_REVIEW.md) before choosing a route.
+Prior AIN knowledge is unnecessary.
 
-- [Latest article and printable review copy](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/article)
-- [AIN research plan and next deliverables](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/ain)
-- [Complex streaming task and illustrative AIN representation](https://github.com/izikon78/AICC/blob/research/ain-language-and-study-results/docs/ain/COMPLEX_TASK.md)
-- [Combined processing-study results](https://github.com/izikon78/AICC/blob/research/ain-language-and-study-results/docs/research/REPLICATION_SYNTHESIS_2026-11-05.md)
-- [Charts, pie charts, CSV data, and source hashes](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/article/figures/draft8)
+- **Independent reconstruction:** begin with the [pre-comparison instructions](publication/reproduction/INDEPENDENT_RECONSTRUCTION.md)
+  and [standalone theory](publication/AIN_THEORY.md). Preserve the first counter,
+  outputs, hashes and read order before consulting the article or expected results.
+- **Technical article review or exact replay:** follow the [review guide](publication/AGENT_REVIEW.md)
+  and [testing instructions](publication/reproduction/START_HERE.md). Disclose
+  earlier exposure to the article or results.
 
-The research materials are maintained on `research/ain-language-and-study-results`; this README on `main` is the project entry point. Draft studies remain reviewable without treating them as final validation.
+The article, evidence index and saved results reveal expected outcomes. Reading
+those first changes the status of an independent reconstruction. First attempts,
+failures and corrections should remain separately identifiable.
 
-## What has been tested
+## Read the publication
 
-The original local study and submitted Claude and Grok remeasurements contain 135 completed million-event worker executions across three reused synthetic datasets. Their output signatures agree. Optimized ordinary code reduced processing time and peak process memory, and the same optimized implementations remained usable through the AICC prototype.
+- [Article in Markdown](publication/AICC_Final_Draft.md)
+- [Review PDF](publication/AICC_Final_Draft_Review.pdf)
+- [AIN reference theory and native method explanation](publication/AIN_THEORY.md)
+- [Selected final experiments and primary evidence](publication/EVIDENCE.md)
+- [Related approaches, including AINL](publication/RELATED_WORK.md)
+- [Five source/AIN examples and contract checks](publication/examples/README.md)
+- [Figures, CSV inputs and source identities](publication/figures/README.md)
+- [Research programme and proposed next studies](publication/RESEARCH_PLAN.md)
+- [Publication validation](publication/VALIDATION.md)
 
-The studies also trained an 867-parameter local neural cost model. It did not consistently beat a strong simple selection policy. This network predicts the cost of supplied processing plans; it is not an AIN model or an LLM trained on native operation tokens.
+The article explains `!501(config)` as a learned reference to a predefined
+`ConnectToDB(config)` capability whose approved implementation can be lowered or
+linked into native execution. Compilation, text-token measurements, conditional
+learned-unit accounting and future trained-agent behavior have separate scope.
+Related external projects are reviewed through their publications; their full
+runtimes were not benchmarked by the local comparison.
 
-These results provide an engineering foundation and a reproducible benchmark. They do **not** establish AICC-specific financial savings, a native-language advantage, a new algorithm unknown to humans, or production private-code isolation. Submitted model identities and remote execution environments are self-reported. Three timing repetitions are descriptive, not statistical proof.
+## Download and run the tests
 
-| Area | Current status |
-|---|---|
-| Equivalent event-processing flows and binding prototype | Implemented and measured |
-| Original plus two submitted remeasurements | Records reviewed; raw data and provenance preserved |
-| AIN semantics and complex benchmark | Proposed research specification |
-| Complete AIN compiler or native-operation model | Not implemented or evaluated |
-| Lifecycle economics and billed AI savings | Not established |
+Download the [portable final-experiment package](https://github.com/izikon78/AICC/raw/refs/heads/main/publication/downloads/AICC_Final_Experiments_Packet.zip)
+and its [SHA-256/size manifest](publication/downloads/AICC_Final_Experiments_Packet.manifest.json).
+The ZIP contains source, saved records, pinned tokenizer assets and current guides.
+It includes no model weights or saved adapters. Dependency installation may need
+Internet access; the primary CPU replay then runs offline.
 
-## Next phase
+From the extracted packet root with Python 3.12,
 
-1. Freeze the complex task's observable semantics and build a readable reference implementation with adversarial state/effect traces.
-2. Implement a small typed semantic core and equivalent conventional-source, structured-IR, and AIN views.
-3. Evaluate current models on fresh build, edit, repair, optimization, and handoff tasks with equal libraries and evidence.
-4. Use those results to decide whether matched model adaptation and dedicated operation tokens justify further experiments.
+```text
+python scripts/verify_packet.py
+python scripts/setup.py
+python scripts/run_reference.py --output work/reference-001
+python scripts/run_representation_comparison.py --output work/text-comparison-001
+```
 
-The research question is whether AIN improves correct completed work and maintenance effort, rather than merely shortening printed code. Future results must include failures, repair effort, applicable billing, setup/training costs, and strong conventional controls.
+Use fresh output directories. Select the independent route before executing a
+known-answer replay if you want an independent first implementation.
+Native compiler, processing and optional GPU adaptation routes are documented in
+[the supplementary tests](publication/reproduction/SUPPLEMENTARY_TESTS.md).
 
-## Evidence and reproduction
+For repository checkouts, the [local comparison protocol](experiments/representation_comparison/PROTOCOL.md)
+and [observed report](experiments/representation_comparison/results/comparison-v1/REPORT.md)
+provide the exact formats, measurement boundaries and raw output locations.
+Return a review with source/input/output hashes, environment, read order,
+deviations and all attempts, as described in the agent guide.
 
-- [Executable processing study and commands](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/experiments/processing_study)
-- [Assignment for other AI agents](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/experiments/processing_study/agent-replication)
-- [Claude replication report](https://github.com/izikon78/AICC/blob/research/ain-language-and-study-results/agents/claude/processing-study-replication-2026-11-05/AGENT_REPORT.md)
-- [Grok replication report](https://github.com/izikon78/AICC/blob/research/ain-language-and-study-results/experiments/processing_study/results/grok-4.7-2026-11-05-trackA-001/AGENT_REPORT.md)
-- [Review method and audit records](https://github.com/izikon78/AICC/tree/research/ain-language-and-study-results/docs/research/replication-review)
-- [Historical archive, corrections, and source-version gaps](https://github.com/izikon78/AICC/blob/research/ain-language-and-study-results/docs/research/REVIEW_2026-11-04.md)
-
-The processing benchmark uses Python/NumPy and no paid model API calls. New language/model experiments are separate future work. Earlier reports, unfavorable findings, original archives, and contribution credits are retained alongside their limitations.
+Earlier drafts and experimental records retain their original paths and history.
+The current publication entry point is [publication/README.md](publication/README.md).

@@ -1,0 +1,11 @@
+EXTENSION v1: sensitivity analysis (not the frozen accounting)
+
+[resident] frozen: alias Python 40,614 vs ideal 30,858 -> 24.02% fewer positions
+  S1 break-even: ideal advantage vanishes if one ideal unit costs more than 1.619x one text token
+  S2 alias Python with compact-JSON memory/observations: 39,264 -> ideal advantage 21.41%
+  S3 ideal without the 63 workload-fitted static symbols: 56,964 -> advantage vs alias Python -40.26%
+
+[inspect] frozen: alias Python 76,398 vs ideal 66,642 -> 12.77% fewer positions
+  S1 break-even: ideal advantage vanishes if one ideal unit costs more than 1.619x one text token
+  S2 alias Python with compact-JSON memory/observations: 75,048 -> ideal advantage 11.20%
+  S3 ideal without the 63 workload-fitted static symbols: 92,748 -> advantage vs alias Python -21.40%

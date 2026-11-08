@@ -1,0 +1,126 @@
+{
+  "template_version": "1.0",
+  "status": "TEMPLATE_NOT_EXECUTED",
+  "run_id": null,
+  "track": null,
+  "agent": {
+    "provider": null,
+    "model": null,
+    "model_version": null,
+    "identity_evidence": "SELF_REPORTED_UNLESS_OTHERWISE_DOCUMENTED",
+    "authoring_session_id": null
+  },
+  "provenance": {
+    "repository": "https://github.com/izikon78/AICC",
+    "frozen_study_commit": "75de32b757b8bdc43886213ee6b9dd9470717918",
+    "checkout_commit": null,
+    "source_hashes_match_frozen": null,
+    "source_hashes_unchanged_during_run": null,
+    "model_origin": null,
+    "model_sha256": null,
+    "policy_origin": null,
+    "policy_sha256": null,
+    "historical_artifacts_copied": [],
+    "source_changes": []
+  },
+  "execution": {
+    "code_executed": null,
+    "started_utc": null,
+    "finished_utc": null,
+    "commands": [],
+    "environment": {
+      "os": null,
+      "cpu_model": null,
+      "logical_cpus": null,
+      "ram_gib": null,
+      "python": null,
+      "numpy": null,
+      "unicode": null,
+      "blas_backend": null,
+      "numerical_thread_settings": {},
+      "power_and_host_activity": null
+    },
+    "events_per_job": null,
+    "repetitions_per_job_mode": null,
+    "expected_matrix_rows": null,
+    "completed_matrix_rows": null,
+    "all_output_signatures_match": null,
+    "source_manifest": null,
+    "raw_result_paths": [],
+    "log_paths": [],
+    "checksums_path": null
+  },
+  "correctness": {
+    "unit_tests_executed": null,
+    "test_methods_passed": null,
+    "test_methods_failed": null,
+    "test_methods_skipped": null,
+    "unit_test_exit_code": null,
+    "binding_scenarios_passed": null,
+    "binding_scenarios_total": null,
+    "granularity_differential_cases": null,
+    "granularity_all_outputs_equal": null
+  },
+  "mode_summaries": [],
+  "mode_summary_entry_fields": [
+    "job", "mode", "repetitions", "selected_plans", "median_pipeline_seconds",
+    "min_pipeline_seconds", "max_pipeline_seconds", "median_worker_wall_seconds",
+    "min_worker_wall_seconds", "max_worker_wall_seconds", "median_peak_mib",
+    "min_peak_mib", "max_peak_mib", "median_cpu_seconds", "output_signature"
+  ],
+  "comparisons": [],
+  "comparison_entry_fields": [
+    "job", "baseline_mode", "candidate_mode", "metric", "statistic",
+    "baseline_value", "candidate_value", "saved_percent", "speedup_ratio", "interpretation"
+  ],
+  "learning": {
+    "training_executed_this_run": null,
+    "data_collection_seconds_this_run": null,
+    "training_seconds_this_run": null,
+    "historical_training_report_path": null,
+    "train_validation_test_counts": null,
+    "split_seed_populations_disjoint": null,
+    "training_event_range": null,
+    "epochs_attempted": null,
+    "selected_epoch": null,
+    "held_out_evaluation_origin": null,
+    "held_out_learned_kernel_seconds": null,
+    "held_out_static_kernel_seconds": null,
+    "held_out_oracle_kernel_seconds": null,
+    "held_out_selection_overhead_included": null,
+    "retuned_after_evaluation": null
+  },
+  "cost": {
+    "measurement_status": "NOT_MEASURED",
+    "currency": null,
+    "model_input_tokens": null,
+    "model_output_tokens": null,
+    "model_cache_tokens": null,
+    "authoring_model_billed_cost": null,
+    "benchmark_model_api_billed_cost": null,
+    "compute_billed_cost": null,
+    "human_review_minutes": null,
+    "library_setup_cost": null,
+    "validation_and_maintenance_cost": null,
+    "failures_and_repair_cost": null,
+    "conventional_total_cost": null,
+    "aicc_total_cost": null,
+    "net_savings": null,
+    "billing_evidence_paths": [],
+    "assumptions": []
+  },
+  "claims": {
+    "supported": [],
+    "contradicted": [],
+    "unresolved": []
+  },
+  "failures_and_exclusions": [],
+  "deviations_from_protocol": [],
+  "limitations": [],
+  "next_experiment": {
+    "hypothesis": null,
+    "baseline_and_candidate": null,
+    "fresh_evaluation_design": null,
+    "acceptance_and_falsification_rules": null
+  }
+}

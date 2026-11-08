@@ -1,0 +1,1029 @@
+{
+ "template_version": "1.0",
+ "status": "EXECUTED_COMPLETE_TRACK_A",
+ "run_id": "anthropic-claude-opus-5.5-2026-11-05-trackA-002",
+ "track": "A",
+ "agent": {
+  "provider": "Anthropic",
+  "model": "Claude Opus 5.5",
+  "model_version": "claude-opus-5-5 (self-reported)",
+  "identity_evidence": "SELF_REPORTED_UNLESS_OTHERWISE_DOCUMENTED",
+  "authoring_session_id": "claude.ai chat session 2026-11-05 (no exportable id)"
+ },
+ "provenance": {
+  "repository": "https://github.com/izikon78/AICC",
+  "frozen_study_commit": "75de32b757b8bdc43886213ee6b9dd9470717918",
+  "checkout_commit": "63d012095a6db66a71918cb574fb2c6ceaecf147",
+  "source_hashes_match_frozen": true,
+  "source_hashes_unchanged_during_run": true,
+  "model_origin": "trained in this run (Track A run-002)",
+  "model_sha256": "a70f97d90067d68bd2e63019e5f85be09c45b336935bc99f534d4b4c41a08915",
+  "policy_origin": "fitted in this run (Track A run-002)",
+  "policy_sha256": "2e5f242b033dbc53231ce947e4d258f8e994824fe51e083b420b7ae330f052d9",
+  "historical_artifacts_copied": [],
+  "source_changes": []
+ },
+ "execution": {
+  "code_executed": true,
+  "started_utc": "2026-11-05T15:23:45.130Z",
+  "finished_utc": "2026-11-05T15:29:48.536Z",
+  "commands": [
+   "../../.venv/bin/python -m unittest discover -s tests -v",
+   "../../.venv/bin/python -u run_study.py --output results/anthropic-claude-opus-5.5-2026-11-05-trackA-002 --events 1000000 --repeats 3 --train-jobs 72 --validation-jobs 24 --test-jobs 24 --epochs 900",
+   ".venv/bin/python tools/processing_granularity.py --output experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/granularity.json --events 1000000 --repeats 3"
+  ],
+  "environment": {
+   "os": "Linux 6.18 x86_64 (glibc 2.39), sandbox VM",
+   "cpu_model": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+   "logical_cpus": 1,
+   "ram_gib": 3.9,
+   "python": "3.12.3",
+   "numpy": "2.3.5",
+   "unicode": "15.0.0",
+   "blas_backend": "scipy-openblas 0.3.30",
+   "numerical_thread_settings": {
+    "OPENBLAS_NUM_THREADS": 1,
+    "OMP_NUM_THREADS": 1,
+    "MKL_NUM_THREADS": 1
+   },
+   "power_and_host_activity": "No other workload during measured workers (single vCPU); not frequency-pinned; shared cloud host"
+  },
+  "events_per_job": 1000000,
+  "repetitions_per_job_mode": 3,
+  "expected_matrix_rows": 45,
+  "completed_matrix_rows": 45,
+  "all_output_signatures_match": true,
+  "source_manifest": "run-config.json and run-metadata.json (11 sources, verified)",
+  "raw_result_paths": [
+   "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/stress-raw.json",
+   "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/stress-summary.json",
+   "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/binding-scenarios.json",
+   "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/granularity.json",
+   "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/calibration.json",
+   "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/learning-report.json",
+   "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/cost-network.json",
+   "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/static-policy.json",
+   "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/run-config.json",
+   "experiments/processing_study/results/anthropic-claude-opus-5.5-2026-11-05-trackA-002/run-metadata.json"
+  ],
+  "log_paths": [
+   "logs/unit_tests.log",
+   "logs/trackA_002_console.log",
+   "logs/trackA_console.log (run-001, incomplete)",
+   "logs/granularity_console.log",
+   "logs/EVENT_LOG.md"
+  ],
+  "checksums_path": "SHA256SUMS.txt"
+ },
+ "correctness": {
+  "unit_tests_executed": true,
+  "test_methods_passed": 44,
+  "test_methods_failed": 0,
+  "test_methods_skipped": 0,
+  "unit_test_exit_code": 0,
+  "binding_scenarios_passed": 9,
+  "binding_scenarios_total": 9,
+  "granularity_differential_cases": 8096,
+  "granularity_all_outputs_equal": true
+ },
+ "mode_summaries": [
+  {
+   "job": "repeated-shuffled",
+   "mode": "reference",
+   "repetitions": 3,
+   "selected_plans": [
+    "reference"
+   ],
+   "median_pipeline_seconds": 4.87806544,
+   "min_pipeline_seconds": 4.643289997000011,
+   "max_pipeline_seconds": 4.992797177,
+   "median_worker_wall_seconds": 7.161033159999988,
+   "min_worker_wall_seconds": 6.997631453999929,
+   "max_worker_wall_seconds": 7.528723676000027,
+   "median_peak_mib": 815.69140625,
+   "min_peak_mib": 815.58203125,
+   "max_peak_mib": 815.71875,
+   "median_cpu_seconds": 4.764637908,
+   "output_signature": "b4976982669566fbb1f2493a27d35da50a2d7f71340b82d7e13400ff3e149ead"
+  },
+  {
+   "job": "repeated-shuffled",
+   "mode": "static",
+   "repetitions": 3,
+   "selected_plans": [
+    "partitioned"
+   ],
+   "median_pipeline_seconds": 2.2497167090000403,
+   "min_pipeline_seconds": 2.079028189999974,
+   "max_pipeline_seconds": 2.3186733960000083,
+   "median_worker_wall_seconds": 4.524439907999977,
+   "min_worker_wall_seconds": 4.493196054000009,
+   "max_worker_wall_seconds": 4.531452398999988,
+   "median_peak_mib": 561.859375,
+   "min_peak_mib": 561.78515625,
+   "max_peak_mib": 561.91796875,
+   "median_cpu_seconds": 2.189427601,
+   "output_signature": "b4976982669566fbb1f2493a27d35da50a2d7f71340b82d7e13400ff3e149ead"
+  },
+  {
+   "job": "repeated-shuffled",
+   "mode": "aicc_static",
+   "repetitions": 3,
+   "selected_plans": [
+    "partitioned"
+   ],
+   "median_pipeline_seconds": 2.081066835999991,
+   "min_pipeline_seconds": 2.0416132409999364,
+   "max_pipeline_seconds": 2.2203949299999977,
+   "median_worker_wall_seconds": 4.39603449599997,
+   "min_worker_wall_seconds": 4.3060292469999695,
+   "max_worker_wall_seconds": 4.6461101720000215,
+   "median_peak_mib": 561.62890625,
+   "min_peak_mib": 561.5859375,
+   "max_peak_mib": 561.6875,
+   "median_cpu_seconds": 2.0727930839999997,
+   "output_signature": "b4976982669566fbb1f2493a27d35da50a2d7f71340b82d7e13400ff3e149ead"
+  },
+  {
+   "job": "repeated-shuffled",
+   "mode": "learned",
+   "repetitions": 3,
+   "selected_plans": [
+    "partitioned"
+   ],
+   "median_pipeline_seconds": 2.292244891999985,
+   "min_pipeline_seconds": 2.160171934999994,
+   "max_pipeline_seconds": 2.543045353000025,
+   "median_worker_wall_seconds": 4.669369290999953,
+   "min_worker_wall_seconds": 4.363347589,
+   "max_worker_wall_seconds": 4.953721566000013,
+   "median_peak_mib": 564.1640625,
+   "min_peak_mib": 564.06640625,
+   "max_peak_mib": 564.16796875,
+   "median_cpu_seconds": 2.1454121560000003,
+   "output_signature": "b4976982669566fbb1f2493a27d35da50a2d7f71340b82d7e13400ff3e149ead"
+  },
+  {
+   "job": "repeated-shuffled",
+   "mode": "aicc_learned",
+   "repetitions": 3,
+   "selected_plans": [
+    "partitioned"
+   ],
+   "median_pipeline_seconds": 2.0563827299999957,
+   "min_pipeline_seconds": 2.011608774000024,
+   "max_pipeline_seconds": 2.242829438000058,
+   "median_worker_wall_seconds": 4.27749605300005,
+   "min_worker_wall_seconds": 4.247638078999955,
+   "max_worker_wall_seconds": 4.615369551000072,
+   "median_peak_mib": 564.15234375,
+   "min_peak_mib": 564.0078125,
+   "max_peak_mib": 564.1875,
+   "median_cpu_seconds": 2.009611219,
+   "output_signature": "b4976982669566fbb1f2493a27d35da50a2d7f71340b82d7e13400ff3e149ead"
+  },
+  {
+   "job": "diverse-shuffled",
+   "mode": "reference",
+   "repetitions": 3,
+   "selected_plans": [
+    "reference"
+   ],
+   "median_pipeline_seconds": 6.269453752000004,
+   "min_pipeline_seconds": 5.943073050999942,
+   "max_pipeline_seconds": 6.323933181000029,
+   "median_worker_wall_seconds": 12.348188203000007,
+   "min_worker_wall_seconds": 11.887848378000058,
+   "max_worker_wall_seconds": 12.818472807000035,
+   "median_peak_mib": 1065.1328125,
+   "min_peak_mib": 1065.05859375,
+   "max_peak_mib": 1065.140625,
+   "median_cpu_seconds": 6.080585340999999,
+   "output_signature": "2c52242c415917ec4ec967b9075f245d3591a6ea19979b867a147e985ef8ec11"
+  },
+  {
+   "job": "diverse-shuffled",
+   "mode": "static",
+   "repetitions": 3,
+   "selected_plans": [
+    "partitioned"
+   ],
+   "median_pipeline_seconds": 4.890548851000062,
+   "min_pipeline_seconds": 4.871372785999938,
+   "max_pipeline_seconds": 5.730772868000031,
+   "median_worker_wall_seconds": 11.288800342000059,
+   "min_worker_wall_seconds": 11.26235210499999,
+   "max_worker_wall_seconds": 13.312697487999912,
+   "median_peak_mib": 847.21875,
+   "min_peak_mib": 847.15625,
+   "max_peak_mib": 847.296875,
+   "median_cpu_seconds": 4.870600905,
+   "output_signature": "2c52242c415917ec4ec967b9075f245d3591a6ea19979b867a147e985ef8ec11"
+  },
+  {
+   "job": "diverse-shuffled",
+   "mode": "aicc_static",
+   "repetitions": 3,
+   "selected_plans": [
+    "partitioned"
+   ],
+   "median_pipeline_seconds": 4.88865721500008,
+   "min_pipeline_seconds": 4.787574972000016,
+   "max_pipeline_seconds": 5.047278656000003,
+   "median_worker_wall_seconds": 11.364002360999962,
+   "min_worker_wall_seconds": 11.009867052999994,
+   "max_worker_wall_seconds": 11.427992545999928,
+   "median_peak_mib": 847.1015625,
+   "min_peak_mib": 847.046875,
+   "max_peak_mib": 847.14453125,
+   "median_cpu_seconds": 4.810287591,
+   "output_signature": "2c52242c415917ec4ec967b9075f245d3591a6ea19979b867a147e985ef8ec11"
+  },
+  {
+   "job": "diverse-shuffled",
+   "mode": "learned",
+   "repetitions": 3,
+   "selected_plans": [
+    "partitioned"
+   ],
+   "median_pipeline_seconds": 4.999051899000051,
+   "min_pipeline_seconds": 4.790125759000034,
+   "max_pipeline_seconds": 5.051733001000002,
+   "median_worker_wall_seconds": 11.350079012999913,
+   "min_worker_wall_seconds": 11.015845931999934,
+   "max_worker_wall_seconds": 11.782346812000014,
+   "median_peak_mib": 849.43359375,
+   "min_peak_mib": 849.3984375,
+   "max_peak_mib": 849.578125,
+   "median_cpu_seconds": 4.949911524999999,
+   "output_signature": "2c52242c415917ec4ec967b9075f245d3591a6ea19979b867a147e985ef8ec11"
+  },
+  {
+   "job": "diverse-shuffled",
+   "mode": "aicc_learned",
+   "repetitions": 3,
+   "selected_plans": [
+    "partitioned"
+   ],
+   "median_pipeline_seconds": 4.848849030999986,
+   "min_pipeline_seconds": 4.838864810000018,
+   "max_pipeline_seconds": 5.050628540000048,
+   "median_worker_wall_seconds": 11.347209518,
+   "min_worker_wall_seconds": 11.157052021000027,
+   "max_worker_wall_seconds": 11.400562151000031,
+   "median_peak_mib": 849.4296875,
+   "min_peak_mib": 849.3984375,
+   "max_peak_mib": 849.515625,
+   "median_cpu_seconds": 4.817540548999999,
+   "output_signature": "2c52242c415917ec4ec967b9075f245d3591a6ea19979b867a147e985ef8ec11"
+  },
+  {
+   "job": "ordered-stream",
+   "mode": "reference",
+   "repetitions": 3,
+   "selected_plans": [
+    "reference"
+   ],
+   "median_pipeline_seconds": 5.148345835999976,
+   "min_pipeline_seconds": 4.957582145999936,
+   "max_pipeline_seconds": 5.194486062999999,
+   "median_worker_wall_seconds": 5.5479057109999985,
+   "min_worker_wall_seconds": 5.342692853000017,
+   "max_worker_wall_seconds": 5.593874539000012,
+   "median_peak_mib": 515.6875,
+   "min_peak_mib": 515.67578125,
+   "max_peak_mib": 515.8046875,
+   "median_cpu_seconds": 4.934043149,
+   "output_signature": "b7122424f5f2709f1d76339a0998084f9e3195492f9e301b8acd242fe043128e"
+  },
+  {
+   "job": "ordered-stream",
+   "mode": "static",
+   "repetitions": 3,
+   "selected_plans": [
+    "ordered"
+   ],
+   "median_pipeline_seconds": 3.242010855999979,
+   "min_pipeline_seconds": 3.191708021000011,
+   "max_pipeline_seconds": 3.5841585269999996,
+   "median_worker_wall_seconds": 3.582583764999981,
+   "min_worker_wall_seconds": 3.5794814660000043,
+   "max_worker_wall_seconds": 3.9704749029999675,
+   "median_peak_mib": 136.61328125,
+   "min_peak_mib": 136.57421875,
+   "max_peak_mib": 136.671875,
+   "median_cpu_seconds": 3.232293401,
+   "output_signature": "b7122424f5f2709f1d76339a0998084f9e3195492f9e301b8acd242fe043128e"
+  },
+  {
+   "job": "ordered-stream",
+   "mode": "aicc_static",
+   "repetitions": 3,
+   "selected_plans": [
+    "ordered"
+   ],
+   "median_pipeline_seconds": 3.258050983999965,
+   "min_pipeline_seconds": 3.160480014999962,
+   "max_pipeline_seconds": 3.4045997270000043,
+   "median_worker_wall_seconds": 3.602285099000028,
+   "min_worker_wall_seconds": 3.5252823800000215,
+   "max_worker_wall_seconds": 3.7548954840000306,
+   "median_peak_mib": 136.77734375,
+   "min_peak_mib": 136.61328125,
+   "max_peak_mib": 136.78125,
+   "median_cpu_seconds": 3.242474643,
+   "output_signature": "b7122424f5f2709f1d76339a0998084f9e3195492f9e301b8acd242fe043128e"
+  },
+  {
+   "job": "ordered-stream",
+   "mode": "learned",
+   "repetitions": 3,
+   "selected_plans": [
+    "ordered"
+   ],
+   "median_pipeline_seconds": 3.1390758219999952,
+   "min_pipeline_seconds": 3.04462739600001,
+   "max_pipeline_seconds": 3.1763095950000206,
+   "median_worker_wall_seconds": 3.4680850269999155,
+   "min_worker_wall_seconds": 3.377734024999995,
+   "max_worker_wall_seconds": 3.5528073930000232,
+   "median_peak_mib": 139.140625,
+   "min_peak_mib": 139.07421875,
+   "max_peak_mib": 139.19921875,
+   "median_cpu_seconds": 3.12354384,
+   "output_signature": "b7122424f5f2709f1d76339a0998084f9e3195492f9e301b8acd242fe043128e"
+  },
+  {
+   "job": "ordered-stream",
+   "mode": "aicc_learned",
+   "repetitions": 3,
+   "selected_plans": [
+    "ordered"
+   ],
+   "median_pipeline_seconds": 3.347395393999932,
+   "min_pipeline_seconds": 3.1683807850000107,
+   "max_pipeline_seconds": 3.4950901079999994,
+   "median_worker_wall_seconds": 3.6978202539999074,
+   "min_worker_wall_seconds": 3.531056537999973,
+   "max_worker_wall_seconds": 3.8904341420000037,
+   "median_peak_mib": 139.3046875,
+   "min_peak_mib": 139.1640625,
+   "max_peak_mib": 139.37109375,
+   "median_cpu_seconds": 3.245697257,
+   "output_signature": "b7122424f5f2709f1d76339a0998084f9e3195492f9e301b8acd242fe043128e"
+  }
+ ],
+ "mode_summary_entry_fields": [
+  "job",
+  "mode",
+  "repetitions",
+  "selected_plans",
+  "median_pipeline_seconds",
+  "min_pipeline_seconds",
+  "max_pipeline_seconds",
+  "median_worker_wall_seconds",
+  "min_worker_wall_seconds",
+  "max_worker_wall_seconds",
+  "median_peak_mib",
+  "min_peak_mib",
+  "max_peak_mib",
+  "median_cpu_seconds",
+  "output_signature"
+ ],
+ "comparisons": [
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 4.87806544,
+   "candidate_value": 2.2497167090000403,
+   "saved_percent": 53.880964971227606,
+   "speedup_ratio": 2.16830208909646,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 7.161033159999988,
+   "candidate_value": 4.524439907999977,
+   "saved_percent": 36.81861531835185,
+   "speedup_ratio": 1.582744672404217,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 815.69140625,
+   "candidate_value": 561.859375,
+   "saved_percent": 31.11863497703731,
+   "speedup_ratio": 1.4517714619427682,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 2.2497167090000403,
+   "candidate_value": 2.081066835999991,
+   "saved_percent": 7.496493772987592,
+   "speedup_ratio": 1.0810401040863304,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 4.524439907999977,
+   "candidate_value": 4.39603449599997,
+   "saved_percent": 2.8380399477284226,
+   "speedup_ratio": 1.0292093731559306,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 561.859375,
+   "candidate_value": 561.62890625,
+   "saved_percent": 0.04101893823521233,
+   "speedup_ratio": 1.0004103577067265,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 2.2497167090000403,
+   "candidate_value": 2.292244891999985,
+   "saved_percent": -1.8903794788832726,
+   "speedup_ratio": 0.9814469286643981,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 4.524439907999977,
+   "candidate_value": 4.669369290999953,
+   "saved_percent": -3.20325578296921,
+   "speedup_ratio": 0.9689616789832146,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 561.859375,
+   "candidate_value": 564.1640625,
+   "saved_percent": -0.41018938235212327,
+   "speedup_ratio": 0.9959148629748106,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 2.292244891999985,
+   "candidate_value": 2.0563827299999957,
+   "saved_percent": 10.289570840495998,
+   "speedup_ratio": 1.1146975991186183,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 4.669369290999953,
+   "candidate_value": 4.27749605300005,
+   "saved_percent": 8.392423335528951,
+   "speedup_ratio": 1.0916127643706555,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 564.1640625,
+   "candidate_value": 564.15234375,
+   "saved_percent": 0.0020771883178929,
+   "speedup_ratio": 1.000020772314659,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 4.87806544,
+   "candidate_value": 2.081066835999991,
+   "saved_percent": 57.3382755603215,
+   "speedup_ratio": 2.344021516087445,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 7.161033159999988,
+   "candidate_value": 4.39603449599997,
+   "saved_percent": 38.611728255144996,
+   "speedup_ratio": 1.6289756521510328,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  },
+  {
+   "job": "repeated-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 815.69140625,
+   "candidate_value": 561.62890625,
+   "saved_percent": 31.14688938161165,
+   "speedup_ratio": 1.4523672075505818,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 6.269453752000004,
+   "candidate_value": 4.890548851000062,
+   "saved_percent": 21.99401982286033,
+   "speedup_ratio": 1.2819529960769067,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 12.348188203000007,
+   "candidate_value": 11.288800342000059,
+   "saved_percent": 8.579297979460407,
+   "speedup_ratio": 1.0938441489711257,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 1065.1328125,
+   "candidate_value": 847.21875,
+   "saved_percent": 20.458862964565746,
+   "speedup_ratio": 1.2572110951274391,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 4.890548851000062,
+   "candidate_value": 4.88865721500008,
+   "saved_percent": 0.038679421423124756,
+   "speedup_ratio": 1.000386943881886,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 11.288800342000059,
+   "candidate_value": 11.364002360999962,
+   "saved_percent": -0.6661648423359332,
+   "speedup_ratio": 0.9933824354649918,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 847.21875,
+   "candidate_value": 847.1015625,
+   "saved_percent": 0.013832023901737302,
+   "speedup_ratio": 1.0001383393741528,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 4.890548851000062,
+   "candidate_value": 4.999051899000051,
+   "saved_percent": -2.218627219679055,
+   "speedup_ratio": 0.9782952747456588,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 11.288800342000059,
+   "candidate_value": 11.350079012999913,
+   "saved_percent": -0.5428271308144834,
+   "speedup_ratio": 0.9946010357346704,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 847.21875,
+   "candidate_value": 849.43359375,
+   "saved_percent": -0.261425251742835,
+   "speedup_ratio": 0.9973925639787542,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 4.999051899000051,
+   "candidate_value": 4.848849030999986,
+   "saved_percent": 3.004627097992514,
+   "speedup_ratio": 1.0309770147595394,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 11.350079012999913,
+   "candidate_value": 11.347209518,
+   "saved_percent": 0.025281718273739873,
+   "speedup_ratio": 1.0002528811154285,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 849.43359375,
+   "candidate_value": 849.4296875,
+   "saved_percent": 0.00045986525947897265,
+   "speedup_ratio": 1.0000045986737425,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 6.269453752000004,
+   "candidate_value": 4.88865721500008,
+   "saved_percent": 22.024192084668286,
+   "speedup_ratio": 1.282449039945604,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 12.348188203000007,
+   "candidate_value": 11.364002360999962,
+   "saved_percent": 7.970285403982876,
+   "speedup_ratio": 1.086605564724068,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  },
+  {
+   "job": "diverse-shuffled",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 1065.1328125,
+   "candidate_value": 847.1015625,
+   "saved_percent": 20.4698651136522,
+   "speedup_ratio": 1.2573850169235168,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 5.148345835999976,
+   "candidate_value": 3.242010855999979,
+   "saved_percent": 37.028106516657985,
+   "speedup_ratio": 1.5880100544610913,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 5.5479057109999985,
+   "candidate_value": 3.582583764999981,
+   "saved_percent": 35.42457367477091,
+   "speedup_ratio": 1.5485766907113832,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "reference",
+   "candidate_mode": "static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 515.6875,
+   "candidate_value": 136.61328125,
+   "saved_percent": 73.50851411950066,
+   "speedup_ratio": 3.7747977010836933,
+   "interpretation": "algorithm/flow optimization"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 3.242010855999979,
+   "candidate_value": 3.258050983999965,
+   "saved_percent": -0.494758614712859,
+   "speedup_ratio": 0.9950767719477818,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 3.582583764999981,
+   "candidate_value": 3.602285099000028,
+   "saved_percent": -0.549919702995327,
+   "speedup_ratio": 0.9945308787454065,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "static",
+   "candidate_mode": "aicc_static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 136.61328125,
+   "candidate_value": 136.77734375,
+   "saved_percent": -0.1200926428959483,
+   "speedup_ratio": 0.9988005140654005,
+   "interpretation": "AICC binding around optimized code"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 3.242010855999979,
+   "candidate_value": 3.1390758219999952,
+   "saved_percent": 3.1750366847008604,
+   "speedup_ratio": 1.0327915092966442,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 3.582583764999981,
+   "candidate_value": 3.4680850269999155,
+   "saved_percent": 3.195982160100765,
+   "speedup_ratio": 1.0330149742894608,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "static",
+   "candidate_mode": "learned",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 136.61328125,
+   "candidate_value": 139.140625,
+   "saved_percent": -1.8499985703256798,
+   "speedup_ratio": 0.9818360471645143,
+   "interpretation": "learned plan selection vs strong static"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 3.1390758219999952,
+   "candidate_value": 3.347395393999932,
+   "saved_percent": -6.636334507753633,
+   "speedup_ratio": 0.9377666670709588,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 3.4680850269999155,
+   "candidate_value": 3.6978202539999074,
+   "saved_percent": -6.624267433221657,
+   "speedup_ratio": 0.9378727976971057,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "learned",
+   "candidate_mode": "aicc_learned",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 139.140625,
+   "candidate_value": 139.3046875,
+   "saved_percent": -0.11791128579449747,
+   "speedup_ratio": 0.9988222758117885,
+   "interpretation": "AICC binding around learned code"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "pipeline_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 5.148345835999976,
+   "candidate_value": 3.258050983999965,
+   "saved_percent": 36.71654764880134,
+   "speedup_ratio": 1.5801919188137639,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "worker_wall_seconds",
+   "statistic": "median of repetitions",
+   "baseline_value": 5.5479057109999985,
+   "candidate_value": 3.602285099000028,
+   "saved_percent": 35.06946068211524,
+   "speedup_ratio": 1.5401073370178453,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  },
+  {
+   "job": "ordered-stream",
+   "baseline_mode": "reference",
+   "candidate_mode": "aicc_static",
+   "metric": "peak_mib",
+   "statistic": "median of repetitions",
+   "baseline_value": 515.6875,
+   "candidate_value": 136.77734375,
+   "saved_percent": 73.47669979396437,
+   "speedup_ratio": 3.770269884335285,
+   "interpretation": "complete delivered path (not AICC-specific)"
+  }
+ ],
+ "comparison_entry_fields": [
+  "job",
+  "baseline_mode",
+  "candidate_mode",
+  "metric",
+  "statistic",
+  "baseline_value",
+  "candidate_value",
+  "saved_percent",
+  "speedup_ratio",
+  "interpretation"
+ ],
+ "learning": {
+  "training_executed_this_run": true,
+  "data_collection_seconds_this_run": 12.56026723299999,
+  "training_seconds_this_run": 0.1546901640000442,
+  "historical_training_report_path": "results/full-2026-11-05/learning-report.json (original, for comparison only)",
+  "train_validation_test_counts": [
+   72,
+   24,
+   24
+  ],
+  "split_seed_populations_disjoint": true,
+  "training_event_range": [
+   800,
+   14000
+  ],
+  "epochs_attempted": 900,
+  "selected_epoch": 456,
+  "held_out_evaluation_origin": "this run",
+  "held_out_learned_kernel_seconds": 0.25512938149995534,
+  "held_out_static_kernel_seconds": 0.2551295715000208,
+  "held_out_oracle_kernel_seconds": 0.25168067349997614,
+  "held_out_selection_overhead_included": false,
+  "retuned_after_evaluation": false
+ },
+ "cost": {
+  "measurement_status": "NOT_MEASURED",
+  "currency": null,
+  "model_input_tokens": null,
+  "model_output_tokens": null,
+  "model_cache_tokens": null,
+  "authoring_model_billed_cost": null,
+  "benchmark_model_api_billed_cost": null,
+  "compute_billed_cost": null,
+  "human_review_minutes": null,
+  "library_setup_cost": null,
+  "validation_and_maintenance_cost": null,
+  "failures_and_repair_cost": null,
+  "conventional_total_cost": null,
+  "aicc_total_cost": null,
+  "net_savings": null,
+  "billing_evidence_paths": [],
+  "assumptions": [
+   "No model API calls in the benchmark. Authoring-session tokens and billing were not exposed by the chat interface: NOT_MEASURED."
+  ]
+ },
+ "claims": {
+  "supported": [
+   "All four plans give identical outputs on the 3 stress jobs; signatures byte-identical to the original Windows run",
+   "Ordinary flow optimisation (reference->static) cuts pipeline time 22.0-53.9% and peak memory 20.5-73.5% on these shapes",
+   "AICC register+bind costs about 0.92 ms (median) per worker and does not change outputs; 9/9 binding-state checks pass",
+   "Batching amortises per-call binding checks (AICC split/batch 28.8x; AICC batch = ordinary batch)"
+  ],
+  "contradicted": [
+   "AICC adds a consistent speed benefit beyond the same ordinary code (signs flip across jobs, runs and machines; inside same-code noise)",
+   "The learned selector improves on the strongest static policy (held-out: worse in 2 of 3 trainings, tied in 1; worse in 4-7 of 12 extrapolation cells)"
+  ],
+  "unresolved": [
+   "AICC effects below about 10% (3 repetitions on a shared host are underpowered)",
+   "Whether an out-of-domain guard makes learned selection worthwhile",
+   "Any authoring, lifecycle or economic benefit",
+   "Isolation/security beyond the in-process prototype"
+  ]
+ },
+ "failures_and_exclusions": [
+  "run-001 (identical arguments): sandbox terminated the background process tree after calibration, training, binding scenarios and 5/45 workers; no exit status; preserved unchanged and excluded from stress comparisons; its learning report is reported separately as a second training"
+ ],
+ "deviations_from_protocol": [
+  "Python 3.12.3 vs 3.12.14; Linux vs Windows; 1 logical CPU vs 12; RSS high-water vs PeakWorkingSetSize",
+  "Post-replication probes (extrapolation, batch checkpoints) use one warm process and list input, not the fresh-process stress protocol; designed after reading the original results, not preregistered"
+ ],
+ "limitations": [
+  "Single-agent, same-session work; provider identity self-reported",
+  "Public fixed seeds: remeasurement, not unseen-seed generalisation",
+  "Three repetitions per cell support descriptive ranges only",
+  "Pushed to branch claude/processing-study-replication at the owner's explicit request, overriding the packet's token guardrail; not merged"
+ ],
+ "next_experiment": {
+  "hypothesis": "A guard that defers to the static policy for declared-ordered jobs or out-of-range sizes removes the learned selector's losses but does not beat static by more than its ~1 ms selection overhead",
+  "baseline_and_candidate": "Unchanged strongest static policy vs learned+guard; identical kernels; ordinary invocation",
+  "fresh_evaluation_design": "New preregistered seeds; sizes 800-2,000,000; >=30 fresh descriptors per size band; 10 randomised fresh-process repetitions per case on one exclusive host",
+  "acceptance_and_falsification_rules": "Accept if paired median end-to-end time improves >=2% with bootstrap 95% CI excluding 0 and no size band regresses >2%; falsified if guarded choices never depart from static or departures do not save more than selection overhead"
+ }
+}

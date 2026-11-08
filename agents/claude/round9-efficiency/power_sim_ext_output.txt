@@ -1,0 +1,6 @@
+ 60 tasks x 10 trials, sigma 1.0, two-level: power to detect a true 15% saving = 0.21
+ 60 tasks x 10 trials, sigma 1.0, two-level: power to detect a true 30% saving = 0.87
+100 tasks x 10 trials, sigma 1.0, two-level: power to detect a true 15% saving = 0.39
+100 tasks x 10 trials, sigma 1.0, two-level: power to detect a true 30% saving = 0.97
+200 tasks x  5 trials, sigma 1.0, two-level: power to detect a true 15% saving = 0.47
+200 tasks x  5 trials, sigma 1.0, two-level: power to detect a true 30% saving = 0.99

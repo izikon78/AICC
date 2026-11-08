@@ -1,0 +1,65 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+{"event": "fit", "arm": "python", "loss": 0.512938380241394, "seconds": 0.5283861999996589, "tokens": 45, "peak_allocated_gib": 3.310546875, "peak_reserved_gib": 3.37890625}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "dev-add-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "holdout-sub_add-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "dev-add-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "holdout-sub_add-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "dev-add-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "holdout-sub_add-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "dev-add-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "holdout-sub_add-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "dev-sub-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "holdout-add_sub-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "dev-sub-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "holdout-add_sub-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "dev-sub-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "holdout-add_sub-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "dev-sub-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "holdout-add_sub-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "dev-add_add-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "holdout-sub_sub-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "dev-add_add-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "holdout-sub_sub-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "dev-add_add-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "holdout-sub_sub-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "dev-add_add-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "before", "id": "holdout-sub_sub-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "train", "arm": "python", "step": 6, "epoch": 1, "loss": 0.0041792228585109115, "elapsed_seconds": 5.8882150999997975}
+{"event": "train", "arm": "python", "step": 12, "epoch": 1, "loss": 0.00032804628426674753, "elapsed_seconds": 11.634569800000463}
+{"event": "train", "arm": "python", "step": 18, "epoch": 1, "loss": 0.0003164930121783982, "elapsed_seconds": 17.311578900000313}
+{"event": "train", "arm": "python", "step": 24, "epoch": 1, "loss": 2.8790783744625514e-05, "elapsed_seconds": 23.022564500002773}
+{"event": "train", "arm": "python", "step": 30, "epoch": 2, "loss": 7.088841698532633e-05, "elapsed_seconds": 28.797748600001796}
+{"event": "train", "arm": "python", "step": 36, "epoch": 2, "loss": 6.387939833985001e-06, "elapsed_seconds": 34.42768300000171}
+{"event": "train", "arm": "python", "step": 42, "epoch": 2, "loss": 9.538237236483837e-06, "elapsed_seconds": 40.20271190000494}
+{"event": "train", "arm": "python", "step": 48, "epoch": 2, "loss": 5.4203724744184e-06, "elapsed_seconds": 45.869926600003964}
+{"event": "train", "arm": "python", "step": 54, "epoch": 3, "loss": 1.1732462155578105e-05, "elapsed_seconds": 51.50136030000431}
+{"event": "train", "arm": "python", "step": 60, "epoch": 3, "loss": 6.299800077158579e-06, "elapsed_seconds": 57.25305080000544}
+{"event": "train", "arm": "python", "step": 66, "epoch": 3, "loss": 3.8377293662961165e-06, "elapsed_seconds": 63.08680979999917}
+{"event": "train", "arm": "python", "step": 72, "epoch": 3, "loss": 4.052681163102534e-06, "elapsed_seconds": 68.81103820000135}
+C:\Users\Izik\Downloads\AICC\.venv\Lib\site-packages\peft\utils\save_and_load.py:236: UserWarning: Could not find a config file in Qwen/Qwen2.5-1.5B - will assume that the vocabulary was not modified.
+  warnings.warn(
+{"event": "prediction", "arm": "python", "stage": "after", "id": "dev-add-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "holdout-sub_add-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "dev-add-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "holdout-sub_add-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "dev-add-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "holdout-sub_add-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "dev-add-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "holdout-sub_add-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "dev-sub-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "holdout-add_sub-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "dev-sub-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "holdout-add_sub-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "dev-sub-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "holdout-add_sub-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "dev-sub-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "holdout-add_sub-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "dev-add_add-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "holdout-sub_sub-000", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "dev-add_add-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "holdout-sub_sub-001", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "dev-add_add-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "holdout-sub_sub-002", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "dev-add_add-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "prediction", "arm": "python", "stage": "after", "id": "holdout-sub_sub-003", "syntax_ok": true, "correct": true, "error": null}
+{"event": "arm_complete", "arm": "python", "after": {"dev": {"correct": 12, "assigned": 12, "syntax_valid": 12, "inference_seconds": 9.141813299997011, "input_tokens": 436, "output_tokens": 204}, "holdout": {"correct": 12, "assigned": 12, "syntax_valid": 12, "inference_seconds": 9.584664699999848, "input_tokens": 453, "output_tokens": 213}}, "dev_gate_pass": true}
