@@ -3,7 +3,7 @@
 Research into how AI agents can create, change and reuse computation through a
 learned representation and approved shared capabilities.
 
-**AIN means AI Native Language. AICC means AI Computational Commons.** Concept,
+**AIN is the reference concept AI Native Language. AICC means AI Computational Commons.** Concept,
 architecture and research direction belong to **Izik Bachar**. This final-draft
 publication is on `codex/ain-final-draft` and is dated 8 November 2026.
 
@@ -15,6 +15,8 @@ publication is on `codex/ain-final-draft` and is dated 8 November 2026.
 - [Six-phase research programme](publication/RESEARCH_PLAN.md)
 - [Five source/AIN examples and contract checks](publication/examples/README.md)
 - [Figures and source data](publication/figures/README.md)
+- [Closest related approaches](publication/RELATED_WORK.md)
+- [Matched local representation test](experiments/representation_comparison/README.md)
 
 The article starts from the theory that an optimized language is already fluent
 and reusable core code is approved. It develops the approach through C#, Python,

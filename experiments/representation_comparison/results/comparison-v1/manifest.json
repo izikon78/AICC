@@ -1,0 +1,50 @@
+{
+  "protocol": 1,
+  "model_calls": 0,
+  "training_runs": 0,
+  "tokenizer": {
+    "model": "Qwen/Qwen2.5-1.5B",
+    "revision": "8faed761d45a263340a0528343f099c05c9a4323"
+  },
+  "profiles": [
+    "python_repr",
+    "python_compact",
+    "readable_ir",
+    "numeric_arrays",
+    "symbolic_ain"
+  ],
+  "operation_ids": {
+    "bounded_retry": 1,
+    "check": 2,
+    "dedupe_by": 3,
+    "filter_eq": 4,
+    "filter_gt": 5,
+    "filter_gte": 6,
+    "filter_lt": 7,
+    "group_sum": 8,
+    "latest_by": 9,
+    "patch": 10,
+    "project": 11,
+    "record": 12,
+    "remember": 13,
+    "sort_by": 14,
+    "submit": 15,
+    "write": 16
+  },
+  "source_sha256": {
+    "experiments/representation_comparison/PROTOCOL.md": "ed50645c14803edc65a15d3cbaa73503c0b3960b06ce6a1776360f67844f4980",
+    "experiments/representation_comparison/run.py": "f4dd639d8e6273e37f4f24d0e0a4b979b705a31d295a661cea01ca64afdcb315",
+    "experiments/representation_comparison/test_comparison.py": "7449ceaf2587d7f91acf74bac08bdf580ade4725a70da9baf343dfb932c43b07",
+    "experiments/approved_workflow_theory/trace-inputs.json": "6f54c67509944390c7730438fc2d3058b3cb1aa5a89915674918579e5550b31e",
+    "experiments/approved_workflow_theory/accounting.py": "698cd11ea25b4950722eaaf92abe29353d3669354ba6697f61d44c840ca1488a",
+    "experiments/approved_workflow_theory/run.py": "ac684631bf4ef1515c79d71eba5aaef36fcdc005c799dc8115b3ef1d0c72ad80",
+    "experiments/approved_workflow_theory/workloads.py": "6382ece9a227fa892bbd7e0a2cd4f7a979b7b2178e9aa1be4ae55e1e1f0ab52e"
+  },
+  "packages": {
+    "transformers": "4.51.3",
+    "tokenizers": "0.21.4"
+  },
+  "context": "Complete literal fixture requests; no model chat template or special tokens",
+  "external_systems_executed": [],
+  "supplied_correct_compositions": true
+}

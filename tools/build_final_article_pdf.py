@@ -125,6 +125,9 @@ def build(output):
                 raise ValueError("A code line exceeds the print width")
             block = Preformatted("\n".join(code), sheet["code"])
             story.append(block if example_start is not None else KeepTogether([block]))
+            if example_start is not None and code and code[0].startswith("@"):
+                story[example_start:] = [KeepTogether(story[example_start:])]
+                example_start = None
             index += 1
             continue
         if line.startswith("|"):
@@ -183,12 +186,12 @@ def build(output):
     def footer(canvas, document):
         canvas.setFont("Article", 8)
         canvas.setFillColor(colors.HexColor("#505A61"))
-        canvas.drawString(54, 30, "Izik Bachar  |  AIN final draft  |  8 November 2026")
+        canvas.drawString(54, 30, "Izik Bachar  |  AIN reference concept  |  8 November 2026")
         canvas.drawRightString(letter[0] - 54, 30, str(document.page))
 
     output.parent.mkdir(parents=True, exist_ok=True)
     document = SimpleDocTemplate(str(output), pagesize=letter, leftMargin=54, rightMargin=54,
-                                 topMargin=47, bottomMargin=47, title="AIN A Native Language for More Efficient AI",
+                                 topMargin=47, bottomMargin=47, title="Giving AI a Language of Its Own",
                                  author="Izik Bachar", subject="AIN theory, experiments, AICC and future implementation")
     document.build(story, onFirstPage=footer, onLaterPages=footer)
     print(output)

@@ -3,9 +3,14 @@
 Izik Bachar, concept, architecture and research direction. Prepared with Codex
 assistance. 8 November 2026. Branch `codex/ain-final-draft`.
 
+AIN is a reference concept for an AI-oriented language and native compiler.
+The article explains how a learned operation reference can resolve a predefined
+method and its approved native implementation. Current experiments implement
+bounded components of that proposal.
+
 ## Article and supporting documents
 
-Read [AIN A Native Language for More Efficient AI](AICC_Final_Draft.md), or open
+Read [Giving AI a Language of Its Own](AICC_Final_Draft.md), or open
 its [review PDF](AICC_Final_Draft_Review.pdf). The article preserves the origin
 story, explains the theory through five conventional-language/AIN pairs,
 presents selected final findings and proposes a concrete research programme.
@@ -17,6 +22,8 @@ The supporting documents stand alone,
 - [Research programme](RESEARCH_PLAN.md) gives hypotheses, proposed budgets, outcomes and decision gates.
 - [Examples](examples/README.md) supply operation contracts, mock scenarios and an executable AICC binding check.
 - [Figures](figures/README.md) supply charts, source data and rebuild instructions.
+- [Closest related approaches](RELATED_WORK.md) distinguish reviewed systems from locally executed controls.
+- [Local text comparison](../experiments/representation_comparison/README.md) provides a bounded CPU test and raw results.
 - [Publication validation](VALIDATION.md) records executed checks and output identities.
 
 No earlier article draft is required to read the publication or use its test

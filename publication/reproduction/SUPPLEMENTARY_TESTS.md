@@ -4,6 +4,21 @@ Use these commands from the extracted packet root. Choose separate environments
 for CPU accounting, plotting and CUDA adaptation so package changes do not alter
 another experiment's recorded environment.
 
+## Matched local text comparison
+
+After setup, use the pinned CPU environment and bundled tokenizer,
+
+```text
+python scripts/run_representation_comparison.py --output work/text-comparison-001
+```
+
+An existing prepared environment can add `--current-python`. This route compares
+five local representations of the same correct workflow traces, validates decoded
+execution and saved state, and counts complete literal fixture contexts. It makes
+no model calls. The protocol, raw strings and observed results are under
+`experiments/representation_comparison/`. Its related-work discussion does not
+claim that the named third-party systems were executed.
+
 ## Compact compiler and scalar data
 
 The compiler maps all three source forms through the same typed IR and LLVM

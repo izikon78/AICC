@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "transformers": "4.51.3",
+    "tokenizers": "0.21.4"
+  },
+  "model_calls": 0,
+  "model_weights_required": false,
+  "prior_expected_comparison_totals": false,
+  "note": "New profiles and source were fixed before their first execution; old workflow theory results were known."
+}

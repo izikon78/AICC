@@ -1,0 +1,10 @@
+{
+  "episodes": 144,
+  "profiles": 5,
+  "request_rows": 2160,
+  "decoded_stage_checks_passed": 720,
+  "separate_probes_passed": 50,
+  "model_calls": 0,
+  "external_systems_executed": [],
+  "all_stage_checks_passed": true
+}

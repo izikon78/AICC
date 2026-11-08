@@ -21,6 +21,16 @@ study remain in repository history. They supply no additional result rows in
 this final selection. Their exclusion narrows the publication to the final
 processing records, matched local screens and approved-core workflow test.
 
+## Matched local representation comparison
+
+The additional [matched local representation test](../experiments/representation_comparison/README.md)
+compares five actual text encodings over the same frozen workflows. All 720
+decoded-stage checks preserve outputs/artifacts/state, and all fifty separate
+literal/state probes pass. Compact Python has the lowest observed text-token
+total. Its scope is local serialization and decoding, with zero model calls;
+the named external research systems are reviewed rather than executed. These
+results use complete literal contexts, separately from ideal-unit accounting.
+
 ## Processing claims and boundaries
 
 The three complete processing records each contain 45 million-event workers.
@@ -44,7 +54,7 @@ nonexclusive hosts. Absolute cross-host seconds supply no agent-speed ranking.
 
 The raw sources are `stress-raw.json`, `stress-summary.json`,
 `learning-report.json` and `granularity.json` in each final run directory.
-Ordinary optimized process peaks are about 20–74% below their corresponding
+Ordinary optimized process peaks are about 20â€“74% below their corresponding
 reference peaks across workload/host cells. Peaks include process-lifetime
 imports, inputs, outputs and hashing. Linux RSS and Windows peak working set
 have different accounting definitions.

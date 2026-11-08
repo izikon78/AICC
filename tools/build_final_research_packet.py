@@ -42,6 +42,7 @@ def tracked(prefix):
 def payload_files():
     names = set(tracked("experiments/approved_workflow_theory"))
     names.update(tracked("experiments/native_learning_gate"))
+    names.update(tracked("experiments/representation_comparison"))
     for name in tracked("experiments/ain_compiler_gate"):
         if "/results/" not in name or any("/results/" + run + "/" in name for run in (
                 "rtx3080-2026-11-06-reference-v2", "rtx3080-2026-11-06-learning-v2")):
@@ -128,7 +129,7 @@ def build(args):
     for source in sorted((ROOT / "publication/reproduction/scripts").glob("*.py")):
         copy_file(source.relative_to(ROOT).as_posix(), staging, "scripts/" + source.name)
     copy_file("publication/AIN_THEORY.md", staging)
-    for name in ("EVIDENCE.md", "RESEARCH_PLAN.md"):
+    for name in ("EVIDENCE.md", "RESEARCH_PLAN.md", "RELATED_WORK.md"):
         if (ROOT / "publication" / name).is_file():
             copy_file("publication/" + name, staging)
     for source in sorted((ROOT / "publication/examples").rglob("*")):

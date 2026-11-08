@@ -19,6 +19,7 @@ no model weights, saved adapters, credentials or previous article drafts.
 | C Native compiler checks | Do the compact source forms execute equivalent bounded integer programs? | Python, CPU and llvmlite 0.44.0 |
 | D Processing study | Can another host rerun the completed processing workload and compare within-host behavior? | Python, NumPy, sufficient RAM/time |
 | E Adaptation research | Can another investigator rerun the saved small-model learning configuration? | Separate CUDA/PyTorch environment, model download and suitable GPU |
+| F Local text comparison | How do five local formats tokenize and preserve the same fixed workflow semantics? | Python, CPU, pinned tokenizer/packages |
 
 Route A must preserve its first implementation, outputs and hashes before opening
 result-bearing files. Reading this article or earlier totals is prior exposure.
@@ -60,7 +61,7 @@ in separate folders. The wrapper saves its environment, test log, complete
 request ledgers and six deterministic comparisons. Runtime durations are excluded
 from exact ledger comparison.
 
-## Routes C, D and E
+## Supplementary routes C through F
 
 [SUPPLEMENTARY_TESTS.md](SUPPLEMENTARY_TESTS.md) gives commands, dependency
 boundaries and interpretations for compiler, processing and adaptation work.

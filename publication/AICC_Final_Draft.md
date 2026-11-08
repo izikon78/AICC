@@ -1,12 +1,12 @@
-# AIN A Native Language for More Efficient AI
+# Giving AI a Language of Its Own
 
-## A research approach to learned computation and shared capabilities
+## AIN as a reference concept for native code and shared capabilities
 
 Izik Bachar | Final draft for review | 8 November 2026
 
 ### Abstract
 
-AIN proposes a precise computational representation that an AI agent already knows and can use for programs, actions and continuing working records. AICC proposes a commons of approved, versioned capabilities that the agent can bind and reuse. This article develops that combined approach through five language examples, final processing measurements, small local model adaptations and a conditional workflow experiment. The workflow calculation yields 24.0% fewer counted positions with resident data and 12.8% fewer with data in context, under fluent-language, approved-core, perfect-composition and equal-unit-cost assumptions. Equivalent ideal Python and IR interfaces tie with AIN. The evidence motivates a research programme that measures learned composition, continuing work, generalization and lifecycle value with strong matched controls. A portable test package accompanies the article. Measured results, illustrative contracts and proposed studies retain separate status.
+AIN, meaning AI Native Language, is the reference name for the theoretical language and compilation approach explored here. The concept gives an AI agent a learned computational vocabulary whose approved operations compile into native machine code and can also form programs, actions and continuing working records. AICC proposes a commons of approved, versioned capabilities that the agent can bind and reuse. This article develops that combined approach through five language examples, final processing measurements, small local model adaptations and a conditional workflow experiment. The workflow calculation yields 24.0% fewer counted positions with resident data and 12.8% fewer with data in context, under fluent-language, approved-core, perfect-composition and equal-unit-cost assumptions. Equivalent ideal Python and IR interfaces tie with AIN. A separate local serialization test preserves fixture behavior across five formats and gives compact Python the lowest observed text-token count. The evidence motivates a research programme that measures learned composition, continuing work, generalization and lifecycle value with strong matched controls. A portable test package accompanies the article. Measured results, illustrative contracts and proposed studies retain separate status.
 
 ## Introduction and theory
 
@@ -16,13 +16,13 @@ I have spent more than 25 years developing software. The idea came from watching
 
 That observation led me to two questions. Could an AI agent learn a precise computational language designed for its own work? Could it compose established functionality through short references while keeping the implementation and its guarantees available underneath?
 
-I call the proposed language AIN, for AI Native Language. I call the related commons AICC, for AI Computational Commons. AIN concerns the representation an agent uses to author and change computation. AICC concerns discovering, approving, binding and reusing capabilities. Together they suggest a workflow in which an agent works with learned operations, explicit operands, executable records and persistent memory, then produces a human-readable view when requested.
+I use AIN, for AI Native Language, as a reference name for the proposed language concept. The complete language and AI-built compiler described here are conceptual; the repository implements bounded experiments and prototypes. I call the related commons AICC, for AI Computational Commons. AIN concerns the representation an agent uses to author and change computation. AICC concerns discovering, approving, binding and reusing capabilities. Together they suggest a workflow in which an agent works with learned operations, explicit operands, executable records and persistent memory, then produces a human-readable view when requested.
 
 The starting theory grants that an optimized language is already fluent and useful core operations are already approved. A short instruction can therefore invoke substantial computation, including functions, methods and loops. New requirements, arguments, private interfaces and business data still enter the system. The opportunity is to reduce repeated expression and processing of established information while preserving correct work.
 
 The research target is an agent's continuing computational activity. A task may be built, changed, repaired, interrupted and handed to another agent. Its program, tool history and memory can be processed repeatedly. Representation and reuse decisions can therefore affect much more than the length of the first generated answer. A useful evaluation must account for that continuing work and its failures.
 
-This publication selects the final processing records, full-format and compact local adaptations, repaired native compiler measurements and approved-core workflow test. Its standalone evidence index links the primary code, raw records, assumptions and independent reconstructions. The article and reproduction instructions require no earlier article draft. [1]
+This publication selects the final processing records, full-format and compact local adaptations, repaired native compiler measurements, approved-core workflow test and matched local text comparison. Its standalone evidence index links the primary code, raw records, assumptions and independent reconstructions. The article and reproduction instructions require no earlier article draft. [1]
 
 ## AIN language meaning and strategy
 
@@ -43,6 +43,49 @@ The symbolic view uses `@` for a function, `!` for an operation call, `?` for a 
 The IDs in the following examples belong to their published example catalog. The notation illustrates the already-available-language premise. Contracts specify materialization, ordering and cleanup. Thirteen deterministic mock scenarios check these declared contracts and failure paths. The source sketches remain illustrations, with no executed C#, C++, Ruby or Java toolchain and no real database, HTTP or OS-thread execution in this example package. [3]
 
 The symbolic notation explains meaning. Each experiment identifies its actual input format and counting rule. A label's character count, its segmentation by a text tokenizer and its ideal learned-code-unit cost are separate quantities. The illustrative application examples supply no measured token-saving claim.
+
+### From a learned reference to native machine code
+
+The intended AIN execution path is native compilation. The agent expresses a computation in its learned representation, and a compiler produces a native executable or native calls into approved implementations. The agent need not first write a Python or C# version. Compiler IR and optimization passes can still exist internally, as in LLVM and MLIR. Here, direct compilation describes the source-to-native execution path; it does not mean that every AIN reference is one processor instruction. [2, 23, 24]
+
+In this concept, AI can help build the language, learn reusable decompositions and construct or optimize the compiler. The starting premise grants that the compiler already knows the approved implementation behind a reference. During a compilation it resolves that known meaning, expands or lowers the required operations, or links an existing native function. Further AI learning can produce an improved version whose contracts and identity are checked before reuse. Relearning a function for every invocation is outside the assumed starting point. [2]
+
+### What !501 means
+
+The reference is like the name of a predefined method. In the database example,
+
+```text
+d=!501(config);
+```
+
+has the illustrative high-level meaning,
+
+```text
+d=ConnectToDB(config);
+```
+
+The number 501 is an example-local reference to that approved method and its contract. It is a black box from the caller's perspective because the caller uses its established meaning without rewriting its internal commands. The compiler and implementation catalog retain the information needed to resolve it. A conceptual decomposition could be,
+
+```text
+ConnectToDB(config):
+    options = ReadConnectionOptions(config)
+    handle = AllocateConnection(options)
+    OpenDriverConnection(handle, options)
+    return OwnedConnection(handle)
+```
+
+These are explanatory method steps, not an implemented database frontend. The approved operation also owns failure cleanup and its driver may perform authentication, protocol negotiation and other required work. The compiler can inline suitable steps or emit a native call to a compiled implementation. Driver and operating-system calls remain part of actual execution. [3, 25]
+
+| View | Meaning of the same operation |
+|---|---|
+| Agent-visible AIN | `!501(config)` references known behavior with an explicit operand |
+| Human-readable method | `ConnectToDB(config)` names that behavior conventionally |
+| Compiler/catalog view | Approved signature, ownership contract, implementation and dependency version |
+| Native executable | Machine instructions and calls to the required native driver/runtime |
+
+The short reference therefore stands for a set of already learned and implemented functionalities. Its implementation has moved into shared compiler/catalog knowledge and approved code. Configuration and task-specific information remain explicit. Operation 502 separately runs the SQL and materializes its rows, and operation 503 releases the connection.
+
+Conventional languages also compile predefined methods. The research question is whether a learned native-oriented representation and reusable computational records reduce the complete work required from an agent under matched capabilities. The repository's compact arithmetic compiler supplies bounded native-execution evidence; database and concurrency expansion remain conceptual examples. The new text comparison tests local serialization and semantic preservation rather than a complete native AIN compiler. [3, 8, 9, 39]
 
 ### C# database access
 
@@ -214,11 +257,24 @@ A reusable computational record could carry the current program, references to a
 
 The distinction between shared and new information is central. A learned reference can name an established algorithm containing loops without regenerating its implementation. An unfamiliar algorithm, changed business rule or missing capability requires new logic. The programme must test both cases. It should vary library coverage and ask agents to author branches and bounded for/while loops from shared primitives, rather than supplying a whole-task function for every requirement. [14]
 
-### Relation to established research
+### Closest related approaches and the scope of comparison
 
-Toolformer investigates learned selection and use of external APIs. ReAct investigates interleaved reasoning and actions during interaction with an environment. Code as Policies demonstrates generated programs that compose control primitives and libraries. These provide relevant foundations for studying learned operation use, feedback and executable composition. [16-18]
+Toolformer investigates learned API use, ReAct interleaves reasoning and actions, and Code as Policies composes executable policies from established primitives. Closer predecessors also address learned operation references, reusable program libraries and context-efficient execution. The detailed related-work review compares their mechanisms and evidence boundaries. [16-18, 29]
 
-The AIN/AICC question joins representation, persistent computational records and governed capability reuse across a workflow's lifetime. Its contribution must be assessed against equally capable conventional interfaces. Compact Python aliases, readable typed IR, identical libraries, matched decoding constraints and comparable memory are necessary controls. An advantage shared by all compact learned interfaces would support that general mechanism. An additional AIN claim requires a defined structural difference and an ablation that isolates it.
+| Related approach | Direct overlap | Distinction required here |
+|---|---|---|
+| ToolkenGPT and Toolscaler | Learned tool embeddings or compact semantic tool codes | A printed operation ID and a trained semantic token are different interfaces. [30, 31] |
+| DreamCoder and LILO | Learned programming abstractions and reusable compressed libraries | This study supplies an approved library; it does not learn the library. [32, 33] |
+| Voyager | Persistent executable skills improved through feedback | Saving and reusing capabilities is established prior work. [34] |
+| CodeAct | Executable Python as an agent action space with interactive revision | Python receives the same approved functions and state in the local comparison. [35] |
+| MCP code execution and Code Mode | Composed calls, controlled intermediate data exposure and ordinary-language execution | Data placement and compact encoding must be compared separately. [36, 37] |
+| AI Native Lang, AINL | Its whitepaper describes compact syntax, graph IR, deterministic execution and workflow/memory artifacts | This is a close architectural neighbor with a similar name; its runtime is not run here. [38] |
+
+The linked review also covers Stitch, MemGPT, Coconut, DIAL/RIAL, Byte Latent Transformer, Notation Matters, TSCG and the WebAssembly Component Model/WIT. They help distinguish library learning, memory, latent reasoning, communication, schema encoding and component interfaces from the proposed AIN compilation path. [29]
+
+These sources describe different research systems, implementation patterns and project proposals. No cross-system performance ranking follows from their published numbers. Our local test executes only the encoders, decoders and approved workflow functions supplied in this repository. ToolkenGPT, Toolscaler, DreamCoder, LILO, Voyager, CodeAct, the vendor platforms and AINL are literature/project comparisons, not executed benchmark competitors. [29]
+
+The AIN/AICC question joins representation, persistent computational records and governed capability reuse across a workflow's lifetime. Short references, saved code and host-held intermediate data are already established mechanisms. A distinct AIN structural contribution must be defined and tested against those close neighbors. Compact Python aliases, positional IR, identical libraries, matched information and comparable memory provide important controls. Equal gains across compact learned interfaces would support a shared mechanism.
 
 Compiler infrastructure provides a further separation. LLVM and MLIR show how higher-level representations can be lowered through deterministic transformations to native execution. A compiler may supply predictable scaffolding and eliminate model-generated expansion. Backend optimizations remain available to every language arm. [23, 24]
 
@@ -234,6 +290,7 @@ Inference systems add another measurement boundary. PagedAttention studies KV-ca
 | Full-format adaptation baseline | Matched Qwen copies trained and evaluated on bounded arithmetic | Actual narrow learned-format results, including failures |
 | Compact source and native execution | Repaired compiler reference checks and matched local adaptation | Scaffolding, common-backend and generation observations |
 | Approved-core continuing-work theory | Correct compositions executed through build/change/repair/handoff | Conditional complete-workflow representation demand |
+| Matched local serialization | Five decoded local text formats over fixed workflows | Actual tokenizer counts and semantic/state preservation |
 | Separate reconstruction and sensitivity | First independent counters and changed-assumption calculations | Reproducibility and boundaries of the fixed calculation |
 
 These stages answer different questions. Processing timings concern supplied executable implementations. The local model screens measure real adaptation and generation on small arithmetic tasks. The workflow theory grants fluency and correct composition to isolate counted demand. The evidence index preserves primary records and qualifications, including repeated datasets, changed evaluation caps, incomplete attempts and contributor provenance. [1]
@@ -313,6 +370,24 @@ The resident schedule's difference is 9,756 positions. Reprocessed history, pred
 Codex's independent counter was written from the specification and semantic inputs before reference comparison. Claude's raw first ledger also matches exactly. Claude's exact wrapper stopped during tokenizer acquisition. A separately labeled deviation used a hash-verified tokenizer file, passed its checks and matched the reference outputs. Its provenance and earlier AIN exposure remain disclosed. Precomparison seals record the local review order. Contributor identities and remote execution descriptions retain their reported status. [11, 12]
 
 Claude's sensitivity extension reduces the conditional advantage to 21.41% resident and 11.20% inspect when Python memory and observations use compact JSON. Removing the frozen static-symbol vocabulary makes the modeled ideal representation 40.26% and 21.40% larger, respectively. That extreme ablation exposes the importance of useful vocabulary coverage. The extension's 1.619-times break-even boundary applies to representation-dependent unit cost while common text stays fixed. [13]
+
+### Matched local text comparison
+
+A separate CPU-only test compares five local serializations of the same frozen correct workflow traces. It holds approved implementations, task information, operands, data placement, action order and saved state equal. Complete literal request contexts and response strings are tokenized once with the pinned Qwen2.5-1.5B tokenizer, without special tokens or estimated chat framing. Restricted decoders restore the artifacts and actions before execution against the independent fixture oracle. [39]
+
+| Local text profile | Resident total tokens | Inspect total tokens |
+|---|---|---|
+| Python aliases with repr state | 40,830 | 76,614 |
+| Compact Python with compact JSON state | 36,864 | 72,648 |
+| Readable positional IR | 40,770 | 76,554 |
+| Numeric positional arrays | 39,366 | 75,150 |
+| Symbolic AIN call-stream sketch | 43,542 | 79,326 |
+
+All 720 decoded-stage executions matched the fixture outputs, final artifacts, working records and saved memory. All fifty separate literal/state probes and four apparatus regression tests passed. The test contains 2,160 serialized request rows from 144 episodes. Those episodes reuse eighteen chains under the two data schedules. Correct compositions are supplied, and there are zero experimental model calls. These are serialization/semantics checks rather than learned-agent success trials. [39]
+
+Compact Python has the lowest actual text-token count among these fixed profiles. The symbolic sketch uses 18.12% more resident tokens and 9.19% more inspect tokens than that compact control. The symbolic codec covers only the approved-call sketch, not a complete language or an optimized learned vocabulary. Numeric arrays are a separate encoding ablation and do not replace the article's symbolic notation. No format was tuned after observing the outcome. [39]
+
+This actual-text result has a different measurement boundary from the earlier ideal-unit calculation. Its explicit context wrappers, ordinary tokenization and literal representations replace assumed code units and framing. The 24.0% and 12.8% theory reductions remain conditional on their declared learned-unit model. The two experiments must not be presented as measurements in the same unit system. The local test supplies no performance result for the named external systems or a future model fluent in AIN. Its protocol, raw strings, decoded checks and results accompany the portable packet. [10, 15, 39]
 
 ### What the combined evidence changes
 
@@ -407,7 +482,7 @@ The broader opportunity is a stable computational medium shared by authoring, ex
 
 ## Conclusions
 
-AIN proposes that agents learn a precise computational representation and use it throughout their work. AICC proposes approved, versioned and governable capabilities that support repeated composition and compatibility. The five examples show familiar application behavior expressed through short references with explicit operands and contracts.
+AIN is the reference concept for an AI-oriented computational language with native compilation and learned approved functionality. It proposes that agents use that representation throughout their work. AICC proposes approved, versioned and governable capabilities that support repeated composition and compatibility. The five examples show familiar application behavior expressed through short references with explicit operands and contracts.
 
 The final records establish bounded processing, adaptation, compilation and conditional-accounting results. They support pursuing a continuing-work experiment with actual learned composition and complete resource telemetry. The ideal-interface tie makes strong conventional controls central to that experiment. The full programme adds reserved structures, working memory, handoff, capability coverage and lifecycle costs before a scaling decision.
 
@@ -443,6 +518,18 @@ This article is accompanied by executable evidence, a standalone theory descript
 26. Python Software Foundation. Python 3.12 urllib.request. Accessed 8 November 2026. [Official documentation](https://docs.python.org/3.12/library/urllib.request.html).
 27. ISO C++ working-draft contributors. Thread support, jthread lifetime and joining. Accessed 8 November 2026. [Primary draft source](https://github.com/cplusplus/draft/blob/main/source/threads.tex).
 28. Ruby contributors and Oracle. Ruby 3.3 Enumerable and Java SE 17 Stream API. Accessed 8 November 2026. [Ruby documentation](https://docs.ruby-lang.org/en/3.3/Enumerable.html), [Java documentation](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html).
+
+29. AICC closest-approach review. 2026. Primary literature, project documentation and explicit executed-versus-reviewed boundaries. [Related-work comparison](RELATED_WORK.md).
+30. Hao, S., et al. 2023. ToolkenGPT: Augmenting Frozen Language Models with Massive Tools via Tool Embeddings. NeurIPS 2023. arXiv:2305.11554. [Primary paper](https://arxiv.org/abs/2305.11554).
+31. Su, Y., et al. 2025. Toolscaler: Scalable Generative Tool Calling via Structure-Aware Semantic Tokenization. Findings of EMNLP 2025. [Primary paper](https://aclanthology.org/2025.findings-emnlp.30/).
+32. Ellis, K., et al. 2020. DreamCoder: Growing generalizable, interpretable knowledge with wake-sleep Bayesian program learning. arXiv:2006.08381. [Primary paper](https://arxiv.org/abs/2006.08381).
+33. Grand, G., et al. 2024. LILO: Learning Interpretable Libraries by Compressing and Documenting Code. ICLR 2024. arXiv:2310.19791. [Primary paper](https://arxiv.org/abs/2310.19791).
+34. Wang, G., et al. 2023. Voyager: An Open-Ended Embodied Agent with Large Language Models. arXiv:2305.16291. [Primary paper](https://arxiv.org/abs/2305.16291).
+35. Wang, X., et al. 2024. Executable Code Actions Elicit Better LLM Agents. ICML 2024. arXiv:2402.01030. [Primary paper](https://arxiv.org/abs/2402.01030).
+36. Jones, A., and Kelly, C. 2025. Code execution with MCP: Building more efficient agents. Anthropic, 4 November 2025. [Primary engineering article](https://www.anthropic.com/research/code-execution-with-mcp).
+37. Varda, K., and Pai, S. 2025. Code Mode: the better way to use MCP. Cloudflare, 26 September 2025. [Primary engineering article](https://blog.cloudflare.com/code-mode/).
+38. AI Native Lang project. AI Native Lang (AINL): An AI-Native Programming Language for Deterministic Agent Workflows. Project whitepaper, accessed 8 November 2026. [Project documentation](https://www.ainativelang.com/whitepaper).
+39. AICC matched local representation comparison, version 1. 2026. Frozen protocol, actual text-token ledger and decoded semantic/state checks. [Protocol](../experiments/representation_comparison/PROTOCOL.md), [observed report](../experiments/representation_comparison/results/comparison-v1/REPORT.md).
 
 ## Credits
 

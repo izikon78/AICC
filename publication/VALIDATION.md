@@ -5,11 +5,12 @@ Izik Bachar. Codex prepared and checked this final-draft publication package.
 
 ## Article and research scope
 
-Two separate collaboration reviews checked the final article against the primary
-records, source/AIN catalog and proposed research plan. All quantitative claims
-match the selected final records. The article contains 28 numbered references,
+Two separate collaboration reviews checked the preceding final-draft version.
+This update adds the reference-concept/native-compilation explanation, closest
+related approaches and a matched local serialization test. Its article examples,
+references, PDF and raw-ledger aggregates were checked locally. The article contains 39 numbered references,
 including primary third-party papers and official API/compiler documentation.
-All 23 article-local targets resolve. It has no dependency on an earlier article
+All 26 article-local targets resolve. It has no dependency on an earlier article
 draft. The theory and reproduction entry points stand alone.
 
 The selected evidence retains complete processing matrices, the unfavorable
@@ -27,8 +28,8 @@ as the primary practical endpoint and retain CPU/GPU resources in separate units
 
 ## Document, examples and figures
 
-The final review PDF has seventeen Letter pages, five embedded figures and 38
-URI links. All seventeen pages were rendered with Poppler and inspected for
+The final review PDF has twenty-one Letter pages and five embedded figures.
+All twenty-one pages were rendered with Poppler and inspected for
 readable diagrams, code and charts, continued table headers, references, page
 breaks, clipping and footer separation. Automated checks found no text or image
 outside the print-safe bounds. The smallest font is the eight-point footer.
@@ -47,6 +48,14 @@ workflow figure depicts the proposed complete architecture. Its status is explic
 Every PNG, SVG and CSV is covered by the figure render metadata.
 
 ## Portable test package
+
+The added local comparison passes four apparatus regression tests, 720 decoded
+stage checks and fifty separate literal/state probes. Its frozen source/input
+hashes and all 2,160 raw ledger aggregates verify. Compact Python has the lowest
+actual text-token total under the declared existing tokenizer. The symbolic AIN
+sketch is a local reversible subset, while native compilation remains a separate
+bounded experiment. No full external research system or learned-model pilot was
+run by the comparison. The paper retains those distinctions explicitly.
 
 The [packet validation](reproduction/validation/VALIDATION.md) records a fresh
 extraction into a Windows path containing spaces. The CPU approved-core replay

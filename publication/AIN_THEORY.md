@@ -6,7 +6,7 @@ no expected experiment totals. No earlier article is required.
 
 ## The premise
 
-AIN means AI Native Language. The research asks whether an agent that already
+AIN means AI Native Language and is the reference name for a theoretical language and compilation architecture. The complete proposed system is conceptual; the current repository contains bounded implementations and experiments. The research asks whether an agent that already
 knows a precise, compact computational representation can complete software work
 with fewer total resources. Approved implementations of reusable operations are
 available before evaluation. Their established internal code can contain
@@ -23,6 +23,32 @@ AIN concerns the agent's authoring, editable records and interaction interface.
 AICC, the AI Computational Commons, concerns discovering, approving, binding,
 versioning and reusing the operations. Conventional languages must receive the
 same approved implementations and information in a fair comparison.
+
+## Native compilation and learned method references
+
+The concept compiles AIN source to native machine code, using approved native
+implementations where appropriate. Internal IR and optimization passes remain
+compatible with this aim. The agent does not need to generate a human-language
+source program as an intermediate output.
+
+AI may construct and optimize the language/compiler and learn reusable
+implementation decompositions. Under the reference premise those mappings are
+already known before compilation. The compiler resolves a short operation ID,
+expands or lowers its known functionality, or links an approved native method.
+Changes produced by further learning have versioned implementations and contracts.
+
+For the database example, `!501(config)` has the high-level meaning
+`ConnectToDB(config)`. It can stand for reading configuration, allocating owned
+connection state, opening a driver connection, handling failures and returning
+the owned handle. The caller sees a black box with a known contract; the compiler
+and catalog know how it is implemented. It can compile to many instructions and
+native calls. The identifier itself is neither the implementation nor a single
+CPU instruction. Operation 502 executes the explicit SQL; 503 releases ownership.
+
+The database decomposition is illustrative. The existing compact arithmetic
+compiler provides a bounded actual source-to-native example. The reference
+concept makes no claim that a complete database-capable AIN compiler exists.
+Conventional languages receive the same approved implementations in comparisons.
 
 ## The illustrated notation
 
