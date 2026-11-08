@@ -1,0 +1,60 @@
+{
+  "validation_date": "2026-11-08",
+  "mode": "Known-answer packaging and compatibility smoke test",
+  "prior_exposure_to_expected_results": true,
+  "independent_reconstruction_claim": false,
+  "zip": "AICC_Final_Experiments_Packet.zip",
+  "zip_sha256": "84adad0d7ad8432405197d51313226bdff3a4b1d607edf936e41ebb3e0bd425c",
+  "zip_bytes": 5121982,
+  "fresh_extraction_with_spaces": true,
+  "final_payload_verification": {
+    "passed": true,
+    "files_checked": 293,
+    "errors": []
+  },
+  "execution_payload_hashes_identical_to_smoke_tested_packet": true,
+  "execution_payload_files_compared": 256,
+  "approved_core_tests_passed": 21,
+  "deterministic_comparisons_passed": 6,
+  "approved_core_pinned_dependency_versions_matched": 18,
+  "frozen_approved_core_files_verified": 59,
+  "tokenizer_assets_verified": 6,
+  "optional_native_tests_passed": 14,
+  "optional_processing_unit_tests_passed": 44,
+  "native_reference_programs_correct": 360,
+  "native_reference_input_checks_correct": 3240,
+  "identical_assembly_task_triplets": 120,
+  "native_full_target_tokens": {
+    "python": 1719,
+    "ir": 11151,
+    "ain": 12279
+  },
+  "native_compact_target_tokens": {
+    "python": 543,
+    "ir": 639,
+    "ain": 639
+  },
+  "figure_source_hashes_verified": 22,
+  "new_gpu_training_runs": 0,
+  "new_million_event_stress_runs": 0,
+  "experiment_model_inference_calls": 0,
+  "checks_after_final_doc_packaging": "Committed-source final ZIP extracted into a fresh path containing spaces; all293 payload hashes,59 frozen package files,6 tokenizer assets and256 experiment/script/tokenizer hashes verified. The figure builder EOF whitespace change was checked and all14 figure/CSV outputs rebuilt identically with all22 source hashes verified. Unchanged CPU/native/model workloads were not repeated.",
+  "optional_environment_note": "Native/processing checks used existing experiment Python with recorded dependency versions; CPU accounting used existing Python3.12 with all18 package pins matched. Setup installer was not rerun.",
+  "optional_environment": {
+    "python": "3.12.14",
+    "llvmlite": "0.44.0",
+    "transformers": "4.51.3",
+    "tokenizers": "0.21.4",
+    "numpy": "2.5.4"
+  },
+  "optional_environment_deviations": [
+    "Processing unit checks used NumPy2.5.4 instead of the processing study pin2.3.5; no new timed processing study was run."
+  ],
+  "previous_article_files_in_payload": [],
+  "model_or_adapter_weight_files_in_payload": [],
+  "packaging_source_commit": "b9e514527cd303c5cd984aadf44a61ebfd30dc6f",
+  "figure_builder_change": "Only trailing EOF newline whitespace changed after the first smoke test; source bytes match after stripping terminal CR/LF.",
+  "figure_rebuild_outputs_compared": 14,
+  "figure_rebuild_all_outputs_identical": true,
+  "figure_rebuild_matplotlib": "3.11.2"
+}

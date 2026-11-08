@@ -1,0 +1,34 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "revision": "8faed761d45a263340a0528343f099c05c9a4323",
+  "cases": [
+    -1000000,
+    -17,
+    -2,
+    0,
+    1,
+    9,
+    31,
+    1047,
+    1000000
+  ],
+  "target": "x86_64-pc-windows-msvc",
+  "llvm_version": [
+    15,
+    0,
+    7
+  ],
+  "packages": {
+    "llvmlite": "0.44.0",
+    "transformers": "4.51.3",
+    "tokenizers": "0.21.4"
+  },
+  "dataset_sha256": "658d96cac2c6d475211dc873a40b84e15c8d7e92f85ed231e01fc58914d6b6f6",
+  "source_sha256": {
+    "experiments\\ain_compiler_gate\\measure.py": "eb7c1d5da8f017f3cb708d12c7afc23e48543b4e8dab2de877d1d5c1ce2e5fb3",
+    "experiments\\ain_compiler_gate\\compiler.py": "2de082fbae3191981720a6d9000439a722f0a66067c7ebf696ae612af4bf1641",
+    "experiments\\ain_compiler_gate\\data.py": "f9788d42aca042240a7b24ece3605c3f839b58f74c84890ac5920116b784d140",
+    "experiments\\native_learning_gate\\data.py": "a9f94f31c2b78fee55d22d12a32b0e136252d2a1c7809a82e9848004b21e084a",
+    "experiments\\ain_v0\\ain\\language.py": "97ec92ef89f3c4008f9122441261966a80d2d1e44c4bc4e9a47149c39e568d9e"
+  }
+}
